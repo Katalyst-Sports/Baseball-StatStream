@@ -60,10 +60,12 @@ fetch("daily.json")
       const card = document.createElement("div");
       card.className = "card";
 
+      const startTime = new Date(game.start_time).toLocaleString();
+
       card.innerHTML = `
         <strong>${game.away} @ ${game.home}</strong><br>
         Venue: ${game.venue}<br>
-        Start Time: ${new Date(game.start_time).toLocaleString()}
+        Start Time: ${startTime}
       `;
 
       container.appendChild(card);
@@ -74,6 +76,5 @@ fetch("daily.json")
       "Daily data not available yet.";
   });
 </script>
-
 </body>
 </html>
