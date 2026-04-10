@@ -74,8 +74,10 @@ fetch("daily.json?nocache=" + Date.now())
         ${new Date(g.start).toLocaleTimeString()}<br>
         Away SP: ${g.away_pitcher.name} ${pitcherBadge(g.away_pitcher)} |
         Home SP: ${g.home_pitcher.name} ${pitcherBadge(g.home_pitcher)}<br>
-        Contact Index — ${g.away_team}: ${g.away_summary.contact_index},
-        ${g.home_team}: ${g.home_summary.contact_index}
+        ${g.away_summary && g.home_summary ? `
+Contact Index — ${g.away_team}: ${g.away_summary.contact_index},
+${g.home_team}: ${g.home_summary.contact_index}
+` : ""}
       </div>
 
       <div id="${contentId}" style="display:none;margin-top:12px;">
