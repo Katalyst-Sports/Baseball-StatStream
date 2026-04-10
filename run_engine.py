@@ -144,4 +144,3 @@ with open("daily.json", "w") as f:
             "once official MLB boxscore lineups are available."
         )
     }, f, indent=2)
-``
