@@ -1,50 +1,120 @@
-import json
-from urllib.request import urlopen
-from zoneinfo import ZoneInfo
-from datetime import datetime
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MLB Prop Engine — Daily Dashboard</title>
 
-TODAY = datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f6f7f9;
+      padding: 24px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-url = (
-    "https://statsapi.mlb.com/api/v1/schedule"
-    f"?sportId=1&date={TODAY}"
-)
+    h1 {
+      margin-bottom: 20px;
+    }
 
-with urlopen(url) as response:
-    data = json.loads(response.read().decode("utf-8"))
+    .card {
+      background: #ffffff;
+      padding: 16px 18px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
 
-games = []
+    .game-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
 
-for day in data.get("dates", []):
-    for game in day.get("games", []):
-        away_team = game["teams"]["away"]["team"]["name"]
-        home_team = game["teams"]["home"]["team"]["name"]
+    .game-meta {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.5;
+    }
 
-        away_pitcher = game["teams"]["away"].get("probablePitcher", {}).get("fullName")
-        home_pitcher = game["teams"]["home"].get("probablePitcher", {}).get("fullName")
+    .starter-label {
+      font-weight: 600;
+    }
 
-        games.append({
-            "game_id": game["gamePk"],
-            "start_time": game["gameDate"],
-            "away": away_team,
-            "home": home_team,
-            "venue": game["venue"]["name"],
-            "away_starter": away_pitcher or "TBD",
-            "home_starter": home_pitcher or "TBD"
-        })
+    footer {
+      font-size: 12px;
+      color: #555;
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #ccc;
+      line-height: 1.4;
+    }
+  </style>
+</head>
 
+<body>
 
-output = {
-    "date": TODAY,
-    "last_updated": datetime.utcnow().isoformat() + "Z",
-    "games": games,
-    "disclaimer": (
-        "This dashboard is provided for informational and educational purposes only. "
-        "The information displayed may be inaccurate or change without notice. "
-        "This does not constitute gambling, betting, or financial advice. "
-        "Use at your own risk."
-    )
-}
+  <h1>MLB Prop Engine — Daily Dashboard</h1>
 
-with open("daily.json", "w") as f:
-    json.dump(output, f, indent=2)
+  <div id="content">
+    Loading today’s MLB games…
+  </div>
+
+  <footer>
+    <strong>Disclaimer:</strong><br>
+    This dashboard is provided for informational and educational purposes only.
+    The information displayed may be inaccurate, incomplete, or change at any time.
+    MLB schedules, starting pitchers, lineups, and game details are subject to change without notice.
+    This dashboard does not constitute gambling advice, betting advice, financial advice,
+    or recommendations of any kind. No guarantees of accuracy or outcomes are made.
+    Users are solely responsible for verifying information independently and for any decisions
+    made based on this content.
+    <br><br>
+    <em>This dashboard is a personal analytical tool and is not intended for commercial use or distribution.</em>
+  </footer>
+
+  <script>
+    // Cache‑busting ensures GitHub Pages always loads the latest daily.json
+    fetch("daily.json?nocache=" + Date.now())
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById("content");
+        container.innerHTML = "";
+
+        if (!data.games || data.games.length === 0) {
+          container.innerText = "No MLB games scheduled today.";
+          return;
+        }
+
+        data.games.forEach(game => {
+          const card = document.createElement("div");
+          card.className = "card";
+
+          const startTime = new Date(game.start_time).toLocaleString();
+          const awayStarter = game.away_starter || "TBD";
+          const homeStarter = game.home_starter || "TBD";
+
+          card.innerHTML = `
+            <div class="game-title">
+              ${game.away} @ ${game.home}
+            </div>
+            <div class="game-meta">
+              <span class="starter-label">Away Starter:</span> ${awayStarter}<br>
+              <span class="starter-label">Home Starter:</span> ${homeStarter}<br>
+              Venue: ${game.venue}<br>
+              Start Time: ${startTime}
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+      })
+      .catch(error => {
+        document.getElementById("content").innerText =
+          "Unable to load today’s MLB games. Please refresh the page.";
+        console.error(error);
+      });
+  </script>
+
+</body>
+</html>
