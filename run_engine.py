@@ -61,17 +61,7 @@ def pitcher_last5(pid):
 
         games = len(logs)
         whip = (h + bb) / ip if ip else None
-
         kbb = round(k / bb, 2) if bb else "∞"
-
-        if kbb == "∞" or kbb >= 4:
-            command = "Elite Command"
-        elif kbb >= 3:
-            command = "Strong Command"
-        elif kbb >= 2:
-            command = "Average Command"
-        else:
-            command = "Below Average Command"
 
         return {
             "avg_ip": round(ip / games, 2),
@@ -79,7 +69,12 @@ def pitcher_last5(pid):
             "avg_bb": round(bb / games, 2),
             "whip": round(whip, 2) if whip else "N/A",
             "k_bb": kbb,
-            "command": command,
+            "command": (
+                "Elite Command" if kbb == "∞" or kbb >= 4 else
+                "Strong Command" if kbb >= 3 else
+                "Average Command" if kbb >= 2 else
+                "Below Average Command"
+            ),
             "quality": ip / games >= 6 and er / games <= 3,
             "elite": ip / games >= 7 and k / games >= 8 and whip is not None and whip <= 1.00
         }
@@ -122,27 +117,7 @@ def hitter_season(pid):
     except:
         return {"avg":"N/A","k_rate":None,"bb_rate":None,"bip_pa":"N/A"}
 
-def batting_tier(stats):
-    if stats["avg"]!="N/A" and float(stats["avg"])>=0.285 and stats["k_rate"]<=18:
-        return "Top‑Order"
-    if stats["k_rate"] and stats["k_rate"]<=25:
-        return "Middle‑Order"
-    return "Bottom‑Order"
-
-def hit_streak(pid):
-    try:
-        logs = fetch(
-            f"{BASE}/v1/people/{pid}/stats?stats=gameLog&group=hitting&season={SEASON}"
-        )["stats"][0]["splits"]
-        streak=0
-        for g in logs:
-            if n(g["stat"].get("hits"))>0: streak+=1
-            else: break
-        return streak
-    except:
-        return 0
-
-def last10_ab_vs_hand(pid, hand):
+def last10_ab_overall(pid):
     try:
         logs = fetch(
             f"{BASE}/v1/people/{pid}/stats?stats=gameLog&group=hitting&season={SEASON}"
@@ -152,9 +127,6 @@ def last10_ab_vs_hand(pid, hand):
         for g in logs:
             if ab >= 10:
                 break
-            opp = g.get("opponent", {})
-            if opp.get("pitcherHand") != hand:
-                continue
             game_ab = n(g["stat"].get("atBats"))
             game_hits = n(g["stat"].get("hits"))
             take = min(10-ab, game_ab)
@@ -164,6 +136,21 @@ def last10_ab_vs_hand(pid, hand):
         return {"ab":ab,"hits":hits,"avg":round(hits/ab,3) if ab else "N/A"}
     except:
         return {"ab":0,"hits":0,"avg":"N/A"}
+
+def hit_streak(pid):
+    try:
+        logs = fetch(
+            f"{BASE}/v1/people/{pid}/stats?stats=gameLog&group=hitting&season={SEASON}"
+        )["stats"][0]["splits"]
+        streak=0
+        for g in logs:
+            if n(g["stat"].get("hits"))>0:
+                streak+=1
+            else:
+                break
+        return streak
+    except:
+        return 0
 
 def risp(pid):
     try:
@@ -191,7 +178,6 @@ schedule = fetch(
 )
 
 daily = []
-live = []
 
 for d in schedule.get("dates", []):
     for g in d.get("games", []):
@@ -230,44 +216,20 @@ for d in schedule.get("dates", []):
         for side, team in [("away_hitters", away), ("home_hitters", home)]:
             for h in team_hitters(team["id"]):
                 stats = hitter_season(h["id"])
+                streak = hit_streak(h["id"])
                 game[side].append({
                     "name": h["name"],
-                    "tier": batting_tier(stats),
+                    "tier": (
+                        "Top‑Order" if stats["avg"]!="N/A" and float(stats["avg"])>=0.285 else
+                        "Middle‑Order" if stats["k_rate"] and stats["k_rate"]<=25 else
+                        "Bottom‑Order"
+                    ),
                     "stats": stats,
-                    "vsRHP": last10_ab_vs_hand(h["id"], "R"),
-                    "vsLHP": last10_ab_vs_hand(h["id"], "L"),
-                    "streak": hit_streak(h["id"]),
+                    "last10": last10_ab_overall(h["id"]),
+                    "streak": streak,
                     "risp": risp(h["id"])
                 })
 
         daily.append(game)
 
-        if g["status"]["abstractGameState"] in ["Live","In Progress"]:
-            feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
-            lines = feed["liveData"]["linescore"]
-            box = feed["liveData"]["boxscore"]
-
-            hot = []
-            dom = []
-
-            for side in ["away","home"]:
-                for bid in box["teams"][side]["batters"]:
-                    b = box["teams"][side]["players"][f"ID{bid}"]["stats"]["batting"]
-                    tb = n(b.get("hits"))+n(b.get("doubles"))+2*n(b.get("triples"))+3*n(b.get("homeRuns"))
-                    if b.get("hits",0)>=2 or tb>=3:
-                        hot.append(box["teams"][side]["players"][f"ID{bid}"]["person"]["fullName"])
-
-                for pid in box["teams"][side]["pitchers"][-1:]:
-                    p = box["teams"][side]["players"][f"ID{pid}"]["stats"]["pitching"]
-                    if p.get("strikeOuts",0)>=6 and p.get("earnedRuns",0)<=2:
-                        dom.append(box["teams"][side]["players"][f"ID{pid}"]["person"]["fullName"])
-
-            live.append({
-                "score": f"{lines['teams']['away']['runs']}–{lines['teams']['home']['runs']}",
-                "inning": lines.get("currentInningOrdinal"),
-                "hot_hitters": hot,
-                "top_pitchers": dom
-            })
-
 json.dump({"updated_at":NOW.isoformat(),"games":daily}, open("daily.json","w"), indent=2)
-json.dump({"updated_at":NOW.isoformat(),"games":live}, open("live.json","w"), indent=2)
