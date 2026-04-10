@@ -6,28 +6,26 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"   # Every hour, on the hour (UTC)
+    - cron: "0 * * * *"   # Every hour
 
 jobs:
   run-engine:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Run MLB engine
+      - name: Run engine
         run: python run_engine.py
 
-      - name: Commit updated data
+      - name: Commit updates
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add daily.json
-          git commit -m "Hourly MLB context update" || echo "No changes to commit"
+          git commit -m "Hourly MLB context update" || echo "No changes"
           git push
