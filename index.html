@@ -1,80 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>MLB Daily Dashboard</title>
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       background: #f6f7f9;
       padding: 24px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
+
+    h1 {
+      margin-bottom: 16px;
+    }
+
     .card {
-      background: white;
+      background: #ffffff;
       padding: 16px;
       border-radius: 12px;
       margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
+
+    .game-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .game-meta {
+      font-size: 14px;
+      color: #444;
+    }
+
     footer {
       font-size: 12px;
       color: #555;
-      margin-top: 40px;
+      margin-top: 48px;
+      padding-top: 16px;
       border-top: 1px solid #ccc;
-      padding-top: 12px;
+      line-height: 1.4;
     }
   </style>
 </head>
+
 <body>
 
-<h2>MLB Prop Engine — Daily Dashboard</h2>
+  <h1>MLB Prop Engine — Daily Dashboard</h1>
 
-<div class="card" id="content">
-  Loading daily data...
-</div>
+  <div id="content">
+    Loading today’s MLB games…
+  </div>
 
-<footer>
-  <strong>Disclaimer:</strong><br>
-  This dashboard is provided for informational and educational purposes only.
-  Information may be inaccurate, incomplete, or change at any time.
-  This does not constitute gambling, betting, or financial advice.
-  Users are solely responsible for verifying all information independently.
-  <br><br>
-  <em>This dashboard is a personal analytical tool and is not intended for commercial use or distribution.</em>
-</footer>
+  <footer>
+    <strong>Disclaimer:</strong><br>
+    This dashboard is provided for informational and educational purposes only.
+    The information displayed may be inaccurate, incomplete, or change at any time.
+    MLB schedules, starting pitchers, lineups, and game details are subject to change without notice.
+    This dashboard does not constitute gambling advice, betting advice, financial advice,
+    or recommendations of any kind. No guarantees of accuracy or outcomes are made.
+    Users are solely responsible for verifying information independently and for any decisions
+    made based on this content.
+    <br><br>
+    <em>This dashboard is a personal analytical tool and is not intended for commercial use or distribution.</em>
+  </footer>
 
-<script>
-fetch("daily.json")
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById("content");
-    container.innerHTML = "";
+  <script>
+    fetch("daily.json")
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById("content");
+        container.innerHTML = "";
 
-    if (!data.games || data.games.length === 0) {
-      container.innerText = "No MLB games scheduled today.";
-      return;
-    }
+        if (!data.games || data.games.length === 0) {
+          container.innerText = "No MLB games scheduled today.";
+          return;
+        }
 
-    data.games.forEach(game => {
-      const card = document.createElement("div");
-      card.className = "card";
+        data.games.forEach(game => {
+          const card = document.createElement("div");
+          card.className = "card";
 
-      const startTime = new Date(game.start_time).toLocaleString();
+          const startTime = new Date(game.start_time).toLocaleString();
 
-      card.innerHTML = `
-        <strong>${game.away} @ ${game.home}</strong><br>
-        Venue: ${game.venue}<br>
-        Start Time: ${startTime}
-      `;
+          card.innerHTML = `
+            <div class="game-title">
+              ${game.away} @ ${game.home}
+            </div>
+            <div class="game-meta">
+              Venue: ${game.venue}<br>
+              Start Time: ${startTime}
+            </div>
+          `;
 
-      container.appendChild(card);
-    });
-  })
-  .catch(() => {
-    document.getElementById("content").innerText =
-      "Daily data not available yet.";
-  });
-</script>
+          container.appendChild(card);
+        });
+      })
+      .catch(error => {
+        document.getElementById("content").innerText =
+          "Error loading daily game data.";
+        console.error(error);
+      });
+  </script>
+
 </body>
 </html>
