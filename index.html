@@ -2,44 +2,93 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>MLB Lineup Context</title>
+<title>MLB Game Context — Lineups & Matchups</title>
+
 <style>
-.card{background:#fff;padding:16px;margin-bottom:12px;border-radius:12px}
-.meta{font-size:14px;color:#444}
-.badge{padding:2px 6px;border-radius:6px;font-size:12px}
-.official{background:#16a34a;color:#fff}
-.projected{background:#fbbf24}
+body {
+  font-family: system-ui;
+  background: #f6f7f9;
+  padding: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+.card {
+  background: #ffffff;
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.meta {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+.badge {
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.confirmed { background: #16a34a; color: white; }
+.monitor { background: #fbbf24; color: black; }
+.projected { background: #e5e7eb; color: #111; }
+.official { background: #2563eb; color: white; }
 </style>
 </head>
+
 <body>
 
-<h1>MLB Game Context — Lineups (≤3h to Start)</h1>
-<div id="content"></div>
+<h1>MLB Game Context — Lineups & Matchups</h1>
+<p style="color:#555;font-size:14px;">
+Updated hourly. Projected lineups are replaced automatically when MLB posts official batting orders.
+</p>
+
+<div id="content">Loading games…</div>
 
 <script>
-fetch("/MLB-DASHBOARD/daily.json?"+Date.now())
-.then(r=>r.json())
-.then(d=>{
-  const c=document.getElementById("content");
-  d.games.forEach(g=>{
-    const card=document.createElement("div");
-    card.className="card";
-    card.innerHTML=`
-      <strong>${g.away} @ ${g.home}</strong><br>
-      <div class="meta">
-        Away SP: ${g.away_pitcher}<br>
-        Lineup (${g.away_lineup.type}):
-        <span class="badge ${g.away_lineup.type}">
-          ${g.away_lineup.type}
-        </span><br>
-        ${g.away_lineup.hitters.join(", ")}<br><br>
+fetch("/MLB-DASHBOARD/daily.json?nocache=" + Date.now())
+.then(r => r.json())
+.then(d => {
+  const c = document.getElementById("content");
+  c.innerHTML = "";
 
-        Home SP: ${g.home_pitcher}<br>
-        Lineup (${g.home_lineup.type}):
-        <span class="badge ${g.home_lineup.type}">
-          ${g.home_lineup.type}
+  if (!d.games || d.games.length === 0) {
+    c.innerHTML = `
+      <div class="card">
+        No games scheduled for today.
+      </div>`;
+    return;
+  }
+
+  d.games.forEach(g => {
+    function pitcherBlock(p) {
+      if (p.status !== "confirmed") {
+        return `
+          TBD
+          <span class="badge monitor">MONITOR</span>
+        `;
+      }
+
+      return `
+        ${p.name} (${p.hand}HP)
+        <span class="badge confirmed">CONFIRMED</span>
+        <span class="badge ${p.lineup_type}">
+          ${p.lineup_type.toUpperCase()}
         </span><br>
-        ${g.home_lineup.hitters.join(", ")}
+        Hitters: ${p.hitters.join(", ")}
+      `;
+    }
+
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <strong>${g.away_team} @ ${g.home_team}</strong><br>
+      <div class="meta">
+        Away SP: ${pitcherBlock(g.away_pitcher)}<br><br>
+        Home SP: ${pitcherBlock(g.home_pitcher)}<br>
+        Venue: ${g.venue}<br>
+        Start: ${new Date(g.start_time).toLocaleString()}
       </div>
     `;
     c.appendChild(card);
