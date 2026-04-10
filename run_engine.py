@@ -81,4 +81,3 @@ output = {
 
 with open("daily.json", "w") as f:
     json.dump(output, f, indent=2)
-``
