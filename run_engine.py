@@ -25,7 +25,7 @@ def n(x):
     return x if x is not None else 0
 
 # =====================================================
-# PITCHER FUNCTIONS (SAFE)
+# PITCHER FUNCTIONS (DEFENSIVE + FULL AVERAGES)
 # =====================================================
 
 def pitcher_hand(pid):
@@ -45,9 +45,8 @@ def pitcher_era(pid):
 
 def pitcher_last5(pid):
     """
-    Bulletproof last‑5 start processing.
-    Handles missing logs, openers, rookies, empty API payloads.
-    NEVER crashes.
+    Last 5 STARTS – averaged.
+    Safe for pitchers with no logs, openers, or empty stats.
     """
     try:
         data = fetch(
@@ -56,11 +55,11 @@ def pitcher_last5(pid):
         )
 
         if not data.get("stats"):
-            raise ValueError("No stats")
+            raise ValueError
 
         splits = data["stats"][0].get("splits", [])
         if not splits:
-            raise ValueError("No game logs")
+            raise ValueError
 
         logs = splits[:5]
 
@@ -68,35 +67,33 @@ def pitcher_last5(pid):
 
         for g in logs:
             ip_raw = g["stat"].get("inningsPitched", "0")
-
             if "." in ip_raw:
-                whole, frac = ip_raw.split(".")
-                ip += int(whole) + int(frac) / 3
+                w, f = ip_raw.split(".")
+                ip += int(w) + int(f) / 3
             else:
                 ip += float(ip_raw)
 
-            k  += int(g["stat"].get("strikeOuts", 0))
-            bb += int(g["stat"].get("baseOnBalls", 0))
-            h  += int(g["stat"].get("hits", 0))
-            er += int(g["stat"].get("earnedRuns", 0))
+            k  += n(g["stat"].get("strikeOuts"))
+            bb += n(g["stat"].get("baseOnBalls"))
+            h  += n(g["stat"].get("hits"))
+            er += n(g["stat"].get("earnedRuns"))
 
         games = len(logs)
         whip = (h + bb) / ip if ip > 0 else None
 
-        quality = games >= 1 and (ip / games) >= 6 and (er / games) <= 3
-        elite = games >= 1 and (ip / games) >= 7 and (k / games) >= 8 and whip is not None and whip <= 1.00
+        quality = ip / games >= 6 and er / games <= 3
+        elite = ip / games >= 7 and k / games >= 8 and whip is not None and whip <= 1.00
 
         return {
             "avg_ip": round(ip / games, 2),
             "avg_k": round(k / games, 2),
             "avg_bb": round(bb / games, 2),
-            "whip": round(whip, 2) if whip is not None else "N/A",
+            "whip": round(whip, 2) if whip else "N/A",
             "quality": quality,
             "elite": elite
         }
 
     except Exception:
-        # SAFE FALLBACK
         return {
             "avg_ip": "N/A",
             "avg_k": "N/A",
@@ -131,29 +128,43 @@ def hitter_season_stats(pid):
             "avg": avg,
             "k_rate": round((so / pa) * 100, 1) if pa else None,
             "bb_rate": round((bb / pa) * 100, 1) if pa else None,
-            "bip_pa": bip_pa,
-            "so": so,
-            "bb": bb
+            "bip_pa": bip_pa
         }
 
     except Exception:
+        return {"avg": "N/A", "k_rate": None, "bb_rate": None, "bip_pa": "N/A"}
+
+def hitter_split(pid, hand):
+    """
+    Restore splits vs RHP / LHP
+    """
+    sit = "vr" if hand == "R" else "vl"
+    try:
+        s = fetch(
+            f"{BASE}/v1/people/{pid}/stats"
+            f"?stats=statSplits&group=hitting&sitCodes={sit}&season={SEASON}"
+        )["stats"][0]["splits"]
+
+        if not s:
+            raise ValueError
+
+        stat = s[0]["stat"]
         return {
-            "avg": "N/A",
-            "k_rate": "N/A",
-            "bb_rate": "N/A",
-            "bip_pa": "N/A",
-            "so": 0,
-            "bb": 0
+            "avg": stat.get("avg", "N/A"),
+            "hits": stat.get("hits", "N/A")
         }
+
+    except Exception:
+        return {"avg": "N/A", "hits": "N/A"}
 
 def batting_order_tier(stats):
     try:
-        if stats["avg"] != "N/A" and float(stats["avg"]) >= 0.285 and stats["k_rate"] <= 18:
+        if stats["avg"] != "N/A" and float(stats["avg"]) >= 0.285 and stats["k_rate"] and stats["k_rate"] <= 18:
             return "Top‑Order"
-        if stats["k_rate"] is not None and stats["k_rate"] <= 25:
+        if stats["k_rate"] and stats["k_rate"] <= 25:
             return "Middle‑Order"
         return "Bottom‑Order"
-    except Exception:
+    except:
         return "Bottom‑Order"
 
 def hit_streak(pid):
@@ -170,7 +181,7 @@ def hit_streak(pid):
             else:
                 break
         return streak
-    except Exception:
+    except:
         return 0
 
 def risp_stats(pid):
@@ -184,11 +195,11 @@ def risp_stats(pid):
             "avg": s.get("avg", "N/A"),
             "hits": s.get("hits", "N/A")
         }
-    except Exception:
+    except:
         return {"avg": "N/A", "hits": "N/A"}
 
 # =====================================================
-# TEAM ROSTER
+# TEAM HITTERS
 # =====================================================
 
 def team_hitters(team_id):
@@ -198,7 +209,7 @@ def team_hitters(team_id):
             {"id": p["person"]["id"], "name": p["person"]["fullName"]}
             for p in roster if p["position"]["type"] != "Pitcher"
         ][:9]
-    except Exception:
+    except:
         return []
 
 # =====================================================
@@ -209,14 +220,13 @@ schedule = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
 )
 
-daily_games = []
+games = []
 
 for d in schedule.get("dates", []):
     for g in d.get("games", []):
 
         away = g["teams"]["away"]["team"]
         home = g["teams"]["home"]["team"]
-
         ap = g["teams"]["away"].get("probablePitcher")
         hp = g["teams"]["home"].get("probablePitcher")
 
@@ -254,11 +264,13 @@ for d in schedule.get("dates", []):
                     "name": h["name"],
                     "tier": batting_order_tier(stats),
                     "stats": stats,
+                    "vsRHP": hitter_split(h["id"], "R"),
+                    "vsLHP": hitter_split(h["id"], "L"),
                     "streak": hit_streak(h["id"]),
                     "risp": risp_stats(h["id"])
                 })
 
-        daily_games.append(game)
+        games.append(game)
 
 # =====================================================
 # OUTPUT
@@ -266,7 +278,7 @@ for d in schedule.get("dates", []):
 
 with open("daily.json", "w") as f:
     json.dump(
-        {"updated_at": NOW.isoformat(), "games": daily_games},
+        {"updated_at": NOW.isoformat(), "games": games},
         f,
         indent=2
     )
