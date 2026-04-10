@@ -1,4 +1,4 @@
-name: MLB Live Engine
+name: MLB Context Engine
 
 permissions:
   contents: write
@@ -6,20 +6,26 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"   # Every 5 minutes
+    - cron: "0 6 * * *"        # Daily baseline (pre-game)
+    - cron: "*/2 * * * *"      # Live + postgame updates
 
 jobs:
-  live-engine:
+  run-engine:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python run_engine.py
-      - run: |
-          git config user.name github-actions
-          git config user.email actions@github.com
-          git add live.json
-          git commit -m "Live MLB update" || echo "No changes"
+
+      - name: Run MLB Engine
+        run: python run_engine.py
+
+      - name: Commit updates
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add daily.json live.json postgame.json
+          git commit -m "MLB data update" || echo "No changes"
           git push
