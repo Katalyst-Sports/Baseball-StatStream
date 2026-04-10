@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MLB Live Performance Dashboard</title>
+<title>MLB Performance Context Dashboard</title>
 
 <style>
 body {
-  font-family: system-ui;
+  font-family: system-ui, -apple-system, sans-serif;
   background: #f6f7f9;
   padding: 24px;
   max-width: 1200px;
   margin: auto;
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 24px;
 }
 
 .card {
@@ -19,6 +29,26 @@ body {
   border-radius: 12px;
   margin-bottom: 16px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.meta {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.hitters {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.live-card {
+  border-left: 6px solid #dc2626;
 }
 
 .hot {
@@ -38,6 +68,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   background: #e5e7eb;
+  margin-left: 6px;
 }
 
 footer {
@@ -53,74 +84,120 @@ footer {
 
 <body>
 
-<h1>MLB Live Performance Dashboard</h1>
-<p style="color:#555;font-size:14px;">
-Updated automatically. Live stats refresh during active games.
-</p>
+<h1>MLB Performance Context</h1>
+<div class="subtitle">
+Updated hourly. Pre‑game matchup context and live in‑game performance tracking.
+</div>
 
-<div id="live">Loading live games…</div>
+<!-- ========================= -->
+<!-- LIVE GAMES SECTION -->
+<!-- ========================= -->
+
+<div id="live-section"></div>
+
+<!-- ========================= -->
+<!-- DAILY MATCHUPS SECTION -->
+<!-- ========================= -->
+
+<div id="daily-section">Loading games…</div>
 
 <script>
-function loadLive() {
-  fetch("/MLB-DASHBOARD/live.json?nocache=" + Date.now())
-    .then(r => r.json())
-    .then(d => {
-      const l = document.getElementById("live");
-      l.innerHTML = "";
+/* =========================
+   LIVE GAMES (live.json)
+   ========================= */
+fetch("/MLB-DASHBOARD/live.json?nocache=" + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    if (!d.games || d.games.length === 0) return;
 
-      if (!d.games || d.games.length === 0) {
-        l.innerHTML = "<div class='card'>No games live right now.</div>";
-        return;
+    const live = document.getElementById("live-section");
+    d.games.forEach(g => {
+      const c = document.createElement("div");
+      c.className = "card live-card";
+
+      c.innerHTML = `
+        <strong>LIVE GAME</strong><br>
+        Inning: ${g.inning} | Score: ${g.score}<br><br>
+
+        <span class="section-title">Hot Hitters (Live)</span><br>
+        ${
+          g.hot_hitters.length
+          ? g.hot_hitters.map(h =>
+              `<div class="hot">${h.name} — ${h.hits} H</div>`
+            ).join("")
+          : "None"
+        }
+      `;
+
+      live.appendChild(c);
+    });
+  })
+  .catch(() => {});
+
+/* =========================
+   DAILY MATCHUPS (daily.json)
+   ========================= */
+fetch("/MLB-DASHBOARD/daily.json?nocache=" + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    const container = document.getElementById("daily-section");
+    container.innerHTML = "";
+
+    d.games.forEach(g => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      function pitcherBlock(p) {
+        return `
+          ${p.name} (${p.hand}HP)<br>
+          ERA: ${p.era}<br>
+          Last 5 Starts → IP Avg: ${p.last5?.avg_ip ?? "N/A"},
+          K Avg: ${p.last5?.avg_k ?? "N/A"},
+          BB Avg: ${p.last5?.avg_bb ?? "N/A"}
+        `;
       }
 
-      d.games.forEach(g => {
-        const c = document.createElement("div");
-        c.className = "card";
+      function hitterBlock(list) {
+        return list.map(h => `
+          <div>
+            ${h.name} —
+            vs RHP: AVG ${h.vsRHP.avg}, H ${h.vsRHP.hits} |
+            vs LHP: AVG ${h.vsLHP.avg}, H ${h.vsLHP.hits}
+          </div>
+        `).join("");
+      }
 
-        c.innerHTML = `
-          <strong>Live Game</strong><br>
-          Status: ${g.status} | Inning: ${g.inning} | Score: ${g.score}<br><br>
+      card.innerHTML = `
+        <strong>${g.away_team} @ ${g.home_team}</strong><br>
+        <div class="meta">
+          Venue: ${g.venue}<br>
+          Start: ${new Date(g.start_time).toLocaleString()}<br><br>
 
-          ${g.bullpen_active ? "<span class='badge'>Bullpen Active</span><br><br>" : ""}
+          <span class="section-title">Away Starting Pitcher</span><br>
+          ${pitcherBlock(g.away_pitcher)}<br><br>
 
-          <strong>Top Pitchers (Live)</strong><br>
-          ${g.top_pitchers.length
-            ? g.top_pitchers.map(p =>
-                `<div class="pitcher">${p.name} — ${p.k} K / ${p.er} ER</div>`
-              ).join("")
-            : "None"}
-          <br><br>
+          <span class="section-title">Home Starting Pitcher</span><br>
+          ${pitcherBlock(g.home_pitcher)}<br><br>
 
-          <strong>Hot Hitters (Live)</strong><br>
-          ${g.hot_hitters.length
-            ? g.hot_hitters.map(h =>
-                `<div class="hot">${h.name} — ${h.hits} H / ${h.tb} TB</div>`
-              ).join("")
-            : "None"}
-        `;
+          <span class="section-title">${g.away_team} Hitters (Recent Splits)</span>
+          <div class="hitters">${hitterBlock(g.away_hitters)}</div><br>
 
-        l.appendChild(c);
-      });
-    })
-    .catch(err => {
-      document.getElementById("live").innerHTML =
-        "<div class='card'>Unable to load live data at this time.</div>";
-      console.error(err);
+          <span class="section-title">${g.home_team} Hitters (Recent Splits)</span>
+          <div class="hitters">${hitterBlock(g.home_hitters)}</div>
+        </div>
+      `;
+
+      container.appendChild(card);
     });
-}
-
-// Initial load + refresh every 5 minutes
-loadLive();
-setInterval(loadLive, 300000);
+  });
 </script>
 
 <footer>
   <strong>Disclaimer</strong><br>
   This dashboard is provided for informational and educational purposes only.
-  All statistics, game states, and performance indicators shown are descriptive
-  of historical or current in‑game events as reported by Major League Baseball’s
-  public data feeds. Information displayed may be incomplete, delayed, revised,
-  or change at any time without notice.<br><br>
+  All statistics, matchup context, and live updates are descriptive of historical
+  or in‑game events as reported by Major League Baseball’s public data feeds.
+  Information shown may be incomplete, delayed, revised, or change without notice.<br><br>
 
   This dashboard does <strong>not</strong> constitute gambling advice, betting
   recommendations, financial advice, or predictions of outcomes. No guarantees
