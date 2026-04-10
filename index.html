@@ -2,14 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>MLB Live Performance Context</title>
+<title>MLB Performance Context</title>
 <style>
 body{font-family:system-ui;background:#f6f7f9;padding:24px}
-.card{background:white;padding:16px;border-radius:12px;margin-bottom:12px}
+.card{background:white;padding:16px;border-radius:12px;margin-bottom:16px}
 .meta{font-size:14px;color:#444}
-.badge{padding:2px 6px;border-radius:6px;font-size:12px;font-weight:600}
-.confirmed{background:#16a34a;color:white}
-.monitor{background:#fbbf24}
+.hitters{margin-top:12px;font-size:13px}
 </style>
 </head>
 
@@ -17,7 +15,7 @@ body{font-family:system-ui;background:#f6f7f9;padding:24px}
 
 <h1>MLB Performance Context</h1>
 <p style="color:#555;font-size:14px;">
-Updated hourly. Live stats update automatically during games.
+Updated hourly. Includes pitching trends and recent hitter splits.
 </p>
 
 <div id="content">Loading…</div>
@@ -27,30 +25,42 @@ fetch("/MLB-DASHBOARD/daily.json?"+Date.now())
 .then(r=>r.json())
 .then(d=>{
   const c=document.getElementById("content");
+  c.innerHTML="";
   d.games.forEach(g=>{
     const card=document.createElement("div");
     card.className="card";
 
-    function pBlock(p){
-      if(p.status!=="confirmed") return "TBD";
-
+    function p(p){
       return `
         ${p.name} (${p.hand}HP)<br>
         ERA: ${p.era}<br>
-        Last 5 Starts:<br>
-        IP Avg: ${p.last5.avg_ip}<br>
-        K Avg: ${p.last5.avg_k}<br>
-        BB Avg: ${p.last5.avg_bb}
+        Avg IP: ${p.last5.avg_ip} | K: ${p.last5.avg_k} | BB: ${p.last5.avg_bb}
       `;
+    }
+
+    function hitters(list){
+      return list.map(h=>`
+        <div>
+          ${h.name} —
+          vs RHP: AVG ${h.vsRHP.avg}, H ${h.vsRHP.hits} |
+          vs LHP: AVG ${h.vsLHP.avg}, H ${h.vsLHP.hits}
+        </div>
+      `).join("");
     }
 
     card.innerHTML=`
       <strong>${g.away_team} @ ${g.home_team}</strong><br>
       <div class="meta">
-        Away SP:<br>${pBlock(g.away_pitcher)}<br><br>
-        Home SP:<br>${pBlock(g.home_pitcher)}<br>
+        Away SP:<br>${p(g.away_pitcher)}<br><br>
+        Home SP:<br>${p(g.home_pitcher)}<br>
         Venue: ${g.venue}<br>
         Start: ${new Date(g.start_time).toLocaleString()}
+        <div class="hitters">
+          <strong>${g.away_team} Hitters</strong>
+          ${hitters(g.away_hitters)}
+          <br><strong>${g.home_team} Hitters</strong>
+          ${hitters(g.home_hitters)}
+        </div>
       </div>
     `;
     c.appendChild(card);
