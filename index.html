@@ -1,122 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>MLB Prop Engine — Daily Dashboard</title>
+<meta charset="UTF-8">
+<title>MLB Performance Context Dashboard</title>
 
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #f6f7f9;
-      padding: 24px;
-      max-width: 1200px;
-      margin: auto;
-    }
+<style>
+body {
+  font-family: system-ui;
+  background:#f6f7f9;
+  padding:24px;
+  max-width:1200px;
+  margin:auto;
+}
 
-    h1 { margin-bottom: 20px; }
-    h2 { margin-top: 32px; cursor: pointer; }
+.card {
+  background:white;
+  padding:16px;
+  border-radius:12px;
+  margin-bottom:14px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
 
-    .card {
-      background: white;
-      padding: 16px;
-      border-radius: 12px;
-      margin-bottom: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
+h1,h2 { cursor:pointer; }
 
-    .badge {
-      padding: 2px 8px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 600;
-      margin-left: 6px;
-    }
+.badge {
+  padding:2px 6px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+  margin-left:6px;
+}
 
-    .confirmed { background: #16a34a; color: white; }
-    .monitor { background: #fbbf24; color: black; }
+.confirmed {background:#16a34a;color:white;}
+.monitor {background:#fbbf24;color:#111;}
 
-    .meta { font-size: 14px; color: #444; line-height: 1.5; }
-
-    footer {
-      font-size: 12px;
-      color: #555;
-      margin-top: 48px;
-      padding-top: 16px;
-      border-top: 1px solid #ccc;
-    }
-  </style>
+.meta {font-size:14px;color:#444;line-height:1.5;}
+footer {margin-top:40px;font-size:12px;color:#555;}
+</style>
 </head>
 
 <body>
 
-<h1>MLB Prop Engine — Daily Dashboard</h1>
-
-<div id="content">Loading today’s MLB games…</div>
+<h1>MLB Performance Context — Daily Overview</h1>
+<div id="content">Loading games…</div>
 
 <footer>
-  <strong>Disclaimer:</strong><br>
-  This dashboard is for informational purposes only. Data may be incomplete or change at any time.
-  No betting, gambling, or financial advice is provided.
+This dashboard presents descriptive performance context only.
+No wagering, financial, or outcome guarantees are provided.
 </footer>
 
 <script>
-function timeBucket(dateStr) {
-  const h = new Date(dateStr).getHours();
-  if (h < 13) return "Early Games";
-  if (h < 18) return "Afternoon Games";
-  return "Evening Games";
-}
+function bucket(t){const h=new Date(t).getHours();return h<13?"Early Games":h<18?"Afternoon Games":"Evening Games";}
 
-fetch("/MLB-DASHBOARD/daily.json?nocache=" + Date.now())
-  .then(r => r.json())
-  .then(data => {
-    const container = document.getElementById("content");
-    container.innerHTML = "";
+fetch("/MLB-DASHBOARD/daily.json?nocache="+Date.now())
+.then(r=>r.json())
+.then(data=>{
+  const c=document.getElementById("content");c.innerHTML="";
+  const g={};
 
-    const grouped = {};
-
-    data.games.forEach(g => {
-      const k = timeBucket(g.start_time);
-      if (!grouped[k]) grouped[k] = [];
-      grouped[k].push(g);
-    });
-
-    Object.entries(grouped).forEach(([section, games]) => {
-      const h2 = document.createElement("h2");
-      h2.textContent = section;
-
-      const block = document.createElement("div");
-
-      games.forEach(g => {
-        const card = document.createElement("div");
-        card.className = "card";
-
-        const ab = g.away_starter_status === "confirmed" ? "confirmed" : "monitor";
-        const hb = g.home_starter_status === "confirmed" ? "confirmed" : "monitor";
-
-        card.innerHTML = `
-          <strong>${g.away} @ ${g.home}</strong><br>
-          <div class="meta">
-            Away SP: ${g.away_starter} (${g.away_pitch_hand})
-            <span class="badge ${ab}">${ab.toUpperCase()}</span><br>
-            Home SP: ${g.home_starter} (${g.home_pitch_hand})
-            <span class="badge ${hb}">${hb.toUpperCase()}</span><br>
-            Park: ${g.park_factor}<br>
-            Weather: ${g.weather}<br>
-            Start: ${new Date(g.start_time).toLocaleString()}
-          </div>
-        `;
-        block.appendChild(card);
-      });
-
-      h2.onclick = () => {
-        block.style.display = block.style.display === "none" ? "block" : "none";
-      };
-
-      container.appendChild(h2);
-      container.appendChild(block);
-    });
+  data.games.forEach(x=>{
+    const b=bucket(x.start_time);
+    if(!g[b])g[b]=[];
+    g[b].push(x);
   });
+
+  Object.entries(g).forEach(([k,v])=>{
+    const h=document.createElement("h2");h.textContent=k;
+    const d=document.createElement("div");
+
+    v.forEach(x=>{
+      const ac=x.away_status==="confirmed"?"confirmed":"monitor";
+      const hc=x.home_status==="confirmed"?"confirmed":"monitor";
+
+      d.innerHTML+=`
+      <div class="card">
+        <strong>${x.away} @ ${x.home}</strong><br>
+        <div class="meta">
+        Away SP: ${x.away_starter}<span class="badge ${ac}">${ac}</span><br>
+        Handedness: ${x.away_pitcher_context.hand||"N/A"}<br>
+        Workload Outlook: ${x.away_pitcher_context.workload}<br>
+        Strikeout Range: ${x.away_pitcher_context.strikeouts}<br><br>
+
+        Home SP: ${x.home_starter}<span class="badge ${hc}">${hc}</span><br>
+        Handedness: ${x.home_pitcher_context.hand||"N/A"}<br>
+        Workload Outlook: ${x.home_pitcher_context.workload}<br>
+        Strikeout Range: ${x.home_pitcher_context.strikeouts}<br><br>
+
+        Hitter Output: ${x.hitter_bases_outlook.expected_range}<br>
+        Upper-End Results: ${x.hitter_bases_outlook.upper_range}<br>
+        Park: ${x.park_factor}<br>
+        Weather: ${x.weather}<br>
+        Start: ${new Date(x.start_time).toLocaleString()}
+        </div>
+      </div>`;
+    });
+
+    h.onclick=()=>{d.style.display=d.style.display==="none"?"block":"none";}
+    c.appendChild(h);c.appendChild(d);
+  });
+});
 </script>
 
 </body>
