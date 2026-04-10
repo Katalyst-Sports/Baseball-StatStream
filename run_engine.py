@@ -9,13 +9,19 @@ NOW = datetime.now(MLB_TZ)
 TODAY = NOW.date().isoformat()
 SEASON = NOW.year
 
-# ============================================================================
-# Helpers
-# ============================================================================
+# =====================================================
+# Utilities
+# =====================================================
 
 def fetch(url):
     with urlopen(url) as r:
         return json.loads(r.read().decode("utf-8"))
+
+def n(x): return x if x is not None else 0
+
+# =====================================================
+# Pitcher Evaluation
+# =====================================================
 
 def pitcher_hand(pid):
     try:
@@ -24,30 +30,33 @@ def pitcher_hand(pid):
         return "N/A"
 
 def pitcher_last5(pid):
-    try:
-        logs = fetch(
-            f"{BASE}/v1/people/{pid}/stats"
-            f"?stats=gameLog&group=pitching&season={SEASON}"
-        )["stats"][0]["splits"][:5]
+    logs = fetch(
+        f"{BASE}/v1/people/{pid}/stats"
+        f"?stats=gameLog&group=pitching&season={SEASON}"
+    )["stats"][0]["splits"][:5]
 
-        outs = k = bb = 0
-        for g in logs:
-            ip = g["stat"].get("inningsPitched", "0")
-            if "." in ip:
-                w, f = ip.split(".")
-                outs += int(w) * 3 + int(f)
-            else:
-                outs += int(ip) * 3
-            k += int(g["stat"].get("strikeOuts", 0))
-            bb += int(g["stat"].get("baseOnBalls", 0))
+    ip = k = bb = h = er = 0
+    for g in logs:
+        ip += float(g["stat"].get("inningsPitched","0"))
+        k  += n(g["stat"].get("strikeOuts"))
+        bb += n(g["stat"].get("baseOnBalls"))
+        h  += n(g["stat"].get("hits"))
+        er += n(g["stat"].get("earnedRuns"))
 
-        return {
-            "avg_ip": round((outs / 3) / len(logs), 2) if logs else "N/A",
-            "avg_k": round(k / len(logs), 2) if logs else "N/A",
-            "avg_bb": round(bb / len(logs), 2) if logs else "N/A"
-        }
-    except:
-        return {"avg_ip":"N/A","avg_k":"N/A","avg_bb":"N/A"}
+    games = len(logs)
+    whip = (h + bb) / ip if ip else None
+
+    quality = games >= 3 and ip/games >= 6 and er/games <= 3
+    elite = ip/games >= 7 and k/games >= 8 and whip is not None and whip <= 1.00
+
+    return {
+        "avg_ip": round(ip/games,2) if games else "N/A",
+        "avg_k": round(k/games,2) if games else "N/A",
+        "avg_bb": round(bb/games,2) if games else "N/A",
+        "whip": round(whip,2) if whip else "N/A",
+        "quality": quality,
+        "elite": elite
+    }
 
 def pitcher_era(pid):
     try:
@@ -58,179 +67,132 @@ def pitcher_era(pid):
     except:
         return "N/A"
 
-def team_hitters(team_id):
-    try:
-        roster = fetch(f"{BASE}/v1/teams/{team_id}/roster")["roster"]
-        return [
-            {"id": p["person"]["id"], "name": p["person"]["fullName"]}
-            for p in roster if p["position"]["type"] != "Pitcher"
-        ][:9]
-    except:
-        return []
+# =====================================================
+# Hitter Evaluation
+# =====================================================
 
-def hitter_split(pid, hand):
-    sit = "vr" if hand == "R" else "vl"
+def hitter_season_stats(pid):
+    s = fetch(
+        f"{BASE}/v1/people/{pid}/stats"
+        f"?stats=season&group=hitting&season={SEASON}"
+    )["stats"][0]["splits"][0]["stat"]
+
+    ab = n(s.get("atBats"))
+    so = n(s.get("strikeOuts"))
+    bb = n(s.get("baseOnBalls"))
+    hr = n(s.get("homeRuns"))
+    avg = s.get("avg","N/A")
+
+    pa = ab + bb
+    bip = ab - so - hr
+    bip_pa = round(bip/pa,2) if pa else "N/A"
+
+    k_rate = round((so/pa)*100,1) if pa else None
+    bb_rate = round((bb/pa)*100,1) if pa else None
+
+    return {
+        "avg": avg,
+        "k_rate": k_rate,
+        "bb_rate": bb_rate,
+        "bip_pa": bip_pa,
+        "so": so,
+        "bb": bb
+    }
+
+def batting_order_tier(stats):
+    if stats["avg"]!="N/A" and float(stats["avg"])>=.285 and stats["k_rate"]<=18:
+        return "Top‑Order"
+    if stats["k_rate"] and stats["k_rate"]<=25:
+        return "Middle‑Order"
+    return "Bottom‑Order"
+
+def hit_streak(pid):
+    logs = fetch(
+        f"{BASE}/v1/people/{pid}/stats"
+        f"?stats=gameLog&group=hitting&season={SEASON}"
+    )["stats"][0]["splits"]
+    streak=0
+    for g in logs:
+        if n(g["stat"].get("hits"))>0: streak+=1
+        else: break
+    return streak
+
+def risp_stats(pid):
     try:
         s = fetch(
             f"{BASE}/v1/people/{pid}/stats"
-            f"?stats=statSplits&group=hitting&sitCodes={sit}&season={SEASON}"
-        )["stats"][0]["splits"]
-        if not s:
-            return {"avg":"N/A","hits":"N/A"}
-        st = s[0]["stat"]
-        return {"avg": st.get("avg","N/A"), "hits": st.get("hits","N/A")}
+            f"?stats=season&group=hitting&sitCodes=risp&season={SEASON}"
+        )["stats"][0]["splits"][0]["stat"]
+        return {"avg":s.get("avg","N/A"),"hits":s.get("hits","N/A")}
     except:
         return {"avg":"N/A","hits":"N/A"}
 
-def hit_streak(pid):
-    try:
-        logs = fetch(
-            f"{BASE}/v1/people/{pid}/stats"
-            f"?stats=gameLog&group=hitting&season={SEASON}"
-        )["stats"][0]["splits"]
-        streak = 0
-        for g in logs[:5]:
-            if int(g["stat"].get("hits",0)) > 0:
-                streak += 1
-            else:
-                break
-        return streak if streak >= 3 else 0
-    except:
-        return 0
+# =====================================================
+# Team Hitters
+# =====================================================
 
-# ============================================================================
-# DAILY BASELINE (daily.json)
-# ============================================================================
+def team_hitters(team_id):
+    roster = fetch(f"{BASE}/v1/teams/{team_id}/roster")["roster"]
+    return [
+        {"id":p["person"]["id"],"name":p["person"]["fullName"]}
+        for p in roster if p["position"]["type"]!="Pitcher"
+    ][:9]
+
+# =====================================================
+# DAILY JSON
+# =====================================================
 
 schedule = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
 )
 
-games = []
+daily=[]
 
-for d in schedule.get("dates", []):
-    for g in d.get("games", []):
-        away = g["teams"]["away"]["team"]
-        home = g["teams"]["home"]["team"]
+for d in schedule.get("dates",[]):
+    for g in d.get("games",[]):
+        away=g["teams"]["away"]["team"]
+        home=g["teams"]["home"]["team"]
+        ap=g["teams"]["away"].get("probablePitcher")
+        hp=g["teams"]["home"].get("probablePitcher")
 
-        ap = g["teams"]["away"].get("probablePitcher")
-        hp = g["teams"]["home"].get("probablePitcher")
+        game={
+            "away_team":away["name"],
+            "home_team":home["name"],
+            "venue":g["venue"]["name"],
+            "start":g["gameDate"],
+            "away_pitcher":{},
+            "home_pitcher":{},
+            "away_hitters":[],
+            "home_hitters":[]
+        }
 
-        ah = pitcher_hand(ap["id"]) if ap else "R"
-        hh = pitcher_hand(hp["id"]) if hp else "R"
+        if ap:
+            game["away_pitcher"]={
+                "name":ap["fullName"],
+                "hand":pitcher_hand(ap["id"]),
+                "era":pitcher_era(ap["id"]),
+                **pitcher_last5(ap["id"])
+            }
+        if hp:
+            game["home_pitcher"]={
+                "name":hp["fullName"],
+                "hand":pitcher_hand(hp["id"]),
+                "era":pitcher_era(hp["id"]),
+                **pitcher_last5(hp["id"])
+            }
 
-        away_hitters = team_hitters(away["id"])
-        home_hitters = team_hitters(home["id"])
+        for side,team in [("away_hitters",away),("home_hitters",home)]:
+            for h in team_hitters(team["id"]):
+                stats=hitter_season_stats(h["id"])
+                game[side].append({
+                    "name":h["name"],
+                    "tier":batting_order_tier(stats),
+                    "stats":stats,
+                    "streak":hit_streak(h["id"]),
+                    "risp":risp_stats(h["id"])
+                })
 
-        games.append({
-            "start_time": g["gameDate"],
-            "venue": g["venue"]["name"],
-            "away_team": away["name"],
-            "home_team": home["name"],
-
-            "away_pitcher": {
-                "name": ap["fullName"] if ap else "TBD",
-                "hand": ah,
-                "era": pitcher_era(ap["id"]) if ap else "N/A",
-                "last5": pitcher_last5(ap["id"]) if ap else {}
-            },
-
-            "home_pitcher": {
-                "name": hp["fullName"] if hp else "TBD",
-                "hand": hh,
-                "era": pitcher_era(hp["id"]) if hp else "N/A",
-                "last5": pitcher_last5(hp["id"]) if hp else {}
-            },
-
-            "away_hitters": [
-                {
-                    "name": h["name"],
-                    "vsRHP": hitter_split(h["id"], "R"),
-                    "vsLHP": hitter_split(h["id"], "L"),
-                    "hot_streak": hit_streak(h["id"])
-                } for h in away_hitters
-            ],
-
-            "home_hitters": [
-                {
-                    "name": h["name"],
-                    "vsRHP": hitter_split(h["id"], "R"),
-                    "vsLHP": hitter_split(h["id"], "L"),
-                    "hot_streak": hit_streak(h["id"])
-                } for h in home_hitters
-            ]
-        })
+        daily.append(game)
 
 with open("daily.json","w") as f:
-    json.dump({"updated_at":NOW.isoformat(),"games":games}, f, indent=2)
-
-# ============================================================================
-# LIVE GAMES (live.json)
-# ============================================================================
-
-live_games = []
-
-for d in schedule.get("dates", []):
-    for g in d.get("games", []):
-        if g["status"]["abstractGameState"] == "Live":
-            feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
-            box = feed["liveData"]["boxscore"]
-            lines = feed["liveData"]["linescore"]
-
-            hot_hitters = []
-            top_pitchers = []
-
-            for side in ["away","home"]:
-                for bid in box["teams"][side]["batters"]:
-                    b = box["teams"][side]["players"][f"ID{bid}"]["stats"]["batting"]
-                    if b.get("hits",0) >= 2:
-                        hot_hitters.append({
-                            "name": box["teams"][side]["players"][f"ID{bid}"]["person"]["fullName"],
-                            "hits": b["hits"]
-                        })
-
-                pitchers = box["teams"][side]["pitchers"]
-                players = box["teams"][side]["players"]
-
-                if pitchers:
-                    sp = pitchers[0]
-                    cp = pitchers[-1]
-                    bullpen = sp != cp
-                    ps = players[f"ID{cp}"]["stats"]["pitching"]
-                    if ps.get("strikeOuts",0) >= 6 and ps.get("earnedRuns",0) <= 2:
-                        top_pitchers.append({
-                            "name": players[f"ID{cp}"]["person"]["fullName"],
-                            "k": ps["strikeOuts"],
-                            "er": ps["earnedRuns"]
-                        })
-
-            live_games.append({
-                "score": f"{lines['teams']['away']['runs']} – {lines['teams']['home']['runs']}",
-                "inning": lines.get("currentInningOrdinal"),
-                "hot_hitters": hot_hitters,
-                "top_pitchers": top_pitchers,
-                "bullpen_active": False
-            })
-
-with open("live.json","w") as f:
-    json.dump({"updated_at":NOW.isoformat(),"games":live_games}, f, indent=2)
-
-# ============================================================================
-# POSTGAME SUMMARIES (postgame.json)
-# ============================================================================
-
-postgames = []
-
-for d in schedule.get("dates", []):
-    for g in d.get("games", []):
-        if g["status"]["abstractGameState"] == "Final":
-            feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
-            lines = feed["liveData"]["linescore"]
-
-            postgames.append({
-                "game": f"{g['teams']['away']['team']['name']} @ {g['teams']['home']['team']['name']}",
-                "score": f"{lines['teams']['away']['runs']} – {lines['teams']['home']['runs']}"
-            })
-
-with open("postgame.json","w") as f:
-    json.dump({"updated_at":NOW.isoformat(),"games":postgames}, f, indent=2)
+    json.dump({"updated_at":NOW.isoformat(),"games":daily},f,indent=2)
