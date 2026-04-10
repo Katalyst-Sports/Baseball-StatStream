@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MLB Daily Dashboard</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f6f7f9;
+      padding: 24px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+    footer {
+      font-size: 12px;
+      color: #555;
+      margin-top: 40px;
+      border-top: 1px solid #ccc;
+      padding-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>MLB Prop Engine — Daily Dashboard</h2>
+
+<div class="card" id="content">
+  Loading daily data...
+</div>
+
+<footer>
+  <strong>Disclaimer:</strong><br>
+  This dashboard is provided for informational and educational purposes only.
+  Information may be inaccurate, incomplete, or change at any time.
+  This does not constitute gambling, betting, or financial advice.
+  Users are solely responsible for verifying all information independently.
+  <br><br>
+  <em>This dashboard is a personal analytical tool and is not intended for commercial use or distribution.</em>
+</footer>
+
+<script>
+fetch("daily.json")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("content").innerHTML =
+      "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
+  })
+  .catch(() => {
+    document.getElementById("content").innerText =
+      "Daily data not available yet.";
+  });
+</script>
+
+</body>
+</html>
