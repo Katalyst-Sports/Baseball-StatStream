@@ -1,4 +1,4 @@
-name: MLB Context Engine (Hourly)
+name: MLB Live Engine
 
 permissions:
   contents: write
@@ -6,10 +6,10 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/5 * * * *"   # Every 5 minutes
 
 jobs:
-  run-engine:
+  live-engine:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,6 +20,6 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email actions@github.com
-          git add daily.json
-          git commit -m "Hourly MLB update" || echo "No change"
+          git add live.json
+          git commit -m "Live MLB update" || echo "No changes"
           git push
