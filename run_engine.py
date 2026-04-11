@@ -481,7 +481,7 @@ def build_dashboard_recap(yesterday_postgame):
                 ]
             )
 
-                       prompt = f"""
+            prompt = f"""
 You are writing concise MLB game recaps for a professional baseball data dashboard.
 
 Return valid JSON only with this exact schema:
