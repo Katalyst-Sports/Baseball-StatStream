@@ -134,9 +134,9 @@ if not recap and postgame:
 # WRITE FILES
 # =====================================================
 
-if recap:
-    with open("daily_recap.json", "w") as f:
-        json.dump(recap, f, indent=2)
+
+with open("daily_recap.json", "w") as f:
+    json.dump(recap, f, indent=2)
 
 json.dump({"updated_at": NOW.isoformat(), "games": daily}, open("daily.json", "w"), indent=2)
 json.dump({"updated_at": NOW.isoformat(), "games": live}, open("live.json", "w"), indent=2)
