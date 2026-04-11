@@ -585,6 +585,8 @@ Games:
 
     return dashboard
 
+
+schedule_today = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
 )
 
