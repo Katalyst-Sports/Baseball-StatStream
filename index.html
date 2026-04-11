@@ -87,7 +87,8 @@ Live data last updated: <span id="updated">loading…</span>
 
 <!-- ================= LIVE GAMES ================= -->
 <div id="live"></div>
-
+<!-- ================= POSTGAME RECAPS ================= -->
+<div id="postgame"></div>
 <!-- ================= DAILY GAMES ================= -->
 <div id="games"></div>
 
@@ -205,7 +206,42 @@ function toggle(id) {
   el.style.display = el.style.display === "none" ? "block" : "none";
 }
 </script>
+  
+<script>
+/* =========================
+   POSTGAME RECAPS
+   ========================= */
+fetch("./postgame.json?nocache=" + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    const pg = document.getElementById("postgame");
 
+    if (!d.games || d.games.length === 0) {
+      return; // no postgames yet
+    }
+
+    pg.innerHTML = "<h2>Final Recaps</h2>";
+
+    d.games.forEach(g => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <strong>${g.game}</strong><br>
+        Final Score: ${g.final_score}<br><br>
+
+        <strong>Contact Grades</strong><br>
+        ${g.contact_grades.map(p =>
+          `${p.player}: ${p.contact_grade}`
+        ).join("<br>")}
+      `;
+
+      pg.appendChild(card);
+    });
+  })
+  .catch(() => {});
+</script>
+  
 <footer>
   <strong>Disclaimer</strong><br>
   This dashboard is provided for informational and educational purposes only.
