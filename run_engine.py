@@ -392,12 +392,19 @@ Games:
         recap = None
 
 if not recap and postgame:
+    reason = "unknown"
+
+    if not client:
+        reason = "OpenAI client not initialized (missing API key)"
+    else:
+        reason = "OpenAI request failed (see Actions logs)"
+
     recap = {
         "date": TODAY,
         "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
         "article": (
             "One or more MLB games have gone final today. "
-            "Detailed recaps will be generated automatically."
+            f"AI recap unavailable. Reason: {reason}."
         )
     }
 
