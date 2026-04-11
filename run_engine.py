@@ -3,7 +3,7 @@ print("### GROQ ENGINE VERSION RUNNING ###")
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from urllib.request import urlopen
 from zoneinfo import ZoneInfo
 
@@ -16,7 +16,9 @@ from groq import Groq
 BASE = "https://statsapi.mlb.com/api"
 MLB_TZ = ZoneInfo("America/New_York")
 NOW = datetime.now(MLB_TZ)
+
 TODAY = NOW.date().isoformat()
+YESTERDAY = (NOW - timedelta(days=1)).date().isoformat()
 SEASON = NOW.year
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
@@ -34,24 +36,29 @@ def safe(x):
     return x if x is not None else 0
 
 # =====================================================
-# PITCHER HELPERS
+# PLAYER STAT HELPERS (SEASON‑TO‑DATE)
 # =====================================================
 
-def pitcher_stats(pid):
+def pitcher_summary(p):
+    if not p:
+        return {}
+
     out = {
+        "name": p["fullName"],
         "hand": "N/A",
-        "era": "N/A",
-        "last5": "N/A"
+        "era": "N/A"
     }
+
     try:
-        profile = fetch(f"{BASE}/v1/people/{pid}")["people"][0]
+        profile = fetch(f"{BASE}/v1/people/{p['id']}")["people"][0]
         out["hand"] = profile["pitchHand"]["code"]
     except:
         pass
 
     try:
         s = fetch(
-            f"{BASE}/v1/people/{pid}/stats?stats=season&group=pitching&season={SEASON}"
+            f"{BASE}/v1/people/{p['id']}/stats"
+            f"?stats=season&group=pitching&season={SEASON}"
         )["stats"][0]["splits"][0]["stat"]
         out["era"] = s.get("era", "N/A")
     except:
@@ -60,57 +67,40 @@ def pitcher_stats(pid):
     return out
 
 # =====================================================
-# HITTER HELPERS
+# BUILD TODAY (PRE‑GAME / LIVE / FINAL)
 # =====================================================
 
-def hitter_stats(pid):
-    try:
-        s = fetch(
-            f"{BASE}/v1/people/{pid}/stats?stats=season&group=hitting&season={SEASON}"
-        )["stats"][0]["splits"][0]["stat"]
-
-        return {
-            "avg": s.get("avg", "N/A"),
-            "hr": s.get("homeRuns", 0),
-            "rbi": s.get("rbi", 0)
-        }
-    except:
-        return {"avg": "N/A", "hr": 0, "rbi": 0}
-
-# =====================================================
-# BUILD DAILY / LIVE / POSTGAME
-# =====================================================
-
-schedule = fetch(
+schedule_today = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
 )
 
 daily = []
 live = []
-postgame = []
+postgame_today = []
 
-for d in schedule.get("dates", []):
+for d in schedule_today.get("dates", []):
     for g in d.get("games", []):
 
-        away = g["teams"]["away"]["team"]
-        home = g["teams"]["home"]["team"]
+        away = g["teams"]["away"]["team"]["name"]
+        home = g["teams"]["home"]["team"]["name"]
+        venue = g["venue"]["name"]
+        start = g["gameDate"]
         status = g["status"]["abstractGameState"]
 
         ap = g["teams"]["away"].get("probablePitcher")
         hp = g["teams"]["home"].get("probablePitcher")
 
-        game = {
-            "away_team": away["name"],
-            "home_team": home["name"],
-            "venue": g["venue"]["name"],
-            "start": g["gameDate"],
-            "away_pitcher": pitcher_stats(ap["id"]) if ap else {},
-            "home_pitcher": pitcher_stats(hp["id"]) if hp else {},
-        }
+        # ---------- DAILY (PRE‑GAME CONTEXT) ----------
+        daily.append({
+            "away_team": away,
+            "home_team": home,
+            "venue": venue,
+            "start": start,
+            "away_pitcher": pitcher_summary(ap),
+            "home_pitcher": pitcher_summary(hp)
+        })
 
-        daily.append(game)
-
-        # ---------------- LIVE ----------------
+        # ---------- LIVE ----------
         if status in ["Live", "In Progress"]:
             feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
             lines = feed["liveData"]["linescore"]
@@ -120,29 +110,30 @@ for d in schedule.get("dates", []):
             dom = []
 
             for side in ["away", "home"]:
-                for bid in box["teams"][side]["batters"]:
-                    b = box["teams"][side]["players"][f"ID{bid}"]["stats"]["batting"]
+                team = box["teams"][side]
+                for bid in team["batters"]:
+                    b = team["players"][f"ID{bid}"]["stats"]["batting"]
                     if safe(b.get("hits")) >= 2:
                         hot.append(
-                            box["teams"][side]["players"][f"ID{bid}"]["person"]["fullName"]
+                            team["players"][f"ID{bid}"]["person"]["fullName"]
                         )
 
-                for pid in box["teams"][side]["pitchers"][-1:]:
-                    p = box["teams"][side]["players"][f"ID{pid}"]["stats"]["pitching"]
+                for pid in team["pitchers"][-1:]:
+                    p = team["players"][f"ID{pid}"]["stats"]["pitching"]
                     if safe(p.get("strikeOuts")) >= 6:
                         dom.append(
-                            box["teams"][side]["players"][f"ID{pid}"]["person"]["fullName"]
+                            team["players"][f"ID{pid}"]["person"]["fullName"]
                         )
 
             live.append({
-                "game": f"{away['name']} @ {home['name']}",
+                "game": f"{away} @ {home}",
                 "score": f"{lines['teams']['away']['runs']}–{lines['teams']['home']['runs']}",
                 "inning": lines.get("currentInningOrdinal"),
                 "hot_hitters": hot,
                 "top_pitchers": dom
             })
 
-        # ---------------- FINAL ----------------
+        # ---------- FINAL (TODAY) ----------
         if status == "Final":
             feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
             lines = feed["liveData"]["linescore"]
@@ -151,29 +142,30 @@ for d in schedule.get("dates", []):
             away_runs = lines["teams"]["away"]["runs"]
             home_runs = lines["teams"]["home"]["runs"]
 
-            winner = away["name"] if away_runs > home_runs else home["name"]
-            loser = home["name"] if away_runs > home_runs else away["name"]
+            winner = away if away_runs > home_runs else home
+            loser = home if away_runs > home_runs else away
 
             hitters = []
             pitchers = []
 
             for side in ["away", "home"]:
-                for bid in box["teams"][side]["batters"]:
-                    b = box["teams"][side]["players"][f"ID{bid}"]["stats"]["batting"]
+                team = box["teams"][side]
+                for bid in team["batters"]:
+                    b = team["players"][f"ID{bid}"]["stats"]["batting"]
                     if safe(b.get("hits")) >= 2 or safe(b.get("homeRuns")) >= 1:
                         hitters.append(
-                            box["teams"][side]["players"][f"ID{bid}"]["person"]["fullName"]
+                            team["players"][f"ID{bid}"]["person"]["fullName"]
                         )
 
-                for pid in box["teams"][side]["pitchers"][:1]:
-                    p = box["teams"][side]["players"][f"ID{pid}"]["stats"]["pitching"]
+                for pid in team["pitchers"][:1]:
+                    p = team["players"][f"ID{pid}"]["stats"]["pitching"]
                     if safe(p.get("strikeOuts")) >= 6:
                         pitchers.append(
-                            box["teams"][side]["players"][f"ID{pid}"]["person"]["fullName"]
+                            team["players"][f"ID{pid}"]["person"]["fullName"]
                         )
 
-            postgame.append({
-                "game": f"{away['name']} @ {home['name']}",
+            postgame_today.append({
+                "game": f"{away} @ {home}",
                 "winner": winner,
                 "loser": loser,
                 "final_score": f"{away_runs}–{home_runs}",
@@ -182,64 +174,114 @@ for d in schedule.get("dates", []):
             })
 
 # =====================================================
-# DAILY RECAP — GROQ
+# BUILD YESTERDAY (FINAL + AI RECAP)
 # =====================================================
 
-recap = None
+schedule_yesterday = fetch(
+    f"{BASE}/v1/schedule?sportId=1&date={YESTERDAY}"
+)
 
-if postgame and client:
-    try:
-        games_text = "\n".join([
-            f"{g['winner']} beat {g['loser']} ({g['final_score']})"
-            for g in postgame
-        ])
+yesterday_postgame = []
 
-        prompt = f"""
-You are a professional MLB beat writer.
+for d in schedule_yesterday.get("dates", []):
+    for g in d.get("games", []):
+        if g["status"]["abstractGameState"] != "Final":
+            continue
 
-Write a DAILY MLB recap with:
+        away = g["teams"]["away"]["team"]["name"]
+        home = g["teams"]["home"]["team"]["name"]
+
+        feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
+        lines = feed["liveData"]["linescore"]
+        box = feed["liveData"]["boxscore"]
+
+        away_runs = lines["teams"]["away"]["runs"]
+        home_runs = lines["teams"]["home"]["runs"]
+
+        winner = away if away_runs > home_runs else home
+        loser = home if away_runs > home_runs else away
+
+        hitters = []
+        pitchers = []
+
+        for side in ["away", "home"]:
+            team = box["teams"][side]
+            for bid in team["batters"]:
+                b = team["players"][f"ID{bid}"]["stats"]["batting"]
+                if safe(b.get("hits")) >= 2 or safe(b.get("homeRuns")) >= 1:
+                    hitters.append(
+                        team["players"][f"ID{bid}"]["person"]["fullName"]
+                    )
+
+            for pid in team["pitchers"][:1]:
+                p = team["players"][f"ID{pid}"]["stats"]["pitching"]
+                if safe(p.get("strikeOuts")) >= 6:
+                    pitchers.append(
+                        team["players"][f"ID{pid}"]["person"]["fullName"]
+                    )
+
+        yesterday_postgame.append({
+            "game": f"{away} @ {home}",
+            "winner": winner,
+            "loser": loser,
+            "final_score": f"{away_runs}–{home_runs}",
+            "hitters": hitters,
+            "pitchers": pitchers
+        })
+
+# =====================================================
+# YESTERDAY AI RECAP (GROQ)
+# =====================================================
+
+yesterday_recap = None
+
+if yesterday_postgame and client:
+    games_text = "\n".join([
+        f"""
+Game: {g['game']}
+Final: {g['final_score']}
+Winner: {g['winner']}
+Loser: {g['loser']}
+Hitters: {', '.join(g['hitters']) if g['hitters'] else 'Multiple contributors'}
+Pitchers: {', '.join(g['pitchers']) if g['pitchers'] else 'Staff effort'}
+"""
+        for g in yesterday_postgame
+    ])
+
+    prompt = f"""
+You are a professional MLB columnist.
+
+Write a YESTERDAY MLB recap with:
 - A strong headline
 - One paragraph per game
-- Mentions of key hitters and pitchers
-- A short "What It Means" section
+- Specific stats and reasons
+- End with a section titled "Biggest Story of the Day"
+
+Avoid generic language.
 
 Games:
 {games_text}
 """
 
-        response = client.chat.completions.create(
-            model="llama3-70b-8192",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.6
-        )
+    response = client.chat.completions.create(
+        model="llama3-70b-8192",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.6
+    )
 
-        recap = {
-            "date": TODAY,
-            "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
-            "article": response.choices[0].message.content.strip()
-        }
-
-    except Exception as e:
-        recap = {
-            "date": TODAY,
-            "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
-            "article": f"Groq error: {str(e)}"
-        }
-
-if not recap and postgame:
-    recap = {
-        "date": TODAY,
-        "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
-        "article": "One or more MLB games have gone final today. Recap generation will retry automatically."
+    yesterday_recap = {
+        "date": YESTERDAY,
+        "headline": f"MLB Daily Recap — {datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
+        "article": response.choices[0].message.content.strip()
     }
 
 # =====================================================
 # WRITE FILES (FORCE OVERWRITE)
 # =====================================================
 
-with open("daily_recap.json", "w") as f:
-    json.dump(recap, f, indent=2)
-
 json.dump({"updated_at": NOW.isoformat(), "games": daily}, open("daily.json", "w"), indent=2)
 json.dump({"updated_at": NOW.isoformat(), "games": live}, open("live.json", "w"), indent=2)
-json.dump({"updated_at": NOW.isoformat(), "games": postgame}, open("postgame.json", "w"), indent=2)
+json.dump({"updated_at": NOW.isoformat(), "games": postgame_today}, open("postgame.json", "w"), indent=2)
+
+if yesterday_recap:
+    json.dump(yesterday_recap, open("yesterday_recap.json", "w"), indent=2)
