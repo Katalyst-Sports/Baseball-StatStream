@@ -9,10 +9,6 @@ from zoneinfo import ZoneInfo
 
 from groq import Groq
 
-# =====================================================
-# CONFIG
-# =====================================================
-
 BASE = "https://statsapi.mlb.com/api"
 MLB_TZ = ZoneInfo("America/New_York")
 NOW = datetime.now(MLB_TZ)
@@ -23,20 +19,47 @@ SEASON = NOW.year
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
+FETCH_CACHE = {}
 
-
-# =====================================================
-# UTILITIES
-# =====================================================
 
 def fetch(url):
+    if url in FETCH_CACHE:
+        return FETCH_CACHE[url]
+
     req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urlopen(req, timeout=20) as response:
-        return json.loads(response.read().decode("utf-8"))
+        payload = json.loads(response.read().decode("utf-8"))
+        FETCH_CACHE[url] = payload
+        return payload
 
 
 def safe_number(value, default=0):
     return value if value is not None else default
+
+
+def safe_float(value, default=0.0):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def parse_ip(ip_value):
+    text = str(ip_value or "0")
+    if "." not in text:
+        return safe_float(text, 0.0)
+
+    whole, frac = text.split(".", 1)
+    outs_lookup = {"0": 0, "1": 1, "2": 2}
+    outs = outs_lookup.get(frac, 0)
+    return safe_float(whole, 0.0) + (outs / 3.0)
+
+
+def format_baseball_avg(value):
+    if value is None:
+        return "N/A"
+    text = f"{value:.3f}"
+    return text[1:] if text.startswith("0") else text
 
 
 def get_player_stat_block(team, player_id, stat_group):
@@ -54,9 +77,170 @@ def write_json(path, payload):
         json.dump(payload, fh, indent=2)
 
 
-# =====================================================
-# PLAYER STAT HELPERS (SEASON-TO-DATE)
-# =====================================================
+def player_profile(player_id):
+    people = fetch(f"{BASE}/v1/people/{player_id}").get("people", [])
+    return people[0] if people else {}
+
+
+def player_stat_group(player_id, group, stats_type="season", extra_query=""):
+    url = (
+        f"{BASE}/v1/people/{player_id}/stats"
+        f"?stats={stats_type}&group={group}&season={SEASON}"
+    )
+    if extra_query:
+        url += f"&{extra_query}"
+
+    stats = fetch(url).get("stats", [])
+    splits = stats[0].get("splits", []) if stats else []
+    return splits
+
+
+def team_active_hitters(team_id):
+    roster = fetch(
+        f"{BASE}/v1/teams/{team_id}/roster?rosterType=active"
+    ).get("roster", [])
+
+    hitters = []
+    for entry in roster:
+        person = entry.get("person", {})
+        position = entry.get("position", {}).get("abbreviation")
+        if position == "P":
+            continue
+        hitters.append({"id": person.get("id"), "name": person.get("fullName")})
+
+    return hitters
+
+
+def pitcher_last_five(player_id):
+    splits = player_stat_group(player_id, "pitching", "gameLog")
+    starts = []
+
+    for split in reversed(splits):
+        stat = split.get("stat", {})
+        if safe_number(stat.get("gamesStarted")) >= 1:
+            starts.append(stat)
+        if len(starts) == 5:
+            break
+
+    if not starts:
+        return {
+            "starts_used": 0,
+            "avg_ip": "N/A",
+            "avg_k": "N/A",
+            "avg_bb": "N/A",
+            "avg_era": "N/A",
+            "whip": "N/A",
+            "k_bb": "N/A",
+        }
+
+    total_ip = sum(parse_ip(start.get("inningsPitched")) for start in starts)
+    total_k = sum(safe_number(start.get("strikeOuts")) for start in starts)
+    total_bb = sum(safe_number(start.get("baseOnBalls")) for start in starts)
+    total_er = sum(safe_number(start.get("earnedRuns")) for start in starts)
+    total_hits = sum(safe_number(start.get("hits")) for start in starts)
+
+    starts_count = len(starts)
+    whip = ((total_hits + total_bb) / total_ip) if total_ip else None
+    era = ((total_er * 9) / total_ip) if total_ip else None
+    k_bb = (total_k / total_bb) if total_bb else float(total_k)
+
+    return {
+        "starts_used": starts_count,
+        "avg_ip": f"{(total_ip / starts_count):.1f}",
+        "avg_k": f"{(total_k / starts_count):.1f}",
+        "avg_bb": f"{(total_bb / starts_count):.1f}",
+        "avg_era": f"{era:.2f}" if era is not None else "N/A",
+        "whip": f"{whip:.2f}" if whip is not None else "N/A",
+        "k_bb": f"{k_bb:.2f}" if total_bb else f"{int(total_k)}.00",
+    }
+
+
+def hitter_split(player_id, sit_code):
+    try:
+        splits = player_stat_group(
+            player_id,
+            "hitting",
+            "statSplits",
+            extra_query=f"sitCodes={sit_code}",
+        )
+        if not splits:
+            return {"avg": "N/A", "hits": 0}
+
+        stat = splits[0].get("stat", {})
+        return {
+            "avg": stat.get("avg", "N/A"),
+            "hits": safe_number(stat.get("hits")),
+        }
+    except Exception:
+        return {"avg": "N/A", "hits": 0}
+
+
+def hitter_overview(player_id):
+    profile = player_profile(player_id)
+    season_splits = player_stat_group(player_id, "hitting", "season")
+    season = season_splits[0].get("stat", {}) if season_splits else {}
+    game_logs = player_stat_group(player_id, "hitting", "gameLog")
+
+    recent_games = list(reversed(game_logs))[:5]
+    hit_streak = 0
+    for split in recent_games:
+        if safe_number(split.get("stat", {}).get("hits")) > 0:
+            hit_streak += 1
+        else:
+            break
+
+    last_ten = list(reversed(game_logs))[:10]
+    last10_hits = sum(safe_number(item.get("stat", {}).get("hits")) for item in last_ten)
+    last10_ab = sum(safe_number(item.get("stat", {}).get("atBats")) for item in last_ten)
+    last10_pa = sum(safe_number(item.get("stat", {}).get("plateAppearances")) for item in last_ten)
+    last10_avg = (last10_hits / last10_ab) if last10_ab else None
+
+    recent_avg = last10_hits / last10_ab if last10_ab else None
+    hot = recent_avg is not None and recent_avg >= 0.350 and hit_streak >= 2
+    cold = recent_avg is not None and recent_avg <= 0.180 and last10_pa >= 8
+
+    return {
+        "name": profile.get("fullName", "Unknown Hitter"),
+        "hand": profile.get("batSide", {}).get("code", "N/A"),
+        "streak": hit_streak,
+        "hot": hot,
+        "cold": cold,
+        "stats": {
+            "avg": season.get("avg", "N/A"),
+            "obp": season.get("obp", "N/A"),
+            "slg": season.get("slg", "N/A"),
+            "ops": season.get("ops", "N/A"),
+            "pa": safe_number(season.get("plateAppearances")),
+        },
+        "last10": {
+            "label": "Last 10 games",
+            "avg": format_baseball_avg(last10_avg) if last10_avg is not None else "N/A",
+            "hits": last10_hits,
+            "ab": last10_ab,
+            "pa": last10_pa,
+        },
+        "vsRHP": hitter_split(player_id, "vr"),
+        "vsLHP": hitter_split(player_id, "vl"),
+        "risp": {"avg": hitter_split(player_id, "risp").get("avg", "N/A")},
+    }
+
+
+def team_hitter_summaries(team_id):
+    hitters = []
+
+    for player in team_active_hitters(team_id):
+        player_id = player.get("id")
+        if not player_id:
+            continue
+
+        try:
+            hitters.append(hitter_overview(player_id))
+        except Exception:
+            continue
+
+    hitters.sort(key=lambda item: safe_number(item.get("stats", {}).get("pa")), reverse=True)
+    return hitters[:6]
+
 
 def pitcher_summary(pitcher):
     if not pitcher:
@@ -67,6 +251,15 @@ def pitcher_summary(pitcher):
         "name": pitcher.get("fullName", "Unknown Pitcher"),
         "hand": "N/A",
         "era": "N/A",
+        "last5": {
+            "starts_used": 0,
+            "avg_ip": "N/A",
+            "avg_k": "N/A",
+            "avg_bb": "N/A",
+            "avg_era": "N/A",
+            "whip": "N/A",
+            "k_bb": "N/A",
+        },
     }
 
     pitcher_id = pitcher.get("id")
@@ -74,9 +267,8 @@ def pitcher_summary(pitcher):
         return out
 
     try:
-        people = fetch(f"{BASE}/v1/people/{pitcher_id}").get("people", [])
-        if people:
-            out["hand"] = people[0].get("pitchHand", {}).get("code", "N/A")
+        profile = player_profile(pitcher_id)
+        out["hand"] = profile.get("pitchHand", {}).get("code", "N/A")
     except Exception as exc:
         out["profile_error"] = str(exc)
 
@@ -90,6 +282,11 @@ def pitcher_summary(pitcher):
             out["era"] = splits[0].get("stat", {}).get("era", "N/A")
     except Exception as exc:
         out["stats_error"] = str(exc)
+
+    try:
+        out["last5"] = pitcher_last_five(pitcher_id)
+    except Exception as exc:
+        out["last5_error"] = str(exc)
 
     return out
 
@@ -117,9 +314,35 @@ def build_live_or_final_highlights(boxscore, pick_final_pitcher=False):
     return hitters, pitchers
 
 
-# =====================================================
-# BUILD TODAY (PRE-GAME / LIVE / FINAL)
-# =====================================================
+def build_recap_stat_lines(boxscore):
+    hitter_lines = []
+    pitcher_lines = []
+
+    for side in ["away", "home"]:
+        team = boxscore.get("teams", {}).get(side, {})
+
+        for batter_id in team.get("batters", []):
+            batting = get_player_stat_block(team, batter_id, "batting")
+            hits = safe_number(batting.get("hits"))
+            home_runs = safe_number(batting.get("homeRuns"))
+            rbi = safe_number(batting.get("rbi"))
+            if hits >= 2 or home_runs >= 1:
+                hitter_lines.append(
+                    f"{get_player_name(team, batter_id)}: {hits} H, {home_runs} HR, {rbi} RBI"
+                )
+
+        for pitcher_id in team.get("pitchers", []):
+            pitching = get_player_stat_block(team, pitcher_id, "pitching")
+            strikeouts = safe_number(pitching.get("strikeOuts"))
+            innings = pitching.get("inningsPitched", "0.0")
+            earned_runs = safe_number(pitching.get("earnedRuns"))
+            if strikeouts >= 5:
+                pitcher_lines.append(
+                    f"{get_player_name(team, pitcher_id)}: {innings} IP, {strikeouts} K, {earned_runs} ER"
+                )
+
+    return hitter_lines[:6], pitcher_lines[:6]
+
 
 schedule_today = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
@@ -135,6 +358,8 @@ for date_block in schedule_today.get("dates", []):
         try:
             away = game["teams"]["away"]["team"]["name"]
             home = game["teams"]["home"]["team"]["name"]
+            away_team_id = game["teams"]["away"]["team"]["id"]
+            home_team_id = game["teams"]["home"]["team"]["id"]
             venue = game["venue"]["name"]
             start = game["gameDate"]
             status = game["status"]["abstractGameState"]
@@ -151,6 +376,8 @@ for date_block in schedule_today.get("dates", []):
                 "status": status,
                 "away_pitcher": pitcher_summary(away_pitcher),
                 "home_pitcher": pitcher_summary(home_pitcher),
+                "away_hitters": team_hitter_summaries(away_team_id),
+                "home_hitters": team_hitter_summaries(home_team_id),
             })
 
             if status in ["Live", "In Progress"]:
@@ -178,6 +405,7 @@ for date_block in schedule_today.get("dates", []):
                 winner = away if away_runs > home_runs else home
                 loser = home if away_runs > home_runs else away
                 hitters, pitchers = build_live_or_final_highlights(box, pick_final_pitcher=True)
+                hitter_lines, pitcher_lines = build_recap_stat_lines(box)
 
                 postgame_today.append({
                     "gamePk": game.get("gamePk"),
@@ -187,6 +415,8 @@ for date_block in schedule_today.get("dates", []):
                     "final_score": f"{away_runs}-{home_runs}",
                     "hitters": hitters,
                     "pitchers": pitchers,
+                    "hitter_lines": hitter_lines,
+                    "pitcher_lines": pitcher_lines,
                 })
         except Exception as exc:
             errors.append({
@@ -195,10 +425,6 @@ for date_block in schedule_today.get("dates", []):
                 "error": str(exc),
             })
 
-
-# =====================================================
-# BUILD YESTERDAY (FINAL + AI RECAP)
-# =====================================================
 
 schedule_yesterday = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={YESTERDAY}"
@@ -224,6 +450,7 @@ for date_block in schedule_yesterday.get("dates", []):
             winner = away if away_runs > home_runs else home
             loser = home if away_runs > home_runs else away
             hitters, pitchers = build_live_or_final_highlights(box, pick_final_pitcher=True)
+            hitter_lines, pitcher_lines = build_recap_stat_lines(box)
 
             yesterday_postgame.append({
                 "gamePk": game.get("gamePk"),
@@ -233,6 +460,8 @@ for date_block in schedule_yesterday.get("dates", []):
                 "final_score": f"{away_runs}-{home_runs}",
                 "hitters": hitters,
                 "pitchers": pitchers,
+                "hitter_lines": hitter_lines,
+                "pitcher_lines": pitcher_lines,
             })
         except Exception as exc:
             errors.append({
@@ -241,10 +470,6 @@ for date_block in schedule_yesterday.get("dates", []):
                 "error": str(exc),
             })
 
-
-# =====================================================
-# YESTERDAY AI RECAP (GROQ)
-# =====================================================
 
 yesterday_recap = {
     "date": YESTERDAY,
@@ -261,8 +486,8 @@ if yesterday_postgame and client:
                     f"Final: {game['final_score']}\n"
                     f"Winner: {game['winner']}\n"
                     f"Loser: {game['loser']}\n"
-                    f"Hitters: {', '.join(game['hitters']) if game['hitters'] else 'Multiple contributors'}\n"
-                    f"Pitchers: {', '.join(game['pitchers']) if game['pitchers'] else 'Staff effort'}\n"
+                    f"Exact hitter lines: {'; '.join(game['hitter_lines']) if game['hitter_lines'] else 'No standout hitter line provided'}\n"
+                    f"Exact pitcher lines: {'; '.join(game['pitcher_lines']) if game['pitcher_lines'] else 'No standout pitcher line provided'}\n"
                 )
                 for game in yesterday_postgame
             ]
@@ -277,6 +502,9 @@ Write a YESTERDAY MLB recap with:
 - Specific stats and reasons
 - End with a section titled "Biggest Story of the Day"
 
+Only use the exact stats provided below.
+Do not invent numbers, strikeout totals, innings, or player performances.
+If a stat is not listed below, do not mention it.
 Avoid generic language.
 
 Games:
@@ -286,7 +514,7 @@ Games:
         response = client.chat.completions.create(
             model="llama-3.1-8b-instant",
             messages=[{"role": "user", "content": prompt}],
-            temperature=0.6,
+            temperature=0.2,
         )
 
         yesterday_recap["article"] = response.choices[0].message.content.strip()
@@ -297,10 +525,6 @@ elif yesterday_postgame and not client:
 else:
     yesterday_recap["article"] = "No final games were available for yesterday."
 
-
-# =====================================================
-# WRITE FILES
-# =====================================================
 
 timestamp = NOW.isoformat()
 
