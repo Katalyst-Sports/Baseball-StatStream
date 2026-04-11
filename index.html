@@ -9,14 +9,21 @@
 body {
   font-family: system-ui, -apple-system, sans-serif;
   background: #f6f7f9;
-  padding: 24px;
-  max-width: 1200px;
+  padding: 20px;
+  max-width: 1400px;
   margin: auto;
   color: #111827;
 }
 
 h1 { margin-bottom: 6px; }
 h2 { margin: 0 0 10px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: start;
+}
 
 .subtitle {
   color: #555;
@@ -32,10 +39,10 @@ h2 { margin: 0 0 10px; }
 
 .card {
   background: #ffffff;
-  padding: 16px;
-  border-radius: 12px;
-  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
 }
 
 .live {
@@ -45,8 +52,8 @@ h2 { margin: 0 0 10px; }
 
 .section {
   font-weight: 600;
-  margin-top: 12px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
 .toggle {
@@ -58,13 +65,88 @@ h2 { margin: 0 0 10px; }
   color: #6b7280;
 }
 
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.badge-hot {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badge-cold {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.subcard {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.player-row {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.player-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.stat-line {
+  font-size: 12px;
+  color: #4b5563;
+  margin-top: 3px;
+  line-height: 1.45;
+}
+
 ul {
   margin: 6px 0 0 18px;
   padding: 0;
 }
 
 li {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+.full-width {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 footer {
@@ -89,10 +171,10 @@ Click a game to expand matchup details. Live games appear at the top.
 Live data last updated: <span id="updated">loading...</span>
 </div>
 
-<div id="live"></div>
-<div id="ai-recap"></div>
-<div id="postgame"></div>
-<div id="games"></div>
+<div id="ai-recap" class="full-width"></div>
+<div id="live" class="grid"></div>
+<div id="postgame" class="grid"></div>
+<div id="games" class="grid"></div>
 
 <script>
 function safeArray(value) {
@@ -117,6 +199,81 @@ function pitcherMarkup(p) {
     <div>Throws: ${p.hand || "N/A"}</div>
     <div>ERA: ${p.era || "N/A"}</div>
   `;
+}
+
+function formatValue(value, fallback = "N/A") {
+  return value === undefined || value === null || value === "" ? fallback : value;
+}
+
+function streakBadge(player) {
+  if (!player) return "";
+
+  if (player.hot) {
+    return `<span class="badge badge-hot">HOT</span>`;
+  }
+
+  if (player.cold) {
+    return `<span class="badge badge-cold">COLD</span>`;
+  }
+
+  if ((player.streak || 0) >= 3) {
+    return `<span class="badge badge-hot">${player.streak}-GAME</span>`;
+  }
+
+  return "";
+}
+
+function hitterStatLine(player) {
+  const parts = [];
+
+  if (player.stats) {
+    parts.push(`Season AVG ${formatValue(player.stats.avg)}`);
+    if (player.stats.obp) parts.push(`OBP ${player.stats.obp}`);
+    if (player.stats.slg) parts.push(`SLG ${player.stats.slg}`);
+  }
+
+  if (player.last10) {
+    parts.push(`Last 10: ${formatValue(player.last10.avg)} (${formatValue(player.last10.hits, 0)}/${formatValue(player.last10.ab, 0)})`);
+  }
+
+  return parts.length ? parts.join(" | ") : "Additional hitter stats are not available yet.";
+}
+
+function hitterSplitLine(player) {
+  const parts = [];
+
+  if (player.vsRHP) {
+    parts.push(`vs RHP ${formatValue(player.vsRHP.avg)} (${formatValue(player.vsRHP.hits, 0)} H)`);
+  }
+
+  if (player.vsLHP) {
+    parts.push(`vs LHP ${formatValue(player.vsLHP.avg)} (${formatValue(player.vsLHP.hits, 0)} H)`);
+  }
+
+  if (player.risp) {
+    parts.push(`RISP ${formatValue(player.risp.avg)}`);
+  }
+
+  return parts.length ? parts.join(" | ") : "Split data is not available yet.";
+}
+
+function renderHitters(list, emptyText) {
+  const hitters = safeArray(list);
+
+  if (!hitters.length) {
+    return `<div class="muted">${emptyText}</div>`;
+  }
+
+  return hitters.map(player => `
+    <div class="player-row">
+      <div>
+        <strong>${formatValue(player.name, "Unknown Hitter")}</strong>
+        ${streakBadge(player)}
+      </div>
+      <div class="stat-line">${hitterStatLine(player)}</div>
+      <div class="stat-line">${hitterSplitLine(player)}</div>
+    </div>
+  `).join("");
 }
 
 function setUpdatedTimestamp(value) {
@@ -172,10 +329,11 @@ async function loadRecap() {
     }
 
     const data = await response.json();
+    const article = data.article || "No recap available yet.";
     recapDiv.innerHTML = `
       <div class="card">
         <h2>${data.headline || "Yesterday Recap"}</h2>
-        <p style="line-height:1.6; white-space:pre-wrap;">${data.article || "No recap available yet."}</p>
+        <p style="line-height:1.6; white-space:pre-wrap; margin:0;">${article}</p>
       </div>
     `;
   } catch (error) {
@@ -260,16 +418,28 @@ async function loadDaily() {
             ▶ ${game.away_team || "Away"} @ ${game.home_team || "Home"}
           </div>
 
-          <div class="muted" style="margin-top:6px;">
+          <div class="muted" style="margin-top:6px; font-size:12px;">
             ${startText} | ${game.venue || "Venue TBD"} | ${game.status || "Scheduled"}
           </div>
 
           <div id="${id}" style="display:none; margin-top:12px;">
-            <div class="section">Away Probable Pitcher</div>
-            ${pitcherMarkup(game.away_pitcher)}
+            <div class="mini-grid">
+              <div class="subcard">
+                <div class="section" style="margin-top:0;">Away Probable Pitcher</div>
+                ${pitcherMarkup(game.away_pitcher)}
+              </div>
 
-            <div class="section">Home Probable Pitcher</div>
-            ${pitcherMarkup(game.home_pitcher)}
+              <div class="subcard">
+                <div class="section" style="margin-top:0;">Home Probable Pitcher</div>
+                ${pitcherMarkup(game.home_pitcher)}
+              </div>
+            </div>
+
+            <div class="section">${game.away_team || "Away"} Hitters</div>
+            ${renderHitters(game.away_hitters, "Away hitter data has not been added yet.")}
+
+            <div class="section">${game.home_team || "Home"} Hitters</div>
+            ${renderHitters(game.home_hitters, "Home hitter data has not been added yet.")}
           </div>
         </div>
       `;
