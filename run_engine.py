@@ -382,16 +382,81 @@ def build_recap_stat_lines(boxscore):
     return hitter_lines[:6], pitcher_lines[:6]
 
 
+def season_leaders():
+    try:
+        payload = fetch(
+            f"{BASE}/v1/stats?stats=season&group=hitting,pitching&playerPool=qualified&sportIds=1&season={SEASON}"
+        )
+        splits = payload.get("stats", [])
+
+        hitting = []
+        pitching = []
+
+        for stat_group in splits:
+            group_name = stat_group.get("group", {}).get("displayName", "")
+            for split in stat_group.get("splits", []):
+                player_name = split.get("player", {}).get("fullName", "Unknown")
+                stat = split.get("stat", {})
+                if group_name == "hitting":
+                    hitting.append({"name": player_name, "stat": stat})
+                elif group_name == "pitching":
+                    pitching.append({"name": player_name, "stat": stat})
+
+        avg_ops = sorted(
+            hitting,
+            key=lambda x: safe_float(x["stat"].get("avg", 0)),
+            reverse=True
+        )[:5]
+
+        power = sorted(
+            hitting,
+            key=lambda x: safe_number(x["stat"].get("homeRuns", 0)),
+            reverse=True
+        )[:5]
+
+        strikeouts = sorted(
+            pitching,
+            key=lambda x: safe_number(x["stat"].get("strikeOuts", 0)),
+            reverse=True
+        )[:5]
+
+        prevention = sorted(
+            pitching,
+            key=lambda x: safe_float(x["stat"].get("era", 999)),
+        )[:5]
+
+        return {
+            "avg_ops": [
+                f"{item['name']}: AVG {item['stat'].get('avg', 'N/A')} | OPS {item['stat'].get('ops', 'N/A')}"
+                for item in avg_ops
+            ],
+            "power": [
+                f"{item['name']}: HR {item['stat'].get('homeRuns', 0)} | RBI {item['stat'].get('rbi', 0)}"
+                for item in power
+            ],
+            "pitching": [
+                f"{item['name']}: K {item['stat'].get('strikeOuts', 0)} | W {item['stat'].get('wins', 0)}"
+                for item in strikeouts
+            ],
+            "run_prevention": [
+                f"{item['name']}: ERA {item['stat'].get('era', 'N/A')} | WHIP {item['stat'].get('whip', 'N/A')}"
+                for item in prevention
+            ],
+        }
+    except Exception:
+        return {
+            "avg_ops": [],
+            "power": [],
+            "pitching": [],
+            "run_prevention": [],
+        }
+
+
 def build_dashboard_recap(yesterday_postgame):
     dashboard = {
         "featured_games": [],
         "all_games": [],
-        "stat_leaders": {
-            "top_hitters": [],
-            "top_pitchers": [],
-            "home_run_leaders": [],
-            "strikeout_leaders": [],
-        },
+        "season_leaders": season_leaders(),
         "context_layer": {
             "momentum_shifts": [],
             "standout_performances": [],
@@ -439,15 +504,11 @@ Return valid JSON only with this exact schema:
       "final_score": "...",
       "top_pitching_line": "...",
       "top_batting_line": "...",
+      "summary": "2-3 sentence game recap",
+      "impact_player": "...",
       "key_insight": "One concise insight line"
     }}
   ],
-  "stat_leaders": {{
-    "top_hitters": ["...", "...", "..."],
-    "top_pitchers": ["...", "...", "..."],
-    "home_run_leaders": ["...", "...", "..."],
-    "strikeout_leaders": ["...", "...", "..."]
-  }},
   "context_layer": {{
     "momentum_shifts": ["...", "...", "..."],
     "standout_performances": ["...", "...", "..."],
@@ -458,8 +519,9 @@ Return valid JSON only with this exact schema:
 Rules:
 - Use only the exact stats provided.
 - Do not invent numbers or events.
-- Keep summaries concise and data-driven.
-- No long editorial writing.
+- Include the key offensive play when provided, especially home runs or multi-RBI performances.
+- Avoid vague phrases like "timely hit" if an exact home run or RBI line is available.
+- Keep summaries tight, analytical, and readable.
 - "featured_games" should contain 3 or 4 games.
 - "all_games" should include every game.
 - Output JSON only.
@@ -475,8 +537,9 @@ Games:
             )
 
             content = response.choices[0].message.content.strip()
-            dashboard = json.loads(content)
-            return dashboard
+            parsed = json.loads(content)
+            parsed["season_leaders"] = dashboard["season_leaders"]
+            return parsed
         except Exception:
             pass
 
@@ -486,22 +549,28 @@ Games:
             "final_score": game["final_score"],
             "winner": game["winner"],
             "loser": game["loser"],
-            "summary": (game["pitcher_lines"][0] if game["pitcher_lines"] else "No summary available."),
+            "summary": game["pitcher_lines"][0] if game["pitcher_lines"] else "No summary available.",
             "key_stats": (game["hitter_lines"][:2] + game["pitcher_lines"][:1])[:3],
         }
         for game in yesterday_postgame[:4]
     ]
 
-    dashboard["all_games"] = [
-        {
+    dashboard["all_games"] = []
+    for game in yesterday_postgame:
+        top_pitch = game["pitcher_lines"][0] if game["pitcher_lines"] else "No top pitching line available"
+        top_hit = game["hitter_lines"][0] if game["hitter_lines"] else "No top batting line available"
+        summary = f"{game['winner']} beat {game['loser']} {game['final_score']}. {top_pitch}. {top_hit}."
+        impact = top_hit if "HR" in top_hit or "RBI" in top_hit else top_pitch
+
+        dashboard["all_games"].append({
             "game": game["game"],
             "final_score": game["final_score"],
-            "top_pitching_line": game["pitcher_lines"][0] if game["pitcher_lines"] else "No top pitching line available",
-            "top_batting_line": game["hitter_lines"][0] if game["hitter_lines"] else "No top batting line available",
-            "key_insight": game["pitcher_lines"][0] if game["pitcher_lines"] else "No key insight available",
-        }
-        for game in yesterday_postgame
-    ]
+            "top_pitching_line": top_pitch,
+            "top_batting_line": top_hit,
+            "summary": summary,
+            "impact_player": impact,
+            "key_insight": top_pitch,
+        })
 
     top_hitter_lines = []
     top_pitcher_lines = []
@@ -509,17 +578,14 @@ Games:
         top_hitter_lines.extend(game["hitter_lines"])
         top_pitcher_lines.extend(game["pitcher_lines"])
 
-    dashboard["stat_leaders"]["top_hitters"] = top_hitter_lines[:4]
-    dashboard["stat_leaders"]["top_pitchers"] = top_pitcher_lines[:4]
-    dashboard["stat_leaders"]["home_run_leaders"] = [line for line in top_hitter_lines if "HR" in line][:4]
-    dashboard["stat_leaders"]["strikeout_leaders"] = [line for line in top_pitcher_lines if "K" in line][:4]
-
     dashboard["context_layer"]["momentum_shifts"] = [
-        f"{game['winner']} took control in {game['game']}." for game in yesterday_postgame[:3]
+        f"{game['winner']} controlled the result in {game['game']} after getting the key edge from its top performers."
+        for game in yesterday_postgame[:3]
     ]
     dashboard["context_layer"]["standout_performances"] = top_hitter_lines[:3]
     dashboard["context_layer"]["team_trends"] = [
-        f"{game['winner']} closed out a win in {game['game']}." for game in yesterday_postgame[:3]
+        f"{game['winner']} added a win in {game['game']} behind impact performances that shaped the final score."
+        for game in yesterday_postgame[:3]
     ]
 
     return dashboard
