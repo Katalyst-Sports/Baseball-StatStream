@@ -170,7 +170,107 @@ schedule=fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
 )
 
-daily=[]; live=[]
+daily = []
+live = []
+
+for d in schedule.get("dates", []):
+    for g in d.get("games", []):
+
+        away = g["teams"]["away"]["team"]
+        home = g["teams"]["home"]["team"]
+        status = g["status"]["abstractGameState"]
+
+        # ---------------- DAILY ----------------
+        ap = g["teams"]["away"].get("probablePitcher")
+        hp = g["teams"]["home"].get("probablePitcher")
+
+        game = {
+            "away_team": away["name"],
+            "home_team": home["name"],
+            "venue": g["venue"]["name"],
+            "start": g["gameDate"],
+            "away_pitcher": {},
+            "home_pitcher": {},
+            "away_hitters": [],
+            "home_hitters": []
+        }
+
+        if ap:
+            game["away_pitcher"] = {
+                "name": ap["fullName"],
+                "hand": pitcher_hand(ap["id"]),
+                "era": pitcher_era(ap["id"]),
+                "era_splits": pitcher_era_splits(ap["id"]),
+                **pitcher_last5(ap["id"])
+            }
+
+        if hp:
+            game["home_pitcher"] = {
+                "name": hp["fullName"],
+                "hand": pitcher_hand(hp["id"]),
+                "era": pitcher_era(hp["id"]),
+                "era_splits": pitcher_era_splits(hp["id"]),
+                **pitcher_last5(hp["id"])
+            }
+
+        for side, team in [("away_hitters", away), ("home_hitters", home)]:
+            for h in team_hitters(team["id"]):
+                game[side].append({
+                    "name": h["name"],
+                    "stats": hitter_season(h["id"]),
+                    "vsRHP": hitter_split_season(h["id"], "R"),
+                    "vsLHP": hitter_split_season(h["id"], "L"),
+                    "last10": last10_ab(h["id"]),
+                    "streak": hit_streak(h["id"]),
+                    "risp": risp(h["id"])
+                })
+
+        daily.append(game)
+
+        # ---------------- LIVE (STRICT) ----------------
+        if status in ["Live", "In Progress"]:
+            feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
+            lines = feed["liveData"]["linescore"]
+            box = feed["liveData"]["boxscore"]
+
+            hot = []
+            dom = []
+
+            for side in ["away", "home"]:
+                for bid in box["teams"][side]["batters"]:
+                    b = box["teams"][side]["players"][f"ID{bid}"]["stats"]["batting"]
+                    if n(b.get("hits")) >= 2:
+                        hot.append(
+                            box["teams"][side]["players"][f"ID{bid}"]["person"]["fullName"]
+                        )
+
+                for pid in box["teams"][side]["pitchers"][-1:]:
+                    p = box["teams"][side]["players"][f"ID{pid}"]["stats"]["pitching"]
+                    if n(p.get("strikeOuts")) >= 6:
+                        dom.append(
+                            box["teams"][side]["players"][f"ID{pid}"]["person"]["fullName"]
+                        )
+
+            live.append({
+                "game": f"{away['name']} @ {home['name']}",
+                "score": f"{lines['teams']['away']['runs']}–{lines['teams']['home']['runs']}",
+                "inning": lines.get("currentInningOrdinal"),
+                "hot_hitters": hot,
+                "top_pitchers": dom
+            })
+
+# ✅ ALWAYS overwrite old data (no carryover)
+json.dump(
+    {"updated_at": NOW.isoformat(), "games": daily},
+    open("daily.json", "w"),
+    indent=2
+)
+
+json.dump(
+    {"updated_at": NOW.isoformat(), "games": live},
+    open("live.json", "w"),
+    indent=2
+)
 
 for d in schedule.get("dates",[]):
     for g in d.get("games",[]):
