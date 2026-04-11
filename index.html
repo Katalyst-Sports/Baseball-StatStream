@@ -139,12 +139,6 @@ body {
   gap: 14px;
 }
 
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
 .card {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -163,12 +157,12 @@ body {
   border-top: 4px solid var(--red);
 }
 
-.feature-card {
-  border-top: 4px solid var(--gold);
-}
-
 .upcoming-card {
   border-top: 4px solid var(--blue);
+}
+
+.finished-card {
+  border-top: 4px solid var(--gold);
 }
 
 .recap-card {
@@ -177,10 +171,6 @@ body {
 
 .leader-card {
   border-top: 4px solid var(--green);
-}
-
-.context-card {
-  background: rgba(10, 20, 35, 0.84);
 }
 
 .matchup {
@@ -303,20 +293,6 @@ body {
   margin-top: 3px;
 }
 
-.recap-bullets {
-  display: grid;
-  gap: 10px;
-}
-
-.recap-bullet {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  border-radius: 14px;
-  padding: 12px;
-  color: #dfebfb;
-  line-height: 1.55;
-}
-
 .live-layout {
   display: grid;
   grid-template-columns: 110px 1fr;
@@ -353,8 +329,7 @@ footer {
 
 @media (max-width: 1100px) {
   .grid,
-  .grid-4,
-  .feature-grid {
+  .grid-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -374,7 +349,6 @@ footer {
 
   .grid,
   .grid-4,
-  .feature-grid,
   .mini-grid {
     grid-template-columns: 1fr;
   }
@@ -417,14 +391,6 @@ footer {
 
   <div class="section-block">
     <div class="section-header">
-      <div class="section-label">Featured Games</div>
-      <div class="section-line"></div>
-    </div>
-    <div id="featured-games" class="feature-grid"></div>
-  </div>
-
-  <div class="section-block">
-    <div class="section-header">
       <div class="section-label">Upcoming Games</div>
       <div class="section-line"></div>
     </div>
@@ -433,11 +399,18 @@ footer {
 
   <div class="section-block">
     <div class="section-header">
+      <div class="section-label">Finished Games Today</div>
+      <div class="section-line"></div>
+    </div>
+    <div id="finished-games" class="grid"></div>
+  </div>
+
+  <div class="section-block">
+    <div class="section-header">
       <div class="section-label">Previous Day Recap</div>
       <div class="section-line"></div>
     </div>
     <div id="all-games" class="grid"></div>
-    <div id="recap-context" class="grid" style="margin-top:14px;"></div>
   </div>
 
   <div class="section-block">
@@ -653,49 +626,54 @@ async function loadDaily() {
   }
 }
 
-async function loadDashboardRecap() {
+async function loadFinishedGames() {
+  const el = document.getElementById("finished-games");
+  try {
+    const response = await fetch("./postgame.json?nocache=" + Date.now());
+    const data = await response.json();
+    const games = safeArray(data.games);
+
+    if (!games.length) {
+      el.innerHTML = `<div class="card finished-card">No finished games today yet.</div>`;
+      return;
+    }
+
+    el.innerHTML = games.map(game => `
+      <div class="card finished-card">
+        <div class="matchup">${formatValue(game.game, "Finished Game")}</div>
+        <div class="scoreline">${formatValue(game.final_score, "N/A")}</div>
+        <div class="stat-row">Winner: ${formatValue(game.winner)} | Loser: ${formatValue(game.loser)}</div>
+        <div class="stat-row">Top Pitching: ${formatValue(game.top_pitching_line, "N/A")}</div>
+        <div class="stat-row">Top Batting: ${formatValue(game.top_batting_line, "N/A")}</div>
+        <div class="summary">${formatValue(game.stat_summary, "No stat summary available.")}</div>
+      </div>
+    `).join("");
+  } catch (error) {
+    el.innerHTML = `<div class="card finished-card">Could not load postgame.json.</div>`;
+    console.error(error);
+  }
+}
+
+async function loadPreviousDayRecap() {
   try {
     const response = await fetch("./yesterday_recap.json?nocache=" + Date.now());
     if (!response.ok) throw new Error("Recap file missing");
     const data = await response.json();
     const recap = data.dashboard_recap || {};
 
-    renderFeaturedGames(recap.featured_games || []);
-    renderAllGames(recap.all_games || []);
+    renderPreviousDayRecap(recap.all_games || []);
     renderSeasonLeaders(recap.season_leaders || {});
-    renderMergedRecapContext(recap.context_layer || {});
   } catch (error) {
-    renderFeaturedGames([]);
-    renderAllGames([]);
+    renderPreviousDayRecap([]);
     renderSeasonLeaders({});
-    renderMergedRecapContext({});
     console.error(error);
   }
 }
 
-function renderFeaturedGames(games) {
-  const el = document.getElementById("featured-games");
-  if (!safeArray(games).length) {
-    el.innerHTML = `<div class="card feature-card">No featured games available yet.</div>`;
-    return;
-  }
-
-  el.innerHTML = games.map(game => `
-    <div class="card feature-card card-strong">
-      <div class="matchup">${formatValue(game.game, "Featured Game")}</div>
-      <div class="scoreline">${formatValue(game.final_score, "N/A")}</div>
-      <div class="meta">Winner: ${formatValue(game.winner)} | Loser: ${formatValue(game.loser)}</div>
-      <div class="summary">${formatValue(game.summary, "No summary available.")}</div>
-      <div class="section-title-sm">Impact Players</div>
-      ${renderList(game.key_stats, "No key stats available.")}
-    </div>
-  `).join("");
-}
-
-function renderAllGames(games) {
+function renderPreviousDayRecap(games) {
   const el = document.getElementById("all-games");
   if (!safeArray(games).length) {
-    el.innerHTML = `<div class="card recap-card">No completed game summaries available yet.</div>`;
+    el.innerHTML = `<div class="card recap-card">No completed game recaps available yet.</div>`;
     return;
   }
 
@@ -728,31 +706,17 @@ function renderSeasonLeaders(leaders) {
   `).join("");
 }
 
-function renderMergedRecapContext(context) {
-  const el = document.getElementById("recap-context");
-  const items = context.standout_performances || [];
-
-  el.innerHTML = `
-    <div class="card context-card">
-      <div class="matchup" style="font-size:16px;">Standout Performances</div>
-      <div class="recap-bullets">
-        ${safeArray(items).length
-          ? safeArray(items).map(item => `<div class="recap-bullet">${item}</div>`).join("")
-          : `<div class="muted">No standout performances available.</div>`}
-      </div>
-    </div>
-  `;
-}
-
 async function refreshLiveOnly() {
   await loadLive();
 }
 
 loadLive();
 loadDaily();
-loadDashboardRecap();
+loadFinishedGames();
+loadPreviousDayRecap();
 setInterval(refreshLiveOnly, 30000);
 </script>
 </body>
 </html>
+
 
