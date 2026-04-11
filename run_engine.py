@@ -236,8 +236,9 @@ for d in schedule_yesterday.get("dates", []):
 yesterday_recap = None
 
 if yesterday_postgame and client:
-    games_text = "\n".join([
-        f"""
+    try:
+        games_text = "\n".join([
+            f"""
 Game: {g['game']}
 Final: {g['final_score']}
 Winner: {g['winner']}
@@ -245,10 +246,10 @@ Loser: {g['loser']}
 Hitters: {', '.join(g['hitters']) if g['hitters'] else 'Multiple contributors'}
 Pitchers: {', '.join(g['pitchers']) if g['pitchers'] else 'Staff effort'}
 """
-        for g in yesterday_postgame
-    ])
+            for g in yesterday_postgame
+        ])
 
-    prompt = f"""
+        prompt = f"""
 You are a professional MLB columnist.
 
 Write a YESTERDAY MLB recap with:
@@ -263,17 +264,26 @@ Games:
 {games_text}
 """
 
-   response = client.chat.completions.create(
-    model="llama-3.1-8b-instant",
-    messages=[{"role": "user", "content": prompt}],
-    temperature=0.6
-)
+        response = client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.6
+        )
 
-    yesterday_recap = {
-        "date": YESTERDAY,
-        "headline": f"MLB Daily Recap — {datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
-        "article": response.choices[0].message.content.strip()
-    }
+        yesterday_recap = {
+            "date": YESTERDAY,
+            "headline": f"MLB Daily Recap — "
+                        f"{datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
+            "article": response.choices[0].message.content.strip()
+        }
+
+    except Exception as e:
+        yesterday_recap = {
+            "date": YESTERDAY,
+            "headline": f"MLB Daily Recap — "
+                        f"{datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
+            "article": f"Groq error: {str(e)}"
+        }
 
 # =====================================================
 # WRITE FILES (FORCE OVERWRITE)
