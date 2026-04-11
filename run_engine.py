@@ -1,3 +1,4 @@
+print("### GROQ ENGINE VERSION RUNNING ###")
 import json
 import os
 from datetime import datetime
