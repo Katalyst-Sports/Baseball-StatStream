@@ -4,7 +4,10 @@ from datetime import datetime
 from urllib.request import urlopen
 from zoneinfo import ZoneInfo
 
-from openai import OpenAI
+try:
+    from openai import OpenAI
+except Exception:
+    OpenAI = None
 
 # =====================================================
 # CONFIG
@@ -17,7 +20,7 @@ TODAY = NOW.date().isoformat()
 SEASON = NOW.year
 
 OPENAI_KEY = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=OPENAI_KEY) if OPENAI_KEY else None
+client = OpenAI(api_key=OPENAI_KEY) if OpenAI and OPENAI_KEY else None
 
 # =====================================================
 # UTILITIES
@@ -54,7 +57,6 @@ def pitcher_era_splits(pid):
             f"{BASE}/v1/people/{pid}/stats"
             f"?stats=statSplits&group=pitching&season={SEASON}&sitCodes=vr,vl"
         )["stats"][0]["splits"]
-
         out = {"vsRHB": "N/A", "vsLHB": "N/A"}
         for s in splits:
             if s["split"]["code"] == "vr":
@@ -156,7 +158,6 @@ def last10_ab(pid):
         logs = fetch(
             f"{BASE}/v1/people/{pid}/stats?stats=gameLog&group=hitting&season={SEASON}"
         )["stats"][0]["splits"]
-
         ab = hits = 0
         for g in logs:
             if ab >= 10:
@@ -166,7 +167,6 @@ def last10_ab(pid):
             take = min(10 - ab, game_ab)
             ab += take
             hits += min(game_hits, take)
-
         return {"ab": ab, "hits": hits, "avg": round(hits / ab, 3) if ab else "N/A"}
     except:
         return {"ab": 0, "hits": 0, "avg": "N/A"}
@@ -213,9 +213,7 @@ schedule = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
 )
 
-daily = []
-live = []
-postgame = []
+daily, live, postgame = [], [], []
 
 for d in schedule.get("dates", []):
     for g in d.get("games", []):
@@ -251,9 +249,9 @@ for d in schedule.get("dates", []):
             game["home_pitcher"] = {
                 "name": hp["fullName"],
                 "hand": pitcher_hand(hp["id"]),
-                "era": pitcher_era(ap["id"]),
-                "era_splits": pitcher_era_splits(ap["id"]),
-                **pitcher_last5(ap["id"])
+                "era": pitcher_era(hp["id"]),
+                "era_splits": pitcher_era_splits(hp["id"]),
+                **pitcher_last5(hp["id"])
             }
 
         for side, team in [("away_hitters", away), ("home_hitters", home)]:
@@ -275,8 +273,7 @@ for d in schedule.get("dates", []):
             lines = feed["liveData"]["linescore"]
             box = feed["liveData"]["boxscore"]
 
-            hot = []
-            dom = []
+            hot, dom = [], []
 
             for side in ["away", "home"]:
                 for bid in box["teams"][side]["batters"]:
@@ -312,8 +309,7 @@ for d in schedule.get("dates", []):
             winner = away["name"] if away_runs > home_runs else home["name"]
             loser = home["name"] if away_runs > home_runs else away["name"]
 
-            hitters = []
-            pitchers = []
+            hitters, pitchers = [], []
 
             for side in ["away", "home"]:
                 for bid in box["teams"][side]["batters"]:
@@ -340,56 +336,54 @@ for d in schedule.get("dates", []):
             })
 
 # =====================================================
-# AI DAILY RECAP (PERSISTENT)
+# DAILY RECAP FILE (GUARANTEED)
 # =====================================================
 
-def ai_daily_recap(postgame_games):
-    if not client or not postgame_games:
-        return None
+if postgame:
+    if client:
+        games_text = "\n".join([
+            f"Game: {g['game']}\nWinner: {g['winner']}\nLoser: {g['loser']}\nScore: {g['final_score']}"
+            for g in postgame
+        ])
 
-    games_text = "\n".join([
-        f"""
-Game: {g['game']}
-Final Score: {g['final_score']}
-Winner: {g['winner']}
-Loser: {g['loser']}
-Standout Hitters: {', '.join(g['hitters']) if g['hitters'] else 'None'}
-Key Pitchers: {', '.join(g['pitchers']) if g['pitchers'] else 'None'}
-"""
-        for g in postgame_games
-    ])
+        prompt = f"""
+You are a professional MLB beat writer.
 
-    prompt = f"""
-You are a professional MLB beat writer for ESPN and The Athletic.
-
-Write a DAILY MLB RECAP ARTICLE.
-
-Rules:
+Write a daily MLB recap article.
 - Start with a strong headline
 - One paragraph per game
-- Clearly state who WON and who LOST
-- Explain WHY the game was decided
-- Mention standout hitters and pitchers with context
-- End with a "What It Means" section
-- Avoid generic language
+- Clearly state who won and why
+- End with a 'What It Means' section
 
-GAMES:
+Games:
 {games_text}
 """
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.6
-    )
+        try:
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.6
+            )
+            recap = {
+                "date": TODAY,
+                "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
+                "article": response.choices[0].message.content.strip()
+            }
+        except Exception:
+            recap = None
+    else:
+        recap = None
 
-    return {
-        "date": TODAY,
-        "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
-        "article": response.choices[0].message.content.strip()
-    }
+    if not recap:
+        recap = {
+            "date": TODAY,
+            "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
+            "article": "One or more MLB games have gone final today. Detailed recaps were unavailable for this run."
+        }
 
-ai_recap = ai_daily_recap(postgame)
+    with open("daily_recap.json", "w") as f:
+        json.dump(recap, f, indent=2)
 
 # =====================================================
 # WRITE FILES
@@ -398,9 +392,3 @@ ai_recap = ai_daily_recap(postgame)
 json.dump({"updated_at": NOW.isoformat(), "games": daily}, open("daily.json","w"), indent=2)
 json.dump({"updated_at": NOW.isoformat(), "games": live}, open("live.json","w"), indent=2)
 json.dump({"updated_at": NOW.isoformat(), "games": postgame}, open("postgame.json","w"), indent=2)
-
-if ai_recap:
-    json.dump(ai_recap, open("daily_recap.json","w"), indent=2)
-else:
-    if not os.path.exists("daily_recap.json"):
-        pass
