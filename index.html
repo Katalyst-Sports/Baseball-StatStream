@@ -6,99 +6,216 @@
 <title>MLB StatStream</title>
 
 <style>
-body {
-  font-family: system-ui, -apple-system, sans-serif;
-  background:
-    linear-gradient(rgba(246, 247, 249, 0.45), rgba(246, 247, 249, 0.45)),
-    url("./images/background.jpg") center center / cover no-repeat fixed;
-  padding: 20px;
-  max-width: 1400px;
-  margin: auto;
-  color: #111827;
+:root {
+  --bg-tint: rgba(244, 247, 250, 0.42);
+  --card-bg: rgba(255, 255, 255, 0.72);
+  --card-border: rgba(255, 255, 255, 0.42);
+  --card-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+  --text: #0f172a;
+  --muted: #5b6472;
+  --navy: #10233f;
+  --blue: #1d4ed8;
+  --red: #c62828;
+  --gold: #b8871b;
 }
 
-h1 { margin-bottom: 6px; }
-h2 { margin: 0 0 10px; }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background:
+    linear-gradient(var(--bg-tint), var(--bg-tint)),
+    url("./images/background.jpg") center center / cover no-repeat fixed;
+  padding: 24px;
+  max-width: 1440px;
+  margin: auto;
+  color: var(--text);
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
 
 .hero {
-  margin-bottom: 18px;
-  border-radius: 14px;
+  margin-bottom: 22px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .hero img {
   width: 100%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
   display: block;
+}
+
+.page-header {
+  margin-bottom: 20px;
+}
+
+.kicker {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.page-title {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+  color: #081426;
+}
+
+.subtitle {
+  color: #394150;
+  font-size: 15px;
+  max-width: 760px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #485262;
+}
+
+.section-block {
+  margin-top: 28px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.section-label {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+.section-line {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(to right, rgba(16, 35, 63, 0.65), rgba(16, 35, 63, 0.08));
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+  gap: 14px;
   align-items: start;
 }
 
-.subtitle {
-  color: #555;
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 14px;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
   font-size: 14px;
+}
+
+.live-card {
+  border-top: 4px solid var(--red);
+}
+
+.upcoming-card {
+  border-top: 4px solid var(--navy);
+}
+
+.final-card {
+  border-top: 4px solid var(--gold);
+}
+
+.recap-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
+}
+
+.recap-headline {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+  color: #081426;
+}
+
+.recap-body {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #233044;
+  white-space: pre-wrap;
+}
+
+.matchup-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #081426;
   margin-bottom: 6px;
 }
 
-.timestamp {
+.muted {
+  color: var(--muted);
+}
+
+.meta-line {
+  margin-top: 6px;
   font-size: 12px;
-  color: #666;
-  margin-bottom: 16px;
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(4px);
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  font-size: 14px;
-}
-
-.live {
-  border-left: 6px solid #dc2626;
-  background: rgba(255, 247, 247, 0.96);
+  color: #516072;
 }
 
 .section {
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 4px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #11243e;
 }
 
 .toggle {
   cursor: pointer;
-  font-weight: 600;
-}
-
-.muted {
-  color: #6b7280;
 }
 
 .badge {
   display: inline-block;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 800;
   margin-left: 6px;
   vertical-align: middle;
+  letter-spacing: 0.04em;
 }
 
 .badge-hot {
-  background: #fee2e2;
+  background: rgba(220, 38, 38, 0.12);
   color: #b91c1c;
 }
 
 .badge-cold {
-  background: #dbeafe;
+  background: rgba(29, 78, 216, 0.12);
   color: #1d4ed8;
 }
 
@@ -109,15 +226,15 @@ h2 { margin: 0 0 10px; }
 }
 
 .subcard {
-  background: rgba(249, 250, 251, 0.95);
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  background: rgba(249, 250, 251, 0.62);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
   padding: 10px;
 }
 
 .player-row {
   padding: 8px 0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
 }
 
 .player-row:last-child {
@@ -129,50 +246,73 @@ h2 { margin: 0 0 10px; }
   font-size: 12px;
   color: #4b5563;
   margin-top: 3px;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
-ul {
+.score-line {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 4px;
+  color: #12243d;
+}
+
+.story-list {
   margin: 6px 0 0 18px;
   padding: 0;
 }
 
-li {
-  margin-bottom: 2px;
+.story-list li {
+  margin-bottom: 4px;
 }
 
 .full-width {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 14px;
+}
+
+footer {
+  margin-top: 44px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.45);
+  font-size: 12px;
+  color: #354152;
+  line-height: 1.7;
 }
 
 @media (max-width: 1000px) {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .page-title {
+    font-size: 32px;
+  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   body {
     padding: 14px;
   }
 
   .hero img {
-    height: 160px;
+    height: 170px;
   }
 
-  .grid {
+  .grid,
+  .mini-grid {
     grid-template-columns: 1fr;
   }
-}
 
-footer {
-  margin-top: 48px;
-  padding-top: 16px;
-  border-top: 1px solid #d1d5db;
-  font-size: 12px;
-  color: #555;
-  line-height: 1.6;
+  .page-title {
+    font-size: 28px;
+  }
+
+  .recap-headline {
+    font-size: 22px;
+  }
+
+  .recap-body {
+    font-size: 15px;
+  }
 }
 </style>
 </head>
@@ -183,26 +323,48 @@ footer {
   <img src="./images/banner.jpg" alt="MLB StatStream banner">
 </div>
 
-<h1>MLB StatStream</h1>
-<div class="subtitle">
-Live games are shown first, upcoming matchups second, and final recaps at the bottom.
+<div class="page-header">
+  <div class="kicker">Daily MLB Intelligence</div>
+  <h1 class="page-title">MLB StatStream</h1>
+  <div class="subtitle">
+    Live games first, upcoming matchups next, and polished final-game recaps at the bottom.
+  </div>
+  <div class="timestamp">
+    Live data last updated: <span id="updated">loading...</span>
+  </div>
 </div>
 
-<div class="timestamp">
-Live data last updated: <span id="updated">loading...</span>
+<div class="section-block">
+  <div class="section-header">
+    <div class="section-label">Live Games</div>
+    <div class="section-line"></div>
+  </div>
+  <div id="live" class="grid"></div>
 </div>
 
-<div class="section">Live Games</div>
-<div id="live" class="grid"></div>
+<div class="section-block">
+  <div class="section-header">
+    <div class="section-label">Upcoming Matchups</div>
+    <div class="section-line"></div>
+  </div>
+  <div id="games" class="grid"></div>
+</div>
 
-<div class="section">Upcoming Games</div>
-<div id="games" class="grid"></div>
+<div class="section-block">
+  <div class="section-header">
+    <div class="section-label">Final Games</div>
+    <div class="section-line"></div>
+  </div>
+  <div id="postgame" class="grid"></div>
+</div>
 
-<div class="section">Final Games</div>
-<div id="postgame" class="grid"></div>
-
-<div class="section">AI Recap</div>
-<div id="ai-recap" class="full-width"></div>
+<div class="section-block">
+  <div class="section-header">
+    <div class="section-label">AI Recap</div>
+    <div class="section-line"></div>
+  </div>
+  <div id="ai-recap" class="full-width"></div>
+</div>
 
 <script>
 function safeArray(value) {
@@ -214,7 +376,7 @@ function listMarkup(items, emptyText) {
   if (!values.length) {
     return `<div class="muted">${emptyText}</div>`;
   }
-  return `<ul>${values.map(item => `<li>${item}</li>`).join("")}</ul>`;
+  return `<ul class="story-list">${values.map(item => `<li>${item}</li>`).join("")}</ul>`;
 }
 
 function formatValue(value, fallback = "N/A") {
@@ -231,8 +393,7 @@ function pitcherMarkup(p) {
 
   return `
     <div><strong>${p.name}</strong></div>
-    <div>Throws: ${p.hand || "N/A"}</div>
-    <div>Season ERA: ${p.era || "N/A"}</div>
+    <div class="stat-line">Throws: ${p.hand || "N/A"} | Season ERA: ${p.era || "N/A"}</div>
 
     <div class="stat-line">
       Last ${last3.starts_used || 0} starts:
@@ -348,17 +509,19 @@ async function loadLive() {
     liveDiv.innerHTML = "";
 
     if (!safeArray(data.games).length) {
-      liveDiv.innerHTML = "<div class='card'>No games live right now.</div>";
+      liveDiv.innerHTML = "<div class='card live-card'>No games live right now.</div>";
       return;
     }
 
     data.games.forEach(game => {
       liveDiv.innerHTML += `
-        <div class="card live">
-          <strong>${game.game || "Live Game"}</strong><br>
-          Score: ${game.score || "0-0"} | Inning: ${game.inning || "TBD"}<br><br>
-          <strong>Hot Hitters</strong>
+        <div class="card live-card">
+          <div class="matchup-title">${game.game || "Live Game"}</div>
+          <div class="score-line">Score: ${game.score || "0-0"} | Inning: ${game.inning || "TBD"}</div>
+
+          <div class="section">Hot Hitters</div>
           ${listMarkup(game.hot_hitters, "No hitters flagged yet.")}
+
           <div class="section">Dominant Pitchers</div>
           ${listMarkup(game.top_pitchers, "No pitchers flagged yet.")}
         </div>
@@ -366,7 +529,7 @@ async function loadLive() {
     });
   } catch (error) {
     liveDiv.innerHTML = `
-      <div class="card">
+      <div class="card live-card">
         <strong>Live Games</strong><br>
         <span class="muted">Could not load live.json.</span>
       </div>
@@ -385,7 +548,7 @@ async function loadDaily() {
 
     if (!games.length) {
       gamesDiv.innerHTML = `
-        <div class="card">
+        <div class="card upcoming-card">
           <strong>Today's Matchups</strong><br>
           <span class="muted">No scheduled games found.</span>
         </div>
@@ -398,12 +561,12 @@ async function loadDaily() {
       const startText = game.start ? new Date(game.start).toLocaleString() : "TBD";
 
       return `
-        <div class="card">
-          <div class="toggle" onclick="toggle('${id}')">
-            ▶ ${game.away_team || "Away"} @ ${game.home_team || "Home"}
+        <div class="card upcoming-card">
+          <div class="toggle matchup-title" onclick="toggle('${id}')">
+            ${game.away_team || "Away"} @ ${game.home_team || "Home"}
           </div>
 
-          <div class="muted" style="margin-top:6px; font-size:12px;">
+          <div class="meta-line">
             ${startText} | ${game.venue || "Venue TBD"} | ${game.status || "Scheduled"}
           </div>
 
@@ -431,7 +594,7 @@ async function loadDaily() {
     }).join("");
   } catch (error) {
     gamesDiv.innerHTML = `
-      <div class="card">
+      <div class="card upcoming-card">
         <strong>Today's Matchups</strong><br>
         <span class="muted">Could not load daily.json.</span>
       </div>
@@ -450,7 +613,7 @@ async function loadPostgame() {
 
     if (!games.length) {
       postgameDiv.innerHTML = `
-        <div class="card">
+        <div class="card final-card">
           <strong>Today's Finals</strong><br>
           <span class="muted">No final games yet today.</span>
         </div>
@@ -459,11 +622,10 @@ async function loadPostgame() {
     }
 
     postgameDiv.innerHTML = games.map(game => `
-      <div class="card">
-        <strong>${game.game || "Final"}</strong><br>
-        Final Score: ${game.final_score || "N/A"}<br>
-        Winner: ${game.winner || "N/A"}<br>
-        Loser: ${game.loser || "N/A"}
+      <div class="card final-card">
+        <div class="matchup-title">${game.game || "Final"}</div>
+        <div class="score-line">Final Score: ${game.final_score || "N/A"}</div>
+        <div class="stat-line">Winner: ${game.winner || "N/A"} | Loser: ${game.loser || "N/A"}</div>
 
         <div class="section">Top Hitters</div>
         ${listMarkup(game.hitters, "No hitter highlights captured.")}
@@ -480,7 +642,7 @@ async function loadPostgame() {
     `).join("");
   } catch (error) {
     postgameDiv.innerHTML = `
-      <div class="card">
+      <div class="card final-card">
         <strong>Today's Finals</strong><br>
         <span class="muted">Could not load postgame.json.</span>
       </div>
@@ -502,16 +664,18 @@ async function loadRecap() {
     const article = data.article || "No recap available yet.";
 
     recapDiv.innerHTML = `
-      <div class="card">
-        <h2>${data.headline || "Yesterday Recap"}</h2>
-        <p style="line-height:1.6; white-space:pre-wrap; margin:0;">${article}</p>
+      <div class="recap-card">
+        <div class="kicker">Featured Editorial Recap</div>
+        <h2 class="recap-headline">${data.headline || "Yesterday Recap"}</h2>
+        <div class="recap-body">${article}</div>
       </div>
     `;
   } catch (error) {
     recapDiv.innerHTML = `
-      <div class="card">
-        <strong>Final Recap</strong><br>
-        <span class="muted">No AI recap available yet. Written recaps appear after games go final.</span>
+      <div class="recap-card">
+        <div class="kicker">Featured Editorial Recap</div>
+        <h2 class="recap-headline">Yesterday Recap</h2>
+        <div class="recap-body">No AI recap available yet. Written recaps appear after games go final.</div>
       </div>
     `;
     console.error(error);
