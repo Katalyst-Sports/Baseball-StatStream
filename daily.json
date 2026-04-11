@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-11T15:47:23.244651-04:00",
+  "updated_at": "2026-04-11T15:51:17.611020-04:00",
   "games": [
     {
       "gamePk": 823480,
@@ -900,21 +900,21 @@
         "id": 677952,
         "name": "Braxton Ashcraft",
         "hand": "R",
-        "era": "1.65",
+        "era": "2.16",
         "last3": {
           "starts_used": 3,
-          "avg_ip": "5.4",
+          "avg_ip": "5.6",
           "avg_k": "6.3",
           "avg_bb": "1.7",
-          "avg_era": "1.65",
-          "whip": "1.04",
+          "avg_era": "2.16",
+          "whip": "1.02",
           "quality_starts": 2,
           "wins": 0,
           "last_start": {
-            "ip": "4.1",
+            "ip": "4.2",
             "k": 8,
             "bb": 1,
-            "er": 0,
+            "er": 1,
             "hits": 4,
             "decision": "N/A"
           }
@@ -1140,6 +1140,38 @@
       ],
       "home_hitters": [
         {
+          "name": "Nico Hoerner",
+          "hand": "R",
+          "streak": 5,
+          "hot": true,
+          "cold": false,
+          "stats": {
+            "avg": ".327",
+            "obp": ".443",
+            "slg": ".510",
+            "ops": ".953",
+            "pa": 61
+          },
+          "last10": {
+            "label": "Last 10 games",
+            "avg": ".361",
+            "hits": 13,
+            "ab": 36,
+            "pa": 44
+          },
+          "vsRHP": {
+            "avg": ".333",
+            "hits": 11
+          },
+          "vsLHP": {
+            "avg": ".308",
+            "hits": 4
+          },
+          "risp": {
+            "avg": ".308"
+          }
+        },
+        {
           "name": "Alex Bregman",
           "hand": "R",
           "streak": 0,
@@ -1169,38 +1201,6 @@
           },
           "risp": {
             "avg": ".167"
-          }
-        },
-        {
-          "name": "Nico Hoerner",
-          "hand": "R",
-          "streak": 5,
-          "hot": true,
-          "cold": false,
-          "stats": {
-            "avg": ".333",
-            "obp": ".450",
-            "slg": ".521",
-            "ops": ".971",
-            "pa": 60
-          },
-          "last10": {
-            "label": "Last 10 games",
-            "avg": ".371",
-            "hits": 13,
-            "ab": 35,
-            "pa": 43
-          },
-          "vsRHP": {
-            "avg": ".333",
-            "hits": 11
-          },
-          "vsLHP": {
-            "avg": ".308",
-            "hits": 4
-          },
-          "risp": {
-            "avg": ".308"
           }
         },
         {
@@ -1368,22 +1368,22 @@
         "id": 641778,
         "name": "Eric Lauer",
         "hand": "L",
-        "era": "4.66",
+        "era": "7.45",
         "last3": {
           "starts_used": 3,
           "avg_ip": "3.2",
           "avg_k": "3.3",
-          "avg_bb": "2.0",
-          "avg_era": "4.66",
-          "whip": "1.55",
+          "avg_bb": "2.3",
+          "avg_era": "7.45",
+          "whip": "1.76",
           "quality_starts": 0,
           "wins": 0,
           "last_start": {
             "ip": "2.1",
             "k": 1,
-            "bb": 2,
-            "er": 1,
-            "hits": 3,
+            "bb": 3,
+            "er": 4,
+            "hits": 4,
             "decision": "N/A"
           }
         }
@@ -1488,22 +1488,22 @@
         {
           "name": "Josh Bell",
           "hand": "S",
-          "streak": 0,
+          "streak": 1,
           "hot": false,
           "cold": false,
           "stats": {
-            "avg": ".283",
-            "obp": ".393",
-            "slg": ".565",
-            "ops": ".958",
-            "pa": 56
+            "avg": ".298",
+            "obp": ".404",
+            "slg": ".574",
+            "ops": ".978",
+            "pa": 57
           },
           "last10": {
             "label": "Last 10 games",
-            "avg": ".323",
-            "hits": 10,
-            "ab": 31,
-            "pa": 35
+            "avg": ".344",
+            "hits": 11,
+            "ab": 32,
+            "pa": 36
           },
           "vsRHP": {
             "avg": ".348",
@@ -1557,17 +1557,17 @@
           "cold": false,
           "stats": {
             "avg": ".286",
-            "obp": ".405",
+            "obp": ".419",
             "slg": ".429",
-            "ops": ".834",
-            "pa": 43
+            "ops": ".848",
+            "pa": 44
           },
           "last10": {
             "label": "Last 10 games",
             "avg": ".290",
             "hits": 9,
             "ab": 31,
-            "pa": 39
+            "pa": 40
           },
           "vsRHP": {
             "avg": ".235",
