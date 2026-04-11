@@ -111,7 +111,7 @@ def team_active_hitters(team_id):
     return hitters
 
 
-def pitcher_last_five(player_id):
+def pitcher_last_three(player_id):
     splits = player_stat_group(player_id, "pitching", "gameLog")
     starts = []
 
@@ -119,7 +119,7 @@ def pitcher_last_five(player_id):
         stat = split.get("stat", {})
         if safe_number(stat.get("gamesStarted")) >= 1:
             starts.append(stat)
-        if len(starts) == 5:
+        if len(starts) == 3:
             break
 
     if not starts:
@@ -130,7 +130,16 @@ def pitcher_last_five(player_id):
             "avg_bb": "N/A",
             "avg_era": "N/A",
             "whip": "N/A",
-            "k_bb": "N/A",
+            "quality_starts": 0,
+            "wins": 0,
+            "last_start": {
+                "ip": "N/A",
+                "k": "N/A",
+                "bb": "N/A",
+                "er": "N/A",
+                "hits": "N/A",
+                "decision": "N/A",
+            },
         }
 
     total_ip = sum(parse_ip(start.get("inningsPitched")) for start in starts)
@@ -139,10 +148,22 @@ def pitcher_last_five(player_id):
     total_er = sum(safe_number(start.get("earnedRuns")) for start in starts)
     total_hits = sum(safe_number(start.get("hits")) for start in starts)
 
+    quality_starts = 0
+    wins = 0
+
+    for start in starts:
+        ip = parse_ip(start.get("inningsPitched"))
+        er = safe_number(start.get("earnedRuns"))
+        if ip >= 6 and er <= 3:
+            quality_starts += 1
+        if str(start.get("decision", "")).lower() == "win":
+            wins += 1
+
     starts_count = len(starts)
     whip = ((total_hits + total_bb) / total_ip) if total_ip else None
     era = ((total_er * 9) / total_ip) if total_ip else None
-    k_bb = (total_k / total_bb) if total_bb else float(total_k)
+
+    last_start = starts[0]
 
     return {
         "starts_used": starts_count,
@@ -151,7 +172,16 @@ def pitcher_last_five(player_id):
         "avg_bb": f"{(total_bb / starts_count):.1f}",
         "avg_era": f"{era:.2f}" if era is not None else "N/A",
         "whip": f"{whip:.2f}" if whip is not None else "N/A",
-        "k_bb": f"{k_bb:.2f}" if total_bb else f"{int(total_k)}.00",
+        "quality_starts": quality_starts,
+        "wins": wins,
+        "last_start": {
+            "ip": last_start.get("inningsPitched", "N/A"),
+            "k": safe_number(last_start.get("strikeOuts")),
+            "bb": safe_number(last_start.get("baseOnBalls")),
+            "er": safe_number(last_start.get("earnedRuns")),
+            "hits": safe_number(last_start.get("hits")),
+            "decision": last_start.get("decision", "N/A"),
+        },
     }
 
 
@@ -251,14 +281,23 @@ def pitcher_summary(pitcher):
         "name": pitcher.get("fullName", "Unknown Pitcher"),
         "hand": "N/A",
         "era": "N/A",
-        "last5": {
+        "last3": {
             "starts_used": 0,
             "avg_ip": "N/A",
             "avg_k": "N/A",
             "avg_bb": "N/A",
             "avg_era": "N/A",
             "whip": "N/A",
-            "k_bb": "N/A",
+            "quality_starts": 0,
+            "wins": 0,
+            "last_start": {
+                "ip": "N/A",
+                "k": "N/A",
+                "bb": "N/A",
+                "er": "N/A",
+                "hits": "N/A",
+                "decision": "N/A",
+            },
         },
     }
 
@@ -284,9 +323,9 @@ def pitcher_summary(pitcher):
         out["stats_error"] = str(exc)
 
     try:
-        out["last5"] = pitcher_last_five(pitcher_id)
+        out["last3"] = pitcher_last_three(pitcher_id)
     except Exception as exc:
-        out["last5_error"] = str(exc)
+        out["last3_error"] = str(exc)
 
     return out
 
