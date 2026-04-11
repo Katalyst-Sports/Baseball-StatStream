@@ -1,5 +1,6 @@
 print("### RUN_ENGINE MAIN BRANCH EXECUTING ###")
 print("### GROQ ENGINE VERSION RUNNING ###")
+
 import json
 import os
 from datetime import datetime
@@ -47,12 +48,14 @@ for d in schedule.get("dates", []):
         home = g["teams"]["home"]["team"]["name"]
         status = g["status"]["abstractGameState"]
 
+        # ---------------- DAILY ----------------
         daily.append({
             "away_team": away,
             "home_team": home,
             "start": g["gameDate"]
         })
 
+        # ---------------- LIVE ----------------
         if status in ["Live", "In Progress"]:
             feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
             lines = feed["liveData"]["linescore"]
@@ -63,6 +66,7 @@ for d in schedule.get("dates", []):
                 "inning": lines.get("currentInningOrdinal")
             })
 
+        # ---------------- FINAL ----------------
         if status == "Final":
             feed = fetch(f"{BASE}/v1.1/game/{g['gamePk']}/feed/live")
             lines = feed["liveData"]["linescore"]
@@ -100,7 +104,7 @@ Write a daily MLB recap with:
 - A strong headline
 - One paragraph per game
 - Clear winners and reasons
-- A short 'What It Means' section
+- A short "What It Means" section
 
 Games:
 {games_text}
@@ -125,6 +129,7 @@ Games:
             "article": f"Groq error: {str(e)}"
         }
 
+# ---------------- FALLBACK ----------------
 if not recap and postgame:
     recap = {
         "date": TODAY,
@@ -133,9 +138,8 @@ if not recap and postgame:
     }
 
 # =====================================================
-# WRITE FILES
+# WRITE FILES (FORCE OVERWRITE)
 # =====================================================
-
 
 with open("daily_recap.json", "w") as f:
     json.dump(recap, f, indent=2)
