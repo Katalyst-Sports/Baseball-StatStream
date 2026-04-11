@@ -35,7 +35,7 @@ jobs:
       - name: Run MLB engine
         run: python run_engine.py
 
-      - name: Commit updated data
+       name: Commit updated data
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
@@ -47,4 +47,6 @@ jobs:
           git add yesterday_recap.json || true
 
           git commit -m "Update MLB dashboard data" || echo "No changes"
-          git push
+
+          git pull --rebase origin main
+          git push origin main
