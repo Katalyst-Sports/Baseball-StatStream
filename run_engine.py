@@ -532,19 +532,35 @@ if yesterday_postgame and client:
             ]
         )
 
-        prompt = f"""
-You are a professional MLB columnist.
+           prompt = f"""
+You are an MLB recap editor writing for a clean sports dashboard.
 
-Write a YESTERDAY MLB recap with:
-- A strong headline
-- One paragraph per game
-- Specific stats and reasons
-- End with a section titled "Biggest Story of the Day"
+Write a recap using exactly this format:
 
-Only use the exact stats provided below.
-Do not invent numbers, strikeout totals, innings, or player performances.
-If a stat is not listed below, do not mention it.
-Avoid generic language.
+HEADLINE:
+One strong headline.
+
+TOP 3 GAMES:
+Pick the three most interesting games only.
+For each one, write 2-3 sentences using only the exact stats provided.
+
+QUICK HITS:
+Summarize the remaining games in short bullet-style lines.
+One sentence each.
+
+MOST IMPACTFUL PLAY:
+Name the single most impactful play or performance of the day and explain why in 1-2 sentences.
+
+BIGGEST STORY OF THE DAY:
+End with 1 short paragraph on the biggest overall takeaway.
+
+Rules:
+- Only use the exact stats provided below.
+- Do not invent innings, strikeout totals, RBI totals, or storylines.
+- If a stat is not listed below, do not mention it.
+- Keep the writing sharp, clean, and professional.
+- Do not write like a long opinion column.
+- Prefer clarity over drama.
 
 Games:
 {games_text}
