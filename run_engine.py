@@ -532,7 +532,7 @@ if yesterday_postgame and client:
             ]
         )
 
-           prompt = f"""
+        prompt = f"""
 You are an MLB recap editor writing for a clean sports dashboard.
 
 Write a recap using exactly this format:
