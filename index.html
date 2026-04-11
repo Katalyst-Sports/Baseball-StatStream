@@ -17,6 +17,7 @@
   --red: #ff6b6b;
   --gold: #f0b84b;
   --green: #43c07a;
+  --cyan: #38bdf8;
   --shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
   --base-off: rgba(255,255,255,0.14);
   --base-on: #43c07a;
@@ -139,6 +140,13 @@ body {
   gap: 14px;
 }
 
+.player-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
 .card {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -153,29 +161,12 @@ body {
   background: var(--panel-strong);
 }
 
-.live-card {
-  border-top: 4px solid var(--red);
-}
-
-.upcoming-card {
-  border-top: 4px solid var(--blue);
-}
-
-.finished-card {
-  border-top: 4px solid var(--gold);
-}
-
-.recap-card {
-  border-top: 4px solid #64748b;
-}
-
-.leader-card {
-  border-top: 4px solid var(--green);
-}
-
-.player-card {
-  border-top: 4px solid #38bdf8;
-}
+.live-card { border-top: 4px solid var(--red); }
+.upcoming-card { border-top: 4px solid var(--blue); }
+.finished-card { border-top: 4px solid var(--gold); }
+.recap-card { border-top: 4px solid #64748b; }
+.leader-card { border-top: 4px solid var(--green); }
+.player-card { border-top: 4px solid var(--cyan); }
 
 .matchup {
   font-size: 15px;
@@ -229,6 +220,13 @@ body {
   margin-bottom: 4px;
 }
 
+.stat-line {
+  font-size: 12px;
+  color: #b9c8dc;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
 .list {
   margin: 6px 0 0 18px;
   padding: 0;
@@ -258,15 +256,8 @@ body {
   letter-spacing: 0.04em;
 }
 
-.badge-hot {
-  background: rgba(255, 107, 107, 0.16);
-  color: #ffb1b1;
-}
-
-.badge-cold {
-  background: rgba(77, 163, 255, 0.16);
-  color: #add3ff;
-}
+.badge-hot { background: rgba(255, 107, 107, 0.16); color: #ffb1b1; }
+.badge-cold { background: rgba(77, 163, 255, 0.16); color: #add3ff; }
 
 .mini-grid {
   display: grid;
@@ -288,13 +279,6 @@ body {
 
 .player-row:last-child {
   border-bottom: 0;
-}
-
-.stat-line {
-  font-size: 12px;
-  color: #b9c8dc;
-  line-height: 1.5;
-  margin-top: 3px;
 }
 
 .live-top {
@@ -428,6 +412,7 @@ body {
 
 .player-search-card {
   padding: 18px;
+  position: relative;
 }
 
 .player-search-row {
@@ -453,11 +438,69 @@ body {
   background: linear-gradient(135deg, #0f4c81, #2563eb);
 }
 
-.player-grid {
+.player-search-suggestions {
+  position: absolute;
+  top: 116px;
+  left: 18px;
+  right: 158px;
+  z-index: 20;
+  background: rgba(8, 16, 28, 0.98);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.player-suggestion {
   display: grid;
-  grid-template-columns: 1.1fr 1fr 1fr;
+  grid-template-columns: 44px 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.player-suggestion:last-child {
+  border-bottom: 0;
+}
+
+.player-suggestion:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.player-headshot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255,255,255,0.06);
+}
+
+.player-hero {
+  display: grid;
+  grid-template-columns: 110px 1fr;
   gap: 14px;
-  margin-top: 14px;
+  align-items: center;
+}
+
+.player-headshot-lg {
+  width: 110px;
+  height: 110px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255,255,255,0.06);
+}
+
+.live-event {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.live-event:last-child {
+  border-bottom: 0;
 }
 
 footer {
@@ -498,7 +541,8 @@ footer {
   .grid-4,
   .mini-grid,
   .player-grid,
-  .player-search-row {
+  .player-search-row,
+  .player-hero {
     grid-template-columns: 1fr;
   }
 
@@ -510,6 +554,12 @@ footer {
 
   .live-strip {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .player-search-suggestions {
+    left: 18px;
+    right: 18px;
+    top: 164px;
   }
 
   .page-title {
@@ -543,11 +593,12 @@ footer {
     </div>
     <div class="card player-card player-search-card">
       <div class="matchup">Player Spotlight</div>
-      <div class="meta">Search any MLB player to view season stats, recent form, and live-game context.</div>
+      <div class="meta">Search any MLB player to view season stats, recent form, headshot, and live-game context.</div>
       <div class="player-search-row">
         <input id="player-search-input" class="player-search-input" type="text" placeholder="Search player name, e.g. Aaron Judge">
         <button id="player-search-button" class="player-search-button">Search</button>
       </div>
+      <div id="player-search-suggestions" class="player-search-suggestions" style="display:none;"></div>
       <div id="player-search-result" style="margin-top:14px;"></div>
     </div>
   </div>
@@ -612,6 +663,7 @@ footer {
 
 <script>
 const LIVE_API_URL = "https://misty-heart-42ca.k8piler.workers.dev/live";
+const PLAYER_SEARCH_API_URL = "https://misty-heart-42ca.k8piler.workers.dev/player-search";
 const PLAYER_API_URL = "https://misty-heart-42ca.k8piler.workers.dev/player";
 
 const TEAM_STYLES = {
@@ -646,6 +698,9 @@ const TEAM_STYLES = {
   "Toronto Blue Jays": { abbr: "TOR", color: "#134A8E", short: "Blue Jays" },
   "Washington Nationals": { abbr: "WSH", color: "#AB0003", short: "Nationals" }
 };
+
+let suggestionTimer = null;
+let activePlayerId = null;
 
 function safeArray(value) {
   return Array.isArray(value) ? value : [];
@@ -794,6 +849,37 @@ function toggle(id) {
   el.style.display = el.style.display === "none" ? "block" : "none";
 }
 
+function renderSuggestions(players) {
+  const el = document.getElementById("player-search-suggestions");
+  if (!players.length) {
+    el.style.display = "none";
+    el.innerHTML = "";
+    return;
+  }
+
+  el.innerHTML = players.map(player => `
+    <div class="player-suggestion" data-player-id="${player.id}">
+      <img class="player-headshot" src="${player.headshot}" alt="${player.full_name}">
+      <div>
+        <div class="stat-row"><strong>${player.full_name}</strong></div>
+        <div class="stat-line">${player.team} | ${player.position}</div>
+      </div>
+    </div>
+  `).join("");
+
+  el.style.display = "block";
+
+  el.querySelectorAll(".player-suggestion").forEach((node) => {
+    node.addEventListener("click", () => {
+      const playerId = node.getAttribute("data-player-id");
+      const input = document.getElementById("player-search-input");
+      input.value = node.querySelector("strong").textContent;
+      el.style.display = "none";
+      loadPlayer(playerId);
+    });
+  });
+}
+
 function renderPlayerSearch(data) {
   const el = document.getElementById("player-search-result");
 
@@ -813,14 +899,26 @@ function renderPlayerSearch(data) {
   el.innerHTML = `
     <div class="player-grid">
       <div class="card player-card">
-        <div class="matchup">${formatValue(p.full_name)}</div>
-        <div class="meta">${formatValue(p.team)} | ${formatValue(p.position)} | Bats ${formatValue(p.bat_side)} | Throws ${formatValue(p.pitch_hand)}</div>
-        <div class="stat-row">Age: ${formatValue(p.age)} | Jersey: ${formatValue(p.jersey)}</div>
+        <div class="player-hero">
+          <img class="player-headshot-lg" src="${p.headshot}" alt="${formatValue(p.full_name)}">
+          <div>
+            <div class="matchup">${formatValue(p.full_name)}</div>
+            <div class="meta">${formatValue(p.team)} | ${formatValue(p.position)}</div>
+            <div class="stat-row">Bats ${formatValue(p.bat_side)} | Throws ${formatValue(p.pitch_hand)}</div>
+            <div class="stat-line">Age ${formatValue(p.age)} | Jersey ${formatValue(p.jersey)}</div>
+          </div>
+        </div>
 
         <div class="section-title-sm">Live Status</div>
         ${live.is_live
           ? `<div class="stat-row">Live Now: ${formatValue(live.game)} | ${formatValue(live.score)} | ${formatValue(live.inning)}</div>
-             <div class="stat-line">Current Batter: ${formatValue(live.current_batter)} | Current Pitcher: ${formatValue(live.current_pitcher)}</div>`
+             <div class="stat-line">Current Batter: ${formatValue(live.current_batter)} | Current Pitcher: ${formatValue(live.current_pitcher)}</div>
+             ${live.batting_line
+               ? `<div class="stat-line">Live Batting: ${formatValue(live.batting_line.hits, 0)} H | ${formatValue(live.batting_line.atBats, 0)} AB | ${formatValue(live.batting_line.homeRuns, 0)} HR | ${formatValue(live.batting_line.rbi, 0)} RBI</div>`
+               : ""}
+             ${live.pitching_line
+               ? `<div class="stat-line">Live Pitching: ${formatValue(live.pitching_line.inningsPitched)} IP | ${formatValue(live.pitching_line.strikeOuts, 0)} K | ${formatValue(live.pitching_line.earnedRuns, 0)} ER | ${formatValue(live.pitching_line.numberOfPitches, 0)} P</div>`
+               : ""}`
           : `<div class="muted">Not currently in a live game.</div>`}
       </div>
 
@@ -848,29 +946,74 @@ function renderPlayerSearch(data) {
           : recentPitch.length
             ? recentPitch.map(game => `<div class="player-row"><strong>${new Date(game.date).toLocaleDateString()}</strong><div class="stat-line">${formatValue(game.opponent)} | ${formatValue(game.innings)} IP | ${formatValue(game.strikeouts, 0)} K | ${formatValue(game.earned_runs, 0)} ER | ${formatValue(game.walks, 0)} BB</div></div>`).join("")
             : `<div class="muted">No recent game log available.</div>`}
+
+        ${live.is_live && safeArray(live.recent_live_events).length
+          ? `<div class="section-title-sm">Recent Live Events</div>
+             ${live.recent_live_events.map(event => `<div class="live-event"><div class="stat-row">${formatValue(event.inning)}</div><div class="stat-line">${formatValue(event.description)}</div></div>`).join("")}`
+          : ``}
       </div>
     </div>
   `;
 }
 
-async function searchPlayer() {
+async function searchSuggestions() {
   const input = document.getElementById("player-search-input");
-  const result = document.getElementById("player-search-result");
   const q = input.value.trim();
 
-  if (!q) {
-    result.innerHTML = `<div class="muted">Enter a player name to search.</div>`;
+  if (q.length < 2) {
+    renderSuggestions([]);
     return;
   }
 
-  result.innerHTML = `<div class="muted">Searching player...</div>`;
+  try {
+    const response = await fetch(`${PLAYER_SEARCH_API_URL}?q=${encodeURIComponent(q)}&nocache=${Date.now()}`);
+    const data = await response.json();
+    renderSuggestions(safeArray(data.players));
+  } catch (error) {
+    renderSuggestions([]);
+    console.error(error);
+  }
+}
+
+async function loadPlayer(playerId) {
+  activePlayerId = playerId;
+  const result = document.getElementById("player-search-result");
+  result.innerHTML = `<div class="muted">Loading player...</div>`;
 
   try {
-    const response = await fetch(`${PLAYER_API_URL}?q=${encodeURIComponent(q)}&nocache=${Date.now()}`);
+    const response = await fetch(`${PLAYER_API_URL}?id=${encodeURIComponent(playerId)}&nocache=${Date.now()}`);
     const data = await response.json();
     renderPlayerSearch(data);
   } catch (error) {
-    result.innerHTML = `<div class="muted">Could not load player search.</div>`;
+    result.innerHTML = `<div class="muted">Could not load player details.</div>`;
+    console.error(error);
+  }
+}
+
+async function runSearchFromInput() {
+  const input = document.getElementById("player-search-input");
+  const q = input.value.trim();
+  const suggestions = document.getElementById("player-search-suggestions");
+
+  if (!q) {
+    document.getElementById("player-search-result").innerHTML = `<div class="muted">Enter a player name to search.</div>`;
+    return;
+  }
+
+  suggestions.style.display = "none";
+
+  try {
+    const response = await fetch(`${PLAYER_SEARCH_API_URL}?q=${encodeURIComponent(q)}&nocache=${Date.now()}`);
+    const data = await response.json();
+    const first = safeArray(data.players)[0];
+    if (!first) {
+      document.getElementById("player-search-result").innerHTML = `<div class="muted">No MLB player found.</div>`;
+      return;
+    }
+    document.getElementById("player-search-input").value = first.full_name;
+    loadPlayer(first.id);
+  } catch (error) {
+    document.getElementById("player-search-result").innerHTML = `<div class="muted">Search failed.</div>`;
     console.error(error);
   }
 }
@@ -1099,12 +1242,29 @@ function renderSeasonLeaders(leaders) {
 
 async function refreshLiveOnly() {
   await loadLive();
+  if (activePlayerId) {
+    loadPlayer(activePlayerId);
+  }
 }
 
-document.getElementById("player-search-button").addEventListener("click", searchPlayer);
+document.getElementById("player-search-button").addEventListener("click", runSearchFromInput);
+
+document.getElementById("player-search-input").addEventListener("input", () => {
+  clearTimeout(suggestionTimer);
+  suggestionTimer = setTimeout(searchSuggestions, 220);
+});
+
 document.getElementById("player-search-input").addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
-    searchPlayer();
+    runSearchFromInput();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  const suggestions = document.getElementById("player-search-suggestions");
+  const searchCard = document.querySelector(".player-search-card");
+  if (!searchCard.contains(event.target)) {
+    suggestions.style.display = "none";
   }
 });
 
@@ -1116,4 +1276,3 @@ setInterval(refreshLiveOnly, 30000);
 </script>
 </body>
 </html>
-
