@@ -348,31 +348,51 @@ def ai_daily_recap(postgame_games):
         return None
 
     games_text = "\n".join([
-        f"{g['game']} — Final Score: {g['final_score']}. "
-        f"Key hitters: {', '.join(g['hitters']) if g['hitters'] else 'multiple contributors'}. "
-        f"Key pitchers: {', '.join(g['pitchers']) if g['pitchers'] else 'staff effort'}."
+        f"""
+Game: {g['game']}
+Final Score: {g['final_score']}
+Winner: {g['winner']}
+Loser: {g['loser']}
+Standout Hitters: {', '.join(g['hitters']) if g['hitters'] else 'None'}
+Key Pitchers: {', '.join(g['pitchers']) if g['pitchers'] else 'None'}
+"""
         for g in postgame_games
     ])
 
     prompt = f"""
-You are a professional baseball writer for ESPN and The Athletic.
+You are a professional MLB beat writer for ESPN and The Athletic.
 
-Write a daily MLB recap with:
-- A strong headline
-- One paragraph per game
-- Mention key moments, standout hitters, and pitching
-- An engaging but factual tone
-- End with a short "What it means" section
+Write a DAILY MLB RECAP ARTICLE with the following rules:
 
-Games:
+STRUCTURE:
+- Start with a strong headline that highlights the biggest storyline
+- Write ONE clear paragraph per game
+- Clearly state who WON and who LOST each game
+- Explain WHY the game was decided (pitching dominance, clutch hitting, late runs, etc.)
+- Mention standout hitters and pitchers with context
+- Avoid generic phrases — be specific and descriptive
+- End with a short "What It Means" section about momentum, standings, or trends
+
+STYLE:
+- Confident, informative, sports‑journalism tone
+- Easy to understand who won each game
+- No predictions
+- No gambling language
+
+GAMES TO RECAP:
 {games_text}
 """
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.7
+        temperature=0.65
     )
+
+    return {
+        "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
+        "article": response.choices[0].message.content.strip()
+    }
 
     return {
         "headline": f"MLB Daily Recap — {NOW.strftime('%B %d, %Y')}",
