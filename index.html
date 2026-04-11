@@ -366,6 +366,52 @@ body {
   line-height: 1.5;
 }
 
+.team-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.team-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.team-name {
+  font-size: 13px;
+  color: #cfdaea;
+  font-weight: 600;
+}
+
+.matchup-badges {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.at-symbol {
+  color: #89a4c8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 footer {
   margin-top: 42px;
   padding-top: 18px;
@@ -500,6 +546,39 @@ footer {
 <script>
 const LIVE_API_URL = "https://misty-heart-42ca.k8piler.workers.dev/live";
 
+const TEAM_STYLES = {
+  "Arizona Diamondbacks": { abbr: "ARI", color: "#A71930" },
+  "Athletics": { abbr: "ATH", color: "#003831" },
+  "Atlanta Braves": { abbr: "ATL", color: "#CE1141" },
+  "Baltimore Orioles": { abbr: "BAL", color: "#DF4601" },
+  "Boston Red Sox": { abbr: "BOS", color: "#BD3039" },
+  "Chicago Cubs": { abbr: "CHC", color: "#0E3386" },
+  "Chicago White Sox": { abbr: "CHW", color: "#27251F" },
+  "Cincinnati Reds": { abbr: "CIN", color: "#C6011F" },
+  "Cleveland Guardians": { abbr: "CLE", color: "#E31937" },
+  "Colorado Rockies": { abbr: "COL", color: "#33006F" },
+  "Detroit Tigers": { abbr: "DET", color: "#0C2340" },
+  "Houston Astros": { abbr: "HOU", color: "#EB6E1F" },
+  "Kansas City Royals": { abbr: "KC", color: "#004687" },
+  "Los Angeles Angels": { abbr: "LAA", color: "#BA0021" },
+  "Los Angeles Dodgers": { abbr: "LAD", color: "#005A9C" },
+  "Miami Marlins": { abbr: "MIA", color: "#00A3E0" },
+  "Milwaukee Brewers": { abbr: "MIL", color: "#12284B" },
+  "Minnesota Twins": { abbr: "MIN", color: "#002B5C" },
+  "New York Mets": { abbr: "NYM", color: "#002D72" },
+  "New York Yankees": { abbr: "NYY", color: "#0C2340" },
+  "Philadelphia Phillies": { abbr: "PHI", color: "#E81828" },
+  "Pittsburgh Pirates": { abbr: "PIT", color: "#FDB827" },
+  "San Diego Padres": { abbr: "SD", color: "#2F241D" },
+  "San Francisco Giants": { abbr: "SF", color: "#FD5A1E" },
+  "Seattle Mariners": { abbr: "SEA", color: "#005C5C" },
+  "St. Louis Cardinals": { abbr: "STL", color: "#C41E3A" },
+  "Tampa Bay Rays": { abbr: "TB", color: "#092C5C" },
+  "Texas Rangers": { abbr: "TEX", color: "#003278" },
+  "Toronto Blue Jays": { abbr: "TOR", color: "#134A8E" },
+  "Washington Nationals": { abbr: "WSH", color: "#AB0003" }
+};
+
 function safeArray(value) {
   return Array.isArray(value) ? value : [];
 }
@@ -519,6 +598,25 @@ function streakBadge(player) {
   if (player.cold) return `<span class="badge badge-cold">COLD</span>`;
   if ((player.streak || 0) >= 3) return `<span class="badge badge-hot">${player.streak}-GAME</span>`;
   return "";
+}
+
+function teamInfo(teamName) {
+  return TEAM_STYLES[teamName] || { abbr: teamName?.slice(0, 3).toUpperCase() || "MLB", color: "#334155" };
+}
+
+function teamBadge(teamName) {
+  const info = teamInfo(teamName);
+  return `<span class="team-badge" style="background:${info.color};">${info.abbr}</span>`;
+}
+
+function matchupBadges(awayTeam, homeTeam) {
+  return `
+    <div class="matchup-badges">
+      ${teamBadge(awayTeam)} <span class="team-name">${formatValue(awayTeam, "Away")}</span>
+      <span class="at-symbol">@</span>
+      ${teamBadge(homeTeam)} <span class="team-name">${formatValue(homeTeam, "Home")}</span>
+    </div>
+  `;
 }
 
 function renderPitcher(p) {
@@ -615,10 +713,10 @@ async function loadLive() {
 
     el.innerHTML = data.games.map(game => `
       <div class="card live-card card-strong">
+        ${matchupBadges(game.away_team, game.home_team)}
+
         <div class="live-top">
-          <div>
-            <div class="matchup">${formatValue(game.game, "Live Game")}</div>
-          </div>
+          <div class="matchup">${formatValue(game.game, "Live Game")}</div>
           <div class="live-top-right">
             <div class="scoreline">${formatValue(game.score, "0-0")}</div>
             <div class="meta">${formatValue(game.inning, "TBD")}</div>
@@ -703,6 +801,7 @@ async function loadDaily() {
 
       return `
         <div class="card upcoming-card">
+          ${matchupBadges(game.away_team, game.home_team)}
           <div class="matchup toggle" onclick="toggle('${id}')">
             ${formatValue(game.away_team, "Away")} @ ${formatValue(game.home_team, "Home")}
           </div>
@@ -749,6 +848,7 @@ async function loadFinishedGames() {
 
     el.innerHTML = games.map(game => `
       <div class="card finished-card">
+        ${matchupBadges(game.game.split(" @ ")[0], game.game.split(" @ ")[1])}
         <div class="matchup">${formatValue(game.game, "Finished Game")}</div>
         <div class="scoreline">${formatValue(game.final_score, "N/A")}</div>
         <div class="stat-row">Winner: ${formatValue(game.winner)} | Loser: ${formatValue(game.loser)}</div>
@@ -788,6 +888,7 @@ function renderPreviousDayRecap(games) {
 
   el.innerHTML = games.map(game => `
     <div class="card recap-card">
+      ${matchupBadges(game.game.split(" @ ")[0], game.game.split(" @ ")[1])}
       <div class="matchup">${formatValue(game.game, "Game")}</div>
       <div class="scoreline">${formatValue(game.final_score, "N/A")}</div>
       <div class="stat-row">Top Pitching: ${formatValue(game.top_pitching_line, "N/A")}</div>
