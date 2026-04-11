@@ -1,518 +1,42 @@
 {
-  "updated_at": "2026-04-10T23:57:15.633165-04:00",
+  "updated_at": "2026-04-11T00:04:27.450131-04:00",
   "games": [
     {
-      "away_team": "Pittsburgh Pirates",
-      "home_team": "Chicago Cubs",
-      "venue": "Wrigley Field",
-      "start": "2026-04-10T18:20:00Z",
+      "away_team": "Arizona Diamondbacks",
+      "home_team": "Philadelphia Phillies",
+      "venue": "Citizens Bank Park",
+      "start": "2026-04-11T17:05:00Z",
       "away_pitcher": {
-        "name": "Carmen Mlodzinski",
+        "name": "Brandon Pfaadt",
         "hand": "R",
-        "era": "2.51",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 4.78,
-        "avg_k": 5.0,
-        "avg_bb": 2.0,
-        "whip": 1.6,
-        "k_bb": 2.5,
-        "command": "Average Command",
-        "quality": false,
-        "elite": false
-      },
-      "home_pitcher": {
-        "name": "Shota Imanaga",
-        "hand": "L",
-        "era": "2.81",
+        "era": "6.75",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
         "avg_ip": 5.33,
-        "avg_k": 6.67,
-        "avg_bb": 1.33,
-        "whip": 0.81,
-        "k_bb": 5.0,
-        "command": "Elite Command",
-        "quality": false,
-        "elite": false
-      },
-      "away_hitters": [
-        {
-          "name": "Billy Cook",
-          "stats": {
-            "avg": ".000",
-            "bip_pa": 0.33
-          },
-          "vsRHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 3,
-            "hits": 0,
-            "avg": 0.0
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".000"
-          }
-        },
-        {
-          "name": "Brandon Lowe",
-          "stats": {
-            "avg": ".220",
-            "bip_pa": 0.58
-          },
-          "vsRHP": {
-            "avg": ".320",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".063",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 4,
-          "risp": {
-            "avg": ".220"
-          }
-        },
-        {
-          "name": "Bryan Reynolds",
-          "stats": {
-            "avg": ".245",
-            "bip_pa": 0.53
-          },
-          "vsRHP": {
-            "avg": ".233",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".263",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".245"
-          }
-        },
-        {
-          "name": "Henry Davis",
-          "stats": {
-            "avg": ".222",
-            "bip_pa": 0.77
-          },
-          "vsRHP": {
-            "avg": ".200",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".286",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".222"
-          }
-        },
-        {
-          "name": "Jake Mangum",
-          "stats": {
-            "avg": ".214",
-            "bip_pa": 0.73
-          },
-          "vsRHP": {
-            "avg": ".133",
-            "hits": 2
-          },
-          "vsLHP": {
-            "avg": ".308",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".214"
-          }
-        },
-        {
-          "name": "Joey Bart",
-          "stats": {
-            "avg": ".143",
-            "bip_pa": 0.47
-          },
-          "vsRHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "vsLHP": {
-            "avg": ".286",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".143"
-          }
-        },
-        {
-          "name": "Konnor Griffin",
-          "stats": {
-            "avg": ".143",
-            "bip_pa": 0.65
-          },
-          "vsRHP": {
-            "avg": ".133",
-            "hits": 2
-          },
-          "vsLHP": {
-            "avg": ".167",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".143"
-          }
-        },
-        {
-          "name": "Marcell Ozuna",
-          "stats": {
-            "avg": ".057",
-            "bip_pa": 0.64
-          },
-          "vsRHP": {
-            "avg": ".045",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": ".077",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".057"
-          }
-        },
-        {
-          "name": "Nick Gonzales",
-          "stats": {
-            "avg": ".273",
-            "bip_pa": 0.74
-          },
-          "vsRHP": {
-            "avg": ".321",
-            "hits": 9
-          },
-          "vsLHP": {
-            "avg": ".188",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".273"
-          }
-        }
-      ],
-      "home_hitters": [
-        {
-          "name": "Alex Bregman",
-          "stats": {
-            "avg": ".192",
-            "bip_pa": 0.72
-          },
-          "vsRHP": {
-            "avg": ".194",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".188",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".192"
-          }
-        },
-        {
-          "name": "Carson Kelly",
-          "stats": {
-            "avg": ".303",
-            "bip_pa": 0.65
-          },
-          "vsRHP": {
-            "avg": ".333",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".250",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".303"
-          }
-        },
-        {
-          "name": "Dansby Swanson",
-          "stats": {
-            "avg": ".140",
-            "bip_pa": 0.49
-          },
-          "vsRHP": {
-            "avg": ".156",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".091",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".140"
-          }
-        },
-        {
-          "name": "Ian Happ",
-          "stats": {
-            "avg": ".233",
-            "bip_pa": 0.43
-          },
-          "vsRHP": {
-            "avg": ".231",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".235",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 4,
-          "risp": {
-            "avg": ".233"
-          }
-        },
-        {
-          "name": "Matt Shaw",
-          "stats": {
-            "avg": ".243",
-            "bip_pa": 0.72
-          },
-          "vsRHP": {
-            "avg": ".227",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".267",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".243"
-          }
-        },
-        {
-          "name": "Michael Busch",
-          "stats": {
-            "avg": ".125",
-            "bip_pa": 0.69
-          },
-          "vsRHP": {
-            "avg": ".105",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".200",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".125"
-          }
-        },
-        {
-          "name": "Michael Conforto",
-          "stats": {
-            "avg": ".250",
-            "bip_pa": 0.45
-          },
-          "vsRHP": {
-            "avg": ".250",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": "N/A",
-            "hits": "N/A"
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".250"
-          }
-        },
-        {
-          "name": "Miguel Amaya",
-          "stats": {
-            "avg": ".294",
-            "bip_pa": 0.65
-          },
-          "vsRHP": {
-            "avg": ".333",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".200",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".294"
-          }
-        },
-        {
-          "name": "Mois\u00e9s Ballesteros",
-          "stats": {
-            "avg": ".207",
-            "bip_pa": 0.62
-          },
-          "vsRHP": {
-            "avg": ".222",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".207"
-          }
-        }
-      ]
-    },
-    {
-      "away_team": "Arizona Diamondbacks",
-      "home_team": "Philadelphia Phillies",
-      "venue": "Citizens Bank Park",
-      "start": "2026-04-10T22:40:00Z",
-      "away_pitcher": {
-        "name": "Michael Soroka",
-        "hand": "R",
-        "era": "2.87",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 5.22,
-        "avg_k": 7.67,
-        "avg_bb": 2.0,
-        "whip": 1.21,
-        "k_bb": 3.83,
-        "command": "Strong Command",
+        "avg_k": 2.5,
+        "avg_bb": 1.5,
+        "whip": 1.41,
+        "k_bb": 1.67,
+        "command": "Below Average Command",
         "quality": false,
         "elite": false
       },
       "home_pitcher": {
-        "name": "Jes\u00fas Luzardo",
-        "hand": "L",
-        "era": "6.23",
+        "name": "Taijuan Walker",
+        "hand": "R",
+        "era": "9.31",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 5.78,
-        "avg_k": 8.67,
-        "avg_bb": 1.33,
-        "whip": 1.15,
-        "k_bb": 6.5,
-        "command": "Elite Command",
+        "avg_ip": 4.83,
+        "avg_k": 3.0,
+        "avg_bb": 2.5,
+        "whip": 2.28,
+        "k_bb": 1.2,
+        "command": "Below Average Command",
         "quality": false,
         "elite": false
       },
@@ -957,38 +481,38 @@
       "away_team": "Miami Marlins",
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
-      "start": "2026-04-10T22:40:00Z",
+      "start": "2026-04-11T17:10:00Z",
       "away_pitcher": {
-        "name": "Chris Paddack",
+        "name": "Janson Junk",
         "hand": "R",
-        "era": "6.14",
+        "era": "3.09",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 4.89,
-        "avg_k": 4.67,
-        "avg_bb": 1.67,
-        "whip": 1.57,
-        "k_bb": 2.8,
-        "command": "Average Command",
+        "avg_ip": 5.83,
+        "avg_k": 4.0,
+        "avg_bb": 1.0,
+        "whip": 1.2,
+        "k_bb": 4.0,
+        "command": "Elite Command",
         "quality": false,
         "elite": false
       },
       "home_pitcher": {
-        "name": "Keider Montero",
+        "name": "Casey Mize",
         "hand": "R",
-        "era": "1.74",
+        "era": "5.23",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
         "avg_ip": 5.17,
-        "avg_k": 5.0,
-        "avg_bb": 1.0,
-        "whip": 0.68,
-        "k_bb": 5.0,
-        "command": "Elite Command",
+        "avg_k": 6.5,
+        "avg_bb": 2.5,
+        "whip": 1.55,
+        "k_bb": 2.6,
+        "command": "Average Command",
         "quality": false,
         "elite": false
       },
@@ -1430,40 +954,992 @@
       ]
     },
     {
-      "away_team": "Los Angeles Angels",
-      "home_team": "Cincinnati Reds",
-      "venue": "Great American Ball Park",
-      "start": "2026-04-10T22:45:00Z",
+      "away_team": "Pittsburgh Pirates",
+      "home_team": "Chicago Cubs",
+      "venue": "Wrigley Field",
+      "start": "2026-04-11T18:20:00Z",
       "away_pitcher": {
-        "name": "Jack Kochanowicz",
+        "name": "Braxton Ashcraft",
         "hand": "R",
-        "era": "3.24",
+        "era": "2.25",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 5.56,
-        "avg_k": 4.0,
-        "avg_bb": 3.67,
+        "avg_ip": 6.0,
+        "avg_k": 5.5,
+        "avg_bb": 2.0,
+        "whip": 1.0,
+        "k_bb": 2.75,
+        "command": "Average Command",
+        "quality": true,
+        "elite": false
+      },
+      "home_pitcher": {
+        "name": "Edward Cabrera",
+        "hand": "R",
+        "era": "0.00",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 5.83,
+        "avg_k": 4.5,
+        "avg_bb": 3.0,
+        "whip": 0.69,
+        "k_bb": 1.5,
+        "command": "Below Average Command",
+        "quality": false,
+        "elite": false
+      },
+      "away_hitters": [
+        {
+          "name": "Billy Cook",
+          "stats": {
+            "avg": ".000",
+            "bip_pa": 0.33
+          },
+          "vsRHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 3,
+            "hits": 0,
+            "avg": 0.0
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".000"
+          }
+        },
+        {
+          "name": "Brandon Lowe",
+          "stats": {
+            "avg": ".220",
+            "bip_pa": 0.58
+          },
+          "vsRHP": {
+            "avg": ".320",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".063",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 4,
+          "risp": {
+            "avg": ".220"
+          }
+        },
+        {
+          "name": "Bryan Reynolds",
+          "stats": {
+            "avg": ".245",
+            "bip_pa": 0.53
+          },
+          "vsRHP": {
+            "avg": ".233",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".263",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".245"
+          }
+        },
+        {
+          "name": "Henry Davis",
+          "stats": {
+            "avg": ".222",
+            "bip_pa": 0.77
+          },
+          "vsRHP": {
+            "avg": ".200",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".286",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".222"
+          }
+        },
+        {
+          "name": "Jake Mangum",
+          "stats": {
+            "avg": ".214",
+            "bip_pa": 0.73
+          },
+          "vsRHP": {
+            "avg": ".133",
+            "hits": 2
+          },
+          "vsLHP": {
+            "avg": ".308",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".214"
+          }
+        },
+        {
+          "name": "Joey Bart",
+          "stats": {
+            "avg": ".143",
+            "bip_pa": 0.47
+          },
+          "vsRHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "vsLHP": {
+            "avg": ".286",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".143"
+          }
+        },
+        {
+          "name": "Konnor Griffin",
+          "stats": {
+            "avg": ".143",
+            "bip_pa": 0.65
+          },
+          "vsRHP": {
+            "avg": ".133",
+            "hits": 2
+          },
+          "vsLHP": {
+            "avg": ".167",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".143"
+          }
+        },
+        {
+          "name": "Marcell Ozuna",
+          "stats": {
+            "avg": ".057",
+            "bip_pa": 0.64
+          },
+          "vsRHP": {
+            "avg": ".045",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": ".077",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".057"
+          }
+        },
+        {
+          "name": "Nick Gonzales",
+          "stats": {
+            "avg": ".273",
+            "bip_pa": 0.74
+          },
+          "vsRHP": {
+            "avg": ".321",
+            "hits": 9
+          },
+          "vsLHP": {
+            "avg": ".188",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".273"
+          }
+        }
+      ],
+      "home_hitters": [
+        {
+          "name": "Alex Bregman",
+          "stats": {
+            "avg": ".192",
+            "bip_pa": 0.72
+          },
+          "vsRHP": {
+            "avg": ".194",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".188",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".192"
+          }
+        },
+        {
+          "name": "Carson Kelly",
+          "stats": {
+            "avg": ".303",
+            "bip_pa": 0.65
+          },
+          "vsRHP": {
+            "avg": ".333",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".250",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".303"
+          }
+        },
+        {
+          "name": "Dansby Swanson",
+          "stats": {
+            "avg": ".140",
+            "bip_pa": 0.49
+          },
+          "vsRHP": {
+            "avg": ".156",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".091",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".140"
+          }
+        },
+        {
+          "name": "Ian Happ",
+          "stats": {
+            "avg": ".233",
+            "bip_pa": 0.43
+          },
+          "vsRHP": {
+            "avg": ".231",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".235",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 4,
+          "risp": {
+            "avg": ".233"
+          }
+        },
+        {
+          "name": "Matt Shaw",
+          "stats": {
+            "avg": ".243",
+            "bip_pa": 0.72
+          },
+          "vsRHP": {
+            "avg": ".227",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".267",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".243"
+          }
+        },
+        {
+          "name": "Michael Busch",
+          "stats": {
+            "avg": ".125",
+            "bip_pa": 0.69
+          },
+          "vsRHP": {
+            "avg": ".105",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".200",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".125"
+          }
+        },
+        {
+          "name": "Michael Conforto",
+          "stats": {
+            "avg": ".250",
+            "bip_pa": 0.45
+          },
+          "vsRHP": {
+            "avg": ".250",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": "N/A",
+            "hits": "N/A"
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".250"
+          }
+        },
+        {
+          "name": "Miguel Amaya",
+          "stats": {
+            "avg": ".294",
+            "bip_pa": 0.65
+          },
+          "vsRHP": {
+            "avg": ".333",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".200",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".294"
+          }
+        },
+        {
+          "name": "Mois\u00e9s Ballesteros",
+          "stats": {
+            "avg": ".207",
+            "bip_pa": 0.62
+          },
+          "vsRHP": {
+            "avg": ".222",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".207"
+          }
+        }
+      ]
+    },
+    {
+      "away_team": "Minnesota Twins",
+      "home_team": "Toronto Blue Jays",
+      "venue": "Rogers Centre",
+      "start": "2026-04-11T19:07:00Z",
+      "away_pitcher": {
+        "name": "Joe Ryan",
+        "hand": "R",
+        "era": "4.40",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 4.78,
+        "avg_k": 5.67,
+        "avg_bb": 1.67,
         "whip": 1.26,
-        "k_bb": 1.09,
+        "k_bb": 3.4,
+        "command": "Strong Command",
+        "quality": false,
+        "elite": false
+      },
+      "home_pitcher": {
+        "name": "Eric Lauer",
+        "hand": "L",
+        "era": "4.91",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 3.67,
+        "avg_k": 4.5,
+        "avg_bb": 2.0,
+        "whip": 1.36,
+        "k_bb": 2.25,
+        "command": "Average Command",
+        "quality": false,
+        "elite": false
+      },
+      "away_hitters": [
+        {
+          "name": "Austin Martin",
+          "stats": {
+            "avg": ".286",
+            "bip_pa": 0.64
+          },
+          "vsRHP": {
+            "avg": ".167",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": ".318",
+            "hits": 7
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".286"
+          }
+        },
+        {
+          "name": "Brooks Lee",
+          "stats": {
+            "avg": ".206",
+            "bip_pa": 0.67
+          },
+          "vsRHP": {
+            "avg": ".200",
+            "hits": 3
+          },
+          "vsLHP": {
+            "avg": ".211",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".206"
+          }
+        },
+        {
+          "name": "Byron Buxton",
+          "stats": {
+            "avg": ".180",
+            "bip_pa": 0.62
+          },
+          "vsRHP": {
+            "avg": ".185",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".174",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 3,
+          "risp": {
+            "avg": ".180"
+          }
+        },
+        {
+          "name": "James Outman",
+          "stats": {
+            "avg": ".000",
+            "bip_pa": 0.4
+          },
+          "vsRHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 0,
+            "avg": 0.0
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".000"
+          }
+        },
+        {
+          "name": "Josh Bell",
+          "stats": {
+            "avg": ".289",
+            "bip_pa": 0.51
+          },
+          "vsRHP": {
+            "avg": ".348",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".227",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".289"
+          }
+        },
+        {
+          "name": "Kody Clemens",
+          "stats": {
+            "avg": ".130",
+            "bip_pa": 0.43
+          },
+          "vsRHP": {
+            "avg": ".056",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": ".400",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".130"
+          }
+        },
+        {
+          "name": "Luke Keaschall",
+          "stats": {
+            "avg": ".204",
+            "bip_pa": 0.78
+          },
+          "vsRHP": {
+            "avg": ".143",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".269",
+            "hits": 7
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".204"
+          }
+        },
+        {
+          "name": "Matt Wallner",
+          "stats": {
+            "avg": ".214",
+            "bip_pa": 0.42
+          },
+          "vsRHP": {
+            "avg": ".241",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".185",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".214"
+          }
+        },
+        {
+          "name": "Royce Lewis",
+          "stats": {
+            "avg": ".222",
+            "bip_pa": 0.5
+          },
+          "vsRHP": {
+            "avg": ".278",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".167",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".222"
+          }
+        }
+      ],
+      "home_hitters": [
+        {
+          "name": "Andr\u00e9s Gim\u00e9nez",
+          "stats": {
+            "avg": ".271",
+            "bip_pa": 0.78
+          },
+          "vsRHP": {
+            "avg": ".355",
+            "hits": 11
+          },
+          "vsLHP": {
+            "avg": ".118",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 6,
+            "avg": 0.6
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".271"
+          }
+        },
+        {
+          "name": "Brandon Valenzuela",
+          "stats": {
+            "avg": ".250",
+            "bip_pa": 0.5
+          },
+          "vsRHP": {
+            "avg": ".333",
+            "hits": 3
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".250"
+          }
+        },
+        {
+          "name": "Daulton Varsho",
+          "stats": {
+            "avg": ".209",
+            "bip_pa": 0.71
+          },
+          "vsRHP": {
+            "avg": ".133",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".385",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".209"
+          }
+        },
+        {
+          "name": "Davis Schneider",
+          "stats": {
+            "avg": ".294",
+            "bip_pa": 0.43
+          },
+          "vsRHP": {
+            "avg": ".286",
+            "hits": 2
+          },
+          "vsLHP": {
+            "avg": ".300",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".294"
+          }
+        },
+        {
+          "name": "Ernie Clement",
+          "stats": {
+            "avg": ".288",
+            "bip_pa": 0.94
+          },
+          "vsRHP": {
+            "avg": ".278",
+            "hits": 10
+          },
+          "vsLHP": {
+            "avg": ".313",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".288"
+          }
+        },
+        {
+          "name": "George Springer",
+          "stats": {
+            "avg": ".189",
+            "bip_pa": 0.62
+          },
+          "vsRHP": {
+            "avg": ".179",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".214",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".189"
+          }
+        },
+        {
+          "name": "Jes\u00fas S\u00e1nchez",
+          "stats": {
+            "avg": ".278",
+            "bip_pa": 0.68
+          },
+          "vsRHP": {
+            "avg": ".290",
+            "hits": 9
+          },
+          "vsLHP": {
+            "avg": ".200",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 5,
+            "avg": 0.5
+          },
+          "streak": 4,
+          "risp": {
+            "avg": ".278"
+          }
+        },
+        {
+          "name": "Kazuma Okamoto",
+          "stats": {
+            "avg": ".220",
+            "bip_pa": 0.51
+          },
+          "vsRHP": {
+            "avg": ".179",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".364",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 6,
+          "risp": {
+            "avg": ".220"
+          }
+        },
+        {
+          "name": "Myles Straw",
+          "stats": {
+            "avg": ".385",
+            "bip_pa": 0.86
+          },
+          "vsRHP": {
+            "avg": ".333",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": ".400",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 5,
+            "avg": 0.5
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".385"
+          }
+        }
+      ]
+    },
+    {
+      "away_team": "Los Angeles Angels",
+      "home_team": "Cincinnati Reds",
+      "venue": "Great American Ball Park",
+      "start": "2026-04-11T20:10:00Z",
+      "away_pitcher": {
+        "name": "George Klassen",
+        "hand": "R",
+        "era": "6.75",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 2.67,
+        "avg_k": 4.0,
+        "avg_bb": 5.0,
+        "whip": 3.0,
+        "k_bb": 0.8,
         "command": "Below Average Command",
         "quality": false,
         "elite": false
       },
       "home_pitcher": {
-        "name": "Chase Burns",
-        "hand": "R",
-        "era": "3.31",
+        "name": "Brandon Williamson",
+        "hand": "L",
+        "era": "4.76",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 5.44,
-        "avg_k": 6.0,
-        "avg_bb": 2.67,
-        "whip": 1.29,
-        "k_bb": 2.25,
+        "avg_ip": 5.67,
+        "avg_k": 3.5,
+        "avg_bb": 1.5,
+        "whip": 1.06,
+        "k_bb": 2.33,
         "command": "Average Command",
         "quality": false,
         "elite": false
@@ -1906,518 +2382,42 @@
       ]
     },
     {
-      "away_team": "Minnesota Twins",
-      "home_team": "Toronto Blue Jays",
-      "venue": "Rogers Centre",
-      "start": "2026-04-10T23:07:00Z",
-      "away_pitcher": {
-        "name": "Simeon Woods Richardson",
-        "hand": "R",
-        "era": "4.60",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 5.22,
-        "avg_k": 2.67,
-        "avg_bb": 1.33,
-        "whip": 1.28,
-        "k_bb": 2.0,
-        "command": "Average Command",
-        "quality": false,
-        "elite": false
-      },
-      "home_pitcher": {
-        "name": "Patrick Corbin",
-        "hand": "L",
-        "era": "9.00",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 4.0,
-        "avg_k": 3.0,
-        "avg_bb": 1.0,
-        "whip": 1.75,
-        "k_bb": 3.0,
-        "command": "Strong Command",
-        "quality": false,
-        "elite": false
-      },
-      "away_hitters": [
-        {
-          "name": "Austin Martin",
-          "stats": {
-            "avg": ".286",
-            "bip_pa": 0.64
-          },
-          "vsRHP": {
-            "avg": ".167",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": ".318",
-            "hits": 7
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".286"
-          }
-        },
-        {
-          "name": "Brooks Lee",
-          "stats": {
-            "avg": ".206",
-            "bip_pa": 0.67
-          },
-          "vsRHP": {
-            "avg": ".200",
-            "hits": 3
-          },
-          "vsLHP": {
-            "avg": ".211",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".206"
-          }
-        },
-        {
-          "name": "Byron Buxton",
-          "stats": {
-            "avg": ".180",
-            "bip_pa": 0.62
-          },
-          "vsRHP": {
-            "avg": ".185",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".174",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 3,
-          "risp": {
-            "avg": ".180"
-          }
-        },
-        {
-          "name": "James Outman",
-          "stats": {
-            "avg": ".000",
-            "bip_pa": 0.4
-          },
-          "vsRHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 0,
-            "avg": 0.0
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".000"
-          }
-        },
-        {
-          "name": "Josh Bell",
-          "stats": {
-            "avg": ".289",
-            "bip_pa": 0.51
-          },
-          "vsRHP": {
-            "avg": ".348",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".227",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".289"
-          }
-        },
-        {
-          "name": "Kody Clemens",
-          "stats": {
-            "avg": ".130",
-            "bip_pa": 0.43
-          },
-          "vsRHP": {
-            "avg": ".056",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": ".400",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".130"
-          }
-        },
-        {
-          "name": "Luke Keaschall",
-          "stats": {
-            "avg": ".204",
-            "bip_pa": 0.78
-          },
-          "vsRHP": {
-            "avg": ".143",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".269",
-            "hits": 7
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".204"
-          }
-        },
-        {
-          "name": "Matt Wallner",
-          "stats": {
-            "avg": ".214",
-            "bip_pa": 0.42
-          },
-          "vsRHP": {
-            "avg": ".241",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".185",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".214"
-          }
-        },
-        {
-          "name": "Royce Lewis",
-          "stats": {
-            "avg": ".222",
-            "bip_pa": 0.5
-          },
-          "vsRHP": {
-            "avg": ".278",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".167",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".222"
-          }
-        }
-      ],
-      "home_hitters": [
-        {
-          "name": "Andr\u00e9s Gim\u00e9nez",
-          "stats": {
-            "avg": ".271",
-            "bip_pa": 0.78
-          },
-          "vsRHP": {
-            "avg": ".355",
-            "hits": 11
-          },
-          "vsLHP": {
-            "avg": ".118",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 6,
-            "avg": 0.6
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".271"
-          }
-        },
-        {
-          "name": "Brandon Valenzuela",
-          "stats": {
-            "avg": ".250",
-            "bip_pa": 0.5
-          },
-          "vsRHP": {
-            "avg": ".333",
-            "hits": 3
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".250"
-          }
-        },
-        {
-          "name": "Daulton Varsho",
-          "stats": {
-            "avg": ".209",
-            "bip_pa": 0.71
-          },
-          "vsRHP": {
-            "avg": ".133",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".385",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".209"
-          }
-        },
-        {
-          "name": "Davis Schneider",
-          "stats": {
-            "avg": ".294",
-            "bip_pa": 0.43
-          },
-          "vsRHP": {
-            "avg": ".286",
-            "hits": 2
-          },
-          "vsLHP": {
-            "avg": ".300",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".294"
-          }
-        },
-        {
-          "name": "Ernie Clement",
-          "stats": {
-            "avg": ".288",
-            "bip_pa": 0.94
-          },
-          "vsRHP": {
-            "avg": ".278",
-            "hits": 10
-          },
-          "vsLHP": {
-            "avg": ".313",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".288"
-          }
-        },
-        {
-          "name": "George Springer",
-          "stats": {
-            "avg": ".189",
-            "bip_pa": 0.62
-          },
-          "vsRHP": {
-            "avg": ".179",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".214",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".189"
-          }
-        },
-        {
-          "name": "Jes\u00fas S\u00e1nchez",
-          "stats": {
-            "avg": ".278",
-            "bip_pa": 0.68
-          },
-          "vsRHP": {
-            "avg": ".290",
-            "hits": 9
-          },
-          "vsLHP": {
-            "avg": ".200",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 5,
-            "avg": 0.5
-          },
-          "streak": 4,
-          "risp": {
-            "avg": ".278"
-          }
-        },
-        {
-          "name": "Kazuma Okamoto",
-          "stats": {
-            "avg": ".220",
-            "bip_pa": 0.51
-          },
-          "vsRHP": {
-            "avg": ".179",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".364",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 6,
-          "risp": {
-            "avg": ".220"
-          }
-        },
-        {
-          "name": "Myles Straw",
-          "stats": {
-            "avg": ".385",
-            "bip_pa": 0.86
-          },
-          "vsRHP": {
-            "avg": ".333",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": ".400",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 5,
-            "avg": 0.5
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".385"
-          }
-        }
-      ]
-    },
-    {
       "away_team": "Athletics",
       "home_team": "New York Mets",
       "venue": "Citi Field",
-      "start": "2026-04-10T23:10:00Z",
+      "start": "2026-04-11T20:10:00Z",
       "away_pitcher": {
-        "name": "J.T. Ginn",
-        "hand": "R",
-        "era": "3.27",
+        "name": "Jacob Lopez",
+        "hand": "L",
+        "era": "6.48",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 2.75,
-        "avg_k": 2.0,
-        "avg_bb": 0.75,
-        "whip": 0.91,
-        "k_bb": 2.67,
-        "command": "Average Command",
+        "avg_ip": 4.17,
+        "avg_k": 3.0,
+        "avg_bb": 5.0,
+        "whip": 2.28,
+        "k_bb": 0.6,
+        "command": "Below Average Command",
         "quality": false,
         "elite": false
       },
       "home_pitcher": {
-        "name": "Clay Holmes",
+        "name": "Kodai Senga",
         "hand": "R",
-        "era": "1.50",
+        "era": "3.09",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 6.0,
-        "avg_k": 4.0,
-        "avg_bb": 2.67,
-        "whip": 1.11,
-        "k_bb": 1.5,
-        "command": "Below Average Command",
-        "quality": true,
+        "avg_ip": 5.83,
+        "avg_k": 8.0,
+        "avg_bb": 2.5,
+        "whip": 1.2,
+        "k_bb": 3.2,
+        "command": "Strong Command",
+        "quality": false,
         "elite": false
       },
       "away_hitters": [
@@ -2858,1469 +2858,41 @@
       ]
     },
     {
-      "away_team": "New York Yankees",
-      "home_team": "Tampa Bay Rays",
-      "venue": "Tropicana Field",
-      "start": "2026-04-10T23:10:00Z",
-      "away_pitcher": {
-        "name": "Luis Gil",
-        "hand": "R",
-        "era": "6.75",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 4.0,
-        "avg_k": 2.0,
-        "avg_bb": 3.0,
-        "whip": 1.5,
-        "k_bb": 0.67,
-        "command": "Below Average Command",
-        "quality": false,
-        "elite": false
-      },
-      "home_pitcher": {
-        "name": "Steven Matz",
-        "hand": "L",
-        "era": "3.94",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 5.33,
-        "avg_k": 5.67,
-        "avg_bb": 1.67,
-        "whip": 0.94,
-        "k_bb": 3.4,
-        "command": "Strong Command",
-        "quality": false,
-        "elite": false
-      },
-      "away_hitters": [
-        {
-          "name": "Aaron Judge",
-          "stats": {
-            "avg": ".224",
-            "bip_pa": 0.54
-          },
-          "vsRHP": {
-            "avg": ".189",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".333",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".224"
-          }
-        },
-        {
-          "name": "Amed Rosario",
-          "stats": {
-            "avg": ".300",
-            "bip_pa": 0.59
-          },
-          "vsRHP": {
-            "avg": ".385",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".143",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".300"
-          }
-        },
-        {
-          "name": "Austin Wells",
-          "stats": {
-            "avg": ".152",
-            "bip_pa": 0.58
-          },
-          "vsRHP": {
-            "avg": ".227",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".152"
-          }
-        },
-        {
-          "name": "Ben Rice",
-          "stats": {
-            "avg": ".342",
-            "bip_pa": 0.41
-          },
-          "vsRHP": {
-            "avg": ".379",
-            "hits": 11
-          },
-          "vsLHP": {
-            "avg": ".222",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 6,
-          "risp": {
-            "avg": ".342"
-          }
-        },
-        {
-          "name": "Cody Bellinger",
-          "stats": {
-            "avg": ".222",
-            "bip_pa": 0.67
-          },
-          "vsRHP": {
-            "avg": ".265",
-            "hits": 9
-          },
-          "vsLHP": {
-            "avg": ".091",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 3,
-          "risp": {
-            "avg": ".222"
-          }
-        },
-        {
-          "name": "Giancarlo Stanton",
-          "stats": {
-            "avg": ".326",
-            "bip_pa": 0.66
-          },
-          "vsRHP": {
-            "avg": ".385",
-            "hits": 15
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 6,
-            "avg": 0.6
-          },
-          "streak": 5,
-          "risp": {
-            "avg": ".326"
-          }
-        },
-        {
-          "name": "J.C. Escarra",
-          "stats": {
-            "avg": ".000",
-            "bip_pa": 0.6
-          },
-          "vsRHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "vsLHP": {
-            "avg": "N/A",
-            "hits": "N/A"
-          },
-          "last10": {
-            "ab": 9,
-            "hits": 0,
-            "avg": 0.0
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".000"
-          }
-        },
-        {
-          "name": "Jazz Chisholm Jr.",
-          "stats": {
-            "avg": ".170",
-            "bip_pa": 0.62
-          },
-          "vsRHP": {
-            "avg": ".194",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".091",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".170"
-          }
-        },
-        {
-          "name": "Jos\u00e9 Caballero",
-          "stats": {
-            "avg": ".125",
-            "bip_pa": 0.64
-          },
-          "vsRHP": {
-            "avg": ".138",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".091",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".125"
-          }
-        }
-      ],
-      "home_hitters": [
-        {
-          "name": "Ben Williamson",
-          "stats": {
-            "avg": ".250",
-            "bip_pa": 0.7
-          },
-          "vsRHP": {
-            "avg": ".222",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".308",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 5,
-            "avg": 0.5
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".250"
-          }
-        },
-        {
-          "name": "Cedric Mullins",
-          "stats": {
-            "avg": ".136",
-            "bip_pa": 0.67
-          },
-          "vsRHP": {
-            "avg": ".114",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".222",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".136"
-          }
-        },
-        {
-          "name": "Chandler Simpson",
-          "stats": {
-            "avg": ".373",
-            "bip_pa": 0.89
-          },
-          "vsRHP": {
-            "avg": ".361",
-            "hits": 13
-          },
-          "vsLHP": {
-            "avg": ".400",
-            "hits": 6
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 5,
-            "avg": 0.5
-          },
-          "streak": 6,
-          "risp": {
-            "avg": ".373"
-          }
-        },
-        {
-          "name": "Hunter Feduccia",
-          "stats": {
-            "avg": ".250",
-            "bip_pa": 0.4
-          },
-          "vsRHP": {
-            "avg": ".182",
-            "hits": 2
-          },
-          "vsLHP": {
-            "avg": "1.000",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".250"
-          }
-        },
-        {
-          "name": "Jake Fraley",
-          "stats": {
-            "avg": ".214",
-            "bip_pa": 0.72
-          },
-          "vsRHP": {
-            "avg": ".200",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".333",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".214"
-          }
-        },
-        {
-          "name": "Jonathan Aranda",
-          "stats": {
-            "avg": ".250",
-            "bip_pa": 0.64
-          },
-          "vsRHP": {
-            "avg": ".225",
-            "hits": 9
-          },
-          "vsLHP": {
-            "avg": ".333",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 6,
-            "avg": 0.6
-          },
-          "streak": 3,
-          "risp": {
-            "avg": ".250"
-          }
-        },
-        {
-          "name": "Jonny DeLuca",
-          "stats": {
-            "avg": ".240",
-            "bip_pa": 0.81
-          },
-          "vsRHP": {
-            "avg": ".286",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".182",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 5,
-            "avg": 0.5
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".240"
-          }
-        },
-        {
-          "name": "Junior Caminero",
-          "stats": {
-            "avg": ".220",
-            "bip_pa": 0.61
-          },
-          "vsRHP": {
-            "avg": ".200",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".300",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".220"
-          }
-        },
-        {
-          "name": "Nick Fortes",
-          "stats": {
-            "avg": ".324",
-            "bip_pa": 0.82
-          },
-          "vsRHP": {
-            "avg": ".435",
-            "hits": 10
-          },
-          "vsLHP": {
-            "avg": ".143",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 5,
-            "avg": 0.5
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".324"
-          }
-        }
-      ]
-    },
-    {
-      "away_team": "San Francisco Giants",
-      "home_team": "Baltimore Orioles",
-      "venue": "Oriole Park at Camden Yards",
-      "start": "2026-04-10T23:15:00Z",
-      "away_pitcher": {
-        "name": "Landen Roupp",
-        "hand": "R",
-        "era": "3.24",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 5.56,
-        "avg_k": 6.0,
-        "avg_bb": 1.67,
-        "whip": 1.14,
-        "k_bb": 3.6,
-        "command": "Strong Command",
-        "quality": false,
-        "elite": false
-      },
-      "home_pitcher": {
-        "name": "Shane Baz",
-        "hand": "R",
-        "era": "4.50",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 5.33,
-        "avg_k": 4.33,
-        "avg_bb": 1.67,
-        "whip": 1.56,
-        "k_bb": 2.6,
-        "command": "Average Command",
-        "quality": false,
-        "elite": false
-      },
-      "away_hitters": [
-        {
-          "name": "Casey Schmitt",
-          "stats": {
-            "avg": ".333",
-            "bip_pa": 0.62
-          },
-          "vsRHP": {
-            "avg": ".250",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".500",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".333"
-          }
-        },
-        {
-          "name": "Christian Koss",
-          "stats": {
-            "avg": ".000",
-            "bip_pa": 1.0
-          },
-          "vsRHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "vsLHP": {
-            "avg": "N/A",
-            "hits": "N/A"
-          },
-          "last10": {
-            "ab": 3,
-            "hits": 0,
-            "avg": 0.0
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".000"
-          }
-        },
-        {
-          "name": "Daniel Susac",
-          "stats": {
-            "avg": ".857",
-            "bip_pa": 0.88
-          },
-          "vsRHP": {
-            "avg": ".500",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": "1.000",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 7,
-            "hits": 6,
-            "avg": 0.857
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".857"
-          }
-        },
-        {
-          "name": "Harrison Bader",
-          "stats": {
-            "avg": ".104",
-            "bip_pa": 0.64
-          },
-          "vsRHP": {
-            "avg": ".075",
-            "hits": 3
-          },
-          "vsLHP": {
-            "avg": ".250",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".104"
-          }
-        },
-        {
-          "name": "Heliot Ramos",
-          "stats": {
-            "avg": ".196",
-            "bip_pa": 0.57
-          },
-          "vsRHP": {
-            "avg": ".216",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".143",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 3,
-          "risp": {
-            "avg": ".196"
-          }
-        },
-        {
-          "name": "Jared Oliva",
-          "stats": {
-            "avg": ".333",
-            "bip_pa": 1.0
-          },
-          "vsRHP": {
-            "avg": "1.000",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 3,
-            "hits": 1,
-            "avg": 0.333
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".333"
-          }
-        },
-        {
-          "name": "Jerar Encarnacion",
-          "stats": {
-            "avg": ".263",
-            "bip_pa": 0.84
-          },
-          "vsRHP": {
-            "avg": ".200",
-            "hits": 3
-          },
-          "vsLHP": {
-            "avg": ".500",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".263"
-          }
-        },
-        {
-          "name": "Jung Hoo Lee",
-          "stats": {
-            "avg": ".174",
-            "bip_pa": 0.69
-          },
-          "vsRHP": {
-            "avg": ".176",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".167",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".174"
-          }
-        },
-        {
-          "name": "Luis Arraez",
-          "stats": {
-            "avg": ".302",
-            "bip_pa": 0.86
-          },
-          "vsRHP": {
-            "avg": ".281",
-            "hits": 9
-          },
-          "vsLHP": {
-            "avg": ".333",
-            "hits": 7
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".302"
-          }
-        }
-      ],
-      "home_hitters": [
-        {
-          "name": "Adley Rutschman",
-          "stats": {
-            "avg": ".294",
-            "bip_pa": 0.72
-          },
-          "vsRHP": {
-            "avg": ".360",
-            "hits": 9
-          },
-          "vsLHP": {
-            "avg": ".111",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".294"
-          }
-        },
-        {
-          "name": "Blaze Alexander",
-          "stats": {
-            "avg": ".242",
-            "bip_pa": 0.68
-          },
-          "vsRHP": {
-            "avg": ".286",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 5,
-          "risp": {
-            "avg": ".242"
-          }
-        },
-        {
-          "name": "Coby Mayo",
-          "stats": {
-            "avg": ".133",
-            "bip_pa": 0.53
-          },
-          "vsRHP": {
-            "avg": ".174",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".133"
-          }
-        },
-        {
-          "name": "Colton Cowser",
-          "stats": {
-            "avg": ".182",
-            "bip_pa": 0.6
-          },
-          "vsRHP": {
-            "avg": ".182",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".182"
-          }
-        },
-        {
-          "name": "Dylan Beavers",
-          "stats": {
-            "avg": ".258",
-            "bip_pa": 0.68
-          },
-          "vsRHP": {
-            "avg": ".222",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".500",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".258"
-          }
-        },
-        {
-          "name": "Gunnar Henderson",
-          "stats": {
-            "avg": ".245",
-            "bip_pa": 0.52
-          },
-          "vsRHP": {
-            "avg": ".205",
-            "hits": 9
-          },
-          "vsLHP": {
-            "avg": ".444",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".245"
-          }
-        },
-        {
-          "name": "Jeremiah Jackson",
-          "stats": {
-            "avg": ".219",
-            "bip_pa": 0.72
-          },
-          "vsRHP": {
-            "avg": ".148",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".600",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".219"
-          }
-        },
-        {
-          "name": "Leody Taveras",
-          "stats": {
-            "avg": ".429",
-            "bip_pa": 0.5
-          },
-          "vsRHP": {
-            "avg": ".462",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".429"
-          }
-        },
-        {
-          "name": "Pete Alonso",
-          "stats": {
-            "avg": ".176",
-            "bip_pa": 0.58
-          },
-          "vsRHP": {
-            "avg": ".195",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".100",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".176"
-          }
-        }
-      ]
-    },
-    {
-      "away_team": "Cleveland Guardians",
-      "home_team": "Atlanta Braves",
-      "venue": "Truist Park",
-      "start": "2026-04-10T23:15:00Z",
-      "away_pitcher": {
-        "name": "Slade Cecconi",
-        "hand": "R",
-        "era": "5.74",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 5.22,
-        "avg_k": 4.67,
-        "avg_bb": 1.67,
-        "whip": 1.21,
-        "k_bb": 2.8,
-        "command": "Average Command",
-        "quality": false,
-        "elite": false
-      },
-      "home_pitcher": {
-        "name": "Bryce Elder",
-        "hand": "R",
-        "era": "1.02",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 5.89,
-        "avg_k": 5.33,
-        "avg_bb": 1.67,
-        "whip": 1.02,
-        "k_bb": 3.2,
-        "command": "Strong Command",
-        "quality": false,
-        "elite": false
-      },
-      "away_hitters": [
-        {
-          "name": "Angel Mart\u00ednez",
-          "stats": {
-            "avg": ".333",
-            "bip_pa": 0.72
-          },
-          "vsRHP": {
-            "avg": ".350",
-            "hits": 7
-          },
-          "vsLHP": {
-            "avg": ".308",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".333"
-          }
-        },
-        {
-          "name": "Austin Hedges",
-          "stats": {
-            "avg": ".400",
-            "bip_pa": 0.8
-          },
-          "vsRHP": {
-            "avg": ".375",
-            "hits": 3
-          },
-          "vsLHP": {
-            "avg": ".429",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 5,
-            "avg": 0.5
-          },
-          "streak": 4,
-          "risp": {
-            "avg": ".400"
-          }
-        },
-        {
-          "name": "Bo Naylor",
-          "stats": {
-            "avg": ".125",
-            "bip_pa": 0.67
-          },
-          "vsRHP": {
-            "avg": ".107",
-            "hits": 3
-          },
-          "vsLHP": {
-            "avg": ".250",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".125"
-          }
-        },
-        {
-          "name": "Brayan Rocchio",
-          "stats": {
-            "avg": ".200",
-            "bip_pa": 0.74
-          },
-          "vsRHP": {
-            "avg": ".207",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".182",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".200"
-          }
-        },
-        {
-          "name": "CJ Kayfus",
-          "stats": {
-            "avg": ".182",
-            "bip_pa": 0.54
-          },
-          "vsRHP": {
-            "avg": ".211",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 0,
-            "avg": 0.0
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".182"
-          }
-        },
-        {
-          "name": "Chase DeLauter",
-          "stats": {
-            "avg": ".273",
-            "bip_pa": 0.59
-          },
-          "vsRHP": {
-            "avg": ".250",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".333",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 5,
-            "avg": 0.5
-          },
-          "streak": 4,
-          "risp": {
-            "avg": ".273"
-          }
-        },
-        {
-          "name": "Daniel Schneemann",
-          "stats": {
-            "avg": ".179",
-            "bip_pa": 0.71
-          },
-          "vsRHP": {
-            "avg": ".160",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".333",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".179"
-          }
-        },
-        {
-          "name": "David Fry",
-          "stats": {
-            "avg": ".214",
-            "bip_pa": 0.44
-          },
-          "vsRHP": {
-            "avg": ".250",
-            "hits": 2
-          },
-          "vsLHP": {
-            "avg": ".167",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".214"
-          }
-        },
-        {
-          "name": "Jos\u00e9 Ram\u00edrez",
-          "stats": {
-            "avg": ".151",
-            "bip_pa": 0.73
-          },
-          "vsRHP": {
-            "avg": ".132",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".200",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".151"
-          }
-        }
-      ],
-      "home_hitters": [
-        {
-          "name": "Austin Riley",
-          "stats": {
-            "avg": ".224",
-            "bip_pa": 0.65
-          },
-          "vsRHP": {
-            "avg": ".118",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".467",
-            "hits": 7
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".224"
-          }
-        },
-        {
-          "name": "Dominic Smith",
-          "stats": {
-            "avg": ".357",
-            "bip_pa": 0.73
-          },
-          "vsRHP": {
-            "avg": ".370",
-            "hits": 10
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 5,
-          "risp": {
-            "avg": ".357"
-          }
-        },
-        {
-          "name": "Drake Baldwin",
-          "stats": {
-            "avg": ".328",
-            "bip_pa": 0.69
-          },
-          "vsRHP": {
-            "avg": ".317",
-            "hits": 13
-          },
-          "vsLHP": {
-            "avg": ".353",
-            "hits": 6
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".328"
-          }
-        },
-        {
-          "name": "Eli White",
-          "stats": {
-            "avg": ".154",
-            "bip_pa": 0.79
-          },
-          "vsRHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "vsLHP": {
-            "avg": ".222",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".154"
-          }
-        },
-        {
-          "name": "Jonah Heim",
-          "stats": {
-            "avg": ".133",
-            "bip_pa": 0.67
-          },
-          "vsRHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "vsLHP": {
-            "avg": ".222",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".133"
-          }
-        },
-        {
-          "name": "Jorge Mateo",
-          "stats": {
-            "avg": ".333",
-            "bip_pa": 0.5
-          },
-          "vsRHP": {
-            "avg": ".429",
-            "hits": 3
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 9,
-            "hits": 3,
-            "avg": 0.333
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".333"
-          }
-        },
-        {
-          "name": "Kyle Farmer",
-          "stats": {
-            "avg": ".500",
-            "bip_pa": 1.0
-          },
-          "vsRHP": {
-            "avg": "1.000",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 2,
-            "hits": 1,
-            "avg": 0.5
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".500"
-          }
-        },
-        {
-          "name": "Matt Olson",
-          "stats": {
-            "avg": ".278",
-            "bip_pa": 0.5
-          },
-          "vsRHP": {
-            "avg": ".278",
-            "hits": 10
-          },
-          "vsLHP": {
-            "avg": ".278",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 2,
-          "risp": {
-            "avg": ".278"
-          }
-        },
-        {
-          "name": "Mauricio Dub\u00f3n",
-          "stats": {
-            "avg": ".347",
-            "bip_pa": 0.76
-          },
-          "vsRHP": {
-            "avg": ".364",
-            "hits": 12
-          },
-          "vsLHP": {
-            "avg": ".313",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".347"
-          }
-        }
-      ]
-    },
-    {
       "away_team": "Chicago White Sox",
       "home_team": "Kansas City Royals",
       "venue": "Kauffman Stadium",
-      "start": "2026-04-10T23:40:00Z",
+      "start": "2026-04-11T20:10:00Z",
       "away_pitcher": {
-        "name": "Davis Martin",
+        "name": "Erick Fedde",
         "hand": "R",
-        "era": "2.50",
+        "era": "4.09",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 6.0,
-        "avg_k": 5.0,
-        "avg_bb": 1.33,
-        "whip": 1.11,
-        "k_bb": 3.75,
-        "command": "Strong Command",
-        "quality": true,
+        "avg_ip": 5.5,
+        "avg_k": 4.0,
+        "avg_bb": 1.0,
+        "whip": 1.18,
+        "k_bb": 4.0,
+        "command": "Elite Command",
+        "quality": false,
         "elite": false
       },
       "home_pitcher": {
-        "name": "Kris Bubic",
-        "hand": "L",
-        "era": "2.50",
+        "name": "Michael Wacha",
+        "hand": "R",
+        "era": "0.69",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 6.0,
-        "avg_k": 7.67,
-        "avg_bb": 2.33,
-        "whip": 0.83,
-        "k_bb": 3.29,
-        "command": "Strong Command",
+        "avg_ip": 6.5,
+        "avg_k": 5.0,
+        "avg_bb": 2.0,
+        "whip": 0.77,
+        "k_bb": 2.5,
+        "command": "Average Command",
         "quality": true,
         "elite": false
       },
@@ -4762,41 +3334,517 @@
       ]
     },
     {
-      "away_team": "Washington Nationals",
-      "home_team": "Milwaukee Brewers",
-      "venue": "American Family Field",
-      "start": "2026-04-10T23:40:00Z",
+      "away_team": "New York Yankees",
+      "home_team": "Tampa Bay Rays",
+      "venue": "Tropicana Field",
+      "start": "2026-04-11T22:10:00Z",
       "away_pitcher": {
-        "name": "Jake Irvin",
-        "hand": "R",
-        "era": "7.07",
+        "name": "Max Fried",
+        "hand": "L",
+        "era": "1.35",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 4.67,
-        "avg_k": 5.33,
-        "avg_bb": 2.67,
-        "whip": 1.5,
-        "k_bb": 2.0,
+        "avg_ip": 6.67,
+        "avg_k": 4.67,
+        "avg_bb": 1.67,
+        "whip": 0.75,
+        "k_bb": 2.8,
         "command": "Average Command",
+        "quality": true,
+        "elite": false
+      },
+      "home_pitcher": {
+        "name": "Nick Martinez",
+        "hand": "R",
+        "era": "2.25",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 6.0,
+        "avg_k": 3.5,
+        "avg_bb": 0.5,
+        "whip": 0.67,
+        "k_bb": 7.0,
+        "command": "Elite Command",
+        "quality": true,
+        "elite": false
+      },
+      "away_hitters": [
+        {
+          "name": "Aaron Judge",
+          "stats": {
+            "avg": ".224",
+            "bip_pa": 0.54
+          },
+          "vsRHP": {
+            "avg": ".189",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".333",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".224"
+          }
+        },
+        {
+          "name": "Amed Rosario",
+          "stats": {
+            "avg": ".300",
+            "bip_pa": 0.59
+          },
+          "vsRHP": {
+            "avg": ".385",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".143",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".300"
+          }
+        },
+        {
+          "name": "Austin Wells",
+          "stats": {
+            "avg": ".152",
+            "bip_pa": 0.58
+          },
+          "vsRHP": {
+            "avg": ".227",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".152"
+          }
+        },
+        {
+          "name": "Ben Rice",
+          "stats": {
+            "avg": ".342",
+            "bip_pa": 0.41
+          },
+          "vsRHP": {
+            "avg": ".379",
+            "hits": 11
+          },
+          "vsLHP": {
+            "avg": ".222",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 6,
+          "risp": {
+            "avg": ".342"
+          }
+        },
+        {
+          "name": "Cody Bellinger",
+          "stats": {
+            "avg": ".222",
+            "bip_pa": 0.67
+          },
+          "vsRHP": {
+            "avg": ".265",
+            "hits": 9
+          },
+          "vsLHP": {
+            "avg": ".091",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 3,
+          "risp": {
+            "avg": ".222"
+          }
+        },
+        {
+          "name": "Giancarlo Stanton",
+          "stats": {
+            "avg": ".326",
+            "bip_pa": 0.66
+          },
+          "vsRHP": {
+            "avg": ".385",
+            "hits": 15
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 6,
+            "avg": 0.6
+          },
+          "streak": 5,
+          "risp": {
+            "avg": ".326"
+          }
+        },
+        {
+          "name": "J.C. Escarra",
+          "stats": {
+            "avg": ".000",
+            "bip_pa": 0.6
+          },
+          "vsRHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "vsLHP": {
+            "avg": "N/A",
+            "hits": "N/A"
+          },
+          "last10": {
+            "ab": 9,
+            "hits": 0,
+            "avg": 0.0
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".000"
+          }
+        },
+        {
+          "name": "Jazz Chisholm Jr.",
+          "stats": {
+            "avg": ".170",
+            "bip_pa": 0.62
+          },
+          "vsRHP": {
+            "avg": ".194",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".091",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".170"
+          }
+        },
+        {
+          "name": "Jos\u00e9 Caballero",
+          "stats": {
+            "avg": ".125",
+            "bip_pa": 0.64
+          },
+          "vsRHP": {
+            "avg": ".138",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".091",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".125"
+          }
+        }
+      ],
+      "home_hitters": [
+        {
+          "name": "Ben Williamson",
+          "stats": {
+            "avg": ".250",
+            "bip_pa": 0.7
+          },
+          "vsRHP": {
+            "avg": ".222",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".308",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 5,
+            "avg": 0.5
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".250"
+          }
+        },
+        {
+          "name": "Cedric Mullins",
+          "stats": {
+            "avg": ".136",
+            "bip_pa": 0.67
+          },
+          "vsRHP": {
+            "avg": ".114",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".222",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".136"
+          }
+        },
+        {
+          "name": "Chandler Simpson",
+          "stats": {
+            "avg": ".373",
+            "bip_pa": 0.89
+          },
+          "vsRHP": {
+            "avg": ".361",
+            "hits": 13
+          },
+          "vsLHP": {
+            "avg": ".400",
+            "hits": 6
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 5,
+            "avg": 0.5
+          },
+          "streak": 6,
+          "risp": {
+            "avg": ".373"
+          }
+        },
+        {
+          "name": "Hunter Feduccia",
+          "stats": {
+            "avg": ".250",
+            "bip_pa": 0.4
+          },
+          "vsRHP": {
+            "avg": ".182",
+            "hits": 2
+          },
+          "vsLHP": {
+            "avg": "1.000",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".250"
+          }
+        },
+        {
+          "name": "Jake Fraley",
+          "stats": {
+            "avg": ".214",
+            "bip_pa": 0.72
+          },
+          "vsRHP": {
+            "avg": ".200",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".333",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".214"
+          }
+        },
+        {
+          "name": "Jonathan Aranda",
+          "stats": {
+            "avg": ".250",
+            "bip_pa": 0.64
+          },
+          "vsRHP": {
+            "avg": ".225",
+            "hits": 9
+          },
+          "vsLHP": {
+            "avg": ".333",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 6,
+            "avg": 0.6
+          },
+          "streak": 3,
+          "risp": {
+            "avg": ".250"
+          }
+        },
+        {
+          "name": "Jonny DeLuca",
+          "stats": {
+            "avg": ".240",
+            "bip_pa": 0.81
+          },
+          "vsRHP": {
+            "avg": ".286",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".182",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 5,
+            "avg": 0.5
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".240"
+          }
+        },
+        {
+          "name": "Junior Caminero",
+          "stats": {
+            "avg": ".220",
+            "bip_pa": 0.61
+          },
+          "vsRHP": {
+            "avg": ".200",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".300",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".220"
+          }
+        },
+        {
+          "name": "Nick Fortes",
+          "stats": {
+            "avg": ".324",
+            "bip_pa": 0.82
+          },
+          "vsRHP": {
+            "avg": ".435",
+            "hits": 10
+          },
+          "vsLHP": {
+            "avg": ".143",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 5,
+            "avg": 0.5
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".324"
+          }
+        }
+      ]
+    },
+    {
+      "away_team": "Washington Nationals",
+      "home_team": "Milwaukee Brewers",
+      "venue": "American Family Field",
+      "start": "2026-04-11T23:10:00Z",
+      "away_pitcher": {
+        "name": "Foster Griffin",
+        "hand": "L",
+        "era": "2.70",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 5.0,
+        "avg_k": 5.5,
+        "avg_bb": 1.5,
+        "whip": 1.3,
+        "k_bb": 3.67,
+        "command": "Strong Command",
         "quality": false,
         "elite": false
       },
       "home_pitcher": {
-        "name": "Aaron Ashby",
+        "name": "Kyle Harrison",
         "hand": "L",
-        "era": "3.75",
+        "era": "2.61",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 1.47,
-        "avg_k": 2.4,
-        "avg_bb": 0.8,
-        "whip": 1.36,
-        "k_bb": 3.0,
-        "command": "Strong Command",
+        "avg_ip": 5.17,
+        "avg_k": 7.0,
+        "avg_bb": 1.5,
+        "whip": 0.97,
+        "k_bb": 4.67,
+        "command": "Elite Command",
         "quality": false,
         "elite": false
       },
@@ -5238,41 +4286,517 @@
       ]
     },
     {
-      "away_team": "Boston Red Sox",
-      "home_team": "St. Louis Cardinals",
-      "venue": "Busch Stadium",
-      "start": "2026-04-11T00:15:00Z",
+      "away_team": "San Francisco Giants",
+      "home_team": "Baltimore Orioles",
+      "venue": "Oriole Park at Camden Yards",
+      "start": "2026-04-11T23:15:00Z",
       "away_pitcher": {
-        "name": "Connelly Early",
-        "hand": "L",
-        "era": "2.63",
+        "name": "Logan Webb",
+        "hand": "R",
+        "era": "5.00",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 4.56,
+        "avg_ip": 6.0,
         "avg_k": 5.0,
-        "avg_bb": 2.67,
-        "whip": 1.54,
-        "k_bb": 1.88,
+        "avg_bb": 2.0,
+        "whip": 1.39,
+        "k_bb": 2.5,
+        "command": "Average Command",
+        "quality": false,
+        "elite": false
+      },
+      "home_pitcher": {
+        "name": "Chris Bassitt",
+        "hand": "R",
+        "era": "14.21",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 3.17,
+        "avg_k": 1.5,
+        "avg_bb": 3.0,
+        "whip": 2.84,
+        "k_bb": 0.5,
+        "command": "Below Average Command",
+        "quality": false,
+        "elite": false
+      },
+      "away_hitters": [
+        {
+          "name": "Casey Schmitt",
+          "stats": {
+            "avg": ".333",
+            "bip_pa": 0.62
+          },
+          "vsRHP": {
+            "avg": ".250",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".500",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".333"
+          }
+        },
+        {
+          "name": "Christian Koss",
+          "stats": {
+            "avg": ".000",
+            "bip_pa": 1.0
+          },
+          "vsRHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "vsLHP": {
+            "avg": "N/A",
+            "hits": "N/A"
+          },
+          "last10": {
+            "ab": 3,
+            "hits": 0,
+            "avg": 0.0
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".000"
+          }
+        },
+        {
+          "name": "Daniel Susac",
+          "stats": {
+            "avg": ".857",
+            "bip_pa": 0.88
+          },
+          "vsRHP": {
+            "avg": ".500",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": "1.000",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 7,
+            "hits": 6,
+            "avg": 0.857
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".857"
+          }
+        },
+        {
+          "name": "Harrison Bader",
+          "stats": {
+            "avg": ".104",
+            "bip_pa": 0.64
+          },
+          "vsRHP": {
+            "avg": ".075",
+            "hits": 3
+          },
+          "vsLHP": {
+            "avg": ".250",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".104"
+          }
+        },
+        {
+          "name": "Heliot Ramos",
+          "stats": {
+            "avg": ".196",
+            "bip_pa": 0.57
+          },
+          "vsRHP": {
+            "avg": ".216",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".143",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 3,
+          "risp": {
+            "avg": ".196"
+          }
+        },
+        {
+          "name": "Jared Oliva",
+          "stats": {
+            "avg": ".333",
+            "bip_pa": 1.0
+          },
+          "vsRHP": {
+            "avg": "1.000",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 3,
+            "hits": 1,
+            "avg": 0.333
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".333"
+          }
+        },
+        {
+          "name": "Jerar Encarnacion",
+          "stats": {
+            "avg": ".263",
+            "bip_pa": 0.84
+          },
+          "vsRHP": {
+            "avg": ".200",
+            "hits": 3
+          },
+          "vsLHP": {
+            "avg": ".500",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".263"
+          }
+        },
+        {
+          "name": "Jung Hoo Lee",
+          "stats": {
+            "avg": ".174",
+            "bip_pa": 0.69
+          },
+          "vsRHP": {
+            "avg": ".176",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".167",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".174"
+          }
+        },
+        {
+          "name": "Luis Arraez",
+          "stats": {
+            "avg": ".302",
+            "bip_pa": 0.86
+          },
+          "vsRHP": {
+            "avg": ".281",
+            "hits": 9
+          },
+          "vsLHP": {
+            "avg": ".333",
+            "hits": 7
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".302"
+          }
+        }
+      ],
+      "home_hitters": [
+        {
+          "name": "Adley Rutschman",
+          "stats": {
+            "avg": ".294",
+            "bip_pa": 0.72
+          },
+          "vsRHP": {
+            "avg": ".360",
+            "hits": 9
+          },
+          "vsLHP": {
+            "avg": ".111",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".294"
+          }
+        },
+        {
+          "name": "Blaze Alexander",
+          "stats": {
+            "avg": ".242",
+            "bip_pa": 0.68
+          },
+          "vsRHP": {
+            "avg": ".286",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 5,
+          "risp": {
+            "avg": ".242"
+          }
+        },
+        {
+          "name": "Coby Mayo",
+          "stats": {
+            "avg": ".133",
+            "bip_pa": 0.53
+          },
+          "vsRHP": {
+            "avg": ".174",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".133"
+          }
+        },
+        {
+          "name": "Colton Cowser",
+          "stats": {
+            "avg": ".182",
+            "bip_pa": 0.6
+          },
+          "vsRHP": {
+            "avg": ".182",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".182"
+          }
+        },
+        {
+          "name": "Dylan Beavers",
+          "stats": {
+            "avg": ".258",
+            "bip_pa": 0.68
+          },
+          "vsRHP": {
+            "avg": ".222",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".500",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".258"
+          }
+        },
+        {
+          "name": "Gunnar Henderson",
+          "stats": {
+            "avg": ".245",
+            "bip_pa": 0.52
+          },
+          "vsRHP": {
+            "avg": ".205",
+            "hits": 9
+          },
+          "vsLHP": {
+            "avg": ".444",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".245"
+          }
+        },
+        {
+          "name": "Jeremiah Jackson",
+          "stats": {
+            "avg": ".219",
+            "bip_pa": 0.72
+          },
+          "vsRHP": {
+            "avg": ".148",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".600",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".219"
+          }
+        },
+        {
+          "name": "Leody Taveras",
+          "stats": {
+            "avg": ".429",
+            "bip_pa": 0.5
+          },
+          "vsRHP": {
+            "avg": ".462",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".429"
+          }
+        },
+        {
+          "name": "Pete Alonso",
+          "stats": {
+            "avg": ".176",
+            "bip_pa": 0.58
+          },
+          "vsRHP": {
+            "avg": ".195",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".100",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".176"
+          }
+        }
+      ]
+    },
+    {
+      "away_team": "Boston Red Sox",
+      "home_team": "St. Louis Cardinals",
+      "venue": "Busch Stadium",
+      "start": "2026-04-11T23:15:00Z",
+      "away_pitcher": {
+        "name": "Ranger Suarez",
+        "hand": "L",
+        "era": "8.64",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 4.17,
+        "avg_k": 2.5,
+        "avg_bb": 1.5,
+        "whip": 1.92,
+        "k_bb": 1.67,
         "command": "Below Average Command",
         "quality": false,
         "elite": false
       },
       "home_pitcher": {
-        "name": "Dustin May",
+        "name": "Kyle Leahy",
         "hand": "R",
-        "era": "9.45",
+        "era": "5.40",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 4.44,
-        "avg_k": 3.67,
-        "avg_bb": 1.0,
+        "avg_ip": 5.0,
+        "avg_k": 2.5,
+        "avg_bb": 2.5,
         "whip": 1.8,
-        "k_bb": 3.67,
-        "command": "Strong Command",
+        "k_bb": 1.0,
+        "command": "Below Average Command",
         "quality": false,
         "elite": false
       },
@@ -5714,40 +5238,516 @@
       ]
     },
     {
-      "away_team": "Colorado Rockies",
-      "home_team": "San Diego Padres",
-      "venue": "Petco Park",
-      "start": "2026-04-11T01:40:00Z",
+      "away_team": "Cleveland Guardians",
+      "home_team": "Atlanta Braves",
+      "venue": "Truist Park",
+      "start": "2026-04-11T23:15:00Z",
       "away_pitcher": {
-        "name": "Tomoyuki Sugano",
-        "hand": "R",
-        "era": "2.16",
+        "name": "Parker Messick",
+        "hand": "L",
+        "era": "0.82",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 5.56,
-        "avg_k": 4.0,
-        "avg_bb": 1.0,
-        "whip": 0.78,
+        "avg_ip": 5.5,
+        "avg_k": 5.5,
+        "avg_bb": 1.5,
+        "whip": 0.91,
+        "k_bb": 3.67,
+        "command": "Strong Command",
+        "quality": false,
+        "elite": false
+      },
+      "home_pitcher": {
+        "name": "Mart\u00edn P\u00e9rez",
+        "hand": "L",
+        "era": "3.86",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 4.67,
+        "avg_k": 2.0,
+        "avg_bb": 0.5,
+        "whip": 0.86,
         "k_bb": 4.0,
         "command": "Elite Command",
         "quality": false,
         "elite": false
       },
-      "home_pitcher": {
-        "name": "Walker Buehler",
+      "away_hitters": [
+        {
+          "name": "Angel Mart\u00ednez",
+          "stats": {
+            "avg": ".333",
+            "bip_pa": 0.72
+          },
+          "vsRHP": {
+            "avg": ".350",
+            "hits": 7
+          },
+          "vsLHP": {
+            "avg": ".308",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".333"
+          }
+        },
+        {
+          "name": "Austin Hedges",
+          "stats": {
+            "avg": ".400",
+            "bip_pa": 0.8
+          },
+          "vsRHP": {
+            "avg": ".375",
+            "hits": 3
+          },
+          "vsLHP": {
+            "avg": ".429",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 5,
+            "avg": 0.5
+          },
+          "streak": 4,
+          "risp": {
+            "avg": ".400"
+          }
+        },
+        {
+          "name": "Bo Naylor",
+          "stats": {
+            "avg": ".125",
+            "bip_pa": 0.67
+          },
+          "vsRHP": {
+            "avg": ".107",
+            "hits": 3
+          },
+          "vsLHP": {
+            "avg": ".250",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".125"
+          }
+        },
+        {
+          "name": "Brayan Rocchio",
+          "stats": {
+            "avg": ".200",
+            "bip_pa": 0.74
+          },
+          "vsRHP": {
+            "avg": ".207",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".182",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".200"
+          }
+        },
+        {
+          "name": "CJ Kayfus",
+          "stats": {
+            "avg": ".182",
+            "bip_pa": 0.54
+          },
+          "vsRHP": {
+            "avg": ".211",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 0,
+            "avg": 0.0
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".182"
+          }
+        },
+        {
+          "name": "Chase DeLauter",
+          "stats": {
+            "avg": ".273",
+            "bip_pa": 0.59
+          },
+          "vsRHP": {
+            "avg": ".250",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".333",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 5,
+            "avg": 0.5
+          },
+          "streak": 4,
+          "risp": {
+            "avg": ".273"
+          }
+        },
+        {
+          "name": "Daniel Schneemann",
+          "stats": {
+            "avg": ".179",
+            "bip_pa": 0.71
+          },
+          "vsRHP": {
+            "avg": ".160",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".333",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".179"
+          }
+        },
+        {
+          "name": "David Fry",
+          "stats": {
+            "avg": ".214",
+            "bip_pa": 0.44
+          },
+          "vsRHP": {
+            "avg": ".250",
+            "hits": 2
+          },
+          "vsLHP": {
+            "avg": ".167",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".214"
+          }
+        },
+        {
+          "name": "Jos\u00e9 Ram\u00edrez",
+          "stats": {
+            "avg": ".151",
+            "bip_pa": 0.73
+          },
+          "vsRHP": {
+            "avg": ".132",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".200",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".151"
+          }
+        }
+      ],
+      "home_hitters": [
+        {
+          "name": "Austin Riley",
+          "stats": {
+            "avg": ".224",
+            "bip_pa": 0.65
+          },
+          "vsRHP": {
+            "avg": ".118",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".467",
+            "hits": 7
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".224"
+          }
+        },
+        {
+          "name": "Dominic Smith",
+          "stats": {
+            "avg": ".357",
+            "bip_pa": 0.73
+          },
+          "vsRHP": {
+            "avg": ".370",
+            "hits": 10
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 5,
+          "risp": {
+            "avg": ".357"
+          }
+        },
+        {
+          "name": "Drake Baldwin",
+          "stats": {
+            "avg": ".328",
+            "bip_pa": 0.69
+          },
+          "vsRHP": {
+            "avg": ".317",
+            "hits": 13
+          },
+          "vsLHP": {
+            "avg": ".353",
+            "hits": 6
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".328"
+          }
+        },
+        {
+          "name": "Eli White",
+          "stats": {
+            "avg": ".154",
+            "bip_pa": 0.79
+          },
+          "vsRHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "vsLHP": {
+            "avg": ".222",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".154"
+          }
+        },
+        {
+          "name": "Jonah Heim",
+          "stats": {
+            "avg": ".133",
+            "bip_pa": 0.67
+          },
+          "vsRHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "vsLHP": {
+            "avg": ".222",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".133"
+          }
+        },
+        {
+          "name": "Jorge Mateo",
+          "stats": {
+            "avg": ".333",
+            "bip_pa": 0.5
+          },
+          "vsRHP": {
+            "avg": ".429",
+            "hits": 3
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 9,
+            "hits": 3,
+            "avg": 0.333
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".333"
+          }
+        },
+        {
+          "name": "Kyle Farmer",
+          "stats": {
+            "avg": ".500",
+            "bip_pa": 1.0
+          },
+          "vsRHP": {
+            "avg": "1.000",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 2,
+            "hits": 1,
+            "avg": 0.5
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".500"
+          }
+        },
+        {
+          "name": "Matt Olson",
+          "stats": {
+            "avg": ".278",
+            "bip_pa": 0.5
+          },
+          "vsRHP": {
+            "avg": ".278",
+            "hits": 10
+          },
+          "vsLHP": {
+            "avg": ".278",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 2,
+          "risp": {
+            "avg": ".278"
+          }
+        },
+        {
+          "name": "Mauricio Dub\u00f3n",
+          "stats": {
+            "avg": ".347",
+            "bip_pa": 0.76
+          },
+          "vsRHP": {
+            "avg": ".364",
+            "hits": 12
+          },
+          "vsLHP": {
+            "avg": ".313",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".347"
+          }
+        }
+      ]
+    },
+    {
+      "away_team": "Colorado Rockies",
+      "home_team": "San Diego Padres",
+      "venue": "Petco Park",
+      "start": "2026-04-12T00:40:00Z",
+      "away_pitcher": {
+        "name": "Ryan Feltner",
         "hand": "R",
-        "era": "4.97",
+        "era": "4.32",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 4.22,
-        "avg_k": 3.67,
-        "avg_bb": 1.67,
-        "whip": 1.26,
-        "k_bb": 2.2,
+        "avg_ip": 4.17,
+        "avg_k": 2.5,
+        "avg_bb": 1.5,
+        "whip": 1.32,
+        "k_bb": 1.67,
+        "command": "Below Average Command",
+        "quality": false,
+        "elite": false
+      },
+      "home_pitcher": {
+        "name": "Germ\u00e1n M\u00e1rquez",
+        "hand": "R",
+        "era": "4.50",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 4.0,
+        "avg_k": 2.5,
+        "avg_bb": 1.0,
+        "whip": 2.0,
+        "k_bb": 2.5,
         "command": "Average Command",
         "quality": false,
         "elite": false
@@ -5756,8 +5756,8 @@
         {
           "name": "Brenton Doyle",
           "stats": {
-            "avg": ".186",
-            "bip_pa": 0.55
+            "avg": ".182",
+            "bip_pa": 0.54
           },
           "vsRHP": {
             "avg": ".182",
@@ -5774,7 +5774,7 @@
           },
           "streak": 0,
           "risp": {
-            "avg": ".186"
+            "avg": ".182"
           }
         },
         {
@@ -6190,518 +6190,42 @@
       ]
     },
     {
-      "away_team": "Houston Astros",
-      "home_team": "Seattle Mariners",
-      "venue": "T-Mobile Park",
-      "start": "2026-04-11T01:40:00Z",
-      "away_pitcher": {
-        "name": "Tatsuya Imai",
-        "hand": "R",
-        "era": "7.27",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 2.89,
-        "avg_k": 4.33,
-        "avg_bb": 3.67,
-        "whip": 2.08,
-        "k_bb": 1.18,
-        "command": "Below Average Command",
-        "quality": false,
-        "elite": false
-      },
-      "home_pitcher": {
-        "name": "Emerson Hancock",
-        "hand": "R",
-        "era": "2.04",
-        "era_splits": {
-          "vsRHB": "N/A",
-          "vsLHB": "N/A"
-        },
-        "avg_ip": 5.89,
-        "avg_k": 6.33,
-        "avg_bb": 1.0,
-        "whip": 0.74,
-        "k_bb": 6.33,
-        "command": "Elite Command",
-        "quality": false,
-        "elite": false
-      },
-      "away_hitters": [
-        {
-          "name": "Brice Matthews",
-          "stats": {
-            "avg": ".136",
-            "bip_pa": 0.36
-          },
-          "vsRHP": {
-            "avg": ".125",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": ".143",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".136"
-          }
-        },
-        {
-          "name": "Cam Smith",
-          "stats": {
-            "avg": ".261",
-            "bip_pa": 0.55
-          },
-          "vsRHP": {
-            "avg": ".310",
-            "hits": 9
-          },
-          "vsLHP": {
-            "avg": ".188",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".261"
-          }
-        },
-        {
-          "name": "Carlos Correa",
-          "stats": {
-            "avg": ".273",
-            "bip_pa": 0.74
-          },
-          "vsRHP": {
-            "avg": ".308",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".235",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".273"
-          }
-        },
-        {
-          "name": "Christian V\u00e1zquez",
-          "stats": {
-            "avg": ".318",
-            "bip_pa": 0.74
-          },
-          "vsRHP": {
-            "avg": ".286",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".333",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".318"
-          }
-        },
-        {
-          "name": "Christian Walker",
-          "stats": {
-            "avg": ".327",
-            "bip_pa": 0.71
-          },
-          "vsRHP": {
-            "avg": ".394",
-            "hits": 13
-          },
-          "vsLHP": {
-            "avg": ".235",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".327"
-          }
-        },
-        {
-          "name": "Isaac Paredes",
-          "stats": {
-            "avg": ".226",
-            "bip_pa": 0.68
-          },
-          "vsRHP": {
-            "avg": ".083",
-            "hits": 1
-          },
-          "vsLHP": {
-            "avg": ".294",
-            "hits": 5
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".226"
-          }
-        },
-        {
-          "name": "Jeremy Pe\u00f1a",
-          "stats": {
-            "avg": ".237",
-            "bip_pa": 0.78
-          },
-          "vsRHP": {
-            "avg": ".240",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".300",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".237"
-          }
-        },
-        {
-          "name": "Joey Loperfido",
-          "stats": {
-            "avg": ".286",
-            "bip_pa": 0.62
-          },
-          "vsRHP": {
-            "avg": ".286",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".167",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".286"
-          }
-        },
-        {
-          "name": "Jose Altuve",
-          "stats": {
-            "avg": ".313",
-            "bip_pa": 0.58
-          },
-          "vsRHP": {
-            "avg": ".276",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".389",
-            "hits": 7
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".313"
-          }
-        }
-      ],
-      "home_hitters": [
-        {
-          "name": "Brendan Donovan",
-          "stats": {
-            "avg": ".316",
-            "bip_pa": 0.6
-          },
-          "vsRHP": {
-            "avg": ".400",
-            "hits": 8
-          },
-          "vsLHP": {
-            "avg": ".222",
-            "hits": 4
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 4,
-            "avg": 0.4
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".316"
-          }
-        },
-        {
-          "name": "Cal Raleigh",
-          "stats": {
-            "avg": ".137",
-            "bip_pa": 0.49
-          },
-          "vsRHP": {
-            "avg": ".182",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".063",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".137"
-          }
-        },
-        {
-          "name": "Cole Young",
-          "stats": {
-            "avg": ".255",
-            "bip_pa": 0.59
-          },
-          "vsRHP": {
-            "avg": ".200",
-            "hits": 6
-          },
-          "vsLHP": {
-            "avg": ".375",
-            "hits": 6
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".255"
-          }
-        },
-        {
-          "name": "Connor Joe",
-          "stats": {
-            "avg": ".000",
-            "bip_pa": 0.67
-          },
-          "vsRHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 3,
-            "hits": 0,
-            "avg": 0.0
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".000"
-          }
-        },
-        {
-          "name": "Dominic Canzone",
-          "stats": {
-            "avg": ".185",
-            "bip_pa": 0.66
-          },
-          "vsRHP": {
-            "avg": ".208",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 3,
-            "avg": 0.3
-          },
-          "streak": 1,
-          "risp": {
-            "avg": ".185"
-          }
-        },
-        {
-          "name": "J.P. Crawford",
-          "stats": {
-            "avg": ".105",
-            "bip_pa": 0.44
-          },
-          "vsRHP": {
-            "avg": ".154",
-            "hits": 2
-          },
-          "vsLHP": {
-            "avg": ".000",
-            "hits": 0
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".105"
-          }
-        },
-        {
-          "name": "Josh Naylor",
-          "stats": {
-            "avg": ".118",
-            "bip_pa": 0.75
-          },
-          "vsRHP": {
-            "avg": ".065",
-            "hits": 2
-          },
-          "vsLHP": {
-            "avg": ".176",
-            "hits": 3
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 0,
-            "avg": 0.0
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".118"
-          }
-        },
-        {
-          "name": "Julio Rodr\u00edguez",
-          "stats": {
-            "avg": ".151",
-            "bip_pa": 0.63
-          },
-          "vsRHP": {
-            "avg": ".152",
-            "hits": 5
-          },
-          "vsLHP": {
-            "avg": ".125",
-            "hits": 2
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 1,
-            "avg": 0.1
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".151"
-          }
-        },
-        {
-          "name": "Leo Rivas",
-          "stats": {
-            "avg": ".167",
-            "bip_pa": 0.52
-          },
-          "vsRHP": {
-            "avg": ".174",
-            "hits": 4
-          },
-          "vsLHP": {
-            "avg": ".091",
-            "hits": 1
-          },
-          "last10": {
-            "ab": 10,
-            "hits": 2,
-            "avg": 0.2
-          },
-          "streak": 0,
-          "risp": {
-            "avg": ".167"
-          }
-        }
-      ]
-    },
-    {
       "away_team": "Texas Rangers",
       "home_team": "Los Angeles Dodgers",
       "venue": "UNIQLO Field at Dodger Stadium",
-      "start": "2026-04-11T02:10:00Z",
+      "start": "2026-04-12T01:10:00Z",
       "away_pitcher": {
-        "name": "Kumar Rocker",
+        "name": "Jack Leiter",
         "hand": "R",
-        "era": "4.50",
+        "era": "2.45",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 5.0,
-        "avg_k": 4.0,
-        "avg_bb": 1.5,
-        "whip": 1.4,
-        "k_bb": 2.67,
-        "command": "Average Command",
+        "avg_ip": 5.5,
+        "avg_k": 8.5,
+        "avg_bb": 1.0,
+        "whip": 1.0,
+        "k_bb": 8.5,
+        "command": "Elite Command",
         "quality": false,
         "elite": false
       },
       "home_pitcher": {
-        "name": "Tyler Glasnow",
+        "name": "Emmet Sheehan",
         "hand": "R",
-        "era": "4.00",
+        "era": "8.00",
         "era_splits": {
           "vsRHB": "N/A",
           "vsLHB": "N/A"
         },
-        "avg_ip": 6.0,
-        "avg_k": 7.33,
-        "avg_bb": 1.33,
-        "whip": 0.94,
-        "k_bb": 5.5,
-        "command": "Elite Command",
-        "quality": true,
+        "avg_ip": 4.5,
+        "avg_k": 4.0,
+        "avg_bb": 2.5,
+        "whip": 1.89,
+        "k_bb": 1.6,
+        "command": "Below Average Command",
+        "quality": false,
         "elite": false
       },
       "away_hitters": [
@@ -6780,8 +6304,8 @@
         {
           "name": "Danny Jansen",
           "stats": {
-            "avg": ".258",
-            "bip_pa": 0.66
+            "avg": ".250",
+            "bip_pa": 0.64
           },
           "vsRHP": {
             "avg": ".304",
@@ -6798,7 +6322,7 @@
           },
           "streak": 1,
           "risp": {
-            "avg": ".258"
+            "avg": ".250"
           }
         },
         {
@@ -7137,6 +6661,482 @@
           "streak": 3,
           "risp": {
             "avg": ".261"
+          }
+        }
+      ]
+    },
+    {
+      "away_team": "Houston Astros",
+      "home_team": "Seattle Mariners",
+      "venue": "T-Mobile Park",
+      "start": "2026-04-12T01:40:00Z",
+      "away_pitcher": {
+        "name": "Lance McCullers Jr.",
+        "hand": "R",
+        "era": "3.27",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 5.5,
+        "avg_k": 6.5,
+        "avg_bb": 2.0,
+        "whip": 1.18,
+        "k_bb": 3.25,
+        "command": "Strong Command",
+        "quality": false,
+        "elite": false
+      },
+      "home_pitcher": {
+        "name": "Luis Castillo",
+        "hand": "R",
+        "era": "2.79",
+        "era_splits": {
+          "vsRHB": "N/A",
+          "vsLHB": "N/A"
+        },
+        "avg_ip": 4.83,
+        "avg_k": 5.5,
+        "avg_bb": 1.5,
+        "whip": 1.24,
+        "k_bb": 3.67,
+        "command": "Strong Command",
+        "quality": false,
+        "elite": false
+      },
+      "away_hitters": [
+        {
+          "name": "Brice Matthews",
+          "stats": {
+            "avg": ".136",
+            "bip_pa": 0.36
+          },
+          "vsRHP": {
+            "avg": ".125",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": ".143",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".136"
+          }
+        },
+        {
+          "name": "Cam Smith",
+          "stats": {
+            "avg": ".255",
+            "bip_pa": 0.56
+          },
+          "vsRHP": {
+            "avg": ".310",
+            "hits": 9
+          },
+          "vsLHP": {
+            "avg": ".188",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".255"
+          }
+        },
+        {
+          "name": "Carlos Correa",
+          "stats": {
+            "avg": ".267",
+            "bip_pa": 0.75
+          },
+          "vsRHP": {
+            "avg": ".308",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".235",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".267"
+          }
+        },
+        {
+          "name": "Christian V\u00e1zquez",
+          "stats": {
+            "avg": ".318",
+            "bip_pa": 0.74
+          },
+          "vsRHP": {
+            "avg": ".286",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".333",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".318"
+          }
+        },
+        {
+          "name": "Christian Walker",
+          "stats": {
+            "avg": ".327",
+            "bip_pa": 0.71
+          },
+          "vsRHP": {
+            "avg": ".394",
+            "hits": 13
+          },
+          "vsLHP": {
+            "avg": ".235",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".327"
+          }
+        },
+        {
+          "name": "Isaac Paredes",
+          "stats": {
+            "avg": ".226",
+            "bip_pa": 0.68
+          },
+          "vsRHP": {
+            "avg": ".083",
+            "hits": 1
+          },
+          "vsLHP": {
+            "avg": ".294",
+            "hits": 5
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".226"
+          }
+        },
+        {
+          "name": "Jeremy Pe\u00f1a",
+          "stats": {
+            "avg": ".237",
+            "bip_pa": 0.78
+          },
+          "vsRHP": {
+            "avg": ".240",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".300",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".237"
+          }
+        },
+        {
+          "name": "Joey Loperfido",
+          "stats": {
+            "avg": ".278",
+            "bip_pa": 0.62
+          },
+          "vsRHP": {
+            "avg": ".286",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".167",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".278"
+          }
+        },
+        {
+          "name": "Jose Altuve",
+          "stats": {
+            "avg": ".313",
+            "bip_pa": 0.58
+          },
+          "vsRHP": {
+            "avg": ".276",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".389",
+            "hits": 7
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".313"
+          }
+        }
+      ],
+      "home_hitters": [
+        {
+          "name": "Brendan Donovan",
+          "stats": {
+            "avg": ".316",
+            "bip_pa": 0.6
+          },
+          "vsRHP": {
+            "avg": ".400",
+            "hits": 8
+          },
+          "vsLHP": {
+            "avg": ".222",
+            "hits": 4
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 4,
+            "avg": 0.4
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".316"
+          }
+        },
+        {
+          "name": "Cal Raleigh",
+          "stats": {
+            "avg": ".137",
+            "bip_pa": 0.49
+          },
+          "vsRHP": {
+            "avg": ".182",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".063",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".137"
+          }
+        },
+        {
+          "name": "Cole Young",
+          "stats": {
+            "avg": ".255",
+            "bip_pa": 0.59
+          },
+          "vsRHP": {
+            "avg": ".200",
+            "hits": 6
+          },
+          "vsLHP": {
+            "avg": ".375",
+            "hits": 6
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".255"
+          }
+        },
+        {
+          "name": "Connor Joe",
+          "stats": {
+            "avg": ".000",
+            "bip_pa": 0.67
+          },
+          "vsRHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 3,
+            "hits": 0,
+            "avg": 0.0
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".000"
+          }
+        },
+        {
+          "name": "Dominic Canzone",
+          "stats": {
+            "avg": ".185",
+            "bip_pa": 0.66
+          },
+          "vsRHP": {
+            "avg": ".208",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 3,
+            "avg": 0.3
+          },
+          "streak": 1,
+          "risp": {
+            "avg": ".185"
+          }
+        },
+        {
+          "name": "J.P. Crawford",
+          "stats": {
+            "avg": ".105",
+            "bip_pa": 0.44
+          },
+          "vsRHP": {
+            "avg": ".154",
+            "hits": 2
+          },
+          "vsLHP": {
+            "avg": ".000",
+            "hits": 0
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".105"
+          }
+        },
+        {
+          "name": "Josh Naylor",
+          "stats": {
+            "avg": ".118",
+            "bip_pa": 0.75
+          },
+          "vsRHP": {
+            "avg": ".065",
+            "hits": 2
+          },
+          "vsLHP": {
+            "avg": ".176",
+            "hits": 3
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 0,
+            "avg": 0.0
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".118"
+          }
+        },
+        {
+          "name": "Julio Rodr\u00edguez",
+          "stats": {
+            "avg": ".151",
+            "bip_pa": 0.63
+          },
+          "vsRHP": {
+            "avg": ".152",
+            "hits": 5
+          },
+          "vsLHP": {
+            "avg": ".125",
+            "hits": 2
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 1,
+            "avg": 0.1
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".151"
+          }
+        },
+        {
+          "name": "Leo Rivas",
+          "stats": {
+            "avg": ".167",
+            "bip_pa": 0.52
+          },
+          "vsRHP": {
+            "avg": ".174",
+            "hits": 4
+          },
+          "vsLHP": {
+            "avg": ".091",
+            "hits": 1
+          },
+          "last10": {
+            "ab": 10,
+            "hits": 2,
+            "avg": 0.2
+          },
+          "streak": 0,
+          "risp": {
+            "avg": ".167"
           }
         }
       ]
