@@ -147,7 +147,7 @@ body {
 
 .watchlist-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 12px;
   margin-top: 14px;
 }
@@ -515,44 +515,48 @@ body {
   cursor: pointer;
 }
 
-.watchlist-overlay {
+.watchlist-panel {
   position: fixed;
-  inset: 0;
-  background: rgba(3, 8, 16, 0.68);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  z-index: 1100;
-}
-
-.watchlist-overlay.open {
-  display: flex;
-}
-
-.watchlist-modal {
-  width: min(1200px, 100%);
-  max-height: 88vh;
+  top: 90px;
+  right: 24px;
+  width: 390px;
+  max-width: calc(100vw - 24px);
+  max-height: 78vh;
   overflow: auto;
   background: rgba(8, 16, 28, 0.96);
   border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 24px;
+  border-radius: 22px;
   box-shadow: var(--shadow);
-  padding: 22px;
+  padding: 18px;
+  z-index: 1100;
+  display: none;
 }
 
-.watchlist-modal-header {
+.watchlist-panel.open {
+  display: block;
+}
+
+.watchlist-panel.minimized .watchlist-panel-body {
+  display: none;
+}
+
+.watchlist-panel-header {
   display: flex;
   justify-content: space-between;
   gap: 12px;
   align-items: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.watchlist-panel-header:active {
+  cursor: grabbing;
 }
 
 .watchlist-actions {
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .watchlist-action {
@@ -575,8 +579,7 @@ footer {
 @media (max-width: 1100px) {
   .grid,
   .grid-4,
-  .player-grid,
-  .watchlist-grid {
+  .player-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -602,7 +605,6 @@ footer {
   .grid-4,
   .mini-grid,
   .player-grid,
-  .watchlist-grid,
   .player-search-row,
   .player-hero,
   .watchlist-player-hero {
@@ -611,7 +613,7 @@ footer {
 
   .live-top,
   .live-middle,
-  .watchlist-modal-header {
+  .watchlist-panel-header {
     grid-template-columns: 1fr;
     display: grid;
   }
@@ -625,6 +627,13 @@ footer {
     left: 14px;
     bottom: 14px;
     border-radius: 14px;
+  }
+
+  .watchlist-panel {
+    width: calc(100vw - 20px);
+    left: 10px !important;
+    right: auto !important;
+    top: 72px !important;
   }
 
   .page-title {
@@ -724,18 +733,19 @@ footer {
 
 <button id="watchlist-fab" class="watchlist-fab">Watchlist (0/8)</button>
 
-<div id="watchlist-overlay" class="watchlist-overlay">
-  <div class="watchlist-modal">
-    <div class="watchlist-modal-header">
-      <div>
-        <div class="matchup">My Watchlist</div>
-        <div class="meta">Track up to 8 saved players with live and season context.</div>
-      </div>
-      <div class="watchlist-actions">
-        <button id="watchlist-refresh" class="watchlist-action">Refresh</button>
-        <button id="watchlist-close" class="watchlist-close">Close</button>
-      </div>
+<div id="watchlist-panel" class="watchlist-panel">
+  <div id="watchlist-panel-header" class="watchlist-panel-header">
+    <div>
+      <div class="matchup">My Watchlist</div>
+      <div class="meta">Track up to 8 saved players with live and season context.</div>
     </div>
+    <div class="watchlist-actions">
+      <button id="watchlist-refresh" class="watchlist-action">Refresh</button>
+      <button id="watchlist-minimize" class="watchlist-close">Minimize</button>
+      <button id="watchlist-close" class="watchlist-close">Close</button>
+    </div>
+  </div>
+  <div class="watchlist-panel-body">
     <div id="watchlist-content" style="margin-top:16px;"></div>
   </div>
 </div>
@@ -746,6 +756,7 @@ const PLAYER_SEARCH_API_URL = "https://misty-heart-42ca.k8piler.workers.dev/play
 const PLAYER_API_URL = "https://misty-heart-42ca.k8piler.workers.dev/player";
 const WATCHLIST_KEY = "mlb_statstream_watchlist_v1";
 const WATCHLIST_LIMIT = 8;
+const WATCHLIST_POSITION_KEY = "mlb_watchlist_position_v1";
 
 const TEAM_STYLES = {
   "Arizona Diamondbacks": { abbr: "ARI", color: "#A71930", short: "D-backs" },
@@ -783,6 +794,9 @@ const TEAM_STYLES = {
 let suggestionTimer = null;
 let activePlayerId = null;
 let activePlayerData = null;
+let draggingWatchlist = false;
+let dragOffsetX = 0;
+let dragOffsetY = 0;
 
 function safeArray(value) {
   return Array.isArray(value) ? value : [];
@@ -1141,6 +1155,56 @@ async function runSearchFromInput() {
   }
 }
 
+function getSavedWatchlistPosition() {
+  try {
+    return JSON.parse(localStorage.getItem(WATCHLIST_POSITION_KEY) || "null");
+  } catch {
+    return null;
+  }
+}
+
+function saveWatchlistPosition(left, top) {
+  localStorage.setItem(WATCHLIST_POSITION_KEY, JSON.stringify({ left, top }));
+}
+
+function applyWatchlistPosition() {
+  const panel = document.getElementById("watchlist-panel");
+  const saved = getSavedWatchlistPosition();
+  if (!saved) return;
+
+  panel.style.left = `${saved.left}px`;
+  panel.style.top = `${saved.top}px`;
+  panel.style.right = "auto";
+}
+
+function clampWatchlistPosition(left, top) {
+  const panel = document.getElementById("watchlist-panel");
+  const maxLeft = Math.max(8, window.innerWidth - panel.offsetWidth - 8);
+  const maxTop = Math.max(8, window.innerHeight - 120);
+  return {
+    left: Math.min(Math.max(8, left), maxLeft),
+    top: Math.min(Math.max(8, top), maxTop)
+  };
+}
+
+function openWatchlist() {
+  const panel = document.getElementById("watchlist-panel");
+  panel.classList.add("open");
+  applyWatchlistPosition();
+  renderWatchlist();
+}
+
+function closeWatchlist() {
+  document.getElementById("watchlist-panel").classList.remove("open");
+}
+
+function toggleMinimizeWatchlist() {
+  const panel = document.getElementById("watchlist-panel");
+  panel.classList.toggle("minimized");
+  document.getElementById("watchlist-minimize").textContent =
+    panel.classList.contains("minimized") ? "Restore" : "Minimize";
+}
+
 async function renderWatchlist() {
   const content = document.getElementById("watchlist-content");
   const ids = getWatchlist();
@@ -1202,15 +1266,6 @@ async function renderWatchlist() {
       }).join("")}
     </div>
   `;
-}
-
-function openWatchlist() {
-  document.getElementById("watchlist-overlay").classList.add("open");
-  renderWatchlist();
-}
-
-function closeWatchlist() {
-  document.getElementById("watchlist-overlay").classList.remove("open");
 }
 
 async function loadLive() {
@@ -1436,12 +1491,38 @@ function renderSeasonLeaders(leaders) {
 
 async function refreshLiveOnly() {
   await loadLive();
-  if (activePlayerId) {
-    loadPlayer(activePlayerId);
-  }
-  if (document.getElementById("watchlist-overlay").classList.contains("open")) {
+  if (activePlayerId) loadPlayer(activePlayerId);
+  if (document.getElementById("watchlist-panel").classList.contains("open")) {
     renderWatchlist();
   }
+}
+
+function beginWatchlistDrag(event) {
+  const panel = document.getElementById("watchlist-panel");
+  draggingWatchlist = true;
+  const rect = panel.getBoundingClientRect();
+  dragOffsetX = event.clientX - rect.left;
+  dragOffsetY = event.clientY - rect.top;
+}
+
+function onWatchlistDrag(event) {
+  if (!draggingWatchlist) return;
+  const panel = document.getElementById("watchlist-panel");
+  const proposedLeft = event.clientX - dragOffsetX;
+  const proposedTop = event.clientY - dragOffsetY;
+  const clamped = clampWatchlistPosition(proposedLeft, proposedTop);
+  panel.style.left = `${clamped.left}px`;
+  panel.style.top = `${clamped.top}px`;
+  panel.style.right = "auto";
+}
+
+function endWatchlistDrag() {
+  if (!draggingWatchlist) return;
+  draggingWatchlist = false;
+  const panel = document.getElementById("watchlist-panel");
+  const left = parseInt(panel.style.left || "0", 10);
+  const top = parseInt(panel.style.top || "0", 10);
+  saveWatchlistPosition(left, top);
 }
 
 document.getElementById("player-search-button").addEventListener("click", runSearchFromInput);
@@ -1449,12 +1530,10 @@ document.getElementById("player-search-button").addEventListener("click", runSea
 document.getElementById("player-search-input").addEventListener("input", () => {
   const value = document.getElementById("player-search-input").value.trim();
   clearTimeout(suggestionTimer);
-
   if (!value) {
     clearPlayerSearchState();
     return;
   }
-
   suggestionTimer = setTimeout(searchSuggestions, 220);
 });
 
@@ -1475,10 +1554,22 @@ document.addEventListener("click", (event) => {
 });
 
 document.getElementById("watchlist-fab").addEventListener("click", openWatchlist);
-document.getElementById("watchlist-close").addEventListener("click", closeWatchlist);
 document.getElementById("watchlist-refresh").addEventListener("click", renderWatchlist);
-document.getElementById("watchlist-overlay").addEventListener("click", (event) => {
-  if (event.target.id === "watchlist-overlay") closeWatchlist();
+document.getElementById("watchlist-minimize").addEventListener("click", toggleMinimizeWatchlist);
+document.getElementById("watchlist-close").addEventListener("click", closeWatchlist);
+
+document.getElementById("watchlist-panel-header").addEventListener("mousedown", beginWatchlistDrag);
+document.addEventListener("mousemove", onWatchlistDrag);
+document.addEventListener("mouseup", endWatchlistDrag);
+
+window.addEventListener("resize", () => {
+  const panel = document.getElementById("watchlist-panel");
+  const rect = panel.getBoundingClientRect();
+  const clamped = clampWatchlistPosition(rect.left, rect.top);
+  panel.style.left = `${clamped.left}px`;
+  panel.style.top = `${clamped.top}px`;
+  panel.style.right = "auto";
+  saveWatchlistPosition(clamped.left, clamped.top);
 });
 
 updateWatchlistFab();
