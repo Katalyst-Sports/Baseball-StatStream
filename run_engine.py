@@ -162,7 +162,6 @@ def pitcher_last_three(player_id):
     starts_count = len(starts)
     whip = ((total_hits + total_bb) / total_ip) if total_ip else None
     era = ((total_er * 9) / total_ip) if total_ip else None
-
     last_start = starts[0]
 
     return {
@@ -383,13 +382,155 @@ def build_recap_stat_lines(boxscore):
     return hitter_lines[:6], pitcher_lines[:6]
 
 
+def build_dashboard_recap(yesterday_postgame):
+    dashboard = {
+        "featured_games": [],
+        "all_games": [],
+        "stat_leaders": {
+            "top_hitters": [],
+            "top_pitchers": [],
+            "home_run_leaders": [],
+            "strikeout_leaders": [],
+        },
+        "context_layer": {
+            "momentum_shifts": [],
+            "standout_performances": [],
+            "team_trends": [],
+        },
+    }
+
+    if not yesterday_postgame:
+        return dashboard
+
+    if client:
+        try:
+            raw_games = "\n".join(
+                [
+                    (
+                        f"Game: {game['game']}\n"
+                        f"Final: {game['final_score']}\n"
+                        f"Winner: {game['winner']}\n"
+                        f"Loser: {game['loser']}\n"
+                        f"Exact hitter lines: {'; '.join(game['hitter_lines']) if game['hitter_lines'] else 'No standout hitter line provided'}\n"
+                        f"Exact pitcher lines: {'; '.join(game['pitcher_lines']) if game['pitcher_lines'] else 'No standout pitcher line provided'}\n"
+                    )
+                    for game in yesterday_postgame
+                ]
+            )
+
+            prompt = f"""
+You are building a modern MLB analytics dashboard, not a newspaper article.
+
+Return valid JSON only with this exact schema:
+{{
+  "featured_games": [
+    {{
+      "game": "...",
+      "final_score": "...",
+      "winner": "...",
+      "loser": "...",
+      "summary": "1-2 sentence concise recap",
+      "key_stats": ["...", "...", "..."]
+    }}
+  ],
+  "all_games": [
+    {{
+      "game": "...",
+      "final_score": "...",
+      "top_pitching_line": "...",
+      "top_batting_line": "...",
+      "key_insight": "One concise insight line"
+    }}
+  ],
+  "stat_leaders": {{
+    "top_hitters": ["...", "...", "..."],
+    "top_pitchers": ["...", "...", "..."],
+    "home_run_leaders": ["...", "...", "..."],
+    "strikeout_leaders": ["...", "...", "..."]
+  }},
+  "context_layer": {{
+    "momentum_shifts": ["...", "...", "..."],
+    "standout_performances": ["...", "...", "..."],
+    "team_trends": ["...", "...", "..."]
+  }}
+}}
+
+Rules:
+- Use only the exact stats provided.
+- Do not invent numbers or events.
+- Keep summaries concise and data-driven.
+- No long editorial writing.
+- "featured_games" should contain 3 or 4 games.
+- "all_games" should include every game.
+- Output JSON only.
+
+Games:
+{raw_games}
+"""
+
+            response = client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.2,
+            )
+
+            content = response.choices[0].message.content.strip()
+            dashboard = json.loads(content)
+            return dashboard
+        except Exception:
+            pass
+
+    dashboard["featured_games"] = [
+        {
+            "game": game["game"],
+            "final_score": game["final_score"],
+            "winner": game["winner"],
+            "loser": game["loser"],
+            "summary": (game["pitcher_lines"][0] if game["pitcher_lines"] else "No summary available."),
+            "key_stats": (game["hitter_lines"][:2] + game["pitcher_lines"][:1])[:3],
+        }
+        for game in yesterday_postgame[:4]
+    ]
+
+    dashboard["all_games"] = [
+        {
+            "game": game["game"],
+            "final_score": game["final_score"],
+            "top_pitching_line": game["pitcher_lines"][0] if game["pitcher_lines"] else "No top pitching line available",
+            "top_batting_line": game["hitter_lines"][0] if game["hitter_lines"] else "No top batting line available",
+            "key_insight": game["pitcher_lines"][0] if game["pitcher_lines"] else "No key insight available",
+        }
+        for game in yesterday_postgame
+    ]
+
+    top_hitter_lines = []
+    top_pitcher_lines = []
+    for game in yesterday_postgame:
+        top_hitter_lines.extend(game["hitter_lines"])
+        top_pitcher_lines.extend(game["pitcher_lines"])
+
+    dashboard["stat_leaders"]["top_hitters"] = top_hitter_lines[:4]
+    dashboard["stat_leaders"]["top_pitchers"] = top_pitcher_lines[:4]
+    dashboard["stat_leaders"]["home_run_leaders"] = [line for line in top_hitter_lines if "HR" in line][:4]
+    dashboard["stat_leaders"]["strikeout_leaders"] = [line for line in top_pitcher_lines if "K" in line][:4]
+
+    dashboard["context_layer"]["momentum_shifts"] = [
+        f"{game['winner']} took control in {game['game']}." for game in yesterday_postgame[:3]
+    ]
+    dashboard["context_layer"]["standout_performances"] = top_hitter_lines[:3]
+    dashboard["context_layer"]["team_trends"] = [
+        f"{game['winner']} closed out a win in {game['game']}." for game in yesterday_postgame[:3]
+    ]
+
+    return dashboard
+
+
 schedule_today = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
 )
 
 daily = []
 live = []
-postgame_today = []
 errors = []
 
 for date_block in schedule_today.get("dates", []):
@@ -433,37 +574,12 @@ for date_block in schedule_today.get("dates", []):
                     "hot_hitters": hot_hitters,
                     "top_pitchers": top_pitchers,
                 })
-
-            if status == "Final":
-                feed = fetch(f"{BASE}/v1.1/game/{game['gamePk']}/feed/live")
-                lines = feed.get("liveData", {}).get("linescore", {})
-                box = feed.get("liveData", {}).get("boxscore", {})
-
-                away_runs = lines.get("teams", {}).get("away", {}).get("runs", 0)
-                home_runs = lines.get("teams", {}).get("home", {}).get("runs", 0)
-                winner = away if away_runs > home_runs else home
-                loser = home if away_runs > home_runs else away
-                hitters, pitchers = build_live_or_final_highlights(box, pick_final_pitcher=True)
-                hitter_lines, pitcher_lines = build_recap_stat_lines(box)
-
-                postgame_today.append({
-                    "gamePk": game.get("gamePk"),
-                    "game": f"{away} @ {home}",
-                    "winner": winner,
-                    "loser": loser,
-                    "final_score": f"{away_runs}-{home_runs}",
-                    "hitters": hitters,
-                    "pitchers": pitchers,
-                    "hitter_lines": hitter_lines,
-                    "pitcher_lines": pitcher_lines,
-                })
         except Exception as exc:
             errors.append({
                 "gamePk": game.get("gamePk"),
                 "stage": "today_schedule_loop",
                 "error": str(exc),
             })
-
 
 schedule_yesterday = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={YESTERDAY}"
@@ -509,88 +625,22 @@ for date_block in schedule_yesterday.get("dates", []):
                 "error": str(exc),
             })
 
+dashboard_recap = build_dashboard_recap(yesterday_postgame)
 
 yesterday_recap = {
     "date": YESTERDAY,
     "headline": f"MLB Daily Recap - {datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
-    "article": "No recap generated yet.",
+    "dashboard_recap": dashboard_recap,
 }
-
-if yesterday_postgame and client:
-    try:
-        games_text = "\n".join(
-            [
-                (
-                    f"Game: {game['game']}\n"
-                    f"Final: {game['final_score']}\n"
-                    f"Winner: {game['winner']}\n"
-                    f"Loser: {game['loser']}\n"
-                    f"Exact hitter lines: {'; '.join(game['hitter_lines']) if game['hitter_lines'] else 'No standout hitter line provided'}\n"
-                    f"Exact pitcher lines: {'; '.join(game['pitcher_lines']) if game['pitcher_lines'] else 'No standout pitcher line provided'}\n"
-                )
-                for game in yesterday_postgame
-            ]
-        )
-
-        prompt = f"""
-You are an MLB recap editor writing for a clean sports dashboard.
-
-Write a recap using exactly this format:
-
-HEADLINE:
-One strong headline.
-
-TOP 3 GAMES:
-Pick the three most interesting games only.
-For each one, write 2-3 sentences using only the exact stats provided.
-
-QUICK HITS:
-Summarize the remaining games in short bullet-style lines.
-One sentence each.
-
-MOST IMPACTFUL PLAY:
-Name the single most impactful play or performance of the day and explain why in 1-2 sentences.
-
-BIGGEST STORY OF THE DAY:
-End with 1 short paragraph on the biggest overall takeaway.
-
-Rules:
-- Only use the exact stats provided below.
-- Do not invent innings, strikeout totals, RBI totals, or storylines.
-- If a stat is not listed below, do not mention it.
-- Keep the writing sharp, clean, and professional.
-- Do not write like a long opinion column.
-- Prefer clarity over drama.
-
-Games:
-{games_text}
-"""
-
-        response = client.chat.completions.create(
-            model="llama-3.1-8b-instant",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.2,
-        )
-
-        yesterday_recap["article"] = response.choices[0].message.content.strip()
-    except Exception as exc:
-        yesterday_recap["article"] = f"Groq error: {str(exc)}"
-elif yesterday_postgame and not client:
-    yesterday_recap["article"] = "Groq recap skipped because GROQ_API_KEY is not set."
-else:
-    yesterday_recap["article"] = "No final games were available for yesterday."
-
 
 timestamp = NOW.isoformat()
 
 write_json("daily.json", {"updated_at": timestamp, "games": daily, "errors": errors})
 write_json("live.json", {"updated_at": timestamp, "games": live, "errors": errors})
-write_json("postgame.json", {"updated_at": timestamp, "games": postgame_today, "errors": errors})
 write_json("yesterday_postgame.json", {"updated_at": timestamp, "games": yesterday_postgame, "errors": errors})
 write_json("yesterday_recap.json", yesterday_recap)
 
 print(f"Wrote daily.json with {len(daily)} games")
 print(f"Wrote live.json with {len(live)} games")
-print(f"Wrote postgame.json with {len(postgame_today)} games")
 print(f"Wrote yesterday_postgame.json with {len(yesterday_postgame)} games")
 print("Wrote yesterday_recap.json")
