@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,7 +44,6 @@ jobs:
 
           git add daily.json || true
           git add live.json || true
-          git add postgame.json || true
           git add yesterday_postgame.json || true
           git add yesterday_recap.json || true
 
@@ -50,3 +51,4 @@ jobs:
 
           git pull --rebase origin main
           git push origin main
+
