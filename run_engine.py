@@ -344,7 +344,10 @@ postgame.append({
 # =====================================================
 
 def ai_daily_recap(postgame_games):
-    if not client or not postgame_games:
+    if not client:
+        return None
+
+    if len(postgame_games) == 0:
         return None
 
     games_text = "\n".join([
@@ -411,3 +414,7 @@ json.dump({"updated_at": NOW.isoformat(), "games": postgame}, open("postgame.jso
 
 if ai_recap:
     json.dump(ai_recap, open("daily_recap.json","w"), indent=2)
+else:
+    # ✅ Preserve existing recap if no new one generated
+    if not os.path.exists("daily_recap.json"):
+        pass
