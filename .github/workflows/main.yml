@@ -33,7 +33,7 @@ jobs:
           pip install groq
 
       - name: Run MLB engine
-        run: python run_engine_fixed.py
+        run: python run_engine.py
 
       - name: Commit updated data
         run: |
