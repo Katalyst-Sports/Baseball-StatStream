@@ -34,7 +34,16 @@ def fetch(url):
 
 
 def safe_number(value, default=0):
-    return value if value is not None else default
+   def is_finished_game(status_block):
+    abstract = str(status_block.get("abstractGameState", "")).strip().lower()
+    detailed = str(status_block.get("detailedState", "")).strip().lower()
+    coded = str(status_block.get("codedGameState", "")).strip().upper()
+
+    return (
+        abstract == "final"
+        or detailed in {"final", "game over", "completed early"}
+        or coded == "F"
+    )
 
 
 def safe_float(value, default=0.0):
@@ -629,7 +638,7 @@ for date_block in schedule_today.get("dates", []):
                     "top_pitchers": top_pitchers,
                 })
 
-            if status == "Final":
+           if is_finished_game(game.get("status", {})):if status == "Final":
                 feed = fetch(f"{BASE}/v1.1/game/{game['gamePk']}/feed/live")
                 lines = feed.get("liveData", {}).get("linescore", {})
                 box = feed.get("liveData", {}).get("boxscore", {})
@@ -667,7 +676,7 @@ yesterday_postgame = []
 
 for date_block in schedule_yesterday.get("dates", []):
     for game in date_block.get("games", []):
-        if game.get("status", {}).get("abstractGameState") != "Final":
+        if not is_finished_game(game.get("status", {})):
             continue
 
         try:
