@@ -482,62 +482,33 @@ def build_dashboard_recap(yesterday_postgame):
             )
 
             prompt = f"""
-You are writing concise MLB game recaps for a professional baseball data dashboard.
+You are writing concise MLB game recaps for a modern baseball dashboard.
 
 Return valid JSON only with this exact schema:
 {{
-  "featured_games": [
-    {{
-      "game": "...",
-      "final_score": "...",
-      "winner": "...",
-      "loser": "...",
-      "summary": "1-2 sentence concise recap",
-      "key_stats": ["...", "...", "..."]
-    }}
-  ],
   "all_games": [
     {{
       "game": "...",
       "final_score": "...",
       "top_pitching_line": "...",
       "top_batting_line": "...",
-      "summary": "2-3 sentence recap naming the key pitcher and offensive performers",
+      "summary": "2-3 sentence natural recap",
       "impact_player": "..."
     }}
-  ],
-  "context_layer": {{
-    "standout_performances": ["...", "...", "...", "...", "...", "..."]
-  }}
+  ]
 }}
 
-Writing style rules:
-- Write like an MLB recap desk, not like a columnist.
-- Use realistic baseball language.
-- Prefer concrete phrasing such as:
-  "worked six scoreless innings",
-  "struck out 11",
-  "allowed one run",
-  "homered",
-  "drove in three runs",
-  "collected three hits".
-- Avoid generic phrases like:
-  "set the tone",
-  "came up big",
-  "made the difference",
-  "provided a spark",
-  unless absolutely necessary.
-- If a pitcher line is strong, say exactly what he did using the provided innings, strikeouts, and earned runs.
-- If a hitter line includes a home run or RBI total, mention that directly.
-- Mention player names clearly.
-- Keep each all_games summary to 2-3 sentences.
-- Use only the exact stats provided.
-- Do not invent innings, strikeouts, earned runs, hits, home runs, or RBI.
-- "featured_games" should contain 3 or 4 games.
-- "all_games" should include every game.
-- "standout_performances" should include both hitters and pitchers.
+Rules:
+- Use only the exact stats and names provided below.
+- Do not invent numbers, innings, strikeouts, hits, home runs, RBI, or events.
+- Write naturally, like a professional MLB recap writer.
+- Mention the players who most shaped the game.
+- If pitching was the biggest factor, make that clear.
+- If offense was decisive, make that clear.
+- If a home run or major RBI performance is listed, use it directly when relevant.
+- Keep each game summary to 2-3 sentences.
+- Avoid robotic or repetitive phrasing and its ok to make each game its own story.
 - Output JSON only.
-
 Games:
 {raw_games}
 """ 
