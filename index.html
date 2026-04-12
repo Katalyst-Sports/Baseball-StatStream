@@ -1225,19 +1225,30 @@ function renderPlayerChip(name) {
 
 function renderPitcher(p) {
   if (!p || !p.name) return `<div class="muted">No probable pitcher listed yet.</div>`;
+
+  const last3 = p.last3 || {};
+
   return `
     <div class="stat-row"><strong>${p.name}</strong></div>
-    <div class="stat-line">Throws: ${formatValue(p.hand)} | Season ERA: ${formatValue(p.era)}</div>
+    <div class="stat-line">Throws: ${formatValue(p.hand)} | Season ERA: ${formatValue(p.era)} | WHIP: ${formatValue(p.whip)}</div>
+    ${last3.avg_ip
+      ? `<div class="stat-line">Last 3 Starts: IP ${formatValue(last3.avg_ip)} | K ${formatValue(last3.avg_k)} | BB ${formatValue(last3.avg_bb)} | WHIP ${formatValue(last3.whip)}</div>
+         <div class="stat-line">QS ${formatValue(last3.quality_starts, 0)} | Strikes ${formatValue(last3.avg_strikes)} | Pitches ${formatValue(last3.avg_pitches)} | Strike% ${formatValue(last3.strike_pct)}%</div>`
+      : `<div class="stat-line">Last 3 starts not available yet.</div>`}
   `;
 }
 
 function renderHitters(list, emptyText) {
   const hitters = safeArray(list);
   if (!hitters.length) return `<div class="muted">${emptyText}</div>`;
+
   return hitters.map(player => `
     <div class="player-row">
       <div><strong>${formatValue(player.name, "Unknown Hitter")}</strong></div>
       <div class="stat-line">AVG ${formatValue(player.stats?.avg)} | OBP ${formatValue(player.stats?.obp)} | SLG ${formatValue(player.stats?.slg)} | OPS ${formatValue(player.stats?.ops)}</div>
+      ${player.last10ab?.atBats
+        ? `<div class="stat-line">Last 10 AB: AVG ${formatValue(player.last10ab.avg)} | ${formatValue(player.last10ab.hits, 0)} H | ${formatValue(player.last10ab.homeRuns, 0)} HR | ${formatValue(player.last10ab.rbi, 0)} RBI | ${formatValue(player.last10ab.walks, 0)} BB</div>`
+        : `<div class="stat-line">Last 10 AB split not available yet.</div>`}
     </div>
   `).join("");
 }
