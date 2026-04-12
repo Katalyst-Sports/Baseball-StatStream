@@ -914,6 +914,7 @@ for date_block in schedule_yesterday.get("dates", []):
                                 "line": f"{full_name}: {hits_val} H, {hr_val} HR, {rbi_val} RBI, {ab_val} AB"
                             })
 
+                    if pitchiing:  
                         so_val = int(pitching.get("strikeOuts", 0) or 0)
                         er_val = int(pitching.get("earnedRuns", 0) or 0)
                         bb_val = int(pitching.get("baseOnBalls", 0) or 0)
