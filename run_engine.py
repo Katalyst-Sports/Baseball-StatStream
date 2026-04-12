@@ -399,6 +399,79 @@ Trades / roster movement:
 # PLAYER STAT HELPERS
 # =====================================================
 
+def format_hitter_stats(stat):
+    if not stat:
+        return {}
+
+    return {
+        "avg": stat.get("avg", "N/A"),
+        "obp": stat.get("obp", "N/A"),
+        "slg": stat.get("slg", "N/A"),
+        "ops": stat.get("ops", "N/A"),
+        "homeRuns": stat.get("homeRuns", 0),
+        "rbi": stat.get("rbi", 0),
+    }
+
+
+def build_team_hitters(team_id):
+    hitters = []
+
+    try:
+        roster_payload = fetch(f"{BASE}/v1/teams/{team_id}/roster?rosterType=active")
+        roster = roster_payload.get("roster", [])
+
+        for player in roster:
+            person = player.get("person", {})
+            position_type = (
+                player.get("position", {}).get("type", "")
+                or player.get("position", {}).get("abbreviation", "")
+            )
+
+            if str(position_type).lower() == "pitcher":
+                continue
+
+            player_id = person.get("id")
+            player_name = person.get("fullName", "Unknown Player")
+
+            if not player_id:
+                continue
+
+            try:
+                stats_payload = fetch(
+                    f"{BASE}/v1/people/{player_id}/stats"
+                    f"?stats=season&group=hitting&season={SEASON}"
+                )
+                stats = stats_payload.get("stats", [])
+                splits = stats[0].get("splits", []) if stats else []
+                stat_block = splits[0].get("stat", {}) if splits else {}
+
+                hitters.append({
+                    "name": player_name,
+                    "stats": format_hitter_stats(stat_block),
+                })
+            except Exception as exc:
+                errors.append({
+                    "playerId": player_id,
+                    "stage": "hitter_stats",
+                    "error": str(exc),
+                })
+
+        hitters.sort(
+            key=lambda item: (
+                -float(item["stats"].get("ops", 0) or 0) if str(item["stats"].get("ops", "0")).replace(".", "", 1).isdigit() else 0,
+                item["name"]
+            )
+        )
+
+        return hitters[:9]
+
+    except Exception as exc:
+        errors.append({
+            "teamId": team_id,
+            "stage": "build_team_hitters",
+            "error": str(exc),
+        })
+        return []
 def pitcher_summary(pitcher):
     if not pitcher:
         return {}
@@ -482,6 +555,9 @@ for date_block in schedule_today.get("dates", []):
             away_pitcher = game["teams"]["away"].get("probablePitcher")
             home_pitcher = game["teams"]["home"].get("probablePitcher")
 
+            away_team_id = game["teams"]["away"]["team"]["id"]
+            home_team_id = game["teams"]["home"]["team"]["id"]
+
             daily.append({
                 "gamePk": game.get("gamePk"),
                 "away_team": away,
@@ -491,7 +567,10 @@ for date_block in schedule_today.get("dates", []):
                 "status": status,
                 "away_pitcher": pitcher_summary(away_pitcher),
                 "home_pitcher": pitcher_summary(home_pitcher),
+                "away_hitters": build_team_hitters(away_team_id),
+                "home_hitters": build_team_hitters(home_team_id),
             })
+
 
             if status in ["Live", "In Progress"]:
                 feed = fetch(f"{BASE}/v1.1/game/{game['gamePk']}/feed/live")
