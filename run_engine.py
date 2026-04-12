@@ -960,21 +960,7 @@ for date_block in schedule_yesterday.get("dates", []):
                 "save_pitcher": save_pitcher,
                 "game_summary": game_summary,
             })
-        if pitching:
-            ip_val = pitching.get("inningsPitched", "0.0")
-            so_val = int(pitching.get("strikeOuts", 0) or 0)
-            er_val = int(pitching.get("earnedRuns", 0) or 0)
-            bb_val = int(pitching.get("baseOnBalls", 0) or 0)
-            h_val = int(pitching.get("hits", 0) or 0)
-
-            score = (so_val * 3) - (er_val * 4)
-            if score > 0:
-                candidate_pitchers.append({
-                    "name": full_name,
-                    "score": score,
-                    "line": f"{full_name}: {ip_val} IP, {so_val} K, {er_val} ER, {bb_val} BB, {h_val} H"
-                })
-
+        
 candidate_hitters.sort(key=lambda item: item["score"], reverse=True)
 candidate_pitchers.sort(key=lambda item: item["score"], reverse=True)
 
