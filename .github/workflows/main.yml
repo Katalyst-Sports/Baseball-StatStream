@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "* * * * *"
+    - cron: "*/5 * * * *"
 
 concurrency:
   group: live-mlb-dashboard
@@ -50,6 +50,8 @@ jobs:
           git add postgame.json || true
           git add yesterday_postgame.json || true
           git add yesterday_recap.json || true
+          git add mlb_news.json || true
+          git add injury_report.json || true
 
           git commit -m "Update MLB dashboard data" || echo "No changes"
           git push origin main
