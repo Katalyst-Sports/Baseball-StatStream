@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-12T01:25:12.851351-04:00",
+  "updated_at": "2026-04-12T01:34:58.248877-04:00",
   "games": [
     {
       "gamePk": 824859,
@@ -12,13 +12,71 @@
         "id": 605288,
         "name": "Adrian Houser",
         "hand": "R",
-        "era": "3.97"
+        "era": "3.97",
+        "whip": "1.59",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-01",
+              "opponent": "San Diego Padres",
+              "ip": "5.1",
+              "er": 1,
+              "k": 4,
+              "bb": 1,
+              "pitches": 86,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Philadelphia Phillies",
+              "ip": "6.0",
+              "er": 4,
+              "k": 3,
+              "bb": 2,
+              "pitches": 89,
+              "strikes": 60
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "3.5",
+          "avg_bb": "1.5",
+          "avg_pitches": "87.5",
+          "avg_strikes": "59.0",
+          "era": "3.97",
+          "whip": "1.59",
+          "strike_pct": "67.4",
+          "quality_starts": 0
+        }
       },
       "home_pitcher": {
         "id": 700249,
         "name": "Cade Povich",
         "hand": "L",
-        "era": "3.18"
+        "era": "3.18",
+        "whip": "1.24",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-05",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "5.2",
+              "er": 2,
+              "k": 2,
+              "bb": 3,
+              "pitches": 87,
+              "strikes": 53
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "2.0",
+          "avg_bb": "3.0",
+          "avg_pitches": "87.0",
+          "avg_strikes": "53.0",
+          "era": "3.18",
+          "whip": "1.24",
+          "strike_pct": "60.9",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -30,6 +88,15 @@
             "ops": "1.778",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.750",
+            "hits": 6,
+            "atBats": 8,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -41,6 +108,15 @@
             "ops": ".866",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -52,6 +128,15 @@
             "ops": ".817",
             "homeRuns": 2,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -63,6 +148,15 @@
             "ops": ".813",
             "homeRuns": 1,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 3,
+            "games": 4
           }
         },
         {
@@ -74,6 +168,15 @@
             "ops": ".750",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 1,
+            "atBats": 4,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 2
           }
         },
         {
@@ -85,6 +188,15 @@
             "ops": ".732",
             "homeRuns": 0,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -96,6 +208,15 @@
             "ops": ".666",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 1,
+            "atBats": 3,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 2
           }
         },
         {
@@ -107,6 +228,15 @@
             "ops": ".609",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -118,6 +248,15 @@
             "ops": ".603",
             "homeRuns": 1,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         }
       ],
@@ -131,6 +270,15 @@
             "ops": ".962",
             "homeRuns": 6,
             "rbi": 12
+          },
+          "last10ab": {
+            "avg": "0.083",
+            "hits": 1,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -142,6 +290,15 @@
             "ops": ".958",
             "homeRuns": 0,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -153,6 +310,15 @@
             "ops": ".899",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 4,
+            "games": 6
           }
         },
         {
@@ -164,6 +330,15 @@
             "ops": ".736",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 4,
+            "atBats": 14,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -175,6 +350,15 @@
             "ops": ".698",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -186,6 +370,15 @@
             "ops": ".690",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 6
           }
         },
         {
@@ -197,6 +390,15 @@
             "ops": ".678",
             "homeRuns": 1,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -208,6 +410,15 @@
             "ops": ".569",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -219,6 +430,15 @@
             "ops": ".559",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 4
           }
         }
       ]
@@ -234,13 +454,91 @@
         "id": 668678,
         "name": "Zac Gallen",
         "hand": "R",
-        "era": "3.00"
+        "era": "3.00",
+        "whip": "1.33",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "4.0",
+              "er": 4,
+              "k": 2,
+              "bb": 2,
+              "pitches": 76,
+              "strikes": 47
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Detroit Tigers",
+              "ip": "6.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 88,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "New York Mets",
+              "ip": "5.0",
+              "er": 1,
+              "k": 5,
+              "bb": 4,
+              "pitches": 95,
+              "strikes": 54
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "3.0",
+          "avg_bb": "2.0",
+          "avg_pitches": "86.3",
+          "avg_strikes": "53.0",
+          "era": "3.00",
+          "whip": "1.33",
+          "strike_pct": "61.4",
+          "quality_starts": 1
+        }
       },
       "home_pitcher": {
         "id": 691725,
         "name": "Andrew Painter",
         "hand": "R",
-        "era": "4.82"
+        "era": "4.82",
+        "whip": "1.61",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Washington Nationals",
+              "ip": "5.1",
+              "er": 1,
+              "k": 8,
+              "bb": 1,
+              "pitches": 84,
+              "strikes": 57
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "San Francisco Giants",
+              "ip": "4.0",
+              "er": 4,
+              "k": 1,
+              "bb": 1,
+              "pitches": 90,
+              "strikes": 53
+            }
+          ],
+          "avg_ip": "4.2",
+          "avg_k": "4.5",
+          "avg_bb": "1.0",
+          "avg_pitches": "87.0",
+          "avg_strikes": "55.0",
+          "era": "4.82",
+          "whip": "1.61",
+          "strike_pct": "63.2",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -252,6 +550,15 @@
             "ops": "1.146",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.545",
+            "hits": 6,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -263,6 +570,15 @@
             "ops": "1.040",
             "homeRuns": 2,
             "rbi": 11
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -274,6 +590,15 @@
             "ops": ".844",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 2,
+            "rbi": 4,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -285,6 +610,15 @@
             "ops": ".733",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -296,6 +630,15 @@
             "ops": ".688",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -307,6 +650,15 @@
             "ops": ".669",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.231",
+            "hits": 3,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -318,6 +670,15 @@
             "ops": ".586",
             "homeRuns": 2,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -329,6 +690,15 @@
             "ops": ".582",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -340,6 +710,15 @@
             "ops": ".438",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 1,
+            "games": 3
           }
         }
       ],
@@ -353,6 +732,15 @@
             "ops": ".897",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -364,6 +752,15 @@
             "ops": ".850",
             "homeRuns": 3,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -375,6 +772,15 @@
             "ops": ".850",
             "homeRuns": 4,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -386,6 +792,15 @@
             "ops": ".714",
             "homeRuns": 1,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.083",
+            "hits": 1,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -397,6 +812,15 @@
             "ops": ".713",
             "homeRuns": 2,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -408,6 +832,15 @@
             "ops": ".678",
             "homeRuns": 2,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -419,6 +852,15 @@
             "ops": ".591",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -430,6 +872,15 @@
             "ops": ".536",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 5
           }
         },
         {
@@ -441,6 +892,15 @@
             "ops": ".475",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         }
       ]
@@ -456,13 +916,91 @@
         "id": 671737,
         "name": "Taj Bradley",
         "hand": "R",
-        "era": "1.08"
+        "era": "1.08",
+        "whip": "1.08",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Baltimore Orioles",
+              "ip": "4.1",
+              "er": 1,
+              "k": 9,
+              "bb": 3,
+              "pitches": 92,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-02",
+              "opponent": "Kansas City Royals",
+              "ip": "6.0",
+              "er": 0,
+              "k": 3,
+              "bb": 1,
+              "pitches": 100,
+              "strikes": 65
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Detroit Tigers",
+              "ip": "6.1",
+              "er": 1,
+              "k": 10,
+              "bb": 0,
+              "pitches": 104,
+              "strikes": 68
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "7.3",
+          "avg_bb": "1.3",
+          "avg_pitches": "98.7",
+          "avg_strikes": "63.7",
+          "era": "1.08",
+          "whip": "1.08",
+          "strike_pct": "64.5",
+          "quality_starts": 2
+        }
       },
       "home_pitcher": {
         "id": 453286,
         "name": "Max Scherzer",
         "hand": "R",
-        "era": "3.38"
+        "era": "3.38",
+        "whip": "1.00",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Colorado Rockies",
+              "ip": "6.0",
+              "er": 1,
+              "k": 4,
+              "bb": 1,
+              "pitches": 83,
+              "strikes": 56
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "2.0",
+              "er": 2,
+              "k": 2,
+              "bb": 1,
+              "pitches": 36,
+              "strikes": 24
+            }
+          ],
+          "avg_ip": "4.0",
+          "avg_k": "3.0",
+          "avg_bb": "1.0",
+          "avg_pitches": "59.5",
+          "avg_strikes": "40.0",
+          "era": "3.38",
+          "whip": "1.00",
+          "strike_pct": "67.2",
+          "quality_starts": 1
+        }
       },
       "away_hitters": [
         {
@@ -474,6 +1012,15 @@
             "ops": ".948",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 4,
+            "games": 6
           }
         },
         {
@@ -485,6 +1032,15 @@
             "ops": ".941",
             "homeRuns": 3,
             "rbi": 12
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -496,6 +1052,15 @@
             "ops": ".833",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 4,
+            "games": 5
           }
         },
         {
@@ -507,6 +1072,15 @@
             "ops": ".805",
             "homeRuns": 1,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -518,6 +1092,15 @@
             "ops": ".792",
             "homeRuns": 1,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 8,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -529,6 +1112,15 @@
             "ops": ".688",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -540,6 +1132,15 @@
             "ops": ".678",
             "homeRuns": 3,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -551,6 +1152,15 @@
             "ops": ".632",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -562,6 +1172,15 @@
             "ops": ".547",
             "homeRuns": 1,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 2,
+            "games": 4
           }
         }
       ],
@@ -575,6 +1194,15 @@
             "ops": ".873",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 4,
+            "games": 3
           }
         },
         {
@@ -586,6 +1214,15 @@
             "ops": ".841",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.462",
+            "hits": 6,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -597,6 +1234,15 @@
             "ops": ".836",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.231",
+            "hits": 3,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 2,
+            "games": 5
           }
         },
         {
@@ -608,6 +1254,15 @@
             "ops": ".774",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -619,6 +1274,15 @@
             "ops": ".735",
             "homeRuns": 2,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.545",
+            "hits": 6,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 4,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -630,6 +1294,15 @@
             "ops": ".708",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 6
           }
         },
         {
@@ -641,6 +1314,15 @@
             "ops": ".706",
             "homeRuns": 2,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -652,6 +1334,15 @@
             "ops": ".660",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 2
           }
         },
         {
@@ -663,6 +1354,15 @@
             "ops": ".655",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 2
           }
         }
       ]
@@ -678,13 +1378,101 @@
         "id": 667755,
         "name": "Jos\u00e9 Soriano",
         "hand": "R",
-        "era": "0.45"
+        "era": "0.45",
+        "whip": "0.65",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Houston Astros",
+              "ip": "6.0",
+              "er": 0,
+              "k": 7,
+              "bb": 4,
+              "pitches": 91,
+              "strikes": 60
+            },
+            {
+              "date": "2026-03-31",
+              "opponent": "Chicago Cubs",
+              "ip": "6.0",
+              "er": 0,
+              "k": 4,
+              "bb": 2,
+              "pitches": 90,
+              "strikes": 56
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Atlanta Braves",
+              "ip": "8.0",
+              "er": 1,
+              "k": 10,
+              "bb": 0,
+              "pitches": 97,
+              "strikes": 69
+            }
+          ],
+          "avg_ip": "6.2",
+          "avg_k": "7.0",
+          "avg_bb": "2.0",
+          "avg_pitches": "92.7",
+          "avg_strikes": "61.7",
+          "era": "0.45",
+          "whip": "0.65",
+          "strike_pct": "66.5",
+          "quality_starts": 3
+        }
       },
       "home_pitcher": {
         "id": 671096,
         "name": "Andrew Abbott",
         "hand": "L",
-        "era": "3.18"
+        "era": "3.18",
+        "whip": "1.41",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Boston Red Sox",
+              "ip": "6.0",
+              "er": 0,
+              "k": 4,
+              "bb": 1,
+              "pitches": 83,
+              "strikes": 59
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "5.2",
+              "er": 4,
+              "k": 5,
+              "bb": 3,
+              "pitches": 88,
+              "strikes": 55
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Miami Marlins",
+              "ip": "5.1",
+              "er": 2,
+              "k": 2,
+              "bb": 2,
+              "pitches": 91,
+              "strikes": 51
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "3.7",
+          "avg_bb": "2.0",
+          "avg_pitches": "87.3",
+          "avg_strikes": "55.0",
+          "era": "3.18",
+          "whip": "1.41",
+          "strike_pct": "63.0",
+          "quality_starts": 1
+        }
       },
       "away_hitters": [
         {
@@ -696,6 +1484,15 @@
             "ops": ".914",
             "homeRuns": 5,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 0,
+            "games": 2
           }
         },
         {
@@ -707,6 +1504,15 @@
             "ops": ".809",
             "homeRuns": 4,
             "rbi": 15
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 4,
+            "games": 3
           }
         },
         {
@@ -718,6 +1524,15 @@
             "ops": ".783",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -729,6 +1544,15 @@
             "ops": ".732",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.462",
+            "hits": 6,
+            "atBats": 13,
+            "homeRuns": 2,
+            "rbi": 3,
+            "walks": 7,
+            "games": 4
           }
         },
         {
@@ -740,6 +1564,15 @@
             "ops": ".662",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -751,6 +1584,15 @@
             "ops": ".641",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 2,
+            "rbi": 4,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -762,6 +1604,15 @@
             "ops": ".626",
             "homeRuns": 1,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -773,6 +1624,15 @@
             "ops": ".590",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -784,6 +1644,15 @@
             "ops": ".549",
             "homeRuns": 2,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 1,
+            "games": 3
           }
         }
       ],
@@ -797,6 +1666,15 @@
             "ops": "1.129",
             "homeRuns": 4,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.700",
+            "hits": 7,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -808,6 +1686,15 @@
             "ops": ".883",
             "homeRuns": 4,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -819,6 +1706,15 @@
             "ops": ".652",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -830,6 +1726,15 @@
             "ops": ".636",
             "homeRuns": 2,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.077",
+            "hits": 1,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -841,6 +1746,15 @@
             "ops": ".618",
             "homeRuns": 2,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -852,6 +1766,15 @@
             "ops": ".611",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 4,
+            "games": 3
           }
         },
         {
@@ -863,6 +1786,15 @@
             "ops": ".596",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 0,
+            "games": 5
           }
         },
         {
@@ -874,6 +1806,15 @@
             "ops": ".563",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 6
           }
         },
         {
@@ -885,6 +1826,15 @@
             "ops": ".544",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 5
           }
         }
       ]
@@ -900,13 +1850,91 @@
         "id": 650644,
         "name": "Aaron Civale",
         "hand": "R",
-        "era": "2.70"
+        "era": "2.70",
+        "whip": "1.10",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Atlanta Braves",
+              "ip": "5.0",
+              "er": 2,
+              "k": 3,
+              "bb": 1,
+              "pitches": 87,
+              "strikes": 55
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "New York Yankees",
+              "ip": "5.0",
+              "er": 1,
+              "k": 6,
+              "bb": 4,
+              "pitches": 88,
+              "strikes": 52
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "4.5",
+          "avg_bb": "2.5",
+          "avg_pitches": "87.5",
+          "avg_strikes": "53.5",
+          "era": "2.70",
+          "whip": "1.10",
+          "strike_pct": "61.1",
+          "quality_starts": 0
+        }
       },
       "home_pitcher": {
         "id": 642547,
         "name": "Freddy Peralta",
         "hand": "R",
-        "era": "4.80"
+        "era": "4.80",
+        "whip": "1.13",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "5.0",
+              "er": 4,
+              "k": 7,
+              "bb": 0,
+              "pitches": 80,
+              "strikes": 53
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "St. Louis Cardinals",
+              "ip": "5.1",
+              "er": 1,
+              "k": 7,
+              "bb": 2,
+              "pitches": 92,
+              "strikes": 54
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "4.2",
+              "er": 3,
+              "k": 5,
+              "bb": 3,
+              "pitches": 101,
+              "strikes": 62
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "6.3",
+          "avg_bb": "1.7",
+          "avg_pitches": "91.0",
+          "avg_strikes": "56.3",
+          "era": "4.80",
+          "whip": "1.13",
+          "strike_pct": "61.9",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -918,6 +1946,15 @@
             "ops": "1.066",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 3,
+            "games": 7
           }
         },
         {
@@ -929,6 +1966,15 @@
             "ops": ".944",
             "homeRuns": 5,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 6,
+            "atBats": 12,
+            "homeRuns": 3,
+            "rbi": 6,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -940,6 +1986,15 @@
             "ops": ".887",
             "homeRuns": 2,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -951,6 +2006,15 @@
             "ops": ".761",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -962,6 +2026,15 @@
             "ops": ".736",
             "homeRuns": 2,
             "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -973,6 +2046,15 @@
             "ops": ".612",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.077",
+            "hits": 1,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -984,6 +2066,15 @@
             "ops": ".563",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -995,6 +2086,15 @@
             "ops": ".550",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1006,6 +2106,15 @@
             "ops": ".500",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 6
           }
         }
       ],
@@ -1019,6 +2128,15 @@
             "ops": "1.016",
             "homeRuns": 4,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -1030,6 +2148,15 @@
             "ops": ".905",
             "homeRuns": 2,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.455",
+            "hits": 5,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 5,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -1041,6 +2168,15 @@
             "ops": ".825",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -1052,6 +2188,15 @@
             "ops": ".725",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 2,
+            "games": 5
           }
         },
         {
@@ -1063,6 +2208,15 @@
             "ops": ".706",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -1074,6 +2228,15 @@
             "ops": ".628",
             "homeRuns": 1,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.071",
+            "hits": 1,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1085,6 +2248,15 @@
             "ops": ".613",
             "homeRuns": 1,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 5,
+            "games": 3
           }
         },
         {
@@ -1096,6 +2268,15 @@
             "ops": ".582",
             "homeRuns": 0,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1107,6 +2288,15 @@
             "ops": ".563",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 0,
+            "games": 4
           }
         }
       ]
@@ -1122,13 +2312,101 @@
         "id": 645261,
         "name": "Sandy Alcantara",
         "hand": "R",
-        "era": "0.74"
+        "era": "0.74",
+        "whip": "0.58",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-27",
+              "opponent": "Colorado Rockies",
+              "ip": "7.0",
+              "er": 0,
+              "k": 5,
+              "bb": 2,
+              "pitches": 73,
+              "strikes": 49
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Chicago White Sox",
+              "ip": "9.0",
+              "er": 0,
+              "k": 7,
+              "bb": 0,
+              "pitches": 93,
+              "strikes": 69
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Cincinnati Reds",
+              "ip": "8.1",
+              "er": 2,
+              "k": 6,
+              "bb": 2,
+              "pitches": 95,
+              "strikes": 67
+            }
+          ],
+          "avg_ip": "8.0",
+          "avg_k": "6.0",
+          "avg_bb": "1.3",
+          "avg_pitches": "87.0",
+          "avg_strikes": "61.7",
+          "era": "0.74",
+          "whip": "0.58",
+          "strike_pct": "70.9",
+          "quality_starts": 3
+        }
       },
       "home_pitcher": {
         "id": 669373,
         "name": "Tarik Skubal",
         "hand": "L",
-        "era": "2.55"
+        "era": "2.55",
+        "whip": "1.08",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "San Diego Padres",
+              "ip": "6.0",
+              "er": 0,
+              "k": 6,
+              "bb": 0,
+              "pitches": 74,
+              "strikes": 49
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "7.0",
+              "er": 1,
+              "k": 3,
+              "bb": 0,
+              "pitches": 87,
+              "strikes": 60
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Minnesota Twins",
+              "ip": "4.2",
+              "er": 4,
+              "k": 7,
+              "bb": 2,
+              "pitches": 95,
+              "strikes": 65
+            }
+          ],
+          "avg_ip": "6.0",
+          "avg_k": "5.3",
+          "avg_bb": "0.7",
+          "avg_pitches": "85.3",
+          "avg_strikes": "58.0",
+          "era": "2.55",
+          "whip": "1.08",
+          "strike_pct": "68.0",
+          "quality_starts": 2
+        }
       },
       "away_hitters": [
         {
@@ -1140,6 +2418,15 @@
             "ops": "1.500",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 1,
+            "atBats": 2,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 1
           }
         },
         {
@@ -1151,6 +2438,15 @@
             "ops": ".946",
             "homeRuns": 1,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1162,6 +2458,15 @@
             "ops": ".886",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1173,6 +2478,15 @@
             "ops": ".878",
             "homeRuns": 3,
             "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 2,
+            "rbi": 8,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -1184,6 +2498,15 @@
             "ops": ".873",
             "homeRuns": 2,
             "rbi": 12
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 5,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1195,6 +2518,15 @@
             "ops": ".846",
             "homeRuns": 0,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.583",
+            "hits": 7,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -1206,6 +2538,15 @@
             "ops": ".777",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -1217,6 +2558,15 @@
             "ops": ".660",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -1228,6 +2578,15 @@
             "ops": ".606",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 5
           }
         }
       ],
@@ -1241,6 +2600,15 @@
             "ops": ".892",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.429",
+            "hits": 6,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -1252,6 +2620,15 @@
             "ops": ".851",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1263,6 +2640,15 @@
             "ops": ".817",
             "homeRuns": 0,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 4,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1274,6 +2660,15 @@
             "ops": ".787",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 5,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -1285,6 +2680,15 @@
             "ops": ".674",
             "homeRuns": 1,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.083",
+            "hits": 1,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -1296,6 +2700,15 @@
             "ops": ".658",
             "homeRuns": 2,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.000",
+            "hits": 0,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -1307,6 +2720,15 @@
             "ops": ".653",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.231",
+            "hits": 3,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 6,
+            "games": 4
           }
         },
         {
@@ -1318,6 +2740,15 @@
             "ops": ".638",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -1329,6 +2760,15 @@
             "ops": ".537",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
           }
         }
       ]
@@ -1344,13 +2784,91 @@
         "id": 693645,
         "name": "Cam Schlittler",
         "hand": "R",
-        "era": "1.62"
+        "era": "1.62",
+        "whip": "0.48",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-27",
+              "opponent": "San Francisco Giants",
+              "ip": "5.1",
+              "er": 0,
+              "k": 8,
+              "bb": 0,
+              "pitches": 68,
+              "strikes": 49
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Seattle Mariners",
+              "ip": "6.1",
+              "er": 0,
+              "k": 7,
+              "bb": 0,
+              "pitches": 79,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Athletics",
+              "ip": "5.0",
+              "er": 3,
+              "k": 7,
+              "bb": 0,
+              "pitches": 84,
+              "strikes": 58
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "7.3",
+          "avg_bb": "0.0",
+          "avg_pitches": "77.0",
+          "avg_strikes": "55.0",
+          "era": "1.62",
+          "whip": "0.48",
+          "strike_pct": "71.4",
+          "quality_starts": 1
+        }
       },
       "home_pitcher": {
         "id": 656876,
         "name": "Drew Rasmussen",
         "hand": "R",
-        "era": "1.80"
+        "era": "1.80",
+        "whip": "0.80",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "St. Louis Cardinals",
+              "ip": "5.0",
+              "er": 1,
+              "k": 2,
+              "bb": 0,
+              "pitches": 73,
+              "strikes": 49
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Milwaukee Brewers",
+              "ip": "5.0",
+              "er": 1,
+              "k": 8,
+              "bb": 1,
+              "pitches": 89,
+              "strikes": 60
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "5.0",
+          "avg_bb": "0.5",
+          "avg_pitches": "81.0",
+          "avg_strikes": "54.5",
+          "era": "1.80",
+          "whip": "0.80",
+          "strike_pct": "67.3",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -1362,6 +2880,15 @@
             "ops": "1.256",
             "homeRuns": 4,
             "rbi": 12
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1373,6 +2900,15 @@
             "ops": ".985",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1384,6 +2920,15 @@
             "ops": ".917",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 2,
+            "rbi": 5,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -1395,6 +2940,15 @@
             "ops": ".778",
             "homeRuns": 1,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 6,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1406,6 +2960,15 @@
             "ops": ".721",
             "homeRuns": 3,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 2,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1417,6 +2980,15 @@
             "ops": ".704",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -1428,6 +3000,15 @@
             "ops": ".572",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -1439,6 +3020,15 @@
             "ops": ".519",
             "homeRuns": 1,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1450,6 +3040,15 @@
             "ops": ".482",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         }
       ],
@@ -1463,6 +3062,15 @@
             "ops": "1.035",
             "homeRuns": 3,
             "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 2
           }
         },
         {
@@ -1474,6 +3082,15 @@
             "ops": ".893",
             "homeRuns": 1,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 6
           }
         },
         {
@@ -1485,6 +3102,15 @@
             "ops": ".857",
             "homeRuns": 1,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -1496,6 +3122,15 @@
             "ops": ".841",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.455",
+            "hits": 5,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1507,6 +3142,15 @@
             "ops": ".749",
             "homeRuns": 3,
             "rbi": 14
+          },
+          "last10ab": {
+            "avg": "0.462",
+            "hits": 6,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -1518,6 +3162,15 @@
             "ops": ".714",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1529,6 +3182,15 @@
             "ops": ".703",
             "homeRuns": 2,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 5,
+            "games": 3
           }
         },
         {
@@ -1540,6 +3202,15 @@
             "ops": ".646",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1551,6 +3222,15 @@
             "ops": ".634",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         }
       ]
@@ -1566,13 +3246,91 @@
         "id": 691799,
         "name": "Grant Taylor",
         "hand": "R",
-        "era": "1.42"
+        "era": "1.42",
+        "whip": "1.26",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Milwaukee Brewers",
+              "ip": "1.0",
+              "er": 1,
+              "k": 1,
+              "bb": 1,
+              "pitches": 26,
+              "strikes": 16
+            },
+            {
+              "date": "2026-03-29",
+              "opponent": "Milwaukee Brewers",
+              "ip": "1.0",
+              "er": 0,
+              "k": 3,
+              "bb": 1,
+              "pitches": 24,
+              "strikes": 14
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Toronto Blue Jays",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 9,
+              "strikes": 9
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "1.7",
+          "avg_bb": "0.7",
+          "avg_pitches": "19.7",
+          "avg_strikes": "13.0",
+          "era": "3.00",
+          "whip": "1.67",
+          "strike_pct": "66.1",
+          "quality_starts": 0
+        }
       },
       "home_pitcher": {
         "id": 702070,
         "name": "Noah Cameron",
         "hand": "L",
-        "era": "1.69"
+        "era": "1.69",
+        "whip": "1.13",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-01",
+              "opponent": "Minnesota Twins",
+              "ip": "5.0",
+              "er": 1,
+              "k": 5,
+              "bb": 1,
+              "pitches": 86,
+              "strikes": 53
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Cleveland Guardians",
+              "ip": "5.2",
+              "er": 1,
+              "k": 5,
+              "bb": 1,
+              "pitches": 97,
+              "strikes": 61
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "5.0",
+          "avg_bb": "1.0",
+          "avg_pitches": "91.5",
+          "avg_strikes": "57.0",
+          "era": "1.69",
+          "whip": "1.12",
+          "strike_pct": "62.3",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -1584,6 +3342,15 @@
             "ops": ".734",
             "homeRuns": 4,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 4,
+            "atBats": 14,
+            "homeRuns": 3,
+            "rbi": 3,
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -1595,6 +3362,15 @@
             "ops": ".703",
             "homeRuns": 1,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 6,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -1606,6 +3382,15 @@
             "ops": ".639",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.222",
+            "hits": 2,
+            "atBats": 9,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -1617,6 +3402,15 @@
             "ops": ".609",
             "homeRuns": 1,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -1628,6 +3422,15 @@
             "ops": ".603",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 5
           }
         },
         {
@@ -1639,6 +3442,15 @@
             "ops": ".598",
             "homeRuns": 2,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 5,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -1650,6 +3462,15 @@
             "ops": ".532",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 5
           }
         },
         {
@@ -1661,6 +3482,15 @@
             "ops": ".488",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -1672,6 +3502,15 @@
             "ops": ".465",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.000",
+            "hits": 0,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         }
       ],
@@ -1685,6 +3524,15 @@
             "ops": ".928",
             "homeRuns": 2,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1696,6 +3544,15 @@
             "ops": ".911",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -1707,6 +3564,15 @@
             "ops": ".815",
             "homeRuns": 4,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -1718,6 +3584,15 @@
             "ops": ".715",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 2,
+            "atBats": 7,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1729,6 +3604,15 @@
             "ops": ".682",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1740,6 +3624,15 @@
             "ops": ".654",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1751,6 +3644,15 @@
             "ops": ".615",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -1762,6 +3664,15 @@
             "ops": ".600",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -1773,6 +3684,15 @@
             "ops": ".571",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         }
       ]
@@ -1788,13 +3708,81 @@
         "id": 641793,
         "name": "Zack Littell",
         "hand": "R",
-        "era": "3.60"
+        "era": "3.60",
+        "whip": "1.50",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Philadelphia Phillies",
+              "ip": "5.0",
+              "er": 3,
+              "k": 1,
+              "bb": 2,
+              "pitches": 75,
+              "strikes": 53
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "St. Louis Cardinals",
+              "ip": "5.0",
+              "er": 1,
+              "k": 6,
+              "bb": 3,
+              "pitches": 70,
+              "strikes": 44
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "3.5",
+          "avg_bb": "2.5",
+          "avg_pitches": "72.5",
+          "avg_strikes": "48.5",
+          "era": "3.60",
+          "whip": "1.50",
+          "strike_pct": "66.9",
+          "quality_starts": 0
+        }
       },
       "home_pitcher": {
         "id": 605540,
         "name": "Brandon Woodruff",
         "hand": "R",
-        "era": "5.91"
+        "era": "5.91",
+        "whip": "1.31",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Tampa Bay Rays",
+              "ip": "5.0",
+              "er": 2,
+              "k": 6,
+              "bb": 0,
+              "pitches": 67,
+              "strikes": 45
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Boston Red Sox",
+              "ip": "5.2",
+              "er": 5,
+              "k": 4,
+              "bb": 2,
+              "pitches": 94,
+              "strikes": 58
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "5.0",
+          "avg_bb": "1.0",
+          "avg_pitches": "80.5",
+          "avg_strikes": "51.5",
+          "era": "5.91",
+          "whip": "1.31",
+          "strike_pct": "64.0",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -1806,6 +3794,15 @@
             "ops": "1.099",
             "homeRuns": 2,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.800",
+            "hits": 8,
+            "atBats": 10,
+            "homeRuns": 2,
+            "rbi": 4,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -1817,6 +3814,15 @@
             "ops": ".975",
             "homeRuns": 4,
             "rbi": 15
+          },
+          "last10ab": {
+            "avg": "0.231",
+            "hits": 3,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1828,6 +3834,15 @@
             "ops": ".953",
             "homeRuns": 4,
             "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.077",
+            "hits": 1,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1839,6 +3854,15 @@
             "ops": ".848",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 5
           }
         },
         {
@@ -1850,6 +3874,15 @@
             "ops": ".777",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -1861,6 +3894,15 @@
             "ops": ".771",
             "homeRuns": 1,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 4,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -1872,6 +3914,15 @@
             "ops": ".760",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1883,6 +3934,15 @@
             "ops": ".752",
             "homeRuns": 2,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1894,6 +3954,15 @@
             "ops": ".619",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         }
       ],
@@ -1907,6 +3976,15 @@
             "ops": "1.123",
             "homeRuns": 3,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 2,
+            "rbi": 3,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -1918,6 +3996,15 @@
             "ops": ".894",
             "homeRuns": 1,
             "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 3,
+            "games": 4
           }
         },
         {
@@ -1929,6 +4016,15 @@
             "ops": ".889",
             "homeRuns": 2,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 4,
+            "games": 3
           }
         },
         {
@@ -1940,6 +4036,15 @@
             "ops": ".872",
             "homeRuns": 1,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.429",
+            "hits": 6,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1951,6 +4056,15 @@
             "ops": ".858",
             "homeRuns": 1,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.600",
+            "hits": 6,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 5,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -1962,6 +4076,15 @@
             "ops": ".735",
             "homeRuns": 3,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 0,
+            "games": 2
           }
         },
         {
@@ -1973,6 +4096,15 @@
             "ops": ".654",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -1984,6 +4116,15 @@
             "ops": ".645",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 4,
+            "games": 3
           }
         },
         {
@@ -1995,6 +4136,15 @@
             "ops": ".636",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 4
           }
         }
       ]
@@ -2010,13 +4160,81 @@
         "id": 678394,
         "name": "Brayan Bello",
         "hand": "R",
-        "era": "9.00"
+        "era": "9.00",
+        "whip": "2.50",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Houston Astros",
+              "ip": "4.2",
+              "er": 5,
+              "k": 2,
+              "bb": 3,
+              "pitches": 92,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Milwaukee Brewers",
+              "ip": "3.1",
+              "er": 3,
+              "k": 5,
+              "bb": 4,
+              "pitches": 86,
+              "strikes": 50
+            }
+          ],
+          "avg_ip": "4.0",
+          "avg_k": "3.5",
+          "avg_bb": "3.5",
+          "avg_pitches": "89.0",
+          "avg_strikes": "54.0",
+          "era": "9.00",
+          "whip": "2.50",
+          "strike_pct": "60.7",
+          "quality_starts": 0
+        }
       },
       "home_pitcher": {
         "id": 669467,
         "name": "Andre Pallante",
         "hand": "R",
-        "era": "1.80"
+        "era": "1.80",
+        "whip": "1.30",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "New York Mets",
+              "ip": "5.0",
+              "er": 0,
+              "k": 3,
+              "bb": 3,
+              "pitches": 88,
+              "strikes": 52
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Washington Nationals",
+              "ip": "5.0",
+              "er": 2,
+              "k": 2,
+              "bb": 4,
+              "pitches": 88,
+              "strikes": 54
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "2.5",
+          "avg_bb": "3.5",
+          "avg_pitches": "88.0",
+          "avg_strikes": "53.0",
+          "era": "1.80",
+          "whip": "1.30",
+          "strike_pct": "60.2",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -2028,6 +4246,15 @@
             "ops": "1.129",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 5,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2039,6 +4266,15 @@
             "ops": "1.033",
             "homeRuns": 3,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.462",
+            "hits": 6,
+            "atBats": 13,
+            "homeRuns": 2,
+            "rbi": 4,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2050,6 +4286,15 @@
             "ops": ".868",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.231",
+            "hits": 3,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 5,
+            "games": 6
           }
         },
         {
@@ -2061,6 +4306,15 @@
             "ops": ".836",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.077",
+            "hits": 1,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -2072,6 +4326,15 @@
             "ops": ".811",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2083,6 +4346,15 @@
             "ops": ".656",
             "homeRuns": 1,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -2094,6 +4366,15 @@
             "ops": ".646",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -2105,6 +4386,15 @@
             "ops": ".530",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -2116,6 +4406,15 @@
             "ops": ".508",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 3,
+            "games": 5
           }
         }
       ],
@@ -2129,6 +4428,15 @@
             "ops": "1.092",
             "homeRuns": 6,
             "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2140,6 +4448,15 @@
             "ops": ".926",
             "homeRuns": 2,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2151,6 +4468,15 @@
             "ops": ".711",
             "homeRuns": 1,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2162,6 +4488,15 @@
             "ops": ".693",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2173,6 +4508,15 @@
             "ops": ".684",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2184,6 +4528,15 @@
             "ops": ".667",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2195,6 +4548,15 @@
             "ops": ".614",
             "homeRuns": 0,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.077",
+            "hits": 1,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2206,6 +4568,15 @@
             "ops": ".579",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2217,6 +4588,15 @@
             "ops": ".564",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 5,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         }
       ]
@@ -2232,13 +4612,81 @@
         "id": 696149,
         "name": "Bubba Chandler",
         "hand": "R",
-        "era": "3.12"
+        "era": "3.12",
+        "whip": "1.73",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Cincinnati Reds",
+              "ip": "4.1",
+              "er": 0,
+              "k": 6,
+              "bb": 6,
+              "pitches": 81,
+              "strikes": 43
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "San Diego Padres",
+              "ip": "4.1",
+              "er": 3,
+              "k": 4,
+              "bb": 4,
+              "pitches": 83,
+              "strikes": 48
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "5.0",
+          "avg_bb": "5.0",
+          "avg_pitches": "82.0",
+          "avg_strikes": "45.5",
+          "era": "3.12",
+          "whip": "1.73",
+          "strike_pct": "55.5",
+          "quality_starts": 0
+        }
       },
       "home_pitcher": {
         "id": 592791,
         "name": "Jameson Taillon",
         "hand": "R",
-        "era": "2.53"
+        "era": "2.53",
+        "whip": "1.22",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Los Angeles Angels",
+              "ip": "4.2",
+              "er": 0,
+              "k": 3,
+              "bb": 4,
+              "pitches": 85,
+              "strikes": 52
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Tampa Bay Rays",
+              "ip": "6.0",
+              "er": 3,
+              "k": 4,
+              "bb": 0,
+              "pitches": 83,
+              "strikes": 53
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "3.5",
+          "avg_bb": "2.0",
+          "avg_pitches": "84.0",
+          "avg_strikes": "52.5",
+          "era": "2.53",
+          "whip": "1.22",
+          "strike_pct": "62.5",
+          "quality_starts": 1
+        }
       },
       "away_hitters": [
         {
@@ -2250,6 +4698,15 @@
             "ops": "1.018",
             "homeRuns": 4,
             "rbi": 12
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2261,6 +4718,15 @@
             "ops": ".969",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2272,6 +4738,15 @@
             "ops": ".967",
             "homeRuns": 3,
             "rbi": 12
+          },
+          "last10ab": {
+            "avg": "0.429",
+            "hits": 6,
+            "atBats": 14,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2283,6 +4758,15 @@
             "ops": ".819",
             "homeRuns": 3,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 3,
+            "rbi": 4,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2294,6 +4778,15 @@
             "ops": ".793",
             "homeRuns": 3,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.214",
+            "hits": 3,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2305,6 +4798,15 @@
             "ops": ".646",
             "homeRuns": 0,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 2
           }
         },
         {
@@ -2316,6 +4818,15 @@
             "ops": ".606",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2327,6 +4838,15 @@
             "ops": ".576",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2338,6 +4858,15 @@
             "ops": ".499",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.231",
+            "hits": 3,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         }
       ],
@@ -2351,6 +4880,15 @@
             "ops": ".903",
             "homeRuns": 1,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2362,6 +4900,15 @@
             "ops": ".809",
             "homeRuns": 4,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 0,
+            "games": 2
           }
         },
         {
@@ -2373,6 +4920,15 @@
             "ops": ".789",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -2384,6 +4940,15 @@
             "ops": ".782",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2395,6 +4960,15 @@
             "ops": ".756",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 4,
+            "games": 7
           }
         },
         {
@@ -2406,6 +4980,15 @@
             "ops": ".689",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2417,6 +5000,15 @@
             "ops": ".669",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2428,6 +5020,15 @@
             "ops": ".661",
             "homeRuns": 0,
             "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 2,
+            "atBats": 7,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 2
           }
         },
         {
@@ -2439,6 +5040,15 @@
             "ops": ".609",
             "homeRuns": 2,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.231",
+            "hits": 3,
+            "atBats": 13,
+            "homeRuns": 2,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         }
       ]
@@ -2454,13 +5064,101 @@
         "id": 607536,
         "name": "Kyle Freeland",
         "hand": "L",
-        "era": "2.30"
+        "era": "2.30",
+        "whip": "1.09",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-27",
+              "opponent": "Miami Marlins",
+              "ip": "4.1",
+              "er": 2,
+              "k": 2,
+              "bb": 2,
+              "pitches": 81,
+              "strikes": 53
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Toronto Blue Jays",
+              "ip": "5.0",
+              "er": 1,
+              "k": 6,
+              "bb": 1,
+              "pitches": 88,
+              "strikes": 60
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Houston Astros",
+              "ip": "6.1",
+              "er": 1,
+              "k": 5,
+              "bb": 1,
+              "pitches": 81,
+              "strikes": 55
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "4.3",
+          "avg_bb": "1.3",
+          "avg_pitches": "83.3",
+          "avg_strikes": "56.0",
+          "era": "2.30",
+          "whip": "1.09",
+          "strike_pct": "67.2",
+          "quality_starts": 1
+        }
       },
       "home_pitcher": {
         "id": 601713,
         "name": "Nick Pivetta",
         "hand": "R",
-        "era": "5.54"
+        "era": "5.54",
+        "whip": "1.38",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Detroit Tigers",
+              "ip": "3.0",
+              "er": 6,
+              "k": 4,
+              "bb": 3,
+              "pitches": 69,
+              "strikes": 42
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "San Francisco Giants",
+              "ip": "5.0",
+              "er": 0,
+              "k": 8,
+              "bb": 2,
+              "pitches": 82,
+              "strikes": 54
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "5.0",
+              "er": 2,
+              "k": 8,
+              "bb": 1,
+              "pitches": 86,
+              "strikes": 60
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "6.7",
+          "avg_bb": "2.0",
+          "avg_pitches": "79.0",
+          "avg_strikes": "52.0",
+          "era": "5.54",
+          "whip": "1.38",
+          "strike_pct": "65.8",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -2472,6 +5170,15 @@
             "ops": "1.113",
             "homeRuns": 5,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 4,
+            "atBats": 14,
+            "homeRuns": 2,
+            "rbi": 2,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2483,6 +5190,15 @@
             "ops": ".910",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.357",
+            "hits": 5,
+            "atBats": 14,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -2494,6 +5210,15 @@
             "ops": ".886",
             "homeRuns": 1,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 6
           }
         },
         {
@@ -2505,6 +5230,15 @@
             "ops": ".819",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2516,6 +5250,15 @@
             "ops": ".805",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2527,6 +5270,15 @@
             "ops": ".712",
             "homeRuns": 1,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2538,6 +5290,15 @@
             "ops": ".689",
             "homeRuns": 2,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2549,6 +5310,15 @@
             "ops": ".668",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2560,6 +5330,15 @@
             "ops": ".618",
             "homeRuns": 1,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         }
       ],
@@ -2573,6 +5352,15 @@
             "ops": "1.154",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2584,6 +5372,15 @@
             "ops": ".833",
             "homeRuns": 3,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2595,6 +5392,15 @@
             "ops": ".782",
             "homeRuns": 0,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -2606,6 +5412,15 @@
             "ops": ".737",
             "homeRuns": 2,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -2617,6 +5432,15 @@
             "ops": ".718",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.000",
+            "hits": 0,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2628,6 +5452,15 @@
             "ops": ".624",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2639,6 +5472,15 @@
             "ops": ".621",
             "homeRuns": 2,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2650,6 +5492,15 @@
             "ops": ".617",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 5
           }
         },
         {
@@ -2661,6 +5512,15 @@
             "ops": ".611",
             "homeRuns": 0,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         }
       ]
@@ -2677,7 +5537,51 @@
         "id": 669302,
         "name": "Logan Gilbert",
         "hand": "R",
-        "era": "5.40"
+        "era": "5.40",
+        "whip": "1.26",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Cleveland Guardians",
+              "ip": "5.1",
+              "er": 3,
+              "k": 7,
+              "bb": 0,
+              "pitches": 86,
+              "strikes": 59
+            },
+            {
+              "date": "2026-03-31",
+              "opponent": "New York Yankees",
+              "ip": "5.1",
+              "er": 5,
+              "k": 6,
+              "bb": 3,
+              "pitches": 95,
+              "strikes": 54
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Texas Rangers",
+              "ip": "6.0",
+              "er": 2,
+              "k": 5,
+              "bb": 0,
+              "pitches": 96,
+              "strikes": 65
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "6.0",
+          "avg_bb": "1.0",
+          "avg_pitches": "92.3",
+          "avg_strikes": "59.3",
+          "era": "5.40",
+          "whip": "1.26",
+          "strike_pct": "64.3",
+          "quality_starts": 1
+        }
       },
       "away_hitters": [
         {
@@ -2689,6 +5593,15 @@
             "ops": "1.417",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 2,
+            "atBats": 4,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 1,
+            "games": 1
           }
         },
         {
@@ -2700,6 +5613,15 @@
             "ops": "1.315",
             "homeRuns": 6,
             "rbi": 14
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2711,6 +5633,15 @@
             "ops": ".986",
             "homeRuns": 3,
             "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2722,6 +5653,15 @@
             "ops": ".984",
             "homeRuns": 1,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -2733,6 +5673,15 @@
             "ops": ".940",
             "homeRuns": 3,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2744,6 +5693,15 @@
             "ops": ".930",
             "homeRuns": 2,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -2755,6 +5713,15 @@
             "ops": ".783",
             "homeRuns": 0,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2766,6 +5733,15 @@
             "ops": ".780",
             "homeRuns": 1,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2777,6 +5753,15 @@
             "ops": ".682",
             "homeRuns": 0,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 2,
+            "games": 3
           }
         }
       ],
@@ -2790,6 +5775,15 @@
             "ops": "1.040",
             "homeRuns": 3,
             "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2801,6 +5795,15 @@
             "ops": ".810",
             "homeRuns": 2,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 2,
+            "rbi": 2,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -2812,6 +5815,15 @@
             "ops": ".807",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2823,6 +5835,15 @@
             "ops": ".770",
             "homeRuns": 1,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 5,
+            "games": 4
           }
         },
         {
@@ -2834,6 +5855,15 @@
             "ops": ".759",
             "homeRuns": 3,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 4,
+            "atBats": 14,
+            "homeRuns": 3,
+            "rbi": 6,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -2845,6 +5875,15 @@
             "ops": ".680",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
+            "games": 3
           }
         },
         {
@@ -2856,6 +5895,15 @@
             "ops": ".541",
             "homeRuns": 2,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2867,6 +5915,15 @@
             "ops": ".530",
             "homeRuns": 0,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -2878,6 +5935,15 @@
             "ops": ".503",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         }
       ]
@@ -2893,13 +5959,81 @@
         "id": 594798,
         "name": "Jacob deGrom",
         "hand": "R",
-        "era": "3.72"
+        "era": "3.72",
+        "whip": "0.83",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Baltimore Orioles",
+              "ip": "4.2",
+              "er": 3,
+              "k": 7,
+              "bb": 0,
+              "pitches": 79,
+              "strikes": 56
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Seattle Mariners",
+              "ip": "5.0",
+              "er": 1,
+              "k": 6,
+              "bb": 1,
+              "pitches": 78,
+              "strikes": 49
+            }
+          ],
+          "avg_ip": "4.2",
+          "avg_k": "6.5",
+          "avg_bb": "0.5",
+          "avg_pitches": "78.5",
+          "avg_strikes": "52.5",
+          "era": "3.72",
+          "whip": "0.83",
+          "strike_pct": "66.9",
+          "quality_starts": 0
+        }
       },
       "home_pitcher": {
         "id": 808963,
         "name": "Roki Sasaki",
         "hand": "R",
-        "era": "7.00"
+        "era": "7.00",
+        "whip": "1.56",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-30",
+              "opponent": "Cleveland Guardians",
+              "ip": "4.0",
+              "er": 1,
+              "k": 4,
+              "bb": 2,
+              "pitches": 78,
+              "strikes": 45
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Washington Nationals",
+              "ip": "5.0",
+              "er": 6,
+              "k": 5,
+              "bb": 3,
+              "pitches": 90,
+              "strikes": 57
+            }
+          ],
+          "avg_ip": "4.2",
+          "avg_k": "4.5",
+          "avg_bb": "2.5",
+          "avg_pitches": "84.0",
+          "avg_strikes": "51.0",
+          "era": "7.00",
+          "whip": "1.56",
+          "strike_pct": "60.7",
+          "quality_starts": 0
+        }
       },
       "away_hitters": [
         {
@@ -2911,6 +6045,15 @@
             "ops": "1.053",
             "homeRuns": 3,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -2922,6 +6065,15 @@
             "ops": ".839",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -2933,6 +6085,15 @@
             "ops": ".777",
             "homeRuns": 4,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -2944,6 +6105,15 @@
             "ops": ".770",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.455",
+            "hits": 5,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2955,6 +6125,15 @@
             "ops": ".715",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2966,6 +6145,15 @@
             "ops": ".670",
             "homeRuns": 2,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.462",
+            "hits": 6,
+            "atBats": 13,
+            "homeRuns": 2,
+            "rbi": 4,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2977,6 +6165,15 @@
             "ops": ".640",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -2988,6 +6185,15 @@
             "ops": ".639",
             "homeRuns": 1,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2999,6 +6205,15 @@
             "ops": ".525",
             "homeRuns": 1,
             "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.071",
+            "hits": 1,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         }
       ],
@@ -3012,6 +6227,15 @@
             "ops": "2.367",
             "homeRuns": 3,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.667",
+            "hits": 6,
+            "atBats": 9,
+            "homeRuns": 3,
+            "rbi": 4,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3023,6 +6247,15 @@
             "ops": "1.250",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.444",
+            "hits": 4,
+            "atBats": 9,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -3034,6 +6267,15 @@
             "ops": "1.232",
             "homeRuns": 4,
             "rbi": 17
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3045,6 +6287,15 @@
             "ops": ".940",
             "homeRuns": 4,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -3056,6 +6307,15 @@
             "ops": ".922",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 3,
+            "games": 4
           }
         },
         {
@@ -3067,6 +6327,15 @@
             "ops": ".898",
             "homeRuns": 4,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 4,
+            "games": 5
           }
         },
         {
@@ -3078,6 +6347,15 @@
             "ops": ".858",
             "homeRuns": 3,
             "rbi": 11
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3089,6 +6367,15 @@
             "ops": ".812",
             "homeRuns": 2,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 2,
+            "rbi": 5,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3100,6 +6387,15 @@
             "ops": ".800",
             "homeRuns": 3,
             "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         }
       ]
@@ -3115,13 +6411,101 @@
         "id": 676440,
         "name": "Tanner Bibee",
         "hand": "R",
-        "era": "3.29"
+        "era": "3.29",
+        "whip": "1.32",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Seattle Mariners",
+              "ip": "5.0",
+              "er": 3,
+              "k": 7,
+              "bb": 2,
+              "pitches": 78,
+              "strikes": 48
+            },
+            {
+              "date": "2026-03-31",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "4.0",
+              "er": 1,
+              "k": 4,
+              "bb": 2,
+              "pitches": 74,
+              "strikes": 48
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Kansas City Royals",
+              "ip": "4.2",
+              "er": 1,
+              "k": 3,
+              "bb": 1,
+              "pitches": 87,
+              "strikes": 58
+            }
+          ],
+          "avg_ip": "4.2",
+          "avg_k": "4.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "79.7",
+          "avg_strikes": "51.3",
+          "era": "3.29",
+          "whip": "1.32",
+          "strike_pct": "64.4",
+          "quality_starts": 0
+        }
       },
       "home_pitcher": {
         "id": 519242,
         "name": "Chris Sale",
         "hand": "L",
-        "era": "3.94"
+        "era": "3.94",
+        "whip": "0.88",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-27",
+              "opponent": "Kansas City Royals",
+              "ip": "6.0",
+              "er": 0,
+              "k": 6,
+              "bb": 3,
+              "pitches": 88,
+              "strikes": 54
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Athletics",
+              "ip": "6.0",
+              "er": 1,
+              "k": 3,
+              "bb": 0,
+              "pitches": 79,
+              "strikes": 57
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Los Angeles Angels",
+              "ip": "4.0",
+              "er": 6,
+              "k": 7,
+              "bb": 2,
+              "pitches": 77,
+              "strikes": 51
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "5.3",
+          "avg_bb": "1.7",
+          "avg_pitches": "81.3",
+          "avg_strikes": "54.0",
+          "era": "3.94",
+          "whip": "0.88",
+          "strike_pct": "66.4",
+          "quality_starts": 2
+        }
       },
       "away_hitters": [
         {
@@ -3133,6 +6517,15 @@
             "ops": ".991",
             "homeRuns": 5,
             "rbi": 12
+          },
+          "last10ab": {
+            "avg": "0.357",
+            "hits": 5,
+            "atBats": 14,
+            "homeRuns": 4,
+            "rbi": 5,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3144,6 +6537,15 @@
             "ops": ".938",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3155,6 +6557,15 @@
             "ops": ".921",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.455",
+            "hits": 5,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3166,6 +6577,15 @@
             "ops": ".919",
             "homeRuns": 1,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
           }
         },
         {
@@ -3177,6 +6597,15 @@
             "ops": ".712",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -3188,6 +6617,15 @@
             "ops": ".671",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 4,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3199,6 +6637,15 @@
             "ops": ".644",
             "homeRuns": 1,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.000",
+            "hits": 0,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -3210,6 +6657,15 @@
             "ops": ".619",
             "homeRuns": 1,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 2,
+            "games": 4
           }
         },
         {
@@ -3221,6 +6677,15 @@
             "ops": ".610",
             "homeRuns": 2,
             "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.143",
+            "hits": 2,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         }
       ],
@@ -3234,6 +6699,15 @@
             "ops": "1.004",
             "homeRuns": 5,
             "rbi": 16
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 2,
+            "rbi": 2,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -3245,6 +6719,15 @@
             "ops": ".993",
             "homeRuns": 4,
             "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -3256,6 +6739,15 @@
             "ops": ".969",
             "homeRuns": 1,
             "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 5
           }
         },
         {
@@ -3267,6 +6759,15 @@
             "ops": ".939",
             "homeRuns": 2,
             "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.385",
+            "hits": 5,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -3278,6 +6779,15 @@
             "ops": ".873",
             "homeRuns": 2,
             "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 5,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -3289,6 +6799,15 @@
             "ops": ".833",
             "homeRuns": 0,
             "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 1,
+            "atBats": 2,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 2
           }
         },
         {
@@ -3300,6 +6819,15 @@
             "ops": ".737",
             "homeRuns": 3,
             "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -3311,6 +6839,15 @@
             "ops": ".675",
             "homeRuns": 1,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.083",
+            "hits": 1,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         },
         {
@@ -3322,6 +6859,15 @@
             "ops": ".578",
             "homeRuns": 0,
             "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
           }
         }
       ]
