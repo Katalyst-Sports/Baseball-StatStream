@@ -652,6 +652,24 @@ body {
   display: none;
 }
 
+.watchlist-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1090;
+  background: rgba(3, 8, 16, 0.58);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: none;
+}
+
+.watchlist-backdrop.open {
+  display: block;
+}
+
+body.watchlist-open {
+  overflow: hidden;
+}
+
 .watchlist-panel-header {
   display: flex;
   justify-content: space-between;
@@ -798,11 +816,30 @@ footer {
   }
 
   .watchlist-panel {
-    width: calc(100vw - 20px);
-    left: 10px !important;
-    right: auto !important;
-    top: 72px !important;
-  }
+   width: 100%;
+   max-width: 100%;
+   left: 0 !important;
+   right: 0 !important;
+   top: auto !important;
+   bottom: 0 !important;
+   max-height: min(78vh, 680px);
+   border-radius: 22px 22px 0 0;
+   padding: 16px 14px calc(16px + env(safe-area-inset-bottom));
+   border-left: 0;
+   border-right: 0;
+   border-bottom: 0;
+   transform: translateY(100%);
+   transition: transform 0.24s ease;
+   display: block;
+}
+
+.watchlist-panel.open {
+  transform: translateY(0);
+}
+
+.watchlist-panel.minimized {
+  transform: translateY(calc(100% - 86px));
+}
 
   .page-title {
     font-size: 28px;
@@ -941,6 +978,7 @@ footer {
 
 <button id="watchlist-fab" class="watchlist-fab">Watchlist (0/8)</button>
 
+<div id="watchlist-backdrop" class="watchlist-backdrop"></div>  
 <div id="watchlist-panel" class="watchlist-panel">
   <div id="watchlist-panel-header" class="watchlist-panel-header">
     <div>
@@ -1408,13 +1446,23 @@ function clampWatchlistPosition(left, top) {
 
 function openWatchlist() {
   const panel = document.getElementById("watchlist-panel");
+  const backdrop = document.getElementById("watchlist-backdrop");
+
   panel.classList.add("open");
-  applyWatchlistPosition();
+  backdrop.classList.add("open");
+  document.body.classList.add("watchlist-open");
+
+  if (window.innerWidth > 720) {
+    applyWatchlistPosition();
+  }
+
   renderWatchlist();
 }
 
 function closeWatchlist() {
   document.getElementById("watchlist-panel").classList.remove("open");
+  document.getElementById("watchlist-backdrop").classList.remove("open");
+  document.body.classList.remove("watchlist-open");
 }
 
 function toggleMinimizeWatchlist() {
@@ -1710,6 +1758,8 @@ async function refreshLiveOnly() {
 }
 
 function beginWatchlistDrag(event) {
+  if (window.innerWidth <= 720) return;
+
   const panel = document.getElementById("watchlist-panel");
   draggingWatchlist = true;
   const rect = panel.getBoundingClientRect();
@@ -1769,12 +1819,15 @@ document.getElementById("watchlist-fab").addEventListener("click", openWatchlist
 document.getElementById("watchlist-refresh").addEventListener("click", renderWatchlist);
 document.getElementById("watchlist-minimize").addEventListener("click", toggleMinimizeWatchlist);
 document.getElementById("watchlist-close").addEventListener("click", closeWatchlist);
+document.getElementById("watchlist-backdrop").addEventListener("click", closeWatchlist);  
 
 document.getElementById("watchlist-panel-header").addEventListener("mousedown", beginWatchlistDrag);
 document.addEventListener("mousemove", onWatchlistDrag);
 document.addEventListener("mouseup", endWatchlistDrag);
 
 window.addEventListener("resize", () => {
+  if (window.innerWidth <= 720) return;
+
   const panel = document.getElementById("watchlist-panel");
   const rect = panel.getBoundingClientRect();
   const clamped = clampWatchlistPosition(rect.left, rect.top);
