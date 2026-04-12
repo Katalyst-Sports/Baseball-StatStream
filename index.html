@@ -385,6 +385,43 @@ body.watchlist-open {
   padding-top: 0;
 }
 
+.news-accordion {
+  overflow: hidden;
+}
+
+.news-accordion summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.news-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.news-accordion-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.news-accordion-icon {
+  font-size: 18px;
+  color: #9fb5d4;
+  transition: transform 0.2s ease;
+}
+
+.news-accordion[open] .news-accordion-icon {
+  transform: rotate(45deg);
+}
+
+.news-accordion-body {
+  margin-top: 12px;
+}
+
 .list {
   margin: 6px 0 0 18px;
   padding: 0;
