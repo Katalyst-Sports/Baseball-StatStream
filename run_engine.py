@@ -622,6 +622,8 @@ def build_pitcher_last_3_starts(player_id):
             "error": str(exc),
         })
         return {}
+
+
 def format_hitter_stats(stat):
     if not stat:
         return {}
@@ -912,8 +914,6 @@ for date_block in schedule_yesterday.get("dates", []):
                                 "line": f"{full_name}: {hits_val} H, {hr_val} HR, {rbi_val} RBI, {ab_val} AB"
                             })
 
-                    if pitching:
-                        ip_val = pitching.get("inningsPitched", "0.0")
                         so_val = int(pitching.get("strikeOuts", 0) or 0)
                         er_val = int(pitching.get("earnedRuns", 0) or 0)
                         bb_val = int(pitching.get("baseOnBalls", 0) or 0)
