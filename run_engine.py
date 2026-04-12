@@ -881,15 +881,92 @@ for date_block in schedule_yesterday.get("dates", []):
             loser = home if away_runs > home_runs else away
             hitters, pitchers = build_live_or_final_highlights(box, pick_final_pitcher=True)
 
-            yesterday_postgame.append({
-                "gamePk": game.get("gamePk"),
-                "game": f"{away} @ {home}",
-                "winner": winner,
-                "loser": loser,
-                "final_score": f"{away_runs}-{home_runs}",
-                "hitters": hitters,
-                "pitchers": pitchers,
-            })
+            decisions = feed.get("liveData", {}).get("decisions", {})
+box_teams = box.get("teams", {})
+
+winning_pitcher = (decisions.get("winner") or {}).get("fullName", "")
+losing_pitcher = (decisions.get("loser") or {}).get("fullName", "")
+save_pitcher = (decisions.get("save") or {}).get("fullName", "")
+
+top_batting_line = "No standout batting line available."
+top_pitching_line = "No standout pitching line available."
+
+candidate_hitters = []
+candidate_pitchers = []
+
+for side in ["away", "home"]:
+    team_block = box_teams.get(side, {})
+    players = team_block.get("players", {})
+
+    for player_data in players.values():
+        person = player_data.get("person", {})
+        full_name = person.get("fullName", "Unknown Player")
+
+        batting = player_data.get("stats", {}).get("batting", {})
+        pitching = player_data.get("stats", {}).get("pitching", {})
+
+        if batting:
+            hits_val = int(batting.get("hits", 0) or 0)
+            hr_val = int(batting.get("homeRuns", 0) or 0)
+            rbi_val = int(batting.get("rbi", 0) or 0)
+            ab_val = int(batting.get("atBats", 0) or 0)
+
+            score = (hr_val * 10) + (rbi_val * 3) + (hits_val * 2)
+            if score > 0:
+                candidate_hitters.append({
+                    "name": full_name,
+                    "score": score,
+                    "line": f"{full_name}: {hits_val} H, {hr_val} HR, {rbi_val} RBI, {ab_val} AB"
+                })
+
+        if pitching:
+            ip_val = pitching.get("inningsPitched", "0.0")
+            so_val = int(pitching.get("strikeOuts", 0) or 0)
+            er_val = int(pitching.get("earnedRuns", 0) or 0)
+            bb_val = int(pitching.get("baseOnBalls", 0) or 0)
+            h_val = int(pitching.get("hits", 0) or 0)
+
+            score = (so_val * 3) - (er_val * 4)
+            if score > 0:
+                candidate_pitchers.append({
+                    "name": full_name,
+                    "score": score,
+                    "line": f"{full_name}: {ip_val} IP, {so_val} K, {er_val} ER, {bb_val} BB, {h_val} H"
+                })
+
+candidate_hitters.sort(key=lambda item: item["score"], reverse=True)
+candidate_pitchers.sort(key=lambda item: item["score"], reverse=True)
+
+if candidate_hitters:
+    top_batting_line = candidate_hitters[0]["line"]
+
+if candidate_pitchers:
+    top_pitching_line = candidate_pitchers[0]["line"]
+
+all_plays = feed.get("liveData", {}).get("plays", {}).get("allPlays", [])
+game_summary = ""
+if all_plays:
+    scoring_plays = [play for play in all_plays if play.get("about", {}).get("isScoringPlay")]
+    if scoring_plays:
+        game_summary = scoring_plays[-1].get("result", {}).get("description", "")
+    elif all_plays:
+        game_summary = all_plays[-1].get("result", {}).get("description", "")
+
+yesterday_postgame.append({
+    "gamePk": game.get("gamePk"),
+    "game": f"{away} @ {home}",
+    "winner": winner,
+    "loser": loser,
+    "final_score": f"{away_runs}-{home_runs}",
+    "hitters": hitters,
+    "pitchers": pitchers,
+    "top_batting_line": top_batting_line,
+    "top_pitching_line": top_pitching_line,
+    "winning_pitcher": winning_pitcher,
+    "losing_pitcher": losing_pitcher,
+    "save_pitcher": save_pitcher,
+    "game_summary": game_summary,
+})
         except Exception as exc:
             errors.append({
                 "gamePk": game.get("gamePk"),
