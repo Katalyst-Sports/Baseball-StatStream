@@ -48,15 +48,6 @@ def fetch_text(url):
         return response.read().decode("utf-8")
 
 
-def write_json(path, payload):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(payload, fh, indent=2)
-
-
-def normalize_whitespace(value):
-    return re.sub(r"\s+", " ", str(value or "")).strip()
-
-
 def safe_number(value, default=0):
     return value if value is not None else default
 
@@ -83,31 +74,69 @@ def get_player_name(team, player_id):
     return player.get("person", {}).get("fullName", "Unknown Player")
 
 
-# =====================================================
-# NEWS / TRANSACTIONS HELPERS
-# =====================================================
+def write_json(path, payload):
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, indent=2)
 
-def parse_news_rss(url, limit=8):
-    items = []
 
-    try:
-        root = ET.fromstring(fetch_text(url))
-        for item in root.findall(".//item")[:limit]:
-            items.append(
-                {
-                    "title": normalize_whitespace(item.findtext("title", "")),
-                    "link": normalize_whitespace(item.findtext("link", "")),
-                    "published": normalize_whitespace(item.findtext("pubDate", "")),
-                    "summary": normalize_whitespace(item.findtext("description", "")),
-                }
-            )
-    except Exception as exc:
-        errors.append({
-            "stage": "news_rss",
-            "error": str(exc),
-        })
+def normalize_whitespace(value):
+    return re.sub(r"\s+", " ", str(value or "")).strip()
 
-    return [item for item in items if item.get("title")]
+
+def is_il_add_transaction(text):
+    lowered = normalize_whitespace(text).lower()
+    il_markers = [
+        "injured list",
+        "7-day il",
+        "10-day il",
+        "15-day il",
+        "60-day il",
+    ]
+    add_markers = [
+        "placed",
+        "transferred",
+        "selected contract",
+        "returned to il",
+        "returned to the injured list",
+    ]
+    return any(marker in lowered for marker in il_markers) and any(
+        marker in lowered for marker in add_markers
+    )
+
+
+def is_il_remove_transaction(text):
+    lowered = normalize_whitespace(text).lower()
+    remove_markers = [
+        "reinstated from the injured list",
+        "reinstated from 7-day il",
+        "reinstated from 10-day il",
+        "reinstated from 15-day il",
+        "reinstated from 60-day il",
+        "returned from rehab assignment",
+        "returned from rehab",
+        "activated from the injured list",
+        "returned from the injured list",
+    ]
+    return any(marker in lowered for marker in remove_markers)
+
+
+def extract_il_type(text):
+    lowered = normalize_whitespace(text).lower()
+    match = re.search(r"(\d+)-day il", lowered)
+    if match:
+        return f"{match.group(1)}-day IL"
+    if "injured list" in lowered:
+        return "Injured List"
+    return "IL"
+
+
+def extract_injury_note(text):
+    normalized = normalize_whitespace(text)
+    if " with " in normalized:
+        return normalized.split(" with ", 1)[1].rstrip(".")
+    if " due to " in normalized:
+        return normalized.split(" due to ", 1)[1].rstrip(".")
+    return normalized
 
 
 def get_transaction_text(transaction):
@@ -139,46 +168,29 @@ def is_trade_transaction(text):
     return "trade" in lowered or "traded" in lowered
 
 
-def is_il_add_transaction(text):
-    lowered = normalize_whitespace(text).lower()
-    il_markers = ["injured list", "7-day il", "10-day il", "15-day il", "60-day il"]
-    add_markers = ["placed", "transferred", "returned to il", "returned to the injured list"]
-    return any(marker in lowered for marker in il_markers) and any(
-        marker in lowered for marker in add_markers
-    )
+def parse_news_rss(url, limit=8):
+    items = []
 
+    try:
+        root = ET.fromstring(fetch_text(url))
+        for item in root.findall(".//item")[:limit]:
+            items.append(
+                {
+                    "title": normalize_whitespace(item.findtext("title", "")),
+                    "link": normalize_whitespace(item.findtext("link", "")),
+                    "published": normalize_whitespace(item.findtext("pubDate", "")),
+                    "summary": normalize_whitespace(item.findtext("description", "")),
+                }
+            )
+    except Exception as exc:
+        errors.append(
+            {
+                "stage": "news_rss",
+                "error": str(exc),
+            }
+        )
 
-def is_il_remove_transaction(text):
-    lowered = normalize_whitespace(text).lower()
-    remove_markers = [
-        "reinstated from the injured list",
-        "reinstated from 7-day il",
-        "reinstated from 10-day il",
-        "reinstated from 15-day il",
-        "reinstated from 60-day il",
-        "activated from the injured list",
-        "returned from the injured list",
-    ]
-    return any(marker in lowered for marker in remove_markers)
-
-
-def extract_il_type(text):
-    lowered = normalize_whitespace(text).lower()
-    match = re.search(r"(\d+)-day il", lowered)
-    if match:
-        return f"{match.group(1)}-day IL"
-    if "injured list" in lowered:
-        return "Injured List"
-    return "IL"
-
-
-def extract_injury_note(text):
-    normalized = normalize_whitespace(text)
-    if " with " in normalized:
-        return normalized.split(" with ", 1)[1].rstrip(".")
-    if " due to " in normalized:
-        return normalized.split(" due to ", 1)[1].rstrip(".")
-    return normalized
+    return [item for item in items if item.get("title")]
 
 
 def build_recent_transaction_feed(days=10):
@@ -191,7 +203,10 @@ def build_recent_transaction_feed(days=10):
         )
         transactions = sorted(
             payload.get("transactions", []),
-            key=lambda item: (item.get("date", ""), item.get("id", 0)),
+            key=lambda item: (
+                item.get("date", ""),
+                item.get("id", 0),
+            ),
             reverse=True,
         )
 
@@ -211,10 +226,12 @@ def build_recent_transaction_feed(days=10):
                 }
             )
     except Exception as exc:
-        errors.append({
-            "stage": "recent_transactions",
-            "error": str(exc),
-        })
+        errors.append(
+            {
+                "stage": "recent_transactions",
+                "error": str(exc),
+            }
+        )
 
     return transaction_feed
 
@@ -258,6 +275,101 @@ def build_trade_updates(transactions, limit=10):
     return updates
 
 
+def build_player_team_grounding(injury_updates, trade_updates, limit=16):
+    grounding = {}
+
+    for item in injury_updates + trade_updates:
+        player = normalize_whitespace(item.get("player"))
+        team = normalize_whitespace(item.get("team"))
+        if not player or not team or player == "Unknown Player":
+            continue
+        grounding[player] = team
+        if len(grounding) >= limit:
+            break
+
+    return grounding
+
+
+def build_news_roundup(top_news, injury_updates, trade_updates):
+    roundup = {
+        "updated_at": NOW.isoformat(),
+        "headline": "MLB News Desk",
+        "article": "No news roundup generated yet.",
+        "top_news": top_news,
+        "injury_updates": injury_updates,
+        "trade_updates": trade_updates,
+    }
+
+    if client:
+        try:
+            grounded_players = build_player_team_grounding(injury_updates, trade_updates)
+            news_lines = "\n".join(
+                [f"- {item['title']}" for item in top_news[:6]]
+            ) or "- No major top headlines available."
+            injury_lines = "\n".join(
+                [f"- {item['team']}: {item['player']} ({item['update']})" for item in injury_updates[:8]]
+            ) or "- No recent injury updates available."
+            trade_lines = "\n".join(
+                [f"- {item['team']}: {item['player']} ({item['update']})" for item in trade_updates[:8]]
+            ) or "- No recent MLB trade updates available."
+            grounding_lines = "\n".join(
+                [f"- {player}: {team}" for player, team in grounded_players.items()]
+            ) or "- No player-team affiliations were explicitly grounded from transactions."
+
+            prompt = f"""
+You are an MLB news editor.
+
+Write a sharp daily MLB roundup for a StatStream dashboard.
+
+Requirements:
+- Start with a headline on the first line
+- Then write 3 short paragraphs
+- Paragraph 1: top MLB news
+- Paragraph 2: injuries and availability impact
+- Paragraph 3: trades or roster movement
+- Keep it factual, concise, and mobile-friendly
+- No hype, no speculation, no markdown bullets inside the article body
+- Use only the facts explicitly present in the source material below
+- Do not add background facts from memory
+- Do not guess or infer a player's current team
+- Only mention a player's team if that team is explicitly stated in the source lines or in the grounded player-team list below
+- If a player is mentioned in the news but their team is not explicitly grounded, refer to the player by name only
+- If any detail is uncertain, leave it out rather than inventing it
+
+Top news:
+{news_lines}
+
+Injuries:
+{injury_lines}
+
+Trades / roster movement:
+{trade_lines}
+
+Grounded player-team affiliations:
+{grounding_lines}
+"""
+
+            response = client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.2,
+            )
+
+            content = response.choices[0].message.content.strip()
+            parts = content.split("\n", 1)
+            roundup["headline"] = parts[0].strip() if parts else "MLB News Desk"
+            roundup["article"] = parts[1].strip() if len(parts) > 1 else content
+        except Exception as exc:
+            roundup["article"] = f"Groq news roundup error: {str(exc)}"
+    else:
+        roundup["article"] = (
+            "Top MLB headlines, injury movement, and trade updates are available below. "
+            "Add a GROQ_API_KEY to generate the AI-written daily roundup."
+        )
+
+    return roundup
+
+
 def build_team_injured_lists():
     teams_payload = fetch(f"{BASE}/v1/teams?sportId=1&season={SEASON}")
     teams = sorted(
@@ -282,14 +394,25 @@ def build_team_injured_lists():
             )
             transactions = sorted(
                 transactions_payload.get("transactions", []),
-                key=lambda item: (item.get("date", ""), item.get("id", 0)),
+                key=lambda item: (
+                    item.get("date", ""),
+                    item.get("id", 0),
+                ),
             )
 
             for transaction in transactions:
                 person = transaction.get("person") or {}
                 player_id = person.get("id")
                 player_name = person.get("fullName", "Unknown Player")
-                combined = get_transaction_text(transaction)
+
+                description = normalize_whitespace(
+                    transaction.get("description")
+                    or transaction.get("typeDesc")
+                    or transaction.get("note")
+                    or ""
+                )
+                type_desc = normalize_whitespace(transaction.get("typeDesc", ""))
+                combined = " | ".join(part for part in [description, type_desc] if part)
 
                 if not player_id or not combined:
                     continue
@@ -301,7 +424,7 @@ def build_team_injured_lists():
                         "il_type": extract_il_type(combined),
                         "date": transaction.get("date", ""),
                         "note": extract_injury_note(combined),
-                        "description": combined,
+                        "description": description or type_desc,
                     }
                 elif is_il_remove_transaction(combined):
                     active_il.pop(player_id, None)
@@ -316,11 +439,13 @@ def build_team_injured_lists():
                 }
             )
         except Exception as exc:
-            errors.append({
-                "teamId": team_id,
-                "stage": "injury_transactions",
-                "error": str(exc),
-            })
+            errors.append(
+                {
+                    "teamId": team_id,
+                    "stage": "injury_transactions",
+                    "error": str(exc),
+                }
+            )
             team_injuries.append(
                 {
                     "team_id": team_id,
@@ -333,67 +458,6 @@ def build_team_injured_lists():
 
     return team_injuries
 
-
-def build_news_roundup(top_news, injury_updates, trade_updates):
-    roundup = {
-        "updated_at": NOW.isoformat(),
-        "headline": "MLB News Desk",
-        "article": "No news roundup generated yet.",
-        "top_news": top_news,
-        "injury_updates": injury_updates,
-        "trade_updates": trade_updates,
-    }
-
-    if client:
-        try:
-            news_lines = "\n".join([f"- {item['title']}" for item in top_news[:6]]) or "- No major top headlines available."
-            injury_lines = "\n".join([f"- {item['team']}: {item['player']} ({item['update']})" for item in injury_updates[:8]]) or "- No recent injury updates available."
-            trade_lines = "\n".join([f"- {item['team']}: {item['player']} ({item['update']})" for item in trade_updates[:8]]) or "- No recent MLB trade updates available."
-
-            prompt = f"""
-You are an MLB news editor.
-
-Write a sharp daily MLB roundup for a StatStream dashboard.
-
-Requirements:
-- Start with a headline on the first line
-- Then write 3 short paragraphs
-- Paragraph 1: top MLB news
-- Paragraph 2: injuries and availability impact
-- Paragraph 3: trades or roster movement
-- Keep it factual, concise, and mobile-friendly
-- No hype, no speculation, no markdown bullets inside the article body
-
-Top news:
-{news_lines}
-
-Injuries:
-{injury_lines}
-
-Trades / roster movement:
-{trade_lines}
-"""
-
-            response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.5,
-            )
-
-            content = response.choices[0].message.content.strip()
-            parts = content.split("\n", 1)
-            roundup["headline"] = parts[0].strip() if parts else "MLB News Desk"
-            roundup["article"] = parts[1].strip() if len(parts) > 1 else content
-        except Exception as exc:
-            roundup["article"] = f"Groq news roundup error: {str(exc)}"
-    else:
-        roundup["article"] = (
-            "Top MLB headlines, injury movement, and trade updates are available below. "
-            "Add a GROQ_API_KEY to generate the AI-written daily roundup."
-        )
-
-    return roundup
-    
 
 def fetch_stat_leaders(stat_group, stat_type, limit=5):
     try:
@@ -461,9 +525,12 @@ def build_season_leaders():
             for entry in whip_leaders
         ],
     }
+
+
 # =====================================================
-# PLAYER STAT HELPERS
+# PLAYER STAT HELPERS (SEASON-TO-DATE)
 # =====================================================
+
 def safe_float(value, default=0.0):
     try:
         return float(value)
@@ -540,6 +607,69 @@ def build_last_10_ab(player_id):
             "error": str(exc),
         })
         return {}
+
+
+def build_team_hitters(team_id):
+    hitters = []
+
+    try:
+        roster_payload = fetch(f"{BASE}/v1/teams/{team_id}/roster?rosterType=active")
+        roster = roster_payload.get("roster", [])
+
+        for player in roster:
+            person = player.get("person", {})
+            position = player.get("position", {}) or {}
+            position_type = (position.get("type") or position.get("abbreviation") or "").lower()
+            if position_type == "pitcher":
+                continue
+
+            player_id = person.get("id")
+            player_name = person.get("fullName", "Unknown Player")
+            if not player_id:
+                continue
+
+            try:
+                season_payload = fetch(
+                    f"{BASE}/v1/people/{player_id}/stats"
+                    f"?stats=season&group=hitting&season={SEASON}"
+                )
+                stats = season_payload.get("stats", [])
+                splits = stats[0].get("splits", []) if stats else []
+                stat_block = splits[0].get("stat", {}) if splits else {}
+
+                hitters.append({
+                    "name": player_name,
+                    "stats": {
+                        "avg": stat_block.get("avg", "N/A"),
+                        "obp": stat_block.get("obp", "N/A"),
+                        "slg": stat_block.get("slg", "N/A"),
+                        "ops": stat_block.get("ops", "N/A"),
+                        "homeRuns": stat_block.get("homeRuns", 0),
+                        "rbi": stat_block.get("rbi", 0),
+                    },
+                    "last10ab": build_last_10_ab(player_id),
+                })
+            except Exception as exc:
+                errors.append({
+                    "playerId": player_id,
+                    "stage": "build_team_hitters_player",
+                    "error": str(exc),
+                })
+
+        hitters.sort(
+            key=lambda item: (
+                -safe_float(item.get("stats", {}).get("ops"), 0.0),
+                item.get("name", ""),
+            )
+        )
+        return hitters[:9]
+    except Exception as exc:
+        errors.append({
+            "teamId": team_id,
+            "stage": "build_team_hitters",
+            "error": str(exc),
+        })
+        return []
 
 
 def build_pitcher_last_3_starts(player_id):
@@ -624,82 +754,6 @@ def build_pitcher_last_3_starts(player_id):
         return {}
 
 
-def format_hitter_stats(stat):
-    if not stat:
-        return {}
-
-    return {
-        "avg": stat.get("avg", "N/A"),
-        "obp": stat.get("obp", "N/A"),
-        "slg": stat.get("slg", "N/A"),
-        "ops": stat.get("ops", "N/A"),
-        "homeRuns": stat.get("homeRuns", 0),
-        "rbi": stat.get("rbi", 0),
-    }
-
-
-def build_team_hitters(team_id):
-    hitters = []
-
-    try:
-        roster_payload = fetch(f"{BASE}/v1/teams/{team_id}/roster?rosterType=active")
-        roster = roster_payload.get("roster", [])
-
-        for player in roster:
-            person = player.get("person", {})
-            position_type = (
-                player.get("position", {}).get("type", "")
-                or player.get("position", {}).get("abbreviation", "")
-            )
-
-            if str(position_type).lower() == "pitcher":
-                continue
-
-            player_id = person.get("id")
-            player_name = person.get("fullName", "Unknown Player")
-
-            if not player_id:
-                continue
-
-            try:
-                stats_payload = fetch(
-                    f"{BASE}/v1/people/{player_id}/stats"
-                    f"?stats=season&group=hitting&season={SEASON}"
-                )
-                stats = stats_payload.get("stats", [])
-                splits = stats[0].get("splits", []) if stats else []
-                stat_block = splits[0].get("stat", {}) if splits else {}
-
-                hitters.append({
-                    "name": player_name,
-                    "stats": format_hitter_stats(stat_block),
-                    "last10ab": build_last_10_ab(player_id),
-                })
-            except Exception as exc:
-                errors.append({
-                    "playerId": player_id,
-                    "stage": "hitter_stats",
-                    "error": str(exc),
-                })
-
-        hitters.sort(
-            key=lambda item: (
-                -safe_float(item["stats"].get("ops", 0), 0.0),
-                item["name"]
-            )
-        )
-
-        return hitters[:9]
-
-    except Exception as exc:
-        errors.append({
-            "teamId": team_id,
-            "stage": "build_team_hitters",
-            "error": str(exc),
-        })
-        return []
-        
-
 def pitcher_summary(pitcher):
     if not pitcher:
         return {}
@@ -764,7 +818,7 @@ def build_live_or_final_highlights(boxscore, pick_final_pitcher=False):
 
 
 # =====================================================
-# BUILD TODAY
+# BUILD TODAY (PRE-GAME / LIVE / FINAL)
 # =====================================================
 
 schedule_today = fetch(
@@ -786,7 +840,6 @@ for date_block in schedule_today.get("dates", []):
 
             away_pitcher = game["teams"]["away"].get("probablePitcher")
             home_pitcher = game["teams"]["home"].get("probablePitcher")
-
             away_team_id = game["teams"]["away"]["team"]["id"]
             home_team_id = game["teams"]["home"]["team"]["id"]
 
@@ -802,7 +855,6 @@ for date_block in schedule_today.get("dates", []):
                 "away_hitters": build_team_hitters(away_team_id),
                 "home_hitters": build_team_hitters(home_team_id),
             })
-
 
             if status in ["Live", "In Progress"]:
                 feed = fetch(f"{BASE}/v1.1/game/{game['gamePk']}/feed/live")
@@ -911,7 +963,7 @@ for date_block in schedule_yesterday.get("dates", []):
                             candidate_hitters.append({
                                 "name": full_name,
                                 "score": score,
-                                "line": f"{full_name}: {hits_val} H, {hr_val} HR, {rbi_val} RBI, {ab_val} AB"
+                                "line": f"{full_name}: {hits_val} H, {hr_val} HR, {rbi_val} RBI, {ab_val} AB",
                             })
 
                     if pitching:
@@ -926,42 +978,8 @@ for date_block in schedule_yesterday.get("dates", []):
                             candidate_pitchers.append({
                                 "name": full_name,
                                 "score": score,
-                                "line": f"{full_name}: {ip_val} IP, {so_val} K, {er_val} ER, {bb_val} BB, {h_val} H"
+                                "line": f"{full_name}: {ip_val} IP, {so_val} K, {er_val} ER, {bb_val} BB, {h_val} H",
                             })
-                            
-            candidate_hitters.sort(key=lambda item: item["score"], reverse=True)
-            candidate_pitchers.sort(key=lambda item: item["score"], reverse=True)
-
-            if candidate_hitters:
-                top_batting_line = candidate_hitters[0]["line"]
-
-            if candidate_pitchers:
-                top_pitching_line = candidate_pitchers[0]["line"]
-
-            all_plays = feed.get("liveData", {}).get("plays", {}).get("allPlays", [])
-            game_summary = ""
-            if all_plays:
-                scoring_plays = [play for play in all_plays if play.get("about", {}).get("isScoringPlay")]
-                if scoring_plays:
-                    game_summary = scoring_plays[-1].get("result", {}).get("description", "")
-                else:
-                    game_summary = all_plays[-1].get("result", {}).get("description", "")
-
-            yesterday_postgame.append({
-                "gamePk": game.get("gamePk"),
-                "game": f"{away} @ {home}",
-                "winner": winner,
-                "loser": loser,
-                "final_score": f"{away_runs}-{home_runs}",
-                "hitters": hitters,
-                "pitchers": pitchers,
-                "top_batting_line": top_batting_line,
-                "top_pitching_line": top_pitching_line,
-                "winning_pitcher": winning_pitcher,
-                "losing_pitcher": losing_pitcher,
-                "save_pitcher": save_pitcher,
-                "game_summary": game_summary,
-            })   
 
             candidate_hitters.sort(key=lambda item: item["score"], reverse=True)
             candidate_pitchers.sort(key=lambda item: item["score"], reverse=True)
@@ -996,12 +1014,13 @@ for date_block in schedule_yesterday.get("dates", []):
                 "save_pitcher": save_pitcher,
                 "game_summary": game_summary,
             })
-    except Exception as exc:
+        except Exception as exc:
             errors.append({
                 "gamePk": game.get("gamePk"),
                 "stage": "yesterday_schedule_loop",
                 "error": str(exc),
             })
+
 
 def build_game_card_summary(game):
     hitters = ", ".join(game.get("hitters", [])[:3]) if game.get("hitters") else "timely offense"
@@ -1039,10 +1058,12 @@ Impact Pitchers: {pitchers}
         return text if text else fallback
     except Exception:
         return fallback
-        
+
+
 # =====================================================
 # YESTERDAY AI RECAP
 # =====================================================
+
 yesterday_recap = {
     "updated_at": NOW.isoformat(),
     "date": YESTERDAY,
@@ -1054,9 +1075,9 @@ yesterday_recap = {
             "avg_ops": [],
             "power": [],
             "pitching": [],
-            "run_prevention": []
-        }
-    }
+            "run_prevention": [],
+        },
+    },
 }
 
 if yesterday_postgame and client:
@@ -1122,12 +1143,14 @@ yesterday_recap["dashboard_recap"]["all_games"] = [
         "top_pitching_line": game.get("top_pitching_line", "No standout pitching line available."),
         "top_batting_line": game.get("top_batting_line", "No standout batting line available."),
         "summary": build_game_card_summary(game),
-        "impact_player": (game.get("hitters") or game.get("pitchers") or ["N/A"])[0]
+        "impact_player": (game.get("hitters") or game.get("pitchers") or ["N/A"])[0],
     }
     for game in yesterday_postgame
 ]
 
 yesterday_recap["dashboard_recap"]["season_leaders"] = build_season_leaders()
+
+
 # =====================================================
 # NEWS / IL FILES
 # =====================================================
@@ -1167,4 +1190,3 @@ print(f"Wrote yesterday_postgame.json with {len(yesterday_postgame)} games")
 print("Wrote yesterday_recap.json")
 print(f"Wrote mlb_news.json with {len(top_news)} headlines")
 print(f"Wrote injury_report.json with {len(injury_report['teams'])} teams")
-
