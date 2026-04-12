@@ -963,7 +963,7 @@ for date_block in schedule_yesterday.get("dates", []):
                 "game_summary": game_summary,
             })   
 
-       except Exception as exc:
+    except Exception as exc:
             errors.append({
                 "gamePk": game.get("gamePk"),
                 "stage": "yesterday_schedule_loop",
