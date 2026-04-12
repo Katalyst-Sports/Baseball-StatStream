@@ -330,11 +330,35 @@ body.watchlist-open {
   max-height: 320px;
   overflow-y: auto;
   scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.65) transparent;
+  scrollbar-gutter: stable;
+  padding-right: 10px;
 }
   
 .leader-card .list {
   margin-bottom: 0;
 }  
+
+.leader-card::-webkit-scrollbar {
+  width: 10px;
+}
+
+.leader-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.leader-card::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.55);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.leader-card::-webkit-scrollbar-thumb:hover {
+  background: rgba(191, 201, 214, 0.72);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
 .player-card { border-top: 4px solid var(--cyan); }
 .watchlist-card { border-top: 4px solid #22c55e; }
 .news-card { border-top: 4px solid #60a5fa; }
