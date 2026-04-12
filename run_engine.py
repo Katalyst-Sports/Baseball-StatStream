@@ -472,6 +472,8 @@ def build_team_hitters(team_id):
             "error": str(exc),
         })
         return []
+
+
 def pitcher_summary(pitcher):
     if not pitcher:
         return {}
@@ -664,11 +666,20 @@ for date_block in schedule_yesterday.get("dates", []):
 # =====================================================
 # YESTERDAY AI RECAP
 # =====================================================
-
 yesterday_recap = {
+    "updated_at": NOW.isoformat(),
     "date": YESTERDAY,
-    "headline": f"MLB Daily Recap - {datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
-    "article": "No recap generated yet.",
+    "dashboard_recap": {
+        "headline": f"MLB Daily Recap - {datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
+        "article": "No recap generated yet.",
+        "all_games": [],
+        "season_leaders": {
+            "avg_ops": [],
+            "power": [],
+            "pitching": [],
+            "run_prevention": []
+        }
+    }
 }
 
 if yesterday_postgame and client:
@@ -708,14 +719,25 @@ Games:
             temperature=0.6,
         )
 
-        yesterday_recap["article"] = response.choices[0].message.content.strip()
+        yesterday_recap["dashboard_recap"]["article"] = response.choices[0].message.content.strip()
     except Exception as exc:
-        yesterday_recap["article"] = f"Groq error: {str(exc)}"
+        yesterday_recap["dashboard_recap"]["article"] = f"Groq error: {str(exc)}"
 elif yesterday_postgame and not client:
-    yesterday_recap["article"] = "Groq recap skipped because GROQ_API_KEY is not set."
+    yesterday_recap["dashboard_recap"]["article"] = "Groq recap skipped because GROQ_API_KEY is not set."
 else:
-    yesterday_recap["article"] = "No final games were available for yesterday."
+    yesterday_recap["dashboard_recap"]["article"] = "No final games were available for yesterday."
 
+yesterday_recap["dashboard_recap"]["all_games"] = [
+    {
+        "game": game["game"],
+        "final_score": game["final_score"],
+        "top_pitching_line": ", ".join(game.get("pitchers", [])) if game.get("pitchers") else "No standout pitching line available.",
+        "top_batting_line": ", ".join(game.get("hitters", [])) if game.get("hitters") else "No standout batting line available.",
+        "summary": f"{game['winner']} beat {game['loser']} {game['final_score']}.",
+        "impact_player": (game.get("hitters") or game.get("pitchers") or ["N/A"])[0]
+    }
+    for game in yesterday_postgame
+]
 
 # =====================================================
 # NEWS / IL FILES
