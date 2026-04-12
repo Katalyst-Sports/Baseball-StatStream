@@ -3,11 +3,17 @@ print("### GROQ ENGINE VERSION RUNNING ###")
 
 import json
 import os
+import re
 from datetime import datetime, timedelta
 from urllib.request import Request, urlopen
+from xml.etree import ElementTree as ET
 from zoneinfo import ZoneInfo
 
 from groq import Groq
+
+# =====================================================
+# CONFIG
+# =====================================================
 
 BASE = "https://statsapi.mlb.com/api"
 MLB_TZ = ZoneInfo("America/New_York")
@@ -19,40 +25,26 @@ SEASON = NOW.year
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
-FETCH_CACHE = {}
 
+
+# =====================================================
+# UTILITIES
+# =====================================================
 
 def fetch(url):
-    if url in FETCH_CACHE:
-        return FETCH_CACHE[url]
-
     req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urlopen(req, timeout=20) as response:
-        payload = json.loads(response.read().decode("utf-8"))
-        FETCH_CACHE[url] = payload
-        return payload
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_text(url):
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urlopen(req, timeout=20) as response:
+        return response.read().decode("utf-8")
 
 
 def safe_number(value, default=0):
     return value if value is not None else default
-
-
-def safe_float(value, default=0.0):
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        return default
-
-
-def parse_ip(ip_value):
-    text = str(ip_value or "0")
-    if "." not in text:
-        return safe_float(text, 0.0)
-
-    whole, frac = text.split(".", 1)
-    outs_lookup = {"0": 0, "1": 1, "2": 2}
-    outs = outs_lookup.get(frac, 0)
-    return safe_float(whole, 0.0) + (outs / 3.0)
 
 
 def is_finished_game(status_block):
@@ -65,13 +57,6 @@ def is_finished_game(status_block):
         or detailed in {"final", "game over", "completed early"}
         or coded == "F"
     )
-
-
-def format_baseball_avg(value):
-    if value is None:
-        return "N/A"
-    text = f"{value:.3f}"
-    return text[1:] if text.startswith("0") else text
 
 
 def get_player_stat_block(team, player_id, stat_group):
@@ -89,199 +74,361 @@ def write_json(path, payload):
         json.dump(payload, fh, indent=2)
 
 
-def player_profile(player_id):
-    people = fetch(f"{BASE}/v1/people/{player_id}").get("people", [])
-    return people[0] if people else {}
+def normalize_whitespace(value):
+    return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
-def player_stat_group(player_id, group, stats_type="season", extra_query=""):
-    url = (
-        f"{BASE}/v1/people/{player_id}/stats"
-        f"?stats={stats_type}&group={group}&season={SEASON}"
+def is_il_add_transaction(text):
+    lowered = normalize_whitespace(text).lower()
+    il_markers = [
+        "injured list",
+        "7-day il",
+        "10-day il",
+        "15-day il",
+        "60-day il",
+    ]
+    add_markers = [
+        "placed",
+        "transferred",
+        "selected contract",
+        "returned to il",
+        "returned to the injured list",
+    ]
+    return any(marker in lowered for marker in il_markers) and any(
+        marker in lowered for marker in add_markers
     )
-    if extra_query:
-        url += f"&{extra_query}"
-
-    stats = fetch(url).get("stats", [])
-    splits = stats[0].get("splits", []) if stats else []
-    return splits
 
 
-def team_active_hitters(team_id):
-    roster = fetch(
-        f"{BASE}/v1/teams/{team_id}/roster?rosterType=active"
-    ).get("roster", [])
-
-    hitters = []
-    for entry in roster:
-        person = entry.get("person", {})
-        position = entry.get("position", {}).get("abbreviation")
-        if position == "P":
-            continue
-        hitters.append({"id": person.get("id"), "name": person.get("fullName")})
-
-    return hitters
-
-
-def pitcher_last_three(player_id):
-    splits = player_stat_group(player_id, "pitching", "gameLog")
-    starts = []
-
-    for split in reversed(splits):
-        stat = split.get("stat", {})
-        if safe_number(stat.get("gamesStarted")) >= 1:
-            starts.append(stat)
-        if len(starts) == 3:
-            break
-
-    if not starts:
-        return {
-            "starts_used": 0,
-            "avg_ip": "N/A",
-            "avg_k": "N/A",
-            "avg_bb": "N/A",
-            "avg_era": "N/A",
-            "whip": "N/A",
-            "quality_starts": 0,
-            "wins": 0,
-            "last_start": {
-                "ip": "N/A",
-                "k": "N/A",
-                "bb": "N/A",
-                "er": "N/A",
-                "hits": "N/A",
-                "decision": "N/A",
-            },
-        }
-
-    total_ip = sum(parse_ip(start.get("inningsPitched")) for start in starts)
-    total_k = sum(safe_number(start.get("strikeOuts")) for start in starts)
-    total_bb = sum(safe_number(start.get("baseOnBalls")) for start in starts)
-    total_er = sum(safe_number(start.get("earnedRuns")) for start in starts)
-    total_hits = sum(safe_number(start.get("hits")) for start in starts)
-
-    quality_starts = 0
-    wins = 0
-
-    for start in starts:
-        ip = parse_ip(start.get("inningsPitched"))
-        er = safe_number(start.get("earnedRuns"))
-        if ip >= 6 and er <= 3:
-            quality_starts += 1
-        if str(start.get("decision", "")).lower() == "win":
-            wins += 1
-
-    starts_count = len(starts)
-    whip = ((total_hits + total_bb) / total_ip) if total_ip else None
-    era = ((total_er * 9) / total_ip) if total_ip else None
-    last_start = starts[0]
-
-    return {
-        "starts_used": starts_count,
-        "avg_ip": f"{(total_ip / starts_count):.1f}",
-        "avg_k": f"{(total_k / starts_count):.1f}",
-        "avg_bb": f"{(total_bb / starts_count):.1f}",
-        "avg_era": f"{era:.2f}" if era is not None else "N/A",
-        "whip": f"{whip:.2f}" if whip is not None else "N/A",
-        "quality_starts": quality_starts,
-        "wins": wins,
-        "last_start": {
-            "ip": last_start.get("inningsPitched", "N/A"),
-            "k": safe_number(last_start.get("strikeOuts")),
-            "bb": safe_number(last_start.get("baseOnBalls")),
-            "er": safe_number(last_start.get("earnedRuns")),
-            "hits": safe_number(last_start.get("hits")),
-            "decision": last_start.get("decision", "N/A"),
-        },
-    }
+def is_il_remove_transaction(text):
+    lowered = normalize_whitespace(text).lower()
+    remove_markers = [
+        "reinstated from the injured list",
+        "reinstated from 7-day il",
+        "reinstated from 10-day il",
+        "reinstated from 15-day il",
+        "reinstated from 60-day il",
+        "returned from rehab assignment",
+        "returned from rehab",
+        "activated from the injured list",
+        "returned from the injured list",
+    ]
+    return any(marker in lowered for marker in remove_markers)
 
 
-def hitter_split(player_id, sit_code):
+def extract_il_type(text):
+    lowered = normalize_whitespace(text).lower()
+    match = re.search(r"(\d+)-day il", lowered)
+    if match:
+        return f"{match.group(1)}-day IL"
+    if "injured list" in lowered:
+        return "Injured List"
+    return "IL"
+
+
+def extract_injury_note(text):
+    normalized = normalize_whitespace(text)
+    if " with " in normalized:
+        return normalized.split(" with ", 1)[1].rstrip(".")
+    if " due to " in normalized:
+        return normalized.split(" due to ", 1)[1].rstrip(".")
+    return normalized
+
+
+def get_transaction_text(transaction):
+    description = normalize_whitespace(
+        transaction.get("description")
+        or transaction.get("typeDesc")
+        or transaction.get("note")
+        or ""
+    )
+    type_desc = normalize_whitespace(transaction.get("typeDesc", ""))
+    return " | ".join(part for part in [description, type_desc] if part)
+
+
+def get_transaction_team_name(transaction):
+    for key in ["team", "toTeam", "fromTeam"]:
+        team = transaction.get(key)
+        if isinstance(team, dict) and team.get("name"):
+            return team["name"]
+
+    for key in ["teamName", "toTeamName", "fromTeamName"]:
+        if transaction.get(key):
+            return normalize_whitespace(transaction.get(key))
+
+    return "MLB"
+
+
+def is_trade_transaction(text):
+    lowered = normalize_whitespace(text).lower()
+    return "trade" in lowered or "traded" in lowered
+
+
+def parse_news_rss(url, limit=8):
+    items = []
+
     try:
-        splits = player_stat_group(
-            player_id,
-            "hitting",
-            "statSplits",
-            extra_query=f"sitCodes={sit_code}",
+        root = ET.fromstring(fetch_text(url))
+        for item in root.findall(".//item")[:limit]:
+            items.append(
+                {
+                    "title": normalize_whitespace(item.findtext("title", "")),
+                    "link": normalize_whitespace(item.findtext("link", "")),
+                    "published": normalize_whitespace(item.findtext("pubDate", "")),
+                    "summary": normalize_whitespace(item.findtext("description", "")),
+                }
+            )
+    except Exception as exc:
+        errors.append(
+            {
+                "stage": "news_rss",
+                "error": str(exc),
+            }
         )
-        if not splits:
-            return {"avg": "N/A", "hits": 0}
 
-        stat = splits[0].get("stat", {})
-        return {
-            "avg": stat.get("avg", "N/A"),
-            "hits": safe_number(stat.get("hits")),
-        }
-    except Exception:
-        return {"avg": "N/A", "hits": 0}
+    return [item for item in items if item.get("title")]
 
 
-def hitter_overview(player_id):
-    profile = player_profile(player_id)
-    season_splits = player_stat_group(player_id, "hitting", "season")
-    season = season_splits[0].get("stat", {}) if season_splits else {}
-    game_logs = player_stat_group(player_id, "hitting", "gameLog")
+def build_recent_transaction_feed(days=10):
+    start_date = (NOW - timedelta(days=days)).date().isoformat()
+    transaction_feed = []
 
-    recent_games = list(reversed(game_logs))[:5]
-    hit_streak = 0
-    for split in recent_games:
-        if safe_number(split.get("stat", {}).get("hits")) > 0:
-            hit_streak += 1
-        else:
+    try:
+        payload = fetch(
+            f"{BASE}/v1/transactions?sportId=1&startDate={start_date}&endDate={TODAY}"
+        )
+        transactions = sorted(
+            payload.get("transactions", []),
+            key=lambda item: (
+                item.get("date", ""),
+                item.get("id", 0),
+            ),
+            reverse=True,
+        )
+
+        for transaction in transactions:
+            person = transaction.get("person") or {}
+            text = get_transaction_text(transaction)
+
+            if not text:
+                continue
+
+            transaction_feed.append(
+                {
+                    "date": transaction.get("date", ""),
+                    "player": person.get("fullName", "Unknown Player"),
+                    "team": get_transaction_team_name(transaction),
+                    "text": text,
+                }
+            )
+    except Exception as exc:
+        errors.append(
+            {
+                "stage": "recent_transactions",
+                "error": str(exc),
+            }
+        )
+
+    return transaction_feed
+
+
+def build_injury_updates(transactions, limit=12):
+    updates = []
+
+    for transaction in transactions:
+        text = transaction["text"]
+        if is_il_add_transaction(text) or is_il_remove_transaction(text):
+            updates.append(
+                {
+                    "date": transaction["date"],
+                    "team": transaction["team"],
+                    "player": transaction["player"],
+                    "update": text,
+                }
+            )
+        if len(updates) >= limit:
             break
 
-    last_ten = list(reversed(game_logs))[:10]
-    last10_hits = sum(safe_number(item.get("stat", {}).get("hits")) for item in last_ten)
-    last10_ab = sum(safe_number(item.get("stat", {}).get("atBats")) for item in last_ten)
-    last10_pa = sum(safe_number(item.get("stat", {}).get("plateAppearances")) for item in last_ten)
-    last10_avg = (last10_hits / last10_ab) if last10_ab else None
+    return updates
 
-    recent_avg = last10_hits / last10_ab if last10_ab else None
-    hot = recent_avg is not None and recent_avg >= 0.350 and hit_streak >= 2
-    cold = recent_avg is not None and recent_avg <= 0.180 and last10_pa >= 8
 
-    return {
-        "name": profile.get("fullName", "Unknown Hitter"),
-        "hand": profile.get("batSide", {}).get("code", "N/A"),
-        "streak": hit_streak,
-        "hot": hot,
-        "cold": cold,
-        "stats": {
-            "avg": season.get("avg", "N/A"),
-            "obp": season.get("obp", "N/A"),
-            "slg": season.get("slg", "N/A"),
-            "ops": season.get("ops", "N/A"),
-            "pa": safe_number(season.get("plateAppearances")),
-        },
-        "last10": {
-            "label": "Last 10 games",
-            "avg": format_baseball_avg(last10_avg) if last10_avg is not None else "N/A",
-            "hits": last10_hits,
-            "ab": last10_ab,
-            "pa": last10_pa,
-        },
-        "vsRHP": hitter_split(player_id, "vr"),
-        "vsLHP": hitter_split(player_id, "vl"),
-        "risp": {"avg": hitter_split(player_id, "risp").get("avg", "N/A")},
+def build_trade_updates(transactions, limit=10):
+    updates = []
+
+    for transaction in transactions:
+        if is_trade_transaction(transaction["text"]):
+            updates.append(
+                {
+                    "date": transaction["date"],
+                    "team": transaction["team"],
+                    "player": transaction["player"],
+                    "update": transaction["text"],
+                }
+            )
+        if len(updates) >= limit:
+            break
+
+    return updates
+
+
+def build_news_roundup(top_news, injury_updates, trade_updates):
+    roundup = {
+        "updated_at": NOW.isoformat(),
+        "headline": "MLB News Desk",
+        "article": "No news roundup generated yet.",
+        "top_news": top_news,
+        "injury_updates": injury_updates,
+        "trade_updates": trade_updates,
     }
 
+    if client:
+        try:
+            news_lines = "\n".join(
+                [f"- {item['title']}" for item in top_news[:6]]
+            ) or "- No major top headlines available."
+            injury_lines = "\n".join(
+                [f"- {item['team']}: {item['player']} ({item['update']})" for item in injury_updates[:8]]
+            ) or "- No recent injury updates available."
+            trade_lines = "\n".join(
+                [f"- {item['team']}: {item['player']} ({item['update']})" for item in trade_updates[:8]]
+            ) or "- No recent MLB trade updates available."
 
-def team_hitter_summaries(team_id):
-    hitters = []
+            prompt = f"""
+You are an MLB news editor.
 
-    for player in team_active_hitters(team_id):
-        player_id = player.get("id")
-        if not player_id:
+Write a sharp daily MLB roundup for a StatStream dashboard.
+
+Requirements:
+- Start with a headline on the first line
+- Then write 3 short paragraphs
+- Paragraph 1: top MLB news
+- Paragraph 2: injuries and availability impact
+- Paragraph 3: trades or roster movement
+- Keep it factual, concise, and mobile-friendly
+- No hype, no speculation, no markdown bullets inside the article body
+
+Top news:
+{news_lines}
+
+Injuries:
+{injury_lines}
+
+Trades / roster movement:
+{trade_lines}
+"""
+
+            response = client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.5,
+            )
+
+            content = response.choices[0].message.content.strip()
+            parts = content.split("\n", 1)
+            roundup["headline"] = parts[0].strip() if parts else "MLB News Desk"
+            roundup["article"] = parts[1].strip() if len(parts) > 1 else content
+        except Exception as exc:
+            roundup["article"] = f"Groq news roundup error: {str(exc)}"
+    else:
+        roundup["article"] = (
+            "Top MLB headlines, injury movement, and trade updates are available below. "
+            "Add a GROQ_API_KEY to generate the AI-written daily roundup."
+        )
+
+    return roundup
+
+
+def build_team_injured_lists():
+    teams_payload = fetch(f"{BASE}/v1/teams?sportId=1&season={SEASON}")
+    teams = sorted(
+        [team for team in teams_payload.get("teams", []) if team.get("active", True)],
+        key=lambda item: item.get("name", ""),
+    )
+    season_start = f"{SEASON}-01-01"
+    team_injuries = []
+
+    for team in teams:
+        team_id = team.get("id")
+        team_name = team.get("name", "Unknown Team")
+        active_il = {}
+
+        if not team_id:
             continue
 
         try:
-            hitters.append(hitter_overview(player_id))
-        except Exception:
-            continue
+            transactions_payload = fetch(
+                f"{BASE}/v1/transactions"
+                f"?teamId={team_id}&sportId=1&startDate={season_start}&endDate={TODAY}"
+            )
+            transactions = sorted(
+                transactions_payload.get("transactions", []),
+                key=lambda item: (
+                    item.get("date", ""),
+                    item.get("id", 0),
+                ),
+            )
 
-    hitters.sort(key=lambda item: safe_number(item.get("stats", {}).get("pa")), reverse=True)
-    return hitters[:6]
+            for transaction in transactions:
+                person = transaction.get("person") or {}
+                player_id = person.get("id")
+                player_name = person.get("fullName", "Unknown Player")
 
+                description = normalize_whitespace(
+                    transaction.get("description")
+                    or transaction.get("typeDesc")
+                    or transaction.get("note")
+                    or ""
+                )
+                type_desc = normalize_whitespace(transaction.get("typeDesc", ""))
+                combined = " | ".join(part for part in [description, type_desc] if part)
+
+                if not player_id or not combined:
+                    continue
+
+                if is_il_add_transaction(combined):
+                    active_il[player_id] = {
+                        "player_id": player_id,
+                        "name": player_name,
+                        "il_type": extract_il_type(combined),
+                        "date": transaction.get("date", ""),
+                        "note": extract_injury_note(combined),
+                        "description": description or type_desc,
+                    }
+                elif is_il_remove_transaction(combined):
+                    active_il.pop(player_id, None)
+
+            players = sorted(active_il.values(), key=lambda item: item["name"])
+            team_injuries.append(
+                {
+                    "team_id": team_id,
+                    "team_name": team_name,
+                    "injured_count": len(players),
+                    "players": players,
+                }
+            )
+        except Exception as exc:
+            errors.append(
+                {
+                    "teamId": team_id,
+                    "stage": "injury_transactions",
+                    "error": str(exc),
+                }
+            )
+            team_injuries.append(
+                {
+                    "team_id": team_id,
+                    "team_name": team_name,
+                    "injured_count": 0,
+                    "players": [],
+                    "error": str(exc),
+                }
+            )
+
+    return team_injuries
+
+
+# =====================================================
+# PLAYER STAT HELPERS (SEASON-TO-DATE)
+# =====================================================
 
 def pitcher_summary(pitcher):
     if not pitcher:
@@ -292,24 +439,6 @@ def pitcher_summary(pitcher):
         "name": pitcher.get("fullName", "Unknown Pitcher"),
         "hand": "N/A",
         "era": "N/A",
-        "last3": {
-            "starts_used": 0,
-            "avg_ip": "N/A",
-            "avg_k": "N/A",
-            "avg_bb": "N/A",
-            "avg_era": "N/A",
-            "whip": "N/A",
-            "quality_starts": 0,
-            "wins": 0,
-            "last_start": {
-                "ip": "N/A",
-                "k": "N/A",
-                "bb": "N/A",
-                "er": "N/A",
-                "hits": "N/A",
-                "decision": "N/A",
-            },
-        },
     }
 
     pitcher_id = pitcher.get("id")
@@ -317,8 +446,9 @@ def pitcher_summary(pitcher):
         return out
 
     try:
-        profile = player_profile(pitcher_id)
-        out["hand"] = profile.get("pitchHand", {}).get("code", "N/A")
+        people = fetch(f"{BASE}/v1/people/{pitcher_id}").get("people", [])
+        if people:
+            out["hand"] = people[0].get("pitchHand", {}).get("code", "N/A")
     except Exception as exc:
         out["profile_error"] = str(exc)
 
@@ -332,11 +462,6 @@ def pitcher_summary(pitcher):
             out["era"] = splits[0].get("stat", {}).get("era", "N/A")
     except Exception as exc:
         out["stats_error"] = str(exc)
-
-    try:
-        out["last3"] = pitcher_last_three(pitcher_id)
-    except Exception as exc:
-        out["last3_error"] = str(exc)
 
     return out
 
@@ -364,209 +489,9 @@ def build_live_or_final_highlights(boxscore, pick_final_pitcher=False):
     return hitters, pitchers
 
 
-def build_recap_stat_lines(boxscore):
-    hitter_lines = []
-    pitcher_lines = []
-
-    for side in ["away", "home"]:
-        team = boxscore.get("teams", {}).get(side, {})
-
-        for batter_id in team.get("batters", []):
-            batting = get_player_stat_block(team, batter_id, "batting")
-            hits = safe_number(batting.get("hits"))
-            home_runs = safe_number(batting.get("homeRuns"))
-            rbi = safe_number(batting.get("rbi"))
-            if hits >= 2 or home_runs >= 1 or rbi >= 2:
-                hitter_lines.append(
-                    f"{get_player_name(team, batter_id)}: {hits} H, {home_runs} HR, {rbi} RBI"
-                )
-
-        for pitcher_id in team.get("pitchers", []):
-            pitching = get_player_stat_block(team, pitcher_id, "pitching")
-            strikeouts = safe_number(pitching.get("strikeOuts"))
-            innings = pitching.get("inningsPitched", "0.0")
-            earned_runs = safe_number(pitching.get("earnedRuns"))
-            if strikeouts >= 5:
-                pitcher_lines.append(
-                    f"{get_player_name(team, pitcher_id)}: {innings} IP, {strikeouts} K, {earned_runs} ER"
-                )
-
-    return hitter_lines[:6], pitcher_lines[:6]
-
-
-def season_leaders():
-    try:
-        payload = fetch(
-            f"{BASE}/v1/stats?stats=season&group=hitting,pitching&playerPool=qualified&sportIds=1&season={SEASON}"
-        )
-        splits = payload.get("stats", [])
-
-        hitting = []
-        pitching = []
-
-        for stat_group in splits:
-            group_name = stat_group.get("group", {}).get("displayName", "")
-            for split in stat_group.get("splits", []):
-                player_name = split.get("player", {}).get("fullName", "Unknown")
-                stat = split.get("stat", {})
-                if group_name == "hitting":
-                    hitting.append({"name": player_name, "stat": stat})
-                elif group_name == "pitching":
-                    pitching.append({"name": player_name, "stat": stat})
-
-        avg_ops = sorted(hitting, key=lambda x: safe_float(x["stat"].get("avg", 0)), reverse=True)[:5]
-        power = sorted(hitting, key=lambda x: safe_number(x["stat"].get("homeRuns", 0)), reverse=True)[:5]
-        strikeouts = sorted(pitching, key=lambda x: safe_number(x["stat"].get("strikeOuts", 0)), reverse=True)[:5]
-        prevention = sorted(pitching, key=lambda x: safe_float(x["stat"].get("era", 999)),)[:5]
-
-        return {
-            "avg_ops": [
-                f"{item['name']}: AVG {item['stat'].get('avg', 'N/A')} | OPS {item['stat'].get('ops', 'N/A')}"
-                for item in avg_ops
-            ],
-            "power": [
-                f"{item['name']}: HR {item['stat'].get('homeRuns', 0)} | RBI {item['stat'].get('rbi', 0)}"
-                for item in power
-            ],
-            "pitching": [
-                f"{item['name']}: K {item['stat'].get('strikeOuts', 0)} | W {item['stat'].get('wins', 0)}"
-                for item in strikeouts
-            ],
-            "run_prevention": [
-                f"{item['name']}: ERA {item['stat'].get('era', 'N/A')} | WHIP {item['stat'].get('whip', 'N/A')}"
-                for item in prevention
-            ],
-        }
-    except Exception:
-        return {
-            "avg_ops": [],
-            "power": [],
-            "pitching": [],
-            "run_prevention": [],
-        }
-
-
-def build_finished_games_today(postgame_today):
-    finished = []
-
-    for game in postgame_today:
-        top_pitch = game["pitcher_lines"][0] if game["pitcher_lines"] else "No top pitching line available"
-        top_hit = game["hitter_lines"][0] if game["hitter_lines"] else "No top batting line available"
-
-        stat_parts = [f"{game['winner']} beat {game['loser']} {game['final_score']}."]
-        if top_pitch != "No top pitching line available":
-            stat_parts.append(f"Top pitching: {top_pitch}.")
-        if top_hit != "No top batting line available":
-            stat_parts.append(f"Top batting: {top_hit}.")
-
-        finished.append({
-            "game": game["game"],
-            "final_score": game["final_score"],
-            "winner": game["winner"],
-            "loser": game["loser"],
-            "top_pitching_line": top_pitch,
-            "top_batting_line": top_hit,
-            "stat_summary": " ".join(stat_parts),
-        })
-
-    return finished
-
-
-def build_previous_day_recap(yesterday_postgame):
-    recap = {
-        "all_games": [],
-        "season_leaders": season_leaders(),
-    }
-
-    if not yesterday_postgame:
-        return recap
-
-    if client:
-        try:
-            raw_games = "\n".join(
-                [
-                    (
-                        f"Game: {game['game']}\n"
-                        f"Final: {game['final_score']}\n"
-                        f"Winner: {game['winner']}\n"
-                        f"Loser: {game['loser']}\n"
-                        f"Exact hitter lines: {'; '.join(game['hitter_lines']) if game['hitter_lines'] else 'No standout hitter line provided'}\n"
-                        f"Exact pitcher lines: {'; '.join(game['pitcher_lines']) if game['pitcher_lines'] else 'No standout pitcher line provided'}\n"
-                    )
-                    for game in yesterday_postgame
-                ]
-            )
-
-            prompt = f"""
-You are writing concise MLB game recaps for a modern baseball dashboard.
-
-Return valid JSON only with this exact schema:
-{{
-  "all_games": [
-    {{
-      "game": "...",
-      "final_score": "...",
-      "top_pitching_line": "...",
-      "top_batting_line": "...",
-      "summary": "2-3 sentence natural recap",
-      "impact_player": "..."
-    }}
-  ]
-}}
-
-Rules:
-- Use only the exact stats and names provided below.
-- Do not invent numbers, innings, strikeouts, hits, home runs, RBI, or events.
-- Write naturally, like a professional MLB recap writer.
-- Mention the players who most shaped the game.
-- If pitching was the biggest factor, make that clear.
-- If offense was decisive, make that clear.
-- If a home run or major RBI performance is listed, use it directly when relevant.
-- Keep each game summary to 2-3 sentences.
-- Avoid robotic or repetitive phrasing.
-- Output JSON only.
-
-Games:
-{raw_games}
-"""
-
-            response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.3,
-            )
-
-            content = response.choices[0].message.content.strip()
-            parsed = json.loads(content)
-            parsed["season_leaders"] = recap["season_leaders"]
-            return parsed
-        except Exception:
-            pass
-
-    for game in yesterday_postgame:
-        top_pitch = game["pitcher_lines"][0] if game["pitcher_lines"] else "No top pitching line available"
-        top_hit = game["hitter_lines"][0] if game["hitter_lines"] else "No top batting line available"
-
-        summary_parts = [f"{game['winner']} beat {game['loser']} {game['final_score']}."]
-        if top_pitch != "No top pitching line available":
-            summary_parts.append(f"{top_pitch} was the leading pitching performance in the game.")
-        if top_hit != "No top batting line available":
-            summary_parts.append(f"{top_hit} was the key offensive contribution.")
-
-        summary = " ".join(summary_parts)
-        impact = top_hit if ("HR" in top_hit or "RBI" in top_hit) else top_pitch
-
-        recap["all_games"].append({
-            "game": game["game"],
-            "final_score": game["final_score"],
-            "top_pitching_line": top_pitch,
-            "top_batting_line": top_hit,
-            "summary": summary,
-            "impact_player": impact,
-        })
-
-    return recap
-
+# =====================================================
+# BUILD TODAY (PRE-GAME / LIVE / FINAL)
+# =====================================================
 
 schedule_today = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={TODAY}&hydrate=probablePitcher"
@@ -582,8 +507,6 @@ for date_block in schedule_today.get("dates", []):
         try:
             away = game["teams"]["away"]["team"]["name"]
             home = game["teams"]["home"]["team"]["name"]
-            away_team_id = game["teams"]["away"]["team"]["id"]
-            home_team_id = game["teams"]["home"]["team"]["id"]
             venue = game["venue"]["name"]
             start = game["gameDate"]
             status = game["status"]["abstractGameState"]
@@ -600,8 +523,6 @@ for date_block in schedule_today.get("dates", []):
                 "status": status,
                 "away_pitcher": pitcher_summary(away_pitcher),
                 "home_pitcher": pitcher_summary(home_pitcher),
-                "away_hitters": team_hitter_summaries(away_team_id),
-                "home_hitters": team_hitter_summaries(home_team_id),
             })
 
             if status in ["Live", "In Progress"]:
@@ -629,7 +550,6 @@ for date_block in schedule_today.get("dates", []):
                 winner = away if away_runs > home_runs else home
                 loser = home if away_runs > home_runs else away
                 hitters, pitchers = build_live_or_final_highlights(box, pick_final_pitcher=True)
-                hitter_lines, pitcher_lines = build_recap_stat_lines(box)
 
                 postgame_today.append({
                     "gamePk": game.get("gamePk"),
@@ -639,8 +559,6 @@ for date_block in schedule_today.get("dates", []):
                     "final_score": f"{away_runs}-{home_runs}",
                     "hitters": hitters,
                     "pitchers": pitchers,
-                    "hitter_lines": hitter_lines,
-                    "pitcher_lines": pitcher_lines,
                 })
         except Exception as exc:
             errors.append({
@@ -648,6 +566,11 @@ for date_block in schedule_today.get("dates", []):
                 "stage": "today_schedule_loop",
                 "error": str(exc),
             })
+
+
+# =====================================================
+# BUILD YESTERDAY (FINAL + AI RECAP)
+# =====================================================
 
 schedule_yesterday = fetch(
     f"{BASE}/v1/schedule?sportId=1&date={YESTERDAY}"
@@ -673,7 +596,6 @@ for date_block in schedule_yesterday.get("dates", []):
             winner = away if away_runs > home_runs else home
             loser = home if away_runs > home_runs else away
             hitters, pitchers = build_live_or_final_highlights(box, pick_final_pitcher=True)
-            hitter_lines, pitcher_lines = build_recap_stat_lines(box)
 
             yesterday_postgame.append({
                 "gamePk": game.get("gamePk"),
@@ -683,8 +605,6 @@ for date_block in schedule_yesterday.get("dates", []):
                 "final_score": f"{away_runs}-{home_runs}",
                 "hitters": hitters,
                 "pitchers": pitchers,
-                "hitter_lines": hitter_lines,
-                "pitcher_lines": pitcher_lines,
             })
         except Exception as exc:
             errors.append({
@@ -693,26 +613,103 @@ for date_block in schedule_yesterday.get("dates", []):
                 "error": str(exc),
             })
 
-finished_games_today = build_finished_games_today(postgame_today)
-previous_day_recap = build_previous_day_recap(yesterday_postgame)
+
+# =====================================================
+# YESTERDAY AI RECAP (GROQ)
+# =====================================================
+
+yesterday_recap = {
+    "date": YESTERDAY,
+    "headline": f"MLB Daily Recap - {datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
+    "article": "No recap generated yet.",
+}
+
+if yesterday_postgame and client:
+    try:
+        games_text = "\n".join(
+            [
+                (
+                    f"Game: {game['game']}\n"
+                    f"Final: {game['final_score']}\n"
+                    f"Winner: {game['winner']}\n"
+                    f"Loser: {game['loser']}\n"
+                    f"Hitters: {', '.join(game['hitters']) if game['hitters'] else 'Multiple contributors'}\n"
+                    f"Pitchers: {', '.join(game['pitchers']) if game['pitchers'] else 'Staff effort'}\n"
+                )
+                for game in yesterday_postgame
+            ]
+        )
+
+        prompt = f"""
+You are a professional MLB columnist.
+
+Write a YESTERDAY MLB recap with:
+- A strong headline
+- One paragraph per game
+- Specific stats and reasons
+- End with a section titled "Biggest Story of the Day"
+
+Avoid generic language.
+
+Games:
+{games_text}
+"""
+
+        response = client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.6,
+        )
+
+        yesterday_recap["article"] = response.choices[0].message.content.strip()
+    except Exception as exc:
+        yesterday_recap["article"] = f"Groq error: {str(exc)}"
+elif yesterday_postgame and not client:
+    yesterday_recap["article"] = "Groq recap skipped because GROQ_API_KEY is not set."
+else:
+    yesterday_recap["article"] = "No final games were available for yesterday."
+
+
+# =====================================================
+# LATEST MLB NEWS / INJURIES / TRADES
+# =====================================================
+
+top_news = parse_news_rss("https://www.mlb.com/feeds/news/rss.xml", limit=8)
+recent_transactions = build_recent_transaction_feed(days=10)
+injury_updates = build_injury_updates(recent_transactions, limit=12)
+trade_updates = build_trade_updates(recent_transactions, limit=10)
+mlb_news = build_news_roundup(top_news, injury_updates, trade_updates)
+
+
+# =====================================================
+# TEAM INJURED LIST
+# =====================================================
+
+injury_report = {
+    "updated_at": NOW.isoformat(),
+    "teams": build_team_injured_lists(),
+    "errors": errors,
+}
+
+
+# =====================================================
+# WRITE FILES
+# =====================================================
 
 timestamp = NOW.isoformat()
 
 write_json("daily.json", {"updated_at": timestamp, "games": daily, "errors": errors})
 write_json("live.json", {"updated_at": timestamp, "games": live, "errors": errors})
-write_json("postgame.json", {"updated_at": timestamp, "games": finished_games_today, "errors": errors})
+write_json("postgame.json", {"updated_at": timestamp, "games": postgame_today, "errors": errors})
 write_json("yesterday_postgame.json", {"updated_at": timestamp, "games": yesterday_postgame, "errors": errors})
-write_json(
-    "yesterday_recap.json",
-    {
-        "date": YESTERDAY,
-        "headline": f"MLB Daily Recap - {datetime.fromisoformat(YESTERDAY).strftime('%B %d, %Y')}",
-        "dashboard_recap": previous_day_recap,
-    },
-)
+write_json("yesterday_recap.json", yesterday_recap)
+write_json("mlb_news.json", mlb_news)
+write_json("injury_report.json", injury_report)
 
 print(f"Wrote daily.json with {len(daily)} games")
 print(f"Wrote live.json with {len(live)} games")
-print(f"Wrote postgame.json with {len(finished_games_today)} games")
+print(f"Wrote postgame.json with {len(postgame_today)} games")
 print(f"Wrote yesterday_postgame.json with {len(yesterday_postgame)} games")
 print("Wrote yesterday_recap.json")
+print("Wrote mlb_news.json")
+print(f"Wrote injury_report.json with {len(injury_report['teams'])} teams")
