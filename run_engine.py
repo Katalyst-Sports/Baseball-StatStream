@@ -471,7 +471,164 @@ def build_season_leaders():
 # =====================================================
 # PLAYER STAT HELPERS
 # =====================================================
+def safe_float(value, default=0.0):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
 
+
+def format_rate(value, digits=3):
+    return f"{value:.{digits}f}"
+
+
+def innings_to_outs(ip_value):
+    ip_text = str(ip_value or "0.0")
+    if "." in ip_text:
+        whole, outs = ip_text.split(".", 1)
+        return int(whole or 0) * 3 + int(outs[:1] or 0)
+    return int(ip_text or 0) * 3
+
+
+def outs_to_innings(outs):
+    whole = outs // 3
+    remainder = outs % 3
+    return f"{whole}.{remainder}"
+
+
+def build_last_10_ab(player_id):
+    try:
+        payload = fetch(
+            f"{BASE}/v1/people/{player_id}/stats"
+            f"?stats=gameLog&group=hitting&season={SEASON}"
+        )
+        stats = payload.get("stats", [])
+        splits = stats[0].get("splits", []) if stats else []
+
+        at_bats = 0
+        hits = 0
+        home_runs = 0
+        rbi = 0
+        walks = 0
+        games_used = 0
+
+        for split in splits:
+            stat = split.get("stat", {})
+            game_abs = int(stat.get("atBats", 0) or 0)
+            if game_abs <= 0:
+                continue
+
+            at_bats += game_abs
+            hits += int(stat.get("hits", 0) or 0)
+            home_runs += int(stat.get("homeRuns", 0) or 0)
+            rbi += int(stat.get("rbi", 0) or 0)
+            walks += int(stat.get("baseOnBalls", 0) or 0)
+            games_used += 1
+
+            if at_bats >= 10:
+                break
+
+        if at_bats == 0:
+            return {}
+
+        return {
+            "avg": format_rate(hits / at_bats, 3),
+            "hits": hits,
+            "atBats": at_bats,
+            "homeRuns": home_runs,
+            "rbi": rbi,
+            "walks": walks,
+            "games": games_used,
+        }
+    except Exception as exc:
+        errors.append({
+            "playerId": player_id,
+            "stage": "last_10_ab",
+            "error": str(exc),
+        })
+        return {}
+
+
+def build_pitcher_last_3_starts(player_id):
+    try:
+        payload = fetch(
+            f"{BASE}/v1/people/{player_id}/stats"
+            f"?stats=gameLog&group=pitching&season={SEASON}"
+        )
+        stats = payload.get("stats", [])
+        splits = stats[0].get("splits", []) if stats else []
+        recent = splits[:3]
+
+        if not recent:
+            return {}
+
+        total_outs = 0
+        total_hits = 0
+        total_bb = 0
+        total_k = 0
+        total_er = 0
+        total_pitches = 0
+        total_strikes = 0
+        quality_starts = 0
+        starts = []
+
+        for split in recent:
+            stat = split.get("stat", {})
+            outs = innings_to_outs(stat.get("inningsPitched", "0.0"))
+            hits = int(stat.get("hits", 0) or 0)
+            walks = int(stat.get("baseOnBalls", 0) or 0)
+            strikeouts = int(stat.get("strikeOuts", 0) or 0)
+            earned_runs = int(stat.get("earnedRuns", 0) or 0)
+            pitches = int(stat.get("numberOfPitches", 0) or 0)
+            strikes = int(stat.get("strikes", 0) or 0)
+
+            total_outs += outs
+            total_hits += hits
+            total_bb += walks
+            total_k += strikeouts
+            total_er += earned_runs
+            total_pitches += pitches
+            total_strikes += strikes
+
+            if outs >= 18 and earned_runs <= 3:
+                quality_starts += 1
+
+            starts.append({
+                "date": split.get("date", ""),
+                "opponent": ((split.get("opponent") or {}).get("name", "Opponent")),
+                "ip": stat.get("inningsPitched", "0.0"),
+                "er": earned_runs,
+                "k": strikeouts,
+                "bb": walks,
+                "pitches": pitches,
+                "strikes": strikes,
+            })
+
+        innings_value = total_outs / 3 if total_outs else 0
+        avg_ip = outs_to_innings(round(total_outs / len(recent))) if recent else "0.0"
+        era = (total_er * 9 / innings_value) if innings_value else 0
+        whip = ((total_hits + total_bb) / innings_value) if innings_value else 0
+        strike_pct = (total_strikes / total_pitches * 100) if total_pitches else 0
+
+        return {
+            "starts": starts,
+            "avg_ip": avg_ip,
+            "avg_k": format_rate(total_k / len(recent), 1),
+            "avg_bb": format_rate(total_bb / len(recent), 1),
+            "avg_pitches": format_rate(total_pitches / len(recent), 1),
+            "avg_strikes": format_rate(total_strikes / len(recent), 1),
+            "era": format_rate(era, 2),
+            "whip": format_rate(whip, 2),
+            "strike_pct": format_rate(strike_pct, 1),
+            "quality_starts": quality_starts,
+        }
+    except Exception as exc:
+        errors.append({
+            "playerId": player_id,
+            "stage": "pitcher_last_3_starts",
+            "error": str(exc),
+        })
+        return {}
 def format_hitter_stats(stat):
     if not stat:
         return {}
@@ -521,6 +678,7 @@ def build_team_hitters(team_id):
                 hitters.append({
                     "name": player_name,
                     "stats": format_hitter_stats(stat_block),
+                    "last10ab": build_last_10_ab(player_id),
                 })
             except Exception as exc:
                 errors.append({
@@ -531,7 +689,7 @@ def build_team_hitters(team_id):
 
         hitters.sort(
             key=lambda item: (
-                -float(item["stats"].get("ops", 0) or 0) if str(item["stats"].get("ops", "0")).replace(".", "", 1).isdigit() else 0,
+                -safe_float(item["stats"].get("ops", 0), 0.0),
                 item["name"]
             )
         )
@@ -545,7 +703,7 @@ def build_team_hitters(team_id):
             "error": str(exc),
         })
         return []
-
+        
 
 def pitcher_summary(pitcher):
     if not pitcher:
@@ -556,6 +714,7 @@ def pitcher_summary(pitcher):
         "name": pitcher.get("fullName", "Unknown Pitcher"),
         "hand": "N/A",
         "era": "N/A",
+        "whip": "N/A",
     }
 
     pitcher_id = pitcher.get("id")
@@ -576,10 +735,13 @@ def pitcher_summary(pitcher):
         ).get("stats", [])
         splits = stats[0].get("splits", []) if stats else []
         if splits:
-            out["era"] = splits[0].get("stat", {}).get("era", "N/A")
+            stat_block = splits[0].get("stat", {})
+            out["era"] = stat_block.get("era", "N/A")
+            out["whip"] = stat_block.get("whip", "N/A")
     except Exception as exc:
         out["stats_error"] = str(exc)
 
+    out["last3"] = build_pitcher_last_3_starts(pitcher_id)
     return out
 
 
