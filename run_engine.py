@@ -26,6 +26,8 @@ SEASON = NOW.year
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
 
+errors = []
+
 
 # =====================================================
 # UTILITIES
@@ -41,6 +43,15 @@ def fetch_text(url):
     req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urlopen(req, timeout=20) as response:
         return response.read().decode("utf-8")
+
+
+def write_json(path, payload):
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, indent=2)
+
+
+def normalize_whitespace(value):
+    return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
 def safe_number(value, default=0):
@@ -69,69 +80,31 @@ def get_player_name(team, player_id):
     return player.get("person", {}).get("fullName", "Unknown Player")
 
 
-def write_json(path, payload):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(payload, fh, indent=2)
+# =====================================================
+# NEWS / TRANSACTIONS HELPERS
+# =====================================================
 
+def parse_news_rss(url, limit=8):
+    items = []
 
-def normalize_whitespace(value):
-    return re.sub(r"\s+", " ", str(value or "")).strip()
+    try:
+        root = ET.fromstring(fetch_text(url))
+        for item in root.findall(".//item")[:limit]:
+            items.append(
+                {
+                    "title": normalize_whitespace(item.findtext("title", "")),
+                    "link": normalize_whitespace(item.findtext("link", "")),
+                    "published": normalize_whitespace(item.findtext("pubDate", "")),
+                    "summary": normalize_whitespace(item.findtext("description", "")),
+                }
+            )
+    except Exception as exc:
+        errors.append({
+            "stage": "news_rss",
+            "error": str(exc),
+        })
 
-
-def is_il_add_transaction(text):
-    lowered = normalize_whitespace(text).lower()
-    il_markers = [
-        "injured list",
-        "7-day il",
-        "10-day il",
-        "15-day il",
-        "60-day il",
-    ]
-    add_markers = [
-        "placed",
-        "transferred",
-        "selected contract",
-        "returned to il",
-        "returned to the injured list",
-    ]
-    return any(marker in lowered for marker in il_markers) and any(
-        marker in lowered for marker in add_markers
-    )
-
-
-def is_il_remove_transaction(text):
-    lowered = normalize_whitespace(text).lower()
-    remove_markers = [
-        "reinstated from the injured list",
-        "reinstated from 7-day il",
-        "reinstated from 10-day il",
-        "reinstated from 15-day il",
-        "reinstated from 60-day il",
-        "returned from rehab assignment",
-        "returned from rehab",
-        "activated from the injured list",
-        "returned from the injured list",
-    ]
-    return any(marker in lowered for marker in remove_markers)
-
-
-def extract_il_type(text):
-    lowered = normalize_whitespace(text).lower()
-    match = re.search(r"(\d+)-day il", lowered)
-    if match:
-        return f"{match.group(1)}-day IL"
-    if "injured list" in lowered:
-        return "Injured List"
-    return "IL"
-
-
-def extract_injury_note(text):
-    normalized = normalize_whitespace(text)
-    if " with " in normalized:
-        return normalized.split(" with ", 1)[1].rstrip(".")
-    if " due to " in normalized:
-        return normalized.split(" due to ", 1)[1].rstrip(".")
-    return normalized
+    return [item for item in items if item.get("title")]
 
 
 def get_transaction_text(transaction):
@@ -163,29 +136,46 @@ def is_trade_transaction(text):
     return "trade" in lowered or "traded" in lowered
 
 
-def parse_news_rss(url, limit=8):
-    items = []
+def is_il_add_transaction(text):
+    lowered = normalize_whitespace(text).lower()
+    il_markers = ["injured list", "7-day il", "10-day il", "15-day il", "60-day il"]
+    add_markers = ["placed", "transferred", "returned to il", "returned to the injured list"]
+    return any(marker in lowered for marker in il_markers) and any(
+        marker in lowered for marker in add_markers
+    )
 
-    try:
-        root = ET.fromstring(fetch_text(url))
-        for item in root.findall(".//item")[:limit]:
-            items.append(
-                {
-                    "title": normalize_whitespace(item.findtext("title", "")),
-                    "link": normalize_whitespace(item.findtext("link", "")),
-                    "published": normalize_whitespace(item.findtext("pubDate", "")),
-                    "summary": normalize_whitespace(item.findtext("description", "")),
-                }
-            )
-    except Exception as exc:
-        errors.append(
-            {
-                "stage": "news_rss",
-                "error": str(exc),
-            }
-        )
 
-    return [item for item in items if item.get("title")]
+def is_il_remove_transaction(text):
+    lowered = normalize_whitespace(text).lower()
+    remove_markers = [
+        "reinstated from the injured list",
+        "reinstated from 7-day il",
+        "reinstated from 10-day il",
+        "reinstated from 15-day il",
+        "reinstated from 60-day il",
+        "activated from the injured list",
+        "returned from the injured list",
+    ]
+    return any(marker in lowered for marker in remove_markers)
+
+
+def extract_il_type(text):
+    lowered = normalize_whitespace(text).lower()
+    match = re.search(r"(\d+)-day il", lowered)
+    if match:
+        return f"{match.group(1)}-day IL"
+    if "injured list" in lowered:
+        return "Injured List"
+    return "IL"
+
+
+def extract_injury_note(text):
+    normalized = normalize_whitespace(text)
+    if " with " in normalized:
+        return normalized.split(" with ", 1)[1].rstrip(".")
+    if " due to " in normalized:
+        return normalized.split(" due to ", 1)[1].rstrip(".")
+    return normalized
 
 
 def build_recent_transaction_feed(days=10):
@@ -198,10 +188,7 @@ def build_recent_transaction_feed(days=10):
         )
         transactions = sorted(
             payload.get("transactions", []),
-            key=lambda item: (
-                item.get("date", ""),
-                item.get("id", 0),
-            ),
+            key=lambda item: (item.get("date", ""), item.get("id", 0)),
             reverse=True,
         )
 
@@ -221,12 +208,10 @@ def build_recent_transaction_feed(days=10):
                 }
             )
     except Exception as exc:
-        errors.append(
-            {
-                "stage": "recent_transactions",
-                "error": str(exc),
-            }
-        )
+        errors.append({
+            "stage": "recent_transactions",
+            "error": str(exc),
+        })
 
     return transaction_feed
 
@@ -270,6 +255,82 @@ def build_trade_updates(transactions, limit=10):
     return updates
 
 
+def build_team_injured_lists():
+    teams_payload = fetch(f"{BASE}/v1/teams?sportId=1&season={SEASON}")
+    teams = sorted(
+        [team for team in teams_payload.get("teams", []) if team.get("active", True)],
+        key=lambda item: item.get("name", ""),
+    )
+    season_start = f"{SEASON}-01-01"
+    team_injuries = []
+
+    for team in teams:
+        team_id = team.get("id")
+        team_name = team.get("name", "Unknown Team")
+        active_il = {}
+
+        if not team_id:
+            continue
+
+        try:
+            transactions_payload = fetch(
+                f"{BASE}/v1/transactions"
+                f"?teamId={team_id}&sportId=1&startDate={season_start}&endDate={TODAY}"
+            )
+            transactions = sorted(
+                transactions_payload.get("transactions", []),
+                key=lambda item: (item.get("date", ""), item.get("id", 0)),
+            )
+
+            for transaction in transactions:
+                person = transaction.get("person") or {}
+                player_id = person.get("id")
+                player_name = person.get("fullName", "Unknown Player")
+                combined = get_transaction_text(transaction)
+
+                if not player_id or not combined:
+                    continue
+
+                if is_il_add_transaction(combined):
+                    active_il[player_id] = {
+                        "player_id": player_id,
+                        "name": player_name,
+                        "il_type": extract_il_type(combined),
+                        "date": transaction.get("date", ""),
+                        "note": extract_injury_note(combined),
+                        "description": combined,
+                    }
+                elif is_il_remove_transaction(combined):
+                    active_il.pop(player_id, None)
+
+            players = sorted(active_il.values(), key=lambda item: item["name"])
+            team_injuries.append(
+                {
+                    "team_id": team_id,
+                    "team_name": team_name,
+                    "injured_count": len(players),
+                    "players": players,
+                }
+            )
+        except Exception as exc:
+            errors.append({
+                "teamId": team_id,
+                "stage": "injury_transactions",
+                "error": str(exc),
+            })
+            team_injuries.append(
+                {
+                    "team_id": team_id,
+                    "team_name": team_name,
+                    "injured_count": 0,
+                    "players": [],
+                    "error": str(exc),
+                }
+            )
+
+    return team_injuries
+
+
 def build_news_roundup(top_news, injury_updates, trade_updates):
     roundup = {
         "updated_at": NOW.isoformat(),
@@ -282,15 +343,9 @@ def build_news_roundup(top_news, injury_updates, trade_updates):
 
     if client:
         try:
-            news_lines = "\n".join(
-                [f"- {item['title']}" for item in top_news[:6]]
-            ) or "- No major top headlines available."
-            injury_lines = "\n".join(
-                [f"- {item['team']}: {item['player']} ({item['update']})" for item in injury_updates[:8]]
-            ) or "- No recent injury updates available."
-            trade_lines = "\n".join(
-                [f"- {item['team']}: {item['player']} ({item['update']})" for item in trade_updates[:8]]
-            ) or "- No recent MLB trade updates available."
+            news_lines = "\n".join([f"- {item['title']}" for item in top_news[:6]]) or "- No major top headlines available."
+            injury_lines = "\n".join([f"- {item['team']}: {item['player']} ({item['update']})" for item in injury_updates[:8]]) or "- No recent injury updates available."
+            trade_lines = "\n".join([f"- {item['team']}: {item['player']} ({item['update']})" for item in trade_updates[:8]]) or "- No recent MLB trade updates available."
 
             prompt = f"""
 You are an MLB news editor.
@@ -337,97 +392,8 @@ Trades / roster movement:
     return roundup
 
 
-def build_team_injured_lists():
-    teams_payload = fetch(f"{BASE}/v1/teams?sportId=1&season={SEASON}")
-    teams = sorted(
-        [team for team in teams_payload.get("teams", []) if team.get("active", True)],
-        key=lambda item: item.get("name", ""),
-    )
-    season_start = f"{SEASON}-01-01"
-    team_injuries = []
-
-    for team in teams:
-        team_id = team.get("id")
-        team_name = team.get("name", "Unknown Team")
-        active_il = {}
-
-        if not team_id:
-            continue
-
-        try:
-            transactions_payload = fetch(
-                f"{BASE}/v1/transactions"
-                f"?teamId={team_id}&sportId=1&startDate={season_start}&endDate={TODAY}"
-            )
-            transactions = sorted(
-                transactions_payload.get("transactions", []),
-                key=lambda item: (
-                    item.get("date", ""),
-                    item.get("id", 0),
-                ),
-            )
-
-            for transaction in transactions:
-                person = transaction.get("person") or {}
-                player_id = person.get("id")
-                player_name = person.get("fullName", "Unknown Player")
-
-                description = normalize_whitespace(
-                    transaction.get("description")
-                    or transaction.get("typeDesc")
-                    or transaction.get("note")
-                    or ""
-                )
-                type_desc = normalize_whitespace(transaction.get("typeDesc", ""))
-                combined = " | ".join(part for part in [description, type_desc] if part)
-
-                if not player_id or not combined:
-                    continue
-
-                if is_il_add_transaction(combined):
-                    active_il[player_id] = {
-                        "player_id": player_id,
-                        "name": player_name,
-                        "il_type": extract_il_type(combined),
-                        "date": transaction.get("date", ""),
-                        "note": extract_injury_note(combined),
-                        "description": description or type_desc,
-                    }
-                elif is_il_remove_transaction(combined):
-                    active_il.pop(player_id, None)
-
-            players = sorted(active_il.values(), key=lambda item: item["name"])
-            team_injuries.append(
-                {
-                    "team_id": team_id,
-                    "team_name": team_name,
-                    "injured_count": len(players),
-                    "players": players,
-                }
-            )
-        except Exception as exc:
-            errors.append(
-                {
-                    "teamId": team_id,
-                    "stage": "injury_transactions",
-                    "error": str(exc),
-                }
-            )
-            team_injuries.append(
-                {
-                    "team_id": team_id,
-                    "team_name": team_name,
-                    "injured_count": 0,
-                    "players": [],
-                    "error": str(exc),
-                }
-            )
-
-    return team_injuries
-
-
 # =====================================================
-# PLAYER STAT HELPERS (SEASON-TO-DATE)
+# PLAYER STAT HELPERS
 # =====================================================
 
 def pitcher_summary(pitcher):
@@ -490,7 +456,7 @@ def build_live_or_final_highlights(boxscore, pick_final_pitcher=False):
 
 
 # =====================================================
-# BUILD TODAY (PRE-GAME / LIVE / FINAL)
+# BUILD TODAY
 # =====================================================
 
 schedule_today = fetch(
@@ -500,7 +466,6 @@ schedule_today = fetch(
 daily = []
 live = []
 postgame_today = []
-errors = []
 
 for date_block in schedule_today.get("dates", []):
     for game in date_block.get("games", []):
@@ -569,7 +534,7 @@ for date_block in schedule_today.get("dates", []):
 
 
 # =====================================================
-# BUILD YESTERDAY (FINAL + AI RECAP)
+# BUILD YESTERDAY
 # =====================================================
 
 schedule_yesterday = fetch(
@@ -615,7 +580,7 @@ for date_block in schedule_yesterday.get("dates", []):
 
 
 # =====================================================
-# YESTERDAY AI RECAP (GROQ)
+# YESTERDAY AI RECAP
 # =====================================================
 
 yesterday_recap = {
@@ -671,19 +636,15 @@ else:
 
 
 # =====================================================
-# LATEST MLB NEWS / INJURIES / TRADES
+# NEWS / IL FILES
 # =====================================================
 
 top_news = parse_news_rss("https://www.mlb.com/feeds/news/rss.xml", limit=8)
 recent_transactions = build_recent_transaction_feed(days=10)
 injury_updates = build_injury_updates(recent_transactions, limit=12)
 trade_updates = build_trade_updates(recent_transactions, limit=10)
+
 mlb_news = build_news_roundup(top_news, injury_updates, trade_updates)
-
-
-# =====================================================
-# TEAM INJURED LIST
-# =====================================================
 
 injury_report = {
     "updated_at": NOW.isoformat(),
@@ -711,5 +672,6 @@ print(f"Wrote live.json with {len(live)} games")
 print(f"Wrote postgame.json with {len(postgame_today)} games")
 print(f"Wrote yesterday_postgame.json with {len(yesterday_postgame)} games")
 print("Wrote yesterday_recap.json")
-print("Wrote mlb_news.json")
+print(f"Wrote mlb_news.json with {len(top_news)} headlines")
 print(f"Wrote injury_report.json with {len(injury_report['teams'])} teams")
+
