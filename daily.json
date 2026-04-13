@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-13T16:13:54.310868-04:00",
+  "updated_at": "2026-04-13T18:32:53.641425-04:00",
   "games": [
     {
       "gamePk": 823153,
@@ -7,13 +7,13 @@
       "home_team": "Seattle Mariners",
       "venue": "T-Mobile Park",
       "start": "2026-04-13T20:10:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 681347,
         "name": "Mike Burrows",
         "hand": "R",
-        "era": "5.63",
-        "whip": "1.75",
+        "era": "6.55",
+        "whip": "1.82",
         "last3": {
           "starts": [
             {
@@ -62,8 +62,8 @@
         "id": 669923,
         "name": "George Kirby",
         "hand": "R",
-        "era": "3.54",
-        "whip": "0.89",
+        "era": "3.25",
+        "whip": "0.94",
         "last3": {
           "starts": [
             {
@@ -112,10 +112,10 @@
         {
           "name": "Yordan Alvarez",
           "stats": {
-            "avg": ".333",
-            "obp": ".493",
-            "slg": ".741",
-            "ops": "1.234",
+            "avg": ".321",
+            "obp": ".487",
+            "slg": ".714",
+            "ops": "1.201",
             "homeRuns": 6,
             "rbi": 14
           },
@@ -152,10 +152,10 @@
         {
           "name": "Jose Altuve",
           "stats": {
-            "avg": ".328",
-            "obp": ".451",
-            "slg": ".517",
-            "ops": ".968",
+            "avg": ".311",
+            "obp": ".432",
+            "slg": ".492",
+            "ops": ".924",
             "homeRuns": 2,
             "rbi": 6
           },
@@ -172,10 +172,10 @@
         {
           "name": "Christian Walker",
           "stats": {
-            "avg": ".298",
-            "obp": ".375",
-            "slg": ".561",
-            "ops": ".936",
+            "avg": ".283",
+            "obp": ".368",
+            "slg": ".533",
+            "ops": ".901",
             "homeRuns": 3,
             "rbi": 13
           },
@@ -192,10 +192,10 @@
         {
           "name": "Cam Smith",
           "stats": {
-            "avg": ".286",
-            "obp": ".375",
-            "slg": ".518",
-            "ops": ".893",
+            "avg": ".283",
+            "obp": ".368",
+            "slg": ".500",
+            "ops": ".868",
             "homeRuns": 3,
             "rbi": 8
           },
@@ -210,32 +210,12 @@
           }
         },
         {
-          "name": "Taylor Trammell",
-          "stats": {
-            "avg": ".286",
-            "obp": ".444",
-            "slg": ".429",
-            "ops": ".873",
-            "homeRuns": 0,
-            "rbi": 3
-          },
-          "last10ab": {
-            "avg": "0.286",
-            "hits": 2,
-            "atBats": 7,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 1,
-            "games": 2
-          }
-        },
-        {
           "name": "Carlos Correa",
           "stats": {
-            "avg": ".294",
-            "obp": ".368",
-            "slg": ".412",
-            "ops": ".780",
+            "avg": ".291",
+            "obp": ".361",
+            "slg": ".400",
+            "ops": ".761",
             "homeRuns": 1,
             "rbi": 9
           },
@@ -252,10 +232,10 @@
         {
           "name": "Joey Loperfido",
           "stats": {
-            "avg": ".279",
-            "obp": ".360",
-            "slg": ".372",
-            "ops": ".732",
+            "avg": ".295",
+            "obp": ".373",
+            "slg": ".386",
+            "ops": ".759",
             "homeRuns": 0,
             "rbi": 5
           },
@@ -270,12 +250,32 @@
           }
         },
         {
+          "name": "Taylor Trammell",
+          "stats": {
+            "avg": ".273",
+            "obp": ".385",
+            "slg": ".364",
+            "ops": ".749",
+            "homeRuns": 0,
+            "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Isaac Paredes",
           "stats": {
-            "avg": ".225",
-            "obp": ".340",
-            "slg": ".325",
-            "ops": ".665",
+            "avg": ".250",
+            "obp": ".353",
+            "slg": ".341",
+            "ops": ".694",
             "homeRuns": 0,
             "rbi": 6
           },
@@ -294,10 +294,10 @@
         {
           "name": "Brendan Donovan",
           "stats": {
-            "avg": ".293",
-            "obp": ".412",
-            "slg": ".561",
-            "ops": ".973",
+            "avg": ".311",
+            "obp": ".429",
+            "slg": ".578",
+            "ops": "1.007",
             "homeRuns": 3,
             "rbi": 6
           },
@@ -314,12 +314,12 @@
         {
           "name": "Luke Raley",
           "stats": {
-            "avg": ".255",
-            "obp": ".314",
-            "slg": ".553",
-            "ops": ".867",
+            "avg": ".294",
+            "obp": ".345",
+            "slg": ".569",
+            "ops": ".914",
             "homeRuns": 3,
-            "rbi": 9
+            "rbi": 10
           },
           "last10ab": {
             "avg": "0.286",
@@ -334,10 +334,10 @@
         {
           "name": "Randy Arozarena",
           "stats": {
-            "avg": ".291",
-            "obp": ".426",
-            "slg": ".400",
-            "ops": ".826",
+            "avg": ".271",
+            "obp": ".403",
+            "slg": ".373",
+            "ops": ".776",
             "homeRuns": 1,
             "rbi": 7
           },
@@ -349,26 +349,6 @@
             "rbi": 2,
             "walks": 5,
             "games": 4
-          }
-        },
-        {
-          "name": "Cole Young",
-          "stats": {
-            "avg": ".259",
-            "obp": ".355",
-            "slg": ".444",
-            "ops": ".799",
-            "homeRuns": 2,
-            "rbi": 9
-          },
-          "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
-            "homeRuns": 1,
-            "rbi": 3,
-            "walks": 0,
-            "games": 3
           }
         },
         {
@@ -392,12 +372,32 @@
           }
         },
         {
+          "name": "Cole Young",
+          "stats": {
+            "avg": ".241",
+            "obp": ".333",
+            "slg": ".414",
+            "ops": ".747",
+            "homeRuns": 2,
+            "rbi": 9
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
+          }
+        },
+        {
           "name": "J.P. Crawford",
           "stats": {
-            "avg": ".208",
-            "obp": ".457",
+            "avg": ".214",
+            "obp": ".436",
             "slg": ".250",
-            "ops": ".707",
+            "ops": ".686",
             "homeRuns": 0,
             "rbi": 4
           },
@@ -414,10 +414,10 @@
         {
           "name": "Julio Rodr\u00edguez",
           "stats": {
-            "avg": ".194",
-            "obp": ".286",
-            "slg": ".258",
-            "ops": ".544",
+            "avg": ".212",
+            "obp": ".297",
+            "slg": ".288",
+            "ops": ".585",
             "homeRuns": 1,
             "rbi": 5
           },
@@ -454,10 +454,10 @@
         {
           "name": "Cal Raleigh",
           "stats": {
-            "avg": ".133",
-            "obp": ".232",
-            "slg": ".267",
-            "ops": ".499",
+            "avg": ".154",
+            "obp": ".243",
+            "slg": ".277",
+            "ops": ".520",
             "homeRuns": 2,
             "rbi": 10
           },
@@ -479,7 +479,7 @@
       "home_team": "Baltimore Orioles",
       "venue": "Oriole Park at Camden Yards",
       "start": "2026-04-13T22:35:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 669194,
         "name": "Ryne Nelson",
@@ -794,26 +794,6 @@
           }
         },
         {
-          "name": "Ryan Mountcastle",
-          "stats": {
-            "avg": ".286",
-            "obp": ".333",
-            "slg": ".357",
-            "ops": ".690",
-            "homeRuns": 0,
-            "rbi": 1
-          },
-          "last10ab": {
-            "avg": "0.250",
-            "hits": 3,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 6
-          }
-        },
-        {
           "name": "Dylan Beavers",
           "stats": {
             "avg": ".250",
@@ -892,6 +872,26 @@
             "walks": 2,
             "games": 3
           }
+        },
+        {
+          "name": "Samuel Basallo",
+          "stats": {
+            "avg": ".150",
+            "obp": ".261",
+            "slg": ".300",
+            "ops": ".561",
+            "homeRuns": 2,
+            "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 3
+          }
         }
       ]
     },
@@ -901,7 +901,7 @@
       "home_team": "Pittsburgh Pirates",
       "venue": "PNC Park",
       "start": "2026-04-13T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 676917,
         "name": "Cade Cavalli",
@@ -1373,7 +1373,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-04-13T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 665871,
         "name": "Javier Assad",
@@ -3484,26 +3484,6 @@
           }
         },
         {
-          "name": "CJ Kayfus",
-          "stats": {
-            "avg": ".182",
-            "obp": ".280",
-            "slg": ".364",
-            "ops": ".644",
-            "homeRuns": 1,
-            "rbi": 2
-          },
-          "last10ab": {
-            "avg": "0.000",
-            "hits": 0,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 2,
-            "games": 4
-          }
-        },
-        {
           "name": "Jos\u00e9 Ram\u00edrez",
           "stats": {
             "avg": ".180",
@@ -3521,6 +3501,26 @@
             "rbi": 3,
             "walks": 0,
             "games": 3
+          }
+        },
+        {
+          "name": "David Fry",
+          "stats": {
+            "avg": ".200",
+            "obp": ".333",
+            "slg": ".250",
+            "ops": ".583",
+            "homeRuns": 0,
+            "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 6
           }
         }
       ],
