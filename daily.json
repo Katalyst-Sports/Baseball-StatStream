@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16T06:44:23.795406-04:00",
+  "updated_at": "2026-04-16T12:10:59.500467-04:00",
   "games": [
     {
       "gamePk": 823396,
@@ -1414,7 +1414,56 @@
       "venue": "Yankee Stadium",
       "start": "2026-04-16T17:35:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 608718,
+        "name": "Brent Suter",
+        "hand": "L",
+        "era": "2.08",
+        "whip": "1.08",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Houston Astros",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 1,
+              "pitches": 24,
+              "strikes": 15
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Chicago Cubs",
+              "ip": "2.0",
+              "er": 0,
+              "k": 4,
+              "bb": 0,
+              "pitches": 44,
+              "strikes": 30
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Seattle Mariners",
+              "ip": "1.0",
+              "er": 2,
+              "k": 0,
+              "bb": 1,
+              "pitches": 26,
+              "strikes": 20
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "2.0",
+          "avg_bb": "0.7",
+          "avg_pitches": "31.3",
+          "avg_strikes": "21.7",
+          "era": "3.60",
+          "whip": "1.60",
+          "strike_pct": "69.1",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 608331,
         "name": "Max Fried",
