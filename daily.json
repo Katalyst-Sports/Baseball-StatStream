@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-21T11:55:29.526722-04:00",
+  "updated_at": "2026-04-21T15:55:11.886607-04:00",
   "games": [
     {
       "gamePk": 824448,
@@ -170,26 +170,6 @@
           }
         },
         {
-          "name": "Taylor Trammell",
-          "stats": {
-            "avg": ".345",
-            "obp": ".424",
-            "slg": ".448",
-            "ops": ".872",
-            "homeRuns": 0,
-            "rbi": 4
-          },
-          "last10ab": {
-            "avg": "0.273",
-            "hits": 3,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
           "name": "Jose Altuve",
           "stats": {
             "avg": ".281",
@@ -286,6 +266,26 @@
             "homeRuns": 1,
             "rbi": 3,
             "walks": 0,
+            "games": 4
+          }
+        },
+        {
+          "name": "Dustin Harris",
+          "stats": {
+            "avg": ".176",
+            "obp": ".364",
+            "slg": ".235",
+            "ops": ".599",
+            "homeRuns": 0,
+            "rbi": 1
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
             "games": 4
           }
         }
@@ -3012,6 +3012,26 @@
           }
         },
         {
+          "name": "Royce Lewis",
+          "stats": {
+            "avg": ".222",
+            "obp": ".378",
+            "slg": ".444",
+            "ops": ".822",
+            "homeRuns": 2,
+            "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 2,
+            "rbi": 3,
+            "walks": 1,
+            "games": 4
+          }
+        },
+        {
           "name": "Josh Bell",
           "stats": {
             "avg": ".263",
@@ -3089,26 +3109,6 @@
             "rbi": 0,
             "walks": 1,
             "games": 3
-          }
-        },
-        {
-          "name": "Brooks Lee",
-          "stats": {
-            "avg": ".219",
-            "obp": ".286",
-            "slg": ".375",
-            "ops": ".661",
-            "homeRuns": 3,
-            "rbi": 12
-          },
-          "last10ab": {
-            "avg": "0.154",
-            "hits": 2,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 4
           }
         }
       ],
@@ -3444,6 +3444,26 @@
           }
         },
         {
+          "name": "Adley Rutschman",
+          "stats": {
+            "avg": ".294",
+            "obp": ".385",
+            "slg": ".471",
+            "ops": ".856",
+            "homeRuns": 0,
+            "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
+          }
+        },
+        {
           "name": "Taylor Ward",
           "stats": {
             "avg": ".293",
@@ -3561,26 +3581,6 @@
             "rbi": 3,
             "walks": 0,
             "games": 4
-          }
-        },
-        {
-          "name": "Sam Huff",
-          "stats": {
-            "avg": ".222",
-            "obp": ".222",
-            "slg": ".333",
-            "ops": ".555",
-            "homeRuns": 0,
-            "rbi": 1
-          },
-          "last10ab": {
-            "avg": "0.222",
-            "hits": 2,
-            "atBats": 9,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
-            "games": 3
           }
         }
       ],
@@ -4719,7 +4719,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 623474,
+        "name": "Jimmy Herget",
+        "hand": "R",
+        "era": "1.64",
+        "whip": "0.91",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-27",
+              "opponent": "Miami Marlins",
+              "ip": "1.1",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 20,
+              "strikes": 12
+            },
+            {
+              "date": "2026-03-29",
+              "opponent": "Miami Marlins",
+              "ip": "0.2",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 8,
+              "strikes": 6
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Toronto Blue Jays",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 16,
+              "strikes": 12
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "1.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "14.7",
+          "avg_strikes": "10.0",
+          "era": "0.00",
+          "whip": "0.67",
+          "strike_pct": "68.2",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Luis Campusano",
