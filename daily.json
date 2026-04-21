@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-21T15:55:11.886607-04:00",
+  "updated_at": "2026-04-21T18:25:40.399019-04:00",
   "games": [
     {
       "gamePk": 824448,
@@ -7,13 +7,13 @@
       "home_team": "Cleveland Guardians",
       "venue": "Progressive Field",
       "start": "2026-04-21T22:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 680802,
         "name": "Ryan Weiss",
         "hand": "R",
-        "era": "6.75",
-        "whip": "2.05",
+        "era": "6.46",
+        "whip": "2.02",
         "last3": {
           "starts": [
             {
@@ -62,8 +62,8 @@
         "id": 800048,
         "name": "Parker Messick",
         "hand": "L",
-        "era": "1.05",
-        "whip": "0.78",
+        "era": "1.01",
+        "whip": "0.75",
         "last3": {
           "starts": [
             {
@@ -112,10 +112,10 @@
         {
           "name": "Yordan Alvarez",
           "stats": {
-            "avg": ".326",
-            "obp": ".459",
-            "slg": ".756",
-            "ops": "1.215",
+            "avg": ".322",
+            "obp": ".455",
+            "slg": ".747",
+            "ops": "1.202",
             "homeRuns": 10,
             "rbi": 21
           },
@@ -172,10 +172,10 @@
         {
           "name": "Jose Altuve",
           "stats": {
-            "avg": ".281",
-            "obp": ".385",
-            "slg": ".449",
-            "ops": ".834",
+            "avg": ".278",
+            "obp": ".381",
+            "slg": ".444",
+            "ops": ".825",
             "homeRuns": 3,
             "rbi": 8
           },
@@ -212,10 +212,10 @@
         {
           "name": "Carlos Correa",
           "stats": {
-            "avg": ".275",
-            "obp": ".359",
-            "slg": ".375",
-            "ops": ".734",
+            "avg": ".272",
+            "obp": ".355",
+            "slg": ".370",
+            "ops": ".725",
             "homeRuns": 1,
             "rbi": 12
           },
@@ -314,10 +314,10 @@
         {
           "name": "Jos\u00e9 Ram\u00edrez",
           "stats": {
-            "avg": ".230",
-            "obp": ".356",
-            "slg": ".494",
-            "ops": ".850",
+            "avg": ".239",
+            "obp": ".362",
+            "slg": ".500",
+            "ops": ".862",
             "homeRuns": 6,
             "rbi": 12
           },
@@ -354,10 +354,10 @@
         {
           "name": "Chase DeLauter",
           "stats": {
-            "avg": ".219",
-            "obp": ".318",
-            "slg": ".493",
-            "ops": ".811",
+            "avg": ".216",
+            "obp": ".314",
+            "slg": ".486",
+            "ops": ".800",
             "homeRuns": 5,
             "rbi": 12
           },
@@ -479,7 +479,7 @@
       "home_team": "Tampa Bay Rays",
       "venue": "Tropicana Field",
       "start": "2026-04-21T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 695505,
         "name": "Chase Burns",
@@ -951,7 +951,7 @@
       "home_team": "Miami Marlins",
       "venue": "loanDepot park",
       "start": "2026-04-21T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 669160,
         "name": "Dustin May",
@@ -1423,7 +1423,7 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-04-21T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 690986,
         "name": "Kyle Harrison",
@@ -1895,7 +1895,7 @@
       "home_team": "Washington Nationals",
       "venue": "Nationals Park",
       "start": "2026-04-21T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 625643,
         "name": "Reynaldo L\u00f3pez",
@@ -2367,7 +2367,7 @@
       "home_team": "Boston Red Sox",
       "venue": "Fenway Park",
       "start": "2026-04-21T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 661563,
         "name": "Luis Gil",
@@ -4296,7 +4296,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 677958,
+        "name": "Kumar Rocker",
+        "hand": "R",
+        "era": "4.30",
+        "whip": "1.50",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-04",
+              "opponent": "Cincinnati Reds",
+              "ip": "5.0",
+              "er": 2,
+              "k": 3,
+              "bb": 1,
+              "pitches": 80,
+              "strikes": 52
+            },
+            {
+              "date": "2026-04-10",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "5.0",
+              "er": 3,
+              "k": 5,
+              "bb": 2,
+              "pitches": 83,
+              "strikes": 49
+            },
+            {
+              "date": "2026-04-15",
+              "opponent": "Athletics",
+              "ip": "4.2",
+              "er": 2,
+              "k": 6,
+              "bb": 4,
+              "pitches": 97,
+              "strikes": 59
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "4.7",
+          "avg_bb": "2.3",
+          "avg_pitches": "86.7",
+          "avg_strikes": "53.3",
+          "era": "4.30",
+          "whip": "1.50",
+          "strike_pct": "61.5",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Brandon Lowe",
@@ -6769,6 +6818,26 @@
           }
         },
         {
+          "name": "Freddie Freeman",
+          "stats": {
+            "avg": ".296",
+            "obp": ".360",
+            "slg": ".519",
+            "ops": ".879",
+            "homeRuns": 3,
+            "rbi": 14
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Teoscar Hern\u00e1ndez",
           "stats": {
             "avg": ".268",
@@ -6787,49 +6856,9 @@
             "walks": 0,
             "games": 3
           }
-        },
-        {
-          "name": "Kyle Tucker",
-          "stats": {
-            "avg": ".256",
-            "obp": ".347",
-            "slg": ".390",
-            "ops": ".737",
-            "homeRuns": 3,
-            "rbi": 13
-          },
-          "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 2,
-            "walks": 2,
-            "games": 3
-          }
         }
       ],
       "home_hitters": [
-        {
-          "name": "Daniel Susac",
-          "stats": {
-            "avg": ".478",
-            "obp": ".500",
-            "slg": ".652",
-            "ops": "1.152",
-            "homeRuns": 0,
-            "rbi": 5
-          },
-          "last10ab": {
-            "avg": "0.636",
-            "hits": 7,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 1,
-            "games": 4
-          }
-        },
         {
           "name": "Drew Gilbert",
           "stats": {
@@ -6988,6 +7017,26 @@
             "rbi": 0,
             "walks": 0,
             "games": 3
+          }
+        },
+        {
+          "name": "Jerar Encarnacion",
+          "stats": {
+            "avg": ".240",
+            "obp": ".240",
+            "slg": ".280",
+            "ops": ".520",
+            "homeRuns": 0,
+            "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
           }
         }
       ]
