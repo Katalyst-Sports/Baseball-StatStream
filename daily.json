@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-29T08:06:44.946105-04:00",
+  "updated_at": "2026-04-29T13:10:54.696077-04:00",
   "games": [
     {
       "gamePk": 824445,
@@ -479,7 +479,7 @@
       "home_team": "Chicago White Sox",
       "venue": "Rate Field",
       "start": "2026-04-29T17:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 579328,
         "name": "Yusei Kikuchi",
@@ -844,26 +844,6 @@
           }
         },
         {
-          "name": "Everson Pereira",
-          "stats": {
-            "avg": ".250",
-            "obp": ".310",
-            "slg": ".453",
-            "ops": ".763",
-            "homeRuns": 3,
-            "rbi": 7
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 1,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
           "name": "Sam Antonacci",
           "stats": {
             "avg": ".216",
@@ -942,6 +922,26 @@
             "walks": 1,
             "games": 5
           }
+        },
+        {
+          "name": "Tristan Peters",
+          "stats": {
+            "avg": ".273",
+            "obp": ".314",
+            "slg": ".318",
+            "ops": ".632",
+            "homeRuns": 0,
+            "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 5
+          }
         }
       ]
     },
@@ -951,7 +951,7 @@
       "home_team": "Minnesota Twins",
       "venue": "Target Field",
       "start": "2026-04-29T17:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 669923,
         "name": "George Kirby",
