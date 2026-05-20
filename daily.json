@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20T08:17:33.545530-04:00",
+  "updated_at": "2026-05-20T12:01:42.470247-04:00",
   "games": [
     {
       "gamePk": 823462,
@@ -530,7 +530,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 571927,
+        "name": "Steven Matz",
+        "hand": "L",
+        "era": "3.86",
+        "whip": "1.10",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-29",
+              "opponent": "St. Louis Cardinals",
+              "ip": "5.0",
+              "er": 4,
+              "k": 2,
+              "bb": 1,
+              "pitches": 81,
+              "strikes": 50
+            },
+            {
+              "date": "2026-04-04",
+              "opponent": "Minnesota Twins",
+              "ip": "6.0",
+              "er": 1,
+              "k": 8,
+              "bb": 2,
+              "pitches": 97,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-10",
+              "opponent": "New York Yankees",
+              "ip": "5.0",
+              "er": 2,
+              "k": 7,
+              "bb": 2,
+              "pitches": 88,
+              "strikes": 57
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "5.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "88.7",
+          "avg_strikes": "55.0",
+          "era": "3.94",
+          "whip": "0.94",
+          "strike_pct": "62.0",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Adley Rutschman",
@@ -835,26 +884,6 @@
           }
         },
         {
-          "name": "Ben Williamson",
-          "stats": {
-            "avg": ".268",
-            "obp": ".349",
-            "slg": ".339",
-            "ops": ".688",
-            "homeRuns": 0,
-            "rbi": 14
-          },
-          "last10ab": {
-            "avg": "0.385",
-            "hits": 5,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
-            "games": 4
-          }
-        },
-        {
           "name": "Chandler Simpson",
           "stats": {
             "avg": ".294",
@@ -892,6 +921,26 @@
             "rbi": 3,
             "walks": 1,
             "games": 4
+          }
+        },
+        {
+          "name": "Hunter Feduccia",
+          "stats": {
+            "avg": ".255",
+            "obp": ".350",
+            "slg": ".294",
+            "ops": ".644",
+            "homeRuns": 0,
+            "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 3,
+            "games": 6
           }
         }
       ]
