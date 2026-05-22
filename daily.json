@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22T17:34:14.508237-04:00",
+  "updated_at": "2026-05-22T18:38:41.694143-04:00",
   "games": [
     {
       "gamePk": 824679,
@@ -479,7 +479,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-05-22T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 668909,
         "name": "Gavin Williams",
@@ -6978,6 +6978,26 @@
           }
         },
         {
+          "name": "Eugenio Su\u00e1rez",
+          "stats": {
+            "avg": ".231",
+            "obp": ".300",
+            "slg": ".363",
+            "ops": ".663",
+            "homeRuns": 3,
+            "rbi": 11
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Matt McLain",
           "stats": {
             "avg": ".208",
@@ -6995,26 +7015,6 @@
             "rbi": 1,
             "walks": 4,
             "games": 3
-          }
-        },
-        {
-          "name": "Will Benson",
-          "stats": {
-            "avg": ".171",
-            "obp": ".315",
-            "slg": ".303",
-            "ops": ".618",
-            "homeRuns": 2,
-            "rbi": 5
-          },
-          "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 5
           }
         }
       ]
