@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T01:50:54.802806-04:00",
+  "updated_at": "2026-05-24T04:21:45.658227-04:00",
   "games": [
     {
       "gamePk": 822813,
@@ -7039,7 +7039,56 @@
       "venue": "Angel Stadium",
       "start": "2026-05-24T23:20:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 669022,
+        "name": "MacKenzie Gore",
+        "hand": "L",
+        "era": "4.78",
+        "whip": "1.33",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-29",
+              "opponent": "Philadelphia Phillies",
+              "ip": "5.1",
+              "er": 2,
+              "k": 7,
+              "bb": 3,
+              "pitches": 90,
+              "strikes": 54
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Cincinnati Reds",
+              "ip": "6.0",
+              "er": 3,
+              "k": 9,
+              "bb": 0,
+              "pitches": 88,
+              "strikes": 57
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "Seattle Mariners",
+              "ip": "5.0",
+              "er": 0,
+              "k": 9,
+              "bb": 2,
+              "pitches": 82,
+              "strikes": 49
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "8.3",
+          "avg_bb": "1.7",
+          "avg_pitches": "86.7",
+          "avg_strikes": "53.3",
+          "era": "2.76",
+          "whip": "0.86",
+          "strike_pct": "61.5",
+          "quality_starts": 1
+        }
+      },
       "home_pitcher": {
         "id": 672282,
         "name": "Reid Detmers",
