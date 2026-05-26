@@ -1,52 +1,122 @@
 {
-  "updated_at": "2026-05-26T18:36:18.419004-04:00",
+  "updated_at": "2026-05-26T19:46:45.695691-04:00",
   "games": [
     {
       "gamePk": 824434,
       "game": "Washington Nationals @ Cleveland Guardians",
-      "score": "0-0",
-      "inning": "2nd",
-      "hot_hitters": [],
-      "top_pitchers": []
+      "score": "4-0",
+      "inning": "5th",
+      "hot_hitters": [
+        "James Wood"
+      ],
+      "top_pitchers": [
+        "Cade Cavalli"
+      ]
     },
     {
       "gamePk": 824837,
       "game": "Tampa Bay Rays @ Baltimore Orioles",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
+      "score": "1-3",
+      "inning": "5th",
+      "hot_hitters": [
+        "Chandler Simpson",
+        "Jonathan Aranda"
+      ],
+      "top_pitchers": [
+        "Shane Baz"
+      ]
     },
     {
       "gamePk": 824275,
       "game": "Los Angeles Angels @ Detroit Tigers",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
+      "score": "4-2",
+      "inning": "4th",
+      "hot_hitters": [
+        "Wade Meckler",
+        "Jo Adell",
+        "Kevin McGonigle",
+        "Colt Keith"
+      ],
+      "top_pitchers": [
+        "Keider Montero"
+      ]
     },
     {
       "gamePk": 823379,
       "game": "Chicago Cubs @ Pittsburgh Pirates",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "1-5",
+      "inning": "5th",
+      "hot_hitters": [
+        "Alex Bregman",
+        "Oneil Cruz",
+        "Esmerlyn Valdez"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 824758,
       "game": "Atlanta Braves @ Boston Red Sox",
+      "score": "0-2",
+      "inning": "4th",
+      "hot_hitters": [
+        "Michael Harris II",
+        "Jarren Duran",
+        "Ceddanne Rafaela"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822811,
+      "game": "Miami Marlins @ Toronto Blue Jays",
+      "score": "0-1",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Ernie Clement"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823624,
+      "game": "Cincinnati Reds @ New York Mets",
+      "score": "2-0",
+      "inning": "2nd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824597,
+      "game": "Minnesota Twins @ Chicago White Sox",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824106,
+      "game": "New York Yankees @ Kansas City Royals",
+      "score": "1-0",
+      "inning": "1st",
+      "hot_hitters": [
+        "Cody Bellinger"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823785,
+      "game": "St. Louis Cardinals @ Milwaukee Brewers",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822898,
+      "game": "Houston Astros @ Texas Rangers",
       "score": "0-0",
       "inning": "1st",
       "hot_hitters": [],
       "top_pitchers": []
     }
   ],
-  "errors": [
-    {
-      "stage": "generated_news_item",
-      "title": "New York Mets Injury Watch",
-      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5975, Requested 413. Please try again in 3.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-    }
-  ]
+  "errors": []
 }
