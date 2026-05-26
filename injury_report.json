@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T16:58:56.752470-04:00",
+  "updated_at": "2026-05-26T18:36:18.419004-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2136,9 +2136,9 @@
           "player_id": 673357,
           "name": "Luis Robert Jr.",
           "il_type": "Injured List",
-          "date": "2026-04-30",
-          "note": "New York Mets placed CF Luis Robert Jr. on the 10-day injured list retroactive to April 27, 2026. Lumbar spine disc herniation. | Status Change",
-          "description": "New York Mets placed CF Luis Robert Jr. on the 10-day injured list retroactive to April 27, 2026. Lumbar spine disc herniation."
+          "date": "2026-05-26",
+          "note": "New York Mets transferred CF Luis Robert Jr. from the 10-day injured list to the 60-day injured list. Lumbar spine disc herniation. | Status Change",
+          "description": "New York Mets transferred CF Luis Robert Jr. from the 10-day injured list to the 60-day injured list. Lumbar spine disc herniation."
         },
         {
           "player_id": 657585,
@@ -3188,5 +3188,11 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "New York Mets Injury Watch",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5975, Requested 413. Please try again in 3.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    }
+  ]
 }

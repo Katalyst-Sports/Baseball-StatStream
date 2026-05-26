@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T16:58:56.752470-04:00",
+  "updated_at": "2026-05-26T18:36:18.419004-04:00",
   "games": [
     {
       "gamePk": 824434,
@@ -7,12 +7,12 @@
       "home_team": "Cleveland Guardians",
       "venue": "Progressive Field",
       "start": "2026-05-26T22:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 676917,
         "name": "Cade Cavalli",
         "hand": "R",
-        "era": "3.86",
+        "era": "3.79",
         "whip": "1.43",
         "last3": {
           "starts": [
@@ -62,8 +62,8 @@
         "id": 676282,
         "name": "Joey Cantillo",
         "hand": "L",
-        "era": "3.05",
-        "whip": "1.32",
+        "era": "3.00",
+        "whip": "1.33",
         "last3": {
           "starts": [
             {
@@ -112,10 +112,10 @@
         {
           "name": "James Wood",
           "stats": {
-            "avg": ".267",
-            "obp": ".405",
-            "slg": ".533",
-            "ops": ".938",
+            "avg": ".265",
+            "obp": ".404",
+            "slg": ".531",
+            "ops": ".935",
             "homeRuns": 14,
             "rbi": 35
           },
@@ -133,9 +133,9 @@
           "name": "CJ Abrams",
           "stats": {
             "avg": ".288",
-            "obp": ".379",
+            "obp": ".382",
             "slg": ".545",
-            "ops": ".924",
+            "ops": ".927",
             "homeRuns": 12,
             "rbi": 46
           },
@@ -153,9 +153,9 @@
           "name": "Curtis Mead",
           "stats": {
             "avg": ".241",
-            "obp": ".353",
+            "obp": ".358",
             "slg": ".491",
-            "ops": ".844",
+            "ops": ".849",
             "homeRuns": 7,
             "rbi": 20
           },
@@ -294,10 +294,10 @@
         {
           "name": "Travis Bazzana",
           "stats": {
-            "avg": ".292",
-            "obp": ".394",
-            "slg": ".427",
-            "ops": ".821",
+            "avg": ".289",
+            "obp": ".390",
+            "slg": ".422",
+            "ops": ".812",
             "homeRuns": 3,
             "rbi": 10
           },
@@ -314,10 +314,10 @@
         {
           "name": "Chase DeLauter",
           "stats": {
-            "avg": ".257",
-            "obp": ".343",
-            "slg": ".443",
-            "ops": ".786",
+            "avg": ".255",
+            "obp": ".341",
+            "slg": ".440",
+            "ops": ".781",
             "homeRuns": 7,
             "rbi": 30
           },
@@ -349,6 +349,26 @@
             "rbi": 2,
             "walks": 2,
             "games": 4
+          }
+        },
+        {
+          "name": "Jos\u00e9 Ram\u00edrez",
+          "stats": {
+            "avg": ".232",
+            "obp": ".350",
+            "slg": ".406",
+            "ops": ".756",
+            "homeRuns": 8,
+            "rbi": 24
+          },
+          "last10ab": {
+            "avg": "0.143",
+            "hits": 2,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -389,26 +409,6 @@
             "rbi": 0,
             "walks": 1,
             "games": 6
-          }
-        },
-        {
-          "name": "Jos\u00e9 Ram\u00edrez",
-          "stats": {
-            "avg": ".228",
-            "obp": ".347",
-            "slg": ".398",
-            "ops": ".745",
-            "homeRuns": 8,
-            "rbi": 24
-          },
-          "last10ab": {
-            "avg": "0.143",
-            "hits": 2,
-            "atBats": 14,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 0,
-            "games": 3
           }
         },
         {
@@ -454,10 +454,10 @@
         {
           "name": "Kyle Manzardo",
           "stats": {
-            "avg": ".218",
-            "obp": ".304",
-            "slg": ".366",
-            "ops": ".670",
+            "avg": ".217",
+            "obp": ".302",
+            "slg": ".364",
+            "ops": ".666",
             "homeRuns": 5,
             "rbi": 17
           },
@@ -479,7 +479,7 @@
       "home_team": "Baltimore Orioles",
       "venue": "Oriole Park at Camden Yards",
       "start": "2026-05-26T22:35:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 643377,
         "name": "Griffin Jax",
@@ -951,7 +951,7 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-05-26T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 686799,
         "name": "Jack Kochanowicz",
@@ -1423,7 +1423,7 @@
       "home_team": "Pittsburgh Pirates",
       "venue": "PNC Park",
       "start": "2026-05-26T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 696136,
         "name": "Jordan Wicks",
@@ -1853,7 +1853,7 @@
       "home_team": "Boston Red Sox",
       "venue": "Fenway Park",
       "start": "2026-05-26T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 675911,
         "name": "Spencer Strider",
@@ -6998,5 +6998,11 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "New York Mets Injury Watch",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5975, Requested 413. Please try again in 3.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    }
+  ]
 }

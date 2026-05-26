@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T16:58:56.752470-04:00",
+  "updated_at": "2026-05-26T18:36:18.419004-04:00",
   "games": [
     {
       "gamePk": 823380,
@@ -297,5 +297,11 @@
       "game_summary": "Jeff McNeil grounds into an unassisted double play, first baseman Josh Naylor. Tyler Soderstrom scores. Henry Bolte out at 2nd. Jeff McNeil out at 1st."
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "New York Mets Injury Watch",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5975, Requested 413. Please try again in 3.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    }
+  ]
 }
