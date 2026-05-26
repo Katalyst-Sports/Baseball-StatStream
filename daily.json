@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T15:02:45.130148-04:00",
+  "updated_at": "2026-05-26T16:58:56.752470-04:00",
   "games": [
     {
       "gamePk": 824434,
@@ -2848,7 +2848,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 656849,
+        "name": "David Peterson",
+        "hand": "L",
+        "era": "5.03",
+        "whip": "1.55",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "5.1",
+              "er": 0,
+              "k": 3,
+              "bb": 2,
+              "pitches": 76,
+              "strikes": 51
+            },
+            {
+              "date": "2026-04-02",
+              "opponent": "San Francisco Giants",
+              "ip": "4.1",
+              "er": 5,
+              "k": 5,
+              "bb": 2,
+              "pitches": 68,
+              "strikes": 46
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "5.0",
+              "er": 5,
+              "k": 6,
+              "bb": 2,
+              "pitches": 85,
+              "strikes": 53
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "4.7",
+          "avg_bb": "2.0",
+          "avg_pitches": "76.3",
+          "avg_strikes": "50.0",
+          "era": "6.14",
+          "whip": "1.84",
+          "strike_pct": "65.5",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "JJ Bleday",
@@ -4779,6 +4828,26 @@
           }
         },
         {
+          "name": "Taylor Trammell",
+          "stats": {
+            "avg": ".345",
+            "obp": ".424",
+            "slg": ".448",
+            "ops": ".872",
+            "homeRuns": 0,
+            "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Nick Allen",
           "stats": {
             "avg": ".310",
@@ -4896,26 +4965,6 @@
             "rbi": 2,
             "walks": 1,
             "games": 6
-          }
-        },
-        {
-          "name": "Jake Meyers",
-          "stats": {
-            "avg": ".211",
-            "obp": ".270",
-            "slg": ".351",
-            "ops": ".621",
-            "homeRuns": 2,
-            "rbi": 5
-          },
-          "last10ab": {
-            "avg": "0.250",
-            "hits": 3,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 2,
-            "walks": 1,
-            "games": 3
           }
         }
       ],
@@ -5160,54 +5209,12 @@
         }
       },
       "home_pitcher": {
-        "id": 622663,
-        "name": "Luis Severino",
-        "hand": "R",
-        "era": "4.23",
-        "whip": "1.44",
-        "last3": {
-          "starts": [
-            {
-              "date": "2026-03-27",
-              "opponent": "Toronto Blue Jays",
-              "ip": "5.0",
-              "er": 2,
-              "k": 3,
-              "bb": 3,
-              "pitches": 84,
-              "strikes": 52
-            },
-            {
-              "date": "2026-04-01",
-              "opponent": "Atlanta Braves",
-              "ip": "3.1",
-              "er": 4,
-              "k": 7,
-              "bb": 5,
-              "pitches": 91,
-              "strikes": 49
-            },
-            {
-              "date": "2026-04-08",
-              "opponent": "New York Yankees",
-              "ip": "5.0",
-              "er": 2,
-              "k": 7,
-              "bb": 5,
-              "pitches": 100,
-              "strikes": 54
-            }
-          ],
-          "avg_ip": "4.1",
-          "avg_k": "5.7",
-          "avg_bb": "4.3",
-          "avg_pitches": "91.7",
-          "avg_strikes": "51.7",
-          "era": "5.40",
-          "whip": "1.80",
-          "strike_pct": "56.4",
-          "quality_starts": 0
-        }
+        "id": 695611,
+        "name": "Gage Jump",
+        "hand": "L",
+        "era": "N/A",
+        "whip": "N/A",
+        "last3": {}
       },
       "away_hitters": [
         {
