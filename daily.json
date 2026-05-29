@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29T17:01:35.729386-04:00",
+  "updated_at": "2026-05-29T18:41:03.843786-04:00",
   "games": [
     {
       "gamePk": 824515,
@@ -7,7 +7,7 @@
       "home_team": "Cincinnati Reds",
       "venue": "Great American Ball Park",
       "start": "2026-05-29T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 656550,
         "name": "Grant Holmes",
@@ -479,7 +479,7 @@
       "home_team": "Washington Nationals",
       "venue": "Nationals Park",
       "start": "2026-05-29T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 608337,
         "name": "Lucas Giolito",
@@ -941,7 +941,7 @@
       "home_team": "Pittsburgh Pirates",
       "venue": "PNC Park",
       "start": "2026-05-29T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 671737,
         "name": "Taj Bradley",
@@ -5320,6 +5320,26 @@
           }
         },
         {
+          "name": "Jung Hoo Lee",
+          "stats": {
+            "avg": ".268",
+            "obp": ".311",
+            "slg": ".385",
+            "ops": ".696",
+            "homeRuns": 3,
+            "rbi": 17
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Rafael Devers",
           "stats": {
             "avg": ".242",
@@ -5376,26 +5396,6 @@
             "homeRuns": 1,
             "rbi": 2,
             "walks": 2,
-            "games": 4
-          }
-        },
-        {
-          "name": "Jesus Rodriguez",
-          "stats": {
-            "avg": ".211",
-            "obp": ".286",
-            "slg": ".289",
-            "ops": ".575",
-            "homeRuns": 1,
-            "rbi": 5
-          },
-          "last10ab": {
-            "avg": "0.455",
-            "hits": 5,
-            "atBats": 11,
-            "homeRuns": 1,
-            "rbi": 2,
-            "walks": 0,
             "games": 4
           }
         }
