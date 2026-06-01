@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01T15:05:09.941874-04:00",
+  "updated_at": "2026-06-01T18:15:49.029441-04:00",
   "games": [
     {
       "gamePk": 822974,
@@ -1404,7 +1404,36 @@
       "venue": "Target Field",
       "start": "2026-06-01T23:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 689818,
+        "name": "David Sandlin",
+        "hand": "R",
+        "era": "1.50",
+        "whip": "0.17",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-27",
+              "opponent": "Minnesota Twins",
+              "ip": "6.0",
+              "er": 1,
+              "k": 4,
+              "bb": 0,
+              "pitches": 61,
+              "strikes": 41
+            }
+          ],
+          "avg_ip": "6.0",
+          "avg_k": "4.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "61.0",
+          "avg_strikes": "41.0",
+          "era": "1.50",
+          "whip": "0.17",
+          "strike_pct": "67.2",
+          "quality_starts": 1
+        }
+      },
       "home_pitcher": {
         "id": 657746,
         "name": "Joe Ryan",
