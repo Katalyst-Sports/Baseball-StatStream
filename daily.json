@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01T09:16:11.078425-04:00",
+  "updated_at": "2026-06-01T15:05:09.941874-04:00",
   "games": [
     {
       "gamePk": 822974,
@@ -1003,53 +1003,33 @@
         }
       },
       "home_pitcher": {
-        "id": 695505,
-        "name": "Chase Burns",
+        "id": 680689,
+        "name": "Lyon Richardson",
         "hand": "R",
-        "era": "1.96",
-        "whip": "0.96",
+        "era": "13.50",
+        "whip": "1.50",
         "last3": {
           "starts": [
             {
-              "date": "2026-03-30",
-              "opponent": "Pittsburgh Pirates",
-              "ip": "5.0",
-              "er": 0,
-              "k": 7,
-              "bb": 3,
-              "pitches": 78,
-              "strikes": 46
-            },
-            {
-              "date": "2026-04-05",
-              "opponent": "Texas Rangers",
-              "ip": "6.0",
+              "date": "2026-05-30",
+              "opponent": "Atlanta Braves",
+              "ip": "0.2",
               "er": 1,
-              "k": 9,
-              "bb": 1,
-              "pitches": 87,
-              "strikes": 59
-            },
-            {
-              "date": "2026-04-10",
-              "opponent": "Los Angeles Angels",
-              "ip": "5.1",
-              "er": 5,
-              "k": 2,
-              "bb": 4,
-              "pitches": 92,
-              "strikes": 57
+              "k": 1,
+              "bb": 0,
+              "pitches": 11,
+              "strikes": 6
             }
           ],
-          "avg_ip": "5.1",
-          "avg_k": "6.0",
-          "avg_bb": "2.7",
-          "avg_pitches": "85.7",
-          "avg_strikes": "54.0",
-          "era": "3.31",
-          "whip": "1.29",
-          "strike_pct": "63.0",
-          "quality_starts": 1
+          "avg_ip": "0.2",
+          "avg_k": "1.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "11.0",
+          "avg_strikes": "6.0",
+          "era": "13.50",
+          "whip": "1.50",
+          "strike_pct": "54.5",
+          "quality_starts": 0
         }
       },
       "away_hitters": [
@@ -1276,26 +1256,6 @@
           }
         },
         {
-          "name": "Elly De La Cruz",
-          "stats": {
-            "avg": ".280",
-            "obp": ".346",
-            "slg": ".509",
-            "ops": ".855",
-            "homeRuns": 12,
-            "rbi": 37
-          },
-          "last10ab": {
-            "avg": "0.167",
-            "hits": 2,
-            "atBats": 12,
-            "homeRuns": 1,
-            "rbi": 1,
-            "walks": 2,
-            "games": 3
-          }
-        },
-        {
           "name": "Sal Stewart",
           "stats": {
             "avg": ".261",
@@ -1413,6 +1373,26 @@
             "rbi": 1,
             "walks": 1,
             "games": 4
+          }
+        },
+        {
+          "name": "Will Benson",
+          "stats": {
+            "avg": ".181",
+            "obp": ".313",
+            "slg": ".313",
+            "ops": ".626",
+            "homeRuns": 2,
+            "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 5
           }
         }
       ]
