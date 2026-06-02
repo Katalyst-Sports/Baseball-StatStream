@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T11:38:47.241226-04:00",
+  "updated_at": "2026-06-02T15:03:55.615153-04:00",
   "games": [
     {
       "gamePk": 822971,
@@ -1475,52 +1475,52 @@
         }
       },
       "home_pitcher": {
-        "id": 571945,
-        "name": "Miles Mikolas",
-        "hand": "R",
-        "era": "6.08",
-        "whip": "1.41",
+        "id": 663992,
+        "name": "Richard Lovelady",
+        "hand": "L",
+        "era": "3.38",
+        "whip": "1.75",
         "last3": {
           "starts": [
             {
               "date": "2026-03-28",
-              "opponent": "Chicago Cubs",
-              "ip": "5.0",
-              "er": 4,
-              "k": 4,
-              "bb": 3,
-              "pitches": 97,
-              "strikes": 57
+              "opponent": "Pittsburgh Pirates",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 21,
+              "strikes": 14
             },
             {
-              "date": "2026-04-03",
-              "opponent": "Los Angeles Dodgers",
-              "ip": "4.1",
-              "er": 11,
-              "k": 4,
-              "bb": 1,
-              "pitches": 87,
-              "strikes": 56
+              "date": "2026-03-29",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "1.0",
+              "er": 1,
+              "k": 1,
+              "bb": 2,
+              "pitches": 26,
+              "strikes": 13
             },
             {
-              "date": "2026-04-08",
+              "date": "2026-03-31",
               "opponent": "St. Louis Cardinals",
-              "ip": "3.0",
-              "er": 2,
-              "k": 3,
-              "bb": 3,
-              "pitches": 55,
-              "strikes": 34
+              "ip": "2.0",
+              "er": 1,
+              "k": 2,
+              "bb": 1,
+              "pitches": 29,
+              "strikes": 21
             }
           ],
-          "avg_ip": "4.0",
-          "avg_k": "3.7",
-          "avg_bb": "2.3",
-          "avg_pitches": "79.7",
-          "avg_strikes": "49.0",
-          "era": "12.41",
-          "whip": "2.35",
-          "strike_pct": "61.5",
+          "avg_ip": "1.1",
+          "avg_k": "1.3",
+          "avg_bb": "1.0",
+          "avg_pitches": "25.3",
+          "avg_strikes": "16.0",
+          "era": "4.50",
+          "whip": "2.25",
+          "strike_pct": "63.2",
           "quality_starts": 0
         }
       },
@@ -2280,6 +2280,26 @@
           }
         },
         {
+          "name": "Amed Rosario",
+          "stats": {
+            "avg": ".273",
+            "obp": ".309",
+            "slg": ".534",
+            "ops": ".843",
+            "homeRuns": 6,
+            "rbi": 20
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 2,
+            "rbi": 5,
+            "walks": 0,
+            "games": 4
+          }
+        },
+        {
           "name": "Anthony Volpe",
           "stats": {
             "avg": ".256",
@@ -2337,26 +2357,6 @@
             "rbi": 2,
             "walks": 2,
             "games": 4
-          }
-        },
-        {
-          "name": "Jazz Chisholm Jr.",
-          "stats": {
-            "avg": ".239",
-            "obp": ".314",
-            "slg": ".385",
-            "ops": ".699",
-            "homeRuns": 6,
-            "rbi": 20
-          },
-          "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 0,
-            "games": 3
           }
         }
       ]
