@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T11:01:46.555070-04:00",
+  "updated_at": "2026-06-06T12:16:54.519778-04:00",
   "games": [
     {
       "gamePk": 824269,
@@ -1946,7 +1946,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 680755,
+        "name": "Braydon Fisher",
+        "hand": "R",
+        "era": "2.62",
+        "whip": "0.93",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Athletics",
+              "ip": "0.2",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 4,
+              "strikes": 3
+            },
+            {
+              "date": "2026-03-29",
+              "opponent": "Athletics",
+              "ip": "1.2",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 22,
+              "strikes": 16
+            },
+            {
+              "date": "2026-03-31",
+              "opponent": "Colorado Rockies",
+              "ip": "1.1",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 23,
+              "strikes": 14
+            }
+          ],
+          "avg_ip": "1.1",
+          "avg_k": "0.7",
+          "avg_bb": "0.0",
+          "avg_pitches": "16.3",
+          "avg_strikes": "11.0",
+          "era": "0.00",
+          "whip": "0.27",
+          "strike_pct": "67.3",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Adley Rutschman",
