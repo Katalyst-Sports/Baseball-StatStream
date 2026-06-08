@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T10:56:58.946349-04:00",
+  "updated_at": "2026-06-08T14:05:41.282019-04:00",
   "games": [
     {
       "gamePk": 824829,
@@ -58,7 +58,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 694346,
+        "name": "Trey Gibson",
+        "hand": "R",
+        "era": "3.65",
+        "whip": "1.62",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-03",
+              "opponent": "New York Yankees",
+              "ip": "4.2",
+              "er": 3,
+              "k": 2,
+              "bb": 2,
+              "pitches": 87,
+              "strikes": 56
+            },
+            {
+              "date": "2026-05-08",
+              "opponent": "Athletics",
+              "ip": "2.0",
+              "er": 1,
+              "k": 2,
+              "bb": 1,
+              "pitches": 30,
+              "strikes": 20
+            },
+            {
+              "date": "2026-05-27",
+              "opponent": "Tampa Bay Rays",
+              "ip": "5.2",
+              "er": 1,
+              "k": 1,
+              "bb": 4,
+              "pitches": 100,
+              "strikes": 57
+            }
+          ],
+          "avg_ip": "4.0",
+          "avg_k": "1.7",
+          "avg_bb": "2.3",
+          "avg_pitches": "72.3",
+          "avg_strikes": "44.3",
+          "era": "3.65",
+          "whip": "1.62",
+          "strike_pct": "61.3",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Colt Emerson",
