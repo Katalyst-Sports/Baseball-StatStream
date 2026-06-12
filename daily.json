@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12T14:07:34.892304-04:00",
+  "updated_at": "2026-06-12T16:25:16.973004-04:00",
   "games": [
     {
       "gamePk": 823370,
@@ -1174,6 +1174,26 @@
           }
         },
         {
+          "name": "Xander Bogaerts",
+          "stats": {
+            "avg": ".231",
+            "obp": ".303",
+            "slg": ".356",
+            "ops": ".659",
+            "homeRuns": 8,
+            "rbi": 27
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
+          }
+        },
+        {
           "name": "Jackson Merrill",
           "stats": {
             "avg": ".207",
@@ -1210,26 +1230,6 @@
             "homeRuns": 0,
             "rbi": 0,
             "walks": 4,
-            "games": 4
-          }
-        },
-        {
-          "name": "Rodolfo Dur\u00e1n",
-          "stats": {
-            "avg": ".103",
-            "obp": ".297",
-            "slg": ".241",
-            "ops": ".538",
-            "homeRuns": 1,
-            "rbi": 2
-          },
-          "last10ab": {
-            "avg": "0.083",
-            "hits": 1,
-            "atBats": 12,
-            "homeRuns": 1,
-            "rbi": 2,
-            "walks": 0,
             "games": 4
           }
         }
@@ -1788,6 +1788,26 @@
           }
         },
         {
+          "name": "Kyle Manzardo",
+          "stats": {
+            "avg": ".240",
+            "obp": ".330",
+            "slg": ".404",
+            "ops": ".734",
+            "homeRuns": 7,
+            "rbi": 22
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Chase DeLauter",
           "stats": {
             "avg": ".254",
@@ -1804,26 +1824,6 @@
             "homeRuns": 4,
             "rbi": 5,
             "walks": 0,
-            "games": 3
-          }
-        },
-        {
-          "name": "Kyle Manzardo",
-          "stats": {
-            "avg": ".235",
-            "obp": ".325",
-            "slg": ".399",
-            "ops": ".724",
-            "homeRuns": 7,
-            "rbi": 21
-          },
-          "last10ab": {
-            "avg": "0.154",
-            "hits": 2,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
             "games": 3
           }
         },
@@ -2470,6 +2470,26 @@
       },
       "away_hitters": [
         {
+          "name": "Jordan Lawlar",
+          "stats": {
+            "avg": ".333",
+            "obp": ".400",
+            "slg": ".556",
+            "ops": ".956",
+            "homeRuns": 1,
+            "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Corbin Carroll",
           "stats": {
             "avg": ".280",
@@ -2627,26 +2647,6 @@
             "rbi": 3,
             "walks": 0,
             "games": 4
-          }
-        },
-        {
-          "name": "Adrian Del Castillo",
-          "stats": {
-            "avg": ".189",
-            "obp": ".254",
-            "slg": ".320",
-            "ops": ".574",
-            "homeRuns": 4,
-            "rbi": 20
-          },
-          "last10ab": {
-            "avg": "0.167",
-            "hits": 2,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 0,
-            "games": 3
           }
         }
       ],
@@ -3362,7 +3362,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 702056,
+        "name": "Trey Yesavage",
+        "hand": "R",
+        "era": "3.16",
+        "whip": "1.17",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-28",
+              "opponent": "Boston Red Sox",
+              "ip": "5.1",
+              "er": 0,
+              "k": 3,
+              "bb": 0,
+              "pitches": 74,
+              "strikes": 50
+            },
+            {
+              "date": "2026-05-03",
+              "opponent": "Minnesota Twins",
+              "ip": "4.0",
+              "er": 1,
+              "k": 6,
+              "bb": 3,
+              "pitches": 82,
+              "strikes": 52
+            },
+            {
+              "date": "2026-05-09",
+              "opponent": "Los Angeles Angels",
+              "ip": "4.0",
+              "er": 0,
+              "k": 6,
+              "bb": 2,
+              "pitches": 87,
+              "strikes": 57
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "5.0",
+          "avg_bb": "1.7",
+          "avg_pitches": "81.0",
+          "avg_strikes": "53.0",
+          "era": "0.67",
+          "whip": "1.35",
+          "strike_pct": "65.4",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Ben Rice",
@@ -3667,26 +3716,6 @@
           }
         },
         {
-          "name": "Daulton Varsho",
-          "stats": {
-            "avg": ".256",
-            "obp": ".331",
-            "slg": ".408",
-            "ops": ".739",
-            "homeRuns": 5,
-            "rbi": 17
-          },
-          "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 2,
-            "games": 3
-          }
-        },
-        {
           "name": "Kazuma Okamoto",
           "stats": {
             "avg": ".230",
@@ -3724,6 +3753,26 @@
             "rbi": 0,
             "walks": 1,
             "games": 6
+          }
+        },
+        {
+          "name": "George Springer",
+          "stats": {
+            "avg": ".204",
+            "obp": ".291",
+            "slg": ".343",
+            "ops": ".634",
+            "homeRuns": 5,
+            "rbi": 14
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 2
           }
         }
       ]
@@ -4389,6 +4438,26 @@
           }
         },
         {
+          "name": "Derek Hill",
+          "stats": {
+            "avg": ".213",
+            "obp": ".284",
+            "slg": ".375",
+            "ops": ".659",
+            "homeRuns": 4,
+            "rbi": 8
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 5
+          }
+        },
+        {
           "name": "Alec Bohm",
           "stats": {
             "avg": ".226",
@@ -4445,26 +4514,6 @@
             "homeRuns": 0,
             "rbi": 0,
             "walks": 1,
-            "games": 3
-          }
-        },
-        {
-          "name": "Adolis Garc\u00eda",
-          "stats": {
-            "avg": ".195",
-            "obp": ".270",
-            "slg": ".329",
-            "ops": ".599",
-            "homeRuns": 7,
-            "rbi": 21
-          },
-          "last10ab": {
-            "avg": "0.091",
-            "hits": 1,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 2,
-            "walks": 0,
             "games": 3
           }
         },
