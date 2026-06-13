@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T14:04:16.162926-04:00",
+  "updated_at": "2026-06-13T15:52:20.485666-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -1226,7 +1226,7 @@
     {
       "team_id": 116,
       "team_name": "Detroit Tigers",
-      "injured_count": 20,
+      "injured_count": 21,
       "players": [
         {
           "player_id": 690544,
@@ -1283,6 +1283,14 @@
           "date": "2026-05-06",
           "note": "Detroit Tigers placed 2B Gleyber Torres on the 10-day injured list retroactive to May 4, 2026. Left oblique strain. | Status Change",
           "description": "Detroit Tigers placed 2B Gleyber Torres on the 10-day injured list retroactive to May 4, 2026. Left oblique strain."
+        },
+        {
+          "player_id": 656427,
+          "name": "Jack Flaherty",
+          "il_type": "Injured List",
+          "date": "2026-06-13",
+          "note": "Detroit Tigers placed RHP Jack Flaherty on the 15-day injured list. Left peroneal strain. | Status Change",
+          "description": "Detroit Tigers placed RHP Jack Flaherty on the 15-day injured list. Left peroneal strain."
         },
         {
           "player_id": 695549,
@@ -2679,7 +2687,7 @@
     {
       "team_id": 134,
       "team_name": "Pittsburgh Pirates",
-      "injured_count": 7,
+      "injured_count": 8,
       "players": [
         {
           "player_id": 606965,
@@ -2736,6 +2744,14 @@
           "date": "2026-05-17",
           "note": "Pittsburgh Pirates placed RF Ryan O'Hearn on the 10-day injured list. Right quad muscle strain. | Status Change",
           "description": "Pittsburgh Pirates placed RF Ryan O'Hearn on the 10-day injured list. Right quad muscle strain."
+        },
+        {
+          "player_id": 696062,
+          "name": "Wilber Dotel",
+          "il_type": "Injured List",
+          "date": "2026-06-13",
+          "note": "Pittsburgh Pirates placed RHP Wilber Dotel on the 15-day injured list. Right lat muscle strain. | Status Change",
+          "description": "Pittsburgh Pirates placed RHP Wilber Dotel on the 15-day injured list. Right lat muscle strain."
         }
       ]
     },
@@ -3321,7 +3337,7 @@
     {
       "team_id": 140,
       "team_name": "Texas Rangers",
-      "injured_count": 13,
+      "injured_count": 14,
       "players": [
         {
           "player_id": 691945,
@@ -3378,6 +3394,14 @@
           "date": "2026-06-06",
           "note": "Texas Rangers placed C Danny Jansen on the 10-day injured list retroactive to June 3, 2026. Right forearm strain. | Status Change",
           "description": "Texas Rangers placed C Danny Jansen on the 10-day injured list retroactive to June 3, 2026. Right forearm strain."
+        },
+        {
+          "player_id": 694497,
+          "name": "Evan Carter",
+          "il_type": "Injured List",
+          "date": "2026-06-13",
+          "note": "Texas Rangers placed CF Evan Carter on the 10-day injured list. Right oblique strain. | Status Change",
+          "description": "Texas Rangers placed CF Evan Carter on the 10-day injured list. Right oblique strain."
         },
         {
           "player_id": 656222,
@@ -3652,11 +3676,5 @@
       ]
     }
   ],
-  "errors": [
-    {
-      "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 3-7 Win",
-      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5400, Requested 618. Please try again in 180ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-    }
-  ]
+  "errors": []
 }

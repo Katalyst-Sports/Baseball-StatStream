@@ -1,11 +1,5 @@
 {
-  "updated_at": "2026-06-13T14:04:16.162926-04:00",
+  "updated_at": "2026-06-13T15:52:20.485666-04:00",
   "games": [],
-  "errors": [
-    {
-      "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 3-7 Win",
-      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5400, Requested 618. Please try again in 180ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-    }
-  ]
+  "errors": []
 }
