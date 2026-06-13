@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T12:51:17.988196-04:00",
+  "updated_at": "2026-06-13T14:04:16.162926-04:00",
   "games": [
     {
       "gamePk": 823694,
@@ -7,7 +7,7 @@
       "home_team": "Minnesota Twins",
       "venue": "Target Field",
       "start": "2026-06-13T18:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 669461,
         "name": "Matthew Liberatore",
@@ -1134,26 +1134,6 @@
           }
         },
         {
-          "name": "Miguel Andujar",
-          "stats": {
-            "avg": ".254",
-            "obp": ".288",
-            "slg": ".418",
-            "ops": ".706",
-            "homeRuns": 5,
-            "rbi": 17
-          },
-          "last10ab": {
-            "avg": "0.167",
-            "hits": 2,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 2,
-            "walks": 1,
-            "games": 4
-          }
-        },
-        {
           "name": "Fernando Tatis Jr.",
           "stats": {
             "avg": ".279",
@@ -1231,6 +1211,26 @@
             "rbi": 1,
             "walks": 1,
             "games": 3
+          }
+        },
+        {
+          "name": "Rodolfo Dur\u00e1n",
+          "stats": {
+            "avg": ".103",
+            "obp": ".297",
+            "slg": ".241",
+            "ops": ".538",
+            "homeRuns": 1,
+            "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.083",
+            "hits": 1,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 4
           }
         }
       ],
@@ -3834,7 +3834,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 640455,
+        "name": "Sean Manaea",
+        "hand": "L",
+        "era": "5.02",
+        "whip": "1.44",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-29",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "1.1",
+              "er": 0,
+              "k": 2,
+              "bb": 2,
+              "pitches": 29,
+              "strikes": 15
+            },
+            {
+              "date": "2026-04-02",
+              "opponent": "San Francisco Giants",
+              "ip": "3.2",
+              "er": 1,
+              "k": 2,
+              "bb": 2,
+              "pitches": 74,
+              "strikes": 44
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "4.0",
+              "er": 2,
+              "k": 2,
+              "bb": 2,
+              "pitches": 70,
+              "strikes": 43
+            }
+          ],
+          "avg_ip": "3.0",
+          "avg_k": "2.0",
+          "avg_bb": "2.0",
+          "avg_pitches": "57.7",
+          "avg_strikes": "34.0",
+          "era": "3.00",
+          "whip": "1.78",
+          "strike_pct": "59.0",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Matt Olson",
@@ -6991,5 +7040,11 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Baltimore Orioles Takes 3-7 Win",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5400, Requested 618. Please try again in 180ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    }
+  ]
 }

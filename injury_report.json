@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T12:51:17.988196-04:00",
+  "updated_at": "2026-06-13T14:04:16.162926-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2742,7 +2742,7 @@
     {
       "team_id": 135,
       "team_name": "San Diego Padres",
-      "injured_count": 15,
+      "injured_count": 16,
       "players": [
         {
           "player_id": 663773,
@@ -2823,6 +2823,14 @@
           "date": "2026-05-15",
           "note": "San Diego Padres placed RHP Matt Waldron on the 15-day injured list. Right brachialis muscle injury. | Status Change",
           "description": "San Diego Padres placed RHP Matt Waldron on the 15-day injured list. Right brachialis muscle injury."
+        },
+        {
+          "player_id": 609280,
+          "name": "Miguel Andujar",
+          "il_type": "Injured List",
+          "date": "2026-06-13",
+          "note": "San Diego Padres placed DH Miguel Andujar on the 10-day injured list retroactive to June 11, 2026. Left hamstring strain. | Status Change",
+          "description": "San Diego Padres placed DH Miguel Andujar on the 10-day injured list retroactive to June 11, 2026. Left hamstring strain."
         },
         {
           "player_id": 601713,
@@ -3644,5 +3652,11 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Baltimore Orioles Takes 3-7 Win",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5400, Requested 618. Please try again in 180ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    }
+  ]
 }
