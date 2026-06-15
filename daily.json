@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T14:58:09.210913-04:00",
+  "updated_at": "2026-06-15T17:47:36.937157-04:00",
   "games": [
     {
       "gamePk": 823452,
@@ -1404,7 +1404,56 @@
       "venue": "Busch Stadium",
       "start": "2026-06-15T23:45:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 593974,
+        "name": "Wandy Peralta",
+        "hand": "L",
+        "era": "2.18",
+        "whip": "1.42",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Detroit Tigers",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 15,
+              "strikes": 10
+            },
+            {
+              "date": "2026-03-27",
+              "opponent": "Detroit Tigers",
+              "ip": "0.1",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 17,
+              "strikes": 11
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "San Francisco Giants",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 14,
+              "strikes": 8
+            }
+          ],
+          "avg_ip": "0.2",
+          "avg_k": "0.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "15.3",
+          "avg_strikes": "9.7",
+          "era": "0.00",
+          "whip": "1.29",
+          "strike_pct": "63.0",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 669160,
         "name": "Dustin May",
@@ -2299,7 +2348,56 @@
       "venue": "Globe Life Field",
       "start": "2026-06-16T00:05:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 702474,
+        "name": "Mike Paredes",
+        "hand": "R",
+        "era": "4.35",
+        "whip": "1.06",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-31",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "3.2",
+              "er": 1,
+              "k": 3,
+              "bb": 3,
+              "pitches": 65,
+              "strikes": 37
+            },
+            {
+              "date": "2026-06-04",
+              "opponent": "Kansas City Royals",
+              "ip": "3.2",
+              "er": 3,
+              "k": 1,
+              "bb": 1,
+              "pitches": 50,
+              "strikes": 32
+            },
+            {
+              "date": "2026-06-10",
+              "opponent": "Detroit Tigers",
+              "ip": "3.0",
+              "er": 1,
+              "k": 4,
+              "bb": 2,
+              "pitches": 58,
+              "strikes": 33
+            }
+          ],
+          "avg_ip": "3.1",
+          "avg_k": "2.7",
+          "avg_bb": "2.0",
+          "avg_pitches": "57.7",
+          "avg_strikes": "34.0",
+          "era": "4.35",
+          "whip": "1.06",
+          "strike_pct": "59.0",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 669022,
         "name": "MacKenzie Gore",
@@ -3638,23 +3736,23 @@
           }
         },
         {
-          "name": "Ryan Waldschmidt",
+          "name": "Lourdes Gurriel Jr.",
           "stats": {
-            "avg": ".259",
-            "obp": ".314",
-            "slg": ".357",
-            "ops": ".671",
-            "homeRuns": 0,
-            "rbi": 8
+            "avg": ".228",
+            "obp": ".284",
+            "slg": ".304",
+            "ops": ".588",
+            "homeRuns": 1,
+            "rbi": 11
           },
           "last10ab": {
-            "avg": "0.273",
-            "hits": 3,
+            "avg": "0.091",
+            "hits": 1,
             "atBats": 11,
             "homeRuns": 0,
-            "rbi": 3,
-            "walks": 0,
-            "games": 4
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         }
       ]
