@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T08:34:39.372457-04:00",
+  "updated_at": "2026-06-16T13:36:54.014410-04:00",
   "games": [
     {
       "gamePk": 823451,
@@ -944,7 +944,56 @@
       "venue": "Fenway Park",
       "start": "2026-06-16T22:45:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 656302,
+        "name": "Dylan Cease",
+        "hand": "R",
+        "era": "2.91",
+        "whip": "1.16",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Athletics",
+              "ip": "5.1",
+              "er": 1,
+              "k": 12,
+              "bb": 2,
+              "pitches": 90,
+              "strikes": 61
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Chicago White Sox",
+              "ip": "4.1",
+              "er": 2,
+              "k": 6,
+              "bb": 3,
+              "pitches": 93,
+              "strikes": 51
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "5.0",
+              "er": 1,
+              "k": 8,
+              "bb": 4,
+              "pitches": 96,
+              "strikes": 57
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "8.7",
+          "avg_bb": "3.0",
+          "avg_pitches": "93.0",
+          "avg_strikes": "56.3",
+          "era": "2.45",
+          "whip": "1.43",
+          "strike_pct": "60.6",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 801139,
         "name": "Payton Tolle",
