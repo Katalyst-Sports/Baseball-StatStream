@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T16:31:52.681964-04:00",
+  "updated_at": "2026-06-16T18:33:42.488087-04:00",
   "games": [
     {
       "gamePk": 823451,
@@ -7,7 +7,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-06-16T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 663969,
         "name": "Tyler Phillips",
@@ -479,7 +479,7 @@
       "home_team": "Washington Nationals",
       "venue": "Nationals Park",
       "start": "2026-06-16T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 608379,
         "name": "Michael Wacha",
@@ -943,7 +943,7 @@
       "home_team": "Boston Red Sox",
       "venue": "Fenway Park",
       "start": "2026-06-16T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 656302,
         "name": "Dylan Cease",
@@ -6490,6 +6490,26 @@
           }
         },
         {
+          "name": "J.P. Crawford",
+          "stats": {
+            "avg": ".228",
+            "obp": ".356",
+            "slg": ".409",
+            "ops": ".765",
+            "homeRuns": 10,
+            "rbi": 23
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
+            "games": 3
+          }
+        },
+        {
           "name": "Julio Rodr\u00edguez",
           "stats": {
             "avg": ".248",
@@ -6507,26 +6527,6 @@
             "rbi": 1,
             "walks": 2,
             "games": 3
-          }
-        },
-        {
-          "name": "Jhonny Pereda",
-          "stats": {
-            "avg": ".270",
-            "obp": ".324",
-            "slg": ".365",
-            "ops": ".689",
-            "homeRuns": 2,
-            "rbi": 4
-          },
-          "last10ab": {
-            "avg": "0.167",
-            "hits": 2,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 0,
-            "games": 4
           }
         },
         {
