@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T17:35:00.358623-04:00",
+  "updated_at": "2026-06-19T18:36:09.817057-04:00",
   "games": [
     {
       "gamePk": 824663,
@@ -479,7 +479,7 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-06-19T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 685126,
         "name": "Brandon Eisert",
@@ -6568,6 +6568,26 @@
           }
         },
         {
+          "name": "Weston Wilson",
+          "stats": {
+            "avg": ".231",
+            "obp": ".348",
+            "slg": ".333",
+            "ops": ".681",
+            "homeRuns": 1,
+            "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 2,
+            "games": 5
+          }
+        },
+        {
           "name": "Mitch Garver",
           "stats": {
             "avg": ".194",
@@ -6584,26 +6604,6 @@
             "homeRuns": 0,
             "rbi": 0,
             "walks": 3,
-            "games": 4
-          }
-        },
-        {
-          "name": "Connor Joe",
-          "stats": {
-            "avg": ".189",
-            "obp": ".302",
-            "slg": ".324",
-            "ops": ".626",
-            "homeRuns": 1,
-            "rbi": 3
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 2,
-            "walks": 1,
             "games": 4
           }
         }
