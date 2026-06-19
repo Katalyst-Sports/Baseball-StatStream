@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T09:43:48.057115-04:00",
+  "updated_at": "2026-06-19T12:23:58.784729-04:00",
   "games": [
     {
       "gamePk": 824663,
@@ -1946,7 +1946,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 669199,
+        "name": "Lake Bachar",
+        "hand": "R",
+        "era": "2.97",
+        "whip": "0.89",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-30",
+              "opponent": "Chicago White Sox",
+              "ip": "3.0",
+              "er": 1,
+              "k": 3,
+              "bb": 1,
+              "pitches": 42,
+              "strikes": 23
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "New York Yankees",
+              "ip": "1.0",
+              "er": 2,
+              "k": 2,
+              "bb": 2,
+              "pitches": 24,
+              "strikes": 14
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "Cincinnati Reds",
+              "ip": "1.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 18,
+              "strikes": 11
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "2.3",
+          "avg_bb": "1.0",
+          "avg_pitches": "28.0",
+          "avg_strikes": "16.0",
+          "era": "5.40",
+          "whip": "1.20",
+          "strike_pct": "57.1",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Jonah Cox",
@@ -2763,23 +2812,23 @@
           }
         },
         {
-          "name": "Mike Yastrzemski",
+          "name": "Joey Bart",
           "stats": {
-            "avg": ".228",
-            "obp": ".317",
-            "slg": ".337",
-            "ops": ".654",
-            "homeRuns": 3,
-            "rbi": 18
+            "avg": ".259",
+            "obp": ".290",
+            "slg": ".379",
+            "ops": ".669",
+            "homeRuns": 2,
+            "rbi": 6
           },
           "last10ab": {
-            "avg": "0.500",
-            "hits": 5,
-            "atBats": 10,
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
             "homeRuns": 0,
             "rbi": 1,
-            "walks": 0,
-            "games": 3
+            "walks": 1,
+            "games": 4
           }
         }
       ]
