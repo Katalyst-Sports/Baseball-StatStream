@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T01:19:34.301200-04:00",
+  "updated_at": "2026-06-21T05:05:41.907573-04:00",
   "games": [
     {
       "gamePk": 823531,
@@ -4679,8 +4679,64 @@
       "venue": "Chase Field",
       "start": "2026-06-21T19:15:00Z",
       "status": "Preview",
-      "away_pitcher": {},
-      "home_pitcher": {},
+      "away_pitcher": {
+        "id": 702474,
+        "name": "Mike Paredes",
+        "hand": "R",
+        "era": "4.20",
+        "whip": "1.00",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-31",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "3.2",
+              "er": 1,
+              "k": 3,
+              "bb": 3,
+              "pitches": 65,
+              "strikes": 37
+            },
+            {
+              "date": "2026-06-04",
+              "opponent": "Kansas City Royals",
+              "ip": "3.2",
+              "er": 3,
+              "k": 1,
+              "bb": 1,
+              "pitches": 50,
+              "strikes": 32
+            },
+            {
+              "date": "2026-06-10",
+              "opponent": "Detroit Tigers",
+              "ip": "3.0",
+              "er": 1,
+              "k": 4,
+              "bb": 2,
+              "pitches": 58,
+              "strikes": 33
+            }
+          ],
+          "avg_ip": "3.1",
+          "avg_k": "2.7",
+          "avg_bb": "2.0",
+          "avg_pitches": "57.7",
+          "avg_strikes": "34.0",
+          "era": "4.35",
+          "whip": "1.06",
+          "strike_pct": "59.0",
+          "quality_starts": 0
+        }
+      },
+      "home_pitcher": {
+        "id": 703615,
+        "name": "Jose Cabrera",
+        "hand": "R",
+        "era": "N/A",
+        "whip": "N/A",
+        "last3": {}
+      },
       "away_hitters": [
         {
           "name": "Byron Buxton",
@@ -5027,10 +5083,10 @@
         {
           "name": "Pavin Smith",
           "stats": {
-            "avg": ".211",
-            "obp": ".326",
-            "slg": ".289",
-            "ops": ".615",
+            "avg": ".205",
+            "obp": ".319",
+            "slg": ".282",
+            "ops": ".601",
             "homeRuns": 1,
             "rbi": 5
           },
