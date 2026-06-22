@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T07:10:59.180885-04:00",
+  "updated_at": "2026-06-22T12:01:32.328625-04:00",
   "games": [
     {
       "gamePk": 824261,
@@ -953,52 +953,52 @@
       "start": "2026-06-22T22:40:00Z",
       "status": "Preview",
       "away_pitcher": {
-        "id": 677958,
-        "name": "Kumar Rocker",
-        "hand": "R",
-        "era": "4.17",
-        "whip": "1.41",
+        "id": 641302,
+        "name": "Tyler Alexander",
+        "hand": "L",
+        "era": "2.97",
+        "whip": "1.48",
         "last3": {
           "starts": [
             {
-              "date": "2026-04-04",
-              "opponent": "Cincinnati Reds",
-              "ip": "5.0",
-              "er": 2,
-              "k": 3,
-              "bb": 1,
-              "pitches": 80,
-              "strikes": 52
+              "date": "2026-03-26",
+              "opponent": "Philadelphia Phillies",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 9,
+              "strikes": 6
             },
             {
-              "date": "2026-04-10",
-              "opponent": "Los Angeles Dodgers",
-              "ip": "5.0",
-              "er": 3,
-              "k": 5,
-              "bb": 2,
-              "pitches": 83,
-              "strikes": 49
+              "date": "2026-03-28",
+              "opponent": "Philadelphia Phillies",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 21,
+              "strikes": 11
             },
             {
-              "date": "2026-04-15",
-              "opponent": "Athletics",
-              "ip": "4.2",
-              "er": 2,
-              "k": 6,
-              "bb": 4,
-              "pitches": 97,
-              "strikes": 59
+              "date": "2026-03-30",
+              "opponent": "Baltimore Orioles",
+              "ip": "1.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 10,
+              "strikes": 7
             }
           ],
-          "avg_ip": "5.0",
-          "avg_k": "4.7",
-          "avg_bb": "2.3",
-          "avg_pitches": "86.7",
-          "avg_strikes": "53.3",
-          "era": "4.30",
-          "whip": "1.50",
-          "strike_pct": "61.5",
+          "avg_ip": "1.0",
+          "avg_k": "1.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "13.3",
+          "avg_strikes": "8.0",
+          "era": "0.00",
+          "whip": "0.33",
+          "strike_pct": "60.0",
           "quality_starts": 0
         }
       },
@@ -1897,7 +1897,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 656302,
+        "name": "Dylan Cease",
+        "hand": "R",
+        "era": "2.71",
+        "whip": "1.19",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Athletics",
+              "ip": "5.1",
+              "er": 1,
+              "k": 12,
+              "bb": 2,
+              "pitches": 90,
+              "strikes": 61
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Chicago White Sox",
+              "ip": "4.1",
+              "er": 2,
+              "k": 6,
+              "bb": 3,
+              "pitches": 93,
+              "strikes": 51
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "5.0",
+              "er": 1,
+              "k": 8,
+              "bb": 4,
+              "pitches": 96,
+              "strikes": 57
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "8.7",
+          "avg_bb": "3.0",
+          "avg_pitches": "93.0",
+          "avg_strikes": "56.3",
+          "era": "2.45",
+          "whip": "1.43",
+          "strike_pct": "60.6",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Yordan Alvarez",
