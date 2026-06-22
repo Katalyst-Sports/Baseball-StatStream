@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T12:01:32.328625-04:00",
+  "updated_at": "2026-06-22T15:39:27.198532-04:00",
   "games": [
     {
       "gamePk": 824261,
@@ -1424,7 +1424,56 @@
       "venue": "Nationals Park",
       "start": "2026-06-22T22:45:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 641835,
+        "name": "Tim Mayza",
+        "hand": "L",
+        "era": "2.97",
+        "whip": "0.99",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Texas Rangers",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 1,
+              "pitches": 32,
+              "strikes": 18
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Washington Nationals",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 23,
+              "strikes": 18
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Colorado Rockies",
+              "ip": "1.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 13,
+              "strikes": 8
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "2.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "22.7",
+          "avg_strikes": "14.7",
+          "era": "0.00",
+          "whip": "0.40",
+          "strike_pct": "64.7",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 656492,
         "name": "Foster Griffin",
@@ -2171,26 +2220,6 @@
           }
         },
         {
-          "name": "Yohendrick Pi\u00f1ango",
-          "stats": {
-            "avg": ".283",
-            "obp": ".331",
-            "slg": ".433",
-            "ops": ".764",
-            "homeRuns": 4,
-            "rbi": 18
-          },
-          "last10ab": {
-            "avg": "0.500",
-            "hits": 5,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 1,
-            "games": 5
-          }
-        },
-        {
           "name": "Nathan Lukes",
           "stats": {
             "avg": ".306",
@@ -2308,6 +2337,26 @@
             "rbi": 1,
             "walks": 0,
             "games": 2
+          }
+        },
+        {
+          "name": "Andr\u00e9s Gim\u00e9nez",
+          "stats": {
+            "avg": ".232",
+            "obp": ".274",
+            "slg": ".373",
+            "ops": ".647",
+            "homeRuns": 7,
+            "rbi": 33
+          },
+          "last10ab": {
+            "avg": "0.545",
+            "hits": 6,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 4,
+            "walks": 1,
+            "games": 3
           }
         }
       ]
@@ -2791,7 +2840,56 @@
       "venue": "Great American Ball Park",
       "start": "2026-06-22T23:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 605540,
+        "name": "Brandon Woodruff",
+        "hand": "R",
+        "era": "3.60",
+        "whip": "1.03",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Tampa Bay Rays",
+              "ip": "5.0",
+              "er": 2,
+              "k": 6,
+              "bb": 0,
+              "pitches": 67,
+              "strikes": 45
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Boston Red Sox",
+              "ip": "5.2",
+              "er": 5,
+              "k": 4,
+              "bb": 2,
+              "pitches": 94,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-12",
+              "opponent": "Washington Nationals",
+              "ip": "6.0",
+              "er": 1,
+              "k": 6,
+              "bb": 1,
+              "pitches": 70,
+              "strikes": 50
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "5.3",
+          "avg_bb": "1.0",
+          "avg_pitches": "77.0",
+          "avg_strikes": "51.0",
+          "era": "4.32",
+          "whip": "1.08",
+          "strike_pct": "66.2",
+          "quality_starts": 1
+        }
+      },
       "home_pitcher": {
         "id": 663903,
         "name": "Brady Singer",
