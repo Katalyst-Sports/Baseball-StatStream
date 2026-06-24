@@ -1,5 +1,118 @@
 {
-  "updated_at": "2026-06-23T19:41:15.026291-04:00",
-  "games": [],
-  "errors": []
+  "updated_at": "2026-06-23T21:33:08.023503-04:00",
+  "games": [
+    {
+      "gamePk": 822799,
+      "game": "Houston Astros @ Toronto Blue Jays",
+      "winner": "Houston Astros",
+      "loser": "Toronto Blue Jays",
+      "final_score": "9-7",
+      "hitters": [
+        "Jose Altuve",
+        "Yordan Alvarez",
+        "Isaac Paredes",
+        "Yainer Diaz",
+        "Joey Loperfido",
+        "Cam Smith",
+        "Taylor Trammell",
+        "Raynel Delgado",
+        "Kazuma Okamoto",
+        "Daulton Varsho",
+        "Luis Ur\u00edas"
+      ],
+      "pitchers": [
+        "Peter Lambert"
+      ]
+    },
+    {
+      "gamePk": 823365,
+      "game": "Seattle Mariners @ Pittsburgh Pirates",
+      "winner": "Seattle Mariners",
+      "loser": "Pittsburgh Pirates",
+      "final_score": "3-2",
+      "hitters": [
+        "J.P. Crawford",
+        "Cal Raleigh",
+        "Josh Naylor",
+        "Cole Young",
+        "Brandon Lowe",
+        "Nick Gonzales"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 822963,
+      "game": "Kansas City Royals @ Tampa Bay Rays",
+      "winner": "Kansas City Royals",
+      "loser": "Tampa Bay Rays",
+      "final_score": "12-5",
+      "hitters": [
+        "Nick Loftin",
+        "Jac Caglianone",
+        "Tyler Tolbert",
+        "Jonathan Aranda",
+        "Junior Caminero"
+      ],
+      "pitchers": [
+        "Luinder Avila"
+      ]
+    },
+    {
+      "gamePk": 823849,
+      "game": "Texas Rangers @ Miami Marlins",
+      "winner": "Miami Marlins",
+      "loser": "Texas Rangers",
+      "final_score": "4-6",
+      "hitters": [
+        "Joc Pederson",
+        "Brandon Nimmo",
+        "Alejandro Osuna",
+        "Otto Lopez",
+        "Xavier Edwards",
+        "Owen Caissie",
+        "Heriberto Hern\u00e1ndez",
+        "Joe Mack",
+        "Javier Sanoja"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824262,
+      "game": "New York Yankees @ Detroit Tigers",
+      "winner": "New York Yankees",
+      "loser": "Detroit Tigers",
+      "final_score": "4-3",
+      "hitters": [
+        "Jazz Chisholm Jr.",
+        "Anthony Volpe",
+        "Dillon Dingler",
+        "Ben Malgeri"
+      ],
+      "pitchers": [
+        "Casey Mize"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Texas Rangers Takes 4-3 Win",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5406, Requested 679. Please try again in 850ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    },
+    {
+      "teamId": 113,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 143,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 136,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    }
+  ]
 }

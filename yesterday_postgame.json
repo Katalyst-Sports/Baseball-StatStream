@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T19:41:15.026291-04:00",
+  "updated_at": "2026-06-23T21:33:08.023503-04:00",
   "games": [
     {
       "gamePk": 824261,
@@ -273,5 +273,26 @@
       "game_summary": ""
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Texas Rangers Takes 4-3 Win",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5406, Requested 679. Please try again in 850ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    },
+    {
+      "teamId": 113,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 143,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 136,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    }
+  ]
 }

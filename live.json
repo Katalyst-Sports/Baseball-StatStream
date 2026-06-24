@@ -1,116 +1,133 @@
 {
-  "updated_at": "2026-06-23T19:41:15.026291-04:00",
+  "updated_at": "2026-06-23T21:33:08.023503-04:00",
   "games": [
-    {
-      "gamePk": 822799,
-      "game": "Houston Astros @ Toronto Blue Jays",
-      "score": "9-7",
-      "inning": "11th",
-      "hot_hitters": [
-        "Jose Altuve",
-        "Yordan Alvarez",
-        "Isaac Paredes",
-        "Yainer Diaz",
-        "Joey Loperfido",
-        "Cam Smith",
-        "Taylor Trammell",
-        "Raynel Delgado",
-        "Kazuma Okamoto",
-        "Daulton Varsho",
-        "Luis Ur\u00edas"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823365,
-      "game": "Seattle Mariners @ Pittsburgh Pirates",
-      "score": "1-2",
-      "inning": "4th",
-      "hot_hitters": [
-        "Cal Raleigh",
-        "Nick Gonzales"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822963,
-      "game": "Kansas City Royals @ Tampa Bay Rays",
-      "score": "2-1",
-      "inning": "4th",
-      "hot_hitters": [
-        "Nick Loftin",
-        "Jac Caglianone"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823849,
-      "game": "Texas Rangers @ Miami Marlins",
-      "score": "1-1",
-      "inning": "4th",
-      "hot_hitters": [
-        "Heriberto Hern\u00e1ndez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824262,
-      "game": "New York Yankees @ Detroit Tigers",
-      "score": "1-2",
-      "inning": "4th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
     {
       "gamePk": 822718,
       "game": "Philadelphia Phillies @ Washington Nationals",
-      "score": "0-5",
-      "inning": "4th",
+      "score": "13-8",
+      "inning": "9th",
       "hot_hitters": [
-        "Dylan Crews"
+        "Brandon Marsh",
+        "Bryson Stott",
+        "Gabriel Rincones Jr.",
+        "Edmundo Sosa",
+        "Dylan Crews",
+        "Jorbit Vivas",
+        "Jos\u00e9 Tena"
       ],
       "top_pitchers": []
     },
     {
       "gamePk": 823614,
       "game": "Chicago Cubs @ New York Mets",
-      "score": "0-0",
-      "inning": "2nd",
-      "hot_hitters": [],
+      "score": "7-2",
+      "inning": "7th",
+      "hot_hitters": [
+        "Pete Crow-Armstrong",
+        "Dansby Swanson"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 824501,
       "game": "Milwaukee Brewers @ Cincinnati Reds",
-      "score": "0-0",
-      "inning": "3rd",
-      "hot_hitters": [],
+      "score": "2-0",
+      "inning": "9th",
+      "hot_hitters": [
+        "Brice Turang"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 823690,
       "game": "Los Angeles Dodgers @ Minnesota Twins",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "5-2",
+      "inning": "5th",
+      "hot_hitters": [
+        "Freddie Freeman",
+        "Victor Caratini"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 824584,
       "game": "Cleveland Guardians @ Chicago White Sox",
+      "score": "1-2",
+      "inning": "8th",
+      "hot_hitters": [
+        "Kahlil Watson",
+        "Austin Hedges",
+        "Miguel Vargas"
+      ],
+      "top_pitchers": [
+        "Parker Messick"
+      ]
+    },
+    {
+      "gamePk": 823043,
+      "game": "Arizona Diamondbacks @ St. Louis Cardinals",
+      "score": "0-0",
+      "inning": "7th",
+      "hot_hitters": [
+        "Jordan Walker"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824340,
+      "game": "Boston Red Sox @ Colorado Rockies",
+      "score": "2-1",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Willi Castro"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824017,
+      "game": "Baltimore Orioles @ Los Angeles Angels",
       "score": "0-0",
       "inning": "1st",
       "hot_hitters": [],
       "top_pitchers": []
     },
     {
-      "gamePk": 823043,
-      "game": "Arizona Diamondbacks @ St. Louis Cardinals",
+      "gamePk": 823286,
+      "game": "Atlanta Braves @ San Diego Padres",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823210,
+      "game": "Athletics @ San Francisco Giants",
       "score": "0-0",
       "inning": "1st",
       "hot_hitters": [],
       "top_pitchers": []
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Texas Rangers Takes 4-3 Win",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5406, Requested 679. Please try again in 850ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    },
+    {
+      "teamId": 113,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 143,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 136,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    }
+  ]
 }
