@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T12:53:31.715284-04:00",
+  "updated_at": "2026-06-26T14:52:21.633465-04:00",
   "games": [
     {
       "gamePk": 824255,
@@ -864,6 +864,26 @@
           }
         },
         {
+          "name": "Konnor Griffin",
+          "stats": {
+            "avg": ".270",
+            "obp": ".327",
+            "slg": ".402",
+            "ops": ".729",
+            "homeRuns": 4,
+            "rbi": 22
+          },
+          "last10ab": {
+            "avg": "0.077",
+            "hits": 1,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
+          }
+        },
+        {
           "name": "Nick Gonzales",
           "stats": {
             "avg": ".297",
@@ -921,26 +941,6 @@
             "rbi": 0,
             "walks": 2,
             "games": 3
-          }
-        },
-        {
-          "name": "Esmerlyn Valdez",
-          "stats": {
-            "avg": ".152",
-            "obp": ".200",
-            "slg": ".394",
-            "ops": ".594",
-            "homeRuns": 2,
-            "rbi": 6
-          },
-          "last10ab": {
-            "avg": "0.167",
-            "hits": 2,
-            "atBats": 12,
-            "homeRuns": 2,
-            "rbi": 5,
-            "walks": 2,
-            "games": 4
           }
         }
       ]
@@ -3215,26 +3215,6 @@
           }
         },
         {
-          "name": "MJ Melendez",
-          "stats": {
-            "avg": ".192",
-            "obp": ".315",
-            "slg": ".350",
-            "ops": ".665",
-            "homeRuns": 4,
-            "rbi": 11
-          },
-          "last10ab": {
-            "avg": "0.400",
-            "hits": 4,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 2,
-            "games": 3
-          }
-        },
-        {
           "name": "Mark Vientos",
           "stats": {
             "avg": ".217",
@@ -3252,6 +3232,26 @@
             "rbi": 2,
             "walks": 2,
             "games": 5
+          }
+        },
+        {
+          "name": "Francisco Lindor",
+          "stats": {
+            "avg": ".214",
+            "obp": ".300",
+            "slg": ".337",
+            "ops": ".637",
+            "homeRuns": 2,
+            "rbi": 5
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
+            "games": 3
           }
         }
       ]
@@ -3735,7 +3735,56 @@
       "venue": "Rate Field",
       "start": "2026-06-26T23:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 674444,
+        "name": "Steven Cruz",
+        "hand": "R",
+        "era": "6.26",
+        "whip": "1.57",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-01",
+              "opponent": "Minnesota Twins",
+              "ip": "0.2",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 7,
+              "strikes": 5
+            },
+            {
+              "date": "2026-04-02",
+              "opponent": "Minnesota Twins",
+              "ip": "1.0",
+              "er": 3,
+              "k": 1,
+              "bb": 0,
+              "pitches": 27,
+              "strikes": 17
+            },
+            {
+              "date": "2026-04-04",
+              "opponent": "Milwaukee Brewers",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 18,
+              "strikes": 11
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "1.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "17.3",
+          "avg_strikes": "11.0",
+          "era": "10.12",
+          "whip": "1.12",
+          "strike_pct": "63.5",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {},
       "away_hitters": [
         {
