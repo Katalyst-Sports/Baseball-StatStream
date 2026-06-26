@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T14:52:21.633465-04:00",
+  "updated_at": "2026-06-26T16:45:11.395025-04:00",
   "games": [
     {
       "gamePk": 824255,
@@ -2890,7 +2890,36 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 804267,
+        "name": "Zach Thornton",
+        "hand": "L",
+        "era": "8.31",
+        "whip": "1.38",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-20",
+              "opponent": "Washington Nationals",
+              "ip": "4.1",
+              "er": 4,
+              "k": 3,
+              "bb": 2,
+              "pitches": 80,
+              "strikes": 53
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "3.0",
+          "avg_bb": "2.0",
+          "avg_pitches": "80.0",
+          "avg_strikes": "53.0",
+          "era": "8.31",
+          "whip": "1.38",
+          "strike_pct": "66.2",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Kyle Schwarber",
@@ -3785,7 +3814,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 689818,
+        "name": "David Sandlin",
+        "hand": "R",
+        "era": "8.10",
+        "whip": "1.43",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-27",
+              "opponent": "Minnesota Twins",
+              "ip": "6.0",
+              "er": 1,
+              "k": 4,
+              "bb": 0,
+              "pitches": 61,
+              "strikes": 41
+            },
+            {
+              "date": "2026-06-01",
+              "opponent": "Minnesota Twins",
+              "ip": "4.0",
+              "er": 8,
+              "k": 4,
+              "bb": 4,
+              "pitches": 80,
+              "strikes": 44
+            },
+            {
+              "date": "2026-06-07",
+              "opponent": "Philadelphia Phillies",
+              "ip": "3.1",
+              "er": 3,
+              "k": 6,
+              "bb": 3,
+              "pitches": 81,
+              "strikes": 51
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "4.7",
+          "avg_bb": "2.3",
+          "avg_pitches": "74.0",
+          "avg_strikes": "45.3",
+          "era": "8.10",
+          "whip": "1.43",
+          "strike_pct": "61.3",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "John Rave",
