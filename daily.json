@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-30T16:17:39.469099-04:00",
+  "updated_at": "2026-06-30T17:50:26.368028-04:00",
   "games": [
     {
       "gamePk": 824819,
@@ -5322,6 +5322,26 @@
           }
         },
         {
+          "name": "Liam Hicks",
+          "stats": {
+            "avg": ".278",
+            "obp": ".359",
+            "slg": ".472",
+            "ops": ".831",
+            "homeRuns": 13,
+            "rbi": 53
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 2,
+            "rbi": 8,
+            "walks": 1,
+            "games": 4
+          }
+        },
+        {
           "name": "Xavier Edwards",
           "stats": {
             "avg": ".297",
@@ -5437,26 +5457,6 @@
             "atBats": 10,
             "homeRuns": 0,
             "rbi": 1,
-            "walks": 0,
-            "games": 4
-          }
-        },
-        {
-          "name": "Javier Sanoja",
-          "stats": {
-            "avg": ".266",
-            "obp": ".305",
-            "slg": ".383",
-            "ops": ".688",
-            "homeRuns": 2,
-            "rbi": 29
-          },
-          "last10ab": {
-            "avg": "0.583",
-            "hits": 7,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 3,
             "walks": 0,
             "games": 4
           }
@@ -6646,7 +6646,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 694297,
+        "name": "Brandon Pfaadt",
+        "hand": "R",
+        "era": "5.92",
+        "whip": "1.50",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Detroit Tigers",
+              "ip": "6.0",
+              "er": 5,
+              "k": 3,
+              "bb": 1,
+              "pitches": 85,
+              "strikes": 57
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Atlanta Braves",
+              "ip": "4.2",
+              "er": 3,
+              "k": 2,
+              "bb": 2,
+              "pitches": 79,
+              "strikes": 48
+            },
+            {
+              "date": "2026-04-11",
+              "opponent": "Philadelphia Phillies",
+              "ip": "6.0",
+              "er": 3,
+              "k": 6,
+              "bb": 3,
+              "pitches": 101,
+              "strikes": 65
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "3.7",
+          "avg_bb": "2.0",
+          "avg_pitches": "88.3",
+          "avg_strikes": "56.7",
+          "era": "5.94",
+          "whip": "1.38",
+          "strike_pct": "64.2",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Victor Bericoto",
