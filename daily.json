@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T08:09:03.725623-04:00",
+  "updated_at": "2026-07-01T11:12:36.049529-04:00",
   "games": [
     {
       "gamePk": 824818,
@@ -58,7 +58,46 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 665152,
+        "name": "Dean Kremer",
+        "hand": "R",
+        "era": "4.09",
+        "whip": "0.91",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-13",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "5.0",
+              "er": 2,
+              "k": 9,
+              "bb": 0,
+              "pitches": 80,
+              "strikes": 55
+            },
+            {
+              "date": "2026-04-18",
+              "opponent": "Cleveland Guardians",
+              "ip": "6.0",
+              "er": 3,
+              "k": 7,
+              "bb": 2,
+              "pitches": 95,
+              "strikes": 58
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "8.0",
+          "avg_bb": "1.0",
+          "avg_pitches": "87.5",
+          "avg_strikes": "56.5",
+          "era": "4.09",
+          "whip": "0.91",
+          "strike_pct": "64.6",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Junior Perez",
