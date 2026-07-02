@@ -1,5 +1,11 @@
 {
-  "updated_at": "2026-07-02T12:19:15.501104-04:00",
+  "updated_at": "2026-07-02T14:08:59.806675-04:00",
   "games": [],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Cleveland Guardians Takes 4-9 Win",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5440, Requested 564. Please try again in 40ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    }
+  ]
 }
