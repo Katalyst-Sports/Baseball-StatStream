@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T18:13:13.681166-04:00",
+  "updated_at": "2026-07-04T19:16:28.069086-04:00",
   "games": [
     {
       "gamePk": 822716,
@@ -941,7 +941,7 @@
       "home_team": "Texas Rangers",
       "venue": "Globe Life Field",
       "start": "2026-07-04T20:05:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 656427,
         "name": "Jack Flaherty",
@@ -1166,10 +1166,10 @@
         {
           "name": "Colt Keith",
           "stats": {
-            "avg": ".252",
-            "obp": ".295",
-            "slg": ".382",
-            "ops": ".677",
+            "avg": ".251",
+            "obp": ".294",
+            "slg": ".381",
+            "ops": ".675",
             "homeRuns": 6,
             "rbi": 19
           },
@@ -1186,10 +1186,10 @@
         {
           "name": "Ben Malgeri",
           "stats": {
-            "avg": ".286",
-            "obp": ".389",
-            "slg": ".286",
-            "ops": ".675",
+            "avg": ".267",
+            "obp": ".368",
+            "slg": ".267",
+            "ops": ".635",
             "homeRuns": 0,
             "rbi": 3
           },
@@ -1268,10 +1268,10 @@
         {
           "name": "Josh Jung",
           "stats": {
-            "avg": ".298",
-            "obp": ".363",
-            "slg": ".450",
-            "ops": ".813",
+            "avg": ".297",
+            "obp": ".362",
+            "slg": ".449",
+            "ops": ".811",
             "homeRuns": 9,
             "rbi": 34
           },
@@ -1309,9 +1309,9 @@
           "name": "Brandon Nimmo",
           "stats": {
             "avg": ".259",
-            "obp": ".331",
-            "slg": ".416",
-            "ops": ".747",
+            "obp": ".330",
+            "slg": ".414",
+            "ops": ".744",
             "homeRuns": 8,
             "rbi": 29
           },
@@ -1413,7 +1413,7 @@
       "home_team": "Seattle Mariners",
       "venue": "T-Mobile Park",
       "start": "2026-07-04T20:10:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 669456,
         "name": "Shane Bieber",
@@ -1468,7 +1468,7 @@
         "id": 669302,
         "name": "Logan Gilbert",
         "hand": "R",
-        "era": "3.20",
+        "era": "3.19",
         "whip": "0.95",
         "last3": {
           "starts": [
@@ -1518,10 +1518,10 @@
         {
           "name": "Luis Ur\u00edas",
           "stats": {
-            "avg": ".400",
-            "obp": ".500",
-            "slg": ".667",
-            "ops": "1.167",
+            "avg": ".375",
+            "obp": ".474",
+            "slg": ".625",
+            "ops": "1.099",
             "homeRuns": 1,
             "rbi": 2
           },
@@ -1538,10 +1538,10 @@
         {
           "name": "Kazuma Okamoto",
           "stats": {
-            "avg": ".239",
-            "obp": ".320",
-            "slg": ".458",
-            "ops": ".778",
+            "avg": ".238",
+            "obp": ".319",
+            "slg": ".457",
+            "ops": ".776",
             "homeRuns": 19,
             "rbi": 54
           },
@@ -1558,10 +1558,10 @@
         {
           "name": "Ernie Clement",
           "stats": {
-            "avg": ".294",
-            "obp": ".317",
-            "slg": ".431",
-            "ops": ".748",
+            "avg": ".293",
+            "obp": ".316",
+            "slg": ".430",
+            "ops": ".746",
             "homeRuns": 7,
             "rbi": 29
           },
@@ -1578,10 +1578,10 @@
         {
           "name": "Brandon Valenzuela",
           "stats": {
-            "avg": ".237",
-            "obp": ".324",
-            "slg": ".414",
-            "ops": ".738",
+            "avg": ".235",
+            "obp": ".322",
+            "slg": ".412",
+            "ops": ".734",
             "homeRuns": 7,
             "rbi": 19
           },
@@ -1593,26 +1593,6 @@
             "rbi": 2,
             "walks": 0,
             "games": 5
-          }
-        },
-        {
-          "name": "Nathan Lukes",
-          "stats": {
-            "avg": ".287",
-            "obp": ".335",
-            "slg": ".402",
-            "ops": ".737",
-            "homeRuns": 4,
-            "rbi": 17
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 4
           }
         },
         {
@@ -1636,12 +1616,32 @@
           }
         },
         {
+          "name": "Nathan Lukes",
+          "stats": {
+            "avg": ".286",
+            "obp": ".333",
+            "slg": ".400",
+            "ops": ".733",
+            "homeRuns": 4,
+            "rbi": 17
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
+          }
+        },
+        {
           "name": "Yohendrick Pi\u00f1ango",
           "stats": {
-            "avg": ".270",
-            "obp": ".312",
-            "slg": ".419",
-            "ops": ".731",
+            "avg": ".268",
+            "obp": ".310",
+            "slg": ".416",
+            "ops": ".726",
             "homeRuns": 5,
             "rbi": 20
           },
@@ -1676,22 +1676,22 @@
           }
         },
         {
-          "name": "Sean Keys",
+          "name": "Andr\u00e9s Gim\u00e9nez",
           "stats": {
-            "avg": ".222",
-            "obp": ".222",
-            "slg": ".444",
-            "ops": ".666",
-            "homeRuns": 1,
-            "rbi": 3
+            "avg": ".236",
+            "obp": ".283",
+            "slg": ".373",
+            "ops": ".656",
+            "homeRuns": 7,
+            "rbi": 35
           },
           "last10ab": {
-            "avg": "0.167",
-            "hits": 2,
-            "atBats": 12,
-            "homeRuns": 1,
-            "rbi": 3,
-            "walks": 0,
+            "avg": "0.545",
+            "hits": 6,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 4,
+            "walks": 1,
             "games": 3
           }
         }
@@ -1700,10 +1700,10 @@
         {
           "name": "Dominic Canzone",
           "stats": {
-            "avg": ".275",
-            "obp": ".351",
-            "slg": ".554",
-            "ops": ".905",
+            "avg": ".273",
+            "obp": ".349",
+            "slg": ".551",
+            "ops": ".900",
             "homeRuns": 14,
             "rbi": 37
           },
@@ -1720,10 +1720,10 @@
         {
           "name": "Randy Arozarena",
           "stats": {
-            "avg": ".288",
-            "obp": ".378",
-            "slg": ".455",
-            "ops": ".833",
+            "avg": ".287",
+            "obp": ".376",
+            "slg": ".453",
+            "ops": ".829",
             "homeRuns": 9,
             "rbi": 41
           },
@@ -1760,10 +1760,10 @@
         {
           "name": "Colt Emerson",
           "stats": {
-            "avg": ".219",
-            "obp": ".291",
-            "slg": ".438",
-            "ops": ".729",
+            "avg": ".217",
+            "obp": ".289",
+            "slg": ".434",
+            "ops": ".723",
             "homeRuns": 7,
             "rbi": 19
           },
@@ -1860,10 +1860,10 @@
         {
           "name": "Weston Wilson",
           "stats": {
-            "avg": ".212",
-            "obp": ".305",
-            "slg": ".288",
-            "ops": ".593",
+            "avg": ".208",
+            "obp": ".300",
+            "slg": ".283",
+            "ops": ".583",
             "homeRuns": 1,
             "rbi": 5
           },
@@ -1885,7 +1885,7 @@
       "home_team": "Cincinnati Reds",
       "venue": "Great American Ball Park",
       "start": "2026-07-04T23:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 687064,
         "name": "Brandon Young",
@@ -1940,8 +1940,8 @@
         "id": 668881,
         "name": "Hunter Greene",
         "hand": "R",
-        "era": "N/A",
-        "whip": "N/A",
+        "era": "-.--",
+        "whip": "-.--",
         "last3": {}
       },
       "away_hitters": [
@@ -2048,10 +2048,10 @@
         {
           "name": "Gunnar Henderson",
           "stats": {
-            "avg": ".226",
-            "obp": ".300",
-            "slg": ".413",
-            "ops": ".713",
+            "avg": ".228",
+            "obp": ".302",
+            "slg": ".415",
+            "ops": ".717",
             "homeRuns": 16,
             "rbi": 39
           },
@@ -2315,7 +2315,7 @@
       "home_team": "Houston Astros",
       "venue": "Daikin Park",
       "start": "2026-07-04T23:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 656876,
         "name": "Drew Rasmussen",
@@ -2370,8 +2370,8 @@
         "id": 686613,
         "name": "Hunter Brown",
         "hand": "R",
-        "era": "1.78",
-        "whip": "1.18",
+        "era": "1.75",
+        "whip": "1.17",
         "last3": {
           "starts": [
             {
@@ -2460,10 +2460,10 @@
         {
           "name": "Jonathan Aranda",
           "stats": {
-            "avg": ".289",
-            "obp": ".392",
-            "slg": ".459",
-            "ops": ".851",
+            "avg": ".288",
+            "obp": ".391",
+            "slg": ".458",
+            "ops": ".849",
             "homeRuns": 13,
             "rbi": 58
           },
@@ -2787,7 +2787,7 @@
       "home_team": "Cleveland Guardians",
       "venue": "Progressive Field",
       "start": "2026-07-04T23:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 680732,
         "name": "Sean Burke",
@@ -2842,8 +2842,8 @@
         "id": 800048,
         "name": "Parker Messick",
         "hand": "L",
-        "era": "2.85",
-        "whip": "1.06",
+        "era": "2.84",
+        "whip": "1.07",
         "last3": {
           "starts": [
             {
@@ -2913,9 +2913,9 @@
           "name": "Miguel Vargas",
           "stats": {
             "avg": ".248",
-            "obp": ".359",
+            "obp": ".361",
             "slg": ".495",
-            "ops": ".854",
+            "ops": ".856",
             "homeRuns": 20,
             "rbi": 55
           },
@@ -2932,10 +2932,10 @@
         {
           "name": "Randal Grichuk",
           "stats": {
-            "avg": ".261",
-            "obp": ".294",
-            "slg": ".555",
-            "ops": ".849",
+            "avg": ".258",
+            "obp": ".291",
+            "slg": ".550",
+            "ops": ".841",
             "homeRuns": 9,
             "rbi": 23
           },
