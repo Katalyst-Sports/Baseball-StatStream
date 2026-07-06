@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T17:05:13.095616-04:00",
+  "updated_at": "2026-07-06T18:35:21.758689-04:00",
   "games": [
     {
       "gamePk": 824089,
@@ -7,7 +7,7 @@
       "home_team": "Kansas City Royals",
       "venue": "Kauffman Stadium",
       "start": "2026-07-06T18:10:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 650911,
         "name": "Cristopher S\u00e1nchez",
@@ -152,10 +152,10 @@
         {
           "name": "Brandon Marsh",
           "stats": {
-            "avg": ".306",
-            "obp": ".340",
-            "slg": ".506",
-            "ops": ".846",
+            "avg": ".305",
+            "obp": ".339",
+            "slg": ".505",
+            "ops": ".844",
             "homeRuns": 15,
             "rbi": 46
           },
@@ -172,10 +172,10 @@
         {
           "name": "Bryson Stott",
           "stats": {
-            "avg": ".252",
-            "obp": ".311",
-            "slg": ".399",
-            "ops": ".710",
+            "avg": ".251",
+            "obp": ".310",
+            "slg": ".398",
+            "ops": ".708",
             "homeRuns": 7,
             "rbi": 40
           },
@@ -210,26 +210,6 @@
           }
         },
         {
-          "name": "Alec Bohm",
-          "stats": {
-            "avg": ".225",
-            "obp": ".282",
-            "slg": ".373",
-            "ops": ".655",
-            "homeRuns": 11,
-            "rbi": 47
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 4,
-            "walks": 2,
-            "games": 3
-          }
-        },
-        {
           "name": "Trea Turner",
           "stats": {
             "avg": ".242",
@@ -246,6 +226,26 @@
             "homeRuns": 0,
             "rbi": 0,
             "walks": 1,
+            "games": 3
+          }
+        },
+        {
+          "name": "Alec Bohm",
+          "stats": {
+            "avg": ".224",
+            "obp": ".282",
+            "slg": ".372",
+            "ops": ".654",
+            "homeRuns": 11,
+            "rbi": 47
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 2,
             "games": 3
           }
         },
@@ -272,10 +272,10 @@
         {
           "name": "Edmundo Sosa",
           "stats": {
-            "avg": ".217",
-            "obp": ".257",
-            "slg": ".377",
-            "ops": ".634",
+            "avg": ".216",
+            "obp": ".255",
+            "slg": ".374",
+            "ops": ".629",
             "homeRuns": 5,
             "rbi": 24
           },
@@ -295,9 +295,9 @@
           "name": "Luke Maile",
           "stats": {
             "avg": ".250",
-            "obp": ".250",
+            "obp": ".400",
             "slg": "1.000",
-            "ops": "1.250",
+            "ops": "1.400",
             "homeRuns": 1,
             "rbi": 3
           },
@@ -307,7 +307,7 @@
             "atBats": 4,
             "homeRuns": 1,
             "rbi": 3,
-            "walks": 0,
+            "walks": 1,
             "games": 1
           }
         },
@@ -334,10 +334,10 @@
         {
           "name": "Tyler Tolbert",
           "stats": {
-            "avg": ".317",
-            "obp": ".370",
-            "slg": ".415",
-            "ops": ".785",
+            "avg": ".333",
+            "obp": ".383",
+            "slg": ".429",
+            "ops": ".812",
             "homeRuns": 1,
             "rbi": 3
           },
@@ -354,12 +354,12 @@
         {
           "name": "Jac Caglianone",
           "stats": {
-            "avg": ".257",
-            "obp": ".323",
-            "slg": ".455",
-            "ops": ".778",
+            "avg": ".259",
+            "obp": ".325",
+            "slg": ".457",
+            "ops": ".782",
             "homeRuns": 14,
-            "rbi": 32
+            "rbi": 33
           },
           "last10ab": {
             "avg": "0.200",
@@ -392,12 +392,32 @@
           }
         },
         {
+          "name": "Michael Massey",
+          "stats": {
+            "avg": ".257",
+            "obp": ".290",
+            "slg": ".424",
+            "ops": ".714",
+            "homeRuns": 7,
+            "rbi": 29
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
+          }
+        },
+        {
           "name": "Nick Loftin",
           "stats": {
-            "avg": ".237",
-            "obp": ".333",
-            "slg": ".385",
-            "ops": ".718",
+            "avg": ".236",
+            "obp": ".332",
+            "slg": ".382",
+            "ops": ".714",
             "homeRuns": 3,
             "rbi": 27
           },
@@ -408,26 +428,6 @@
             "homeRuns": 0,
             "rbi": 3,
             "walks": 2,
-            "games": 4
-          }
-        },
-        {
-          "name": "Michael Massey",
-          "stats": {
-            "avg": ".254",
-            "obp": ".287",
-            "slg": ".421",
-            "ops": ".708",
-            "homeRuns": 7,
-            "rbi": 28
-          },
-          "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 0,
             "games": 4
           }
         },
@@ -454,10 +454,10 @@
         {
           "name": "Isaac Collins",
           "stats": {
-            "avg": ".235",
-            "obp": ".339",
-            "slg": ".344",
-            "ops": ".683",
+            "avg": ".238",
+            "obp": ".341",
+            "slg": ".347",
+            "ops": ".688",
             "homeRuns": 4,
             "rbi": 25
           },
@@ -479,7 +479,7 @@
       "home_team": "Tampa Bay Rays",
       "venue": "Tropicana Field",
       "start": "2026-07-06T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 693645,
         "name": "Cam Schlittler",
@@ -951,7 +951,7 @@
       "home_team": "Washington Nationals",
       "venue": "Nationals Park",
       "start": "2026-07-06T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 681347,
         "name": "Mike Burrows",
