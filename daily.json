@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07T11:11:13.122046-04:00",
+  "updated_at": "2026-07-07T13:26:39.230095-04:00",
   "games": [
     {
       "gamePk": 823062,
@@ -530,7 +530,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 690928,
+        "name": "Hunter Dobbins",
+        "hand": "R",
+        "era": "3.63",
+        "whip": "1.38",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-30",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "4.1",
+              "er": 3,
+              "k": 4,
+              "bb": 5,
+              "pitches": 79,
+              "strikes": 41
+            },
+            {
+              "date": "2026-05-31",
+              "opponent": "Chicago Cubs",
+              "ip": "3.2",
+              "er": 1,
+              "k": 4,
+              "bb": 0,
+              "pitches": 61,
+              "strikes": 41
+            },
+            {
+              "date": "2026-06-05",
+              "opponent": "Cincinnati Reds",
+              "ip": "5.0",
+              "er": 0,
+              "k": 6,
+              "bb": 2,
+              "pitches": 78,
+              "strikes": 52
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "4.7",
+          "avg_bb": "2.3",
+          "avg_pitches": "72.7",
+          "avg_strikes": "44.7",
+          "era": "2.77",
+          "whip": "1.31",
+          "strike_pct": "61.5",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Andrew Vaughn",
@@ -3366,26 +3415,6 @@
           }
         },
         {
-          "name": "Taylor Trammell",
-          "stats": {
-            "avg": ".252",
-            "obp": ".316",
-            "slg": ".402",
-            "ops": ".718",
-            "homeRuns": 3,
-            "rbi": 11
-          },
-          "last10ab": {
-            "avg": "0.273",
-            "hits": 3,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
           "name": "Jose Altuve",
           "stats": {
             "avg": ".235",
@@ -3402,6 +3431,26 @@
             "homeRuns": 0,
             "rbi": 0,
             "walks": 3,
+            "games": 3
+          }
+        },
+        {
+          "name": "Taylor Trammell",
+          "stats": {
+            "avg": ".243",
+            "obp": ".308",
+            "slg": ".393",
+            "ops": ".701",
+            "homeRuns": 3,
+            "rbi": 11
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 1,
             "games": 3
           }
         },
@@ -4099,7 +4148,56 @@
       "venue": "Great American Ball Park",
       "start": "2026-07-07T23:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 554430,
+        "name": "Zack Wheeler",
+        "hand": "R",
+        "era": "2.36",
+        "whip": "0.94",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-25",
+              "opponent": "Atlanta Braves",
+              "ip": "5.0",
+              "er": 2,
+              "k": 6,
+              "bb": 3,
+              "pitches": 84,
+              "strikes": 56
+            },
+            {
+              "date": "2026-05-01",
+              "opponent": "Miami Marlins",
+              "ip": "6.0",
+              "er": 1,
+              "k": 8,
+              "bb": 2,
+              "pitches": 94,
+              "strikes": 60
+            },
+            {
+              "date": "2026-05-06",
+              "opponent": "Athletics",
+              "ip": "6.1",
+              "er": 3,
+              "k": 4,
+              "bb": 1,
+              "pitches": 98,
+              "strikes": 62
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "6.0",
+          "avg_bb": "2.0",
+          "avg_pitches": "92.0",
+          "avg_strikes": "59.3",
+          "era": "3.12",
+          "whip": "0.98",
+          "strike_pct": "64.5",
+          "quality_starts": 2
+        }
+      },
       "home_pitcher": {
         "id": 671096,
         "name": "Andrew Abbott",
@@ -6410,7 +6508,56 @@
       "venue": "Oracle Park",
       "start": "2026-07-08T01:45:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 693686,
+        "name": "Spencer Miles",
+        "hand": "R",
+        "era": "2.83",
+        "whip": "1.04",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Athletics",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 1,
+              "pitches": 16,
+              "strikes": 7
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Colorado Rockies",
+              "ip": "1.2",
+              "er": 3,
+              "k": 2,
+              "bb": 1,
+              "pitches": 41,
+              "strikes": 23
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Chicago White Sox",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 27,
+              "strikes": 18
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "1.7",
+          "avg_bb": "0.7",
+          "avg_pitches": "28.0",
+          "avg_strikes": "16.0",
+          "era": "5.79",
+          "whip": "1.50",
+          "strike_pct": "57.1",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 686790,
         "name": "Trevor McDonald",
