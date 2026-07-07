@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07T08:05:17.017847-04:00",
+  "updated_at": "2026-07-07T11:11:13.122046-04:00",
   "games": [
     {
       "gamePk": 823062,
@@ -58,7 +58,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 694335,
+        "name": "Matt Svanson",
+        "hand": "R",
+        "era": "6.69",
+        "whip": "1.67",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Tampa Bay Rays",
+              "ip": "0.1",
+              "er": 3,
+              "k": 0,
+              "bb": 0,
+              "pitches": 16,
+              "strikes": 11
+            },
+            {
+              "date": "2026-03-28",
+              "opponent": "Tampa Bay Rays",
+              "ip": "0.2",
+              "er": 3,
+              "k": 0,
+              "bb": 1,
+              "pitches": 20,
+              "strikes": 10
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "New York Mets",
+              "ip": "2.0",
+              "er": 0,
+              "k": 3,
+              "bb": 2,
+              "pitches": 36,
+              "strikes": 20
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "1.0",
+          "avg_bb": "1.0",
+          "avg_pitches": "24.0",
+          "avg_strikes": "13.7",
+          "era": "18.00",
+          "whip": "3.00",
+          "strike_pct": "56.9",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Andrew Vaughn",
@@ -431,7 +480,56 @@
       "venue": "Busch Stadium",
       "start": "2026-07-07T23:45:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 688107,
+        "name": "Robert Gasser",
+        "hand": "L",
+        "era": "4.54",
+        "whip": "1.29",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-17",
+              "opponent": "Minnesota Twins",
+              "ip": "4.0",
+              "er": 2,
+              "k": 3,
+              "bb": 2,
+              "pitches": 79,
+              "strikes": 48
+            },
+            {
+              "date": "2026-05-23",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "4.1",
+              "er": 4,
+              "k": 4,
+              "bb": 4,
+              "pitches": 89,
+              "strikes": 53
+            },
+            {
+              "date": "2026-06-03",
+              "opponent": "San Francisco Giants",
+              "ip": "5.0",
+              "er": 1,
+              "k": 5,
+              "bb": 1,
+              "pitches": 83,
+              "strikes": 56
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "4.0",
+          "avg_bb": "2.3",
+          "avg_pitches": "83.7",
+          "avg_strikes": "52.3",
+          "era": "4.72",
+          "whip": "1.43",
+          "strike_pct": "62.5",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {},
       "away_hitters": [
         {
