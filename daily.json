@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07T17:04:01.451923-04:00",
+  "updated_at": "2026-07-07T18:20:39.615921-04:00",
   "games": [
     {
       "gamePk": 823062,
@@ -1423,7 +1423,7 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-07-07T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 669372,
         "name": "J.T. Ginn",
@@ -2357,7 +2357,7 @@
       "home_team": "Miami Marlins",
       "venue": "loanDepot park",
       "start": "2026-07-07T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 693433,
         "name": "Bryan Woo",
@@ -2829,7 +2829,7 @@
       "home_team": "Tampa Bay Rays",
       "venue": "Tropicana Field",
       "start": "2026-07-07T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 701542,
         "name": "Will Warren",
@@ -5002,26 +5002,6 @@
       ],
       "home_hitters": [
         {
-          "name": "Byron Buxton",
-          "stats": {
-            "avg": ".271",
-            "obp": ".328",
-            "slg": ".575",
-            "ops": ".903",
-            "homeRuns": 25,
-            "rbi": 45
-          },
-          "last10ab": {
-            "avg": "0.333",
-            "hits": 4,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
           "name": "Trevor Larnach",
           "stats": {
             "avg": ".292",
@@ -5179,6 +5159,26 @@
             "rbi": 1,
             "walks": 1,
             "games": 3
+          }
+        },
+        {
+          "name": "Austin Martin",
+          "stats": {
+            "avg": ".247",
+            "obp": ".355",
+            "slg": ".327",
+            "ops": ".682",
+            "homeRuns": 2,
+            "rbi": 18
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 4,
+            "games": 5
           }
         }
       ]
