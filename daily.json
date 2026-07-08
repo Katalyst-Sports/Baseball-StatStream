@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08T14:42:54.218640-04:00",
+  "updated_at": "2026-07-08T16:11:09.871730-04:00",
   "games": [
     {
       "gamePk": 823202,
@@ -7,13 +7,13 @@
       "home_team": "San Francisco Giants",
       "venue": "Oracle Park",
       "start": "2026-07-08T19:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 656302,
         "name": "Dylan Cease",
         "hand": "R",
-        "era": "2.79",
-        "whip": "1.18",
+        "era": "2.76",
+        "whip": "1.17",
         "last3": {
           "starts": [
             {
@@ -62,8 +62,8 @@
         "id": 657277,
         "name": "Logan Webb",
         "hand": "R",
-        "era": "3.66",
-        "whip": "1.17",
+        "era": "4.10",
+        "whip": "1.21",
         "last3": {
           "starts": [
             {
@@ -112,21 +112,21 @@
         {
           "name": "Jonatan Clase",
           "stats": {
-            "avg": ".400",
-            "obp": ".400",
-            "slg": "1.000",
-            "ops": "1.400",
+            "avg": ".333",
+            "obp": ".333",
+            "slg": ".833",
+            "ops": "1.166",
             "homeRuns": 1,
             "rbi": 3
           },
           "last10ab": {
-            "avg": "0.400",
+            "avg": "0.333",
             "hits": 2,
-            "atBats": 5,
+            "atBats": 6,
             "homeRuns": 1,
             "rbi": 3,
             "walks": 0,
-            "games": 2
+            "games": 3
           }
         },
         {
@@ -152,12 +152,12 @@
         {
           "name": "Kazuma Okamoto",
           "stats": {
-            "avg": ".235",
-            "obp": ".313",
-            "slg": ".454",
-            "ops": ".767",
-            "homeRuns": 20,
-            "rbi": 55
+            "avg": ".237",
+            "obp": ".315",
+            "slg": ".465",
+            "ops": ".780",
+            "homeRuns": 21,
+            "rbi": 59
           },
           "last10ab": {
             "avg": "0.333",
@@ -172,10 +172,10 @@
         {
           "name": "Ernie Clement",
           "stats": {
-            "avg": ".298",
-            "obp": ".319",
-            "slg": ".434",
-            "ops": ".753",
+            "avg": ".300",
+            "obp": ".321",
+            "slg": ".435",
+            "ops": ".756",
             "homeRuns": 7,
             "rbi": 30
           },
@@ -187,6 +187,26 @@
             "rbi": 1,
             "walks": 0,
             "games": 2
+          }
+        },
+        {
+          "name": "Nathan Lukes",
+          "stats": {
+            "avg": ".289",
+            "obp": ".340",
+            "slg": ".396",
+            "ops": ".736",
+            "homeRuns": 4,
+            "rbi": 17
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -210,34 +230,14 @@
           }
         },
         {
-          "name": "Nathan Lukes",
-          "stats": {
-            "avg": ".285",
-            "obp": ".337",
-            "slg": ".392",
-            "ops": ".729",
-            "homeRuns": 4,
-            "rbi": 17
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 4
-          }
-        },
-        {
           "name": "Daulton Varsho",
           "stats": {
-            "avg": ".242",
-            "obp": ".309",
-            "slg": ".398",
-            "ops": ".707",
+            "avg": ".245",
+            "obp": ".312",
+            "slg": ".400",
+            "ops": ".712",
             "homeRuns": 7,
-            "rbi": 23
+            "rbi": 24
           },
           "last10ab": {
             "avg": "0.182",
@@ -252,10 +252,10 @@
         {
           "name": "Vladimir Guerrero Jr.",
           "stats": {
-            "avg": ".263",
-            "obp": ".345",
-            "slg": ".344",
-            "ops": ".689",
+            "avg": ".262",
+            "obp": ".344",
+            "slg": ".343",
+            "ops": ".687",
             "homeRuns": 4,
             "rbi": 35
           },
@@ -273,9 +273,9 @@
           "name": "George Springer",
           "stats": {
             "avg": ".221",
-            "obp": ".308",
+            "obp": ".310",
             "slg": ".373",
-            "ops": ".681",
+            "ops": ".683",
             "homeRuns": 8,
             "rbi": 21
           },
@@ -354,10 +354,10 @@
         {
           "name": "Heliot Ramos",
           "stats": {
-            "avg": ".279",
-            "obp": ".318",
-            "slg": ".493",
-            "ops": ".811",
+            "avg": ".277",
+            "obp": ".316",
+            "slg": ".490",
+            "ops": ".806",
             "homeRuns": 8,
             "rbi": 28
           },
@@ -374,10 +374,10 @@
         {
           "name": "Casey Schmitt",
           "stats": {
-            "avg": ".279",
-            "obp": ".305",
-            "slg": ".488",
-            "ops": ".793",
+            "avg": ".278",
+            "obp": ".304",
+            "slg": ".486",
+            "ops": ".790",
             "homeRuns": 17,
             "rbi": 45
           },
@@ -432,26 +432,6 @@
           }
         },
         {
-          "name": "Jonah Cox",
-          "stats": {
-            "avg": ".269",
-            "obp": ".269",
-            "slg": ".500",
-            "ops": ".769",
-            "homeRuns": 1,
-            "rbi": 3
-          },
-          "last10ab": {
-            "avg": "0.400",
-            "hits": 4,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 2,
-            "walks": 0,
-            "games": 6
-          }
-        },
-        {
           "name": "Drew Gilbert",
           "stats": {
             "avg": ".243",
@@ -469,6 +449,26 @@
             "rbi": 2,
             "walks": 2,
             "games": 4
+          }
+        },
+        {
+          "name": "Willy Adames",
+          "stats": {
+            "avg": ".231",
+            "obp": ".281",
+            "slg": ".423",
+            "ops": ".704",
+            "homeRuns": 14,
+            "rbi": 34
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
           }
         }
       ]
@@ -3784,7 +3784,56 @@
       "venue": "Great American Ball Park",
       "start": "2026-07-08T23:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 660604,
+        "name": "Alan Rangel",
+        "hand": "R",
+        "era": "3.38",
+        "whip": "1.31",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-22",
+              "opponent": "Chicago Cubs",
+              "ip": "3.0",
+              "er": 1,
+              "k": 5,
+              "bb": 0,
+              "pitches": 44,
+              "strikes": 27
+            },
+            {
+              "date": "2026-06-22",
+              "opponent": "Washington Nationals",
+              "ip": "5.0",
+              "er": 1,
+              "k": 4,
+              "bb": 0,
+              "pitches": 72,
+              "strikes": 51
+            },
+            {
+              "date": "2026-06-27",
+              "opponent": "New York Mets",
+              "ip": "4.0",
+              "er": 4,
+              "k": 4,
+              "bb": 2,
+              "pitches": 70,
+              "strikes": 46
+            }
+          ],
+          "avg_ip": "4.0",
+          "avg_k": "4.3",
+          "avg_bb": "0.7",
+          "avg_pitches": "62.0",
+          "avg_strikes": "41.3",
+          "era": "4.50",
+          "whip": "1.17",
+          "strike_pct": "66.7",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 695505,
         "name": "Chase Burns",
