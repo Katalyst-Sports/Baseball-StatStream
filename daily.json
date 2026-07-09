@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T08:06:14.894471-04:00",
+  "updated_at": "2026-07-09T11:28:33.959914-04:00",
   "games": [
     {
       "gamePk": 823359,
@@ -127,26 +127,6 @@
             "rbi": 0,
             "walks": 0,
             "games": 3
-          }
-        },
-        {
-          "name": "Jos\u00e9 Az\u00f3car",
-          "stats": {
-            "avg": ".353",
-            "obp": ".389",
-            "slg": ".471",
-            "ops": ".860",
-            "homeRuns": 0,
-            "rbi": 0
-          },
-          "last10ab": {
-            "avg": "0.400",
-            "hits": 4,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 0,
-            "games": 5
           }
         },
         {
@@ -287,6 +267,26 @@
             "rbi": 2,
             "walks": 1,
             "games": 5
+          }
+        },
+        {
+          "name": "Mike Yastrzemski",
+          "stats": {
+            "avg": ".228",
+            "obp": ".315",
+            "slg": ".348",
+            "ops": ".663",
+            "homeRuns": 5,
+            "rbi": 24
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 5,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         }
       ],
@@ -952,7 +952,56 @@
       "venue": "Tropicana Field",
       "start": "2026-07-09T17:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 621112,
+        "name": "Paul Blackburn",
+        "hand": "R",
+        "era": "2.22",
+        "whip": "1.14",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-30",
+              "opponent": "Seattle Mariners",
+              "ip": "1.1",
+              "er": 1,
+              "k": 0,
+              "bb": 1,
+              "pitches": 22,
+              "strikes": 12
+            },
+            {
+              "date": "2026-04-04",
+              "opponent": "Miami Marlins",
+              "ip": "1.2",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 28,
+              "strikes": 18
+            },
+            {
+              "date": "2026-04-09",
+              "opponent": "Athletics",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 19,
+              "strikes": 13
+            }
+          ],
+          "avg_ip": "1.1",
+          "avg_k": "1.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "23.0",
+          "avg_strikes": "14.3",
+          "era": "2.25",
+          "whip": "2.00",
+          "strike_pct": "62.3",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 656876,
         "name": "Drew Rasmussen",
