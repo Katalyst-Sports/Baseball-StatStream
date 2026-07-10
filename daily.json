@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10T17:28:51.594325-04:00",
+  "updated_at": "2026-07-10T18:34:40.917862-04:00",
   "games": [
     {
       "gamePk": 824252,
@@ -7,7 +7,7 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-07-10T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 605400,
         "name": "Aaron Nola",
@@ -6880,26 +6880,6 @@
       ],
       "home_hitters": [
         {
-          "name": "Victor Bericoto",
-          "stats": {
-            "avg": ".293",
-            "obp": ".305",
-            "slg": ".552",
-            "ops": ".857",
-            "homeRuns": 4,
-            "rbi": 9
-          },
-          "last10ab": {
-            "avg": "0.250",
-            "hits": 3,
-            "atBats": 12,
-            "homeRuns": 1,
-            "rbi": 1,
-            "walks": 0,
-            "games": 6
-          }
-        },
-        {
           "name": "Bryce Eldridge",
           "stats": {
             "avg": ".275",
@@ -7056,6 +7036,26 @@
             "homeRuns": 1,
             "rbi": 2,
             "walks": 2,
+            "games": 4
+          }
+        },
+        {
+          "name": "Jesus Rodriguez",
+          "stats": {
+            "avg": ".231",
+            "obp": ".302",
+            "slg": ".385",
+            "ops": ".687",
+            "homeRuns": 2,
+            "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.455",
+            "hits": 5,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
             "games": 4
           }
         }
