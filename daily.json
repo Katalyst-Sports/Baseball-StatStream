@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T10:58:12.149849-04:00",
+  "updated_at": "2026-07-11T12:02:38.309360-04:00",
   "games": [
     {
       "gamePk": 823357,
@@ -7,7 +7,7 @@
       "home_team": "Pittsburgh Pirates",
       "venue": "PNC Park",
       "start": "2026-07-11T16:05:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 687075,
         "name": "Brandon Sproat",
@@ -2840,7 +2840,36 @@
       "venue": "Citi Field",
       "start": "2026-07-11T20:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 700842,
+        "name": "Eduardo Rivera",
+        "hand": "L",
+        "era": "0.00",
+        "whip": "0.30",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-22",
+              "opponent": "New York Yankees",
+              "ip": "3.1",
+              "er": 0,
+              "k": 3,
+              "bb": 0,
+              "pitches": 41,
+              "strikes": 26
+            }
+          ],
+          "avg_ip": "3.1",
+          "avg_k": "3.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "41.0",
+          "avg_strikes": "26.0",
+          "era": "0.00",
+          "whip": "0.30",
+          "strike_pct": "63.4",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 642547,
         "name": "Freddy Peralta",
