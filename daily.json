@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T08:09:26.193909-04:00",
+  "updated_at": "2026-07-11T09:54:46.823641-04:00",
   "games": [
     {
       "gamePk": 823357,
@@ -8,8 +8,106 @@
       "venue": "PNC Park",
       "start": "2026-07-11T16:05:00Z",
       "status": "Preview",
-      "away_pitcher": {},
-      "home_pitcher": {},
+      "away_pitcher": {
+        "id": 687075,
+        "name": "Brandon Sproat",
+        "hand": "R",
+        "era": "5.13",
+        "whip": "1.37",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-29",
+              "opponent": "Chicago White Sox",
+              "ip": "3.0",
+              "er": 7,
+              "k": 3,
+              "bb": 4,
+              "pitches": 86,
+              "strikes": 50
+            },
+            {
+              "date": "2026-04-04",
+              "opponent": "Kansas City Royals",
+              "ip": "3.2",
+              "er": 4,
+              "k": 4,
+              "bb": 3,
+              "pitches": 70,
+              "strikes": 39
+            },
+            {
+              "date": "2026-04-11",
+              "opponent": "Washington Nationals",
+              "ip": "3.2",
+              "er": 1,
+              "k": 3,
+              "bb": 3,
+              "pitches": 65,
+              "strikes": 38
+            }
+          ],
+          "avg_ip": "3.1",
+          "avg_k": "3.3",
+          "avg_bb": "3.3",
+          "avg_pitches": "73.7",
+          "avg_strikes": "42.3",
+          "era": "10.45",
+          "whip": "2.32",
+          "strike_pct": "57.5",
+          "quality_starts": 0
+        }
+      },
+      "home_pitcher": {
+        "id": 677952,
+        "name": "Braxton Ashcraft",
+        "hand": "R",
+        "era": "3.24",
+        "whip": "1.10",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-30",
+              "opponent": "Cincinnati Reds",
+              "ip": "6.0",
+              "er": 2,
+              "k": 3,
+              "bb": 4,
+              "pitches": 87,
+              "strikes": 52
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Baltimore Orioles",
+              "ip": "6.0",
+              "er": 1,
+              "k": 8,
+              "bb": 0,
+              "pitches": 87,
+              "strikes": 54
+            },
+            {
+              "date": "2026-04-11",
+              "opponent": "Chicago Cubs",
+              "ip": "5.0",
+              "er": 1,
+              "k": 9,
+              "bb": 1,
+              "pitches": 77,
+              "strikes": 50
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "6.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "83.7",
+          "avg_strikes": "52.0",
+          "era": "2.12",
+          "whip": "1.00",
+          "strike_pct": "62.2",
+          "quality_starts": 2
+        }
+      },
       "away_hitters": [
         {
           "name": "Andrew Vaughn",
