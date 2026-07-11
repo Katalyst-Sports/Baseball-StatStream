@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T16:25:46.132321-04:00",
+  "updated_at": "2026-07-11T17:24:26.227780-04:00",
   "games": [
     {
       "gamePk": 823357,
@@ -17,12 +17,40 @@
       "pitchers": [
         "Braxton Ashcraft"
       ]
+    },
+    {
+      "gamePk": 823682,
+      "game": "Los Angeles Angels @ Minnesota Twins",
+      "winner": "Minnesota Twins",
+      "loser": "Los Angeles Angels",
+      "final_score": "3-5",
+      "hitters": [
+        "Zach Neto",
+        "Mike Trout",
+        "Nolan Schanuel",
+        "Wade Meckler",
+        "Royce Lewis"
+      ],
+      "pitchers": [
+        "Joe Ryan"
+      ]
+    },
+    {
+      "gamePk": 824576,
+      "game": "Athletics @ Chicago White Sox",
+      "winner": "Chicago White Sox",
+      "loser": "Athletics",
+      "final_score": "0-1",
+      "hitters": [
+        "Jacob Wilson",
+        "Joshua Kuroda-Grauer",
+        "Chase Meidroth",
+        "Luisangel Acu\u00f1a"
+      ],
+      "pitchers": [
+        "Gage Jump"
+      ]
     }
   ],
-  "errors": [
-    {
-      "stage": "leaders_hitting_battingAverage",
-      "error": "The read operation timed out"
-    }
-  ]
+  "errors": []
 }

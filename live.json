@@ -1,52 +1,33 @@
 {
-  "updated_at": "2026-07-11T16:25:46.132321-04:00",
+  "updated_at": "2026-07-11T17:24:26.227780-04:00",
   "games": [
     {
       "gamePk": 823356,
       "game": "Milwaukee Brewers @ Pittsburgh Pirates",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823682,
-      "game": "Los Angeles Angels @ Minnesota Twins",
-      "score": "2-3",
-      "inning": "7th",
+      "score": "0-2",
+      "inning": "5th",
       "hot_hitters": [
-        "Zach Neto",
-        "Wade Meckler",
-        "Royce Lewis"
+        "Esmerlyn Valdez"
       ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824576,
-      "game": "Athletics @ Chicago White Sox",
-      "score": "0-1",
-      "inning": "9th",
-      "hot_hitters": [
-        "Jacob Wilson",
-        "Joshua Kuroda-Grauer",
-        "Chase Meidroth",
-        "Luisangel Acu\u00f1a"
-      ],
-      "top_pitchers": []
+      "top_pitchers": [
+        "Bubba Chandler"
+      ]
     },
     {
       "gamePk": 823198,
       "game": "Colorado Rockies @ San Francisco Giants",
-      "score": "0-0",
-      "inning": "2nd",
-      "hot_hitters": [],
+      "score": "1-0",
+      "inning": "5th",
+      "hot_hitters": [
+        "Brett Sullivan"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 822711,
       "game": "New York Yankees @ Washington Nationals",
       "score": "0-2",
-      "inning": "1st",
+      "inning": "5th",
       "hot_hitters": [
         "James Wood",
         "Curtis Mead"
@@ -56,32 +37,33 @@
     {
       "gamePk": 823603,
       "game": "Boston Red Sox @ New York Mets",
-      "score": "0-0",
-      "inning": "2nd",
-      "hot_hitters": [],
-      "top_pitchers": []
+      "score": "2-0",
+      "inning": "4th",
+      "hot_hitters": [
+        "Andruw Monasterio"
+      ],
+      "top_pitchers": [
+        "Freddy Peralta"
+      ]
     },
     {
       "gamePk": 822953,
       "game": "Seattle Mariners @ Tampa Bay Rays",
-      "score": "0-0",
-      "inning": "1st",
+      "score": "1-2",
+      "inning": "3rd",
       "hot_hitters": [],
       "top_pitchers": []
     },
     {
       "gamePk": 823844,
       "game": "Cleveland Guardians @ Miami Marlins",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "2-0",
+      "inning": "4th",
+      "hot_hitters": [
+        "Gabriel Arias"
+      ],
       "top_pitchers": []
     }
   ],
-  "errors": [
-    {
-      "stage": "leaders_hitting_battingAverage",
-      "error": "The read operation timed out"
-    }
-  ]
+  "errors": []
 }
