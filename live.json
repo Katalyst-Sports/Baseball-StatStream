@@ -1,12 +1,22 @@
 {
-  "updated_at": "2026-07-11T15:31:49.238662-04:00",
+  "updated_at": "2026-07-11T16:25:46.132321-04:00",
   "games": [
+    {
+      "gamePk": 823356,
+      "game": "Milwaukee Brewers @ Pittsburgh Pirates",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
     {
       "gamePk": 823682,
       "game": "Los Angeles Angels @ Minnesota Twins",
       "score": "2-3",
-      "inning": "3rd",
+      "inning": "7th",
       "hot_hitters": [
+        "Zach Neto",
+        "Wade Meckler",
         "Royce Lewis"
       ],
       "top_pitchers": []
@@ -14,15 +24,64 @@
     {
       "gamePk": 824576,
       "game": "Athletics @ Chicago White Sox",
-      "score": "0-0",
-      "inning": "6th",
+      "score": "0-1",
+      "inning": "9th",
       "hot_hitters": [
+        "Jacob Wilson",
+        "Joshua Kuroda-Grauer",
+        "Chase Meidroth",
         "Luisangel Acu\u00f1a"
       ],
-      "top_pitchers": [
-        "Gage Jump"
-      ]
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823198,
+      "game": "Colorado Rockies @ San Francisco Giants",
+      "score": "0-0",
+      "inning": "2nd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822711,
+      "game": "New York Yankees @ Washington Nationals",
+      "score": "0-2",
+      "inning": "1st",
+      "hot_hitters": [
+        "James Wood",
+        "Curtis Mead"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823603,
+      "game": "Boston Red Sox @ New York Mets",
+      "score": "0-0",
+      "inning": "2nd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822953,
+      "game": "Seattle Mariners @ Tampa Bay Rays",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823844,
+      "game": "Cleveland Guardians @ Miami Marlins",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "leaders_hitting_battingAverage",
+      "error": "The read operation timed out"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T15:31:49.238662-04:00",
+  "updated_at": "2026-07-11T16:25:46.132321-04:00",
   "games": [
     {
       "gamePk": 823357,
@@ -19,5 +19,10 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "leaders_hitting_battingAverage",
+      "error": "The read operation timed out"
+    }
+  ]
 }
