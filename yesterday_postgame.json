@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T16:45:43.969601-04:00",
+  "updated_at": "2026-07-12T17:35:06.084235-04:00",
   "games": [
     {
       "gamePk": 823357,
@@ -360,5 +360,11 @@
       "game_summary": "James McCann homers (2) on a fly ball to left center field."
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Pittsburgh Pirates Finishes Off Milwaukee Brewers",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5459, Requested 555. Please try again in 140ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    }
+  ]
 }
