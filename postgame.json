@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T17:35:06.084235-04:00",
+  "updated_at": "2026-07-12T18:29:16.971642-04:00",
   "games": [
     {
       "gamePk": 823358,
@@ -175,13 +175,37 @@
         "Brewer Hicklen"
       ],
       "pitchers": []
+    },
+    {
+      "gamePk": 822876,
+      "game": "Houston Astros @ Texas Rangers",
+      "winner": "Texas Rangers",
+      "loser": "Houston Astros",
+      "final_score": "5-6",
+      "hitters": [
+        "Yordan Alvarez",
+        "Jose Altuve",
+        "Cam Smith",
+        "Josh Jung",
+        "Brandon Nimmo",
+        "Kyle Higashioka"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823199,
+      "game": "Colorado Rockies @ San Francisco Giants",
+      "winner": "San Francisco Giants",
+      "loser": "Colorado Rockies",
+      "final_score": "1-3",
+      "hitters": [
+        "Jake McCarthy",
+        "Hunter Goodman",
+        "Heliot Ramos",
+        "Willy Adames"
+      ],
+      "pitchers": []
     }
   ],
-  "errors": [
-    {
-      "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Finishes Off Milwaukee Brewers",
-      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5459, Requested 555. Please try again in 140ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-    }
-  ]
+  "errors": []
 }
