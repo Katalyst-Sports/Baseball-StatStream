@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T18:31:32.625946-04:00",
+  "updated_at": "2026-07-16T19:31:45.521725-04:00",
   "games": [
     {
       "gamePk": 823440,
@@ -12,8 +12,8 @@
         "id": 681035,
         "name": "Christian Scott",
         "hand": "R",
-        "era": "3.11",
-        "whip": "1.27",
+        "era": "2.95",
+        "whip": "1.24",
         "last3": {
           "starts": [
             {
@@ -62,8 +62,8 @@
         "id": 605400,
         "name": "Aaron Nola",
         "hand": "R",
-        "era": "5.67",
-        "whip": "1.42",
+        "era": "5.58",
+        "whip": "1.45",
         "last3": {
           "starts": [
             {
@@ -113,9 +113,9 @@
           "name": "Juan Soto",
           "stats": {
             "avg": ".292",
-            "obp": ".407",
+            "obp": ".411",
             "slg": ".563",
-            "ops": ".970",
+            "ops": ".974",
             "homeRuns": 21,
             "rbi": 51
           },
@@ -132,10 +132,10 @@
         {
           "name": "A.J. Ewing",
           "stats": {
-            "avg": ".274",
-            "obp": ".348",
-            "slg": ".437",
-            "ops": ".785",
+            "avg": ".271",
+            "obp": ".345",
+            "slg": ".432",
+            "ops": ".777",
             "homeRuns": 7,
             "rbi": 24
           },
@@ -150,11 +150,31 @@
           }
         },
         {
+          "name": "Francisco Alvarez",
+          "stats": {
+            "avg": ".257",
+            "obp": ".323",
+            "slg": ".433",
+            "ops": ".756",
+            "homeRuns": 10,
+            "rbi": 23
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
+          }
+        },
+        {
           "name": "Jared Young",
           "stats": {
-            "avg": ".248",
-            "obp": ".318",
-            "slg": ".426",
+            "avg": ".246",
+            "obp": ".321",
+            "slg": ".423",
             "ops": ".744",
             "homeRuns": 6,
             "rbi": 18
@@ -170,32 +190,12 @@
           }
         },
         {
-          "name": "Francisco Alvarez",
-          "stats": {
-            "avg": ".254",
-            "obp": ".317",
-            "slg": ".416",
-            "ops": ".733",
-            "homeRuns": 9,
-            "rbi": 22
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 1,
-            "walks": 2,
-            "games": 4
-          }
-        },
-        {
           "name": "Carson Benge",
           "stats": {
-            "avg": ".266",
-            "obp": ".328",
-            "slg": ".404",
-            "ops": ".732",
+            "avg": ".265",
+            "obp": ".327",
+            "slg": ".403",
+            "ops": ".730",
             "homeRuns": 11,
             "rbi": 37
           },
@@ -212,10 +212,10 @@
         {
           "name": "Bo Bichette",
           "stats": {
-            "avg": ".255",
-            "obp": ".300",
-            "slg": ".375",
-            "ops": ".675",
+            "avg": ".253",
+            "obp": ".298",
+            "slg": ".373",
+            "ops": ".671",
             "homeRuns": 10,
             "rbi": 51
           },
@@ -226,26 +226,6 @@
             "homeRuns": 0,
             "rbi": 1,
             "walks": 0,
-            "games": 3
-          }
-        },
-        {
-          "name": "Francisco Lindor",
-          "stats": {
-            "avg": ".214",
-            "obp": ".297",
-            "slg": ".370",
-            "ops": ".667",
-            "homeRuns": 5,
-            "rbi": 12
-          },
-          "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 4,
             "games": 3
           }
         },
@@ -267,6 +247,26 @@
             "rbi": 4,
             "walks": 0,
             "games": 4
+          }
+        },
+        {
+          "name": "Francisco Lindor",
+          "stats": {
+            "avg": ".213",
+            "obp": ".295",
+            "slg": ".368",
+            "ops": ".663",
+            "homeRuns": 5,
+            "rbi": 12
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
+            "games": 3
           }
         },
         {
@@ -294,10 +294,10 @@
         {
           "name": "Kyle Schwarber",
           "stats": {
-            "avg": ".254",
-            "obp": ".366",
-            "slg": ".558",
-            "ops": ".924",
+            "avg": ".253",
+            "obp": ".365",
+            "slg": ".557",
+            "ops": ".922",
             "homeRuns": 32,
             "rbi": 59
           },
@@ -314,10 +314,10 @@
         {
           "name": "Bryce Harper",
           "stats": {
-            "avg": ".259",
-            "obp": ".364",
-            "slg": ".496",
-            "ops": ".860",
+            "avg": ".262",
+            "obp": ".366",
+            "slg": ".500",
+            "ops": ".866",
             "homeRuns": 20,
             "rbi": 57
           },
@@ -334,10 +334,10 @@
         {
           "name": "Brandon Marsh",
           "stats": {
-            "avg": ".301",
-            "obp": ".339",
-            "slg": ".490",
-            "ops": ".829",
+            "avg": ".299",
+            "obp": ".337",
+            "slg": ".487",
+            "ops": ".824",
             "homeRuns": 15,
             "rbi": 46
           },
@@ -374,10 +374,10 @@
         {
           "name": "Bryson Stott",
           "stats": {
-            "avg": ".249",
-            "obp": ".308",
-            "slg": ".393",
-            "ops": ".701",
+            "avg": ".248",
+            "obp": ".307",
+            "slg": ".391",
+            "ops": ".698",
             "homeRuns": 7,
             "rbi": 42
           },
@@ -394,10 +394,10 @@
         {
           "name": "Justin Crawford",
           "stats": {
-            "avg": ".263",
-            "obp": ".312",
-            "slg": ".353",
-            "ops": ".665",
+            "avg": ".262",
+            "obp": ".311",
+            "slg": ".352",
+            "ops": ".663",
             "homeRuns": 2,
             "rbi": 21
           },
@@ -412,32 +412,12 @@
           }
         },
         {
-          "name": "Trea Turner",
-          "stats": {
-            "avg": ".235",
-            "obp": ".284",
-            "slg": ".354",
-            "ops": ".638",
-            "homeRuns": 10,
-            "rbi": 33
-          },
-          "last10ab": {
-            "avg": "0.154",
-            "hits": 2,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
           "name": "J.T. Realmuto",
           "stats": {
-            "avg": ".206",
-            "obp": ".288",
-            "slg": ".346",
-            "ops": ".634",
+            "avg": ".210",
+            "obp": ".291",
+            "slg": ".349",
+            "ops": ".640",
             "homeRuns": 7,
             "rbi": 33
           },
@@ -452,12 +432,32 @@
           }
         },
         {
+          "name": "Trea Turner",
+          "stats": {
+            "avg": ".235",
+            "obp": ".283",
+            "slg": ".353",
+            "ops": ".636",
+            "homeRuns": 10,
+            "rbi": 33
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Alec Bohm",
           "stats": {
-            "avg": ".215",
-            "obp": ".278",
-            "slg": ".354",
-            "ops": ".632",
+            "avg": ".214",
+            "obp": ".277",
+            "slg": ".352",
+            "ops": ".629",
             "homeRuns": 11,
             "rbi": 47
           },
