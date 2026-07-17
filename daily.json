@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T11:37:43.544564-04:00",
+  "updated_at": "2026-07-17T12:46:34.315017-04:00",
   "games": [
     {
       "gamePk": 824766,
@@ -4822,6 +4822,26 @@
           }
         },
         {
+          "name": "Dane Myers",
+          "stats": {
+            "avg": ".256",
+            "obp": ".358",
+            "slg": ".385",
+            "ops": ".743",
+            "homeRuns": 3,
+            "rbi": 14
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 6
+          }
+        },
+        {
           "name": "Tyler Stephenson",
           "stats": {
             "avg": ".238",
@@ -4879,26 +4899,6 @@
             "rbi": 0,
             "walks": 2,
             "games": 5
-          }
-        },
-        {
-          "name": "Jose Trevino",
-          "stats": {
-            "avg": ".239",
-            "obp": ".250",
-            "slg": ".328",
-            "ops": ".578",
-            "homeRuns": 1,
-            "rbi": 8
-          },
-          "last10ab": {
-            "avg": "0.091",
-            "hits": 1,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
-            "games": 3
           }
         }
       ],
@@ -6036,7 +6036,56 @@
       "venue": "Chase Field",
       "start": "2026-07-18T01:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 700241,
+        "name": "Michael McGreevy",
+        "hand": "R",
+        "era": "3.01",
+        "whip": "1.10",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Tampa Bay Rays",
+              "ip": "6.0",
+              "er": 0,
+              "k": 5,
+              "bb": 2,
+              "pitches": 96,
+              "strikes": 57
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Detroit Tigers",
+              "ip": "4.2",
+              "er": 3,
+              "k": 4,
+              "bb": 0,
+              "pitches": 75,
+              "strikes": 45
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "Washington Nationals",
+              "ip": "6.0",
+              "er": 1,
+              "k": 1,
+              "bb": 0,
+              "pitches": 91,
+              "strikes": 59
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "3.3",
+          "avg_bb": "0.7",
+          "avg_pitches": "87.3",
+          "avg_strikes": "53.7",
+          "era": "2.16",
+          "whip": "0.78",
+          "strike_pct": "61.5",
+          "quality_starts": 2
+        }
+      },
       "home_pitcher": {
         "id": 518876,
         "name": "Merrill Kelly",
