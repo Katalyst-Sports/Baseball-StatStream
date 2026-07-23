@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T21:17:58.834479-04:00",
+  "updated_at": "2026-07-23T00:42:13.965518-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -4460,5 +4460,10 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "leaders_hitting_ops",
+      "error": "The read operation timed out"
+    }
+  ]
 }
