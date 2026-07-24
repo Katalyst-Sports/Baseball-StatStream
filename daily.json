@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T11:01:38.995803-04:00",
+  "updated_at": "2026-07-24T12:53:01.044169-04:00",
   "games": [
     {
       "gamePk": 823759,
@@ -2418,7 +2418,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 669432,
+        "name": "Trevor Rogers",
+        "hand": "L",
+        "era": "4.28",
+        "whip": "1.30",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Minnesota Twins",
+              "ip": "7.0",
+              "er": 0,
+              "k": 5,
+              "bb": 4,
+              "pitches": 88,
+              "strikes": 56
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Texas Rangers",
+              "ip": "6.0",
+              "er": 2,
+              "k": 3,
+              "bb": 1,
+              "pitches": 91,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Chicago White Sox",
+              "ip": "6.0",
+              "er": 2,
+              "k": 6,
+              "bb": 0,
+              "pitches": 101,
+              "strikes": 70
+            }
+          ],
+          "avg_ip": "6.1",
+          "avg_k": "4.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "93.3",
+          "avg_strikes": "61.3",
+          "era": "1.89",
+          "whip": "1.05",
+          "strike_pct": "65.7",
+          "quality_starts": 3
+        }
+      },
       "away_hitters": [
         {
           "name": "Brewer Hicklen",
