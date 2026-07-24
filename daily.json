@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T12:53:01.044169-04:00",
+  "updated_at": "2026-07-24T14:16:48.131050-04:00",
   "games": [
     {
       "gamePk": 823759,
@@ -452,23 +452,23 @@
           }
         },
         {
-          "name": "Braden Shewmake",
+          "name": "Cooper Pratt",
           "stats": {
-            "avg": ".259",
-            "obp": ".270",
-            "slg": ".424",
-            "ops": ".694",
-            "homeRuns": 3,
-            "rbi": 10
+            "avg": ".258",
+            "obp": ".343",
+            "slg": ".344",
+            "ops": ".687",
+            "homeRuns": 1,
+            "rbi": 8
           },
           "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 1,
-            "walks": 0,
-            "games": 3
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 4
           }
         }
       ]
@@ -3044,12 +3044,12 @@
         {
           "name": "Andy Pages",
           "stats": {
-            "avg": ".268",
-            "obp": ".333",
-            "slg": ".459",
-            "ops": ".792",
+            "avg": ".265",
+            "obp": ".331",
+            "slg": ".457",
+            "ops": ".788",
             "homeRuns": 17,
-            "rbi": 68
+            "rbi": 67
           },
           "last10ab": {
             "avg": "0.200",
@@ -3834,7 +3834,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 687473,
+        "name": "Ryan Gusto",
+        "hand": "R",
+        "era": "4.70",
+        "whip": "1.37",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-08",
+              "opponent": "Cincinnati Reds",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 12,
+              "strikes": 8
+            },
+            {
+              "date": "2026-06-02",
+              "opponent": "Washington Nationals",
+              "ip": "2.0",
+              "er": 3,
+              "k": 3,
+              "bb": 0,
+              "pitches": 40,
+              "strikes": 28
+            },
+            {
+              "date": "2026-06-05",
+              "opponent": "Tampa Bay Rays",
+              "ip": "2.0",
+              "er": 3,
+              "k": 1,
+              "bb": 1,
+              "pitches": 33,
+              "strikes": 21
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "1.7",
+          "avg_bb": "0.3",
+          "avg_pitches": "28.3",
+          "avg_strikes": "19.0",
+          "era": "10.80",
+          "whip": "1.80",
+          "strike_pct": "67.1",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Luis Campusano",
@@ -5325,10 +5374,10 @@
         {
           "name": "Cole Young",
           "stats": {
-            "avg": ".248",
-            "obp": ".307",
-            "slg": ".396",
-            "ops": ".703",
+            "avg": ".251",
+            "obp": ".310",
+            "slg": ".399",
+            "ops": ".709",
             "homeRuns": 13,
             "rbi": 48
           },
