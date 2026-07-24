@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T14:16:48.131050-04:00",
+  "updated_at": "2026-07-24T15:51:23.603147-04:00",
   "games": [
     {
       "gamePk": 823759,
@@ -7,7 +7,7 @@
       "home_team": "Milwaukee Brewers",
       "venue": "American Family Field",
       "start": "2026-07-24T20:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 608372,
         "name": "Tomoyuki Sugano",
@@ -3514,6 +3514,26 @@
           }
         },
         {
+          "name": "Angel Mart\u00ednez",
+          "stats": {
+            "avg": ".239",
+            "obp": ".276",
+            "slg": ".442",
+            "ops": ".718",
+            "homeRuns": 11,
+            "rbi": 33
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
+          }
+        },
+        {
           "name": "Rhys Hoskins",
           "stats": {
             "avg": ".177",
@@ -3570,26 +3590,6 @@
             "homeRuns": 0,
             "rbi": 1,
             "walks": 1,
-            "games": 3
-          }
-        },
-        {
-          "name": "Steven Kwan",
-          "stats": {
-            "avg": ".248",
-            "obp": ".354",
-            "slg": ".307",
-            "ops": ".661",
-            "homeRuns": 1,
-            "rbi": 18
-          },
-          "last10ab": {
-            "avg": "0.286",
-            "hits": 4,
-            "atBats": 14,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
             "games": 3
           }
         }
@@ -4552,10 +4552,10 @@
         {
           "name": "Wilyer Abreu",
           "stats": {
-            "avg": ".261",
-            "obp": ".333",
-            "slg": ".451",
-            "ops": ".784",
+            "avg": ".259",
+            "obp": ".330",
+            "slg": ".449",
+            "ops": ".779",
             "homeRuns": 15,
             "rbi": 50
           },
