@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T17:30:47.380904-04:00",
+  "updated_at": "2026-07-27T18:37:49.514761-04:00",
   "games": [
     {
       "gamePk": 822868,
@@ -479,7 +479,7 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-07-27T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 680694,
         "name": "Kyle Bradish",
@@ -764,6 +764,26 @@
       ],
       "home_hitters": [
         {
+          "name": "Eduardo Valencia",
+          "stats": {
+            "avg": ".417",
+            "obp": ".462",
+            "slg": ".917",
+            "ops": "1.379",
+            "homeRuns": 2,
+            "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 5,
+            "atBats": 10,
+            "homeRuns": 2,
+            "rbi": 3,
+            "walks": 0,
+            "games": 4
+          }
+        },
+        {
           "name": "Dillon Dingler",
           "stats": {
             "avg": ".275",
@@ -904,26 +924,6 @@
           }
         },
         {
-          "name": "Kerry Carpenter",
-          "stats": {
-            "avg": ".208",
-            "obp": ".276",
-            "slg": ".416",
-            "ops": ".692",
-            "homeRuns": 13,
-            "rbi": 36
-          },
-          "last10ab": {
-            "avg": "0.000",
-            "hits": 0,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 2,
-            "games": 3
-          }
-        },
-        {
           "name": "Ben Malgeri",
           "stats": {
             "avg": ".242",
@@ -951,7 +951,7 @@
       "home_team": "Pittsburgh Pirates",
       "venue": "PNC Park",
       "start": "2026-07-27T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 518876,
         "name": "Merrill Kelly",
@@ -1256,23 +1256,23 @@
           }
         },
         {
-          "name": "Shawn Ross",
+          "name": "Endy Rodr\u00edguez",
           "stats": {
-            "avg": ".200",
-            "obp": ".200",
-            "slg": ".800",
-            "ops": "1.000",
-            "homeRuns": 1,
-            "rbi": 2
+            "avg": ".260",
+            "obp": ".388",
+            "slg": ".470",
+            "ops": ".858",
+            "homeRuns": 5,
+            "rbi": 16
           },
           "last10ab": {
-            "avg": "0.200",
-            "hits": 1,
-            "atBats": 5,
-            "homeRuns": 1,
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
             "rbi": 2,
-            "walks": 0,
-            "games": 2
+            "walks": 4,
+            "games": 4
           }
         },
         {
@@ -1423,7 +1423,7 @@
       "home_team": "Miami Marlins",
       "venue": "loanDepot park",
       "start": "2026-07-27T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 554430,
         "name": "Zack Wheeler",
@@ -1895,7 +1895,7 @@
       "home_team": "Washington Nationals",
       "venue": "Nationals Park",
       "start": "2026-07-27T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 453286,
         "name": "Max Scherzer",
