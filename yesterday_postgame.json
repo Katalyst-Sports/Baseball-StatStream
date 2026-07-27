@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T18:37:49.514761-04:00",
+  "updated_at": "2026-07-27T19:44:52.099385-04:00",
   "games": [
     {
       "gamePk": 822950,
@@ -160,31 +160,6 @@
       "losing_pitcher": "Evan Phillips",
       "save_pitcher": "",
       "game_summary": "Marcus Semien homers (11) on a fly ball to left field. Bo Bichette scores. Jorge Polanco scores."
-    },
-    {
-      "gamePk": 823840,
-      "game": "San Diego Padres @ Miami Marlins",
-      "winner": "San Diego Padres",
-      "loser": "Miami Marlins",
-      "final_score": "5-3",
-      "hitters": [
-        "Jake Cronenworth",
-        "Manny Machado",
-        "Ty France",
-        "Jackson Merrill",
-        "Luis Rengifo",
-        "Kyle Stowers"
-      ],
-      "pitchers": [
-        "Walker Buehler",
-        "Janson Junk"
-      ],
-      "top_batting_line": "Manny Machado: 2 H, 1 HR, 3 RBI, 5 AB",
-      "top_pitching_line": "Janson Junk: 4.2 IP, 6 K, 1 ER, 0 BB, 7 H",
-      "winning_pitcher": "Wandy Peralta",
-      "losing_pitcher": "Lake Bachar",
-      "save_pitcher": "Mason Miller",
-      "game_summary": "Luis Campusano singles on a line drive to left fielder Heriberto Hern\u00e1ndez. Luis Rengifo scores."
     },
     {
       "gamePk": 823678,
@@ -352,5 +327,11 @@
       "game_summary": "Ben Rice homers (31) on a fly ball to center field."
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "gamePk": 823840,
+      "stage": "yesterday_schedule_loop",
+      "error": "The read operation timed out"
+    }
+  ]
 }
