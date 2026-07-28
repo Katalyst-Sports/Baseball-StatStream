@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T16:36:35.126693-04:00",
+  "updated_at": "2026-07-28T17:46:02.836430-04:00",
   "games": [
     {
       "gamePk": 824490,
@@ -7,7 +7,7 @@
       "home_team": "Cincinnati Reds",
       "venue": "Great American Ball Park",
       "start": "2026-07-28T17:40:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 677944,
         "name": "Slade Cecconi",
@@ -354,10 +354,10 @@
         {
           "name": "JJ Bleday",
           "stats": {
-            "avg": ".231",
-            "obp": ".338",
-            "slg": ".462",
-            "ops": ".800",
+            "avg": ".230",
+            "obp": ".337",
+            "slg": ".460",
+            "ops": ".797",
             "homeRuns": 17,
             "rbi": 44
           },
@@ -530,7 +530,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 657571,
+        "name": "Caleb Ferguson",
+        "hand": "L",
+        "era": "3.86",
+        "whip": "1.57",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-27",
+              "opponent": "New York Mets",
+              "ip": "1.1",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 16,
+              "strikes": 11
+            },
+            {
+              "date": "2026-05-29",
+              "opponent": "Atlanta Braves",
+              "ip": "1.2",
+              "er": 0,
+              "k": 3,
+              "bb": 0,
+              "pitches": 18,
+              "strikes": 14
+            },
+            {
+              "date": "2026-06-01",
+              "opponent": "Kansas City Royals",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 34,
+              "strikes": 23
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "2.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "22.7",
+          "avg_strikes": "16.0",
+          "era": "0.00",
+          "whip": "0.60",
+          "strike_pct": "70.6",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Chase DeLauter",
@@ -777,10 +826,10 @@
         {
           "name": "JJ Bleday",
           "stats": {
-            "avg": ".231",
-            "obp": ".338",
-            "slg": ".462",
-            "ops": ".800",
+            "avg": ".230",
+            "obp": ".337",
+            "slg": ".460",
+            "ops": ".797",
             "homeRuns": 17,
             "rbi": 44
           },
