@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T12:50:39.683783-04:00",
+  "updated_at": "2026-07-31T14:15:16.117899-04:00",
   "games": [
     {
       "gamePk": 824651,
@@ -7,7 +7,7 @@
       "home_team": "Chicago Cubs",
       "venue": "Wrigley Field",
       "start": "2026-07-31T18:20:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 701542,
         "name": "Will Warren",
@@ -2841,56 +2841,7 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {
-        "id": 642547,
-        "name": "Freddy Peralta",
-        "hand": "R",
-        "era": "4.99",
-        "whip": "1.48",
-        "last3": {
-          "starts": [
-            {
-              "date": "2026-03-26",
-              "opponent": "Pittsburgh Pirates",
-              "ip": "5.0",
-              "er": 4,
-              "k": 7,
-              "bb": 0,
-              "pitches": 80,
-              "strikes": 53
-            },
-            {
-              "date": "2026-04-01",
-              "opponent": "St. Louis Cardinals",
-              "ip": "5.1",
-              "er": 1,
-              "k": 7,
-              "bb": 2,
-              "pitches": 92,
-              "strikes": 54
-            },
-            {
-              "date": "2026-04-07",
-              "opponent": "Arizona Diamondbacks",
-              "ip": "4.2",
-              "er": 3,
-              "k": 5,
-              "bb": 3,
-              "pitches": 101,
-              "strikes": 62
-            }
-          ],
-          "avg_ip": "5.0",
-          "avg_k": "6.3",
-          "avg_bb": "1.7",
-          "avg_pitches": "91.0",
-          "avg_strikes": "56.3",
-          "era": "4.80",
-          "whip": "1.13",
-          "strike_pct": "61.9",
-          "quality_starts": 0
-        }
-      },
+      "home_pitcher": {},
       "away_hitters": [
         {
           "name": "Griffin Conine",
