@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T17:15:11.606451-04:00",
+  "updated_at": "2026-07-31T18:26:46.071332-04:00",
   "games": [
     {
       "gamePk": 824651,
@@ -479,7 +479,7 @@
       "home_team": "Cincinnati Reds",
       "venue": "Great American Ball Park",
       "start": "2026-07-31T22:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 694973,
         "name": "Paul Skenes",
@@ -534,8 +534,8 @@
         "id": 668881,
         "name": "Hunter Greene",
         "hand": "R",
-        "era": "7.06",
-        "whip": "1.34",
+        "era": "7.54",
+        "whip": "1.46",
         "last3": {
           "starts": [
             {
@@ -585,9 +585,9 @@
           "name": "Esmerlyn Valdez",
           "stats": {
             "avg": ".277",
-            "obp": ".371",
+            "obp": ".375",
             "slg": ".664",
-            "ops": "1.035",
+            "ops": "1.039",
             "homeRuns": 14,
             "rbi": 36
           },
@@ -604,10 +604,10 @@
         {
           "name": "Bryan Reynolds",
           "stats": {
-            "avg": ".267",
-            "obp": ".381",
-            "slg": ".454",
-            "ops": ".835",
+            "avg": ".266",
+            "obp": ".380",
+            "slg": ".453",
+            "ops": ".833",
             "homeRuns": 15,
             "rbi": 61
           },
@@ -624,10 +624,10 @@
         {
           "name": "Endy Rodr\u00edguez",
           "stats": {
-            "avg": ".261",
-            "obp": ".383",
-            "slg": ".450",
-            "ops": ".833",
+            "avg": ".259",
+            "obp": ".381",
+            "slg": ".446",
+            "ops": ".827",
             "homeRuns": 5,
             "rbi": 17
           },
@@ -644,10 +644,10 @@
         {
           "name": "Brandon Lowe",
           "stats": {
-            "avg": ".253",
-            "obp": ".320",
-            "slg": ".490",
-            "ops": ".810",
+            "avg": ".254",
+            "obp": ".322",
+            "slg": ".491",
+            "ops": ".813",
             "homeRuns": 23,
             "rbi": 70
           },
@@ -664,10 +664,10 @@
         {
           "name": "Ryan O'Hearn",
           "stats": {
-            "avg": ".270",
-            "obp": ".333",
-            "slg": ".456",
-            "ops": ".789",
+            "avg": ".272",
+            "obp": ".335",
+            "slg": ".458",
+            "ops": ".793",
             "homeRuns": 17,
             "rbi": 69
           },
@@ -684,12 +684,12 @@
         {
           "name": "Nick Gonzales",
           "stats": {
-            "avg": ".316",
-            "obp": ".370",
-            "slg": ".413",
-            "ops": ".783",
+            "avg": ".318",
+            "obp": ".371",
+            "slg": ".414",
+            "ops": ".785",
             "homeRuns": 6,
-            "rbi": 47
+            "rbi": 49
           },
           "last10ab": {
             "avg": "0.400",
@@ -704,10 +704,10 @@
         {
           "name": "Jake Mangum",
           "stats": {
-            "avg": ".301",
-            "obp": ".349",
-            "slg": ".369",
-            "ops": ".718",
+            "avg": ".300",
+            "obp": ".348",
+            "slg": ".368",
+            "ops": ".716",
             "homeRuns": 2,
             "rbi": 21
           },
@@ -5200,7 +5200,56 @@
       "venue": "Sutter Health Park",
       "start": "2026-08-01T01:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 663947,
+        "name": "Tyler Holton",
+        "hand": "L",
+        "era": "3.04",
+        "whip": "1.33",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "San Diego Padres",
+              "ip": "0.2",
+              "er": 0,
+              "k": 0,
+              "bb": 1,
+              "pitches": 11,
+              "strikes": 5
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 2,
+              "pitches": 19,
+              "strikes": 7
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "St. Louis Cardinals",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 7,
+              "strikes": 5
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "0.7",
+          "avg_bb": "1.0",
+          "avg_pitches": "12.3",
+          "avg_strikes": "5.7",
+          "era": "0.00",
+          "whip": "1.12",
+          "strike_pct": "45.9",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 605488,
         "name": "Jeffrey Springs",
@@ -6971,26 +7020,6 @@
           }
         },
         {
-          "name": "J.P. Crawford",
-          "stats": {
-            "avg": ".212",
-            "obp": ".330",
-            "slg": ".345",
-            "ops": ".675",
-            "homeRuns": 10,
-            "rbi": 30
-          },
-          "last10ab": {
-            "avg": "0.100",
-            "hits": 1,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 3,
-            "games": 3
-          }
-        },
-        {
           "name": "Weston Wilson",
           "stats": {
             "avg": ".222",
@@ -7027,6 +7056,26 @@
             "homeRuns": 1,
             "rbi": 3,
             "walks": 2,
+            "games": 4
+          }
+        },
+        {
+          "name": "Mitch Garver",
+          "stats": {
+            "avg": ".179",
+            "obp": ".299",
+            "slg": ".301",
+            "ops": ".600",
+            "homeRuns": 4,
+            "rbi": 14
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
             "games": 4
           }
         }
