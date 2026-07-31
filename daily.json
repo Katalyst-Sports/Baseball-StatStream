@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T00:45:59.742325-04:00",
+  "updated_at": "2026-07-31T03:40:06.809842-04:00",
   "games": [
     {
       "gamePk": 824651,
@@ -5623,8 +5623,106 @@
       "venue": "Petco Park",
       "start": "2026-08-01T01:45:00Z",
       "status": "Preview",
-      "away_pitcher": {},
-      "home_pitcher": {},
+      "away_pitcher": {
+        "id": 687931,
+        "name": "Carson Whisenhunt",
+        "hand": "L",
+        "era": "4.60",
+        "whip": "1.40",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-06-17",
+              "opponent": "Atlanta Braves",
+              "ip": "5.0",
+              "er": 2,
+              "k": 2,
+              "bb": 2,
+              "pitches": 85,
+              "strikes": 51
+            },
+            {
+              "date": "2026-07-09",
+              "opponent": "Colorado Rockies",
+              "ip": "5.2",
+              "er": 2,
+              "k": 4,
+              "bb": 4,
+              "pitches": 87,
+              "strikes": 57
+            },
+            {
+              "date": "2026-07-26",
+              "opponent": "Los Angeles Angels",
+              "ip": "5.0",
+              "er": 4,
+              "k": 7,
+              "bb": 2,
+              "pitches": 78,
+              "strikes": 50
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "4.3",
+          "avg_bb": "2.7",
+          "avg_pitches": "83.3",
+          "avg_strikes": "52.7",
+          "era": "4.60",
+          "whip": "1.40",
+          "strike_pct": "63.2",
+          "quality_starts": 0
+        }
+      },
+      "home_pitcher": {
+        "id": 699134,
+        "name": "Bradgley Rodriguez",
+        "hand": "R",
+        "era": "2.33",
+        "whip": "1.17",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Detroit Tigers",
+              "ip": "2.0",
+              "er": 0,
+              "k": 3,
+              "bb": 0,
+              "pitches": 20,
+              "strikes": 14
+            },
+            {
+              "date": "2026-03-31",
+              "opponent": "San Francisco Giants",
+              "ip": "1.2",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 17,
+              "strikes": 14
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Boston Red Sox",
+              "ip": "1.2",
+              "er": 1,
+              "k": 2,
+              "bb": 0,
+              "pitches": 25,
+              "strikes": 19
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "2.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "20.7",
+          "avg_strikes": "15.7",
+          "era": "1.69",
+          "whip": "0.75",
+          "strike_pct": "75.8",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Luis Arraez",
@@ -6047,7 +6145,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 683618,
+        "name": "Edgardo Henriquez",
+        "hand": "R",
+        "era": "2.79",
+        "whip": "1.05",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-27",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 13,
+              "strikes": 7
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Washington Nationals",
+              "ip": "1.0",
+              "er": 2,
+              "k": 1,
+              "bb": 1,
+              "pitches": 25,
+              "strikes": 17
+            },
+            {
+              "date": "2026-04-04",
+              "opponent": "Washington Nationals",
+              "ip": "1.0",
+              "er": 1,
+              "k": 0,
+              "bb": 0,
+              "pitches": 22,
+              "strikes": 13
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "0.7",
+          "avg_bb": "0.3",
+          "avg_pitches": "20.0",
+          "avg_strikes": "12.3",
+          "era": "9.00",
+          "whip": "1.67",
+          "strike_pct": "61.7",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Willson Contreras",
@@ -6334,10 +6481,10 @@
         {
           "name": "Dalton Rushing",
           "stats": {
-            "avg": ".258",
-            "obp": ".340",
-            "slg": ".484",
-            "ops": ".824",
+            "avg": ".257",
+            "obp": ".339",
+            "slg": ".481",
+            "ops": ".820",
             "homeRuns": 12,
             "rbi": 36
           },
@@ -6395,9 +6542,9 @@
           "name": "Teoscar Hern\u00e1ndez",
           "stats": {
             "avg": ".252",
-            "obp": ".321",
+            "obp": ".323",
             "slg": ".401",
-            "ops": ".722",
+            "ops": ".724",
             "homeRuns": 9,
             "rbi": 38
           },
@@ -6706,10 +6853,10 @@
         {
           "name": "Dominic Canzone",
           "stats": {
-            "avg": ".262",
-            "obp": ".338",
-            "slg": ".528",
-            "ops": ".866",
+            "avg": ".261",
+            "obp": ".337",
+            "slg": ".526",
+            "ops": ".863",
             "homeRuns": 18,
             "rbi": 49
           },
@@ -6726,10 +6873,10 @@
         {
           "name": "Randy Arozarena",
           "stats": {
-            "avg": ".281",
-            "obp": ".375",
-            "slg": ".449",
-            "ops": ".824",
+            "avg": ".283",
+            "obp": ".376",
+            "slg": ".451",
+            "ops": ".827",
             "homeRuns": 13,
             "rbi": 48
           },
@@ -6748,8 +6895,8 @@
           "stats": {
             "avg": ".261",
             "obp": ".320",
-            "slg": ".410",
-            "ops": ".730",
+            "slg": ".409",
+            "ops": ".729",
             "homeRuns": 13,
             "rbi": 49
           },
@@ -6766,10 +6913,10 @@
         {
           "name": "Julio Rodr\u00edguez",
           "stats": {
-            "avg": ".252",
+            "avg": ".251",
             "obp": ".311",
-            "slg": ".416",
-            "ops": ".727",
+            "slg": ".415",
+            "ops": ".726",
             "homeRuns": 16,
             "rbi": 46
           },
