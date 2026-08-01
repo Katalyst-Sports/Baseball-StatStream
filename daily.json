@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T05:24:50.211633-04:00",
+  "updated_at": "2026-08-01T06:58:50.919946-04:00",
   "games": [
     {
       "gamePk": 822781,
@@ -2278,6 +2278,26 @@
           }
         },
         {
+          "name": "Jose Trevino",
+          "stats": {
+            "avg": ".247",
+            "obp": ".256",
+            "slg": ".395",
+            "ops": ".651",
+            "homeRuns": 3,
+            "rbi": 10
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Matt McLain",
           "stats": {
             "avg": ".192",
@@ -2295,26 +2315,6 @@
             "rbi": 1,
             "walks": 4,
             "games": 3
-          }
-        },
-        {
-          "name": "Noelvi Marte",
-          "stats": {
-            "avg": ".200",
-            "obp": ".243",
-            "slg": ".356",
-            "ops": ".599",
-            "homeRuns": 6,
-            "rbi": 14
-          },
-          "last10ab": {
-            "avg": "0.000",
-            "hits": 0,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 2,
-            "games": 5
           }
         }
       ]
@@ -7020,11 +7020,5 @@
       ]
     }
   ],
-  "errors": [
-    {
-      "playerId": 624431,
-      "stage": "build_team_hitters_player",
-      "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-    }
-  ]
+  "errors": []
 }
