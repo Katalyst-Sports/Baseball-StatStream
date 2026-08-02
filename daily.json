@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T08:12:39.866169-04:00",
+  "updated_at": "2026-08-02T10:00:32.833026-04:00",
   "games": [
     {
       "gamePk": 824807,
@@ -530,7 +530,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 702275,
+        "name": "JR Ritchie",
+        "hand": "R",
+        "era": "4.50",
+        "whip": "1.41",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-23",
+              "opponent": "Washington Nationals",
+              "ip": "7.0",
+              "er": 2,
+              "k": 7,
+              "bb": 2,
+              "pitches": 89,
+              "strikes": 54
+            },
+            {
+              "date": "2026-04-29",
+              "opponent": "Detroit Tigers",
+              "ip": "5.1",
+              "er": 2,
+              "k": 4,
+              "bb": 4,
+              "pitches": 97,
+              "strikes": 56
+            },
+            {
+              "date": "2026-05-04",
+              "opponent": "Seattle Mariners",
+              "ip": "5.0",
+              "er": 3,
+              "k": 2,
+              "bb": 6,
+              "pitches": 93,
+              "strikes": 47
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "4.3",
+          "avg_bb": "4.0",
+          "avg_pitches": "93.0",
+          "avg_strikes": "52.3",
+          "era": "3.63",
+          "whip": "1.50",
+          "strike_pct": "56.3",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "James Wood",
