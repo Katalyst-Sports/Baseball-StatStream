@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T15:00:28.711577-04:00",
+  "updated_at": "2026-08-03T16:36:52.592023-04:00",
   "games": [
     {
       "gamePk": 823431,
@@ -1424,7 +1424,56 @@
       "venue": "Wrigley Field",
       "start": "2026-08-04T00:05:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 680736,
+        "name": "Justin Wrobleski",
+        "hand": "L",
+        "era": "2.88",
+        "whip": "1.02",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-30",
+              "opponent": "Cleveland Guardians",
+              "ip": "4.0",
+              "er": 3,
+              "k": 2,
+              "bb": 1,
+              "pitches": 60,
+              "strikes": 39
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Toronto Blue Jays",
+              "ip": "5.0",
+              "er": 1,
+              "k": 2,
+              "bb": 4,
+              "pitches": 78,
+              "strikes": 42
+            },
+            {
+              "date": "2026-04-13",
+              "opponent": "New York Mets",
+              "ip": "8.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 90,
+              "strikes": 64
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "2.0",
+          "avg_bb": "1.7",
+          "avg_pitches": "76.0",
+          "avg_strikes": "48.3",
+          "era": "2.12",
+          "whip": "0.76",
+          "strike_pct": "63.6",
+          "quality_starts": 1
+        }
+      },
       "home_pitcher": {
         "id": 571510,
         "name": "Matthew Boyd",
@@ -1897,7 +1946,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 615698,
+        "name": "Cal Quantrill",
+        "hand": "R",
+        "era": "3.84",
+        "whip": "1.24",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-16",
+              "opponent": "Athletics",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 12,
+              "strikes": 8
+            },
+            {
+              "date": "2026-04-18",
+              "opponent": "Seattle Mariners",
+              "ip": "3.0",
+              "er": 3,
+              "k": 5,
+              "bb": 2,
+              "pitches": 65,
+              "strikes": 40
+            },
+            {
+              "date": "2026-04-24",
+              "opponent": "Athletics",
+              "ip": "3.0",
+              "er": 2,
+              "k": 2,
+              "bb": 0,
+              "pitches": 45,
+              "strikes": 28
+            }
+          ],
+          "avg_ip": "2.1",
+          "avg_k": "2.3",
+          "avg_bb": "0.7",
+          "avg_pitches": "40.7",
+          "avg_strikes": "25.3",
+          "era": "6.43",
+          "whip": "1.29",
+          "strike_pct": "62.3",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Osleivis Basabe",
