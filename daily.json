@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T07:58:20.543057-04:00",
+  "updated_at": "2026-08-03T11:09:25.927079-04:00",
   "games": [
     {
       "gamePk": 823431,
@@ -8,7 +8,56 @@
       "venue": "Citizens Bank Park",
       "start": "2026-08-03T22:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 674841,
+        "name": "Andrew Alvarez",
+        "hand": "L",
+        "era": "4.06",
+        "whip": "1.51",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-19",
+              "opponent": "San Francisco Giants",
+              "ip": "4.1",
+              "er": 0,
+              "k": 5,
+              "bb": 0,
+              "pitches": 62,
+              "strikes": 44
+            },
+            {
+              "date": "2026-05-15",
+              "opponent": "Baltimore Orioles",
+              "ip": "3.0",
+              "er": 2,
+              "k": 5,
+              "bb": 1,
+              "pitches": 48,
+              "strikes": 27
+            },
+            {
+              "date": "2026-05-20",
+              "opponent": "New York Mets",
+              "ip": "4.0",
+              "er": 2,
+              "k": 5,
+              "bb": 1,
+              "pitches": 56,
+              "strikes": 38
+            }
+          ],
+          "avg_ip": "3.2",
+          "avg_k": "5.0",
+          "avg_bb": "0.7",
+          "avg_pitches": "55.3",
+          "avg_strikes": "36.3",
+          "era": "3.18",
+          "whip": "0.97",
+          "strike_pct": "65.7",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 605400,
         "name": "Aaron Nola",
