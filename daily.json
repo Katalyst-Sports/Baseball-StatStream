@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T17:47:22.230527-04:00",
+  "updated_at": "2026-08-03T18:44:41.852572-04:00",
   "games": [
     {
       "gamePk": 823431,
@@ -7,7 +7,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-08-03T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 674841,
         "name": "Andrew Alvarez",
@@ -62,8 +62,8 @@
         "id": 605400,
         "name": "Aaron Nola",
         "hand": "R",
-        "era": "5.61",
-        "whip": "1.45",
+        "era": "5.59",
+        "whip": "1.44",
         "last3": {
           "starts": [
             {
@@ -132,10 +132,10 @@
         {
           "name": "James Wood",
           "stats": {
-            "avg": ".266",
-            "obp": ".394",
-            "slg": ".538",
-            "ops": ".932",
+            "avg": ".265",
+            "obp": ".393",
+            "slg": ".537",
+            "ops": ".930",
             "homeRuns": 30,
             "rbi": 73
           },
@@ -479,7 +479,7 @@
       "home_team": "New York Yankees",
       "venue": "Yankee Stadium",
       "start": "2026-08-03T23:05:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 700241,
         "name": "Michael McGreevy",
@@ -2078,26 +2078,6 @@
           }
         },
         {
-          "name": "Heliot Ramos",
-          "stats": {
-            "avg": ".264",
-            "obp": ".304",
-            "slg": ".424",
-            "ops": ".728",
-            "homeRuns": 9,
-            "rbi": 34
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
           "name": "Daniel Susac",
           "stats": {
             "avg": ".264",
@@ -2175,6 +2155,26 @@
             "rbi": 1,
             "walks": 1,
             "games": 4
+          }
+        },
+        {
+          "name": "Grant McCray",
+          "stats": {
+            "avg": ".143",
+            "obp": ".217",
+            "slg": ".286",
+            "ops": ".503",
+            "homeRuns": 1,
+            "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 5
           }
         }
       ],
@@ -2772,6 +2772,26 @@
           }
         },
         {
+          "name": "Daulton Varsho",
+          "stats": {
+            "avg": ".243",
+            "obp": ".307",
+            "slg": ".375",
+            "ops": ".682",
+            "homeRuns": 7,
+            "rbi": 26
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
+          }
+        },
+        {
           "name": "Jose Altuve",
           "stats": {
             "avg": ".233",
@@ -2808,26 +2828,6 @@
             "homeRuns": 1,
             "rbi": 3,
             "walks": 0,
-            "games": 3
-          }
-        },
-        {
-          "name": "Cam Smith",
-          "stats": {
-            "avg": ".213",
-            "obp": ".285",
-            "slg": ".371",
-            "ops": ".656",
-            "homeRuns": 13,
-            "rbi": 39
-          },
-          "last10ab": {
-            "avg": "0.091",
-            "hits": 1,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 2,
             "games": 3
           }
         }
