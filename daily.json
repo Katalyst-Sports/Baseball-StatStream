@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T11:21:21.985770-04:00",
+  "updated_at": "2026-08-04T13:10:58.166951-04:00",
   "games": [
     {
       "gamePk": 824805,
@@ -6547,7 +6547,56 @@
       "venue": "T-Mobile Park",
       "start": "2026-08-05T01:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 675512,
+        "name": "Troy Melton",
+        "hand": "R",
+        "era": "1.75",
+        "whip": "0.93",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-24",
+              "opponent": "Baltimore Orioles",
+              "ip": "5.2",
+              "er": 1,
+              "k": 3,
+              "bb": 3,
+              "pitches": 79,
+              "strikes": 48
+            },
+            {
+              "date": "2026-05-29",
+              "opponent": "Chicago White Sox",
+              "ip": "7.0",
+              "er": 1,
+              "k": 1,
+              "bb": 1,
+              "pitches": 89,
+              "strikes": 57
+            },
+            {
+              "date": "2026-06-03",
+              "opponent": "Tampa Bay Rays",
+              "ip": "8.0",
+              "er": 2,
+              "k": 5,
+              "bb": 2,
+              "pitches": 94,
+              "strikes": 67
+            }
+          ],
+          "avg_ip": "7.0",
+          "avg_k": "3.0",
+          "avg_bb": "2.0",
+          "avg_pitches": "87.3",
+          "avg_strikes": "57.3",
+          "era": "1.74",
+          "whip": "0.87",
+          "strike_pct": "65.6",
+          "quality_starts": 2
+        }
+      },
       "home_pitcher": {
         "id": 676106,
         "name": "Emerson Hancock",
