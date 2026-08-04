@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T13:10:58.166951-04:00",
+  "updated_at": "2026-08-04T14:54:59.092720-04:00",
   "games": [
     {
       "gamePk": 824805,
@@ -58,7 +58,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 700249,
+        "name": "Cade Povich",
+        "hand": "L",
+        "era": "5.12",
+        "whip": "1.34",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-05",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "5.2",
+              "er": 2,
+              "k": 2,
+              "bb": 3,
+              "pitches": 87,
+              "strikes": 53
+            },
+            {
+              "date": "2026-04-12",
+              "opponent": "San Francisco Giants",
+              "ip": "6.2",
+              "er": 1,
+              "k": 5,
+              "bb": 0,
+              "pitches": 97,
+              "strikes": 65
+            },
+            {
+              "date": "2026-05-01",
+              "opponent": "New York Yankees",
+              "ip": "4.0",
+              "er": 5,
+              "k": 4,
+              "bb": 2,
+              "pitches": 77,
+              "strikes": 46
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "3.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "87.0",
+          "avg_strikes": "54.7",
+          "era": "4.41",
+          "whip": "1.29",
+          "strike_pct": "62.8",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Mike Trout",
@@ -715,6 +764,26 @@
       ],
       "home_hitters": [
         {
+          "name": "Nathaniel Lowe",
+          "stats": {
+            "avg": ".266",
+            "obp": ".341",
+            "slg": ".480",
+            "ops": ".821",
+            "homeRuns": 12,
+            "rbi": 37
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 0,
+            "games": 5
+          }
+        },
+        {
           "name": "Chase DeLauter",
           "stats": {
             "avg": ".278",
@@ -855,43 +924,23 @@
           }
         },
         {
-          "name": "Steven Kwan",
+          "name": "Jo Adell",
           "stats": {
-            "avg": ".261",
-            "obp": ".362",
-            "slg": ".320",
+            "avg": ".239",
+            "obp": ".287",
+            "slg": ".395",
             "ops": ".682",
-            "homeRuns": 1,
-            "rbi": 21
+            "homeRuns": 16,
+            "rbi": 62
           },
           "last10ab": {
-            "avg": "0.286",
-            "hits": 4,
-            "atBats": 14,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
-          "name": "Angel Mart\u00ednez",
-          "stats": {
-            "avg": ".225",
-            "obp": ".260",
-            "slg": ".414",
-            "ops": ".674",
-            "homeRuns": 11,
-            "rbi": 33
-          },
-          "last10ab": {
-            "avg": "0.300",
+            "avg": "0.250",
             "hits": 3,
-            "atBats": 10,
+            "atBats": 12,
             "homeRuns": 0,
             "rbi": 0,
-            "walks": 0,
-            "games": 4
+            "walks": 1,
+            "games": 3
           }
         }
       ]
@@ -1004,26 +1053,6 @@
         }
       },
       "away_hitters": [
-        {
-          "name": "Nick Kurtz",
-          "stats": {
-            "avg": ".256",
-            "obp": ".396",
-            "slg": ".483",
-            "ops": ".879",
-            "homeRuns": 21,
-            "rbi": 69
-          },
-          "last10ab": {
-            "avg": "0.077",
-            "hits": 1,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 4,
-            "games": 4
-          }
-        },
         {
           "name": "Donovan Walton",
           "stats": {
@@ -1162,6 +1191,26 @@
             "rbi": 1,
             "walks": 0,
             "games": 5
+          }
+        },
+        {
+          "name": "Max Muncy",
+          "stats": {
+            "avg": ".223",
+            "obp": ".298",
+            "slg": ".389",
+            "ops": ".687",
+            "homeRuns": 5,
+            "rbi": 20
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -1376,52 +1425,52 @@
       "start": "2026-08-04T22:40:00Z",
       "status": "Preview",
       "away_pitcher": {
-        "id": 641793,
-        "name": "Zack Littell",
-        "hand": "R",
-        "era": "4.94",
-        "whip": "1.34",
+        "id": 687223,
+        "name": "Carson Palmquist",
+        "hand": "L",
+        "era": "7.31",
+        "whip": "1.63",
         "last3": {
           "starts": [
             {
-              "date": "2026-03-31",
+              "date": "2026-06-24",
               "opponent": "Philadelphia Phillies",
-              "ip": "5.0",
-              "er": 3,
-              "k": 1,
-              "bb": 2,
-              "pitches": 75,
-              "strikes": 53
-            },
-            {
-              "date": "2026-04-06",
-              "opponent": "St. Louis Cardinals",
-              "ip": "5.0",
+              "ip": "3.1",
               "er": 1,
-              "k": 6,
-              "bb": 3,
-              "pitches": 70,
-              "strikes": 44
+              "k": 3,
+              "bb": 1,
+              "pitches": 58,
+              "strikes": 37
             },
             {
-              "date": "2026-04-12",
-              "opponent": "Milwaukee Brewers",
-              "ip": "5.0",
-              "er": 3,
+              "date": "2026-07-01",
+              "opponent": "Boston Red Sox",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 16,
+              "strikes": 12
+            },
+            {
+              "date": "2026-07-04",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "1.0",
+              "er": 4,
               "k": 3,
               "bb": 0,
-              "pitches": 71,
-              "strikes": 50
+              "pitches": 37,
+              "strikes": 24
             }
           ],
-          "avg_ip": "5.0",
-          "avg_k": "3.3",
-          "avg_bb": "1.7",
-          "avg_pitches": "72.0",
-          "avg_strikes": "49.0",
-          "era": "4.20",
-          "whip": "1.40",
-          "strike_pct": "68.1",
+          "avg_ip": "1.2",
+          "avg_k": "2.3",
+          "avg_bb": "0.3",
+          "avg_pitches": "37.0",
+          "avg_strikes": "24.3",
+          "era": "8.44",
+          "whip": "1.69",
+          "strike_pct": "65.8",
           "quality_starts": 0
         }
       },
