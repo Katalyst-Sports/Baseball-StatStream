@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T17:40:35.594741-04:00",
+  "updated_at": "2026-08-05T18:43:17.954904-04:00",
   "games": [
     {
       "gamePk": 824158,
@@ -1403,7 +1403,7 @@
       "home_team": "Colorado Rockies",
       "venue": "Coors Field",
       "start": "2026-08-05T19:10:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 607259,
         "name": "Nick Martinez",
@@ -1750,10 +1750,10 @@
         {
           "name": "TJ Rumfield",
           "stats": {
-            "avg": ".292",
-            "obp": ".371",
-            "slg": ".461",
-            "ops": ".832",
+            "avg": ".291",
+            "obp": ".370",
+            "slg": ".460",
+            "ops": ".830",
             "homeRuns": 13,
             "rbi": 58
           },
@@ -1875,7 +1875,7 @@
       "home_team": "Baltimore Orioles",
       "venue": "Oriole Park at Camden Yards",
       "start": "2026-08-05T22:35:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 672282,
         "name": "Reid Detmers",
@@ -1930,8 +1930,8 @@
         "id": 669432,
         "name": "Trevor Rogers",
         "hand": "L",
-        "era": "4.27",
-        "whip": "1.28",
+        "era": "4.23",
+        "whip": "1.27",
         "last3": {
           "starts": [
             {
@@ -1980,10 +1980,10 @@
         {
           "name": "Mike Trout",
           "stats": {
-            "avg": ".245",
-            "obp": ".390",
-            "slg": ".451",
-            "ops": ".841",
+            "avg": ".244",
+            "obp": ".389",
+            "slg": ".450",
+            "ops": ".839",
             "homeRuns": 18,
             "rbi": 40
           },
@@ -2040,10 +2040,10 @@
         {
           "name": "Zach Neto",
           "stats": {
-            "avg": ".230",
+            "avg": ".229",
             "obp": ".318",
-            "slg": ".423",
-            "ops": ".741",
+            "slg": ".422",
+            "ops": ".740",
             "homeRuns": 19,
             "rbi": 47
           },
@@ -2081,9 +2081,9 @@
           "name": "Nolan Schanuel",
           "stats": {
             "avg": ".275",
-            "obp": ".346",
-            "slg": ".388",
-            "ops": ".734",
+            "obp": ".345",
+            "slg": ".387",
+            "ops": ".732",
             "homeRuns": 6,
             "rbi": 37
           },
@@ -2347,7 +2347,7 @@
       "home_team": "Cleveland Guardians",
       "venue": "Progressive Field",
       "start": "2026-08-05T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 681035,
         "name": "Christian Scott",
@@ -2819,7 +2819,7 @@
       "home_team": "Cincinnati Reds",
       "venue": "Great American Ball Park",
       "start": "2026-08-05T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 682052,
         "name": "Jacob Lopez",
@@ -2874,7 +2874,7 @@
         "id": 695076,
         "name": "Rhett Lowder",
         "hand": "R",
-        "era": "5.42",
+        "era": "5.51",
         "whip": "1.52",
         "last3": {
           "starts": [
@@ -3044,10 +3044,10 @@
         {
           "name": "Jacob Wilson",
           "stats": {
-            "avg": ".274",
-            "obp": ".306",
-            "slg": ".397",
-            "ops": ".703",
+            "avg": ".273",
+            "obp": ".305",
+            "slg": ".396",
+            "ops": ".701",
             "homeRuns": 7,
             "rbi": 36
           },
@@ -3291,7 +3291,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-08-05T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 663623,
         "name": "Jake Irvin",
@@ -4235,7 +4235,7 @@
       "home_team": "Boston Red Sox",
       "venue": "Fenway Park",
       "start": "2026-08-05T23:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 680732,
         "name": "Sean Burke",
@@ -6428,6 +6428,26 @@
           }
         },
         {
+          "name": "Gabriel Moreno",
+          "stats": {
+            "avg": ".298",
+            "obp": ".380",
+            "slg": ".438",
+            "ops": ".818",
+            "homeRuns": 8,
+            "rbi": 47
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Corbin Carroll",
           "stats": {
             "avg": ".242",
@@ -6565,26 +6585,6 @@
             "rbi": 4,
             "walks": 1,
             "games": 4
-          }
-        },
-        {
-          "name": "Lars Nootbaar",
-          "stats": {
-            "avg": ".231",
-            "obp": ".337",
-            "slg": ".350",
-            "ops": ".687",
-            "homeRuns": 3,
-            "rbi": 16
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 3,
-            "walks": 3,
-            "games": 3
           }
         }
       ]
