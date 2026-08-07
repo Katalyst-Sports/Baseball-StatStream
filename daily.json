@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T11:28:21.820398-04:00",
+  "updated_at": "2026-08-07T12:27:24.435954-04:00",
   "games": [
     {
       "gamePk": 823349,
@@ -6607,7 +6607,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 664141,
+        "name": "JT Brubaker",
+        "hand": "R",
+        "era": "3.17",
+        "whip": "1.17",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-25",
+              "opponent": "New York Yankees",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 1,
+              "pitches": 22,
+              "strikes": 12
+            },
+            {
+              "date": "2026-03-28",
+              "opponent": "New York Yankees",
+              "ip": "0.1",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 2,
+              "strikes": 1
+            },
+            {
+              "date": "2026-03-31",
+              "opponent": "San Diego Padres",
+              "ip": "2.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 28,
+              "strikes": 21
+            }
+          ],
+          "avg_ip": "1.1",
+          "avg_k": "1.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "17.3",
+          "avg_strikes": "11.3",
+          "era": "0.00",
+          "whip": "0.92",
+          "strike_pct": "65.4",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Eduardo Valencia",
