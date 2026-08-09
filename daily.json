@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T09:33:15.134860-04:00",
+  "updated_at": "2026-08-09T10:17:31.399393-04:00",
   "games": [
     {
       "gamePk": 822700,
@@ -530,7 +530,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 669062,
+        "name": "Erik Miller",
+        "hand": "L",
+        "era": "2.57",
+        "whip": "1.34",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-27",
+              "opponent": "New York Yankees",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 10,
+              "strikes": 7
+            },
+            {
+              "date": "2026-03-28",
+              "opponent": "New York Yankees",
+              "ip": "0.2",
+              "er": 0,
+              "k": 1,
+              "bb": 1,
+              "pitches": 20,
+              "strikes": 9
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "New York Mets",
+              "ip": "0.2",
+              "er": 2,
+              "k": 1,
+              "bb": 1,
+              "pitches": 26,
+              "strikes": 13
+            }
+          ],
+          "avg_ip": "0.2",
+          "avg_k": "0.7",
+          "avg_bb": "0.7",
+          "avg_pitches": "18.7",
+          "avg_strikes": "9.7",
+          "era": "7.71",
+          "whip": "2.14",
+          "strike_pct": "51.8",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Donovan Walton",
@@ -6095,7 +6144,56 @@
       "venue": "T-Mobile Park",
       "start": "2026-08-09T20:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 693855,
+        "name": "Ian Seymour",
+        "hand": "L",
+        "era": "4.27",
+        "whip": "1.13",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "St. Louis Cardinals",
+              "ip": "0.0",
+              "er": 5,
+              "k": 0,
+              "bb": 0,
+              "pitches": 21,
+              "strikes": 14
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Milwaukee Brewers",
+              "ip": "0.2",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 8,
+              "strikes": 6
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Milwaukee Brewers",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 32,
+              "strikes": 22
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "1.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "20.3",
+          "avg_strikes": "14.0",
+          "era": "16.88",
+          "whip": "2.25",
+          "strike_pct": "68.9",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 676106,
         "name": "Emerson Hancock",
