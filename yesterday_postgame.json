@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T07:41:04.056141-04:00",
+  "updated_at": "2026-08-10T08:33:20.170043-04:00",
   "games": [
     {
       "gamePk": 822700,
@@ -334,5 +334,18 @@
       "game_summary": "Austin Hays homers (2) on a line drive to left field. Jase Bowen scores."
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "leaders_hitting_battingAverage",
+      "error": "The read operation timed out"
+    },
+    {
+      "stage": "leaders_pitching_strikeouts",
+      "error": "The read operation timed out"
+    },
+    {
+      "stage": "leaders_pitching_wins",
+      "error": "The read operation timed out"
+    }
+  ]
 }
