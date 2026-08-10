@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T04:00:39.692891-04:00",
+  "updated_at": "2026-08-10T05:43:25.852165-04:00",
   "games": [
     {
       "gamePk": 822700,
@@ -334,5 +334,66 @@
       "game_summary": "Austin Hays homers (2) on a line drive to left field. Jase Bowen scores."
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "teamId": 109,
+      "stage": "injury_transactions",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "teamId": 111,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 113,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 114,
+      "stage": "injury_transactions",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "teamId": 116,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 118,
+      "stage": "injury_transactions",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "teamId": 108,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 119,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 146,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 158,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 121,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    },
+    {
+      "teamId": 143,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
+    }
+  ]
 }
