@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T14:32:46.693502-04:00",
+  "updated_at": "2026-08-11T15:41:38.413599-04:00",
   "games": [
     {
       "gamePk": 824240,
@@ -824,26 +824,6 @@
           }
         },
         {
-          "name": "Kyle Stowers",
-          "stats": {
-            "avg": ".242",
-            "obp": ".327",
-            "slg": ".462",
-            "ops": ".789",
-            "homeRuns": 16,
-            "rbi": 52
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 2,
-            "games": 3
-          }
-        },
-        {
           "name": "Xavier Edwards",
           "stats": {
             "avg": ".284",
@@ -942,6 +922,26 @@
             "walks": 0,
             "games": 4
           }
+        },
+        {
+          "name": "Agust\u00edn Ram\u00edrez",
+          "stats": {
+            "avg": ".238",
+            "obp": ".329",
+            "slg": ".344",
+            "ops": ".673",
+            "homeRuns": 2,
+            "rbi": 14
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
+            "games": 4
+          }
         }
       ]
     },
@@ -1002,7 +1002,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 663623,
+        "name": "Jake Irvin",
+        "hand": "R",
+        "era": "5.37",
+        "whip": "1.29",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-29",
+              "opponent": "Chicago Cubs",
+              "ip": "5.0",
+              "er": 2,
+              "k": 7,
+              "bb": 1,
+              "pitches": 93,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-04",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "4.0",
+              "er": 6,
+              "k": 4,
+              "bb": 2,
+              "pitches": 85,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-10",
+              "opponent": "Milwaukee Brewers",
+              "ip": "5.0",
+              "er": 3,
+              "k": 5,
+              "bb": 5,
+              "pitches": 100,
+              "strikes": 55
+            }
+          ],
+          "avg_ip": "4.2",
+          "avg_k": "5.3",
+          "avg_bb": "2.7",
+          "avg_pitches": "92.7",
+          "avg_strikes": "57.0",
+          "era": "7.07",
+          "whip": "1.50",
+          "strike_pct": "61.5",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Pete Crow-Armstrong",
