@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T10:43:31.279197-04:00",
+  "updated_at": "2026-08-12T11:42:19.045013-04:00",
   "games": [
     {
       "gamePk": 823672,
@@ -1946,7 +1946,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 605288,
+        "name": "Adrian Houser",
+        "hand": "R",
+        "era": "4.55",
+        "whip": "1.37",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-01",
+              "opponent": "San Diego Padres",
+              "ip": "5.1",
+              "er": 1,
+              "k": 4,
+              "bb": 1,
+              "pitches": 86,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Philadelphia Phillies",
+              "ip": "6.0",
+              "er": 4,
+              "k": 3,
+              "bb": 2,
+              "pitches": 89,
+              "strikes": 60
+            },
+            {
+              "date": "2026-04-12",
+              "opponent": "Baltimore Orioles",
+              "ip": "4.2",
+              "er": 4,
+              "k": 3,
+              "bb": 2,
+              "pitches": 88,
+              "strikes": 51
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "3.3",
+          "avg_bb": "1.7",
+          "avg_pitches": "87.7",
+          "avg_strikes": "56.3",
+          "era": "5.06",
+          "whip": "1.56",
+          "strike_pct": "64.3",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Yordan Alvarez",
