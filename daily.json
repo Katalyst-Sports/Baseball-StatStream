@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T13:02:39.908474-04:00",
+  "updated_at": "2026-08-14T14:01:35.304317-04:00",
   "games": [
     {
       "gamePk": 824643,
@@ -7,7 +7,7 @@
       "home_team": "Chicago Cubs",
       "venue": "Wrigley Field",
       "start": "2026-08-14T18:20:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 669461,
         "name": "Matthew Liberatore",
@@ -2810,7 +2810,56 @@
       "venue": "Tropicana Field",
       "start": "2026-08-14T23:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 605135,
+        "name": "Chris Bassitt",
+        "hand": "R",
+        "era": "5.27",
+        "whip": "1.63",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-30",
+              "opponent": "Texas Rangers",
+              "ip": "4.1",
+              "er": 4,
+              "k": 3,
+              "bb": 4,
+              "pitches": 100,
+              "strikes": 61
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "2.0",
+              "er": 6,
+              "k": 0,
+              "bb": 2,
+              "pitches": 62,
+              "strikes": 32
+            },
+            {
+              "date": "2026-04-11",
+              "opponent": "San Francisco Giants",
+              "ip": "4.2",
+              "er": 1,
+              "k": 2,
+              "bb": 1,
+              "pitches": 89,
+              "strikes": 57
+            }
+          ],
+          "avg_ip": "3.2",
+          "avg_k": "1.7",
+          "avg_bb": "2.3",
+          "avg_pitches": "83.7",
+          "avg_strikes": "50.0",
+          "era": "9.00",
+          "whip": "2.36",
+          "strike_pct": "59.8",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 571927,
         "name": "Steven Matz",
