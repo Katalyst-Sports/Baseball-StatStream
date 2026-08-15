@@ -1,11 +1,5 @@
 {
-  "updated_at": "2026-08-15T11:37:16.214490-04:00",
+  "updated_at": "2026-08-15T11:56:05.145610-04:00",
   "games": [],
-  "errors": [
-    {
-      "stage": "generated_news_item",
-      "title": "Chicago Cubs Takes 0-3 Win",
-      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knxdhdn3fdgrkzy0y5b5f6w4` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5456, Requested 617. Please try again in 730ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-    }
-  ]
+  "errors": []
 }
