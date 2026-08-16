@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T19:38:27.530678-04:00",
+  "updated_at": "2026-08-16T19:56:23.069486-04:00",
   "games": [
     {
       "gamePk": 822940,
@@ -6620,8 +6620,8 @@
         "id": 693433,
         "name": "Bryan Woo",
         "hand": "R",
-        "era": "4.12",
-        "whip": "1.10",
+        "era": "4.09",
+        "whip": "1.09",
         "last3": {
           "starts": [
             {
@@ -6670,7 +6670,7 @@
         "id": 686613,
         "name": "Hunter Brown",
         "hand": "R",
-        "era": "3.76",
+        "era": "3.70",
         "whip": "1.28",
         "last3": {
           "starts": [
@@ -6718,6 +6718,26 @@
       },
       "away_hitters": [
         {
+          "name": "Brock Rodden",
+          "stats": {
+            "avg": ".250",
+            "obp": ".364",
+            "slg": ".500",
+            "ops": ".864",
+            "homeRuns": 0,
+            "rbi": 3
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 2,
+            "atBats": 8,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 1,
+            "games": 2
+          }
+        },
+        {
           "name": "Dominic Canzone",
           "stats": {
             "avg": ".259",
@@ -6758,23 +6778,23 @@
           }
         },
         {
-          "name": "Brock Rodden",
+          "name": "Brendan Donovan",
           "stats": {
-            "avg": ".250",
-            "obp": ".300",
-            "slg": ".500",
-            "ops": ".800",
-            "homeRuns": 0,
-            "rbi": 3
+            "avg": ".261",
+            "obp": ".355",
+            "slg": ".395",
+            "ops": ".750",
+            "homeRuns": 3,
+            "rbi": 12
           },
           "last10ab": {
-            "avg": "0.250",
-            "hits": 2,
-            "atBats": 8,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 1,
-            "games": 2
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
           }
         },
         {
@@ -6798,32 +6818,12 @@
           }
         },
         {
-          "name": "Brendan Donovan",
-          "stats": {
-            "avg": ".261",
-            "obp": ".350",
-            "slg": ".395",
-            "ops": ".745",
-            "homeRuns": 3,
-            "rbi": 12
-          },
-          "last10ab": {
-            "avg": "0.364",
-            "hits": 4,
-            "atBats": 11,
-            "homeRuns": 1,
-            "rbi": 1,
-            "walks": 2,
-            "games": 3
-          }
-        },
-        {
           "name": "Cole Young",
           "stats": {
             "avg": ".262",
-            "obp": ".319",
+            "obp": ".318",
             "slg": ".407",
-            "ops": ".726",
+            "ops": ".725",
             "homeRuns": 15,
             "rbi": 56
           },
@@ -6878,23 +6878,23 @@
           }
         },
         {
-          "name": "Weston Wilson",
+          "name": "Jhonny Pereda",
           "stats": {
-            "avg": ".204",
-            "obp": ".297",
-            "slg": ".357",
-            "ops": ".654",
-            "homeRuns": 4,
-            "rbi": 11
+            "avg": ".257",
+            "obp": ".307",
+            "slg": ".343",
+            "ops": ".650",
+            "homeRuns": 2,
+            "rbi": 4
           },
           "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
             "homeRuns": 0,
-            "rbi": 2,
-            "walks": 2,
-            "games": 5
+            "rbi": 0,
+            "walks": 0,
+            "games": 4
           }
         }
       ],
@@ -6962,10 +6962,10 @@
         {
           "name": "Christian Walker",
           "stats": {
-            "avg": ".236",
+            "avg": ".235",
             "obp": ".314",
-            "slg": ".451",
-            "ops": ".765",
+            "slg": ".450",
+            "ops": ".764",
             "homeRuns": 23,
             "rbi": 71
           },
@@ -7002,10 +7002,10 @@
         {
           "name": "Jose Altuve",
           "stats": {
-            "avg": ".245",
-            "obp": ".307",
-            "slg": ".397",
-            "ops": ".704",
+            "avg": ".244",
+            "obp": ".306",
+            "slg": ".396",
+            "ops": ".702",
             "homeRuns": 13,
             "rbi": 36
           },
