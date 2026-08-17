@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T17:57:30.620425-04:00",
+  "updated_at": "2026-08-17T18:33:10.352597-04:00",
   "games": [
     {
       "gamePk": 824514,
@@ -449,7 +449,7 @@
       "home_team": "Cincinnati Reds",
       "venue": "Great American Ball Park",
       "start": "2026-08-17T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 669467,
         "name": "Andre Pallante",
@@ -926,7 +926,7 @@
         "id": 687064,
         "name": "Brandon Young",
         "hand": "R",
-        "era": "3.33",
+        "era": "3.28",
         "whip": "1.32",
         "last3": {
           "starts": [
@@ -976,8 +976,8 @@
         "id": 663556,
         "name": "Shane McClanahan",
         "hand": "L",
-        "era": "3.09",
-        "whip": "1.12",
+        "era": "3.12",
+        "whip": "1.11",
         "last3": {
           "starts": [
             {
@@ -1026,10 +1026,10 @@
         {
           "name": "Pete Alonso",
           "stats": {
-            "avg": ".266",
-            "obp": ".361",
-            "slg": ".490",
-            "ops": ".851",
+            "avg": ".265",
+            "obp": ".360",
+            "slg": ".489",
+            "ops": ".849",
             "homeRuns": 27,
             "rbi": 80
           },
@@ -1046,10 +1046,10 @@
         {
           "name": "Christian Encarnacion-Strand",
           "stats": {
-            "avg": ".250",
-            "obp": ".293",
-            "slg": ".500",
-            "ops": ".793",
+            "avg": ".247",
+            "obp": ".289",
+            "slg": ".494",
+            "ops": ".783",
             "homeRuns": 5,
             "rbi": 18
           },
@@ -1066,10 +1066,10 @@
         {
           "name": "Jackson Holliday",
           "stats": {
-            "avg": ".245",
-            "obp": ".344",
-            "slg": ".385",
-            "ops": ".729",
+            "avg": ".244",
+            "obp": ".343",
+            "slg": ".383",
+            "ops": ".726",
             "homeRuns": 6,
             "rbi": 25
           },
@@ -1084,12 +1084,32 @@
           }
         },
         {
+          "name": "Coby Mayo",
+          "stats": {
+            "avg": ".212",
+            "obp": ".276",
+            "slg": ".435",
+            "ops": ".711",
+            "homeRuns": 16,
+            "rbi": 46
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 4
+          }
+        },
+        {
           "name": "Tyler O'Neill",
           "stats": {
-            "avg": ".219",
-            "obp": ".309",
-            "slg": ".395",
-            "ops": ".704",
+            "avg": ".218",
+            "obp": ".307",
+            "slg": ".394",
+            "ops": ".701",
             "homeRuns": 10,
             "rbi": 23
           },
@@ -1106,10 +1126,10 @@
         {
           "name": "Gunnar Henderson",
           "stats": {
-            "avg": ".220",
-            "obp": ".303",
-            "slg": ".399",
-            "ops": ".702",
+            "avg": ".219",
+            "obp": ".302",
+            "slg": ".398",
+            "ops": ".700",
             "homeRuns": 20,
             "rbi": 51
           },
@@ -1121,26 +1141,6 @@
             "rbi": 0,
             "walks": 1,
             "games": 3
-          }
-        },
-        {
-          "name": "Coby Mayo",
-          "stats": {
-            "avg": ".210",
-            "obp": ".274",
-            "slg": ".423",
-            "ops": ".697",
-            "homeRuns": 15,
-            "rbi": 45
-          },
-          "last10ab": {
-            "avg": "0.154",
-            "hits": 2,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 2,
-            "games": 4
           }
         },
         {
@@ -1208,10 +1208,10 @@
         {
           "name": "Junior Caminero",
           "stats": {
-            "avg": ".274",
+            "avg": ".273",
             "obp": ".364",
-            "slg": ".541",
-            "ops": ".905",
+            "slg": ".539",
+            "ops": ".903",
             "homeRuns": 35,
             "rbi": 79
           },
@@ -1229,9 +1229,9 @@
           "name": "Yandy D\u00edaz",
           "stats": {
             "avg": ".302",
-            "obp": ".370",
+            "obp": ".371",
             "slg": ".460",
-            "ops": ".830",
+            "ops": ".831",
             "homeRuns": 17,
             "rbi": 69
           },
@@ -1248,10 +1248,10 @@
         {
           "name": "Liam Hicks",
           "stats": {
-            "avg": ".284",
-            "obp": ".373",
-            "slg": ".445",
-            "ops": ".818",
+            "avg": ".283",
+            "obp": ".372",
+            "slg": ".444",
+            "ops": ".816",
             "homeRuns": 16,
             "rbi": 71
           },
@@ -1268,10 +1268,10 @@
         {
           "name": "Jonathan Aranda",
           "stats": {
-            "avg": ".285",
-            "obp": ".371",
-            "slg": ".426",
-            "ops": ".797",
+            "avg": ".284",
+            "obp": ".370",
+            "slg": ".425",
+            "ops": ".795",
             "homeRuns": 15,
             "rbi": 75
           },
@@ -1288,10 +1288,10 @@
         {
           "name": "Ryan Vilade",
           "stats": {
-            "avg": ".256",
-            "obp": ".318",
-            "slg": ".478",
-            "ops": ".796",
+            "avg": ".254",
+            "obp": ".317",
+            "slg": ".475",
+            "ops": ".792",
             "homeRuns": 10,
             "rbi": 36
           },
@@ -1349,9 +1349,9 @@
           "name": "Chandler Simpson",
           "stats": {
             "avg": ".309",
-            "obp": ".337",
+            "obp": ".336",
             "slg": ".367",
-            "ops": ".704",
+            "ops": ".703",
             "homeRuns": 0,
             "rbi": 25
           },
@@ -1368,10 +1368,10 @@
         {
           "name": "Richie Palacios",
           "stats": {
-            "avg": ".241",
-            "obp": ".342",
-            "slg": ".358",
-            "ops": ".700",
+            "avg": ".240",
+            "obp": ".341",
+            "slg": ".357",
+            "ops": ".698",
             "homeRuns": 5,
             "rbi": 36
           },
@@ -1393,7 +1393,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-08-17T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 676083,
         "name": "Janson Junk",
@@ -2190,6 +2190,26 @@
           }
         },
         {
+          "name": "Oneil Cruz",
+          "stats": {
+            "avg": ".264",
+            "obp": ".350",
+            "slg": ".472",
+            "ops": ".822",
+            "homeRuns": 14,
+            "rbi": 44
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Bryan Reynolds",
           "stats": {
             "avg": ".264",
@@ -2307,26 +2327,6 @@
             "rbi": 0,
             "walks": 1,
             "games": 3
-          }
-        },
-        {
-          "name": "Ronny Simon",
-          "stats": {
-            "avg": ".290",
-            "obp": ".333",
-            "slg": ".323",
-            "ops": ".656",
-            "homeRuns": 0,
-            "rbi": 2
-          },
-          "last10ab": {
-            "avg": "0.286",
-            "hits": 4,
-            "atBats": 14,
-            "homeRuns": 0,
-            "rbi": 2,
-            "walks": 1,
-            "games": 4
           }
         }
       ]
@@ -5182,7 +5182,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Minnesota Twins Injury Watch",
+      "title": "Chicago Cubs Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

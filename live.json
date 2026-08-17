@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-08-17T17:57:30.620425-04:00",
+  "updated_at": "2026-08-17T18:33:10.352597-04:00",
   "games": [
+    {
+      "gamePk": 824478,
+      "game": "St. Louis Cardinals @ Cincinnati Reds",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
     {
       "gamePk": 822939,
       "game": "Baltimore Orioles @ Tampa Bay Rays",
+      "score": "1-0",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Coby Mayo"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823427,
+      "game": "Miami Marlins @ Philadelphia Phillies",
       "score": "0-0",
       "inning": "1st",
       "hot_hitters": [],
@@ -38,7 +56,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Minnesota Twins Injury Watch",
+      "title": "Chicago Cubs Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
