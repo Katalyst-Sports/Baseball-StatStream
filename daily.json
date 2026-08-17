@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T11:13:20.247536-04:00",
+  "updated_at": "2026-08-17T11:43:33.979935-04:00",
   "games": [
     {
       "gamePk": 824514,
@@ -2356,7 +2356,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 687941,
+        "name": "Alec Gamboa",
+        "hand": "L",
+        "era": "1.59",
+        "whip": "1.12",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-05",
+              "opponent": "Detroit Tigers",
+              "ip": "1.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 14,
+              "strikes": 9
+            },
+            {
+              "date": "2026-06-08",
+              "opponent": "Tampa Bay Rays",
+              "ip": "0.2",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 6,
+              "strikes": 5
+            },
+            {
+              "date": "2026-07-01",
+              "opponent": "Washington Nationals",
+              "ip": "2.1",
+              "er": 2,
+              "k": 1,
+              "bb": 4,
+              "pitches": 44,
+              "strikes": 23
+            }
+          ],
+          "avg_ip": "1.1",
+          "avg_k": "1.3",
+          "avg_bb": "1.3",
+          "avg_pitches": "21.3",
+          "avg_strikes": "12.3",
+          "era": "4.50",
+          "whip": "1.75",
+          "strike_pct": "57.8",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Gabriel Moreno",
