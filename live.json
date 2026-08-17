@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-08-17T15:57:58.773656-04:00",
-  "games": [
-    {
-      "gamePk": 824514,
-      "game": "St. Louis Cardinals @ Cincinnati Reds",
-      "score": "2-1",
-      "inning": "8th",
-      "hot_hitters": [
-        "Jordan Walker",
-        "Alec Burleson",
-        "Dane Myers"
-      ],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-08-17T16:36:02.613710-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -33,6 +20,11 @@
     {
       "stage": "generated_news_item",
       "title": "New York Yankees Takes 4-3 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "St. Louis Cardinals Finishes Off Cincinnati Reds",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
