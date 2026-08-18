@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T20:58:36.455830-04:00",
+  "updated_at": "2026-08-17T22:18:52.249362-04:00",
   "games": [
     {
       "gamePk": 824514,
@@ -15,6 +15,91 @@
       "pitchers": [
         "Quinn Mathews"
       ]
+    },
+    {
+      "gamePk": 824478,
+      "game": "St. Louis Cardinals @ Cincinnati Reds",
+      "winner": "Cincinnati Reds",
+      "loser": "St. Louis Cardinals",
+      "final_score": "5-6",
+      "hitters": [
+        "JJ Wetherholt",
+        "Iv\u00e1n Herrera",
+        "Jordan Walker",
+        "Elly De La Cruz",
+        "JJ Bleday",
+        "Eugenio Su\u00e1rez",
+        "Dane Myers"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 822939,
+      "game": "Baltimore Orioles @ Tampa Bay Rays",
+      "winner": "Tampa Bay Rays",
+      "loser": "Baltimore Orioles",
+      "final_score": "6-7",
+      "hitters": [
+        "Tyler O'Neill",
+        "Pete Alonso",
+        "Coby Mayo",
+        "Gunnar Henderson",
+        "Christian Encarnacion-Strand",
+        "Christian Franklin",
+        "Yandy D\u00edaz",
+        "Jonathan Aranda",
+        "Ryan Vilade",
+        "Jorge Mateo"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823427,
+      "game": "Miami Marlins @ Philadelphia Phillies",
+      "winner": "Philadelphia Phillies",
+      "loser": "Miami Marlins",
+      "final_score": "5-6",
+      "hitters": [
+        "Esteury Ruiz",
+        "Xavier Edwards",
+        "Agust\u00edn Ram\u00edrez",
+        "Otto Lopez",
+        "Javier Sanoja",
+        "Brian Navarreto",
+        "Bryce Harper"
+      ],
+      "pitchers": [
+        "Cristopher S\u00e1nchez"
+      ]
+    },
+    {
+      "gamePk": 824725,
+      "game": "Arizona Diamondbacks @ Boston Red Sox",
+      "winner": "Boston Red Sox",
+      "loser": "Arizona Diamondbacks",
+      "final_score": "1-11",
+      "hitters": [
+        "Tim Tawa",
+        "Nick Sogard",
+        "Ceddanne Rafaela",
+        "Wilyer Abreu",
+        "Willson Contreras",
+        "Adley Rutschman",
+        "Caleb Durbin",
+        "Mickey Gasper"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823589,
+      "game": "San Diego Padres @ New York Mets",
+      "winner": "New York Mets",
+      "loser": "San Diego Padres",
+      "final_score": "1-2",
+      "hitters": [
+        "Jake Cronenworth"
+      ],
+      "pitchers": []
     }
   ],
   "errors": [
@@ -41,6 +126,11 @@
     {
       "stage": "generated_news_item",
       "title": "St. Louis Cardinals Finishes Off Cincinnati Reds",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cincinnati Reds Finishes Off St. Louis Cardinals",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

@@ -1,94 +1,32 @@
 {
-  "updated_at": "2026-08-17T20:58:36.455830-04:00",
+  "updated_at": "2026-08-17T22:18:52.249362-04:00",
   "games": [
-    {
-      "gamePk": 824478,
-      "game": "St. Louis Cardinals @ Cincinnati Reds",
-      "score": "5-4",
-      "inning": "8th",
-      "hot_hitters": [
-        "Iv\u00e1n Herrera",
-        "Jordan Walker",
-        "JJ Bleday",
-        "Eugenio Su\u00e1rez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822939,
-      "game": "Baltimore Orioles @ Tampa Bay Rays",
-      "score": "6-7",
-      "inning": "9th",
-      "hot_hitters": [
-        "Tyler O'Neill",
-        "Pete Alonso",
-        "Coby Mayo",
-        "Gunnar Henderson",
-        "Christian Encarnacion-Strand",
-        "Christian Franklin",
-        "Yandy D\u00edaz",
-        "Jonathan Aranda",
-        "Ryan Vilade",
-        "Jorge Mateo"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823427,
-      "game": "Miami Marlins @ Philadelphia Phillies",
-      "score": "1-4",
-      "inning": "7th",
-      "hot_hitters": [
-        "Esteury Ruiz",
-        "Agust\u00edn Ram\u00edrez",
-        "Bryce Harper"
-      ],
-      "top_pitchers": []
-    },
     {
       "gamePk": 823343,
       "game": "Detroit Tigers @ Pittsburgh Pirates",
-      "score": "5-1",
-      "inning": "6th",
+      "score": "8-5",
+      "inning": "9th",
       "hot_hitters": [
         "Kevin McGonigle",
         "Zach McKinstry",
         "Hao-Yu Lee",
         "Max Clark",
-        "Brandon Lowe"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824725,
-      "game": "Arizona Diamondbacks @ Boston Red Sox",
-      "score": "0-7",
-      "inning": "6th",
-      "hot_hitters": [
-        "Nick Sogard",
-        "Willson Contreras",
-        "Caleb Durbin"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823589,
-      "game": "San Diego Padres @ New York Mets",
-      "score": "1-2",
-      "inning": "7th",
-      "hot_hitters": [
-        "Jake Cronenworth"
+        "Brandon Lowe",
+        "Nick Yorke"
       ],
       "top_pitchers": []
     },
     {
       "gamePk": 824077,
       "game": "Athletics @ Kansas City Royals",
-      "score": "1-6",
-      "inning": "3rd",
+      "score": "4-9",
+      "inning": "9th",
       "hot_hitters": [
         "Jeff McNeil",
+        "Tommy White",
+        "Brian Serven",
         "Bobby Witt Jr.",
+        "Jac Caglianone",
         "Maikel Garcia"
       ],
       "top_pitchers": []
@@ -96,28 +34,40 @@
     {
       "gamePk": 823668,
       "game": "Atlanta Braves @ Minnesota Twins",
-      "score": "0-4",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "2-4",
+      "inning": "6th",
+      "hot_hitters": [
+        "Drake Baldwin",
+        "Luke Keaschall",
+        "Josh Bell",
+        "Kody Clemens"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 824641,
       "game": "Chicago White Sox @ Chicago Cubs",
-      "score": "0-2",
-      "inning": "4th",
+      "score": "3-4",
+      "inning": "7th",
       "hot_hitters": [
+        "Randal Grichuk",
         "Pete Crow-Armstrong",
-        "Seiya Suzuki"
+        "Seiya Suzuki",
+        "Alex Bregman",
+        "Nico Hoerner"
       ],
       "top_pitchers": []
     },
     {
       "gamePk": 824320,
       "game": "Los Angeles Dodgers @ Colorado Rockies",
-      "score": "1-0",
-      "inning": "2nd",
-      "hot_hitters": [],
+      "score": "7-1",
+      "inning": "6th",
+      "hot_hitters": [
+        "Shohei Ohtani",
+        "Andy Pages",
+        "Max Muncy"
+      ],
       "top_pitchers": []
     }
   ],
@@ -145,6 +95,11 @@
     {
       "stage": "generated_news_item",
       "title": "St. Louis Cardinals Finishes Off Cincinnati Reds",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cincinnati Reds Finishes Off St. Louis Cardinals",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
