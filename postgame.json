@@ -1,168 +1,25 @@
 {
-  "updated_at": "2026-08-17T23:12:51.203252-04:00",
-  "games": [
-    {
-      "gamePk": 824514,
-      "game": "St. Louis Cardinals @ Cincinnati Reds",
-      "winner": "St. Louis Cardinals",
-      "loser": "Cincinnati Reds",
-      "final_score": "2-1",
-      "hitters": [
-        "Jordan Walker",
-        "Alec Burleson",
-        "Dane Myers"
-      ],
-      "pitchers": [
-        "Quinn Mathews"
-      ]
-    },
-    {
-      "gamePk": 824478,
-      "game": "St. Louis Cardinals @ Cincinnati Reds",
-      "winner": "Cincinnati Reds",
-      "loser": "St. Louis Cardinals",
-      "final_score": "5-6",
-      "hitters": [
-        "JJ Wetherholt",
-        "Iv\u00e1n Herrera",
-        "Jordan Walker",
-        "Elly De La Cruz",
-        "JJ Bleday",
-        "Eugenio Su\u00e1rez",
-        "Dane Myers"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 822939,
-      "game": "Baltimore Orioles @ Tampa Bay Rays",
-      "winner": "Tampa Bay Rays",
-      "loser": "Baltimore Orioles",
-      "final_score": "6-7",
-      "hitters": [
-        "Tyler O'Neill",
-        "Pete Alonso",
-        "Coby Mayo",
-        "Gunnar Henderson",
-        "Christian Encarnacion-Strand",
-        "Christian Franklin",
-        "Yandy D\u00edaz",
-        "Jonathan Aranda",
-        "Ryan Vilade",
-        "Jorge Mateo"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823427,
-      "game": "Miami Marlins @ Philadelphia Phillies",
-      "winner": "Philadelphia Phillies",
-      "loser": "Miami Marlins",
-      "final_score": "5-6",
-      "hitters": [
-        "Esteury Ruiz",
-        "Xavier Edwards",
-        "Agust\u00edn Ram\u00edrez",
-        "Otto Lopez",
-        "Javier Sanoja",
-        "Brian Navarreto",
-        "Bryce Harper"
-      ],
-      "pitchers": [
-        "Cristopher S\u00e1nchez"
-      ]
-    },
-    {
-      "gamePk": 823343,
-      "game": "Detroit Tigers @ Pittsburgh Pirates",
-      "winner": "Detroit Tigers",
-      "loser": "Pittsburgh Pirates",
-      "final_score": "8-5",
-      "hitters": [
-        "Kevin McGonigle",
-        "Zach McKinstry",
-        "Hao-Yu Lee",
-        "Max Clark",
-        "Brandon Lowe",
-        "Nick Yorke"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824725,
-      "game": "Arizona Diamondbacks @ Boston Red Sox",
-      "winner": "Boston Red Sox",
-      "loser": "Arizona Diamondbacks",
-      "final_score": "1-11",
-      "hitters": [
-        "Tim Tawa",
-        "Nick Sogard",
-        "Ceddanne Rafaela",
-        "Wilyer Abreu",
-        "Willson Contreras",
-        "Adley Rutschman",
-        "Caleb Durbin",
-        "Mickey Gasper"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823589,
-      "game": "San Diego Padres @ New York Mets",
-      "winner": "New York Mets",
-      "loser": "San Diego Padres",
-      "final_score": "1-2",
-      "hitters": [
-        "Jake Cronenworth"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824077,
-      "game": "Athletics @ Kansas City Royals",
-      "winner": "Kansas City Royals",
-      "loser": "Athletics",
-      "final_score": "5-9",
-      "hitters": [
-        "Jeff McNeil",
-        "Tommy White",
-        "Brian Serven",
-        "Bobby Witt Jr.",
-        "Jac Caglianone",
-        "Maikel Garcia"
-      ],
-      "pitchers": []
-    }
-  ],
+  "updated_at": "2026-08-18T00:01:01.839796-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 10-2 Win",
+      "title": "St. Louis Cardinals Takes 2-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Takes 3-8 Win",
+      "title": "Cincinnati Reds Takes 5-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Takes 3-5 Win",
+      "title": "Tampa Bay Rays Takes 6-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Takes 4-3 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "St. Louis Cardinals Finishes Off Cincinnati Reds",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Cincinnati Reds Finishes Off St. Louis Cardinals",
+      "title": "Philadelphia Phillies Takes 5-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
