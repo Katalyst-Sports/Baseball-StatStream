@@ -1,66 +1,25 @@
 {
-  "updated_at": "2026-08-18T23:33:10.250541-04:00",
-  "games": [
-    {
-      "gamePk": 824639,
-      "game": "Chicago White Sox @ Chicago Cubs",
-      "score": "3-3",
-      "inning": "8th",
-      "hot_hitters": [
-        "Munetaka Murakami",
-        "Colson Montgomery",
-        "Tristan Peters",
-        "Pete Crow-Armstrong",
-        "Michael Busch"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824319,
-      "game": "Los Angeles Dodgers @ Colorado Rockies",
-      "score": "7-5",
-      "inning": "9th",
-      "hot_hitters": [
-        "Shohei Ohtani",
-        "Freddie Freeman",
-        "Tommy Edman",
-        "Teoscar Hern\u00e1ndez",
-        "Jake McCarthy",
-        "Willi Castro",
-        "TJ Rumfield"
-      ],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-08-19T00:19:28.138587-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "St. Louis Cardinals Takes 2-1 Win",
+      "title": "New York Yankees Takes 3-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Cincinnati Reds Takes 5-6 Win",
+      "title": "Pittsburgh Pirates Takes 1-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 6-7 Win",
+      "title": "Cleveland Guardians Takes 1-8 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Philadelphia Phillies Takes 5-6 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "New York Yankees Finishes Off Baltimore Orioles",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Finishes Off Detroit Tigers",
+      "title": "St. Louis Cardinals Takes 3-0 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
