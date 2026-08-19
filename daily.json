@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T12:22:56.786870-04:00",
+  "updated_at": "2026-08-19T12:55:33.746207-04:00",
   "games": [
     {
       "gamePk": 823342,
@@ -7,13 +7,13 @@
       "home_team": "Pittsburgh Pirates",
       "venue": "PNC Park",
       "start": "2026-08-19T16:35:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 695549,
         "name": "Jackson Jobe",
         "hand": "R",
-        "era": "6.23",
-        "whip": "1.38",
+        "era": "6.00",
+        "whip": "1.44",
         "last3": {
           "starts": [
             {
@@ -35,16 +35,26 @@
               "bb": 1,
               "pitches": 74,
               "strikes": 45
+            },
+            {
+              "date": "2026-08-19",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "0.1",
+              "er": 0,
+              "k": 0,
+              "bb": 1,
+              "pitches": 6,
+              "strikes": 2
             }
           ],
-          "avg_ip": "4.1",
-          "avg_k": "4.0",
+          "avg_ip": "3.0",
+          "avg_k": "2.7",
           "avg_bb": "1.0",
-          "avg_pitches": "72.5",
-          "avg_strikes": "45.5",
-          "era": "6.23",
-          "whip": "1.38",
-          "strike_pct": "62.8",
+          "avg_pitches": "50.3",
+          "avg_strikes": "31.0",
+          "era": "6.00",
+          "whip": "1.44",
+          "strike_pct": "61.6",
           "quality_starts": 0
         }
       },
@@ -52,8 +62,8 @@
         "id": 694973,
         "name": "Paul Skenes",
         "hand": "R",
-        "era": "3.88",
-        "whip": "1.12",
+        "era": "3.85",
+        "whip": "1.13",
         "last3": {
           "starts": [
             {
@@ -102,21 +112,21 @@
         {
           "name": "Brett Callahan",
           "stats": {
-            "avg": ".444",
-            "obp": ".444",
-            "slg": "1.000",
-            "ops": "1.444",
+            "avg": ".400",
+            "obp": ".400",
+            "slg": ".900",
+            "ops": "1.300",
             "homeRuns": 1,
             "rbi": 5
           },
           "last10ab": {
-            "avg": "0.444",
+            "avg": "0.400",
             "hits": 4,
-            "atBats": 9,
+            "atBats": 10,
             "homeRuns": 1,
             "rbi": 5,
             "walks": 0,
-            "games": 3
+            "games": 4
           }
         },
         {
@@ -163,9 +173,9 @@
           "name": "Dillon Dingler",
           "stats": {
             "avg": ".257",
-            "obp": ".322",
-            "slg": ".494",
-            "ops": ".816",
+            "obp": ".321",
+            "slg": ".493",
+            "ops": ".814",
             "homeRuns": 26,
             "rbi": 82
           },
@@ -183,9 +193,9 @@
           "name": "Kevin McGonigle",
           "stats": {
             "avg": ".281",
-            "obp": ".385",
-            "slg": ".422",
-            "ops": ".807",
+            "obp": ".384",
+            "slg": ".421",
+            "ops": ".805",
             "homeRuns": 13,
             "rbi": 50
           },
@@ -203,9 +213,9 @@
           "name": "Gleyber Torres",
           "stats": {
             "avg": ".270",
-            "obp": ".380",
+            "obp": ".382",
             "slg": ".402",
-            "ops": ".782",
+            "ops": ".784",
             "homeRuns": 8,
             "rbi": 33
           },
@@ -243,9 +253,9 @@
           "name": "Colt Keith",
           "stats": {
             "avg": ".270",
-            "obp": ".323",
+            "obp": ".325",
             "slg": ".421",
-            "ops": ".744",
+            "ops": ".746",
             "homeRuns": 9,
             "rbi": 32
           },
@@ -365,9 +375,9 @@
           "name": "Brandon Lowe",
           "stats": {
             "avg": ".252",
-            "obp": ".316",
+            "obp": ".317",
             "slg": ".475",
-            "ops": ".791",
+            "ops": ".792",
             "homeRuns": 26,
             "rbi": 79
           },
@@ -385,9 +395,9 @@
           "name": "Spencer Horwitz",
           "stats": {
             "avg": ".260",
-            "obp": ".367",
-            "slg": ".413",
-            "ops": ".780",
+            "obp": ".366",
+            "slg": ".412",
+            "ops": ".778",
             "homeRuns": 10,
             "rbi": 38
           },
@@ -469,7 +479,7 @@
       "home_team": "New York Mets",
       "venue": "Citi Field",
       "start": "2026-08-19T17:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 650633,
         "name": "Michael King",
