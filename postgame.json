@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T15:41:43.167582-04:00",
+  "updated_at": "2026-08-19T16:01:22.286362-04:00",
   "games": [
     {
       "gamePk": 823342,
@@ -14,6 +14,20 @@
         "Rafael Flores Jr."
       ],
       "pitchers": []
+    },
+    {
+      "gamePk": 823587,
+      "game": "San Diego Padres @ New York Mets",
+      "winner": "New York Mets",
+      "loser": "San Diego Padres",
+      "final_score": "2-4",
+      "hitters": [
+        "Carson Benge",
+        "Jared Young"
+      ],
+      "pitchers": [
+        "Robert Stock"
+      ]
     }
   ],
   "errors": [
@@ -40,6 +54,11 @@
     {
       "stage": "generated_news_item",
       "title": "Pittsburgh Pirates Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "New York Mets Finishes Off San Diego Padres",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
