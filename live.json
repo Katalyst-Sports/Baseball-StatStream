@@ -1,25 +1,14 @@
 {
-  "updated_at": "2026-08-19T16:01:22.286362-04:00",
+  "updated_at": "2026-08-19T16:39:29.302912-04:00",
   "games": [
-    {
-      "gamePk": 823664,
-      "game": "Atlanta Braves @ Minnesota Twins",
-      "score": "4-5",
-      "inning": "7th",
-      "hot_hitters": [
-        "Luke Keaschall",
-        "Kody Clemens",
-        "Kaelen Culpepper"
-      ],
-      "top_pitchers": []
-    },
     {
       "gamePk": 824640,
       "game": "Chicago White Sox @ Chicago Cubs",
-      "score": "1-0",
-      "inning": "7th",
+      "score": "3-0",
+      "inning": "9th",
       "hot_hitters": [
         "Miguel Vargas",
+        "Braden Montgomery",
         "Tyrone Taylor"
       ],
       "top_pitchers": [
@@ -29,9 +18,11 @@
     {
       "gamePk": 824722,
       "game": "Arizona Diamondbacks @ Boston Red Sox",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "0-1",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Nick Sogard"
+      ],
       "top_pitchers": []
     }
   ],
@@ -68,7 +59,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Houston Astros Injury Watch",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
