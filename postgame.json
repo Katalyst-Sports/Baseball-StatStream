@@ -1,6 +1,102 @@
 {
-  "updated_at": "2026-08-18T20:00:03.490403-04:00",
-  "games": [],
+  "updated_at": "2026-08-18T21:48:00.969583-04:00",
+  "games": [
+    {
+      "gamePk": 824803,
+      "game": "New York Yankees @ Baltimore Orioles",
+      "winner": "New York Yankees",
+      "loser": "Baltimore Orioles",
+      "final_score": "3-1",
+      "hitters": [
+        "Trent Grisham",
+        "George Lombard Jr.",
+        "Coby Mayo",
+        "Leody Taveras"
+      ],
+      "pitchers": [
+        "Shane Baz"
+      ]
+    },
+    {
+      "gamePk": 823341,
+      "game": "Detroit Tigers @ Pittsburgh Pirates",
+      "winner": "Pittsburgh Pirates",
+      "loser": "Detroit Tigers",
+      "final_score": "1-4",
+      "hitters": [
+        "Brett Callahan",
+        "Oneil Cruz"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824398,
+      "game": "San Francisco Giants @ Cleveland Guardians",
+      "winner": "Cleveland Guardians",
+      "loser": "San Francisco Giants",
+      "final_score": "1-8",
+      "hitters": [
+        "Jonah Cox",
+        "Bryce Eldridge",
+        "Jos\u00e9 Ram\u00edrez",
+        "Jo Adell",
+        "Angel Genao"
+      ],
+      "pitchers": [
+        "Foster Griffin"
+      ]
+    },
+    {
+      "gamePk": 824475,
+      "game": "St. Louis Cardinals @ Cincinnati Reds",
+      "winner": "St. Louis Cardinals",
+      "loser": "Cincinnati Reds",
+      "final_score": "3-0",
+      "hitters": [
+        "Masyn Winn"
+      ],
+      "pitchers": [
+        "Kyle Leahy",
+        "Andrew Abbott"
+      ]
+    },
+    {
+      "gamePk": 822938,
+      "game": "Toronto Blue Jays @ Tampa Bay Rays",
+      "winner": "Toronto Blue Jays",
+      "loser": "Tampa Bay Rays",
+      "final_score": "10-5",
+      "hitters": [
+        "Brett Bateman",
+        "Alejandro Kirk",
+        "George Springer",
+        "Kazuma Okamoto",
+        "Ernie Clement",
+        "Josh Smith",
+        "Chandler Simpson",
+        "Junior Caminero",
+        "Yandy D\u00edaz",
+        "Ryan Vilade"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823423,
+      "game": "Miami Marlins @ Philadelphia Phillies",
+      "winner": "Philadelphia Phillies",
+      "loser": "Miami Marlins",
+      "final_score": "4-6",
+      "hitters": [
+        "Griffin Conine",
+        "Luis Arraez",
+        "Alec Bohm",
+        "Justin Crawford"
+      ],
+      "pitchers": [
+        "Zack Wheeler"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +120,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Colorado Rockies Injury Watch",
+      "title": "New York Yankees Finishes Off Baltimore Orioles",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Pittsburgh Pirates Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Dodgers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
