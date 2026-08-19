@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T02:02:45.870977-04:00",
+  "updated_at": "2026-08-19T03:01:18.548989-04:00",
   "games": [
     {
       "gamePk": 823342,
@@ -1394,7 +1394,56 @@
       "venue": "Wrigley Field",
       "start": "2026-08-19T18:20:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 656794,
+        "name": "Sean Newcomb",
+        "hand": "L",
+        "era": "2.51",
+        "whip": "1.10",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Milwaukee Brewers",
+              "ip": "2.1",
+              "er": 2,
+              "k": 1,
+              "bb": 1,
+              "pitches": 33,
+              "strikes": 26
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Miami Marlins",
+              "ip": "2.2",
+              "er": 1,
+              "k": 5,
+              "bb": 1,
+              "pitches": 51,
+              "strikes": 31
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Toronto Blue Jays",
+              "ip": "0.2",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 8,
+              "strikes": 6
+            }
+          ],
+          "avg_ip": "2.0",
+          "avg_k": "2.0",
+          "avg_bb": "0.7",
+          "avg_pitches": "30.7",
+          "avg_strikes": "21.0",
+          "era": "4.76",
+          "whip": "1.59",
+          "strike_pct": "68.5",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 605280,
         "name": "Clay Holmes",
