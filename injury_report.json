@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T14:39:20.516286-04:00",
+  "updated_at": "2026-08-19T15:10:57.087071-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -1356,7 +1356,7 @@
     {
       "team_id": 114,
       "team_name": "Cleveland Guardians",
-      "injured_count": 10,
+      "injured_count": 11,
       "players": [
         {
           "player_id": 689958,
@@ -1421,6 +1421,14 @@
           "date": "2026-06-14",
           "note": "Cleveland Guardians placed 3B Jos\u00e9 Ram\u00edrez on the 10-day injured list. Left hamate fracture. | Status Change",
           "description": "Cleveland Guardians placed 3B Jos\u00e9 Ram\u00edrez on the 10-day injured list. Left hamate fracture."
+        },
+        {
+          "player_id": 656555,
+          "name": "Rhys Hoskins",
+          "il_type": "Injured List",
+          "date": "2026-08-19",
+          "note": "Cleveland Guardians placed 1B Rhys Hoskins on the 10-day injured list. Lower back inflammation. | Status Change",
+          "description": "Cleveland Guardians placed 1B Rhys Hoskins on the 10-day injured list. Lower back inflammation."
         },
         {
           "player_id": 542888,
@@ -4258,7 +4266,7 @@
     {
       "team_id": 139,
       "team_name": "Tampa Bay Rays",
-      "injured_count": 20,
+      "injured_count": 21,
       "players": [
         {
           "player_id": 810938,
@@ -4419,6 +4427,14 @@
           "date": "2026-03-24",
           "note": "Tampa Bay Rays placed SS Taylor Walls on the 10-day injured list retroactive to March 22, 2026. Strained right oblique. | Status Change",
           "description": "Tampa Bay Rays placed SS Taylor Walls on the 10-day injured list retroactive to March 22, 2026. Strained right oblique."
+        },
+        {
+          "player_id": 683748,
+          "name": "Victor Mesa Jr.",
+          "il_type": "Injured List",
+          "date": "2026-08-19",
+          "note": "Tampa Bay Rays placed RF Victor Mesa Jr. on the 10-day injured list. Left hamstring strain. | Status Change",
+          "description": "Tampa Bay Rays placed RF Victor Mesa Jr. on the 10-day injured list. Left hamstring strain."
         }
       ]
     },
@@ -4947,12 +4963,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Mets Injury Watch",
+      "title": "Cleveland Guardians Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Makes Roster Move",
+      "title": "Pittsburgh Pirates Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

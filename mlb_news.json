@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T14:39:20.516286-04:00",
+  "updated_at": "2026-08-19T15:10:57.087071-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,17 +24,29 @@
       "published": "2026-08-18"
     },
     {
-      "title": "New York Mets Injury Watch",
-      "summary": "New York Mets logged a roster-health update involving Jorge Polanco.",
+      "title": "Cleveland Guardians Injury Watch",
+      "summary": "Cleveland Guardians logged a roster-health update involving Rhys Hoskins.",
       "published": "2026-08-19"
     },
     {
-      "title": "Milwaukee Brewers Makes Roster Move",
-      "summary": "Milwaukee Brewers made a transaction involving Jonathan Ornelas.",
-      "published": "2026-08-15"
+      "title": "Pittsburgh Pirates Makes Roster Move",
+      "summary": "Pittsburgh Pirates made a transaction involving Christian Bethancourt.",
+      "published": "2026-08-19"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-08-19",
+      "team": "Cleveland Guardians",
+      "player": "Rhys Hoskins",
+      "update": "Cleveland Guardians placed 1B Rhys Hoskins on the 10-day injured list. Lower back inflammation. | Status Change"
+    },
+    {
+      "date": "2026-08-19",
+      "team": "Tampa Bay Rays",
+      "player": "Victor Mesa Jr.",
+      "update": "Tampa Bay Rays placed RF Victor Mesa Jr. on the 10-day injured list. Left hamstring strain. | Status Change"
+    },
     {
       "date": "2026-08-19",
       "team": "New York Mets",
@@ -94,21 +106,21 @@
       "team": "Los Angeles Dodgers",
       "player": "Justin Wrobleski",
       "update": "Los Angeles Dodgers placed LHP Justin Wrobleski on the 15-day injured list. Left forearm inflammation. | Status Change"
-    },
-    {
-      "date": "2026-08-16",
-      "team": "Athletics",
-      "player": "Tyler Soderstrom",
-      "update": "Athletics placed LF Tyler Soderstrom on the 10-day injured list retroactive to August 15, 2026. Left hip impingement. | Status Change"
-    },
-    {
-      "date": "2026-08-16",
-      "team": "Boston Red Sox",
-      "player": "Masataka Yoshida",
-      "update": "Boston Red Sox placed DH Masataka Yoshida on the 10-day injured list. Left hamstring strain. | Status Change"
     }
   ],
   "trade_updates": [
+    {
+      "date": "2026-08-19",
+      "team": "Pittsburgh Pirates",
+      "player": "Christian Bethancourt",
+      "update": "New York Yankees traded C Christian Bethancourt to Pittsburgh Pirates for cash. | Trade"
+    },
+    {
+      "date": "2026-08-19",
+      "team": "New York Yankees",
+      "player": "Unknown Player",
+      "update": "New York Yankees traded C Christian Bethancourt to Pittsburgh Pirates for cash. | Trade"
+    },
     {
       "date": "2026-08-15",
       "team": "Milwaukee Brewers",
