@@ -1,6 +1,52 @@
 {
-  "updated_at": "2026-08-20T15:34:03.873745-04:00",
-  "games": [],
+  "updated_at": "2026-08-20T15:59:39.792848-04:00",
+  "games": [
+    {
+      "gamePk": 824474,
+      "game": "St. Louis Cardinals @ Cincinnati Reds",
+      "winner": "St. Louis Cardinals",
+      "loser": "Cincinnati Reds",
+      "final_score": "10-9",
+      "hitters": [
+        "Jordan Walker",
+        "Jos\u00e9 Ferm\u00edn",
+        "Matt McLain"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824395,
+      "game": "San Francisco Giants @ Cleveland Guardians",
+      "winner": "Cleveland Guardians",
+      "loser": "San Francisco Giants",
+      "final_score": "2-5",
+      "hitters": [
+        "Willy Adames",
+        "Patrick Bailey"
+      ],
+      "pitchers": [
+        "Gavin Williams"
+      ]
+    },
+    {
+      "gamePk": 822934,
+      "game": "Toronto Blue Jays @ Tampa Bay Rays",
+      "winner": "Toronto Blue Jays",
+      "loser": "Tampa Bay Rays",
+      "final_score": "5-1",
+      "hitters": [
+        "Daz Cameron",
+        "George Springer",
+        "Kazuma Okamoto",
+        "Nathan Lukes",
+        "Yandy D\u00edaz"
+      ],
+      "pitchers": [
+        "Shane Bieber",
+        "Ian Seymour"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +66,16 @@
     {
       "stage": "generated_news_item",
       "title": "Chicago White Sox Takes 3-0 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "St. Louis Cardinals Finishes Off Cincinnati Reds",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cleveland Guardians Finishes Off San Francisco Giants",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

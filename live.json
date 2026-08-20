@@ -1,70 +1,34 @@
 {
-  "updated_at": "2026-08-20T15:34:03.873745-04:00",
+  "updated_at": "2026-08-20T15:59:39.792848-04:00",
   "games": [
-    {
-      "gamePk": 824474,
-      "game": "St. Louis Cardinals @ Cincinnati Reds",
-      "score": "10-6",
-      "inning": "9th",
-      "hot_hitters": [
-        "Jordan Walker",
-        "Jos\u00e9 Ferm\u00edn",
-        "Matt McLain"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824395,
-      "game": "San Francisco Giants @ Cleveland Guardians",
-      "score": "2-4",
-      "inning": "8th",
-      "hot_hitters": [
-        "Willy Adames",
-        "Patrick Bailey"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822934,
-      "game": "Toronto Blue Jays @ Tampa Bay Rays",
-      "score": "5-1",
-      "inning": "8th",
-      "hot_hitters": [
-        "Daz Cameron",
-        "Kazuma Okamoto",
-        "Nathan Lukes",
-        "Yandy D\u00edaz"
-      ],
-      "top_pitchers": []
-    },
     {
       "gamePk": 824074,
       "game": "Athletics @ Kansas City Royals",
-      "score": "0-3",
-      "inning": "4th",
+      "score": "1-5",
+      "inning": "5th",
       "hot_hitters": [
         "Carlos Cortes",
-        "Bobby Witt Jr."
+        "Bobby Witt Jr.",
+        "Salvador Perez"
       ],
       "top_pitchers": []
     },
     {
       "gamePk": 824589,
       "game": "Atlanta Braves @ Chicago White Sox",
-      "score": "1-0",
-      "inning": "6th",
+      "score": "2-0",
+      "inning": "7th",
       "hot_hitters": [
-        "Mauricio Dub\u00f3n"
+        "Mauricio Dub\u00f3n",
+        "Austin Riley"
       ],
-      "top_pitchers": [
-        "Anthony Kay"
-      ]
+      "top_pitchers": []
     },
     {
       "gamePk": 823747,
       "game": "Seattle Mariners @ Milwaukee Brewers",
-      "score": "3-6",
-      "inning": "4th",
+      "score": "4-6",
+      "inning": "5th",
       "hot_hitters": [
         "Garrett Mitchell"
       ],
@@ -90,6 +54,16 @@
     {
       "stage": "generated_news_item",
       "title": "Chicago White Sox Takes 3-0 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "St. Louis Cardinals Finishes Off Cincinnati Reds",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cleveland Guardians Finishes Off San Francisco Giants",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
