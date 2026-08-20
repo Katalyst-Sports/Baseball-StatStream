@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T19:04:05.211368-04:00",
+  "updated_at": "2026-08-20T19:36:42.744731-04:00",
   "games": [
     {
       "gamePk": 824474,
@@ -2844,7 +2844,7 @@
         "id": 543037,
         "name": "Gerrit Cole",
         "hand": "R",
-        "era": "3.22",
+        "era": "3.15",
         "whip": "1.08",
         "last3": {
           "starts": [
@@ -2894,8 +2894,8 @@
         "id": 680694,
         "name": "Kyle Bradish",
         "hand": "R",
-        "era": "3.65",
-        "whip": "1.36",
+        "era": "3.60",
+        "whip": "1.35",
         "last3": {
           "starts": [
             {
@@ -2944,10 +2944,10 @@
         {
           "name": "Ben Rice",
           "stats": {
-            "avg": ".251",
-            "obp": ".344",
-            "slg": ".534",
-            "ops": ".878",
+            "avg": ".250",
+            "obp": ".343",
+            "slg": ".533",
+            "ops": ".876",
             "homeRuns": 34,
             "rbi": 79
           },
@@ -2964,10 +2964,10 @@
         {
           "name": "George Lombard Jr.",
           "stats": {
-            "avg": ".318",
-            "obp": ".380",
-            "slg": ".477",
-            "ops": ".857",
+            "avg": ".311",
+            "obp": ".373",
+            "slg": ".467",
+            "ops": ".840",
             "homeRuns": 2,
             "rbi": 5
           },
@@ -2984,10 +2984,10 @@
         {
           "name": "Luis Garc\u00eda Jr.",
           "stats": {
-            "avg": ".275",
+            "avg": ".274",
             "obp": ".305",
-            "slg": ".532",
-            "ops": ".837",
+            "slg": ".531",
+            "ops": ".836",
             "homeRuns": 24,
             "rbi": 79
           },
@@ -3025,9 +3025,9 @@
           "name": "Trent Grisham",
           "stats": {
             "avg": ".224",
-            "obp": ".314",
+            "obp": ".316",
             "slg": ".424",
-            "ops": ".738",
+            "ops": ".740",
             "homeRuns": 17,
             "rbi": 54
           },
@@ -3085,9 +3085,9 @@
           "name": "Heliot Ramos",
           "stats": {
             "avg": ".242",
-            "obp": ".295",
-            "slg": ".391",
-            "ops": ".686",
+            "obp": ".294",
+            "slg": ".390",
+            "ops": ".684",
             "homeRuns": 9,
             "rbi": 34
           },
@@ -3104,10 +3104,10 @@
         {
           "name": "Jazz Chisholm Jr.",
           "stats": {
-            "avg": ".216",
+            "avg": ".215",
             "obp": ".296",
-            "slg": ".385",
-            "ops": ".681",
+            "slg": ".384",
+            "ops": ".680",
             "homeRuns": 17,
             "rbi": 48
           },
@@ -3126,10 +3126,10 @@
         {
           "name": "Pete Alonso",
           "stats": {
-            "avg": ".267",
-            "obp": ".359",
-            "slg": ".498",
-            "ops": ".857",
+            "avg": ".268",
+            "obp": ".361",
+            "slg": ".499",
+            "ops": ".860",
             "homeRuns": 29,
             "rbi": 82
           },
@@ -3146,10 +3146,10 @@
         {
           "name": "Christian Encarnacion-Strand",
           "stats": {
-            "avg": ".259",
-            "obp": ".304",
-            "slg": ".518",
-            "ops": ".822",
+            "avg": ".256",
+            "obp": ".301",
+            "slg": ".512",
+            "ops": ".813",
             "homeRuns": 6,
             "rbi": 22
           },
@@ -3166,10 +3166,10 @@
         {
           "name": "Samuel Basallo",
           "stats": {
-            "avg": ".242",
-            "obp": ".308",
-            "slg": ".449",
-            "ops": ".757",
+            "avg": ".241",
+            "obp": ".307",
+            "slg": ".448",
+            "ops": ".755",
             "homeRuns": 16,
             "rbi": 46
           },
@@ -3207,9 +3207,9 @@
           "name": "Gunnar Henderson",
           "stats": {
             "avg": ".220",
-            "obp": ".303",
+            "obp": ".304",
             "slg": ".400",
-            "ops": ".703",
+            "ops": ".704",
             "homeRuns": 20,
             "rbi": 51
           },
@@ -3221,26 +3221,6 @@
             "rbi": 0,
             "walks": 1,
             "games": 3
-          }
-        },
-        {
-          "name": "Jackson Holliday",
-          "stats": {
-            "avg": ".235",
-            "obp": ".333",
-            "slg": ".367",
-            "ops": ".700",
-            "homeRuns": 6,
-            "rbi": 25
-          },
-          "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
-            "homeRuns": 1,
-            "rbi": 2,
-            "walks": 2,
-            "games": 5
           }
         },
         {
@@ -3264,12 +3244,32 @@
           }
         },
         {
+          "name": "Jackson Holliday",
+          "stats": {
+            "avg": ".234",
+            "obp": ".332",
+            "slg": ".365",
+            "ops": ".697",
+            "homeRuns": 6,
+            "rbi": 25
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 2,
+            "games": 5
+          }
+        },
+        {
           "name": "Leody Taveras",
           "stats": {
-            "avg": ".232",
-            "obp": ".306",
-            "slg": ".367",
-            "ops": ".673",
+            "avg": ".231",
+            "obp": ".305",
+            "slg": ".365",
+            "ops": ".670",
             "homeRuns": 7,
             "rbi": 44
           },
@@ -3286,10 +3286,10 @@
         {
           "name": "Dylan Beavers",
           "stats": {
-            "avg": ".238",
-            "obp": ".318",
-            "slg": ".352",
-            "ops": ".670",
+            "avg": ".237",
+            "obp": ".316",
+            "slg": ".351",
+            "ops": ".667",
             "homeRuns": 4,
             "rbi": 25
           },
@@ -4288,7 +4288,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Makes Roster Move",
+      "title": "New York Yankees Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
