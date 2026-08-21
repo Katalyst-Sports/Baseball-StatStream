@@ -1,174 +1,29 @@
 {
-  "updated_at": "2026-08-20T23:55:24.231437-04:00",
-  "games": [
-    {
-      "gamePk": 824474,
-      "game": "St. Louis Cardinals @ Cincinnati Reds",
-      "winner": "St. Louis Cardinals",
-      "loser": "Cincinnati Reds",
-      "final_score": "10-9",
-      "hitters": [
-        "Jordan Walker",
-        "Jos\u00e9 Ferm\u00edn",
-        "Matt McLain"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824395,
-      "game": "San Francisco Giants @ Cleveland Guardians",
-      "winner": "Cleveland Guardians",
-      "loser": "San Francisco Giants",
-      "final_score": "2-5",
-      "hitters": [
-        "Willy Adames",
-        "Patrick Bailey"
-      ],
-      "pitchers": [
-        "Gavin Williams"
-      ]
-    },
-    {
-      "gamePk": 822934,
-      "game": "Toronto Blue Jays @ Tampa Bay Rays",
-      "winner": "Toronto Blue Jays",
-      "loser": "Tampa Bay Rays",
-      "final_score": "5-1",
-      "hitters": [
-        "Daz Cameron",
-        "George Springer",
-        "Kazuma Okamoto",
-        "Nathan Lukes",
-        "Yandy D\u00edaz"
-      ],
-      "pitchers": [
-        "Shane Bieber",
-        "Ian Seymour"
-      ]
-    },
-    {
-      "gamePk": 824074,
-      "game": "Athletics @ Kansas City Royals",
-      "winner": "Kansas City Royals",
-      "loser": "Athletics",
-      "final_score": "2-6",
-      "hitters": [
-        "Lawrence Butler",
-        "Carlos Cortes",
-        "Bobby Witt Jr.",
-        "Salvador Perez",
-        "Michael Massey"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824589,
-      "game": "Atlanta Braves @ Chicago White Sox",
-      "winner": "Atlanta Braves",
-      "loser": "Chicago White Sox",
-      "final_score": "2-0",
-      "hitters": [
-        "Mauricio Dub\u00f3n",
-        "Austin Riley"
-      ],
-      "pitchers": [
-        "Anthony Kay"
-      ]
-    },
-    {
-      "gamePk": 823747,
-      "game": "Seattle Mariners @ Milwaukee Brewers",
-      "winner": "Milwaukee Brewers",
-      "loser": "Seattle Mariners",
-      "final_score": "4-7",
-      "hitters": [
-        "Brendan Donovan",
-        "Garrett Mitchell",
-        "David Hamilton"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824802,
-      "game": "New York Yankees @ Baltimore Orioles",
-      "winner": "New York Yankees",
-      "loser": "Baltimore Orioles",
-      "final_score": "6-1",
-      "hitters": [
-        "Luis Garc\u00eda Jr.",
-        "Spencer Jones",
-        "Pete Alonso",
-        "Dylan Beavers"
-      ],
-      "pitchers": [
-        "Gerrit Cole"
-      ]
-    },
-    {
-      "gamePk": 822861,
-      "game": "Washington Nationals @ Texas Rangers",
-      "winner": "Texas Rangers",
-      "loser": "Washington Nationals",
-      "final_score": "0-2",
-      "hitters": [
-        "Corey Seager",
-        "Ezequiel Duran",
-        "Justin Foscue"
-      ],
-      "pitchers": [
-        "Jacob deGrom"
-      ]
-    },
-    {
-      "gamePk": 824153,
-      "game": "Los Angeles Angels @ Houston Astros",
-      "winner": "Los Angeles Angels",
-      "loser": "Houston Astros",
-      "final_score": "18-3",
-      "hitters": [
-        "Denzer Guzman",
-        "Zach Neto",
-        "Mois\u00e9s Ballesteros",
-        "Vaughn Grissom",
-        "Josh Lowe",
-        "Adam Frazier",
-        "Isaac Paredes",
-        "Nick Allen"
-      ],
-      "pitchers": [
-        "Grayson Rodriguez"
-      ]
-    }
-  ],
+  "updated_at": "2026-08-21T00:44:15.948576-04:00",
+  "games": [],
   "errors": [
     {
+      "stage": "leaders_hitting_ops",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Takes 3-4 Win",
+      "title": "St. Louis Cardinals Takes 10-9 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Mets Takes 2-4 Win",
+      "title": "Cleveland Guardians Takes 2-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Minnesota Twins Takes 4-6 Win",
+      "title": "Toronto Blue Jays Takes 5-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Chicago White Sox Takes 3-0 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "St. Louis Cardinals Finishes Off Cincinnati Reds",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Cleveland Guardians Finishes Off San Francisco Giants",
+      "title": "Kansas City Royals Takes 2-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
