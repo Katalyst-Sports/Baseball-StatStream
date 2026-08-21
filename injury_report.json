@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T16:55:53.422656-04:00",
+  "updated_at": "2026-08-21T17:30:40.232545-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -4227,8 +4227,16 @@
     {
       "team_id": 138,
       "team_name": "St. Louis Cardinals",
-      "injured_count": 7,
+      "injured_count": 8,
       "players": [
+        {
+          "player_id": 669467,
+          "name": "Andre Pallante",
+          "il_type": "Injured List",
+          "date": "2026-08-21",
+          "note": "St. Louis Cardinals placed RHP Andre Pallante on the 15-day injured list retroactive to August 18, 2026. Right elbow inflammation. | Status Change",
+          "description": "St. Louis Cardinals placed RHP Andre Pallante on the 15-day injured list retroactive to August 18, 2026. Right elbow inflammation."
+        },
         {
           "player_id": 690928,
           "name": "Hunter Dobbins",
@@ -4995,7 +5003,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Kansas City Royals Injury Watch",
+      "title": "St. Louis Cardinals Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
