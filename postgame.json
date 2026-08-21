@@ -1,6 +1,25 @@
 {
-  "updated_at": "2026-08-21T18:29:52.433820-04:00",
-  "games": [],
+  "updated_at": "2026-08-21T18:54:38.023198-04:00",
+  "games": [
+    {
+      "gamePk": 823746,
+      "game": "Atlanta Braves @ Milwaukee Brewers",
+      "winner": "Milwaukee Brewers",
+      "loser": "Atlanta Braves",
+      "final_score": "1-2",
+      "hitters": [
+        "Michael Harris II",
+        "Mauricio Dub\u00f3n",
+        "Mike Yastrzemski",
+        "William Contreras",
+        "Luis Lara"
+      ],
+      "pitchers": [
+        "Chris Sale",
+        "Jacob Misiorowski"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +39,11 @@
     {
       "stage": "generated_news_item",
       "title": "Kansas City Royals Takes 2-6 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Finishes Off Atlanta Braves",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
