@@ -1,11 +1,27 @@
 {
-  "updated_at": "2026-08-20T19:36:42.744731-04:00",
+  "updated_at": "2026-08-20T19:58:55.596136-04:00",
   "games": [
     {
       "gamePk": 824802,
       "game": "New York Yankees @ Baltimore Orioles",
-      "score": "0-0",
+      "score": "3-0",
       "inning": "3rd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822861,
+      "game": "Washington Nationals @ Texas Rangers",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824153,
+      "game": "Los Angeles Angels @ Houston Astros",
+      "score": "0-0",
+      "inning": "1st",
       "hot_hitters": [],
       "top_pitchers": []
     }
@@ -48,7 +64,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Makes Roster Move",
+      "title": "Pittsburgh Pirates Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

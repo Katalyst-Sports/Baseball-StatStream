@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T19:36:42.744731-04:00",
+  "updated_at": "2026-08-20T19:58:55.596136-04:00",
   "games": [
     {
       "gamePk": 824474,
@@ -2894,8 +2894,8 @@
         "id": 680694,
         "name": "Kyle Bradish",
         "hand": "R",
-        "era": "3.60",
-        "whip": "1.35",
+        "era": "3.64",
+        "whip": "1.38",
         "last3": {
           "starts": [
             {
@@ -2944,12 +2944,12 @@
         {
           "name": "Ben Rice",
           "stats": {
-            "avg": ".250",
-            "obp": ".343",
-            "slg": ".533",
-            "ops": ".876",
+            "avg": ".252",
+            "obp": ".344",
+            "slg": ".534",
+            "ops": ".878",
             "homeRuns": 34,
-            "rbi": 79
+            "rbi": 80
           },
           "last10ab": {
             "avg": "0.250",
@@ -2984,10 +2984,10 @@
         {
           "name": "Luis Garc\u00eda Jr.",
           "stats": {
-            "avg": ".274",
-            "obp": ".305",
-            "slg": ".531",
-            "ops": ".836",
+            "avg": ".276",
+            "obp": ".306",
+            "slg": ".532",
+            "ops": ".838",
             "homeRuns": 24,
             "rbi": 79
           },
@@ -3025,9 +3025,9 @@
           "name": "Trent Grisham",
           "stats": {
             "avg": ".224",
-            "obp": ".316",
-            "slg": ".424",
-            "ops": ".740",
+            "obp": ".315",
+            "slg": ".423",
+            "ops": ".738",
             "homeRuns": 17,
             "rbi": 54
           },
@@ -3062,34 +3062,14 @@
           }
         },
         {
-          "name": "Jos\u00e9 Caballero",
-          "stats": {
-            "avg": ".242",
-            "obp": ".301",
-            "slg": ".388",
-            "ops": ".689",
-            "homeRuns": 12,
-            "rbi": 42
-          },
-          "last10ab": {
-            "avg": "0.250",
-            "hits": 3,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Heliot Ramos",
           "stats": {
-            "avg": ".242",
-            "obp": ".294",
-            "slg": ".390",
-            "ops": ".684",
+            "avg": ".244",
+            "obp": ".296",
+            "slg": ".395",
+            "ops": ".691",
             "homeRuns": 9,
-            "rbi": 34
+            "rbi": 35
           },
           "last10ab": {
             "avg": "0.300",
@@ -3102,23 +3082,43 @@
           }
         },
         {
-          "name": "Jazz Chisholm Jr.",
+          "name": "Jos\u00e9 Caballero",
           "stats": {
-            "avg": ".215",
-            "obp": ".296",
-            "slg": ".384",
-            "ops": ".680",
-            "homeRuns": 17,
-            "rbi": 48
+            "avg": ".241",
+            "obp": ".300",
+            "slg": ".387",
+            "ops": ".687",
+            "homeRuns": 12,
+            "rbi": 43
           },
           "last10ab": {
-            "avg": "0.182",
-            "hits": 2,
-            "atBats": 11,
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
             "homeRuns": 0,
-            "rbi": 0,
+            "rbi": 1,
             "walks": 0,
             "games": 3
+          }
+        },
+        {
+          "name": "Spencer Jones",
+          "stats": {
+            "avg": ".218",
+            "obp": ".299",
+            "slg": ".381",
+            "ops": ".680",
+            "homeRuns": 5,
+            "rbi": 18
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         }
       ],
@@ -3311,7 +3311,7 @@
       "home_team": "Texas Rangers",
       "venue": "Globe Life Field",
       "start": "2026-08-21T00:05:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 674841,
         "name": "Andrew Alvarez",
@@ -3783,7 +3783,7 @@
       "home_team": "Houston Astros",
       "venue": "Daikin Park",
       "start": "2026-08-21T00:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 680570,
         "name": "Grayson Rodriguez",
@@ -4288,7 +4288,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Makes Roster Move",
+      "title": "Pittsburgh Pirates Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
