@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T21:51:17.759943-04:00",
+  "updated_at": "2026-08-20T22:56:50.283898-04:00",
   "games": [
     {
       "gamePk": 824474,
@@ -103,6 +103,21 @@
       "pitchers": [
         "Gerrit Cole"
       ]
+    },
+    {
+      "gamePk": 822861,
+      "game": "Washington Nationals @ Texas Rangers",
+      "winner": "Texas Rangers",
+      "loser": "Washington Nationals",
+      "final_score": "0-2",
+      "hitters": [
+        "Corey Seager",
+        "Ezequiel Duran",
+        "Justin Foscue"
+      ],
+      "pitchers": [
+        "Jacob deGrom"
+      ]
     }
   ],
   "errors": [
@@ -143,7 +158,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Makes Roster Move",
+      "title": "Pittsburgh Pirates Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
