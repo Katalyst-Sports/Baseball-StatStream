@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T15:06:23.204352-04:00",
+  "updated_at": "2026-08-21T15:36:00.178966-04:00",
   "games": [
     {
       "gamePk": 823746,
@@ -480,7 +480,56 @@
       "venue": "Citizens Bank Park",
       "start": "2026-08-21T22:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 690928,
+        "name": "Hunter Dobbins",
+        "hand": "R",
+        "era": "3.42",
+        "whip": "1.30",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-30",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "4.1",
+              "er": 3,
+              "k": 4,
+              "bb": 5,
+              "pitches": 79,
+              "strikes": 41
+            },
+            {
+              "date": "2026-05-31",
+              "opponent": "Chicago Cubs",
+              "ip": "3.2",
+              "er": 1,
+              "k": 4,
+              "bb": 0,
+              "pitches": 61,
+              "strikes": 41
+            },
+            {
+              "date": "2026-06-05",
+              "opponent": "Cincinnati Reds",
+              "ip": "5.0",
+              "er": 0,
+              "k": 6,
+              "bb": 2,
+              "pitches": 78,
+              "strikes": 52
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "4.7",
+          "avg_bb": "2.3",
+          "avg_pitches": "72.7",
+          "avg_strikes": "44.7",
+          "era": "2.77",
+          "whip": "1.31",
+          "strike_pct": "61.5",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 666200,
         "name": "Jes\u00fas Luzardo",
@@ -7007,12 +7056,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Athletics Injury Watch",
+      "title": "Miami Marlins Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Makes Roster Move",
+      "title": "Tampa Bay Rays Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
