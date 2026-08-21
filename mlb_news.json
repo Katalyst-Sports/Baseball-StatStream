@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T15:55:45.424255-04:00",
+  "updated_at": "2026-08-21T16:31:57.736767-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,8 +24,8 @@
       "published": "2026-08-20"
     },
     {
-      "title": "New York Yankees Injury Watch",
-      "summary": "New York Yankees logged a roster-health update involving Ryan McMahon.",
+      "title": "Kansas City Royals Injury Watch",
+      "summary": "Kansas City Royals logged a roster-health update involving Maikel Garcia.",
       "published": "2026-08-21"
     },
     {
@@ -35,6 +35,18 @@
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-08-21",
+      "team": "Kansas City Royals",
+      "player": "Maikel Garcia",
+      "update": "Kansas City Royals placed 3B Maikel Garcia on the 10-day injured list. Left hamstring strain. | Status Change"
+    },
+    {
+      "date": "2026-08-21",
+      "team": "Toronto Blue Jays",
+      "player": "Josh Smith",
+      "update": "Toronto Blue Jays placed 2B Josh Smith on the 10-day injured list retroactive to August 20, 2026. Left hamstring inflammation. | Status Change"
+    },
     {
       "date": "2026-08-21",
       "team": "New York Yankees",
@@ -94,18 +106,6 @@
       "team": "Chicago Cubs",
       "player": "Phil Maton",
       "update": "Chicago Cubs transferred RHP Phil Maton from the 15-day injured list to the 60-day injured list. Right knee tendinitis. | Status Change"
-    },
-    {
-      "date": "2026-08-19",
-      "team": "San Francisco Giants",
-      "player": "Harrison Bader",
-      "update": "San Francisco Giants transferred CF Harrison Bader from the 10-day injured list to the 60-day injured list. Left plantar fasciitis. | Status Change"
-    },
-    {
-      "date": "2026-08-19",
-      "team": "San Francisco Giants",
-      "player": "Daniel Susac",
-      "update": "San Francisco Giants transferred C Daniel Susac from the 10-day injured list to the 60-day injured list. Left knee patella fracture. | Status Change"
     }
   ],
   "trade_updates": [
