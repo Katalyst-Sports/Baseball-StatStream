@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T17:32:23.525988-04:00",
+  "updated_at": "2026-08-22T17:54:06.084474-04:00",
   "games": [
     {
       "gamePk": 823509,
@@ -432,26 +432,6 @@
           }
         },
         {
-          "name": "Max Schuemann",
-          "stats": {
-            "avg": ".194",
-            "obp": ".333",
-            "slg": ".361",
-            "ops": ".694",
-            "homeRuns": 2,
-            "rbi": 8
-          },
-          "last10ab": {
-            "avg": "0.273",
-            "hits": 3,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 2,
-            "games": 4
-          }
-        },
-        {
           "name": "Jazz Chisholm Jr.",
           "stats": {
             "avg": ".217",
@@ -468,6 +448,26 @@
             "homeRuns": 0,
             "rbi": 0,
             "walks": 0,
+            "games": 3
+          }
+        },
+        {
+          "name": "Heliot Ramos",
+          "stats": {
+            "avg": ".240",
+            "obp": ".292",
+            "slg": ".387",
+            "ops": ".679",
+            "homeRuns": 9,
+            "rbi": 35
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
             "games": 3
           }
         }
@@ -956,8 +956,8 @@
         "id": 663623,
         "name": "Jake Irvin",
         "hand": "R",
-        "era": "6.03",
-        "whip": "1.39",
+        "era": "5.92",
+        "whip": "1.37",
         "last3": {
           "starts": [
             {
@@ -1006,7 +1006,7 @@
         "id": 691587,
         "name": "Eury P\u00e9rez",
         "hand": "R",
-        "era": "3.13",
+        "era": "3.17",
         "whip": "1.11",
         "last3": {
           "starts": [
@@ -1054,6 +1054,26 @@
       },
       "away_hitters": [
         {
+          "name": "Andrew Pinckney",
+          "stats": {
+            "avg": ".267",
+            "obp": ".333",
+            "slg": ".600",
+            "ops": ".933",
+            "homeRuns": 1,
+            "rbi": 2
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 5
+          }
+        },
+        {
           "name": "CJ Abrams",
           "stats": {
             "avg": ".279",
@@ -1091,26 +1111,6 @@
             "rbi": 0,
             "walks": 1,
             "games": 4
-          }
-        },
-        {
-          "name": "Andrew Pinckney",
-          "stats": {
-            "avg": ".214",
-            "obp": ".294",
-            "slg": ".571",
-            "ops": ".865",
-            "homeRuns": 1,
-            "rbi": 2
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 2,
-            "walks": 1,
-            "games": 5
           }
         },
         {
@@ -1218,8 +1218,8 @@
           "stats": {
             "avg": ".243",
             "obp": ".291",
-            "slg": ".402",
-            "ops": ".693",
+            "slg": ".401",
+            "ops": ".692",
             "homeRuns": 15,
             "rbi": 66
           },
@@ -1258,10 +1258,10 @@
         {
           "name": "Esteury Ruiz",
           "stats": {
-            "avg": ".253",
-            "obp": ".372",
-            "slg": ".453",
-            "ops": ".825",
+            "avg": ".252",
+            "obp": ".370",
+            "slg": ".450",
+            "ops": ".820",
             "homeRuns": 6,
             "rbi": 11
           },
@@ -1318,10 +1318,10 @@
         {
           "name": "Xavier Edwards",
           "stats": {
-            "avg": ".285",
-            "obp": ".365",
-            "slg": ".382",
-            "ops": ".747",
+            "avg": ".284",
+            "obp": ".364",
+            "slg": ".381",
+            "ops": ".745",
             "homeRuns": 6,
             "rbi": 47
           },
@@ -1338,10 +1338,10 @@
         {
           "name": "Javier Sanoja",
           "stats": {
-            "avg": ".281",
-            "obp": ".319",
-            "slg": ".426",
-            "ops": ".745",
+            "avg": ".280",
+            "obp": ".318",
+            "slg": ".425",
+            "ops": ".743",
             "homeRuns": 6,
             "rbi": 50
           },
@@ -1423,7 +1423,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-08-22T22:05:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 687273,
         "name": "Quinn Mathews",
