@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T15:01:40.451186-04:00",
+  "updated_at": "2026-08-22T15:30:46.598806-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2454,8 +2454,16 @@
     {
       "team_id": 119,
       "team_name": "Los Angeles Dodgers",
-      "injured_count": 21,
+      "injured_count": 22,
       "players": [
+        {
+          "player_id": 681624,
+          "name": "Andy Pages",
+          "il_type": "Injured List",
+          "date": "2026-08-22",
+          "note": "Los Angeles Dodgers placed CF Andy Pages on the 10-day injured list. Left hand fracture. | Status Change",
+          "description": "Los Angeles Dodgers placed CF Andy Pages on the 10-day injured list. Left hand fracture."
+        },
         {
           "player_id": 676508,
           "name": "Ben Casparius",
@@ -4241,9 +4249,9 @@
           "player_id": 690928,
           "name": "Hunter Dobbins",
           "il_type": "Injured List",
-          "date": "2026-03-25",
-          "note": "St. Louis Cardinals placed RHP Hunter Dobbins on the 15-day injured list retroactive to March 22, 2026. Right knee ACL reconstruction rehab. | Status Change",
-          "description": "St. Louis Cardinals placed RHP Hunter Dobbins on the 15-day injured list retroactive to March 22, 2026. Right knee ACL reconstruction rehab."
+          "date": "2026-08-22",
+          "note": "St. Louis Cardinals placed RHP Hunter Dobbins on the 15-day injured list. Right forearm tightness. | Status Change",
+          "description": "St. Louis Cardinals placed RHP Hunter Dobbins on the 15-day injured list. Right forearm tightness."
         },
         {
           "player_id": 668941,
@@ -5003,7 +5011,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Seattle Mariners Injury Watch",
+      "title": "Los Angeles Dodgers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
