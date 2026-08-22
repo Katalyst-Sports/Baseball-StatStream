@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T04:43:45.133395-04:00",
+  "updated_at": "2026-08-22T05:11:58.755806-04:00",
   "games": [
     {
       "gamePk": 823509,
@@ -270,23 +270,23 @@
           }
         },
         {
-          "name": "Brandon Valenzuela",
+          "name": "Nathan Lukes",
           "stats": {
-            "avg": ".230",
+            "avg": ".256",
             "obp": ".308",
-            "slg": ".388",
-            "ops": ".696",
-            "homeRuns": 8,
-            "rbi": 21
+            "slg": ".360",
+            "ops": ".668",
+            "homeRuns": 7,
+            "rbi": 24
           },
           "last10ab": {
-            "avg": "0.250",
-            "hits": 3,
-            "atBats": 12,
-            "homeRuns": 1,
-            "rbi": 2,
-            "walks": 0,
-            "games": 5
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         }
       ],
@@ -6992,6 +6992,11 @@
     }
   ],
   "errors": [
+    {
+      "playerId": 678218,
+      "stage": "build_team_hitters_player",
+      "error": "The read operation timed out"
+    },
     {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Takes 1-2 Win",
