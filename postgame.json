@@ -1,6 +1,42 @@
 {
-  "updated_at": "2026-08-22T16:43:13.123443-04:00",
-  "games": [],
+  "updated_at": "2026-08-22T17:02:28.905064-04:00",
+  "games": [
+    {
+      "gamePk": 823509,
+      "game": "Toronto Blue Jays @ New York Yankees",
+      "winner": "Toronto Blue Jays",
+      "loser": "New York Yankees",
+      "final_score": "4-3",
+      "hitters": [
+        "Brett Bateman",
+        "Vladimir Guerrero Jr.",
+        "George Springer",
+        "Ernie Clement",
+        "Nathan Lukes",
+        "Luis Garc\u00eda Jr.",
+        "Jazz Chisholm Jr."
+      ],
+      "pitchers": [
+        "Dylan Cease"
+      ]
+    },
+    {
+      "gamePk": 823743,
+      "game": "Atlanta Braves @ Milwaukee Brewers",
+      "winner": "Milwaukee Brewers",
+      "loser": "Atlanta Braves",
+      "final_score": "1-4",
+      "hitters": [
+        "Michael Harris II",
+        "Ozzie Albies",
+        "Mauricio Dub\u00f3n",
+        "William Contreras",
+        "Jake Bauers",
+        "Luis Lara"
+      ],
+      "pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +56,16 @@
     {
       "stage": "generated_news_item",
       "title": "Boston Red Sox Takes 4-6 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Toronto Blue Jays Finishes Off New York Yankees",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Finishes Off Atlanta Braves",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

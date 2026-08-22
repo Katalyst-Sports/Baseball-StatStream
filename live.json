@@ -1,41 +1,14 @@
 {
-  "updated_at": "2026-08-22T16:43:13.123443-04:00",
+  "updated_at": "2026-08-22T17:02:28.905064-04:00",
   "games": [
-    {
-      "gamePk": 823509,
-      "game": "Toronto Blue Jays @ New York Yankees",
-      "score": "4-3",
-      "inning": "9th",
-      "hot_hitters": [
-        "Brett Bateman",
-        "Vladimir Guerrero Jr.",
-        "George Springer",
-        "Ernie Clement",
-        "Nathan Lukes",
-        "Luis Garc\u00eda Jr."
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823743,
-      "game": "Atlanta Braves @ Milwaukee Brewers",
-      "score": "1-4",
-      "inning": "9th",
-      "hot_hitters": [
-        "Michael Harris II",
-        "Ozzie Albies",
-        "William Contreras",
-        "Jake Bauers",
-        "Luis Lara"
-      ],
-      "top_pitchers": []
-    },
     {
       "gamePk": 823831,
       "game": "Washington Nationals @ Miami Marlins",
-      "score": "0-2",
-      "inning": "2nd",
-      "hot_hitters": [],
+      "score": "0-3",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Heriberto Hern\u00e1ndez"
+      ],
       "top_pitchers": []
     }
   ],
@@ -58,6 +31,16 @@
     {
       "stage": "generated_news_item",
       "title": "Boston Red Sox Takes 4-6 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Toronto Blue Jays Finishes Off New York Yankees",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Finishes Off Atlanta Braves",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
