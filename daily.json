@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T13:32:46.181286-04:00",
+  "updated_at": "2026-08-22T13:54:25.579285-04:00",
   "games": [
     {
       "gamePk": 823509,
@@ -62,8 +62,8 @@
         "id": 677960,
         "name": "Ryan Weathers",
         "hand": "L",
-        "era": "3.56",
-        "whip": "1.19",
+        "era": "3.60",
+        "whip": "1.21",
         "last3": {
           "starts": [
             {
@@ -132,10 +132,10 @@
         {
           "name": "Alejandro Kirk",
           "stats": {
-            "avg": ".284",
-            "obp": ".365",
-            "slg": ".432",
-            "ops": ".797",
+            "avg": ".288",
+            "obp": ".368",
+            "slg": ".435",
+            "ops": ".803",
             "homeRuns": 7,
             "rbi": 28
           },
@@ -144,6 +144,26 @@
             "hits": 1,
             "atBats": 12,
             "homeRuns": 1,
+            "rbi": 1,
+            "walks": 2,
+            "games": 3
+          }
+        },
+        {
+          "name": "Brett Bateman",
+          "stats": {
+            "avg": ".315",
+            "obp": ".351",
+            "slg": ".407",
+            "ops": ".758",
+            "homeRuns": 0,
+            "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.214",
+            "hits": 3,
+            "atBats": 14,
+            "homeRuns": 0,
             "rbi": 1,
             "walks": 2,
             "games": 3
@@ -172,10 +192,10 @@
         {
           "name": "Kazuma Okamoto",
           "stats": {
-            "avg": ".230",
+            "avg": ".229",
             "obp": ".301",
-            "slg": ".438",
-            "ops": ".739",
+            "slg": ".437",
+            "ops": ".738",
             "homeRuns": 26,
             "rbi": 74
           },
@@ -184,26 +204,6 @@
             "hits": 4,
             "atBats": 12,
             "homeRuns": 1,
-            "rbi": 1,
-            "walks": 2,
-            "games": 3
-          }
-        },
-        {
-          "name": "Brett Bateman",
-          "stats": {
-            "avg": ".302",
-            "obp": ".339",
-            "slg": ".396",
-            "ops": ".735",
-            "homeRuns": 0,
-            "rbi": 4
-          },
-          "last10ab": {
-            "avg": "0.214",
-            "hits": 3,
-            "atBats": 14,
-            "homeRuns": 0,
             "rbi": 1,
             "walks": 2,
             "games": 3
@@ -232,12 +232,12 @@
         {
           "name": "George Springer",
           "stats": {
-            "avg": ".235",
-            "obp": ".314",
-            "slg": ".387",
-            "ops": ".701",
+            "avg": ".237",
+            "obp": ".316",
+            "slg": ".388",
+            "ops": ".704",
             "homeRuns": 12,
-            "rbi": 40
+            "rbi": 41
           },
           "last10ab": {
             "avg": "0.100",
@@ -479,7 +479,7 @@
       "home_team": "Milwaukee Brewers",
       "venue": "American Family Field",
       "start": "2026-08-22T18:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 527048,
         "name": "Mart\u00edn P\u00e9rez",
