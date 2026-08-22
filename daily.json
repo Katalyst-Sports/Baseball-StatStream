@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T06:58:21.691001-04:00",
+  "updated_at": "2026-08-22T07:28:53.126158-04:00",
   "games": [
     {
       "gamePk": 823509,
@@ -3175,26 +3175,6 @@
           }
         },
         {
-          "name": "LaMonte Wade Jr.",
-          "stats": {
-            "avg": ".218",
-            "obp": ".346",
-            "slg": ".333",
-            "ops": ".679",
-            "homeRuns": 2,
-            "rbi": 15
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 3,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Cam Smith",
           "stats": {
             "avg": ".218",
@@ -3252,6 +3232,26 @@
             "rbi": 2,
             "walks": 1,
             "games": 3
+          }
+        },
+        {
+          "name": "Raynel Delgado",
+          "stats": {
+            "avg": ".243",
+            "obp": ".300",
+            "slg": ".351",
+            "ops": ".651",
+            "homeRuns": 1,
+            "rbi": 4
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 0,
+            "games": 4
           }
         }
       ]
@@ -6993,7 +6993,12 @@
   ],
   "errors": [
     {
-      "playerId": 665926,
+      "playerId": 664774,
+      "stage": "build_team_hitters_player",
+      "error": "The read operation timed out"
+    },
+    {
+      "playerId": 681807,
       "stage": "build_team_hitters_player",
       "error": "The read operation timed out"
     },
