@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T05:44:55.096156-04:00",
+  "updated_at": "2026-08-22T06:04:21.533390-04:00",
   "games": [
     {
       "gamePk": 823509,
@@ -1276,6 +1276,26 @@
           }
         },
         {
+          "name": "Otto Lopez",
+          "stats": {
+            "avg": ".307",
+            "obp": ".343",
+            "slg": ".447",
+            "ops": ".790",
+            "homeRuns": 9,
+            "rbi": 55
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Xavier Edwards",
           "stats": {
             "avg": ".286",
@@ -1393,26 +1413,6 @@
             "rbi": 0,
             "walks": 4,
             "games": 4
-          }
-        },
-        {
-          "name": "Jakob Marsee",
-          "stats": {
-            "avg": ".206",
-            "obp": ".325",
-            "slg": ".316",
-            "ops": ".641",
-            "homeRuns": 7,
-            "rbi": 29
-          },
-          "last10ab": {
-            "avg": "0.091",
-            "hits": 1,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
-            "games": 3
           }
         }
       ]
@@ -6324,7 +6324,15 @@
             "homeRuns": 19,
             "rbi": 74
           },
-          "last10ab": {}
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 3
+          }
         }
       ],
       "home_hitters": [
@@ -6984,21 +6992,6 @@
     }
   ],
   "errors": [
-    {
-      "playerId": 672640,
-      "stage": "build_team_hitters_player",
-      "error": "The read operation timed out"
-    },
-    {
-      "playerId": 701675,
-      "stage": "last_10_ab",
-      "error": "The read operation timed out"
-    },
-    {
-      "playerId": 666176,
-      "stage": "last_10_ab",
-      "error": "The read operation timed out"
-    },
     {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Takes 1-2 Win",
