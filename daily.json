@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T12:14:23.568776-04:00",
+  "updated_at": "2026-08-22T12:44:02.941958-04:00",
   "games": [
     {
       "gamePk": 823509,
@@ -1356,6 +1356,26 @@
           }
         },
         {
+          "name": "Deyvison De Los Santos",
+          "stats": {
+            "avg": ".286",
+            "obp": ".286",
+            "slg": ".429",
+            "ops": ".715",
+            "homeRuns": 0,
+            "rbi": 0
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 2,
+            "atBats": 7,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 0,
+            "games": 3
+          }
+        },
+        {
           "name": "Owen Caissie",
           "stats": {
             "avg": ".224",
@@ -1392,26 +1412,6 @@
             "homeRuns": 0,
             "rbi": 1,
             "walks": 0,
-            "games": 4
-          }
-        },
-        {
-          "name": "Agust\u00edn Ram\u00edrez",
-          "stats": {
-            "avg": ".240",
-            "obp": ".333",
-            "slg": ".349",
-            "ops": ".682",
-            "homeRuns": 2,
-            "rbi": 17
-          },
-          "last10ab": {
-            "avg": "0.167",
-            "hits": 2,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 4,
             "games": 4
           }
         }
@@ -6993,11 +6993,6 @@
   ],
   "errors": [
     {
-      "playerId": 665926,
-      "stage": "last_10_ab",
-      "error": "HTTP Error 503: Backend is unhealthy"
-    },
-    {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Takes 1-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
@@ -7024,7 +7019,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Makes Roster Move",
+      "title": "Miami Marlins Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
