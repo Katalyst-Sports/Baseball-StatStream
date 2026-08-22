@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T05:11:58.755806-04:00",
+  "updated_at": "2026-08-22T05:44:55.096156-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -4982,8 +4982,18 @@
   ],
   "errors": [
     {
-      "playerId": 678218,
+      "playerId": 672640,
       "stage": "build_team_hitters_player",
+      "error": "The read operation timed out"
+    },
+    {
+      "playerId": 701675,
+      "stage": "last_10_ab",
+      "error": "The read operation timed out"
+    },
+    {
+      "playerId": 666176,
+      "stage": "last_10_ab",
       "error": "The read operation timed out"
     },
     {
