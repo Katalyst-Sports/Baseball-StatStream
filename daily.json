@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T06:36:38.357875-04:00",
+  "updated_at": "2026-08-22T06:58:21.691001-04:00",
   "games": [
     {
       "gamePk": 823509,
@@ -6992,6 +6992,11 @@
     }
   ],
   "errors": [
+    {
+      "playerId": 665926,
+      "stage": "build_team_hitters_player",
+      "error": "The read operation timed out"
+    },
     {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Takes 1-2 Win",
