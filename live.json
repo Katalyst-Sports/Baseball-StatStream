@@ -1,113 +1,105 @@
 {
-  "updated_at": "2026-08-21T20:57:08.471616-04:00",
+  "updated_at": "2026-08-21T22:18:26.547631-04:00",
   "games": [
-    {
-      "gamePk": 823420,
-      "game": "St. Louis Cardinals @ Philadelphia Phillies",
-      "score": "4-5",
-      "inning": "7th",
-      "hot_hitters": [
-        "Jordan Walker",
-        "Joshua B\u00e1ez",
-        "Luis Arraez",
-        "Alec Bohm",
-        "Brandon Marsh",
-        "J.T. Realmuto"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823510,
-      "game": "Toronto Blue Jays @ New York Yankees",
-      "score": "1-3",
-      "inning": "5th",
-      "hot_hitters": [
-        "Brett Bateman",
-        "Spencer Jones"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824721,
-      "game": "San Francisco Giants @ Boston Red Sox",
-      "score": "4-5",
-      "inning": "5th",
-      "hot_hitters": [
-        "Drew Gilbert",
-        "Rafael Devers",
-        "Christian Koss",
-        "Wilyer Abreu",
-        "Willson Contreras"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823830,
-      "game": "Washington Nationals @ Miami Marlins",
-      "score": "1-0",
-      "inning": "6th",
-      "hot_hitters": [
-        "Daylen Lile",
-        "Keibert Ruiz"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824800,
-      "game": "Tampa Bay Rays @ Baltimore Orioles",
-      "score": "3-5",
-      "inning": "7th",
-      "hot_hitters": [
-        "Junior Caminero",
-        "Kenny Piper",
-        "Pete Alonso",
-        "Dylan Beavers",
-        "Colton Cowser"
-      ],
-      "top_pitchers": [
-        "Trevor Rogers"
-      ]
-    },
     {
       "gamePk": 824559,
       "game": "New York Mets @ Chicago White Sox",
-      "score": "3-0",
-      "inning": "4th",
+      "score": "4-4",
+      "inning": "9th",
       "hot_hitters": [
-        "Brett Baty"
+        "Bo Bichette",
+        "Brett Baty",
+        "Marcus Semien",
+        "Miguel Vargas",
+        "Randal Grichuk",
+        "Colson Montgomery"
       ],
       "top_pitchers": []
     },
     {
       "gamePk": 824072,
       "game": "Detroit Tigers @ Kansas City Royals",
-      "score": "0-0",
-      "inning": "4th",
-      "hot_hitters": [],
+      "score": "2-4",
+      "inning": "8th",
+      "hot_hitters": [
+        "Kevin McGonigle",
+        "Carter Jensen",
+        "Bobby Witt Jr.",
+        "Vinnie Pasquantino",
+        "Kyle Isbel"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 824152,
       "game": "Athletics @ Houston Astros",
-      "score": "0-0",
-      "inning": "3rd",
-      "hot_hitters": [],
+      "score": "0-3",
+      "inning": "7th",
+      "hot_hitters": [
+        "Jose Altuve"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 822857,
       "game": "Los Angeles Angels @ Texas Rangers",
       "score": "0-0",
-      "inning": "3rd",
-      "hot_hitters": [],
+      "inning": "7th",
+      "hot_hitters": [
+        "Ezequiel Duran",
+        "Evan Carter"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 824317,
       "game": "Cleveland Guardians @ Colorado Rockies",
-      "score": "0-0",
+      "score": "4-1",
+      "inning": "6th",
+      "hot_hitters": [
+        "Jo Adell",
+        "Travis Bazzana",
+        "Petey Halpin"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 825045,
+      "game": "Cincinnati Reds @ Arizona Diamondbacks",
+      "score": "0-3",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Jordan Lawlar"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823262,
+      "game": "Minnesota Twins @ San Diego Padres",
+      "score": "0-2",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Ty France"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823911,
+      "game": "Pittsburgh Pirates @ Los Angeles Dodgers",
+      "score": "1-0",
       "inning": "1st",
       "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823101,
+      "game": "Chicago Cubs @ Seattle Mariners",
+      "score": "3-0",
+      "inning": "1st",
+      "hot_hitters": [
+        "Pete Crow-Armstrong",
+        "Alex Bregman"
+      ],
       "top_pitchers": []
     }
   ],
@@ -135,6 +127,11 @@
     {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Finishes Off Atlanta Braves",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Philadelphia Phillies Finishes Off St. Louis Cardinals",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
