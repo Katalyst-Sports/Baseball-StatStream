@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T10:43:55.413926-04:00",
+  "updated_at": "2026-08-23T11:03:24.822852-04:00",
   "games": [
     {
       "gamePk": 824799,
@@ -1276,6 +1276,26 @@
           }
         },
         {
+          "name": "Cody Bellinger",
+          "stats": {
+            "avg": ".259",
+            "obp": ".350",
+            "slg": ".420",
+            "ops": ".770",
+            "homeRuns": 11,
+            "rbi": 53
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 3
+          }
+        },
+        {
           "name": "Paul Goldschmidt",
           "stats": {
             "avg": ".247",
@@ -1392,26 +1412,6 @@
             "homeRuns": 0,
             "rbi": 0,
             "walks": 0,
-            "games": 3
-          }
-        },
-        {
-          "name": "Heliot Ramos",
-          "stats": {
-            "avg": ".240",
-            "obp": ".292",
-            "slg": ".387",
-            "ops": ".679",
-            "homeRuns": 9,
-            "rbi": 35
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
             "games": 3
           }
         }
@@ -1886,7 +1886,56 @@
       "venue": "Kauffman Stadium",
       "start": "2026-08-23T18:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 621097,
+        "name": "Jacob Waguespack",
+        "hand": "R",
+        "era": "1.95",
+        "whip": "0.83",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-06-12",
+              "opponent": "Cleveland Guardians",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 1,
+              "pitches": 20,
+              "strikes": 11
+            },
+            {
+              "date": "2026-06-15",
+              "opponent": "Houston Astros",
+              "ip": "1.1",
+              "er": 2,
+              "k": 1,
+              "bb": 0,
+              "pitches": 13,
+              "strikes": 12
+            },
+            {
+              "date": "2026-06-17",
+              "opponent": "Houston Astros",
+              "ip": "2.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 20,
+              "strikes": 15
+            }
+          ],
+          "avg_ip": "1.1",
+          "avg_k": "1.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "17.7",
+          "avg_strikes": "12.7",
+          "era": "4.15",
+          "whip": "0.92",
+          "strike_pct": "71.7",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 663738,
         "name": "Daniel Lynch IV",
@@ -7026,7 +7075,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "St. Louis Cardinals Injury Watch",
+      "title": "New York Yankees Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
