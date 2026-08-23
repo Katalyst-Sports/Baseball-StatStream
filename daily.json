@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T12:55:51.743917-04:00",
+  "updated_at": "2026-08-23T13:25:56.776413-04:00",
   "games": [
     {
       "gamePk": 824799,
@@ -7,7 +7,7 @@
       "home_team": "Baltimore Orioles",
       "venue": "Oriole Park at Camden Yards",
       "start": "2026-08-23T17:35:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 607259,
         "name": "Nick Martinez",
@@ -479,7 +479,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-08-23T17:35:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 681517,
         "name": "Kyle Leahy",
@@ -951,7 +951,7 @@
       "home_team": "New York Yankees",
       "venue": "Yankee Stadium",
       "start": "2026-08-23T17:35:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 667755,
         "name": "Jos\u00e9 Soriano",
@@ -1423,7 +1423,7 @@
       "home_team": "Miami Marlins",
       "venue": "loanDepot park",
       "start": "2026-08-23T17:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 800600,
         "name": "Jackson Kent",
@@ -4158,26 +4158,6 @@
           }
         },
         {
-          "name": "Kyle Karros",
-          "stats": {
-            "avg": ".263",
-            "obp": ".360",
-            "slg": ".419",
-            "ops": ".779",
-            "homeRuns": 10,
-            "rbi": 44
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Willi Castro",
           "stats": {
             "avg": ".264",
@@ -4235,6 +4215,26 @@
             "rbi": 1,
             "walks": 0,
             "games": 3
+          }
+        },
+        {
+          "name": "Connor Norby",
+          "stats": {
+            "avg": ".215",
+            "obp": ".321",
+            "slg": ".351",
+            "ops": ".672",
+            "homeRuns": 5,
+            "rbi": 18
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
           }
         }
       ]
@@ -7075,7 +7075,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Cincinnati Reds Injury Watch",
+      "title": "Colorado Rockies Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

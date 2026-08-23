@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-23T12:55:51.743917-04:00",
-  "games": [],
+  "updated_at": "2026-08-23T13:25:56.776413-04:00",
+  "games": [
+    {
+      "gamePk": 824799,
+      "game": "Tampa Bay Rays @ Baltimore Orioles",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823421,
+      "game": "St. Louis Cardinals @ Philadelphia Phillies",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823507,
+      "game": "Toronto Blue Jays @ New York Yankees",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823827,
+      "game": "Washington Nationals @ Miami Marlins",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +57,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Cincinnati Reds Injury Watch",
+      "title": "Colorado Rockies Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
