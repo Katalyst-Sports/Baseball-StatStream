@@ -1,6 +1,67 @@
 {
-  "updated_at": "2026-08-23T15:57:48.989741-04:00",
-  "games": [],
+  "updated_at": "2026-08-23T16:32:36.552100-04:00",
+  "games": [
+    {
+      "gamePk": 824799,
+      "game": "Tampa Bay Rays @ Baltimore Orioles",
+      "winner": "Tampa Bay Rays",
+      "loser": "Baltimore Orioles",
+      "final_score": "3-1",
+      "hitters": [
+        "Chandler Simpson",
+        "Colton Cowser"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823421,
+      "game": "St. Louis Cardinals @ Philadelphia Phillies",
+      "winner": "Philadelphia Phillies",
+      "loser": "St. Louis Cardinals",
+      "final_score": "4-6",
+      "hitters": [
+        "JJ Wetherholt",
+        "Alec Burleson",
+        "Jos\u00e9 Ferm\u00edn",
+        "Kyle Schwarber",
+        "Bryce Harper",
+        "Edmundo Sosa",
+        "Bryan De La Cruz"
+      ],
+      "pitchers": [
+        "Cristopher S\u00e1nchez"
+      ]
+    },
+    {
+      "gamePk": 823507,
+      "game": "Toronto Blue Jays @ New York Yankees",
+      "winner": "New York Yankees",
+      "loser": "Toronto Blue Jays",
+      "final_score": "3-8",
+      "hitters": [
+        "Myles Straw",
+        "Trent Grisham",
+        "Ben Rice",
+        "George Lombard Jr.",
+        "Spencer Jones",
+        "Jazz Chisholm Jr."
+      ],
+      "pitchers": [
+        "Jos\u00e9 Soriano"
+      ]
+    },
+    {
+      "gamePk": 823827,
+      "game": "Washington Nationals @ Miami Marlins",
+      "winner": "Miami Marlins",
+      "loser": "Washington Nationals",
+      "final_score": "2-6",
+      "hitters": [
+        "Dylan Crews"
+      ],
+      "pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +81,16 @@
     {
       "stage": "generated_news_item",
       "title": "Philadelphia Phillies Takes 3-12 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Tampa Bay Rays Finishes Off Baltimore Orioles",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Philadelphia Phillies Finishes Off St. Louis Cardinals",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
