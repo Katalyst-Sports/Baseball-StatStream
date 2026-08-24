@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T10:19:17.267651-04:00",
+  "updated_at": "2026-08-24T11:06:42.112399-04:00",
   "games": [
     {
       "gamePk": 824235,
@@ -1474,7 +1474,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 664353,
+        "name": "Jos\u00e9 Urquidy",
+        "hand": "R",
+        "era": "5.06",
+        "whip": "1.50",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-29",
+              "opponent": "New York Mets",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 1,
+              "pitches": 11,
+              "strikes": 6
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Baltimore Orioles",
+              "ip": "2.0",
+              "er": 0,
+              "k": 3,
+              "bb": 0,
+              "pitches": 31,
+              "strikes": 23
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "San Diego Padres",
+              "ip": "2.0",
+              "er": 1,
+              "k": 3,
+              "bb": 0,
+              "pitches": 36,
+              "strikes": 31
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "2.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "26.0",
+          "avg_strikes": "20.0",
+          "era": "1.80",
+          "whip": "1.40",
+          "strike_pct": "76.9",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Joc Pederson",
