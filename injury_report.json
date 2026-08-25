@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T17:59:24.561445-04:00",
+  "updated_at": "2026-08-25T18:37:44.562851-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -241,9 +241,9 @@
           "player_id": 805779,
           "name": "Jacob Wilson",
           "il_type": "Injured List",
-          "date": "2026-08-21",
-          "note": "Athletics placed SS Jacob Wilson on the 10-day injured list. Left shoulder subluxation. | Status Change",
-          "description": "Athletics placed SS Jacob Wilson on the 10-day injured list. Left shoulder subluxation."
+          "date": "2026-08-25",
+          "note": "Athletics transferred SS Jacob Wilson from the 10-day injured list to the 60-day injured list. Left shoulder subluxation. | Status Change",
+          "description": "Athletics transferred SS Jacob Wilson from the 10-day injured list to the 60-day injured list. Left shoulder subluxation."
         },
         {
           "player_id": 605488,
@@ -3925,8 +3925,16 @@
     {
       "team_id": 137,
       "team_name": "San Francisco Giants",
-      "injured_count": 25,
+      "injured_count": 26,
       "players": [
+        {
+          "player_id": 687931,
+          "name": "Carson Whisenhunt",
+          "il_type": "Injured List",
+          "date": "2026-08-25",
+          "note": "San Francisco Giants placed LHP Carson Whisenhunt on the 15-day injured list. Left elbow sprain. | Status Change",
+          "description": "San Francisco Giants placed LHP Carson Whisenhunt on the 15-day injured list. Left elbow sprain."
+        },
         {
           "player_id": 669477,
           "name": "Casey Schmitt",
@@ -5091,7 +5099,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Chicago White Sox Injury Watch",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
