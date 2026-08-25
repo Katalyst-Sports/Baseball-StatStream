@@ -1,115 +1,25 @@
 {
-  "updated_at": "2026-08-24T23:25:25.789533-04:00",
-  "games": [
-    {
-      "gamePk": 823992,
-      "game": "Cleveland Guardians @ Los Angeles Angels",
-      "score": "4-1",
-      "inning": "7th",
-      "hot_hitters": [
-        "Steven Kwan",
-        "Austin Hedges"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 825041,
-      "game": "Chicago Cubs @ Arizona Diamondbacks",
-      "score": "5-0",
-      "inning": "7th",
-      "hot_hitters": [
-        "Pedro Ram\u00edrez",
-        "Michael Conforto",
-        "Carson Kelly"
-      ],
-      "top_pitchers": [
-        "Kevin Gausman"
-      ]
-    },
-    {
-      "gamePk": 823260,
-      "game": "Pittsburgh Pirates @ San Diego Padres",
-      "score": "2-0",
-      "inning": "6th",
-      "hot_hitters": [
-        "Esmerlyn Valdez",
-        "Rafael Flores Jr.",
-        "Jared Triolo",
-        "Freddy Fermin"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824964,
-      "game": "Minnesota Twins @ Athletics",
-      "score": "6-1",
-      "inning": "6th",
-      "hot_hitters": [
-        "Byron Buxton",
-        "Kaelen Culpepper",
-        "Ryan Kreidler",
-        "Henry Bolte",
-        "Jeff McNeil"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823097,
-      "game": "Philadelphia Phillies @ Seattle Mariners",
-      "score": "2-6",
-      "inning": "5th",
-      "hot_hitters": [
-        "Bryce Harper",
-        "J.T. Realmuto",
-        "Julio Rodr\u00edguez",
-        "Josh Naylor",
-        "Cal Raleigh"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823183,
-      "game": "Cincinnati Reds @ San Francisco Giants",
-      "score": "0-5",
-      "inning": "6th",
-      "hot_hitters": [
-        "Tyler Stephenson",
-        "Drew Gilbert",
-        "Rafael Devers",
-        "Christian Koss"
-      ],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-08-25T00:09:41.817265-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 3-1 Win",
+      "title": "Tampa Bay Rays Takes 4-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Philadelphia Phillies Takes 4-6 Win",
+      "title": "Boston Red Sox Takes 4-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Takes 3-8 Win",
+      "title": "Washington Nationals Takes 3-13 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Miami Marlins Takes 2-6 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Finishes Off Detroit Tigers",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Boston Red Sox Finishes Off Miami Marlins",
+      "title": "Texas Rangers Takes 11-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
