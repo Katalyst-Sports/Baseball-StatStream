@@ -1,50 +1,74 @@
 {
-  "updated_at": "2026-08-24T21:00:39.385837-04:00",
+  "updated_at": "2026-08-24T22:21:44.341445-04:00",
   "games": [
-    {
-      "gamePk": 824235,
-      "game": "Tampa Bay Rays @ Detroit Tigers",
-      "score": "4-1",
-      "inning": "8th",
-      "hot_hitters": [
-        "Jonny DeLuca",
-        "Jonathan Aranda"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823828,
-      "game": "Boston Red Sox @ Miami Marlins",
-      "score": "2-2",
-      "inning": "8th",
-      "hot_hitters": [
-        "Jarren Duran",
-        "Mickey Gasper",
-        "Heriberto Hern\u00e1ndez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822695,
-      "game": "Colorado Rockies @ Washington Nationals",
-      "score": "2-8",
-      "inning": "7th",
-      "hot_hitters": [
-        "Willi Castro",
-        "Ezequiel Tovar",
-        "Daylen Lile",
-        "Jorbit Vivas"
-      ],
-      "top_pitchers": []
-    },
     {
       "gamePk": 824557,
       "game": "Texas Rangers @ Chicago White Sox",
-      "score": "5-2",
-      "inning": "3rd",
+      "score": "8-2",
+      "inning": "8th",
       "hot_hitters": [
         "Corey Seager",
+        "Ezequiel Duran",
+        "Jake Burger",
+        "Cody Freeman",
         "Tristan Peters"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823992,
+      "game": "Cleveland Guardians @ Los Angeles Angels",
+      "score": "1-0",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Steven Kwan"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 825041,
+      "game": "Chicago Cubs @ Arizona Diamondbacks",
+      "score": "1-0",
+      "inning": "3rd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823260,
+      "game": "Pittsburgh Pirates @ San Diego Padres",
+      "score": "0-0",
+      "inning": "3rd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824964,
+      "game": "Minnesota Twins @ Athletics",
+      "score": "1-0",
+      "inning": "2nd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823097,
+      "game": "Philadelphia Phillies @ Seattle Mariners",
+      "score": "2-5",
+      "inning": "2nd",
+      "hot_hitters": [
+        "J.T. Realmuto",
+        "Julio Rodr\u00edguez",
+        "Cal Raleigh"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823183,
+      "game": "Cincinnati Reds @ San Francisco Giants",
+      "score": "0-5",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Drew Gilbert",
+        "Rafael Devers"
       ],
       "top_pitchers": []
     }
@@ -68,6 +92,16 @@
     {
       "stage": "generated_news_item",
       "title": "Miami Marlins Takes 2-6 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Tampa Bay Rays Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Boston Red Sox Finishes Off Miami Marlins",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

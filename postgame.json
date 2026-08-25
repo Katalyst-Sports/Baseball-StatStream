@@ -1,6 +1,55 @@
 {
-  "updated_at": "2026-08-24T21:00:39.385837-04:00",
-  "games": [],
+  "updated_at": "2026-08-24T22:21:44.341445-04:00",
+  "games": [
+    {
+      "gamePk": 824235,
+      "game": "Tampa Bay Rays @ Detroit Tigers",
+      "winner": "Tampa Bay Rays",
+      "loser": "Detroit Tigers",
+      "final_score": "4-1",
+      "hitters": [
+        "Jonny DeLuca",
+        "Jonathan Aranda",
+        "Chandler Simpson"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823828,
+      "game": "Boston Red Sox @ Miami Marlins",
+      "winner": "Boston Red Sox",
+      "loser": "Miami Marlins",
+      "final_score": "4-2",
+      "hitters": [
+        "Jarren Duran",
+        "Mickey Gasper",
+        "Otto Lopez",
+        "Heriberto Hern\u00e1ndez"
+      ],
+      "pitchers": [
+        "Sandy Alcantara"
+      ]
+    },
+    {
+      "gamePk": 822695,
+      "game": "Colorado Rockies @ Washington Nationals",
+      "winner": "Washington Nationals",
+      "loser": "Colorado Rockies",
+      "final_score": "3-13",
+      "hitters": [
+        "Willi Castro",
+        "Ezequiel Tovar",
+        "Daylen Lile",
+        "Keibert Ruiz",
+        "Jacob Young",
+        "Jorbit Vivas"
+      ],
+      "pitchers": [
+        "Ryan Feltner",
+        "Cade Cavalli"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +69,16 @@
     {
       "stage": "generated_news_item",
       "title": "Miami Marlins Takes 2-6 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Tampa Bay Rays Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Boston Red Sox Finishes Off Miami Marlins",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
