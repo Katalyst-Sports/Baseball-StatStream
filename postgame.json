@@ -1,183 +1,25 @@
 {
-  "updated_at": "2026-08-25T23:58:50.873413-04:00",
-  "games": [
-    {
-      "gamePk": 824233,
-      "game": "Tampa Bay Rays @ Detroit Tigers",
-      "winner": "Detroit Tigers",
-      "loser": "Tampa Bay Rays",
-      "final_score": "1-4",
-      "hitters": [
-        "Junior Caminero",
-        "Liam Hicks",
-        "Spencer Torkelson",
-        "Max Clark"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823826,
-      "game": "Boston Red Sox @ Miami Marlins",
-      "winner": "Boston Red Sox",
-      "loser": "Miami Marlins",
-      "final_score": "7-3",
-      "hitters": [
-        "Willson Contreras",
-        "Mickey Gasper",
-        "Jarren Duran",
-        "Heriberto Hern\u00e1ndez",
-        "Xavier Edwards"
-      ],
-      "pitchers": [
-        "Payton Tolle",
-        "Tyler Phillips"
-      ]
-    },
-    {
-      "gamePk": 822693,
-      "game": "Colorado Rockies @ Washington Nationals",
-      "winner": "Colorado Rockies",
-      "loser": "Washington Nationals",
-      "final_score": "3-1",
-      "hitters": [
-        "Hunter Goodman",
-        "Jordan Beck",
-        "Daylen Lile"
-      ],
-      "pitchers": [
-        "Andrew Alvarez"
-      ]
-    },
-    {
-      "gamePk": 823505,
-      "game": "Houston Astros @ New York Yankees",
-      "winner": "Houston Astros",
-      "loser": "New York Yankees",
-      "final_score": "9-7",
-      "hitters": [
-        "Jeremy Pe\u00f1a",
-        "Yordan Alvarez",
-        "Jose Altuve",
-        "Daulton Varsho",
-        "Yainer Diaz",
-        "Luis Garc\u00eda Jr.",
-        "Cody Bellinger"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 822773,
-      "game": "Kansas City Royals @ Toronto Blue Jays",
-      "winner": "Kansas City Royals",
-      "loser": "Toronto Blue Jays",
-      "final_score": "5-3",
-      "hitters": [
-        "Isaac Collins",
-        "John Rave",
-        "Brett Bateman",
-        "Nathan Lukes",
-        "Andr\u00e9s Gim\u00e9nez"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823585,
-      "game": "Milwaukee Brewers @ New York Mets",
-      "winner": "New York Mets",
-      "loser": "Milwaukee Brewers",
-      "final_score": "2-3",
-      "hitters": [
-        "William Contreras",
-        "Francisco Lindor",
-        "Carson Benge",
-        "Luis Robert Jr."
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824881,
-      "game": "Los Angeles Dodgers @ Atlanta Braves",
-      "winner": "Atlanta Braves",
-      "loser": "Los Angeles Dodgers",
-      "final_score": "3-4",
-      "hitters": [
-        "Alex Call",
-        "Hunter Feduccia",
-        "Drake Baldwin",
-        "Matt Olson",
-        "Ozzie Albies"
-      ],
-      "pitchers": [
-        "Tyler Glasnow"
-      ]
-    },
-    {
-      "gamePk": 824556,
-      "game": "Texas Rangers @ Chicago White Sox",
-      "winner": "Chicago White Sox",
-      "loser": "Texas Rangers",
-      "final_score": "7-11",
-      "hitters": [
-        "Justin Foscue",
-        "Wyatt Langford",
-        "Jake Burger",
-        "Danny Jansen",
-        "Sam Antonacci",
-        "Miguel Vargas",
-        "Chase Meidroth",
-        "Tristan Peters",
-        "Brenton Doyle"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823016,
-      "game": "Baltimore Orioles @ St. Louis Cardinals",
-      "winner": "Baltimore Orioles",
-      "loser": "St. Louis Cardinals",
-      "final_score": "13-1",
-      "hitters": [
-        "Jackson Holliday",
-        "Pete Alonso",
-        "Christian Encarnacion-Strand",
-        "Dylan Beavers",
-        "Leody Taveras",
-        "Nathan Church"
-      ],
-      "pitchers": [
-        "Matthew Liberatore"
-      ]
-    }
-  ],
+  "updated_at": "2026-08-26T01:25:13.112874-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 4-1 Win",
+      "title": "Detroit Tigers Takes 1-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Takes 4-2 Win",
+      "title": "Boston Red Sox Takes 7-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Washington Nationals Takes 3-13 Win",
+      "title": "Colorado Rockies Takes 3-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Texas Rangers Takes 11-2 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Detroit Tigers Finishes Off Tampa Bay Rays",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Boston Red Sox Finishes Off Miami Marlins",
+      "title": "Houston Astros Takes 9-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
