@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T11:50:45.536769-04:00",
+  "updated_at": "2026-08-26T14:26:53.453706-04:00",
   "games": [
     {
       "gamePk": 824234,
@@ -7,13 +7,13 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-08-26T17:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 642547,
         "name": "Freddy Peralta",
         "hand": "R",
-        "era": "5.33",
-        "whip": "1.46",
+        "era": "5.14",
+        "whip": "1.41",
         "last3": {
           "starts": [
             {
@@ -62,8 +62,8 @@
         "id": 675512,
         "name": "Troy Melton",
         "hand": "R",
-        "era": "1.70",
-        "whip": "1.01",
+        "era": "1.88",
+        "whip": "1.02",
         "last3": {
           "starts": [
             {
@@ -132,10 +132,10 @@
         {
           "name": "Junior Caminero",
           "stats": {
-            "avg": ".278",
-            "obp": ".365",
-            "slg": ".531",
-            "ops": ".896",
+            "avg": ".281",
+            "obp": ".367",
+            "slg": ".532",
+            "ops": ".899",
             "homeRuns": 35,
             "rbi": 84
           },
@@ -152,10 +152,10 @@
         {
           "name": "Yandy D\u00edaz",
           "stats": {
-            "avg": ".303",
-            "obp": ".372",
-            "slg": ".463",
-            "ops": ".835",
+            "avg": ".302",
+            "obp": ".370",
+            "slg": ".460",
+            "ops": ".830",
             "homeRuns": 19,
             "rbi": 72
           },
@@ -172,12 +172,12 @@
         {
           "name": "Liam Hicks",
           "stats": {
-            "avg": ".286",
-            "obp": ".373",
-            "slg": ".448",
-            "ops": ".821",
+            "avg": ".284",
+            "obp": ".371",
+            "slg": ".446",
+            "ops": ".817",
             "homeRuns": 17,
-            "rbi": 72
+            "rbi": 73
           },
           "last10ab": {
             "avg": "0.364",
@@ -212,10 +212,10 @@
         {
           "name": "Jonathan Aranda",
           "stats": {
-            "avg": ".277",
-            "obp": ".360",
-            "slg": ".417",
-            "ops": ".777",
+            "avg": ".280",
+            "obp": ".363",
+            "slg": ".421",
+            "ops": ".784",
             "homeRuns": 16,
             "rbi": 78
           },
@@ -232,12 +232,12 @@
         {
           "name": "Jonny DeLuca",
           "stats": {
-            "avg": ".271",
-            "obp": ".300",
-            "slg": ".435",
-            "ops": ".735",
+            "avg": ".272",
+            "obp": ".301",
+            "slg": ".438",
+            "ops": ".739",
             "homeRuns": 8,
-            "rbi": 37
+            "rbi": 38
           },
           "last10ab": {
             "avg": "0.417",
@@ -270,23 +270,23 @@
           }
         },
         {
-          "name": "Jorge Mateo",
+          "name": "Nick Fortes",
           "stats": {
-            "avg": ".236",
-            "obp": ".286",
-            "slg": ".389",
-            "ops": ".675",
-            "homeRuns": 5,
-            "rbi": 14
+            "avg": ".263",
+            "obp": ".307",
+            "slg": ".363",
+            "ops": ".670",
+            "homeRuns": 4,
+            "rbi": 29
           },
           "last10ab": {
-            "avg": "0.273",
-            "hits": 3,
-            "atBats": 11,
-            "homeRuns": 1,
-            "rbi": 2,
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 3,
             "walks": 1,
-            "games": 5
+            "games": 4
           }
         }
       ],
@@ -312,26 +312,6 @@
           }
         },
         {
-          "name": "Brett Callahan",
-          "stats": {
-            "avg": ".263",
-            "obp": ".318",
-            "slg": ".579",
-            "ops": ".897",
-            "homeRuns": 1,
-            "rbi": 6
-          },
-          "last10ab": {
-            "avg": "0.364",
-            "hits": 4,
-            "atBats": 11,
-            "homeRuns": 1,
-            "rbi": 5,
-            "walks": 0,
-            "games": 4
-          }
-        },
-        {
           "name": "Corey Julks",
           "stats": {
             "avg": ".333",
@@ -352,12 +332,32 @@
           }
         },
         {
+          "name": "Brett Callahan",
+          "stats": {
+            "avg": ".238",
+            "obp": ".292",
+            "slg": ".524",
+            "ops": ".816",
+            "homeRuns": 1,
+            "rbi": 6
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 1,
+            "rbi": 5,
+            "walks": 0,
+            "games": 4
+          }
+        },
+        {
           "name": "Kevin McGonigle",
           "stats": {
-            "avg": ".280",
-            "obp": ".381",
-            "slg": ".427",
-            "ops": ".808",
+            "avg": ".279",
+            "obp": ".380",
+            "slg": ".425",
+            "ops": ".805",
             "homeRuns": 14,
             "rbi": 56
           },
@@ -374,10 +374,10 @@
         {
           "name": "Dillon Dingler",
           "stats": {
-            "avg": ".253",
-            "obp": ".318",
+            "avg": ".254",
+            "obp": ".319",
             "slg": ".481",
-            "ops": ".799",
+            "ops": ".800",
             "homeRuns": 26,
             "rbi": 82
           },
@@ -414,10 +414,10 @@
         {
           "name": "Gleyber Torres",
           "stats": {
-            "avg": ".261",
-            "obp": ".367",
-            "slg": ".382",
-            "ops": ".749",
+            "avg": ".259",
+            "obp": ".364",
+            "slg": ".379",
+            "ops": ".743",
             "homeRuns": 8,
             "rbi": 35
           },
@@ -434,10 +434,10 @@
         {
           "name": "Hao-Yu Lee",
           "stats": {
-            "avg": ".275",
-            "obp": ".314",
-            "slg": ".428",
-            "ops": ".742",
+            "avg": ".274",
+            "obp": ".313",
+            "slg": ".426",
+            "ops": ".739",
             "homeRuns": 7,
             "rbi": 33
           },
@@ -454,10 +454,10 @@
         {
           "name": "Colt Keith",
           "stats": {
-            "avg": ".266",
-            "obp": ".325",
-            "slg": ".415",
-            "ops": ".740",
+            "avg": ".265",
+            "obp": ".324",
+            "slg": ".413",
+            "ops": ".737",
             "homeRuns": 9,
             "rbi": 32
           },
@@ -1003,52 +1003,52 @@
         }
       },
       "home_pitcher": {
-        "id": 694738,
-        "name": "Landen Roupp",
+        "id": 657277,
+        "name": "Logan Webb",
         "hand": "R",
-        "era": "4.34",
-        "whip": "1.31",
+        "era": "3.75",
+        "whip": "1.11",
         "last3": {
           "starts": [
             {
-              "date": "2026-03-30",
-              "opponent": "San Diego Padres",
-              "ip": "6.0",
-              "er": 0,
-              "k": 7,
-              "bb": 2,
-              "pitches": 88,
-              "strikes": 54
-            },
-            {
-              "date": "2026-04-04",
-              "opponent": "New York Mets",
-              "ip": "4.2",
-              "er": 5,
+              "date": "2026-03-25",
+              "opponent": "New York Yankees",
+              "ip": "5.0",
+              "er": 6,
               "k": 7,
               "bb": 1,
-              "pitches": 95,
-              "strikes": 63
+              "pitches": 86,
+              "strikes": 58
             },
             {
-              "date": "2026-04-10",
-              "opponent": "Baltimore Orioles",
+              "date": "2026-03-31",
+              "opponent": "San Diego Padres",
               "ip": "6.0",
+              "er": 3,
+              "k": 5,
+              "bb": 4,
+              "pitches": 104,
+              "strikes": 61
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "New York Mets",
+              "ip": "7.0",
               "er": 1,
-              "k": 4,
-              "bb": 2,
-              "pitches": 93,
-              "strikes": 54
+              "k": 3,
+              "bb": 1,
+              "pitches": 92,
+              "strikes": 61
             }
           ],
-          "avg_ip": "5.2",
-          "avg_k": "6.0",
-          "avg_bb": "1.7",
-          "avg_pitches": "92.0",
-          "avg_strikes": "57.0",
-          "era": "3.24",
-          "whip": "1.14",
-          "strike_pct": "62.0",
+          "avg_ip": "6.0",
+          "avg_k": "5.0",
+          "avg_bb": "2.0",
+          "avg_pitches": "94.0",
+          "avg_strikes": "60.0",
+          "era": "5.00",
+          "whip": "1.39",
+          "strike_pct": "63.8",
           "quality_starts": 2
         }
       },
