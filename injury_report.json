@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T14:26:53.453706-04:00",
+  "updated_at": "2026-08-26T20:43:53.060503-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -663,9 +663,9 @@
           "player_id": 641933,
           "name": "Tyler O'Neill",
           "il_type": "Injured List",
-          "date": "2026-04-12",
-          "note": "Baltimore Orioles placed RF Tyler O'Neill on the 7-day injured list retroactive to April 9, 2026. Concussion. | Status Change",
-          "description": "Baltimore Orioles placed RF Tyler O'Neill on the 7-day injured list retroactive to April 9, 2026. Concussion."
+          "date": "2026-08-26",
+          "note": "Baltimore Orioles placed RF Tyler O'Neill on the 10-day injured list retroactive to August 23, 2026. Right shoulder inflammation. | Status Change",
+          "description": "Baltimore Orioles placed RF Tyler O'Neill on the 10-day injured list retroactive to August 23, 2026. Right shoulder inflammation."
         },
         {
           "player_id": 682274,
@@ -2333,9 +2333,9 @@
           "player_id": 672569,
           "name": "Gustavo Campero",
           "il_type": "Injured List",
-          "date": "2026-06-06",
-          "note": "Los Angeles Angels placed C Gustavo Campero on the 10-day injured list. Right hand fracture. | Status Change",
-          "description": "Los Angeles Angels placed C Gustavo Campero on the 10-day injured list. Right hand fracture."
+          "date": "2026-08-26",
+          "note": "Los Angeles Angels placed OF Gustavo Campero on the 10-day injured list. Right hamstring strain. | Status Change",
+          "description": "Los Angeles Angels placed OF Gustavo Campero on the 10-day injured list. Right hamstring strain."
         },
         {
           "player_id": 686799,
@@ -3361,7 +3361,7 @@
     {
       "team_id": 147,
       "team_name": "New York Yankees",
-      "injured_count": 16,
+      "injured_count": 17,
       "players": [
         {
           "player_id": 592450,
@@ -3420,6 +3420,14 @@
           "description": "New York Yankees placed LF Cody Bellinger on the 10-day injured list. Left hamstring strain."
         },
         {
+          "player_id": 518585,
+          "name": "Fernando Cruz",
+          "il_type": "Injured List",
+          "date": "2026-08-26",
+          "note": "New York Yankees placed RHP Fernando Cruz on the 15-day injured list. Right elbow discomfort. | Status Change",
+          "description": "New York Yankees placed RHP Fernando Cruz on the 15-day injured list. Right elbow discomfort."
+        },
+        {
           "player_id": 543037,
           "name": "Gerrit Cole",
           "il_type": "Injured List",
@@ -3455,9 +3463,9 @@
           "player_id": 665645,
           "name": "Kervin Castro",
           "il_type": "Injured List",
-          "date": "2026-08-11",
-          "note": "New York Yankees placed RHP Kervin Castro on the 15-day injured list retroactive to August 10, 2026. Right elbow neuritis. | Status Change",
-          "description": "New York Yankees placed RHP Kervin Castro on the 15-day injured list retroactive to August 10, 2026. Right elbow neuritis."
+          "date": "2026-08-26",
+          "note": "New York Yankees transferred RHP Kervin Castro from the 15-day injured list to the 60-day injured list. Right elbow neuritis. | Status Change",
+          "description": "New York Yankees transferred RHP Kervin Castro from the 15-day injured list to the 60-day injured list. Right elbow neuritis."
         },
         {
           "player_id": 608331,
@@ -3812,9 +3820,9 @@
           "player_id": 669093,
           "name": "Jeremiah Estrada",
           "il_type": "Injured List",
-          "date": "2026-06-05",
-          "note": "San Diego Padres placed RHP Jeremiah Estrada on the 15-day injured list retroactive to June 3, 2026. Right knee inflammation. | Status Change",
-          "description": "San Diego Padres placed RHP Jeremiah Estrada on the 15-day injured list retroactive to June 3, 2026. Right knee inflammation."
+          "date": "2026-08-26",
+          "note": "San Diego Padres placed RHP Jeremiah Estrada on the 15-day injured list retroactive to August 25, 2026. Right shoulder impingement. | Status Change",
+          "description": "San Diego Padres placed RHP Jeremiah Estrada on the 15-day injured list retroactive to August 25, 2026. Right shoulder impingement."
         },
         {
           "player_id": 666745,
@@ -3925,15 +3933,23 @@
     {
       "team_id": 137,
       "team_name": "San Francisco Giants",
-      "injured_count": 26,
+      "injured_count": 27,
       "players": [
+        {
+          "player_id": 605288,
+          "name": "Adrian Houser",
+          "il_type": "Injured List",
+          "date": "2026-08-26",
+          "note": "San Francisco Giants placed RHP Adrian Houser on the 15-day injured list. Right forearm strain. | Status Change",
+          "description": "San Francisco Giants placed RHP Adrian Houser on the 15-day injured list. Right forearm strain."
+        },
         {
           "player_id": 687931,
           "name": "Carson Whisenhunt",
           "il_type": "Injured List",
-          "date": "2026-08-25",
-          "note": "San Francisco Giants placed LHP Carson Whisenhunt on the 15-day injured list. Left elbow sprain. | Status Change",
-          "description": "San Francisco Giants placed LHP Carson Whisenhunt on the 15-day injured list. Left elbow sprain."
+          "date": "2026-08-26",
+          "note": "San Francisco Giants transferred LHP Carson Whisenhunt from the 15-day injured list to the 60-day injured list. Left elbow sprain. | Status Change",
+          "description": "San Francisco Giants transferred LHP Carson Whisenhunt from the 15-day injured list to the 60-day injured list. Left elbow sprain."
         },
         {
           "player_id": 669477,
@@ -5099,7 +5115,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Injury Watch",
+      "title": "Tampa Bay Rays Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Arizona Diamondbacks Finishes Off Chicago Cubs",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Baltimore Orioles Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

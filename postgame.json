@@ -1,6 +1,95 @@
 {
-  "updated_at": "2026-08-26T14:26:53.453706-04:00",
-  "games": [],
+  "updated_at": "2026-08-26T20:43:53.060503-04:00",
+  "games": [
+    {
+      "gamePk": 824234,
+      "game": "Tampa Bay Rays @ Detroit Tigers",
+      "winner": "Tampa Bay Rays",
+      "loser": "Detroit Tigers",
+      "final_score": "3-0",
+      "hitters": [
+        "Jonathan Aranda",
+        "Junior Caminero"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 825039,
+      "game": "Chicago Cubs @ Arizona Diamondbacks",
+      "winner": "Arizona Diamondbacks",
+      "loser": "Chicago Cubs",
+      "final_score": "0-2",
+      "hitters": [
+        "Geraldo Perdomo",
+        "Jordan Lawlar"
+      ],
+      "pitchers": [
+        "Eduardo Rodriguez"
+      ]
+    },
+    {
+      "gamePk": 823180,
+      "game": "Cincinnati Reds @ San Francisco Giants",
+      "winner": "Cincinnati Reds",
+      "loser": "San Francisco Giants",
+      "final_score": "10-9",
+      "hitters": [
+        "H\u00e9ctor Rodr\u00edguez",
+        "Elly De La Cruz",
+        "Eugenio Su\u00e1rez",
+        "Dane Myers",
+        "Jonah Cox",
+        "Rafael Devers",
+        "Turner Hill",
+        "Shay Whitcomb"
+      ],
+      "pitchers": [
+        "Logan Webb"
+      ]
+    },
+    {
+      "gamePk": 823988,
+      "game": "Cleveland Guardians @ Los Angeles Angels",
+      "winner": "Cleveland Guardians",
+      "loser": "Los Angeles Angels",
+      "final_score": "4-3",
+      "hitters": [
+        "Steven Kwan",
+        "Travis Bazzana",
+        "Jos\u00e9 Ram\u00edrez",
+        "Nathaniel Lowe",
+        "Brayan Rocchio"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823255,
+      "game": "Pittsburgh Pirates @ San Diego Padres",
+      "winner": "San Diego Padres",
+      "loser": "Pittsburgh Pirates",
+      "final_score": "0-3",
+      "hitters": [
+        "Spencer Horwitz",
+        "Jackson Merrill"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823096,
+      "game": "Philadelphia Phillies @ Seattle Mariners",
+      "winner": "Philadelphia Phillies",
+      "loser": "Seattle Mariners",
+      "final_score": "6-0",
+      "hitters": [
+        "Kyle Schwarber",
+        "Bryce Harper",
+        "Bryson Stott"
+      ],
+      "pitchers": [
+        "Jes\u00fas Luzardo"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +113,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Injury Watch",
+      "title": "Tampa Bay Rays Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Arizona Diamondbacks Finishes Off Chicago Cubs",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Baltimore Orioles Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
