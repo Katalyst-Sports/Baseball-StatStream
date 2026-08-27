@@ -1,6 +1,23 @@
 {
-  "updated_at": "2026-08-27T06:37:29.065666-04:00",
-  "games": [],
+  "updated_at": "2026-08-27T16:45:57.825996-04:00",
+  "games": [
+    {
+      "gamePk": 822694,
+      "game": "Colorado Rockies @ Washington Nationals",
+      "winner": "Washington Nationals",
+      "loser": "Colorado Rockies",
+      "final_score": "1-7",
+      "hitters": [
+        "Dylan Crews",
+        "Daylen Lile",
+        "Keibert Ruiz",
+        "Jacob Young"
+      ],
+      "pitchers": [
+        "Jake Irvin"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,12 +41,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Washington Nationals Finishes Off Colorado Rockies",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Miami Marlins Makes Roster Move",
+      "title": "Kansas City Royals Injury Watch",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Tampa Bay Rays Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

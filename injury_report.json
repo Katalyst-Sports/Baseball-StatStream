@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T06:37:29.065666-04:00",
+  "updated_at": "2026-08-27T16:45:57.825996-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2238,9 +2238,9 @@
           "player_id": 686681,
           "name": "Michael Massey",
           "il_type": "Injured List",
-          "date": "2026-03-25",
-          "note": "Kansas City Royals placed 2B Michael Massey on the 10-day injured list retroactive to March 22, 2026. Left calf strain. | Status Change",
-          "description": "Kansas City Royals placed 2B Michael Massey on the 10-day injured list retroactive to March 22, 2026. Left calf strain."
+          "date": "2026-08-27",
+          "note": "Kansas City Royals placed 2B Michael Massey on the 7-day injured list retroactive to August 26, 2026. Concussion. | Status Change",
+          "description": "Kansas City Royals placed 2B Michael Massey on the 7-day injured list retroactive to August 26, 2026. Concussion."
         },
         {
           "player_id": 683232,
@@ -4315,7 +4315,7 @@
     {
       "team_id": 138,
       "team_name": "St. Louis Cardinals",
-      "injured_count": 10,
+      "injured_count": 11,
       "players": [
         {
           "player_id": 669467,
@@ -4380,6 +4380,14 @@
           "date": "2026-05-22",
           "note": "St. Louis Cardinals placed LF Nathan Church on the 10-day injured list retroactive to May 21, 2026. Left shoulder strain. | Status Change",
           "description": "St. Louis Cardinals placed LF Nathan Church on the 10-day injured list retroactive to May 21, 2026. Left shoulder strain."
+        },
+        {
+          "player_id": 657265,
+          "name": "Peter Strzelecki",
+          "il_type": "Injured List",
+          "date": "2026-08-27",
+          "note": "St. Louis Cardinals placed RHP Peter Strzelecki on the 15-day injured list retroactive to August 26, 2026. Right forearm extensor inflammation. | Status Change",
+          "description": "St. Louis Cardinals placed RHP Peter Strzelecki on the 15-day injured list retroactive to August 26, 2026. Right forearm extensor inflammation."
         },
         {
           "player_id": 602104,
@@ -5115,12 +5123,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Washington Nationals Finishes Off Colorado Rockies",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Miami Marlins Makes Roster Move",
+      "title": "Kansas City Royals Injury Watch",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Tampa Bay Rays Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
