@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T16:45:57.825996-04:00",
+  "updated_at": "2026-08-28T00:55:28.432951-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2478,7 +2478,7 @@
     {
       "team_id": 119,
       "team_name": "Los Angeles Dodgers",
-      "injured_count": 22,
+      "injured_count": 23,
       "players": [
         {
           "player_id": 681624,
@@ -2615,6 +2615,14 @@
           "date": "2026-04-05",
           "note": "Los Angeles Dodgers placed SS Mookie Betts on the 10-day injured list. Right oblique strain. | Status Change",
           "description": "Los Angeles Dodgers placed SS Mookie Betts on the 10-day injured list. Right oblique strain."
+        },
+        {
+          "player_id": 808963,
+          "name": "Roki Sasaki",
+          "il_type": "Injured List",
+          "date": "2026-08-27",
+          "note": "Los Angeles Dodgers placed RHP Roki Sasaki on the 15-day injured list. Right middle finger blister. | Status Change",
+          "description": "Los Angeles Dodgers placed RHP Roki Sasaki on the 15-day injured list. Right middle finger blister."
         },
         {
           "player_id": 606192,
@@ -4862,9 +4870,9 @@
           "player_id": 682729,
           "name": "Jonatan Clase",
           "il_type": "Injured List",
-          "date": "2026-07-22",
-          "note": "Toronto Blue Jays placed LF Jonatan Clase on the 10-day injured list retroactive to July 21, 2026. Left plantar fasciitis. | Status Change",
-          "description": "Toronto Blue Jays placed LF Jonatan Clase on the 10-day injured list retroactive to July 21, 2026. Left plantar fasciitis."
+          "date": "2026-08-27",
+          "note": "Toronto Blue Jays transferred LF Jonatan Clase from the 10-day injured list to the 60-day injured list. Left plantar fasciitis. | Status Change",
+          "description": "Toronto Blue Jays transferred LF Jonatan Clase from the 10-day injured list to the 60-day injured list. Left plantar fasciitis."
         },
         {
           "player_id": 669701,
@@ -5103,37 +5111,32 @@
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 3-0 Win",
+      "title": "Washington Nationals Takes 1-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Arizona Diamondbacks Takes 0-2 Win",
+      "title": "St. Louis Cardinals Takes 5-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Cincinnati Reds Takes 10-9 Win",
+      "title": "Houston Astros Takes 5-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 4-3 Win",
+      "title": "Kansas City Royals Takes 13-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Washington Nationals Finishes Off Colorado Rockies",
+      "title": "Toronto Blue Jays Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Kansas City Royals Injury Watch",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Makes Roster Move",
+      "title": "Miami Marlins Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
