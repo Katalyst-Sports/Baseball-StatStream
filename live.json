@@ -1,106 +1,91 @@
 {
-  "updated_at": "2026-08-29T15:51:12.218436-04:00",
+  "updated_at": "2026-08-29T18:11:47.578147-04:00",
   "games": [
-    {
-      "gamePk": 823539,
-      "game": "Boston Red Sox @ New York Yankees",
-      "score": "6-0",
-      "inning": "9th",
-      "hot_hitters": [
-        "Wilyer Abreu",
-        "Adley Rutschman",
-        "Nick Sogard"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824230,
-      "game": "Los Angeles Dodgers @ Detroit Tigers",
-      "score": "1-1",
-      "inning": "9th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823665,
-      "game": "Chicago White Sox @ Minnesota Twins",
-      "score": "3-2",
-      "inning": "6th",
-      "hot_hitters": [
-        "Andrew Benintendi"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823011,
-      "game": "Pittsburgh Pirates @ St. Louis Cardinals",
-      "score": "5-1",
-      "inning": "5th",
-      "hot_hitters": [
-        "Brandon Lowe",
-        "Oneil Cruz",
-        "Jake Mangum",
-        "Rafael Flores Jr.",
-        "Joshua B\u00e1ez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824637,
-      "game": "Cincinnati Reds @ Chicago Cubs",
-      "score": "5-7",
-      "inning": "5th",
-      "hot_hitters": [
-        "Sal Stewart",
-        "Eugenio Su\u00e1rez",
-        "TJ Friedl",
-        "Pete Crow-Armstrong",
-        "Seiya Suzuki",
-        "Alex Bregman",
-        "Tyrone Taylor"
-      ],
-      "top_pitchers": [
-        "Kevin Gausman"
-      ]
-    },
     {
       "gamePk": 822770,
       "game": "Seattle Mariners @ Toronto Blue Jays",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "3-4",
+      "inning": "8th",
+      "hot_hitters": [
+        "Josh Naylor",
+        "Cal Raleigh",
+        "Myles Straw"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 823177,
       "game": "Arizona Diamondbacks @ San Francisco Giants",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
+      "score": "4-0",
+      "inning": "8th",
+      "hot_hitters": [
+        "Gabriel Moreno",
+        "Lars Nootbaar"
+      ],
+      "top_pitchers": [
+        "Merrill Kelly"
+      ]
     },
     {
       "gamePk": 822690,
       "game": "Miami Marlins @ Washington Nationals",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "4-4",
+      "inning": "7th",
+      "hot_hitters": [
+        "Heriberto Hern\u00e1ndez",
+        "Abimelec Ortiz",
+        "Brady House"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824392,
+      "game": "Kansas City Royals @ Cleveland Guardians",
+      "score": "6-2",
+      "inning": "8th",
+      "hot_hitters": [
+        "Salvador Perez",
+        "Nick Loftin",
+        "Angel Mart\u00ednez"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 823582,
       "game": "Houston Astros @ New York Mets",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "1-4",
+      "inning": "7th",
+      "hot_hitters": [
+        "Jared Young",
+        "Brett Baty"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 822936,
       "game": "San Diego Padres @ Tampa Bay Rays",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "6-6",
+      "inning": "7th",
+      "hot_hitters": [
+        "Manny Machado",
+        "Ty France",
+        "Dustin Harris",
+        "Yandy D\u00edaz",
+        "Jonathan Aranda",
+        "Junior Caminero",
+        "Liam Hicks",
+        "Taylor Walls"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824874,
+      "game": "Colorado Rockies @ Atlanta Braves",
+      "score": "1-0",
+      "inning": "7th",
+      "hot_hitters": [
+        "Connor Norby"
+      ],
       "top_pitchers": []
     }
   ],
@@ -123,6 +108,16 @@
     {
       "stage": "generated_news_item",
       "title": "Kansas City Royals Takes 3-0 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Boston Red Sox Finishes Off New York Yankees",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Detroit Tigers Finishes Off Los Angeles Dodgers",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

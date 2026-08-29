@@ -1,6 +1,81 @@
 {
-  "updated_at": "2026-08-29T15:51:12.218436-04:00",
-  "games": [],
+  "updated_at": "2026-08-29T18:11:47.578147-04:00",
+  "games": [
+    {
+      "gamePk": 823539,
+      "game": "Boston Red Sox @ New York Yankees",
+      "winner": "Boston Red Sox",
+      "loser": "New York Yankees",
+      "final_score": "6-0",
+      "hitters": [
+        "Wilyer Abreu",
+        "Adley Rutschman",
+        "Nick Sogard"
+      ],
+      "pitchers": [
+        "Jake Bennett"
+      ]
+    },
+    {
+      "gamePk": 824230,
+      "game": "Los Angeles Dodgers @ Detroit Tigers",
+      "winner": "Detroit Tigers",
+      "loser": "Los Angeles Dodgers",
+      "final_score": "1-2",
+      "hitters": [],
+      "pitchers": [
+        "Blake Snell"
+      ]
+    },
+    {
+      "gamePk": 823665,
+      "game": "Chicago White Sox @ Minnesota Twins",
+      "winner": "Chicago White Sox",
+      "loser": "Minnesota Twins",
+      "final_score": "3-2",
+      "hitters": [
+        "Andrew Benintendi"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823011,
+      "game": "Pittsburgh Pirates @ St. Louis Cardinals",
+      "winner": "Pittsburgh Pirates",
+      "loser": "St. Louis Cardinals",
+      "final_score": "6-2",
+      "hitters": [
+        "Brandon Lowe",
+        "Nick Gonzales",
+        "Oneil Cruz",
+        "Jake Mangum",
+        "Rafael Flores Jr.",
+        "Joshua B\u00e1ez"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824637,
+      "game": "Cincinnati Reds @ Chicago Cubs",
+      "winner": "Chicago Cubs",
+      "loser": "Cincinnati Reds",
+      "final_score": "5-17",
+      "hitters": [
+        "Sal Stewart",
+        "Eugenio Su\u00e1rez",
+        "TJ Friedl",
+        "Pete Crow-Armstrong",
+        "Seiya Suzuki",
+        "Alex Bregman",
+        "Tyrone Taylor",
+        "Pedro Ram\u00edrez",
+        "Carson Kelly"
+      ],
+      "pitchers": [
+        "Kevin Gausman"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +95,16 @@
     {
       "stage": "generated_news_item",
       "title": "Kansas City Royals Takes 3-0 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Boston Red Sox Finishes Off New York Yankees",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Detroit Tigers Finishes Off Los Angeles Dodgers",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
