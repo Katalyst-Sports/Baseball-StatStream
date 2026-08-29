@@ -1,6 +1,144 @@
 {
-  "updated_at": "2026-08-28T13:15:32.606666-04:00",
-  "games": [],
+  "updated_at": "2026-08-28T21:00:34.400294-04:00",
+  "games": [
+    {
+      "gamePk": 824231,
+      "game": "Los Angeles Dodgers @ Detroit Tigers",
+      "score": "2-1",
+      "inning": "8th",
+      "hot_hitters": [
+        "Freddie Freeman",
+        "Teoscar Hern\u00e1ndez",
+        "Gleyber Torres"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822691,
+      "game": "Miami Marlins @ Washington Nationals",
+      "score": "1-9",
+      "inning": "7th",
+      "hot_hitters": [
+        "Abimelec Ortiz",
+        "Brady House",
+        "Harry Ford"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824396,
+      "game": "Kansas City Royals @ Cleveland Guardians",
+      "score": "1-0",
+      "inning": "8th",
+      "hot_hitters": [
+        "Jac Caglianone",
+        "Patrick Bailey"
+      ],
+      "top_pitchers": [
+        "Michael Wacha"
+      ]
+    },
+    {
+      "gamePk": 823583,
+      "game": "Houston Astros @ New York Mets",
+      "score": "3-1",
+      "inning": "6th",
+      "hot_hitters": [],
+      "top_pitchers": [
+        "Hunter Brown"
+      ]
+    },
+    {
+      "gamePk": 822935,
+      "game": "San Diego Padres @ Tampa Bay Rays",
+      "score": "4-8",
+      "inning": "7th",
+      "hot_hitters": [
+        "Jackson Merrill",
+        "Yandy D\u00edaz",
+        "Chandler Simpson",
+        "Taylor Walls"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822769,
+      "game": "Seattle Mariners @ Toronto Blue Jays",
+      "score": "1-6",
+      "inning": "6th",
+      "hot_hitters": [
+        "Dominic Canzone",
+        "Brett Bateman",
+        "Nathan Lukes",
+        "George Springer",
+        "Kazuma Okamoto"
+      ],
+      "top_pitchers": [
+        "Dylan Cease"
+      ]
+    },
+    {
+      "gamePk": 824877,
+      "game": "Colorado Rockies @ Atlanta Braves",
+      "score": "3-6",
+      "inning": "5th",
+      "hot_hitters": [
+        "Zac Veen",
+        "Drake Baldwin",
+        "Ronald Acu\u00f1a Jr.",
+        "Michael Harris II",
+        "Mauricio Dub\u00f3n"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823504,
+      "game": "Boston Red Sox @ New York Yankees",
+      "score": "0-1",
+      "inning": "6th",
+      "hot_hitters": [
+        "Paul Goldschmidt"
+      ],
+      "top_pitchers": [
+        "Patrick Sandoval",
+        "Cam Schlittler"
+      ]
+    },
+    {
+      "gamePk": 823744,
+      "game": "Texas Rangers @ Milwaukee Brewers",
+      "score": "1-2",
+      "inning": "5th",
+      "hot_hitters": [
+        "Danny Jansen",
+        "Jake Bauers"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823666,
+      "game": "Chicago White Sox @ Minnesota Twins",
+      "score": "5-4",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Andrew Benintendi",
+        "Colson Montgomery",
+        "Brooks Lee",
+        "Kody Clemens"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823013,
+      "game": "Pittsburgh Pirates @ St. Louis Cardinals",
+      "score": "0-2",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Jimmy Crooks"
+      ],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,12 +162,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Toronto Blue Jays Injury Watch",
+      "title": "Cincinnati Reds Finishes Off Chicago Cubs",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Makes Roster Move",
+      "title": "St. Louis Cardinals Injury Watch",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Miami Marlins Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

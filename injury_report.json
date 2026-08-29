@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T13:15:32.606666-04:00",
+  "updated_at": "2026-08-28T21:00:34.400294-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -1315,9 +1315,9 @@
           "player_id": 663647,
           "name": "Ke'Bryan Hayes",
           "il_type": "Injured List",
-          "date": "2026-05-22",
-          "note": "Cincinnati Reds placed 3B Ke'Bryan Hayes on the 10-day injured list retroactive to May 21, 2026. Lumbar bulging disc. | Status Change",
-          "description": "Cincinnati Reds placed 3B Ke'Bryan Hayes on the 10-day injured list retroactive to May 21, 2026. Lumbar bulging disc."
+          "date": "2026-08-28",
+          "note": "Cincinnati Reds placed 3B Ke'Bryan Hayes on the 10-day injured list retroactive to August 27, 2026. Left groin strain. | Status Change",
+          "description": "Cincinnati Reds placed 3B Ke'Bryan Hayes on the 10-day injured list retroactive to August 27, 2026. Left groin strain."
         },
         {
           "player_id": 680574,
@@ -3280,9 +3280,9 @@
           "player_id": 593871,
           "name": "Jorge Polanco",
           "il_type": "Injured List",
-          "date": "2026-08-19",
-          "note": "New York Mets placed DH Jorge Polanco on the 10-day injured list. Left ankle bursitis. | Status Change",
-          "description": "New York Mets placed DH Jorge Polanco on the 10-day injured list. Left ankle bursitis."
+          "date": "2026-08-28",
+          "note": "New York Mets transferred DH Jorge Polanco from the 10-day injured list to the 60-day injured list. | Status Change",
+          "description": "New York Mets transferred DH Jorge Polanco from the 10-day injured list to the 60-day injured list."
         },
         {
           "player_id": 665742,
@@ -4323,7 +4323,7 @@
     {
       "team_id": 138,
       "team_name": "St. Louis Cardinals",
-      "injured_count": 11,
+      "injured_count": 12,
       "players": [
         {
           "player_id": 669467,
@@ -4332,6 +4332,14 @@
           "date": "2026-08-21",
           "note": "St. Louis Cardinals placed RHP Andre Pallante on the 15-day injured list retroactive to August 18, 2026. Right elbow inflammation. | Status Change",
           "description": "St. Louis Cardinals placed RHP Andre Pallante on the 15-day injured list retroactive to August 18, 2026. Right elbow inflammation."
+        },
+        {
+          "player_id": 691458,
+          "name": "Blaze Jordan",
+          "il_type": "Injured List",
+          "date": "2026-08-28",
+          "note": "St. Louis Cardinals placed 3B Blaze Jordan on the 10-day injured list. Left ankle sprain. | Status Change",
+          "description": "St. Louis Cardinals placed 3B Blaze Jordan on the 10-day injured list. Left ankle sprain."
         },
         {
           "player_id": 677592,
@@ -5131,12 +5139,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Toronto Blue Jays Injury Watch",
+      "title": "Cincinnati Reds Finishes Off Chicago Cubs",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Makes Roster Move",
+      "title": "St. Louis Cardinals Injury Watch",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Miami Marlins Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T13:15:32.606666-04:00",
+  "updated_at": "2026-08-28T21:00:34.400294-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,17 +24,40 @@
       "published": "2026-08-27"
     },
     {
-      "title": "Toronto Blue Jays Injury Watch",
-      "summary": "Toronto Blue Jays logged a roster-health update involving Jonatan Clase.",
-      "published": "2026-08-27"
+      "title": "Cincinnati Reds Finishes Off Chicago Cubs",
+      "summary": "Cincinnati Reds wrapped up a 10-8 result over Chicago Cubs.",
+      "published": "2026-08-28"
     },
     {
-      "title": "Tampa Bay Rays Makes Roster Move",
-      "summary": "Tampa Bay Rays made a transaction involving Unknown Player.",
+      "title": "St. Louis Cardinals Injury Watch",
+      "summary": "St. Louis Cardinals logged a roster-health update involving Blaze Jordan.",
+      "published": "2026-08-28"
+    },
+    {
+      "title": "Miami Marlins Makes Roster Move",
+      "summary": "Miami Marlins made a transaction involving Logan Driscoll.",
       "published": "2026-08-20"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-08-28",
+      "team": "St. Louis Cardinals",
+      "player": "Blaze Jordan",
+      "update": "St. Louis Cardinals placed 3B Blaze Jordan on the 10-day injured list. Left ankle sprain. | Status Change"
+    },
+    {
+      "date": "2026-08-28",
+      "team": "New York Mets",
+      "player": "Jorge Polanco",
+      "update": "New York Mets transferred DH Jorge Polanco from the 10-day injured list to the 60-day injured list. | Status Change"
+    },
+    {
+      "date": "2026-08-28",
+      "team": "Cincinnati Reds",
+      "player": "Ke'Bryan Hayes",
+      "update": "Cincinnati Reds placed 3B Ke'Bryan Hayes on the 10-day injured list retroactive to August 27, 2026. Left groin strain. | Status Change"
+    },
     {
       "date": "2026-08-27",
       "team": "Toronto Blue Jays",
@@ -88,37 +111,19 @@
       "team": "Los Angeles Angels",
       "player": "Gustavo Campero",
       "update": "Los Angeles Angels placed OF Gustavo Campero on the 10-day injured list. Right hamstring strain. | Status Change"
-    },
-    {
-      "date": "2026-08-26",
-      "team": "San Francisco Giants",
-      "player": "Adrian Houser",
-      "update": "San Francisco Giants placed RHP Adrian Houser on the 15-day injured list. Right forearm strain. | Status Change"
-    },
-    {
-      "date": "2026-08-26",
-      "team": "San Francisco Giants",
-      "player": "Carson Whisenhunt",
-      "update": "San Francisco Giants transferred LHP Carson Whisenhunt from the 15-day injured list to the 60-day injured list. Left elbow sprain. | Status Change"
-    },
-    {
-      "date": "2026-08-25",
-      "team": "San Francisco Giants",
-      "player": "Carson Whisenhunt",
-      "update": "San Francisco Giants placed LHP Carson Whisenhunt on the 15-day injured list. Left elbow sprain. | Status Change"
     }
   ],
   "trade_updates": [
     {
       "date": "2026-08-20",
-      "team": "Tampa Bay Rays",
-      "player": "Unknown Player",
+      "team": "Miami Marlins",
+      "player": "Logan Driscoll",
       "update": "Tampa Bay Rays traded C Logan Driscoll to Miami Marlins for cash. | Trade"
     },
     {
       "date": "2026-08-20",
-      "team": "Miami Marlins",
-      "player": "Logan Driscoll",
+      "team": "Tampa Bay Rays",
+      "player": "Unknown Player",
       "update": "Tampa Bay Rays traded C Logan Driscoll to Miami Marlins for cash. | Trade"
     },
     {
