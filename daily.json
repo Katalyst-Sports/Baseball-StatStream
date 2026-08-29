@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T09:26:37.660394-04:00",
+  "updated_at": "2026-08-29T13:20:20.251649-04:00",
   "games": [
     {
       "gamePk": 823539,
@@ -7,7 +7,7 @@
       "home_team": "New York Yankees",
       "venue": "Yankee Stadium",
       "start": "2026-08-29T17:05:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 687562,
         "name": "Jake Bennett",
@@ -62,8 +62,8 @@
         "id": 607074,
         "name": "Carlos Rod\u00f3n",
         "hand": "L",
-        "era": "3.15",
-        "whip": "1.21",
+        "era": "3.27",
+        "whip": "1.22",
         "last3": {
           "starts": [
             {
@@ -152,12 +152,12 @@
         {
           "name": "Wilyer Abreu",
           "stats": {
-            "avg": ".255",
-            "obp": ".334",
-            "slg": ".463",
-            "ops": ".797",
-            "homeRuns": 22,
-            "rbi": 69
+            "avg": ".256",
+            "obp": ".335",
+            "slg": ".470",
+            "ops": ".805",
+            "homeRuns": 23,
+            "rbi": 70
           },
           "last10ab": {
             "avg": "0.462",
@@ -174,8 +174,8 @@
           "stats": {
             "avg": ".287",
             "obp": ".324",
-            "slg": ".455",
-            "ops": ".779",
+            "slg": ".454",
+            "ops": ".778",
             "homeRuns": 16,
             "rbi": 66
           },
@@ -575,12 +575,12 @@
         {
           "name": "Wilyer Abreu",
           "stats": {
-            "avg": ".255",
-            "obp": ".334",
-            "slg": ".463",
-            "ops": ".797",
-            "homeRuns": 22,
-            "rbi": 69
+            "avg": ".256",
+            "obp": ".335",
+            "slg": ".470",
+            "ops": ".805",
+            "homeRuns": 23,
+            "rbi": 70
           },
           "last10ab": {
             "avg": "0.462",
@@ -597,8 +597,8 @@
           "stats": {
             "avg": ".287",
             "obp": ".324",
-            "slg": ".455",
-            "ops": ".779",
+            "slg": ".454",
+            "ops": ".778",
             "homeRuns": 16,
             "rbi": 66
           },
@@ -902,13 +902,13 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-08-29T17:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 605483,
         "name": "Blake Snell",
         "hand": "L",
-        "era": "2.57",
-        "whip": "1.05",
+        "era": "2.53",
+        "whip": "1.03",
         "last3": {
           "starts": [
             {
@@ -957,8 +957,8 @@
         "id": 672456,
         "name": "Keider Montero",
         "hand": "R",
-        "era": "3.30",
-        "whip": "1.00",
+        "era": "3.27",
+        "whip": "0.99",
         "last3": {
           "starts": [
             {
@@ -1007,10 +1007,10 @@
         {
           "name": "Shohei Ohtani",
           "stats": {
-            "avg": ".283",
-            "obp": ".384",
-            "slg": ".537",
-            "ops": ".921",
+            "avg": ".282",
+            "obp": ".383",
+            "slg": ".536",
+            "ops": ".919",
             "homeRuns": 30,
             "rbi": 80
           },
@@ -1047,10 +1047,10 @@
         {
           "name": "Freddie Freeman",
           "stats": {
-            "avg": ".302",
-            "obp": ".374",
-            "slg": ".459",
-            "ops": ".833",
+            "avg": ".301",
+            "obp": ".373",
+            "slg": ".458",
+            "ops": ".831",
             "homeRuns": 15,
             "rbi": 62
           },
@@ -1128,9 +1128,9 @@
           "name": "Mookie Betts",
           "stats": {
             "avg": ".239",
-            "obp": ".300",
-            "slg": ".405",
-            "ops": ".705",
+            "obp": ".299",
+            "slg": ".404",
+            "ops": ".703",
             "homeRuns": 16,
             "rbi": 47
           },
@@ -1329,10 +1329,10 @@
         {
           "name": "Hao-Yu Lee",
           "stats": {
-            "avg": ".268",
-            "obp": ".310",
-            "slg": ".417",
-            "ops": ".727",
+            "avg": ".267",
+            "obp": ".308",
+            "slg": ".415",
+            "ops": ".723",
             "homeRuns": 7,
             "rbi": 33
           },
@@ -5317,6 +5317,26 @@
       ],
       "home_hitters": [
         {
+          "name": "Juan Soto",
+          "stats": {
+            "avg": ".283",
+            "obp": ".408",
+            "slg": ".539",
+            "ops": ".947",
+            "homeRuns": 21,
+            "rbi": 52
+          },
+          "last10ab": {
+            "avg": "0.357",
+            "hits": 5,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Carson Benge",
           "stats": {
             "avg": ".279",
@@ -5474,26 +5494,6 @@
             "rbi": 3,
             "walks": 4,
             "games": 4
-          }
-        },
-        {
-          "name": "Brett Baty",
-          "stats": {
-            "avg": ".219",
-            "obp": ".292",
-            "slg": ".334",
-            "ops": ".626",
-            "homeRuns": 8,
-            "rbi": 40
-          },
-          "last10ab": {
-            "avg": "0.308",
-            "hits": 4,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 0,
-            "games": 3
           }
         }
       ]
