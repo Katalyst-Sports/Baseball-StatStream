@@ -1,6 +1,95 @@
 {
-  "updated_at": "2026-08-30T11:02:42.128312-04:00",
-  "games": [],
+  "updated_at": "2026-08-30T14:35:27.983893-04:00",
+  "games": [
+    {
+      "gamePk": 822688,
+      "game": "Miami Marlins @ Washington Nationals",
+      "score": "0-1",
+      "inning": "8th",
+      "hot_hitters": [
+        "Agust\u00edn Ram\u00edrez"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824876,
+      "game": "Colorado Rockies @ Atlanta Braves",
+      "score": "0-2",
+      "inning": "4th",
+      "hot_hitters": [
+        "Sean Murphy"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823502,
+      "game": "Boston Red Sox @ New York Yankees",
+      "score": "0-0",
+      "inning": "4th",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822766,
+      "game": "Seattle Mariners @ Toronto Blue Jays",
+      "score": "0-2",
+      "inning": "4th",
+      "hot_hitters": [
+        "Alejandro Kirk"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824393,
+      "game": "Kansas City Royals @ Cleveland Guardians",
+      "score": "1-3",
+      "inning": "1st",
+      "hot_hitters": [
+        "Nathaniel Lowe"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824232,
+      "game": "Los Angeles Dodgers @ Detroit Tigers",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822933,
+      "game": "San Diego Padres @ Tampa Bay Rays",
+      "score": "2-0",
+      "inning": "4th",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823662,
+      "game": "Chicago White Sox @ Minnesota Twins",
+      "score": "0-3",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823740,
+      "game": "Texas Rangers @ Milwaukee Brewers",
+      "score": "0-2",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823010,
+      "game": "Pittsburgh Pirates @ St. Louis Cardinals",
+      "score": "0-0",
+      "inning": "2nd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +113,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "St. Louis Cardinals Injury Watch",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
