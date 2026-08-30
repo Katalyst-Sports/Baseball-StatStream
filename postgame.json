@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T18:11:47.578147-04:00",
+  "updated_at": "2026-08-29T20:23:38.234913-04:00",
   "games": [
     {
       "gamePk": 823539,
@@ -74,6 +74,115 @@
       "pitchers": [
         "Kevin Gausman"
       ]
+    },
+    {
+      "gamePk": 822770,
+      "game": "Seattle Mariners @ Toronto Blue Jays",
+      "winner": "Toronto Blue Jays",
+      "loser": "Seattle Mariners",
+      "final_score": "3-4",
+      "hitters": [
+        "Josh Naylor",
+        "Cal Raleigh",
+        "Myles Straw"
+      ],
+      "pitchers": [
+        "Jos\u00e9 Soriano"
+      ]
+    },
+    {
+      "gamePk": 823177,
+      "game": "Arizona Diamondbacks @ San Francisco Giants",
+      "winner": "Arizona Diamondbacks",
+      "loser": "San Francisco Giants",
+      "final_score": "7-1",
+      "hitters": [
+        "Gabriel Moreno",
+        "Lars Nootbaar",
+        "Rafael Devers",
+        "Jung Hoo Lee"
+      ],
+      "pitchers": [
+        "Merrill Kelly"
+      ]
+    },
+    {
+      "gamePk": 822690,
+      "game": "Miami Marlins @ Washington Nationals",
+      "winner": "Washington Nationals",
+      "loser": "Miami Marlins",
+      "final_score": "4-5",
+      "hitters": [
+        "Heriberto Hern\u00e1ndez",
+        "Abimelec Ortiz",
+        "Dylan Crews",
+        "Brady House"
+      ],
+      "pitchers": [
+        "Cade Cavalli"
+      ]
+    },
+    {
+      "gamePk": 824392,
+      "game": "Kansas City Royals @ Cleveland Guardians",
+      "winner": "Kansas City Royals",
+      "loser": "Cleveland Guardians",
+      "final_score": "8-3",
+      "hitters": [
+        "Jac Caglianone",
+        "Salvador Perez",
+        "Nick Loftin",
+        "Josh Rojas",
+        "Angel Mart\u00ednez"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823582,
+      "game": "Houston Astros @ New York Mets",
+      "winner": "New York Mets",
+      "loser": "Houston Astros",
+      "final_score": "2-6",
+      "hitters": [
+        "Yordan Alvarez",
+        "Jared Young",
+        "Marcus Semien",
+        "Brett Baty"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 822936,
+      "game": "San Diego Padres @ Tampa Bay Rays",
+      "winner": "Tampa Bay Rays",
+      "loser": "San Diego Padres",
+      "final_score": "6-7",
+      "hitters": [
+        "Manny Machado",
+        "Ty France",
+        "Dustin Harris",
+        "Yandy D\u00edaz",
+        "Jonathan Aranda",
+        "Junior Caminero",
+        "Liam Hicks",
+        "Chandler Simpson",
+        "Taylor Walls"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824874,
+      "game": "Colorado Rockies @ Atlanta Braves",
+      "winner": "Atlanta Braves",
+      "loser": "Colorado Rockies",
+      "final_score": "1-2",
+      "hitters": [
+        "Connor Norby",
+        "Michael Harris II"
+      ],
+      "pitchers": [
+        "Mart\u00edn P\u00e9rez"
+      ]
     }
   ],
   "errors": [
@@ -109,7 +218,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "St. Louis Cardinals Injury Watch",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
