@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T17:32:51.358157-04:00",
+  "updated_at": "2026-08-30T19:49:01.969607-04:00",
   "games": [
     {
       "gamePk": 822688,
@@ -127,6 +127,24 @@
       "pitchers": []
     },
     {
+      "gamePk": 823740,
+      "game": "Texas Rangers @ Milwaukee Brewers",
+      "winner": "Texas Rangers",
+      "loser": "Milwaukee Brewers",
+      "final_score": "7-4",
+      "hitters": [
+        "Joc Pederson",
+        "Ezequiel Duran",
+        "Cody Freeman",
+        "Elias D\u00edaz",
+        "Gary S\u00e1nchez",
+        "Joey Ortiz"
+      ],
+      "pitchers": [
+        "Kumar Rocker"
+      ]
+    },
+    {
       "gamePk": 823010,
       "game": "Pittsburgh Pirates @ St. Louis Cardinals",
       "winner": "Pittsburgh Pirates",
@@ -143,6 +161,57 @@
       ],
       "pitchers": [
         "Matthew Liberatore"
+      ]
+    },
+    {
+      "gamePk": 823580,
+      "game": "Houston Astros @ New York Mets",
+      "winner": "Houston Astros",
+      "loser": "New York Mets",
+      "final_score": "6-3",
+      "hitters": [
+        "Jeremy Pe\u00f1a",
+        "Jose Altuve",
+        "LaMonte Wade Jr.",
+        "Nick Allen",
+        "Francisco Lindor",
+        "Juan Soto",
+        "Bo Bichette"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824959,
+      "game": "Baltimore Orioles @ Athletics",
+      "winner": "Baltimore Orioles",
+      "loser": "Athletics",
+      "final_score": "8-5",
+      "hitters": [
+        "Gunnar Henderson",
+        "Coby Mayo",
+        "Henry Bolte",
+        "Brian Serven"
+      ],
+      "pitchers": [
+        "Jeffrey Springs"
+      ]
+    },
+    {
+      "gamePk": 823987,
+      "game": "Philadelphia Phillies @ Los Angeles Angels",
+      "winner": "Philadelphia Phillies",
+      "loser": "Los Angeles Angels",
+      "final_score": "5-2",
+      "hitters": [
+        "Bryce Harper",
+        "Edmundo Sosa",
+        "J.T. Realmuto",
+        "Wade Meckler",
+        "Oswald Peraza"
+      ],
+      "pitchers": [
+        "Zack Wheeler",
+        "Yusei Kikuchi"
       ]
     }
   ],
@@ -184,7 +253,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Miami Marlins Makes Roster Move",
+      "title": "Tampa Bay Rays Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
