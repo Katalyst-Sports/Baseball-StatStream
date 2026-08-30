@@ -1,6 +1,151 @@
 {
-  "updated_at": "2026-08-30T14:35:27.983893-04:00",
-  "games": [],
+  "updated_at": "2026-08-30T17:32:51.358157-04:00",
+  "games": [
+    {
+      "gamePk": 822688,
+      "game": "Miami Marlins @ Washington Nationals",
+      "winner": "Miami Marlins",
+      "loser": "Washington Nationals",
+      "final_score": "6-2",
+      "hitters": [
+        "Otto Lopez",
+        "Agust\u00edn Ram\u00edrez",
+        "Jorbit Vivas"
+      ],
+      "pitchers": [
+        "Andrew Alvarez"
+      ]
+    },
+    {
+      "gamePk": 824876,
+      "game": "Colorado Rockies @ Atlanta Braves",
+      "winner": "Atlanta Braves",
+      "loser": "Colorado Rockies",
+      "final_score": "2-3",
+      "hitters": [
+        "Jake McCarthy",
+        "Drake Baldwin",
+        "Ronald Acu\u00f1a Jr.",
+        "Sean Murphy"
+      ],
+      "pitchers": [
+        "Tyler Mahle"
+      ]
+    },
+    {
+      "gamePk": 823502,
+      "game": "Boston Red Sox @ New York Yankees",
+      "winner": "New York Yankees",
+      "loser": "Boston Red Sox",
+      "final_score": "1-16",
+      "hitters": [
+        "Roman Anthony",
+        "Wilyer Abreu",
+        "Trevor Story",
+        "Paul Goldschmidt",
+        "Cody Bellinger",
+        "Heliot Ramos",
+        "Amed Rosario",
+        "Jos\u00e9 Caballero",
+        "Jazz Chisholm Jr.",
+        "Austin Wells"
+      ],
+      "pitchers": [
+        "Will Warren"
+      ]
+    },
+    {
+      "gamePk": 822766,
+      "game": "Seattle Mariners @ Toronto Blue Jays",
+      "winner": "Toronto Blue Jays",
+      "loser": "Seattle Mariners",
+      "final_score": "0-7",
+      "hitters": [
+        "Alejandro Kirk",
+        "George Springer",
+        "Kazuma Okamoto"
+      ],
+      "pitchers": [
+        "Max Scherzer"
+      ]
+    },
+    {
+      "gamePk": 824393,
+      "game": "Kansas City Royals @ Cleveland Guardians",
+      "winner": "Cleveland Guardians",
+      "loser": "Kansas City Royals",
+      "final_score": "1-11",
+      "hitters": [
+        "Steven Kwan",
+        "Chase DeLauter",
+        "Jos\u00e9 Ram\u00edrez",
+        "Jo Adell",
+        "Nathaniel Lowe"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824232,
+      "game": "Los Angeles Dodgers @ Detroit Tigers",
+      "winner": "Los Angeles Dodgers",
+      "loser": "Detroit Tigers",
+      "final_score": "6-1",
+      "hitters": [
+        "Freddie Freeman",
+        "Teoscar Hern\u00e1ndez"
+      ],
+      "pitchers": [
+        "Tyler Glasnow"
+      ]
+    },
+    {
+      "gamePk": 822933,
+      "game": "San Diego Padres @ Tampa Bay Rays",
+      "winner": "Tampa Bay Rays",
+      "loser": "San Diego Padres",
+      "final_score": "4-5",
+      "hitters": [
+        "Junior Caminero",
+        "Jonny DeLuca"
+      ],
+      "pitchers": [
+        "Drew Rasmussen"
+      ]
+    },
+    {
+      "gamePk": 823662,
+      "game": "Chicago White Sox @ Minnesota Twins",
+      "winner": "Minnesota Twins",
+      "loser": "Chicago White Sox",
+      "final_score": "1-5",
+      "hitters": [
+        "Sam Antonacci",
+        "Luke Keaschall",
+        "Brooks Lee",
+        "Josh Bell"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823010,
+      "game": "Pittsburgh Pirates @ St. Louis Cardinals",
+      "winner": "Pittsburgh Pirates",
+      "loser": "St. Louis Cardinals",
+      "final_score": "5-4",
+      "hitters": [
+        "Jared Triolo",
+        "Bryan Reynolds",
+        "Brandon Lowe",
+        "Esmerlyn Valdez",
+        "Bryan Torres",
+        "Iv\u00e1n Herrera",
+        "Thomas Saggese"
+      ],
+      "pitchers": [
+        "Matthew Liberatore"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +165,16 @@
     {
       "stage": "generated_news_item",
       "title": "Chicago White Sox Takes 3-2 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Miami Marlins Finishes Off Washington Nationals",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Atlanta Braves Finishes Off Colorado Rockies",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

@@ -1,92 +1,59 @@
 {
-  "updated_at": "2026-08-30T14:35:27.983893-04:00",
+  "updated_at": "2026-08-30T17:32:51.358157-04:00",
   "games": [
-    {
-      "gamePk": 822688,
-      "game": "Miami Marlins @ Washington Nationals",
-      "score": "0-1",
-      "inning": "8th",
-      "hot_hitters": [
-        "Agust\u00edn Ram\u00edrez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824876,
-      "game": "Colorado Rockies @ Atlanta Braves",
-      "score": "0-2",
-      "inning": "4th",
-      "hot_hitters": [
-        "Sean Murphy"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823502,
-      "game": "Boston Red Sox @ New York Yankees",
-      "score": "0-0",
-      "inning": "4th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822766,
-      "game": "Seattle Mariners @ Toronto Blue Jays",
-      "score": "0-2",
-      "inning": "4th",
-      "hot_hitters": [
-        "Alejandro Kirk"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824393,
-      "game": "Kansas City Royals @ Cleveland Guardians",
-      "score": "1-3",
-      "inning": "1st",
-      "hot_hitters": [
-        "Nathaniel Lowe"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824232,
-      "game": "Los Angeles Dodgers @ Detroit Tigers",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822933,
-      "game": "San Diego Padres @ Tampa Bay Rays",
-      "score": "2-0",
-      "inning": "4th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823662,
-      "game": "Chicago White Sox @ Minnesota Twins",
-      "score": "0-3",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
     {
       "gamePk": 823740,
       "game": "Texas Rangers @ Milwaukee Brewers",
-      "score": "0-2",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "7-4",
+      "inning": "9th",
+      "hot_hitters": [
+        "Joc Pederson",
+        "Ezequiel Duran",
+        "Cody Freeman",
+        "Elias D\u00edaz",
+        "Gary S\u00e1nchez",
+        "Joey Ortiz"
+      ],
       "top_pitchers": []
     },
     {
-      "gamePk": 823010,
-      "game": "Pittsburgh Pirates @ St. Louis Cardinals",
-      "score": "0-0",
-      "inning": "2nd",
-      "hot_hitters": [],
+      "gamePk": 823580,
+      "game": "Houston Astros @ New York Mets",
+      "score": "6-3",
+      "inning": "8th",
+      "hot_hitters": [
+        "Jeremy Pe\u00f1a",
+        "Jose Altuve",
+        "LaMonte Wade Jr.",
+        "Nick Allen",
+        "Francisco Lindor",
+        "Juan Soto",
+        "Bo Bichette"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824959,
+      "game": "Baltimore Orioles @ Athletics",
+      "score": "7-5",
+      "inning": "5th",
+      "hot_hitters": [
+        "Gunnar Henderson",
+        "Coby Mayo",
+        "Henry Bolte",
+        "Brian Serven"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823987,
+      "game": "Philadelphia Phillies @ Los Angeles Angels",
+      "score": "1-1",
+      "inning": "6th",
+      "hot_hitters": [
+        "J.T. Realmuto",
+        "Wade Meckler"
+      ],
       "top_pitchers": []
     }
   ],
@@ -109,6 +76,16 @@
     {
       "stage": "generated_news_item",
       "title": "Chicago White Sox Takes 3-2 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Miami Marlins Finishes Off Washington Nationals",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Atlanta Braves Finishes Off Colorado Rockies",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
