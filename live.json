@@ -1,63 +1,30 @@
 {
-  "updated_at": "2026-08-30T22:02:23.119347-04:00",
-  "games": [
-    {
-      "gamePk": 824636,
-      "game": "Cincinnati Reds @ Chicago Cubs",
-      "score": "7-3",
-      "inning": "8th",
-      "hot_hitters": [
-        "Dane Myers",
-        "Elly De La Cruz",
-        "Sal Stewart",
-        "Tyler Stephenson",
-        "H\u00e9ctor Rodr\u00edguez",
-        "Pete Crow-Armstrong",
-        "Ian Happ",
-        "Nico Hoerner"
-      ],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-08-31T04:35:34.435882-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Takes 6-0 Win",
+      "title": "Miami Marlins Takes 6-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Takes 2-9 Win",
+      "title": "Atlanta Braves Takes 2-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Detroit Tigers Takes 1-2 Win",
+      "title": "New York Yankees Takes 1-16 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Chicago White Sox Takes 3-2 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Miami Marlins Finishes Off Washington Nationals",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Atlanta Braves Finishes Off Colorado Rockies",
+      "title": "Toronto Blue Jays Takes 0-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
       "title": "San Francisco Giants Injury Watch",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
