@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T12:22:26.338004-04:00",
+  "updated_at": "2026-08-31T17:32:32.889058-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -688,7 +688,7 @@
     {
       "team_id": 111,
       "team_name": "Boston Red Sox",
-      "injured_count": 24,
+      "injured_count": 25,
       "players": [
         {
           "player_id": 668939,
@@ -873,6 +873,14 @@
           "date": "2026-04-22",
           "note": "Boston Red Sox transferred 1B Triston Casas from the 10-day injured list to the 60-day injured list. Recovery from left patellar tendon repair. | Status Change",
           "description": "Boston Red Sox transferred 1B Triston Casas from the 10-day injured list to the 60-day injured list. Recovery from left patellar tendon repair."
+        },
+        {
+          "player_id": 575929,
+          "name": "Willson Contreras",
+          "il_type": "Injured List",
+          "date": "2026-08-31",
+          "note": "Boston Red Sox placed 1B Willson Contreras on the 10-day injured list. Left hamstring strain. | Status Change",
+          "description": "Boston Red Sox placed 1B Willson Contreras on the 10-day injured list. Left hamstring strain."
         },
         {
           "player_id": 677161,
@@ -2677,7 +2685,7 @@
     {
       "team_id": 146,
       "team_name": "Miami Marlins",
-      "injured_count": 20,
+      "injured_count": 21,
       "players": [
         {
           "player_id": 800049,
@@ -2838,13 +2846,21 @@
           "date": "2026-08-21",
           "note": "Miami Marlins transferred RHP William Kempner from the 15-day injured list to the 60-day injured list. Right elbow sprain. | Status Change",
           "description": "Miami Marlins transferred RHP William Kempner from the 15-day injured list to the 60-day injured list. Right elbow sprain."
+        },
+        {
+          "player_id": 669364,
+          "name": "Xavier Edwards",
+          "il_type": "Injured List",
+          "date": "2026-08-31",
+          "note": "Miami Marlins placed 2B Xavier Edwards on the 10-day injured list. Left thumb sprain. | Status Change",
+          "description": "Miami Marlins placed 2B Xavier Edwards on the 10-day injured list. Left thumb sprain."
         }
       ]
     },
     {
       "team_id": 158,
       "team_name": "Milwaukee Brewers",
-      "injured_count": 23,
+      "injured_count": 24,
       "players": [
         {
           "player_id": 682842,
@@ -2901,6 +2917,14 @@
           "date": "2026-06-09",
           "note": "Milwaukee Brewers transferred LHP Brian Fitzpatrick from the 15-day injured list to the 60-day injured list. Left elbow injury. | Status Change",
           "description": "Milwaukee Brewers transferred LHP Brian Fitzpatrick from the 15-day injured list to the 60-day injured list. Left elbow injury."
+        },
+        {
+          "player_id": 669060,
+          "name": "Bryse Wilson",
+          "il_type": "Injured List",
+          "date": "2026-08-31",
+          "note": "Milwaukee Brewers placed RHP Bryse Wilson on the 15-day injured list. Low back strain. | Status Change",
+          "description": "Milwaukee Brewers placed RHP Bryse Wilson on the 15-day injured list. Low back strain."
         },
         {
           "player_id": 692230,
@@ -4188,7 +4212,7 @@
     {
       "team_id": 136,
       "team_name": "Seattle Mariners",
-      "injured_count": 20,
+      "injured_count": 21,
       "players": [
         {
           "player_id": 680977,
@@ -4234,9 +4258,9 @@
           "player_id": 806068,
           "name": "Colt Emerson",
           "il_type": "Injured List",
-          "date": "2026-08-14",
-          "note": "Seattle Mariners placed SS Colt Emerson on the 10-day injured list. Left wrist tendon inflammation. | Status Change",
-          "description": "Seattle Mariners placed SS Colt Emerson on the 10-day injured list. Left wrist tendon inflammation."
+          "date": "2026-08-31",
+          "note": "Seattle Mariners transferred SS Colt Emerson from the 10-day injured list to the 60-day injured list. Left wrist tendon repair. | Status Change",
+          "description": "Seattle Mariners transferred SS Colt Emerson from the 10-day injured list to the 60-day injured list. Left wrist tendon repair."
         },
         {
           "player_id": 681867,
@@ -4309,6 +4333,14 @@
           "date": "2026-04-20",
           "note": "Seattle Mariners placed 3B Miles Mastrobuoni on the 60-day injured list. Right calf strain. | Status Change",
           "description": "Seattle Mariners placed 3B Miles Mastrobuoni on the 60-day injured list. Right calf strain."
+        },
+        {
+          "player_id": 689546,
+          "name": "Nick Davila",
+          "il_type": "Injured List",
+          "date": "2026-08-31",
+          "note": "Seattle Mariners placed RHP Nick Davila on the 15-day injured list. SC joint sprain. | Status Change",
+          "description": "Seattle Mariners placed RHP Nick Davila on the 15-day injured list. SC joint sprain."
         },
         {
           "player_id": 621550,
@@ -5179,7 +5211,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Injury Watch",
+      "title": "Seattle Mariners Injury Watch",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Chicago White Sox Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

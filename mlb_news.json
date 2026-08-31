@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T12:22:26.338004-04:00",
+  "updated_at": "2026-08-31T17:32:32.889058-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,47 @@
       "published": "2026-08-30"
     },
     {
-      "title": "San Francisco Giants Injury Watch",
-      "summary": "San Francisco Giants logged a roster-health update involving Sam Hentges.",
-      "published": "2026-08-30"
+      "title": "Seattle Mariners Injury Watch",
+      "summary": "Seattle Mariners logged a roster-health update involving Colt Emerson.",
+      "published": "2026-08-31"
+    },
+    {
+      "title": "Chicago White Sox Makes Roster Move",
+      "summary": "Chicago White Sox made a transaction involving Tommy Pham.",
+      "published": "2026-08-31"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-08-31",
+      "team": "Seattle Mariners",
+      "player": "Colt Emerson",
+      "update": "Seattle Mariners transferred SS Colt Emerson from the 10-day injured list to the 60-day injured list. Left wrist tendon repair. | Status Change"
+    },
+    {
+      "date": "2026-08-31",
+      "team": "Seattle Mariners",
+      "player": "Nick Davila",
+      "update": "Seattle Mariners placed RHP Nick Davila on the 15-day injured list. SC joint sprain. | Status Change"
+    },
+    {
+      "date": "2026-08-31",
+      "team": "Milwaukee Brewers",
+      "player": "Bryse Wilson",
+      "update": "Milwaukee Brewers placed RHP Bryse Wilson on the 15-day injured list. Low back strain. | Status Change"
+    },
+    {
+      "date": "2026-08-31",
+      "team": "Miami Marlins",
+      "player": "Xavier Edwards",
+      "update": "Miami Marlins placed 2B Xavier Edwards on the 10-day injured list. Left thumb sprain. | Status Change"
+    },
+    {
+      "date": "2026-08-31",
+      "team": "Boston Red Sox",
+      "player": "Willson Contreras",
+      "update": "Boston Red Sox placed 1B Willson Contreras on the 10-day injured list. Left hamstring strain. | Status Change"
+    },
     {
       "date": "2026-08-30",
       "team": "San Francisco Giants",
@@ -71,37 +106,32 @@
       "team": "St. Louis Cardinals",
       "player": "JJ Wetherholt",
       "update": "St. Louis Cardinals placed 2B JJ Wetherholt on the 10-day injured list. Right wrist tendinitis. | Status Change"
-    },
-    {
-      "date": "2026-08-29",
-      "team": "San Francisco Giants",
-      "player": "Casey Schmitt",
-      "update": "San Francisco Giants transferred LF Casey Schmitt from the 10-day injured list to the 60-day injured list. Left knee meniscus tear. | Status Change"
-    },
-    {
-      "date": "2026-08-28",
-      "team": "St. Louis Cardinals",
-      "player": "Blaze Jordan",
-      "update": "St. Louis Cardinals placed 3B Blaze Jordan on the 10-day injured list. Left ankle sprain. | Status Change"
-    },
-    {
-      "date": "2026-08-28",
-      "team": "New York Mets",
-      "player": "Jorge Polanco",
-      "update": "New York Mets transferred DH Jorge Polanco from the 10-day injured list to the 60-day injured list. | Status Change"
-    },
-    {
-      "date": "2026-08-28",
-      "team": "Cincinnati Reds",
-      "player": "Ke'Bryan Hayes",
-      "update": "Cincinnati Reds placed 3B Ke'Bryan Hayes on the 10-day injured list retroactive to August 27, 2026. Left groin strain. | Status Change"
-    },
-    {
-      "date": "2026-08-27",
-      "team": "Toronto Blue Jays",
-      "player": "Jonatan Clase",
-      "update": "Toronto Blue Jays transferred LF Jonatan Clase from the 10-day injured list to the 60-day injured list. Left plantar fasciitis. | Status Change"
     }
   ],
-  "trade_updates": []
+  "trade_updates": [
+    {
+      "date": "2026-08-31",
+      "team": "Chicago White Sox",
+      "player": "Tommy Pham",
+      "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
+    },
+    {
+      "date": "2026-08-31",
+      "team": "Philadelphia Phillies",
+      "player": "Unknown Player",
+      "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
+    },
+    {
+      "date": "2026-08-31",
+      "team": "Chicago White Sox",
+      "player": "Jake Cave",
+      "update": "Tampa Bay Rays traded RF Jake Cave to Chicago White Sox for cash. | Trade"
+    },
+    {
+      "date": "2026-08-31",
+      "team": "Tampa Bay Rays",
+      "player": "Unknown Player",
+      "update": "Tampa Bay Rays traded RF Jake Cave to Chicago White Sox for cash. | Trade"
+    }
+  ]
 }

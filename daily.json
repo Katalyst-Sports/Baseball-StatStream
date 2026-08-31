@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T12:22:26.338004-04:00",
+  "updated_at": "2026-08-31T17:32:32.889058-04:00",
   "games": [
     {
       "gamePk": 824911,
@@ -1174,26 +1174,6 @@
           }
         },
         {
-          "name": "Luis Robert Jr.",
-          "stats": {
-            "avg": ".223",
-            "obp": ".303",
-            "slg": ".399",
-            "ops": ".702",
-            "homeRuns": 10,
-            "rbi": 23
-          },
-          "last10ab": {
-            "avg": "0.455",
-            "hits": 5,
-            "atBats": 11,
-            "homeRuns": 1,
-            "rbi": 5,
-            "walks": 3,
-            "games": 3
-          }
-        },
-        {
           "name": "Bo Bichette",
           "stats": {
             "avg": ".263",
@@ -1231,6 +1211,26 @@
             "rbi": 3,
             "walks": 4,
             "games": 4
+          }
+        },
+        {
+          "name": "Mark Vientos",
+          "stats": {
+            "avg": ".211",
+            "obp": ".256",
+            "slg": ".388",
+            "ops": ".644",
+            "homeRuns": 11,
+            "rbi": 35
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 2,
+            "games": 5
           }
         }
       ],
@@ -1708,23 +1708,23 @@
       ],
       "home_hitters": [
         {
-          "name": "Willson Contreras",
+          "name": "Mickey Gasper",
           "stats": {
-            "avg": ".274",
-            "obp": ".384",
-            "slg": ".516",
-            "ops": ".900",
-            "homeRuns": 26,
-            "rbi": 79
+            "avg": ".278",
+            "obp": ".374",
+            "slg": ".466",
+            "ops": ".840",
+            "homeRuns": 5,
+            "rbi": 19
           },
           "last10ab": {
-            "avg": "0.077",
-            "hits": 1,
-            "atBats": 13,
+            "avg": "0.455",
+            "hits": 5,
+            "atBats": 11,
             "homeRuns": 0,
-            "rbi": 0,
-            "walks": 4,
-            "games": 4
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -2098,26 +2098,6 @@
           }
         },
         {
-          "name": "Xavier Edwards",
-          "stats": {
-            "avg": ".282",
-            "obp": ".361",
-            "slg": ".376",
-            "ops": ".737",
-            "homeRuns": 6,
-            "rbi": 51
-          },
-          "last10ab": {
-            "avg": "0.364",
-            "hits": 4,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Javier Sanoja",
           "stats": {
             "avg": ".278",
@@ -2174,6 +2154,26 @@
             "homeRuns": 0,
             "rbi": 1,
             "walks": 0,
+            "games": 4
+          }
+        },
+        {
+          "name": "Agust\u00edn Ram\u00edrez",
+          "stats": {
+            "avg": ".233",
+            "obp": ".333",
+            "slg": ".331",
+            "ops": ".664",
+            "homeRuns": 2,
+            "rbi": 17
+          },
+          "last10ab": {
+            "avg": "0.167",
+            "hits": 2,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 4,
             "games": 4
           }
         }
@@ -2610,26 +2610,6 @@
           }
         },
         {
-          "name": "Corey Julks",
-          "stats": {
-            "avg": ".286",
-            "obp": ".286",
-            "slg": ".429",
-            "ops": ".715",
-            "homeRuns": 0,
-            "rbi": 0
-          },
-          "last10ab": {
-            "avg": "0.286",
-            "hits": 2,
-            "atBats": 7,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 0,
-            "games": 4
-          }
-        },
-        {
           "name": "Spencer Torkelson",
           "stats": {
             "avg": ".220",
@@ -2646,6 +2626,26 @@
             "homeRuns": 0,
             "rbi": 2,
             "walks": 2,
+            "games": 3
+          }
+        },
+        {
+          "name": "Ben Malgeri",
+          "stats": {
+            "avg": ".222",
+            "obp": ".337",
+            "slg": ".375",
+            "ops": ".712",
+            "homeRuns": 3,
+            "rbi": 11
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
             "games": 3
           }
         }
@@ -4256,7 +4256,56 @@
       "venue": "Coors Field",
       "start": "2026-09-01T00:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 700249,
+        "name": "Cade Povich",
+        "hand": "L",
+        "era": "4.45",
+        "whip": "1.41",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-05",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "5.2",
+              "er": 2,
+              "k": 2,
+              "bb": 3,
+              "pitches": 87,
+              "strikes": 53
+            },
+            {
+              "date": "2026-04-12",
+              "opponent": "San Francisco Giants",
+              "ip": "6.2",
+              "er": 1,
+              "k": 5,
+              "bb": 0,
+              "pitches": 97,
+              "strikes": 65
+            },
+            {
+              "date": "2026-05-01",
+              "opponent": "New York Yankees",
+              "ip": "4.0",
+              "er": 5,
+              "k": 4,
+              "bb": 2,
+              "pitches": 77,
+              "strikes": 46
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "3.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "87.0",
+          "avg_strikes": "54.7",
+          "era": "4.41",
+          "whip": "1.29",
+          "strike_pct": "62.8",
+          "quality_starts": 1
+        }
+      },
       "home_pitcher": {
         "id": 685299,
         "name": "Tanner Gordon",
@@ -5201,7 +5250,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 694297,
+        "name": "Brandon Pfaadt",
+        "hand": "R",
+        "era": "3.51",
+        "whip": "1.14",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Detroit Tigers",
+              "ip": "6.0",
+              "er": 5,
+              "k": 3,
+              "bb": 1,
+              "pitches": 85,
+              "strikes": 57
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Atlanta Braves",
+              "ip": "4.2",
+              "er": 3,
+              "k": 2,
+              "bb": 2,
+              "pitches": 79,
+              "strikes": 48
+            },
+            {
+              "date": "2026-04-11",
+              "opponent": "Philadelphia Phillies",
+              "ip": "6.0",
+              "er": 3,
+              "k": 6,
+              "bb": 3,
+              "pitches": 101,
+              "strikes": 65
+            }
+          ],
+          "avg_ip": "5.2",
+          "avg_k": "3.7",
+          "avg_bb": "2.0",
+          "avg_pitches": "88.3",
+          "avg_strikes": "56.7",
+          "era": "5.94",
+          "whip": "1.38",
+          "strike_pct": "64.2",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Bryce Harper",
@@ -5591,7 +5689,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Injury Watch",
+      "title": "Seattle Mariners Injury Watch",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Chicago White Sox Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
