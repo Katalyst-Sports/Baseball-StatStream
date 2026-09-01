@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T06:32:07.560901-04:00",
+  "updated_at": "2026-09-01T11:09:27.385844-04:00",
   "games": [
     {
       "gamePk": 824472,
@@ -1425,53 +1425,53 @@
       "start": "2026-09-01T22:40:00Z",
       "status": "Preview",
       "away_pitcher": {
-        "id": 681293,
-        "name": "Spencer Arrighetti",
+        "id": 693686,
+        "name": "Spencer Miles",
         "hand": "R",
-        "era": "4.81",
-        "whip": "1.36",
+        "era": "2.92",
+        "whip": "1.09",
         "last3": {
           "starts": [
             {
-              "date": "2026-04-15",
-              "opponent": "Colorado Rockies",
-              "ip": "6.0",
-              "er": 1,
-              "k": 10,
-              "bb": 4,
-              "pitches": 100,
-              "strikes": 61
-            },
-            {
-              "date": "2026-04-20",
-              "opponent": "Cleveland Guardians",
-              "ip": "5.0",
-              "er": 2,
-              "k": 3,
-              "bb": 4,
-              "pitches": 96,
-              "strikes": 56
-            },
-            {
-              "date": "2026-04-26",
-              "opponent": "New York Yankees",
-              "ip": "7.0",
-              "er": 1,
-              "k": 8,
+              "date": "2026-03-28",
+              "opponent": "Athletics",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
               "bb": 1,
-              "pitches": 96,
-              "strikes": 64
+              "pitches": 16,
+              "strikes": 7
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Colorado Rockies",
+              "ip": "1.2",
+              "er": 3,
+              "k": 2,
+              "bb": 1,
+              "pitches": 41,
+              "strikes": 23
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Chicago White Sox",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 27,
+              "strikes": 18
             }
           ],
-          "avg_ip": "6.0",
-          "avg_k": "7.0",
-          "avg_bb": "3.0",
-          "avg_pitches": "97.3",
-          "avg_strikes": "60.3",
-          "era": "2.00",
-          "whip": "1.11",
-          "strike_pct": "62.0",
-          "quality_starts": 2
+          "avg_ip": "1.2",
+          "avg_k": "1.7",
+          "avg_bb": "0.7",
+          "avg_pitches": "28.0",
+          "avg_strikes": "16.0",
+          "era": "5.79",
+          "whip": "1.50",
+          "strike_pct": "57.1",
+          "quality_starts": 0
         }
       },
       "home_pitcher": {
@@ -7056,13 +7056,18 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Texas Rangers Injury Watch",
+      "title": "Atlanta Braves Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
       "title": "Chicago White Sox Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "teamId": 140,
+      "stage": "injury_transactions",
+      "error": "The read operation timed out"
     }
   ]
 }
