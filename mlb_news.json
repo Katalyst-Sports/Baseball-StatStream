@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T17:17:42.134991-04:00",
+  "updated_at": "2026-09-01T19:24:12.577280-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,17 +24,29 @@
       "published": "2026-08-31"
     },
     {
-      "title": "Baltimore Orioles Injury Watch",
-      "summary": "Baltimore Orioles logged a roster-health update involving Christian Franklin.",
+      "title": "San Francisco Giants Injury Watch",
+      "summary": "San Francisco Giants logged a roster-health update involving Adrian Houser.",
       "published": "2026-09-01"
     },
     {
-      "title": "Los Angeles Dodgers Makes Roster Move",
-      "summary": "Los Angeles Dodgers made a transaction involving Sebastian Rodriguez.",
+      "title": "Toronto Blue Jays Makes Roster Move",
+      "summary": "Toronto Blue Jays made a transaction involving Jos\u00e9 Rodr\u00edguez.",
       "published": "2026-09-01"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-01",
+      "team": "San Francisco Giants",
+      "player": "Adrian Houser",
+      "update": "San Francisco Giants transferred RHP Adrian Houser from the 15-day injured list to the 60-day injured list. Right forearm strain. | Status Change"
+    },
+    {
+      "date": "2026-09-01",
+      "team": "Arizona Diamondbacks",
+      "player": "Ryan Thompson",
+      "update": "Arizona Diamondbacks transferred RHP Ryan Thompson from the 15-day injured list to the 60-day injured list. Strained lower back. | Status Change"
+    },
     {
       "date": "2026-09-01",
       "team": "Baltimore Orioles",
@@ -94,31 +106,19 @@
       "team": "Texas Rangers",
       "player": "Peyton Gray",
       "update": "Texas Rangers placed RHP Peyton Gray on the 15-day injured list retroactive to August 30, 2026. Right elbow inflammation. | Status Change"
-    },
-    {
-      "date": "2026-08-31",
-      "team": "Seattle Mariners",
-      "player": "Colt Emerson",
-      "update": "Seattle Mariners transferred SS Colt Emerson from the 10-day injured list to the 60-day injured list. Left wrist tendon repair. | Status Change"
-    },
-    {
-      "date": "2026-08-31",
-      "team": "Seattle Mariners",
-      "player": "Nick Davila",
-      "update": "Seattle Mariners placed RHP Nick Davila on the 15-day injured list. SC joint sprain. | Status Change"
     }
   ],
   "trade_updates": [
     {
       "date": "2026-09-01",
-      "team": "Los Angeles Dodgers",
-      "player": "Sebastian Rodriguez",
+      "team": "Toronto Blue Jays",
+      "player": "Jos\u00e9 Rodr\u00edguez",
       "update": "Toronto Blue Jays traded RHP Sebastian Rodriguez to Los Angeles Dodgers for RHP Jos\u00e9 Rodr\u00edguez. | Trade"
     },
     {
       "date": "2026-09-01",
-      "team": "Toronto Blue Jays",
-      "player": "Jos\u00e9 Rodr\u00edguez",
+      "team": "Los Angeles Dodgers",
+      "player": "Sebastian Rodriguez",
       "update": "Toronto Blue Jays traded RHP Sebastian Rodriguez to Los Angeles Dodgers for RHP Jos\u00e9 Rodr\u00edguez. | Trade"
     },
     {

@@ -1,6 +1,91 @@
 {
-  "updated_at": "2026-09-01T17:17:42.134991-04:00",
-  "games": [],
+  "updated_at": "2026-09-01T19:24:12.577280-04:00",
+  "games": [
+    {
+      "gamePk": 824472,
+      "game": "San Diego Padres @ Cincinnati Reds",
+      "score": "1-1",
+      "inning": "3rd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823340,
+      "game": "San Francisco Giants @ Pittsburgh Pirates",
+      "score": "5-2",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Turner Hill",
+        "Rafael Devers"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822929,
+      "game": "New York Mets @ Tampa Bay Rays",
+      "score": "1-2",
+      "inning": "4th",
+      "hot_hitters": [
+        "Francisco Lindor"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824391,
+      "game": "Toronto Blue Jays @ Cleveland Guardians",
+      "score": "0-0",
+      "inning": "3rd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824716,
+      "game": "Seattle Mariners @ Boston Red Sox",
+      "score": "6-1",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Randy Arozarena",
+        "Dominic Canzone",
+        "Mickey Gasper"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822687,
+      "game": "Atlanta Braves @ Washington Nationals",
+      "score": "1-2",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Ozzie Albies",
+        "CJ Abrams"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823661,
+      "game": "Detroit Tigers @ Minnesota Twins",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824070,
+      "game": "Miami Marlins @ Kansas City Royals",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824633,
+      "game": "Milwaukee Brewers @ Chicago Cubs",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,12 +109,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Makes Roster Move",
+      "title": "Toronto Blue Jays Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
