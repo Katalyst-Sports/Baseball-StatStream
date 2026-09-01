@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T11:09:27.385844-04:00",
+  "updated_at": "2026-09-01T14:31:56.847901-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,17 +24,35 @@
       "published": "2026-08-31"
     },
     {
-      "title": "Atlanta Braves Injury Watch",
-      "summary": "Atlanta Braves logged a roster-health update involving Robert Suarez.",
+      "title": "Pittsburgh Pirates Injury Watch",
+      "summary": "Pittsburgh Pirates logged a roster-health update involving Endy Rodr\u00edguez.",
       "published": "2026-09-01"
     },
     {
-      "title": "Chicago White Sox Makes Roster Move",
-      "summary": "Chicago White Sox made a transaction involving Tommy Pham.",
-      "published": "2026-08-31"
+      "title": "Los Angeles Dodgers Makes Roster Move",
+      "summary": "Los Angeles Dodgers made a transaction involving Sebastian Rodriguez.",
+      "published": "2026-09-01"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-01",
+      "team": "Pittsburgh Pirates",
+      "player": "Endy Rodr\u00edguez",
+      "update": "Pittsburgh Pirates transferred C Endy Rodr\u00edguez from the 10-day injured list to the 60-day injured list. Left hip inflammation. | Status Change"
+    },
+    {
+      "date": "2026-09-01",
+      "team": "San Diego Padres",
+      "player": "Luis Rengifo",
+      "update": "San Diego Padres transferred LF Luis Rengifo from the 10-day injured list to the 60-day injured list. Right knee sprain. | Status Change"
+    },
+    {
+      "date": "2026-09-01",
+      "team": "Boston Red Sox",
+      "player": "Eduardo Rivera",
+      "update": "Boston Red Sox placed LHP Eduardo Rivera on the 60-day injured list. Lumbar strain. | Status Change"
+    },
     {
       "date": "2026-09-01",
       "team": "Atlanta Braves",
@@ -88,27 +106,21 @@
       "team": "San Francisco Giants",
       "player": "Sam Hentges",
       "update": "San Francisco Giants placed LHP Sam Hentges on the 15-day injured list retroactive to August 27, 2026. Left forearm strain. | Status Change"
-    },
-    {
-      "date": "2026-08-30",
-      "team": "Los Angeles Angels",
-      "player": "George Klassen",
-      "update": "Los Angeles Angels placed RHP George Klassen on the 15-day injured list retroactive to August 27, 2026. Left low back inflammation. | Status Change"
-    },
-    {
-      "date": "2026-08-30",
-      "team": "Seattle Mariners",
-      "player": "Emerson Hancock",
-      "update": "Seattle Mariners placed RHP Emerson Hancock on the 15-day injured list retroactive to August 29, 2026. Left abductor strain. | Status Change"
-    },
-    {
-      "date": "2026-08-30",
-      "team": "San Diego Padres",
-      "player": "Gavin Sheets",
-      "update": "San Diego Padres placed 1B Gavin Sheets on the 10-day injured list. Left foot sprain. | Status Change"
     }
   ],
   "trade_updates": [
+    {
+      "date": "2026-09-01",
+      "team": "Los Angeles Dodgers",
+      "player": "Sebastian Rodriguez",
+      "update": "Toronto Blue Jays traded RHP Sebastian Rodriguez to Los Angeles Dodgers for RHP Jos\u00e9 Rodr\u00edguez. | Trade"
+    },
+    {
+      "date": "2026-09-01",
+      "team": "Toronto Blue Jays",
+      "player": "Jos\u00e9 Rodr\u00edguez",
+      "update": "Toronto Blue Jays traded RHP Sebastian Rodriguez to Los Angeles Dodgers for RHP Jos\u00e9 Rodr\u00edguez. | Trade"
+    },
     {
       "date": "2026-08-31",
       "team": "Chicago White Sox",

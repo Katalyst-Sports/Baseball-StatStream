@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T11:09:27.385844-04:00",
+  "updated_at": "2026-09-01T14:31:56.847901-04:00",
   "games": [
     {
       "gamePk": 824472,
@@ -1356,6 +1356,26 @@
           }
         },
         {
+          "name": "Victor Mesa Jr.",
+          "stats": {
+            "avg": ".214",
+            "obp": ".288",
+            "slg": ".447",
+            "ops": ".735",
+            "homeRuns": 10,
+            "rbi": 22
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
           "name": "Jonny DeLuca",
           "stats": {
             "avg": ".267",
@@ -1393,26 +1413,6 @@
             "rbi": 1,
             "walks": 1,
             "games": 3
-          }
-        },
-        {
-          "name": "Nick Fortes",
-          "stats": {
-            "avg": ".260",
-            "obp": ".304",
-            "slg": ".359",
-            "ops": ".663",
-            "homeRuns": 4,
-            "rbi": 29
-          },
-          "last10ab": {
-            "avg": "0.417",
-            "hits": 5,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 1,
-            "games": 4
           }
         }
       ]
@@ -1946,7 +1946,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 699151,
+        "name": "Jedixson Paez",
+        "hand": "R",
+        "era": "18.00",
+        "whip": "2.33",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Milwaukee Brewers",
+              "ip": "1.1",
+              "er": 3,
+              "k": 0,
+              "bb": 2,
+              "pitches": 36,
+              "strikes": 22
+            },
+            {
+              "date": "2026-03-28",
+              "opponent": "Milwaukee Brewers",
+              "ip": "0.1",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 1,
+              "strikes": 1
+            },
+            {
+              "date": "2026-03-31",
+              "opponent": "Miami Marlins",
+              "ip": "1.1",
+              "er": 3,
+              "k": 0,
+              "bb": 1,
+              "pitches": 28,
+              "strikes": 13
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "0.0",
+          "avg_bb": "1.0",
+          "avg_pitches": "21.7",
+          "avg_strikes": "12.0",
+          "era": "18.00",
+          "whip": "2.33",
+          "strike_pct": "55.4",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Randy Arozarena",
@@ -2291,22 +2340,22 @@
           }
         },
         {
-          "name": "Connor Wong",
+          "name": "Isiah Kiner-Falefa",
           "stats": {
-            "avg": ".246",
-            "obp": ".324",
-            "slg": ".369",
-            "ops": ".693",
-            "homeRuns": 4,
-            "rbi": 23
+            "avg": ".277",
+            "obp": ".344",
+            "slg": ".361",
+            "ops": ".705",
+            "homeRuns": 2,
+            "rbi": 13
           },
           "last10ab": {
-            "avg": "0.500",
-            "hits": 5,
-            "atBats": 10,
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
             "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
+            "rbi": 0,
+            "walks": 1,
             "games": 4
           }
         }
@@ -7056,18 +7105,13 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Injury Watch",
+      "title": "Pittsburgh Pirates Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Chicago White Sox Makes Roster Move",
+      "title": "Los Angeles Dodgers Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "teamId": 140,
-      "stage": "injury_transactions",
-      "error": "The read operation timed out"
     }
   ]
 }
