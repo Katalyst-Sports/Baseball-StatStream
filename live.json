@@ -1,134 +1,25 @@
 {
-  "updated_at": "2026-08-31T20:46:01.352112-04:00",
-  "games": [
-    {
-      "gamePk": 824473,
-      "game": "San Diego Padres @ Cincinnati Reds",
-      "score": "4-0",
-      "inning": "7th",
-      "hot_hitters": [
-        "Manny Machado",
-        "Ty France",
-        "Dustin Harris"
-      ],
-      "top_pitchers": [
-        "Michael King"
-      ]
-    },
-    {
-      "gamePk": 822932,
-      "game": "New York Mets @ Tampa Bay Rays",
-      "score": "3-0",
-      "inning": "8th",
-      "hot_hitters": [
-        "Mark Vientos"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824719,
-      "game": "Seattle Mariners @ Boston Red Sox",
-      "score": "8-5",
-      "inning": "7th",
-      "hot_hitters": [
-        "Randy Arozarena",
-        "Cal Raleigh",
-        "Mickey Gasper",
-        "Ceddanne Rafaela",
-        "Jarren Duran"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822689,
-      "game": "Miami Marlins @ Washington Nationals",
-      "score": "3-2",
-      "inning": "7th",
-      "hot_hitters": [
-        "Kyle Stowers",
-        "Jakob Marsee",
-        "Daylen Lile",
-        "Keibert Ruiz"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823663,
-      "game": "Detroit Tigers @ Minnesota Twins",
-      "score": "0-2",
-      "inning": "5th",
-      "hot_hitters": [
-        "Luke Keaschall",
-        "Kody Clemens"
-      ],
-      "top_pitchers": [
-        "Taj Bradley"
-      ]
-    },
-    {
-      "gamePk": 824635,
-      "game": "Milwaukee Brewers @ Chicago Cubs",
-      "score": "0-6",
-      "inning": "4th",
-      "hot_hitters": [
-        "Alex Bregman",
-        "Tyrone Taylor",
-        "Nico Hoerner",
-        "Carson Kelly"
-      ],
-      "top_pitchers": [
-        "Clay Holmes"
-      ]
-    },
-    {
-      "gamePk": 822855,
-      "game": "Athletics @ Texas Rangers",
-      "score": "0-2",
-      "inning": "3rd",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824149,
-      "game": "Chicago White Sox @ Houston Astros",
-      "score": "0-0",
-      "inning": "3rd",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824314,
-      "game": "Baltimore Orioles @ Colorado Rockies",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-01T01:45:13.492677-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Miami Marlins Takes 6-2 Win",
+      "title": "San Francisco Giants Takes 7-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Takes 2-3 Win",
+      "title": "San Diego Padres Takes 5-0 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Takes 1-16 Win",
+      "title": "New York Mets Takes 3-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Toronto Blue Jays Takes 0-7 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "San Francisco Giants Finishes Off Atlanta Braves",
+      "title": "Boston Red Sox Takes 8-9 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
