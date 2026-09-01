@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T17:32:32.889058-04:00",
+  "updated_at": "2026-08-31T20:46:01.352112-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -4673,7 +4673,7 @@
     {
       "team_id": 140,
       "team_name": "Texas Rangers",
-      "injured_count": 21,
+      "injured_count": 22,
       "players": [
         {
           "player_id": 691945,
@@ -4711,9 +4711,9 @@
           "player_id": 668390,
           "name": "Cole Winn",
           "il_type": "Injured List",
-          "date": "2026-05-24",
-          "note": "Texas Rangers placed RHP Cole Winn on the 15-day injured list. Right arm fatigue. | Status Change",
-          "description": "Texas Rangers placed RHP Cole Winn on the 15-day injured list. Right arm fatigue."
+          "date": "2026-08-31",
+          "note": "Texas Rangers placed RHP Cole Winn on the 15-day injured list retroactive to August 28, 2026. Right rotator cuff strain. | Status Change",
+          "description": "Texas Rangers placed RHP Cole Winn on the 15-day injured list retroactive to August 28, 2026. Right rotator cuff strain."
         },
         {
           "player_id": 608369,
@@ -4826,6 +4826,14 @@
           "date": "2026-08-10",
           "note": "Texas Rangers placed RHP Nathan Eovaldi on the 15-day injured list retroactive to August 9, 2026. Right posterior elbow inflammation. | Status Change",
           "description": "Texas Rangers placed RHP Nathan Eovaldi on the 15-day injured list retroactive to August 9, 2026. Right posterior elbow inflammation."
+        },
+        {
+          "player_id": 682608,
+          "name": "Peyton Gray",
+          "il_type": "Injured List",
+          "date": "2026-08-31",
+          "note": "Texas Rangers placed RHP Peyton Gray on the 15-day injured list retroactive to August 30, 2026. Right elbow inflammation. | Status Change",
+          "description": "Texas Rangers placed RHP Peyton Gray on the 15-day injured list retroactive to August 30, 2026. Right elbow inflammation."
         },
         {
           "player_id": 676395,
@@ -5211,7 +5219,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Seattle Mariners Injury Watch",
+      "title": "San Francisco Giants Finishes Off Atlanta Braves",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Texas Rangers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
