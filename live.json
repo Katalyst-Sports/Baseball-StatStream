@@ -1,169 +1,25 @@
 {
-  "updated_at": "2026-09-01T21:15:21.023705-04:00",
-  "games": [
-    {
-      "gamePk": 824472,
-      "game": "San Diego Padres @ Cincinnati Reds",
-      "score": "2-3",
-      "inning": "8th",
-      "hot_hitters": [
-        "Fernando Tatis Jr.",
-        "Samad Taylor",
-        "Jackson Merrill",
-        "H\u00e9ctor Rodr\u00edguez",
-        "Sal Stewart"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823340,
-      "game": "San Francisco Giants @ Pittsburgh Pirates",
-      "score": "7-11",
-      "inning": "7th",
-      "hot_hitters": [
-        "Turner Hill",
-        "Rafael Devers",
-        "Drew Cavanaugh",
-        "Christian Koss",
-        "Spencer Horwitz",
-        "Brandon Lowe",
-        "Nick Gonzales",
-        "Oneil Cruz",
-        "Jacob Gonzalez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824716,
-      "game": "Seattle Mariners @ Boston Red Sox",
-      "score": "9-2",
-      "inning": "7th",
-      "hot_hitters": [
-        "Randy Arozarena",
-        "Dominic Canzone",
-        "Josh Naylor",
-        "Cole Young",
-        "Lazaro Montes",
-        "Mickey Gasper",
-        "Wilyer Abreu"
-      ],
-      "top_pitchers": [
-        "Bryan Woo"
-      ]
-    },
-    {
-      "gamePk": 822687,
-      "game": "Atlanta Braves @ Washington Nationals",
-      "score": "5-8",
-      "inning": "8th",
-      "hot_hitters": [
-        "Michael Harris II",
-        "Ozzie Albies",
-        "Ha-Seong Kim",
-        "CJ Abrams",
-        "Yohandy Morales",
-        "Harry Ford",
-        "Jacob Young"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823661,
-      "game": "Detroit Tigers @ Minnesota Twins",
-      "score": "1-4",
-      "inning": "6th",
-      "hot_hitters": [
-        "Kody Clemens"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824070,
-      "game": "Miami Marlins @ Kansas City Royals",
-      "score": "6-0",
-      "inning": "7th",
-      "hot_hitters": [
-        "Kyle Stowers",
-        "Graham Pauley",
-        "Javier Sanoja"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824633,
-      "game": "Milwaukee Brewers @ Chicago Cubs",
-      "score": "1-3",
-      "inning": "5th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822854,
-      "game": "Athletics @ Texas Rangers",
-      "score": "1-2",
-      "inning": "4th",
-      "hot_hitters": [
-        "Corey Seager",
-        "Brandon Nimmo"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824148,
-      "game": "Chicago White Sox @ Houston Astros",
-      "score": "0-0",
-      "inning": "3rd",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824313,
-      "game": "Baltimore Orioles @ Colorado Rockies",
-      "score": "0-1",
-      "inning": "2nd",
-      "hot_hitters": [
-        "Adael Amador"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823984,
-      "game": "New York Yankees @ Los Angeles Angels",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-02T01:55:25.078135-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Takes 7-3 Win",
+      "title": "Cincinnati Reds Takes 3-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "San Diego Padres Takes 5-0 Win",
+      "title": "Pittsburgh Pirates Takes 12-13 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Mets Takes 3-2 Win",
+      "title": "Tampa Bay Rays Takes 2-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Takes 8-9 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Finishes Off New York Mets",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Cleveland Guardians Finishes Off Toronto Blue Jays",
+      "title": "Cleveland Guardians Takes 1-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
