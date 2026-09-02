@@ -1,6 +1,41 @@
 {
-  "updated_at": "2026-09-02T14:38:23.730095-04:00",
-  "games": [],
+  "updated_at": "2026-09-02T17:18:44.745192-04:00",
+  "games": [
+    {
+      "gamePk": 824470,
+      "game": "San Diego Padres @ Cincinnati Reds",
+      "winner": "Cincinnati Reds",
+      "loser": "San Diego Padres",
+      "final_score": "3-7",
+      "hitters": [
+        "Fernando Tatis Jr.",
+        "Ty France",
+        "Xander Bogaerts",
+        "H\u00e9ctor Rodr\u00edguez",
+        "Elly De La Cruz",
+        "JJ Bleday",
+        "Dane Myers",
+        "Juan Brito"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 822686,
+      "game": "Atlanta Braves @ Washington Nationals",
+      "winner": "Atlanta Braves",
+      "loser": "Washington Nationals",
+      "final_score": "9-0",
+      "hitters": [
+        "Ronald Acu\u00f1a Jr.",
+        "Sean Murphy",
+        "Mike Yastrzemski",
+        "Austin Riley"
+      ],
+      "pitchers": [
+        "Brad Lord"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +55,16 @@
     {
       "stage": "generated_news_item",
       "title": "Cleveland Guardians Takes 1-6 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cincinnati Reds Finishes Off San Diego Padres",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Atlanta Braves Finishes Off Washington Nationals",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
