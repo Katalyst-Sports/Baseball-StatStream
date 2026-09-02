@@ -1,6 +1,41 @@
 {
-  "updated_at": "2026-09-01T19:24:12.577280-04:00",
-  "games": [],
+  "updated_at": "2026-09-01T21:15:21.023705-04:00",
+  "games": [
+    {
+      "gamePk": 822929,
+      "game": "New York Mets @ Tampa Bay Rays",
+      "winner": "Tampa Bay Rays",
+      "loser": "New York Mets",
+      "final_score": "2-6",
+      "hitters": [
+        "Francisco Lindor",
+        "Yandy D\u00edaz",
+        "Ryan Vilade",
+        "Junior Caminero",
+        "Nick Fortes",
+        "Victor Mesa Jr."
+      ],
+      "pitchers": [
+        "Freddy Peralta"
+      ]
+    },
+    {
+      "gamePk": 824391,
+      "game": "Toronto Blue Jays @ Cleveland Guardians",
+      "winner": "Cleveland Guardians",
+      "loser": "Toronto Blue Jays",
+      "final_score": "1-6",
+      "hitters": [
+        "Jo Adell",
+        "Angel Mart\u00ednez",
+        "Angel Genao",
+        "Patrick Bailey"
+      ],
+      "pitchers": [
+        "Gavin Williams"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,12 +59,22 @@
     },
     {
       "stage": "generated_news_item",
+      "title": "Tampa Bay Rays Finishes Off New York Mets",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cleveland Guardians Finishes Off Toronto Blue Jays",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
       "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Toronto Blue Jays Makes Roster Move",
+      "title": "Los Angeles Dodgers Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
