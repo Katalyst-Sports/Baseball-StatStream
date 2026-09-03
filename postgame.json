@@ -1,6 +1,45 @@
 {
-  "updated_at": "2026-09-03T14:32:03.076307-04:00",
-  "games": [],
+  "updated_at": "2026-09-03T17:18:11.000809-04:00",
+  "games": [
+    {
+      "gamePk": 823337,
+      "game": "San Francisco Giants @ Pittsburgh Pirates",
+      "winner": "Pittsburgh Pirates",
+      "loser": "San Francisco Giants",
+      "final_score": "2-5",
+      "hitters": [],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824388,
+      "game": "Toronto Blue Jays @ Cleveland Guardians",
+      "winner": "Toronto Blue Jays",
+      "loser": "Cleveland Guardians",
+      "final_score": "6-3",
+      "hitters": [
+        "Brett Bateman",
+        "Nathan Lukes",
+        "Steven Kwan"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824144,
+      "game": "Chicago White Sox @ Houston Astros",
+      "winner": "Houston Astros",
+      "loser": "Chicago White Sox",
+      "final_score": "2-6",
+      "hitters": [
+        "Miguel Vargas",
+        "Chase Meidroth",
+        "Jose Altuve",
+        "Christian Walker"
+      ],
+      "pitchers": [
+        "Hunter Brown"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +63,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Injury Watch",
+      "title": "Pittsburgh Pirates Finishes Off San Francisco Giants",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Toronto Blue Jays Finishes Off Cleveland Guardians",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
