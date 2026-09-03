@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T10:58:22.053620-04:00",
+  "updated_at": "2026-09-03T14:32:03.076307-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,9 +24,9 @@
       "published": "2026-09-02"
     },
     {
-      "title": "Los Angeles Dodgers Injury Watch",
-      "summary": "Los Angeles Dodgers logged a roster-health update involving Eric Lauer.",
-      "published": "2026-09-02"
+      "title": "Pittsburgh Pirates Injury Watch",
+      "summary": "Pittsburgh Pirates logged a roster-health update involving Kirby Yates.",
+      "published": "2026-09-03"
     },
     {
       "title": "Los Angeles Dodgers Makes Roster Move",
@@ -35,6 +35,12 @@
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-03",
+      "team": "Pittsburgh Pirates",
+      "player": "Kirby Yates",
+      "update": "Pittsburgh Pirates placed RHP Kirby Yates on the 15-day injured list retroactive to August 31, 2026. Right shoulder impingement. | Status Change"
+    },
     {
       "date": "2026-09-02",
       "team": "Los Angeles Dodgers",
@@ -100,12 +106,6 @@
       "team": "Boston Red Sox",
       "player": "Eduardo Rivera",
       "update": "Boston Red Sox placed LHP Eduardo Rivera on the 60-day injured list. Lumbar strain. | Status Change"
-    },
-    {
-      "date": "2026-09-01",
-      "team": "Atlanta Braves",
-      "player": "Robert Suarez",
-      "update": "Atlanta Braves transferred RHP Robert Suarez from the 15-day injured list to the 60-day injured list. Right elbow inflammation. | Status Change"
     }
   ],
   "trade_updates": [
