@@ -1,131 +1,25 @@
 {
-  "updated_at": "2026-09-02T21:18:12.771907-04:00",
-  "games": [
-    {
-      "gamePk": 823339,
-      "game": "San Francisco Giants @ Pittsburgh Pirates",
-      "score": "3-3",
-      "inning": "9th",
-      "hot_hitters": [
-        "Rafael Devers",
-        "Bryan Reynolds"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822931,
-      "game": "New York Mets @ Tampa Bay Rays",
-      "score": "10-4",
-      "inning": "9th",
-      "hot_hitters": [
-        "Juan Soto",
-        "Bo Bichette",
-        "Carson Benge",
-        "Chandler Simpson",
-        "Richie Palacios"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824390,
-      "game": "Toronto Blue Jays @ Cleveland Guardians",
-      "score": "11-0",
-      "inning": "9th",
-      "hot_hitters": [
-        "Vladimir Guerrero Jr.",
-        "Nathan Lukes",
-        "Andr\u00e9s Gim\u00e9nez",
-        "Josh Smith",
-        "Myles Straw",
-        "Chase DeLauter",
-        "Patrick Bailey"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823660,
-      "game": "Detroit Tigers @ Minnesota Twins",
-      "score": "4-1",
-      "inning": "6th",
-      "hot_hitters": [
-        "Eduardo Valencia"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824068,
-      "game": "Miami Marlins @ Kansas City Royals",
-      "score": "4-6",
-      "inning": "5th",
-      "hot_hitters": [
-        "Kyle Stowers",
-        "Carter Jensen",
-        "Salvador Perez",
-        "Michael Massey"
-      ],
-      "top_pitchers": [
-        "Noah Cameron"
-      ]
-    },
-    {
-      "gamePk": 824634,
-      "game": "Milwaukee Brewers @ Chicago Cubs",
-      "score": "6-5",
-      "inning": "4th",
-      "hot_hitters": [
-        "Jackson Chourio",
-        "Andrew Vaughn",
-        "William Contreras",
-        "Alex Bregman"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824147,
-      "game": "Chicago White Sox @ Houston Astros",
-      "score": "0-0",
-      "inning": "5th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823983,
-      "game": "New York Yankees @ Los Angeles Angels",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-03T01:56:54.513639-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Cincinnati Reds Takes 3-4 Win",
+      "title": "Cincinnati Reds Takes 3-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Takes 12-13 Win",
+      "title": "Atlanta Braves Takes 9-0 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 2-6 Win",
+      "title": "Athletics Takes 9-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 1-6 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Cincinnati Reds Finishes Off San Diego Padres",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Atlanta Braves Finishes Off Washington Nationals",
+      "title": "Colorado Rockies Takes 5-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
