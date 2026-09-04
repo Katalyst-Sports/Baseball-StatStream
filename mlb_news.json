@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T10:34:45.809324-04:00",
+  "updated_at": "2026-09-04T13:46:51.146238-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,9 +24,9 @@
       "published": "2026-09-03"
     },
     {
-      "title": "Seattle Mariners Injury Watch",
-      "summary": "Seattle Mariners logged a roster-health update involving Brennen Davis.",
-      "published": "2026-09-03"
+      "title": "Cleveland Guardians Injury Watch",
+      "summary": "Cleveland Guardians logged a roster-health update involving Colin Holderman.",
+      "published": "2026-09-04"
     },
     {
       "title": "Los Angeles Dodgers Makes Roster Move",
@@ -35,6 +35,12 @@
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-04",
+      "team": "Cleveland Guardians",
+      "player": "Colin Holderman",
+      "update": "Cleveland Guardians placed RHP Colin Holderman on the 15-day injured list. Right wrist inflammation. | Status Change"
+    },
     {
       "date": "2026-09-03",
       "team": "Seattle Mariners",
@@ -100,12 +106,6 @@
       "team": "Boston Red Sox",
       "player": "Tyron Guerrero",
       "update": "Boston Red Sox placed RHP Tyron Guerrero on the 15-day injured list. Right shoulder inflammation. | Status Change"
-    },
-    {
-      "date": "2026-09-01",
-      "team": "Pittsburgh Pirates",
-      "player": "Endy Rodr\u00edguez",
-      "update": "Pittsburgh Pirates transferred C Endy Rodr\u00edguez from the 10-day injured list to the 60-day injured list. Left hip inflammation. | Status Change"
     }
   ],
   "trade_updates": [
