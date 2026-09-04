@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-09-04T15:55:27.240289-04:00",
-  "games": [],
+  "updated_at": "2026-09-04T18:16:18.593768-04:00",
+  "games": [
+    {
+      "gamePk": 824424,
+      "game": "Detroit Tigers @ Cleveland Guardians",
+      "winner": "Cleveland Guardians",
+      "loser": "Detroit Tigers",
+      "final_score": "6-7",
+      "hitters": [
+        "Gleyber Torres",
+        "Spencer Torkelson",
+        "Max Clark",
+        "Chase DeLauter",
+        "Angel Genao",
+        "Travis Bazzana",
+        "Brayan Rocchio"
+      ],
+      "pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +42,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Houston Astros Injury Watch",
+      "title": "Cleveland Guardians Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Tampa Bay Rays Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
