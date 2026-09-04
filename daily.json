@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T13:46:51.146238-04:00",
+  "updated_at": "2026-09-04T15:55:27.240289-04:00",
   "games": [
     {
       "gamePk": 824424,
@@ -7,13 +7,13 @@
       "home_team": "Cleveland Guardians",
       "venue": "Progressive Field",
       "start": "2026-09-04T18:10:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 672456,
         "name": "Keider Montero",
         "hand": "R",
-        "era": "3.24",
-        "whip": "0.99",
+        "era": "3.28",
+        "whip": "1.00",
         "last3": {
           "starts": [
             {
@@ -62,8 +62,8 @@
         "id": 671106,
         "name": "Logan Allen",
         "hand": "L",
-        "era": "3.77",
-        "whip": "1.47",
+        "era": "6.06",
+        "whip": "1.78",
         "last3": {
           "starts": [
             {
@@ -133,9 +133,9 @@
           "name": "Riley Greene",
           "stats": {
             "avg": ".269",
-            "obp": ".361",
+            "obp": ".362",
             "slg": ".444",
-            "ops": ".805",
+            "ops": ".806",
             "homeRuns": 16,
             "rbi": 56
           },
@@ -152,10 +152,10 @@
         {
           "name": "Kevin McGonigle",
           "stats": {
-            "avg": ".271",
-            "obp": ".372",
-            "slg": ".410",
-            "ops": ".782",
+            "avg": ".273",
+            "obp": ".374",
+            "slg": ".411",
+            "ops": ".785",
             "homeRuns": 14,
             "rbi": 58
           },
@@ -172,10 +172,10 @@
         {
           "name": "Dillon Dingler",
           "stats": {
-            "avg": ".248",
-            "obp": ".313",
-            "slg": ".466",
-            "ops": ".779",
+            "avg": ".247",
+            "obp": ".312",
+            "slg": ".464",
+            "ops": ".776",
             "homeRuns": 26,
             "rbi": 82
           },
@@ -192,12 +192,12 @@
         {
           "name": "Max Clark",
           "stats": {
-            "avg": ".257",
-            "obp": ".328",
-            "slg": ".438",
-            "ops": ".766",
+            "avg": ".264",
+            "obp": ".333",
+            "slg": ".443",
+            "ops": ".776",
             "homeRuns": 2,
-            "rbi": 14
+            "rbi": 16
           },
           "last10ab": {
             "avg": "0.500",
@@ -232,10 +232,10 @@
         {
           "name": "Gleyber Torres",
           "stats": {
-            "avg": ".262",
-            "obp": ".367",
-            "slg": ".382",
-            "ops": ".749",
+            "avg": ".267",
+            "obp": ".371",
+            "slg": ".386",
+            "ops": ".757",
             "homeRuns": 8,
             "rbi": 36
           },
@@ -250,12 +250,32 @@
           }
         },
         {
+          "name": "Ben Malgeri",
+          "stats": {
+            "avg": ".253",
+            "obp": ".355",
+            "slg": ".392",
+            "ops": ".747",
+            "homeRuns": 3,
+            "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
+          }
+        },
+        {
           "name": "Hao-Yu Lee",
           "stats": {
-            "avg": ".269",
-            "obp": ".315",
-            "slg": ".423",
-            "ops": ".738",
+            "avg": ".267",
+            "obp": ".313",
+            "slg": ".420",
+            "ops": ".733",
             "homeRuns": 8,
             "rbi": 36
           },
@@ -268,36 +288,16 @@
             "walks": 0,
             "games": 3
           }
-        },
-        {
-          "name": "Ben Malgeri",
-          "stats": {
-            "avg": ".244",
-            "obp": ".348",
-            "slg": ".385",
-            "ops": ".733",
-            "homeRuns": 3,
-            "rbi": 11
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
-            "games": 3
-          }
         }
       ],
       "home_hitters": [
         {
           "name": "Chase DeLauter",
           "stats": {
-            "avg": ".293",
-            "obp": ".363",
-            "slg": ".455",
-            "ops": ".818",
+            "avg": ".295",
+            "obp": ".364",
+            "slg": ".458",
+            "ops": ".822",
             "homeRuns": 13,
             "rbi": 60
           },
@@ -314,10 +314,10 @@
         {
           "name": "Nathaniel Lowe",
           "stats": {
-            "avg": ".254",
-            "obp": ".319",
-            "slg": ".451",
-            "ops": ".770",
+            "avg": ".253",
+            "obp": ".318",
+            "slg": ".449",
+            "ops": ".767",
             "homeRuns": 15,
             "rbi": 52
           },
@@ -329,6 +329,26 @@
             "rbi": 2,
             "walks": 0,
             "games": 5
+          }
+        },
+        {
+          "name": "Jos\u00e9 Ram\u00edrez",
+          "stats": {
+            "avg": ".243",
+            "obp": ".336",
+            "slg": ".387",
+            "ops": ".723",
+            "homeRuns": 11,
+            "rbi": 48
+          },
+          "last10ab": {
+            "avg": "0.143",
+            "hits": 2,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -352,29 +372,9 @@
           }
         },
         {
-          "name": "Jos\u00e9 Ram\u00edrez",
-          "stats": {
-            "avg": ".241",
-            "obp": ".334",
-            "slg": ".386",
-            "ops": ".720",
-            "homeRuns": 11,
-            "rbi": 48
-          },
-          "last10ab": {
-            "avg": "0.143",
-            "hits": 2,
-            "atBats": 14,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Steven Kwan",
           "stats": {
-            "avg": ".275",
+            "avg": ".274",
             "obp": ".374",
             "slg": ".333",
             "ops": ".707",
@@ -415,11 +415,11 @@
           "name": "Jo Adell",
           "stats": {
             "avg": ".241",
-            "obp": ".297",
+            "obp": ".296",
             "slg": ".405",
-            "ops": ".702",
+            "ops": ".701",
             "homeRuns": 20,
-            "rbi": 83
+            "rbi": 84
           },
           "last10ab": {
             "avg": "0.250",
@@ -434,10 +434,10 @@
         {
           "name": "Travis Bazzana",
           "stats": {
-            "avg": ".235",
-            "obp": ".328",
-            "slg": ".361",
-            "ops": ".689",
+            "avg": ".237",
+            "obp": ".330",
+            "slg": ".366",
+            "ops": ".696",
             "homeRuns": 9,
             "rbi": 42
           },
@@ -454,10 +454,10 @@
         {
           "name": "Angel Genao",
           "stats": {
-            "avg": ".253",
-            "obp": ".319",
-            "slg": ".361",
-            "ops": ".680",
+            "avg": ".250",
+            "obp": ".315",
+            "slg": ".357",
+            "ops": ".672",
             "homeRuns": 2,
             "rbi": 6
           },
@@ -595,9 +595,9 @@
           "name": "Riley Greene",
           "stats": {
             "avg": ".269",
-            "obp": ".361",
+            "obp": ".362",
             "slg": ".444",
-            "ops": ".805",
+            "ops": ".806",
             "homeRuns": 16,
             "rbi": 56
           },
@@ -614,10 +614,10 @@
         {
           "name": "Kevin McGonigle",
           "stats": {
-            "avg": ".271",
-            "obp": ".372",
-            "slg": ".410",
-            "ops": ".782",
+            "avg": ".273",
+            "obp": ".374",
+            "slg": ".411",
+            "ops": ".785",
             "homeRuns": 14,
             "rbi": 58
           },
@@ -634,10 +634,10 @@
         {
           "name": "Dillon Dingler",
           "stats": {
-            "avg": ".248",
-            "obp": ".313",
-            "slg": ".466",
-            "ops": ".779",
+            "avg": ".247",
+            "obp": ".312",
+            "slg": ".464",
+            "ops": ".776",
             "homeRuns": 26,
             "rbi": 82
           },
@@ -654,12 +654,12 @@
         {
           "name": "Max Clark",
           "stats": {
-            "avg": ".257",
-            "obp": ".328",
-            "slg": ".438",
-            "ops": ".766",
+            "avg": ".264",
+            "obp": ".333",
+            "slg": ".443",
+            "ops": ".776",
             "homeRuns": 2,
-            "rbi": 14
+            "rbi": 16
           },
           "last10ab": {
             "avg": "0.500",
@@ -694,10 +694,10 @@
         {
           "name": "Gleyber Torres",
           "stats": {
-            "avg": ".262",
-            "obp": ".367",
-            "slg": ".382",
-            "ops": ".749",
+            "avg": ".267",
+            "obp": ".371",
+            "slg": ".386",
+            "ops": ".757",
             "homeRuns": 8,
             "rbi": 36
           },
@@ -712,12 +712,32 @@
           }
         },
         {
+          "name": "Ben Malgeri",
+          "stats": {
+            "avg": ".253",
+            "obp": ".355",
+            "slg": ".392",
+            "ops": ".747",
+            "homeRuns": 3,
+            "rbi": 13
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
+          }
+        },
+        {
           "name": "Hao-Yu Lee",
           "stats": {
-            "avg": ".269",
-            "obp": ".315",
-            "slg": ".423",
-            "ops": ".738",
+            "avg": ".267",
+            "obp": ".313",
+            "slg": ".420",
+            "ops": ".733",
             "homeRuns": 8,
             "rbi": 36
           },
@@ -730,36 +750,16 @@
             "walks": 0,
             "games": 3
           }
-        },
-        {
-          "name": "Ben Malgeri",
-          "stats": {
-            "avg": ".244",
-            "obp": ".348",
-            "slg": ".385",
-            "ops": ".733",
-            "homeRuns": 3,
-            "rbi": 11
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
-            "games": 3
-          }
         }
       ],
       "home_hitters": [
         {
           "name": "Chase DeLauter",
           "stats": {
-            "avg": ".293",
-            "obp": ".363",
-            "slg": ".455",
-            "ops": ".818",
+            "avg": ".295",
+            "obp": ".364",
+            "slg": ".458",
+            "ops": ".822",
             "homeRuns": 13,
             "rbi": 60
           },
@@ -776,10 +776,10 @@
         {
           "name": "Nathaniel Lowe",
           "stats": {
-            "avg": ".254",
-            "obp": ".319",
-            "slg": ".451",
-            "ops": ".770",
+            "avg": ".253",
+            "obp": ".318",
+            "slg": ".449",
+            "ops": ".767",
             "homeRuns": 15,
             "rbi": 52
           },
@@ -791,6 +791,26 @@
             "rbi": 2,
             "walks": 0,
             "games": 5
+          }
+        },
+        {
+          "name": "Jos\u00e9 Ram\u00edrez",
+          "stats": {
+            "avg": ".243",
+            "obp": ".336",
+            "slg": ".387",
+            "ops": ".723",
+            "homeRuns": 11,
+            "rbi": 48
+          },
+          "last10ab": {
+            "avg": "0.143",
+            "hits": 2,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         },
         {
@@ -814,29 +834,9 @@
           }
         },
         {
-          "name": "Jos\u00e9 Ram\u00edrez",
-          "stats": {
-            "avg": ".241",
-            "obp": ".334",
-            "slg": ".386",
-            "ops": ".720",
-            "homeRuns": 11,
-            "rbi": 48
-          },
-          "last10ab": {
-            "avg": "0.143",
-            "hits": 2,
-            "atBats": 14,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Steven Kwan",
           "stats": {
-            "avg": ".275",
+            "avg": ".274",
             "obp": ".374",
             "slg": ".333",
             "ops": ".707",
@@ -877,11 +877,11 @@
           "name": "Jo Adell",
           "stats": {
             "avg": ".241",
-            "obp": ".297",
+            "obp": ".296",
             "slg": ".405",
-            "ops": ".702",
+            "ops": ".701",
             "homeRuns": 20,
-            "rbi": 83
+            "rbi": 84
           },
           "last10ab": {
             "avg": "0.250",
@@ -896,10 +896,10 @@
         {
           "name": "Travis Bazzana",
           "stats": {
-            "avg": ".235",
-            "obp": ".328",
-            "slg": ".361",
-            "ops": ".689",
+            "avg": ".237",
+            "obp": ".330",
+            "slg": ".366",
+            "ops": ".696",
             "homeRuns": 9,
             "rbi": 42
           },
@@ -916,10 +916,10 @@
         {
           "name": "Angel Genao",
           "stats": {
-            "avg": ".253",
-            "obp": ".319",
-            "slg": ".361",
-            "ops": ".680",
+            "avg": ".250",
+            "obp": ".315",
+            "slg": ".357",
+            "ops": ".672",
             "homeRuns": 2,
             "rbi": 6
           },
@@ -7567,7 +7567,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Injury Watch",
+      "title": "Houston Astros Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

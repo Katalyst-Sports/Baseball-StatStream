@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-09-04T13:46:51.146238-04:00",
-  "games": [],
+  "updated_at": "2026-09-04T15:55:27.240289-04:00",
+  "games": [
+    {
+      "gamePk": 824424,
+      "game": "Detroit Tigers @ Cleveland Guardians",
+      "score": "5-1",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Gleyber Torres"
+      ],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +35,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Injury Watch",
+      "title": "Houston Astros Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
