@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-09-05T15:11:58.313834-04:00",
-  "games": [],
+  "updated_at": "2026-09-05T17:18:35.154104-04:00",
+  "games": [
+    {
+      "gamePk": 823577,
+      "game": "San Francisco Giants @ New York Mets",
+      "score": "3-2",
+      "inning": "5th",
+      "hot_hitters": [
+        "Rafael Devers",
+        "Christian Koss",
+        "A.J. Ewing"
+      ],
+      "top_pitchers": [
+        "Zac Thornton"
+      ]
+    },
+    {
+      "gamePk": 823823,
+      "game": "Chicago Cubs @ Miami Marlins",
+      "score": "3-0",
+      "inning": "4th",
+      "hot_hitters": [
+        "Ian Happ",
+        "Michael Conforto",
+        "Miguel Amaya"
+      ],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +51,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Injury Watch",
+      "title": "Tampa Bay Rays Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
