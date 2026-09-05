@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T08:03:05.732676-04:00",
+  "updated_at": "2026-09-05T11:07:50.262894-04:00",
   "games": [
     {
       "gamePk": 823577,
@@ -5678,7 +5678,49 @@
         "hand": "L",
         "era": "5.41",
         "whip": "1.47",
-        "last3": {}
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Tampa Bay Rays",
+              "ip": "5.0",
+              "er": 1,
+              "k": 2,
+              "bb": 2,
+              "pitches": 78,
+              "strikes": 49
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "New York Mets",
+              "ip": "6.0",
+              "er": 1,
+              "k": 2,
+              "bb": 1,
+              "pitches": 76,
+              "strikes": 47
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Washington Nationals",
+              "ip": "5.0",
+              "er": 4,
+              "k": 6,
+              "bb": 2,
+              "pitches": 92,
+              "strikes": 60
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "3.3",
+          "avg_bb": "1.7",
+          "avg_pitches": "82.0",
+          "avg_strikes": "52.0",
+          "era": "3.38",
+          "whip": "1.50",
+          "strike_pct": "63.4",
+          "quality_starts": 1
+        }
       },
       "home_pitcher": {
         "id": 690279,
@@ -7031,21 +7073,6 @@
     }
   ],
   "errors": [
-    {
-      "playerId": 521692,
-      "stage": "build_team_hitters_player",
-      "error": "<urlopen error [Errno 104] Connection reset by peer>"
-    },
-    {
-      "playerId": 669461,
-      "stage": "pitcher_last_3_starts",
-      "error": "<urlopen error [Errno 104] Connection reset by peer>"
-    },
-    {
-      "playerId": 695670,
-      "stage": "build_team_hitters_player",
-      "error": "<urlopen error [Errno 104] Connection reset by peer>"
-    },
     {
       "stage": "generated_news_item",
       "title": "Cleveland Guardians Takes 6-7 Win",
