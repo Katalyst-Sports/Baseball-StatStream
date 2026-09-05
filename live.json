@@ -1,30 +1,109 @@
 {
-  "updated_at": "2026-09-05T17:18:35.154104-04:00",
+  "updated_at": "2026-09-05T19:01:52.951552-04:00",
   "games": [
-    {
-      "gamePk": 823577,
-      "game": "San Francisco Giants @ New York Mets",
-      "score": "3-2",
-      "inning": "5th",
-      "hot_hitters": [
-        "Rafael Devers",
-        "Christian Koss",
-        "A.J. Ewing"
-      ],
-      "top_pitchers": [
-        "Zac Thornton"
-      ]
-    },
     {
       "gamePk": 823823,
       "game": "Chicago Cubs @ Miami Marlins",
-      "score": "3-0",
+      "score": "6-5",
+      "inning": "8th",
+      "hot_hitters": [
+        "Michael Busch",
+        "Ian Happ",
+        "Nico Hoerner",
+        "Michael Conforto",
+        "Miguel Amaya",
+        "Kyle Stowers",
+        "Griffin Conine"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823419,
+      "game": "Atlanta Braves @ Philadelphia Phillies",
+      "score": "1-3",
       "inning": "4th",
       "hot_hitters": [
-        "Ian Happ",
-        "Michael Conforto",
-        "Miguel Amaya"
+        "Ronald Acu\u00f1a Jr."
       ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824389,
+      "game": "Detroit Tigers @ Cleveland Guardians",
+      "score": "2-0",
+      "inning": "4th",
+      "hot_hitters": [
+        "Riley Greene"
+      ],
+      "top_pitchers": [
+        "Parker Messick"
+      ]
+    },
+    {
+      "gamePk": 823335,
+      "game": "Los Angeles Angels @ Pittsburgh Pirates",
+      "score": "0-0",
+      "inning": "2nd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824468,
+      "game": "Milwaukee Brewers @ Cincinnati Reds",
+      "score": "1-1",
+      "inning": "2nd",
+      "hot_hitters": [
+        "William Contreras",
+        "Elly De La Cruz"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824795,
+      "game": "Boston Red Sox @ Baltimore Orioles",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822850,
+      "game": "Tampa Bay Rays @ Texas Rangers",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824066,
+      "game": "Toronto Blue Jays @ Kansas City Royals",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824553,
+      "game": "Minnesota Twins @ Chicago White Sox",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824145,
+      "game": "Arizona Diamondbacks @ Houston Astros",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823257,
+      "game": "New York Yankees @ San Diego Padres",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
       "top_pitchers": []
     }
   ],
@@ -51,7 +130,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Injury Watch",
+      "title": "San Francisco Giants Finishes Off New York Mets",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Colorado Rockies Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

@@ -1,6 +1,26 @@
 {
-  "updated_at": "2026-09-05T17:18:35.154104-04:00",
-  "games": [],
+  "updated_at": "2026-09-05T19:01:52.951552-04:00",
+  "games": [
+    {
+      "gamePk": 823577,
+      "game": "San Francisco Giants @ New York Mets",
+      "winner": "San Francisco Giants",
+      "loser": "New York Mets",
+      "final_score": "9-5",
+      "hitters": [
+        "Rafael Devers",
+        "Osleivis Basabe",
+        "Grant McCray",
+        "Christian Koss",
+        "Jared Young",
+        "A.J. Ewing"
+      ],
+      "pitchers": [
+        "Anthony Molina",
+        "Zac Thornton"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +44,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Injury Watch",
+      "title": "San Francisco Giants Finishes Off New York Mets",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Colorado Rockies Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
