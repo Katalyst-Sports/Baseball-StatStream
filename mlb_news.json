@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T13:20:43.541848-04:00",
+  "updated_at": "2026-09-05T15:11:58.313834-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,9 +24,9 @@
       "published": "2026-09-04"
     },
     {
-      "title": "Tampa Bay Rays Injury Watch",
-      "summary": "Tampa Bay Rays logged a roster-health update involving Manuel Rodr\u00edguez.",
-      "published": "2026-09-04"
+      "title": "New York Yankees Injury Watch",
+      "summary": "New York Yankees logged a roster-health update involving Trent Grisham.",
+      "published": "2026-09-05"
     },
     {
       "title": "Los Angeles Dodgers Makes Roster Move",
@@ -35,6 +35,12 @@
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-05",
+      "team": "New York Yankees",
+      "player": "Trent Grisham",
+      "update": "New York Yankees placed CF Trent Grisham on the 10-day injured list. Right hamstring strain. | Status Change"
+    },
     {
       "date": "2026-09-04",
       "team": "Tampa Bay Rays",
@@ -100,12 +106,6 @@
       "team": "Los Angeles Dodgers",
       "player": "Will Klein",
       "update": "Los Angeles Dodgers transferred RHP Will Klein from the 15-day injured list to the 60-day injured list. Right elbow discomfort. | Status Change"
-    },
-    {
-      "date": "2026-09-01",
-      "team": "San Francisco Giants",
-      "player": "Adrian Houser",
-      "update": "San Francisco Giants transferred RHP Adrian Houser from the 15-day injured list to the 60-day injured list. Right forearm strain. | Status Change"
     }
   ],
   "trade_updates": [
@@ -123,26 +123,26 @@
     },
     {
       "date": "2026-08-31",
-      "team": "Chicago White Sox",
-      "player": "Tommy Pham",
-      "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
-    },
-    {
-      "date": "2026-08-31",
       "team": "Philadelphia Phillies",
       "player": "Unknown Player",
       "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
     },
     {
       "date": "2026-08-31",
-      "team": "Tampa Bay Rays",
-      "player": "Unknown Player",
-      "update": "Tampa Bay Rays traded RF Jake Cave to Chicago White Sox for cash. | Trade"
+      "team": "Chicago White Sox",
+      "player": "Tommy Pham",
+      "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
     },
     {
       "date": "2026-08-31",
       "team": "Chicago White Sox",
       "player": "Jake Cave",
+      "update": "Tampa Bay Rays traded RF Jake Cave to Chicago White Sox for cash. | Trade"
+    },
+    {
+      "date": "2026-08-31",
+      "team": "Tampa Bay Rays",
+      "player": "Unknown Player",
       "update": "Tampa Bay Rays traded RF Jake Cave to Chicago White Sox for cash. | Trade"
     }
   ]
