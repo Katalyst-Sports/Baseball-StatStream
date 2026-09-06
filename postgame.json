@@ -1,107 +1,25 @@
 {
-  "updated_at": "2026-09-05T20:51:22.573173-04:00",
-  "games": [
-    {
-      "gamePk": 823577,
-      "game": "San Francisco Giants @ New York Mets",
-      "winner": "San Francisco Giants",
-      "loser": "New York Mets",
-      "final_score": "9-5",
-      "hitters": [
-        "Rafael Devers",
-        "Osleivis Basabe",
-        "Grant McCray",
-        "Christian Koss",
-        "Jared Young",
-        "A.J. Ewing"
-      ],
-      "pitchers": [
-        "Anthony Molina",
-        "Zac Thornton"
-      ]
-    },
-    {
-      "gamePk": 823823,
-      "game": "Chicago Cubs @ Miami Marlins",
-      "winner": "Chicago Cubs",
-      "loser": "Miami Marlins",
-      "final_score": "6-5",
-      "hitters": [
-        "Michael Busch",
-        "Ian Happ",
-        "Nico Hoerner",
-        "Michael Conforto",
-        "Miguel Amaya",
-        "Kyle Stowers",
-        "Griffin Conine"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823419,
-      "game": "Atlanta Braves @ Philadelphia Phillies",
-      "winner": "Philadelphia Phillies",
-      "loser": "Atlanta Braves",
-      "final_score": "2-4",
-      "hitters": [
-        "Drake Baldwin",
-        "Ronald Acu\u00f1a Jr.",
-        "Austin Riley",
-        "Kyle Schwarber",
-        "Bryce Harper",
-        "Luis Arraez",
-        "Derek Hill"
-      ],
-      "pitchers": [
-        "Zack Wheeler"
-      ]
-    },
-    {
-      "gamePk": 824389,
-      "game": "Detroit Tigers @ Cleveland Guardians",
-      "winner": "Detroit Tigers",
-      "loser": "Cleveland Guardians",
-      "final_score": "6-0",
-      "hitters": [
-        "Gleyber Torres",
-        "Riley Greene",
-        "Ben Malgeri",
-        "John Peck"
-      ],
-      "pitchers": [
-        "Parker Messick"
-      ]
-    }
-  ],
+  "updated_at": "2026-09-06T01:26:34.347472-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 6-7 Win",
+      "title": "San Francisco Giants Takes 9-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 3-4 Win",
+      "title": "Chicago Cubs Takes 6-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 10-7 Win",
+      "title": "Philadelphia Phillies Takes 2-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Takes 5-2 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "San Francisco Giants Finishes Off New York Mets",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Chicago Cubs Finishes Off Miami Marlins",
+      "title": "Detroit Tigers Takes 6-0 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
