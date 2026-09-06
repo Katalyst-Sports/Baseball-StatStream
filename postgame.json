@@ -1,6 +1,114 @@
 {
-  "updated_at": "2026-09-06T14:24:54.183761-04:00",
-  "games": [],
+  "updated_at": "2026-09-06T16:41:53.961274-04:00",
+  "games": [
+    {
+      "gamePk": 824469,
+      "game": "Milwaukee Brewers @ Cincinnati Reds",
+      "winner": "Cincinnati Reds",
+      "loser": "Milwaukee Brewers",
+      "final_score": "8-12",
+      "hitters": [
+        "Jake Bauers",
+        "Garrett Mitchell",
+        "Brice Turang",
+        "Dane Myers",
+        "Elly De La Cruz",
+        "Tyler Stephenson",
+        "Juan Brito",
+        "H\u00e9ctor Rodr\u00edguez"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823417,
+      "game": "Atlanta Braves @ Philadelphia Phillies",
+      "winner": "Atlanta Braves",
+      "loser": "Philadelphia Phillies",
+      "final_score": "5-4",
+      "hitters": [
+        "Drake Baldwin",
+        "Ronald Acu\u00f1a Jr.",
+        "Mauricio Dub\u00f3n",
+        "Kyle Schwarber",
+        "Derek Hill"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824794,
+      "game": "Boston Red Sox @ Baltimore Orioles",
+      "winner": "Boston Red Sox",
+      "loser": "Baltimore Orioles",
+      "final_score": "3-1",
+      "hitters": [
+        "Eli White",
+        "Pete Alonso"
+      ],
+      "pitchers": [
+        "Payton Tolle"
+      ]
+    },
+    {
+      "gamePk": 823336,
+      "game": "Los Angeles Angels @ Pittsburgh Pirates",
+      "winner": "Pittsburgh Pirates",
+      "loser": "Los Angeles Angels",
+      "final_score": "0-1",
+      "hitters": [
+        "Mike Trout",
+        "Brandon Lowe",
+        "Henry Davis"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824385,
+      "game": "Detroit Tigers @ Cleveland Guardians",
+      "winner": "Cleveland Guardians",
+      "loser": "Detroit Tigers",
+      "final_score": "2-3",
+      "hitters": [
+        "Riley Greene",
+        "Steven Kwan",
+        "Travis Bazzana",
+        "Brayan Rocchio"
+      ],
+      "pitchers": [
+        "Jackson Jobe",
+        "Gavin Williams"
+      ]
+    },
+    {
+      "gamePk": 823578,
+      "game": "San Francisco Giants @ New York Mets",
+      "winner": "New York Mets",
+      "loser": "San Francisco Giants",
+      "final_score": "2-4",
+      "hitters": [
+        "Bo Bichette",
+        "Brett Baty",
+        "A.J. Ewing"
+      ],
+      "pitchers": [
+        "Christian Scott"
+      ]
+    },
+    {
+      "gamePk": 823822,
+      "game": "Chicago Cubs @ Miami Marlins",
+      "winner": "Miami Marlins",
+      "loser": "Chicago Cubs",
+      "final_score": "3-10",
+      "hitters": [
+        "Pete Crow-Armstrong",
+        "Jakob Marsee",
+        "Heriberto Hern\u00e1ndez",
+        "Otto Lopez",
+        "Javier Sanoja"
+      ],
+      "pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +128,16 @@
     {
       "stage": "generated_news_item",
       "title": "Detroit Tigers Takes 6-0 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cincinnati Reds Finishes Off Milwaukee Brewers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Atlanta Braves Finishes Off Philadelphia Phillies",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
