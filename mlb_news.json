@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T09:07:39.602022-04:00",
+  "updated_at": "2026-09-06T12:17:04.818637-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,9 +24,9 @@
       "published": "2026-09-05"
     },
     {
-      "title": "Athletics Injury Watch",
-      "summary": "Athletics logged a roster-health update involving J.T. Ginn.",
-      "published": "2026-09-05"
+      "title": "Detroit Tigers Injury Watch",
+      "summary": "Detroit Tigers logged a roster-health update involving Matt Vierling.",
+      "published": "2026-09-06"
     },
     {
       "title": "Los Angeles Dodgers Makes Roster Move",
@@ -35,6 +35,18 @@
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-06",
+      "team": "Detroit Tigers",
+      "player": "Matt Vierling",
+      "update": "Detroit Tigers transferred CF Matt Vierling from the 10-day injured list to the 60-day injured list. Left adductor strain. | Status Change"
+    },
+    {
+      "date": "2026-09-06",
+      "team": "Boston Red Sox",
+      "player": "Ceddanne Rafaela",
+      "update": "Boston Red Sox placed CF Ceddanne Rafaela on the 10-day injured list retroactive to September 3, 2026. Right quadriceps strain. | Status Change"
+    },
     {
       "date": "2026-09-05",
       "team": "Athletics",
@@ -94,18 +106,6 @@
       "team": "Cincinnati Reds",
       "player": "Michael Toglia",
       "update": "Cincinnati Reds transferred 1B Michael Toglia from the 10-day injured list to the 60-day injured list. Right shoulder dislocation. | Status Change"
-    },
-    {
-      "date": "2026-09-04",
-      "team": "Cleveland Guardians",
-      "player": "Colin Holderman",
-      "update": "Cleveland Guardians placed RHP Colin Holderman on the 15-day injured list. Right wrist inflammation. | Status Change"
-    },
-    {
-      "date": "2026-09-03",
-      "team": "Seattle Mariners",
-      "player": "Brennen Davis",
-      "update": "Seattle Mariners placed CF Brennen Davis on the 60-day injured list. Left hamstring strain. | Status Change"
     }
   ],
   "trade_updates": [
@@ -123,14 +123,14 @@
     },
     {
       "date": "2026-08-31",
-      "team": "Chicago White Sox",
-      "player": "Tommy Pham",
+      "team": "Philadelphia Phillies",
+      "player": "Unknown Player",
       "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
     },
     {
       "date": "2026-08-31",
-      "team": "Philadelphia Phillies",
-      "player": "Unknown Player",
+      "team": "Chicago White Sox",
+      "player": "Tommy Pham",
       "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
     },
     {

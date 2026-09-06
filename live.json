@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-09-06T09:07:39.602022-04:00",
-  "games": [],
+  "updated_at": "2026-09-06T12:17:04.818637-04:00",
+  "games": [
+    {
+      "gamePk": 824469,
+      "game": "Milwaukee Brewers @ Cincinnati Reds",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +33,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Athletics Injury Watch",
+      "title": "Detroit Tigers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
