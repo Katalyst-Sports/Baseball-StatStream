@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T16:41:53.961274-04:00",
+  "updated_at": "2026-09-06T18:23:53.925430-04:00",
   "games": [
     {
       "gamePk": 824469,
@@ -107,6 +107,77 @@
         "Javier Sanoja"
       ],
       "pitchers": []
+    },
+    {
+      "gamePk": 824142,
+      "game": "Arizona Diamondbacks @ Houston Astros",
+      "winner": "Arizona Diamondbacks",
+      "loser": "Houston Astros",
+      "final_score": "3-2",
+      "hitters": [
+        "Nolan Arenado",
+        "Corbin Carroll",
+        "Yordan Alvarez",
+        "Jose Altuve"
+      ],
+      "pitchers": [
+        "Eduardo Rodriguez",
+        "Peter Lambert"
+      ]
+    },
+    {
+      "gamePk": 824065,
+      "game": "Toronto Blue Jays @ Kansas City Royals",
+      "winner": "Kansas City Royals",
+      "loser": "Toronto Blue Jays",
+      "final_score": "1-6",
+      "hitters": [
+        "Brett Bateman",
+        "Josh Smith",
+        "Bobby Witt Jr.",
+        "Vinnie Pasquantino",
+        "Salvador Perez",
+        "Nick Loftin"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 822848,
+      "game": "Tampa Bay Rays @ Texas Rangers",
+      "winner": "Texas Rangers",
+      "loser": "Tampa Bay Rays",
+      "final_score": "6-8",
+      "hitters": [
+        "Yandy D\u00edaz",
+        "Jonathan Aranda",
+        "Chandler Simpson",
+        "Jonny DeLuca",
+        "Ezequiel Duran",
+        "Corey Seager",
+        "Jake Burger",
+        "Logan O'Hoppe"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824309,
+      "game": "St. Louis Cardinals @ Colorado Rockies",
+      "winner": "St. Louis Cardinals",
+      "loser": "Colorado Rockies",
+      "final_score": "10-8",
+      "hitters": [
+        "Iv\u00e1n Herrera",
+        "Alec Burleson",
+        "Joshua B\u00e1ez",
+        "Nolan Gorman",
+        "Thomas Saggese",
+        "Jake McCarthy",
+        "TJ Rumfield",
+        "Mickey Moniak"
+      ],
+      "pitchers": [
+        "Kyle Leahy"
+      ]
     }
   ],
   "errors": [
@@ -142,7 +213,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Seattle Mariners Injury Watch",
+      "title": "Los Angeles Dodgers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
