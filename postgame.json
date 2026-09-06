@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T19:01:52.951552-04:00",
+  "updated_at": "2026-09-05T20:51:22.573173-04:00",
   "games": [
     {
       "gamePk": 823577,
@@ -18,6 +18,58 @@
       "pitchers": [
         "Anthony Molina",
         "Zac Thornton"
+      ]
+    },
+    {
+      "gamePk": 823823,
+      "game": "Chicago Cubs @ Miami Marlins",
+      "winner": "Chicago Cubs",
+      "loser": "Miami Marlins",
+      "final_score": "6-5",
+      "hitters": [
+        "Michael Busch",
+        "Ian Happ",
+        "Nico Hoerner",
+        "Michael Conforto",
+        "Miguel Amaya",
+        "Kyle Stowers",
+        "Griffin Conine"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823419,
+      "game": "Atlanta Braves @ Philadelphia Phillies",
+      "winner": "Philadelphia Phillies",
+      "loser": "Atlanta Braves",
+      "final_score": "2-4",
+      "hitters": [
+        "Drake Baldwin",
+        "Ronald Acu\u00f1a Jr.",
+        "Austin Riley",
+        "Kyle Schwarber",
+        "Bryce Harper",
+        "Luis Arraez",
+        "Derek Hill"
+      ],
+      "pitchers": [
+        "Zack Wheeler"
+      ]
+    },
+    {
+      "gamePk": 824389,
+      "game": "Detroit Tigers @ Cleveland Guardians",
+      "winner": "Detroit Tigers",
+      "loser": "Cleveland Guardians",
+      "final_score": "6-0",
+      "hitters": [
+        "Gleyber Torres",
+        "Riley Greene",
+        "Ben Malgeri",
+        "John Peck"
+      ],
+      "pitchers": [
+        "Parker Messick"
       ]
     }
   ],
@@ -49,7 +101,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Colorado Rockies Injury Watch",
+      "title": "Chicago Cubs Finishes Off Miami Marlins",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Athletics Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

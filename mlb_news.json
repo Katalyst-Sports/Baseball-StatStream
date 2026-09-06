@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T19:01:52.951552-04:00",
+  "updated_at": "2026-09-05T20:51:22.573173-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -29,8 +29,13 @@
       "published": "2026-09-05"
     },
     {
-      "title": "Colorado Rockies Injury Watch",
-      "summary": "Colorado Rockies logged a roster-health update involving Willi Castro.",
+      "title": "Chicago Cubs Finishes Off Miami Marlins",
+      "summary": "Chicago Cubs wrapped up a 6-5 result over Miami Marlins.",
+      "published": "2026-09-05"
+    },
+    {
+      "title": "Athletics Injury Watch",
+      "summary": "Athletics logged a roster-health update involving J.T. Ginn.",
       "published": "2026-09-05"
     },
     {
@@ -40,6 +45,12 @@
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-05",
+      "team": "Athletics",
+      "player": "J.T. Ginn",
+      "update": "Athletics placed RHP J.T. Ginn on the 15-day injured list. Right elbow impingement. | Status Change"
+    },
     {
       "date": "2026-09-05",
       "team": "Colorado Rockies",
@@ -105,12 +116,6 @@
       "team": "Seattle Mariners",
       "player": "Brennen Davis",
       "update": "Seattle Mariners placed CF Brennen Davis on the 60-day injured list. Left hamstring strain. | Status Change"
-    },
-    {
-      "date": "2026-09-03",
-      "team": "San Francisco Giants",
-      "player": "Keaton Winn",
-      "update": "San Francisco Giants transferred RHP Keaton Winn from the 15-day injured list to the 60-day injured list. Right elbow neuritis. | Status Change"
     }
   ],
   "trade_updates": [
@@ -128,14 +133,14 @@
     },
     {
       "date": "2026-08-31",
-      "team": "Philadelphia Phillies",
-      "player": "Unknown Player",
+      "team": "Chicago White Sox",
+      "player": "Tommy Pham",
       "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
     },
     {
       "date": "2026-08-31",
-      "team": "Chicago White Sox",
-      "player": "Tommy Pham",
+      "team": "Philadelphia Phillies",
+      "player": "Unknown Player",
       "update": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash. | Trade"
     },
     {
