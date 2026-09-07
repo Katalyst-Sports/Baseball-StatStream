@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T15:21:21.415623-04:00",
+  "updated_at": "2026-09-07T18:10:22.203260-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -29,8 +29,13 @@
       "published": "2026-09-07"
     },
     {
-      "title": "Milwaukee Brewers Injury Watch",
-      "summary": "Milwaukee Brewers logged a roster-health update involving Grant Anderson.",
+      "title": "New York Mets Finishes Off Miami Marlins",
+      "summary": "New York Mets wrapped up a 9-4 result over Miami Marlins.",
+      "published": "2026-09-07"
+    },
+    {
+      "title": "Washington Nationals Injury Watch",
+      "summary": "Washington Nationals logged a roster-health update involving Orlando Ribalta.",
       "published": "2026-09-07"
     },
     {
@@ -40,6 +45,12 @@
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-07",
+      "team": "Washington Nationals",
+      "player": "Orlando Ribalta",
+      "update": "Washington Nationals placed RHP Orlando Ribalta on the 15-day injured list retroactive to September 4, 2026. Right forearm inflammation. | Status Change"
+    },
     {
       "date": "2026-09-07",
       "team": "Milwaukee Brewers",
@@ -105,12 +116,6 @@
       "team": "Tampa Bay Rays",
       "player": "Garrett Cleavinger",
       "update": "Tampa Bay Rays placed LHP Garrett Cleavinger on the 15-day injured list. Left forearm tightness. | Status Change"
-    },
-    {
-      "date": "2026-09-05",
-      "team": "Toronto Blue Jays",
-      "player": "Jameson Taillon",
-      "update": "Toronto Blue Jays placed RHP Jameson Taillon on the 15-day injured list. Right elbow inflammation. | Status Change"
     }
   ],
   "trade_updates": [

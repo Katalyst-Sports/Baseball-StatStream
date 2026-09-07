@@ -1,74 +1,16 @@
 {
-  "updated_at": "2026-09-07T15:21:21.415623-04:00",
+  "updated_at": "2026-09-07T18:10:22.203260-04:00",
   "games": [
     {
-      "gamePk": 823820,
-      "game": "New York Mets @ Miami Marlins",
-      "score": "9-4",
-      "inning": "6th",
+      "gamePk": 823254,
+      "game": "Washington Nationals @ San Diego Padres",
+      "score": "0-3",
+      "inning": "4th",
       "hot_hitters": [
-        "Juan Soto",
-        "Marcus Semien",
-        "A.J. Ewing",
-        "Javier Sanoja",
-        "Graham Pauley"
+        "Fernando Tatis Jr.",
+        "Manny Machado",
+        "Jackson Merrill"
       ],
-      "top_pitchers": [
-        "Jonah Tong"
-      ]
-    },
-    {
-      "gamePk": 824715,
-      "game": "Los Angeles Angels @ Boston Red Sox",
-      "score": "0-5",
-      "inning": "5th",
-      "hot_hitters": [
-        "Adley Rutschman",
-        "Caleb Durbin",
-        "Jarren Duran"
-      ],
-      "top_pitchers": [
-        "Brayan Bello"
-      ]
-    },
-    {
-      "gamePk": 824793,
-      "game": "Cleveland Guardians @ Baltimore Orioles",
-      "score": "0-4",
-      "inning": "5th",
-      "hot_hitters": [
-        "Coby Mayo"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824062,
-      "game": "Arizona Diamondbacks @ Kansas City Royals",
-      "score": "0-0",
-      "inning": "5th",
-      "hot_hitters": [
-        "Salvador Perez"
-      ],
-      "top_pitchers": [
-        "Noah Cameron"
-      ]
-    },
-    {
-      "gamePk": 823742,
-      "game": "Chicago Cubs @ Milwaukee Brewers",
-      "score": "1-0",
-      "inning": "5th",
-      "hot_hitters": [
-        "Pedro Ram\u00edrez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824229,
-      "game": "Minnesota Twins @ Detroit Tigers",
-      "score": "1-0",
-      "inning": "1st",
-      "hot_hitters": [],
       "top_pitchers": []
     }
   ],
@@ -100,7 +42,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Injury Watch",
+      "title": "New York Mets Finishes Off Miami Marlins",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Washington Nationals Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

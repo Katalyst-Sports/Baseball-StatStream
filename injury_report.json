@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T15:21:21.415623-04:00",
+  "updated_at": "2026-09-07T18:10:22.203260-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -5175,7 +5175,7 @@
     {
       "team_id": 120,
       "team_name": "Washington Nationals",
-      "injured_count": 15,
+      "injured_count": 16,
       "players": [
         {
           "player_id": 695418,
@@ -5266,6 +5266,14 @@
           "description": "Washington Nationals transferred LHP Mitchell Parker from the 15-day injured list to the 60-day injured list. Left elbow inflammation."
         },
         {
+          "player_id": 687377,
+          "name": "Orlando Ribalta",
+          "il_type": "Injured List",
+          "date": "2026-09-07",
+          "note": "Washington Nationals placed RHP Orlando Ribalta on the 15-day injured list retroactive to September 4, 2026. Right forearm inflammation. | Status Change",
+          "description": "Washington Nationals placed RHP Orlando Ribalta on the 15-day injured list retroactive to September 4, 2026. Right forearm inflammation."
+        },
+        {
           "player_id": 676571,
           "name": "PJ Poulin",
           "il_type": "Injured List",
@@ -5328,7 +5336,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Injury Watch",
+      "title": "New York Mets Finishes Off Miami Marlins",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Washington Nationals Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
