@@ -1,6 +1,21 @@
 {
-  "updated_at": "2026-09-07T11:28:30.556565-04:00",
-  "games": [],
+  "updated_at": "2026-09-07T15:21:21.415623-04:00",
+  "games": [
+    {
+      "gamePk": 823415,
+      "game": "Atlanta Braves @ Philadelphia Phillies",
+      "winner": "Philadelphia Phillies",
+      "loser": "Atlanta Braves",
+      "final_score": "0-1",
+      "hitters": [
+        "Kyle Schwarber"
+      ],
+      "pitchers": [
+        "Grant Holmes",
+        "Jes\u00fas Luzardo"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +39,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Injury Watch",
+      "title": "Philadelphia Phillies Finishes Off Atlanta Braves",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T11:28:30.556565-04:00",
+  "updated_at": "2026-09-07T15:21:21.415623-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2940,7 +2940,7 @@
     {
       "team_id": 158,
       "team_name": "Milwaukee Brewers",
-      "injured_count": 24,
+      "injured_count": 25,
       "players": [
         {
           "player_id": 682842,
@@ -3061,6 +3061,14 @@
           "date": "2026-07-07",
           "note": "Milwaukee Brewers placed 3B David Hamilton on the 10-day injured list. Strained left hamstring. | Status Change",
           "description": "Milwaukee Brewers placed 3B David Hamilton on the 10-day injured list. Strained left hamstring."
+        },
+        {
+          "player_id": 681982,
+          "name": "Grant Anderson",
+          "il_type": "Injured List",
+          "date": "2026-09-07",
+          "note": "Milwaukee Brewers placed RHP Grant Anderson on the 15-day injured list. Right biceps inflammation. | Status Change",
+          "description": "Milwaukee Brewers placed RHP Grant Anderson on the 15-day injured list. Right biceps inflammation."
         },
         {
           "player_id": 694192,
@@ -5315,7 +5323,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Injury Watch",
+      "title": "Philadelphia Phillies Finishes Off Atlanta Braves",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
