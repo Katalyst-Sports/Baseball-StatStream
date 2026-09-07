@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T05:51:53.092594-04:00",
+  "updated_at": "2026-09-07T11:28:30.556565-04:00",
   "games": [
     {
       "gamePk": 823415,
@@ -1002,7 +1002,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 678394,
+        "name": "Brayan Bello",
+        "hand": "R",
+        "era": "5.07",
+        "whip": "1.46",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-31",
+              "opponent": "Houston Astros",
+              "ip": "4.2",
+              "er": 5,
+              "k": 2,
+              "bb": 3,
+              "pitches": 92,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Milwaukee Brewers",
+              "ip": "3.1",
+              "er": 3,
+              "k": 5,
+              "bb": 4,
+              "pitches": 86,
+              "strikes": 50
+            },
+            {
+              "date": "2026-04-12",
+              "opponent": "St. Louis Cardinals",
+              "ip": "6.2",
+              "er": 2,
+              "k": 2,
+              "bb": 2,
+              "pitches": 94,
+              "strikes": 61
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "3.0",
+          "avg_bb": "3.0",
+          "avg_pitches": "90.7",
+          "avg_strikes": "56.3",
+          "era": "6.14",
+          "whip": "1.91",
+          "strike_pct": "62.1",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Kyren Paris",
@@ -1839,7 +1888,56 @@
       "venue": "Kauffman Stadium",
       "start": "2026-09-07T18:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 571882,
+        "name": "Derek Law",
+        "hand": "R",
+        "era": "1.93",
+        "whip": "1.07",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-08-29",
+              "opponent": "San Francisco Giants",
+              "ip": "1.1",
+              "er": 1,
+              "k": 1,
+              "bb": 1,
+              "pitches": 36,
+              "strikes": 20
+            },
+            {
+              "date": "2026-09-01",
+              "opponent": "Philadelphia Phillies",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 17,
+              "strikes": 10
+            },
+            {
+              "date": "2026-09-02",
+              "opponent": "Philadelphia Phillies",
+              "ip": "1.1",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 19,
+              "strikes": 12
+            }
+          ],
+          "avg_ip": "1.1",
+          "avg_k": "1.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "24.0",
+          "avg_strikes": "14.0",
+          "era": "2.45",
+          "whip": "1.36",
+          "strike_pct": "58.3",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 702070,
         "name": "Noah Cameron",
@@ -2734,7 +2832,56 @@
       "venue": "Comerica Park",
       "start": "2026-09-07T19:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 657746,
+        "name": "Joe Ryan",
+        "hand": "R",
+        "era": "3.65",
+        "whip": "1.14",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Baltimore Orioles",
+              "ip": "5.1",
+              "er": 0,
+              "k": 7,
+              "bb": 2,
+              "pitches": 85,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Kansas City Royals",
+              "ip": "4.0",
+              "er": 5,
+              "k": 3,
+              "bb": 0,
+              "pitches": 77,
+              "strikes": 49
+            },
+            {
+              "date": "2026-04-06",
+              "opponent": "Detroit Tigers",
+              "ip": "5.0",
+              "er": 2,
+              "k": 7,
+              "bb": 3,
+              "pitches": 101,
+              "strikes": 61
+            }
+          ],
+          "avg_ip": "4.2",
+          "avg_k": "5.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "87.7",
+          "avg_strikes": "56.0",
+          "era": "4.40",
+          "whip": "1.26",
+          "strike_pct": "63.9",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 675512,
         "name": "Troy Melton",
