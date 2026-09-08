@@ -1,6 +1,49 @@
 {
-  "updated_at": "2026-09-08T16:19:52.136709-04:00",
-  "games": [],
+  "updated_at": "2026-09-08T18:48:27.277291-04:00",
+  "games": [
+    {
+      "gamePk": 824792,
+      "game": "Cleveland Guardians @ Baltimore Orioles",
+      "score": "1-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824228,
+      "game": "Minnesota Twins @ Detroit Tigers",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823414,
+      "game": "Houston Astros @ Philadelphia Phillies",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823821,
+      "game": "New York Mets @ Miami Marlins",
+      "score": "2-0",
+      "inning": "1st",
+      "hot_hitters": [
+        "Francisco Lindor"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824714,
+      "game": "Los Angeles Angels @ Boston Red Sox",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +67,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Injury Watch",
+      "title": "Washington Nationals Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

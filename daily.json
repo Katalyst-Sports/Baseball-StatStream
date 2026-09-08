@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T16:19:52.136709-04:00",
+  "updated_at": "2026-09-08T18:48:27.277291-04:00",
   "games": [
     {
       "gamePk": 824792,
@@ -7,7 +7,7 @@
       "home_team": "Baltimore Orioles",
       "venue": "Oriole Park at Camden Yards",
       "start": "2026-09-08T22:35:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 676440,
         "name": "Tanner Bibee",
@@ -62,8 +62,8 @@
         "id": 687064,
         "name": "Brandon Young",
         "hand": "R",
-        "era": "3.42",
-        "whip": "1.31",
+        "era": "3.46",
+        "whip": "1.32",
         "last3": {
           "starts": [
             {
@@ -132,10 +132,10 @@
         {
           "name": "Nathaniel Lowe",
           "stats": {
-            "avg": ".256",
-            "obp": ".323",
-            "slg": ".459",
-            "ops": ".782",
+            "avg": ".255",
+            "obp": ".322",
+            "slg": ".458",
+            "ops": ".780",
             "homeRuns": 16,
             "rbi": 56
           },
@@ -150,12 +150,32 @@
           }
         },
         {
+          "name": "Steven Kwan",
+          "stats": {
+            "avg": ".276",
+            "obp": ".374",
+            "slg": ".338",
+            "ops": ".712",
+            "homeRuns": 2,
+            "rbi": 27
+          },
+          "last10ab": {
+            "avg": "0.286",
+            "hits": 4,
+            "atBats": 14,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
+          }
+        },
+        {
           "name": "Travis Bazzana",
           "stats": {
             "avg": ".244",
-            "obp": ".334",
-            "slg": ".380",
-            "ops": ".714",
+            "obp": ".333",
+            "slg": ".379",
+            "ops": ".712",
             "homeRuns": 10,
             "rbi": 47
           },
@@ -190,32 +210,12 @@
           }
         },
         {
-          "name": "Steven Kwan",
-          "stats": {
-            "avg": ".274",
-            "obp": ".373",
-            "slg": ".335",
-            "ops": ".708",
-            "homeRuns": 2,
-            "rbi": 27
-          },
-          "last10ab": {
-            "avg": "0.286",
-            "hits": 4,
-            "atBats": 14,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Jos\u00e9 Ram\u00edrez",
           "stats": {
             "avg": ".237",
-            "obp": ".329",
-            "slg": ".377",
-            "ops": ".706",
+            "obp": ".328",
+            "slg": ".376",
+            "ops": ".704",
             "homeRuns": 11,
             "rbi": 48
           },
@@ -232,12 +232,12 @@
         {
           "name": "Jo Adell",
           "stats": {
-            "avg": ".239",
-            "obp": ".294",
-            "slg": ".399",
-            "ops": ".693",
+            "avg": ".240",
+            "obp": ".295",
+            "slg": ".400",
+            "ops": ".695",
             "homeRuns": 20,
-            "rbi": 85
+            "rbi": 86
           },
           "last10ab": {
             "avg": "0.250",
@@ -479,7 +479,7 @@
       "home_team": "Detroit Tigers",
       "venue": "Comerica Park",
       "start": "2026-09-08T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 665152,
         "name": "Dean Kremer",
@@ -534,8 +534,8 @@
         "id": 623454,
         "name": "Drew Anderson",
         "hand": "R",
-        "era": "3.73",
-        "whip": "1.30",
+        "era": "3.72",
+        "whip": "1.32",
         "last3": {
           "starts": [
             {
@@ -685,9 +685,9 @@
           "name": "Luke Keaschall",
           "stats": {
             "avg": ".275",
-            "obp": ".368",
-            "slg": ".389",
-            "ops": ".757",
+            "obp": ".367",
+            "slg": ".388",
+            "ops": ".755",
             "homeRuns": 9,
             "rbi": 44
           },
@@ -699,6 +699,26 @@
             "rbi": 1,
             "walks": 1,
             "games": 3
+          }
+        },
+        {
+          "name": "Brooks Lee",
+          "stats": {
+            "avg": ".251",
+            "obp": ".300",
+            "slg": ".441",
+            "ops": ".741",
+            "homeRuns": 23,
+            "rbi": 79
+          },
+          "last10ab": {
+            "avg": "0.154",
+            "hits": 2,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 4
           }
         },
         {
@@ -718,26 +738,6 @@
             "homeRuns": 0,
             "rbi": 1,
             "walks": 2,
-            "games": 4
-          }
-        },
-        {
-          "name": "Brooks Lee",
-          "stats": {
-            "avg": ".250",
-            "obp": ".299",
-            "slg": ".438",
-            "ops": ".737",
-            "homeRuns": 23,
-            "rbi": 79
-          },
-          "last10ab": {
-            "avg": "0.154",
-            "hits": 2,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
             "games": 4
           }
         },
@@ -951,7 +951,7 @@
       "home_team": "Philadelphia Phillies",
       "venue": "Citizens Bank Park",
       "start": "2026-09-08T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 669713,
         "name": "Hayden Wesneski",
@@ -1006,8 +1006,8 @@
         "id": 691725,
         "name": "Andrew Painter",
         "hand": "R",
-        "era": "5.55",
-        "whip": "1.37",
+        "era": "5.50",
+        "whip": "1.36",
         "last3": {
           "starts": [
             {
@@ -1057,9 +1057,9 @@
           "name": "Yordan Alvarez",
           "stats": {
             "avg": ".314",
-            "obp": ".432",
-            "slg": ".599",
-            "ops": "1.031",
+            "obp": ".431",
+            "slg": ".598",
+            "ops": "1.029",
             "homeRuns": 38,
             "rbi": 95
           },
@@ -1076,10 +1076,10 @@
         {
           "name": "Jeremy Pe\u00f1a",
           "stats": {
-            "avg": ".271",
-            "obp": ".325",
-            "slg": ".456",
-            "ops": ".781",
+            "avg": ".270",
+            "obp": ".324",
+            "slg": ".455",
+            "ops": ".779",
             "homeRuns": 17,
             "rbi": 46
           },
@@ -1423,7 +1423,7 @@
       "home_team": "Miami Marlins",
       "venue": "loanDepot park",
       "start": "2026-09-08T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 640455,
         "name": "Sean Manaea",
@@ -1478,8 +1478,8 @@
         "id": 645261,
         "name": "Sandy Alcantara",
         "hand": "R",
-        "era": "3.54",
-        "whip": "1.19",
+        "era": "3.59",
+        "whip": "1.20",
         "last3": {
           "starts": [
             {
@@ -1529,9 +1529,9 @@
           "name": "Juan Soto",
           "stats": {
             "avg": ".276",
-            "obp": ".397",
+            "obp": ".399",
             "slg": ".525",
-            "ops": ".922",
+            "ops": ".924",
             "homeRuns": 23,
             "rbi": 56
           },
@@ -1588,12 +1588,12 @@
         {
           "name": "Francisco Lindor",
           "stats": {
-            "avg": ".229",
-            "obp": ".312",
-            "slg": ".421",
-            "ops": ".733",
-            "homeRuns": 16,
-            "rbi": 38
+            "avg": ".232",
+            "obp": ".314",
+            "slg": ".431",
+            "ops": ".745",
+            "homeRuns": 17,
+            "rbi": 39
           },
           "last10ab": {
             "avg": "0.182",
@@ -1895,7 +1895,7 @@
       "home_team": "Boston Red Sox",
       "venue": "Fenway Park",
       "start": "2026-09-08T22:45:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 672282,
         "name": "Reid Detmers",
@@ -5208,7 +5208,56 @@
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 682243,
+        "name": "Bryce Miller",
+        "hand": "R",
+        "era": "4.01",
+        "whip": "1.11",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-13",
+              "opponent": "Houston Astros",
+              "ip": "5.1",
+              "er": 2,
+              "k": 3,
+              "bb": 1,
+              "pitches": 81,
+              "strikes": 58
+            },
+            {
+              "date": "2026-05-19",
+              "opponent": "Chicago White Sox",
+              "ip": "5.2",
+              "er": 0,
+              "k": 7,
+              "bb": 1,
+              "pitches": 72,
+              "strikes": 50
+            },
+            {
+              "date": "2026-05-25",
+              "opponent": "Athletics",
+              "ip": "5.0",
+              "er": 2,
+              "k": 4,
+              "bb": 0,
+              "pitches": 83,
+              "strikes": 55
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "4.7",
+          "avg_bb": "0.7",
+          "avg_pitches": "78.7",
+          "avg_strikes": "54.3",
+          "era": "2.25",
+          "whip": "1.00",
+          "strike_pct": "69.1",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Justin Foscue",
@@ -7014,7 +7063,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Injury Watch",
+      "title": "Washington Nationals Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
