@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T13:45:28.382384-04:00",
+  "updated_at": "2026-09-08T16:19:52.136709-04:00",
   "games": [
     {
       "gamePk": 824792,
@@ -5158,7 +5158,56 @@
       "venue": "T-Mobile Park",
       "start": "2026-09-09T01:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 615698,
+        "name": "Cal Quantrill",
+        "hand": "R",
+        "era": "2.79",
+        "whip": "1.07",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-16",
+              "opponent": "Athletics",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 12,
+              "strikes": 8
+            },
+            {
+              "date": "2026-04-18",
+              "opponent": "Seattle Mariners",
+              "ip": "3.0",
+              "er": 3,
+              "k": 5,
+              "bb": 2,
+              "pitches": 65,
+              "strikes": 40
+            },
+            {
+              "date": "2026-04-24",
+              "opponent": "Athletics",
+              "ip": "3.0",
+              "er": 2,
+              "k": 2,
+              "bb": 0,
+              "pitches": 45,
+              "strikes": 28
+            }
+          ],
+          "avg_ip": "2.1",
+          "avg_k": "2.3",
+          "avg_bb": "0.7",
+          "avg_pitches": "40.7",
+          "avg_strikes": "25.3",
+          "era": "6.43",
+          "whip": "1.29",
+          "strike_pct": "62.3",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {},
       "away_hitters": [
         {
@@ -6965,7 +7014,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Washington Nationals Injury Watch",
+      "title": "Tampa Bay Rays Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
