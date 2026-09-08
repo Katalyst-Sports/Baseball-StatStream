@@ -1,168 +1,25 @@
 {
-  "updated_at": "2026-09-07T20:26:30.411064-04:00",
-  "games": [
-    {
-      "gamePk": 823415,
-      "game": "Atlanta Braves @ Philadelphia Phillies",
-      "winner": "Philadelphia Phillies",
-      "loser": "Atlanta Braves",
-      "final_score": "0-1",
-      "hitters": [
-        "Kyle Schwarber"
-      ],
-      "pitchers": [
-        "Grant Holmes",
-        "Jes\u00fas Luzardo"
-      ]
-    },
-    {
-      "gamePk": 823820,
-      "game": "New York Mets @ Miami Marlins",
-      "winner": "New York Mets",
-      "loser": "Miami Marlins",
-      "final_score": "9-4",
-      "hitters": [
-        "Francisco Lindor",
-        "Juan Soto",
-        "Bo Bichette",
-        "Marcus Semien",
-        "A.J. Ewing",
-        "Nick Morabito",
-        "Jakob Marsee",
-        "Javier Sanoja",
-        "Graham Pauley"
-      ],
-      "pitchers": [
-        "Jonah Tong"
-      ]
-    },
-    {
-      "gamePk": 824715,
-      "game": "Los Angeles Angels @ Boston Red Sox",
-      "winner": "Boston Red Sox",
-      "loser": "Los Angeles Angels",
-      "final_score": "2-5",
-      "hitters": [
-        "Mois\u00e9s Ballesteros",
-        "Adley Rutschman",
-        "Caleb Durbin",
-        "Jarren Duran",
-        "Eli White"
-      ],
-      "pitchers": [
-        "Brayan Bello"
-      ]
-    },
-    {
-      "gamePk": 824793,
-      "game": "Cleveland Guardians @ Baltimore Orioles",
-      "winner": "Baltimore Orioles",
-      "loser": "Cleveland Guardians",
-      "final_score": "4-6",
-      "hitters": [
-        "Steven Kwan",
-        "Jo Adell",
-        "Nathaniel Lowe",
-        "Coby Mayo",
-        "Samuel Basallo",
-        "Rece Hinds"
-      ],
-      "pitchers": [
-        "Trevor Rogers"
-      ]
-    },
-    {
-      "gamePk": 824062,
-      "game": "Arizona Diamondbacks @ Kansas City Royals",
-      "winner": "Arizona Diamondbacks",
-      "loser": "Kansas City Royals",
-      "final_score": "5-4",
-      "hitters": [
-        "Gabriel Moreno",
-        "Nolan Arenado",
-        "Ildemaro Vargas",
-        "Vinnie Pasquantino",
-        "Salvador Perez"
-      ],
-      "pitchers": [
-        "Noah Cameron"
-      ]
-    },
-    {
-      "gamePk": 823742,
-      "game": "Chicago Cubs @ Milwaukee Brewers",
-      "winner": "Milwaukee Brewers",
-      "loser": "Chicago Cubs",
-      "final_score": "3-4",
-      "hitters": [
-        "Pete Crow-Armstrong",
-        "Alex Bregman",
-        "Pedro Ram\u00edrez"
-      ],
-      "pitchers": [
-        "Matthew Boyd"
-      ]
-    },
-    {
-      "gamePk": 824229,
-      "game": "Minnesota Twins @ Detroit Tigers",
-      "winner": "Detroit Tigers",
-      "loser": "Minnesota Twins",
-      "final_score": "4-5",
-      "hitters": [
-        "Trevor Larnach",
-        "Kaelen Culpepper",
-        "Kevin McGonigle",
-        "Riley Greene"
-      ],
-      "pitchers": [
-        "Joe Ryan"
-      ]
-    },
-    {
-      "gamePk": 823254,
-      "game": "Washington Nationals @ San Diego Padres",
-      "winner": "San Diego Padres",
-      "loser": "Washington Nationals",
-      "final_score": "2-3",
-      "hitters": [
-        "Dylan Crews",
-        "Fernando Tatis Jr.",
-        "Manny Machado",
-        "Jackson Merrill"
-      ],
-      "pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-08T01:05:50.477151-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Cincinnati Reds Takes 8-12 Win",
+      "title": "Philadelphia Phillies Takes 0-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Takes 5-4 Win",
+      "title": "New York Mets Takes 9-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Takes 3-1 Win",
+      "title": "Boston Red Sox Takes 2-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Takes 0-1 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Philadelphia Phillies Finishes Off Atlanta Braves",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "New York Mets Finishes Off Miami Marlins",
+      "title": "Baltimore Orioles Takes 4-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
