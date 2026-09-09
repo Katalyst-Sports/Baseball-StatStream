@@ -1,151 +1,25 @@
 {
-  "updated_at": "2026-09-08T20:45:30.952313-04:00",
-  "games": [
-    {
-      "gamePk": 824792,
-      "game": "Cleveland Guardians @ Baltimore Orioles",
-      "score": "7-5",
-      "inning": "7th",
-      "hot_hitters": [
-        "Travis Bazzana",
-        "Angel Mart\u00ednez",
-        "Petey Halpin",
-        "Jackson Holliday",
-        "Pete Alonso"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824228,
-      "game": "Minnesota Twins @ Detroit Tigers",
-      "score": "3-2",
-      "inning": "8th",
-      "hot_hitters": [
-        "Kody Clemens",
-        "Kevin McGonigle"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823414,
-      "game": "Houston Astros @ Philadelphia Phillies",
-      "score": "6-3",
-      "inning": "7th",
-      "hot_hitters": [
-        "Daulton Varsho",
-        "Yainer Diaz",
-        "Christian Walker",
-        "Cam Smith",
-        "Trea Turner"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823821,
-      "game": "New York Mets @ Miami Marlins",
-      "score": "7-4",
-      "inning": "7th",
-      "hot_hitters": [
-        "Francisco Lindor",
-        "Juan Soto",
-        "Brett Baty",
-        "Jakob Marsee",
-        "Jared Serna"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824714,
-      "game": "Los Angeles Angels @ Boston Red Sox",
-      "score": "4-0",
-      "inning": "7th",
-      "hot_hitters": [
-        "Zach Neto",
-        "Vaughn Grissom",
-        "Christian Moore"
-      ],
-      "top_pitchers": [
-        "Reid Detmers"
-      ]
-    },
-    {
-      "gamePk": 823500,
-      "game": "Colorado Rockies @ New York Yankees",
-      "score": "1-2",
-      "inning": "6th",
-      "hot_hitters": [
-        "Adael Amador"
-      ],
-      "top_pitchers": [
-        "Cam Schlittler"
-      ]
-    },
-    {
-      "gamePk": 824875,
-      "game": "Tampa Bay Rays @ Atlanta Braves",
-      "score": "4-1",
-      "inning": "5th",
-      "hot_hitters": [
-        "Junior Caminero",
-        "Liam Hicks",
-        "Victor Mesa Jr."
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824063,
-      "game": "Arizona Diamondbacks @ Kansas City Royals",
-      "score": "0-0",
-      "inning": "4th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824551,
-      "game": "Pittsburgh Pirates @ Chicago White Sox",
-      "score": "7-0",
-      "inning": "4th",
-      "hot_hitters": [
-        "Konnor Griffin",
-        "Bryan Reynolds",
-        "Oneil Cruz",
-        "Spencer Horwitz"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823738,
-      "game": "Chicago Cubs @ Milwaukee Brewers",
-      "score": "1-1",
-      "inning": "4th",
-      "hot_hitters": [
-        "Jackson Chourio",
-        "Brice Turang"
-      ],
-      "top_pitchers": [
-        "Jacob Misiorowski"
-      ]
-    }
-  ],
+  "updated_at": "2026-09-09T01:23:35.999431-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Philadelphia Phillies Takes 0-1 Win",
+      "title": "Cleveland Guardians Takes 9-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Mets Takes 9-4 Win",
+      "title": "Minnesota Twins Takes 3-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Takes 2-5 Win",
+      "title": "Houston Astros Takes 6-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 4-6 Win",
+      "title": "New York Mets Takes 7-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
