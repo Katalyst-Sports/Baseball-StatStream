@@ -1,6 +1,60 @@
 {
-  "updated_at": "2026-09-09T13:56:44.214725-04:00",
-  "games": [],
+  "updated_at": "2026-09-09T16:51:25.444870-04:00",
+  "games": [
+    {
+      "gamePk": 824226,
+      "game": "Minnesota Twins @ Detroit Tigers",
+      "score": "2-5",
+      "inning": "7th",
+      "hot_hitters": [
+        "Kody Clemens",
+        "Josh Bell",
+        "Colt Keith"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824956,
+      "game": "Toronto Blue Jays @ Athletics",
+      "score": "0-2",
+      "inning": "7th",
+      "hot_hitters": [
+        "Henry Bolte",
+        "Max Muncy"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823172,
+      "game": "St. Louis Cardinals @ San Francisco Giants",
+      "score": "4-1",
+      "inning": "4th",
+      "hot_hitters": [
+        "Leo Bernal"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823251,
+      "game": "Washington Nationals @ San Diego Padres",
+      "score": "1-0",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Keibert Ruiz"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823090,
+      "game": "Texas Rangers @ Seattle Mariners",
+      "score": "1-1",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Jake Burger"
+      ],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +78,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Injury Watch",
+      "title": "Baltimore Orioles Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
