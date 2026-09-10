@@ -1,21 +1,11 @@
 {
-  "updated_at": "2026-09-10T13:45:23.680544-04:00",
+  "updated_at": "2026-09-10T16:06:00.051219-04:00",
   "games": [
     {
-      "gamePk": 824872,
-      "game": "Tampa Bay Rays @ Atlanta Braves",
+      "gamePk": 823088,
+      "game": "Texas Rangers @ Seattle Mariners",
       "score": "0-0",
-      "inning": "7th",
-      "hot_hitters": [
-        "Jonny DeLuca"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823413,
-      "game": "Houston Astros @ Philadelphia Phillies",
-      "score": "1-0",
-      "inning": "3rd",
+      "inning": "1st",
       "hot_hitters": [],
       "top_pitchers": []
     }
@@ -39,6 +29,16 @@
     {
       "stage": "generated_news_item",
       "title": "San Diego Padres Takes 2-9 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Atlanta Braves Finishes Off Tampa Bay Rays",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Houston Astros Finishes Off Philadelphia Phillies",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
