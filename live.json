@@ -1,156 +1,25 @@
 {
-  "updated_at": "2026-09-09T20:50:49.903121-04:00",
-  "games": [
-    {
-      "gamePk": 824791,
-      "game": "Cleveland Guardians @ Baltimore Orioles",
-      "score": "5-9",
-      "inning": "8th",
-      "hot_hitters": [
-        "Chase DeLauter",
-        "Nathaniel Lowe",
-        "Angel Genao",
-        "Dylan Beavers",
-        "Coby Mayo",
-        "Leody Taveras"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823416,
-      "game": "Houston Astros @ Philadelphia Phillies",
-      "score": "6-11",
-      "inning": "7th",
-      "hot_hitters": [
-        "Jeremy Pe\u00f1a",
-        "Yordan Alvarez",
-        "Isaac Paredes",
-        "Yainer Diaz",
-        "Cam Smith",
-        "Kyle Schwarber",
-        "Trea Turner",
-        "Luis Arraez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823818,
-      "game": "New York Mets @ Miami Marlins",
-      "score": "8-6",
-      "inning": "6th",
-      "hot_hitters": [
-        "A.J. Ewing",
-        "Christopher Morel",
-        "Griffin Conine",
-        "Jakob Marsee",
-        "Owen Caissie",
-        "Graham Pauley",
-        "Joe Mack"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824713,
-      "game": "Los Angeles Angels @ Boston Red Sox",
-      "score": "6-3",
-      "inning": "8th",
-      "hot_hitters": [
-        "Zach Neto",
-        "Jose Siri",
-        "Denzer Guzman",
-        "Tyler Heineman",
-        "Roman Anthony",
-        "Wilyer Abreu",
-        "Jarren Duran"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823497,
-      "game": "Colorado Rockies @ New York Yankees",
-      "score": "1-5",
-      "inning": "6th",
-      "hot_hitters": [
-        "Connor Norby",
-        "Luis Garc\u00eda Jr.",
-        "George Lombard Jr."
-      ],
-      "top_pitchers": [
-        "Will Warren"
-      ]
-    },
-    {
-      "gamePk": 824871,
-      "game": "Tampa Bay Rays @ Atlanta Braves",
-      "score": "6-1",
-      "inning": "6th",
-      "hot_hitters": [
-        "Victor Mesa Jr.",
-        "Chandler Simpson",
-        "Drake Baldwin"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824064,
-      "game": "Arizona Diamondbacks @ Kansas City Royals",
-      "score": "0-0",
-      "inning": "2nd",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824549,
-      "game": "Pittsburgh Pirates @ Chicago White Sox",
-      "score": "1-0",
-      "inning": "5th",
-      "hot_hitters": [
-        "Esmerlyn Valdez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823739,
-      "game": "Chicago Cubs @ Milwaukee Brewers",
-      "score": "0-7",
-      "inning": "4th",
-      "hot_hitters": [
-        "Jackson Chourio",
-        "William Contreras",
-        "Christian Yelich"
-      ],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-10T01:28:42.069518-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 9-5 Win",
+      "title": "Detroit Tigers Takes 2-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Minnesota Twins Takes 3-2 Win",
+      "title": "Athletics Takes 0-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Houston Astros Takes 6-5 Win",
+      "title": "San Francisco Giants Takes 6-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Mets Takes 7-5 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Detroit Tigers Finishes Off Minnesota Twins",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Athletics Finishes Off Toronto Blue Jays",
+      "title": "San Diego Padres Takes 2-9 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
