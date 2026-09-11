@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T16:00:39.194728-04:00",
+  "updated_at": "2026-09-11T18:30:09.945606-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2598,7 +2598,7 @@
     {
       "team_id": 119,
       "team_name": "Los Angeles Dodgers",
-      "injured_count": 24,
+      "injured_count": 25,
       "players": [
         {
           "player_id": 681624,
@@ -2684,9 +2684,9 @@
           "player_id": 641778,
           "name": "Eric Lauer",
           "il_type": "Injured List",
-          "date": "2026-09-02",
-          "note": "Los Angeles Dodgers placed LHP Eric Lauer on the 15-day injured list. Left elbow inflammation. | Status Change",
-          "description": "Los Angeles Dodgers placed LHP Eric Lauer on the 15-day injured list. Left elbow inflammation."
+          "date": "2026-09-11",
+          "note": "Los Angeles Dodgers transferred LHP Eric Lauer from the 15-day injured list to the 60-day injured list. Left elbow inflammation. | Status Change",
+          "description": "Los Angeles Dodgers transferred LHP Eric Lauer from the 15-day injured list to the 60-day injured list. Left elbow inflammation."
         },
         {
           "player_id": 623465,
@@ -2751,6 +2751,14 @@
           "date": "2026-08-27",
           "note": "Los Angeles Dodgers placed RHP Roki Sasaki on the 15-day injured list. Right middle finger blister. | Status Change",
           "description": "Los Angeles Dodgers placed RHP Roki Sasaki on the 15-day injured list. Right middle finger blister."
+        },
+        {
+          "player_id": 660271,
+          "name": "Shohei Ohtani",
+          "il_type": "Injured List",
+          "date": "2026-09-11",
+          "note": "Los Angeles Dodgers placed TWP Shohei Ohtani on the 15-day injured list retroactive to September 8, 2026. Right biceps inflammation. | Status Change",
+          "description": "Los Angeles Dodgers placed TWP Shohei Ohtani on the 15-day injured list retroactive to September 8, 2026. Right biceps inflammation."
         },
         {
           "player_id": 606192,
@@ -5395,7 +5403,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Injury Watch",
+      "title": "Chicago Cubs Finishes Off Pittsburgh Pirates",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Dodgers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

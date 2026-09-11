@@ -1,17 +1,20 @@
 {
-  "updated_at": "2026-09-11T16:00:39.194728-04:00",
+  "updated_at": "2026-09-11T18:30:09.945606-04:00",
   "games": [
     {
-      "gamePk": 824631,
-      "game": "Pittsburgh Pirates @ Chicago Cubs",
-      "score": "1-9",
-      "inning": "5th",
-      "hot_hitters": [
-        "Konnor Griffin",
-        "Seiya Suzuki",
-        "Alex Bregman",
-        "Nico Hoerner"
-      ],
+      "gamePk": 824227,
+      "game": "Colorado Rockies @ Detroit Tigers",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822684,
+      "game": "Los Angeles Angels @ Washington Nationals",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
       "top_pitchers": []
     }
   ],
@@ -38,7 +41,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Injury Watch",
+      "title": "Chicago Cubs Finishes Off Pittsburgh Pirates",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Dodgers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
