@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T16:43:13.908030-04:00",
+  "updated_at": "2026-09-12T18:37:06.853793-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -34,12 +34,24 @@
       "published": "2026-09-12"
     },
     {
-      "title": "Pittsburgh Pirates Injury Watch",
-      "summary": "Pittsburgh Pirates logged a roster-health update involving Esmerlyn Valdez.",
+      "title": "Washington Nationals Injury Watch",
+      "summary": "Washington Nationals logged a roster-health update involving Matt Waldron.",
       "published": "2026-09-12"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-12",
+      "team": "Washington Nationals",
+      "player": "Matt Waldron",
+      "update": "Washington Nationals transferred RHP Matt Waldron from the 15-day injured list to the 60-day injured list. Chest inflammation. | Status Change"
+    },
+    {
+      "date": "2026-09-12",
+      "team": "Arizona Diamondbacks",
+      "player": "Tyler Locklear",
+      "update": "Arizona Diamondbacks placed 1B Tyler Locklear on the 60-day injured list. Fractured right thumb. | Status Change"
+    },
     {
       "date": "2026-09-12",
       "team": "Pittsburgh Pirates",
@@ -99,18 +111,6 @@
       "team": "Atlanta Braves",
       "player": "Bryce Elder",
       "update": "Atlanta Braves placed RHP Bryce Elder on the 15-day injured list retroactive to September 6, 2026. Right knee surgery. | Status Change"
-    },
-    {
-      "date": "2026-09-08",
-      "team": "Washington Nationals",
-      "player": "Matt Waldron",
-      "update": "Washington Nationals placed RHP Matt Waldron on the 15-day injured list retroactive to September 5, 2026. Chest inflammation. | Status Change"
-    },
-    {
-      "date": "2026-09-08",
-      "team": "Pittsburgh Pirates",
-      "player": "Isaac Mattson",
-      "update": "Pittsburgh Pirates placed RHP Isaac Mattson on the 15-day injured list. Right hip impingement. | Status Change"
     }
   ],
   "trade_updates": []
