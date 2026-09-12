@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T12:04:58.534672-04:00",
+  "updated_at": "2026-09-12T14:20:20.745195-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,24 @@
       "published": "2026-09-11"
     },
     {
-      "title": "Los Angeles Dodgers Injury Watch",
-      "summary": "Los Angeles Dodgers logged a roster-health update involving Shohei Ohtani.",
-      "published": "2026-09-11"
+      "title": "Pittsburgh Pirates Injury Watch",
+      "summary": "Pittsburgh Pirates logged a roster-health update involving Esmerlyn Valdez.",
+      "published": "2026-09-12"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-12",
+      "team": "Pittsburgh Pirates",
+      "player": "Esmerlyn Valdez",
+      "update": "Pittsburgh Pirates placed RF Esmerlyn Valdez on the 10-day injured list. Left hamstring strain. | Status Change"
+    },
+    {
+      "date": "2026-09-12",
+      "team": "Chicago Cubs",
+      "player": "Trent Thornton",
+      "update": "Chicago Cubs placed RHP Trent Thornton on the 15-day injured list. Left ankle sprain. | Status Change"
+    },
     {
       "date": "2026-09-11",
       "team": "Los Angeles Dodgers",
@@ -89,18 +101,6 @@
       "team": "Pittsburgh Pirates",
       "player": "Isaac Mattson",
       "update": "Pittsburgh Pirates placed RHP Isaac Mattson on the 15-day injured list. Right hip impingement. | Status Change"
-    },
-    {
-      "date": "2026-09-08",
-      "team": "Tampa Bay Rays",
-      "player": "Taylor Walls",
-      "update": "Tampa Bay Rays placed SS Taylor Walls on the 10-day injured list retroactive to September 6, 2026. Right hip flexor strain. | Status Change"
-    },
-    {
-      "date": "2026-09-07",
-      "team": "Washington Nationals",
-      "player": "Orlando Ribalta",
-      "update": "Washington Nationals placed RHP Orlando Ribalta on the 15-day injured list retroactive to September 4, 2026. Right forearm inflammation. | Status Change"
     }
   ],
   "trade_updates": []

@@ -1,6 +1,40 @@
 {
-  "updated_at": "2026-09-12T12:04:58.534672-04:00",
-  "games": [],
+  "updated_at": "2026-09-12T14:20:20.745195-04:00",
+  "games": [
+    {
+      "gamePk": 824224,
+      "game": "Colorado Rockies @ Detroit Tigers",
+      "score": "4-2",
+      "inning": "4th",
+      "hot_hitters": [
+        "Hunter Goodman",
+        "Kevin McGonigle",
+        "Eduardo Valencia"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823496,
+      "game": "New York Mets @ New York Yankees",
+      "score": "4-0",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Francisco Lindor",
+        "Carson Benge",
+        "Jared Young",
+        "Luis Torrens"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824630,
+      "game": "Pittsburgh Pirates @ Chicago Cubs",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +58,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Injury Watch",
+      "title": "Pittsburgh Pirates Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
