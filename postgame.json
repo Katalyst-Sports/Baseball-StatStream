@@ -1,6 +1,43 @@
 {
-  "updated_at": "2026-09-12T14:20:20.745195-04:00",
-  "games": [],
+  "updated_at": "2026-09-12T16:43:13.908030-04:00",
+  "games": [
+    {
+      "gamePk": 824224,
+      "game": "Colorado Rockies @ Detroit Tigers",
+      "winner": "Detroit Tigers",
+      "loser": "Colorado Rockies",
+      "final_score": "7-11",
+      "hitters": [
+        "Connor Norby",
+        "Hunter Goodman",
+        "TJ Rumfield",
+        "Ezequiel Tovar",
+        "Kevin McGonigle",
+        "Hao-Yu Lee",
+        "Riley Greene",
+        "Eduardo Valencia",
+        "Max Clark"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 823496,
+      "game": "New York Mets @ New York Yankees",
+      "winner": "New York Mets",
+      "loser": "New York Yankees",
+      "final_score": "12-2",
+      "hitters": [
+        "Francisco Lindor",
+        "Juan Soto",
+        "Carson Benge",
+        "Jared Young",
+        "Luis Torrens",
+        "Cody Bellinger",
+        "Spencer Jones"
+      ],
+      "pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +57,16 @@
     {
       "stage": "generated_news_item",
       "title": "New York Yankees Takes 4-6 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Detroit Tigers Finishes Off Colorado Rockies",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "New York Mets Finishes Off New York Yankees",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

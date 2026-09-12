@@ -1,37 +1,73 @@
 {
-  "updated_at": "2026-09-12T14:20:20.745195-04:00",
+  "updated_at": "2026-09-12T16:43:13.908030-04:00",
   "games": [
-    {
-      "gamePk": 824224,
-      "game": "Colorado Rockies @ Detroit Tigers",
-      "score": "4-2",
-      "inning": "4th",
-      "hot_hitters": [
-        "Hunter Goodman",
-        "Kevin McGonigle",
-        "Eduardo Valencia"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823496,
-      "game": "New York Mets @ New York Yankees",
-      "score": "4-0",
-      "inning": "3rd",
-      "hot_hitters": [
-        "Francisco Lindor",
-        "Carson Benge",
-        "Jared Young",
-        "Luis Torrens"
-      ],
-      "top_pitchers": []
-    },
     {
       "gamePk": 824630,
       "game": "Pittsburgh Pirates @ Chicago Cubs",
-      "score": "0-0",
-      "inning": "1st",
+      "score": "3-4",
+      "inning": "9th",
+      "hot_hitters": [
+        "Ryan O'Hearn",
+        "Michael Busch",
+        "Pedro Ram\u00edrez"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822768,
+      "game": "Baltimore Orioles @ Toronto Blue Jays",
+      "score": "1-5",
+      "inning": "5th",
+      "hot_hitters": [
+        "Brett Bateman",
+        "Alejandro Kirk"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822685,
+      "game": "Los Angeles Angels @ Washington Nationals",
+      "score": "0-2",
+      "inning": "2nd",
       "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823170,
+      "game": "San Diego Padres @ San Francisco Giants",
+      "score": "2-3",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Rafael Devers",
+        "Shay Whitcomb"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824712,
+      "game": "Kansas City Royals @ Boston Red Sox",
+      "score": "0-0",
+      "inning": "3rd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823657,
+      "game": "Cleveland Guardians @ Minnesota Twins",
+      "score": "1-0",
+      "inning": "2nd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823819,
+      "game": "Los Angeles Dodgers @ Miami Marlins",
+      "score": "2-0",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Mookie Betts",
+        "Max Muncy"
+      ],
       "top_pitchers": []
     }
   ],
@@ -54,6 +90,16 @@
     {
       "stage": "generated_news_item",
       "title": "New York Yankees Takes 4-6 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Detroit Tigers Finishes Off Colorado Rockies",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "New York Mets Finishes Off New York Yankees",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
