@@ -1,182 +1,25 @@
 {
-  "updated_at": "2026-09-12T20:22:18.504475-04:00",
-  "games": [
-    {
-      "gamePk": 824224,
-      "game": "Colorado Rockies @ Detroit Tigers",
-      "winner": "Detroit Tigers",
-      "loser": "Colorado Rockies",
-      "final_score": "7-11",
-      "hitters": [
-        "Connor Norby",
-        "Hunter Goodman",
-        "TJ Rumfield",
-        "Ezequiel Tovar",
-        "Kevin McGonigle",
-        "Hao-Yu Lee",
-        "Riley Greene",
-        "Eduardo Valencia",
-        "Max Clark"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823496,
-      "game": "New York Mets @ New York Yankees",
-      "winner": "New York Mets",
-      "loser": "New York Yankees",
-      "final_score": "12-2",
-      "hitters": [
-        "Francisco Lindor",
-        "Juan Soto",
-        "Carson Benge",
-        "Jared Young",
-        "Luis Torrens",
-        "Cody Bellinger",
-        "Spencer Jones"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824630,
-      "game": "Pittsburgh Pirates @ Chicago Cubs",
-      "winner": "Chicago Cubs",
-      "loser": "Pittsburgh Pirates",
-      "final_score": "3-4",
-      "hitters": [
-        "Ryan O'Hearn",
-        "Michael Busch",
-        "Pedro Ram\u00edrez"
-      ],
-      "pitchers": [
-        "Clay Holmes"
-      ]
-    },
-    {
-      "gamePk": 822768,
-      "game": "Baltimore Orioles @ Toronto Blue Jays",
-      "winner": "Toronto Blue Jays",
-      "loser": "Baltimore Orioles",
-      "final_score": "3-7",
-      "hitters": [
-        "Pete Alonso",
-        "Brett Bateman",
-        "George Springer",
-        "Alejandro Kirk",
-        "Andr\u00e9s Gim\u00e9nez"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 822685,
-      "game": "Los Angeles Angels @ Washington Nationals",
-      "winner": "Washington Nationals",
-      "loser": "Los Angeles Angels",
-      "final_score": "5-6",
-      "hitters": [
-        "Vaughn Grissom",
-        "Abimelec Ortiz",
-        "CJ Abrams",
-        "Keibert Ruiz"
-      ],
-      "pitchers": [
-        "Walbert Ure\u00f1a",
-        "Andrew Alvarez"
-      ]
-    },
-    {
-      "gamePk": 823170,
-      "game": "San Diego Padres @ San Francisco Giants",
-      "winner": "San Diego Padres",
-      "loser": "San Francisco Giants",
-      "final_score": "7-6",
-      "hitters": [
-        "Fernando Tatis Jr.",
-        "Jackson Merrill",
-        "Austin Hays",
-        "Xander Bogaerts",
-        "Drew Gilbert",
-        "Rafael Devers",
-        "Shay Whitcomb",
-        "Drew Cavanaugh"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824712,
-      "game": "Kansas City Royals @ Boston Red Sox",
-      "winner": "Boston Red Sox",
-      "loser": "Kansas City Royals",
-      "final_score": "1-5",
-      "hitters": [
-        "Carter Jensen",
-        "Roman Anthony",
-        "Adley Rutschman",
-        "Nick Sogard"
-      ],
-      "pitchers": [
-        "Ranger Suarez"
-      ]
-    },
-    {
-      "gamePk": 823657,
-      "game": "Cleveland Guardians @ Minnesota Twins",
-      "winner": "Minnesota Twins",
-      "loser": "Cleveland Guardians",
-      "final_score": "3-4",
-      "hitters": [
-        "Brooks Lee",
-        "Emmanuel Rodriguez"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823819,
-      "game": "Los Angeles Dodgers @ Miami Marlins",
-      "winner": "Miami Marlins",
-      "loser": "Los Angeles Dodgers",
-      "final_score": "3-4",
-      "hitters": [
-        "Mookie Betts",
-        "Max Muncy",
-        "Griffin Conine",
-        "Otto Lopez",
-        "Graham Pauley"
-      ],
-      "pitchers": [
-        "Tyler Glasnow"
-      ]
-    }
-  ],
+  "updated_at": "2026-09-13T01:09:19.863878-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Chicago Cubs Takes 2-12 Win",
+      "title": "Detroit Tigers Takes 7-11 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Detroit Tigers Takes 2-6 Win",
+      "title": "New York Mets Takes 12-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Washington Nationals Takes 3-4 Win",
+      "title": "Chicago Cubs Takes 3-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Takes 4-6 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Detroit Tigers Finishes Off Colorado Rockies",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "New York Mets Finishes Off New York Yankees",
+      "title": "Toronto Blue Jays Takes 3-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
