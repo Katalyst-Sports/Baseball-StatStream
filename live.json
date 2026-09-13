@@ -1,6 +1,66 @@
 {
-  "updated_at": "2026-09-13T10:29:13.931352-04:00",
-  "games": [],
+  "updated_at": "2026-09-13T13:36:13.031335-04:00",
+  "games": [
+    {
+      "gamePk": 824225,
+      "game": "Colorado Rockies @ Detroit Tigers",
+      "score": "1-7",
+      "inning": "4th",
+      "hot_hitters": [
+        "Adael Amador",
+        "Riley Greene"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822682,
+      "game": "Los Angeles Angels @ Washington Nationals",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824869,
+      "game": "Philadelphia Phillies @ Atlanta Braves",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823495,
+      "game": "New York Mets @ New York Yankees",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822764,
+      "game": "Baltimore Orioles @ Toronto Blue Jays",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822928,
+      "game": "Houston Astros @ Tampa Bay Rays",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823815,
+      "game": "Los Angeles Dodgers @ Miami Marlins",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +84,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Washington Nationals Injury Watch",
+      "title": "Miami Marlins Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
