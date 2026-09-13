@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T13:36:13.031335-04:00",
+  "updated_at": "2026-09-13T15:47:24.495665-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -750,9 +750,9 @@
           "player_id": 678011,
           "name": "Anthony Seigler",
           "il_type": "Injured List",
-          "date": "2026-03-25",
-          "note": "Boston Red Sox placed 2B Anthony Seigler on the 10-day injured list retroactive to March 22, 2026. Left knee patellar tendinopathy. | Status Change",
-          "description": "Boston Red Sox placed 2B Anthony Seigler on the 10-day injured list retroactive to March 22, 2026. Left knee patellar tendinopathy."
+          "date": "2026-09-13",
+          "note": "Boston Red Sox placed 2B Anthony Seigler on the 10-day injured list. Right wrist inflammation. | Status Change",
+          "description": "Boston Red Sox placed 2B Anthony Seigler on the 10-day injured list. Right wrist inflammation."
         },
         {
           "player_id": 678882,
@@ -4173,7 +4173,7 @@
     {
       "team_id": 137,
       "team_name": "San Francisco Giants",
-      "injured_count": 27,
+      "injured_count": 28,
       "players": [
         {
           "player_id": 605288,
@@ -4334,6 +4334,14 @@
           "date": "2026-08-02",
           "note": "San Francisco Giants transferred LHP Matt Gage from the 15-day injured list to the 60-day injured list. Left elbow strain. | Status Change",
           "description": "San Francisco Giants transferred LHP Matt Gage from the 15-day injured list to the 60-day injured list. Left elbow strain."
+        },
+        {
+          "player_id": 646240,
+          "name": "Rafael Devers",
+          "il_type": "Injured List",
+          "date": "2026-04-16",
+          "note": "San Francisco Giants placed 1B Rafael Devers on the 60-day injured list. Core muscle injury. | Status Change",
+          "description": "San Francisco Giants placed 1B Rafael Devers on the 60-day injured list. Core muscle injury."
         },
         {
           "player_id": 665665,
@@ -5427,7 +5435,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Miami Marlins Injury Watch",
+      "title": "Detroit Tigers Finishes Off Colorado Rockies",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Boston Red Sox Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
