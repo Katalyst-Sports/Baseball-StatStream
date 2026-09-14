@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T10:09:31.266104-04:00",
+  "updated_at": "2026-09-14T15:23:08.667976-04:00",
   "games": [
     {
       "gamePk": 824465,
@@ -3414,6 +3414,26 @@
       },
       "away_hitters": [
         {
+          "name": "Ty France",
+          "stats": {
+            "avg": ".294",
+            "obp": ".363",
+            "slg": ".510",
+            "ops": ".873",
+            "homeRuns": 20,
+            "rbi": 63
+          },
+          "last10ab": {
+            "avg": "0.091",
+            "hits": 1,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
+            "games": 4
+          }
+        },
+        {
           "name": "Luis Campusano",
           "stats": {
             "avg": ".275",
@@ -3570,26 +3590,6 @@
             "homeRuns": 0,
             "rbi": 0,
             "walks": 0,
-            "games": 3
-          }
-        },
-        {
-          "name": "Jake Cronenworth",
-          "stats": {
-            "avg": ".209",
-            "obp": ".293",
-            "slg": ".288",
-            "ops": ".581",
-            "homeRuns": 5,
-            "rbi": 28
-          },
-          "last10ab": {
-            "avg": "0.273",
-            "hits": 3,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
             "games": 3
           }
         }
@@ -4725,7 +4725,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Injury Watch",
+      "title": "Toronto Blue Jays Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

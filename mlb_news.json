@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T10:09:31.266104-04:00",
+  "updated_at": "2026-09-14T15:23:08.667976-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,18 @@
       "published": "2026-09-13"
     },
     {
-      "title": "Boston Red Sox Injury Watch",
-      "summary": "Boston Red Sox logged a roster-health update involving Anthony Seigler.",
-      "published": "2026-09-13"
+      "title": "Toronto Blue Jays Injury Watch",
+      "summary": "Toronto Blue Jays logged a roster-health update involving Rudy Martin Jr..",
+      "published": "2026-09-14"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-14",
+      "team": "Toronto Blue Jays",
+      "player": "Rudy Martin Jr.",
+      "update": "Toronto Blue Jays placed RF Rudy Martin Jr. on the 10-day injured list retroactive to September 13, 2026. Left hamstring strain. | Status Change"
+    },
     {
       "date": "2026-09-13",
       "team": "Boston Red Sox",
@@ -95,12 +101,6 @@
       "team": "Atlanta Braves",
       "player": "Lane Thomas",
       "update": "Atlanta Braves placed LF Lane Thomas on the 10-day injured list retroactive to September 8, 2026. Strained left intercostal muscle. | Status Change"
-    },
-    {
-      "date": "2026-09-10",
-      "team": "Pittsburgh Pirates",
-      "player": "Braxton Ashcraft",
-      "update": "Pittsburgh Pirates placed RHP Braxton Ashcraft on the 15-day injured list retroactive to September 7, 2026. Right arm discomfort. | Status Change"
     }
   ],
   "trade_updates": []
