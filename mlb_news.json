@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T15:23:08.667976-04:00",
+  "updated_at": "2026-09-14T18:37:47.892746-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,18 @@
       "published": "2026-09-13"
     },
     {
-      "title": "Toronto Blue Jays Injury Watch",
-      "summary": "Toronto Blue Jays logged a roster-health update involving Rudy Martin Jr..",
+      "title": "Los Angeles Dodgers Injury Watch",
+      "summary": "Los Angeles Dodgers logged a roster-health update involving Edgardo Henriquez.",
       "published": "2026-09-14"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-14",
+      "team": "Los Angeles Dodgers",
+      "player": "Edgardo Henriquez",
+      "update": "Los Angeles Dodgers placed RHP Edgardo Henriquez on the 15-day injured list. Lower back discomfort. | Status Change"
+    },
     {
       "date": "2026-09-14",
       "team": "Toronto Blue Jays",
@@ -95,12 +101,6 @@
       "team": "Boston Red Sox",
       "player": "Eli White",
       "update": "Boston Red Sox placed CF Eli White on the 10-day injured list retroactive to September 9, 2026. Right foot ligament injury. | Status Change"
-    },
-    {
-      "date": "2026-09-11",
-      "team": "Atlanta Braves",
-      "player": "Lane Thomas",
-      "update": "Atlanta Braves placed LF Lane Thomas on the 10-day injured list retroactive to September 8, 2026. Strained left intercostal muscle. | Status Change"
     }
   ],
   "trade_updates": []
