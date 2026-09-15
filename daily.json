@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T15:15:16.400859-04:00",
+  "updated_at": "2026-09-15T18:19:26.909227-04:00",
   "games": [
     {
       "gamePk": 824466,
@@ -7,7 +7,7 @@
       "home_team": "Cincinnati Reds",
       "venue": "Great American Ball Park",
       "start": "2026-09-15T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 808967,
         "name": "Yoshinobu Yamamoto",
@@ -1423,7 +1423,7 @@
       "home_team": "Pittsburgh Pirates",
       "venue": "PNC Park",
       "start": "2026-09-15T22:40:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 694819,
         "name": "Jacob Misiorowski",
@@ -5422,6 +5422,26 @@
           }
         },
         {
+          "name": "Maikel Garcia",
+          "stats": {
+            "avg": ".269",
+            "obp": ".324",
+            "slg": ".385",
+            "ops": ".709",
+            "homeRuns": 3,
+            "rbi": 32
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 3,
+            "games": 3
+          }
+        },
+        {
           "name": "Vinnie Pasquantino",
           "stats": {
             "avg": ".239",
@@ -5457,26 +5477,6 @@
             "atBats": 11,
             "homeRuns": 0,
             "rbi": 3,
-            "walks": 2,
-            "games": 4
-          }
-        },
-        {
-          "name": "Isaac Collins",
-          "stats": {
-            "avg": ".221",
-            "obp": ".326",
-            "slg": ".337",
-            "ops": ".663",
-            "homeRuns": 6,
-            "rbi": 40
-          },
-          "last10ab": {
-            "avg": "0.167",
-            "hits": 2,
-            "atBats": 12,
-            "homeRuns": 1,
-            "rbi": 2,
             "walks": 2,
             "games": 4
           }
@@ -5976,26 +5976,6 @@
           }
         },
         {
-          "name": "Vimael Mach\u00edn",
-          "stats": {
-            "avg": ".500",
-            "obp": ".500",
-            "slg": ".500",
-            "ops": "1.000",
-            "homeRuns": 0,
-            "rbi": 0
-          },
-          "last10ab": {
-            "avg": "0.500",
-            "hits": 3,
-            "atBats": 6,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "TJ Rumfield",
           "stats": {
             "avg": ".299",
@@ -6130,6 +6110,26 @@
             "hits": 4,
             "atBats": 14,
             "homeRuns": 2,
+            "rbi": 2,
+            "walks": 0,
+            "games": 4
+          }
+        },
+        {
+          "name": "Troy Johnston",
+          "stats": {
+            "avg": ".279",
+            "obp": ".349",
+            "slg": ".394",
+            "ops": ".743",
+            "homeRuns": 4,
+            "rbi": 48
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 1,
             "rbi": 2,
             "walks": 0,
             "games": 4
@@ -7040,6 +7040,26 @@
           }
         },
         {
+          "name": "Jes\u00fas S\u00e1nchez",
+          "stats": {
+            "avg": ".260",
+            "obp": ".318",
+            "slg": ".416",
+            "ops": ".734",
+            "homeRuns": 8,
+            "rbi": 35
+          },
+          "last10ab": {
+            "avg": "0.462",
+            "hits": 6,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 2,
+            "games": 4
+          }
+        },
+        {
           "name": "Geraldo Perdomo",
           "stats": {
             "avg": ".251",
@@ -7057,26 +7077,6 @@
             "rbi": 2,
             "walks": 0,
             "games": 3
-          }
-        },
-        {
-          "name": "Tim Tawa",
-          "stats": {
-            "avg": ".245",
-            "obp": ".305",
-            "slg": ".404",
-            "ops": ".709",
-            "homeRuns": 10,
-            "rbi": 38
-          },
-          "last10ab": {
-            "avg": "0.154",
-            "hits": 2,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
-            "games": 5
           }
         }
       ]
@@ -7105,7 +7105,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Injury Watch",
+      "title": "Tampa Bay Rays Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
