@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T10:54:07.952594-04:00",
+  "updated_at": "2026-09-16T14:43:50.273329-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,30 @@
       "published": "2026-09-15"
     },
     {
-      "title": "Miami Marlins Injury Watch",
-      "summary": "Miami Marlins logged a roster-health update involving Pete Fairbanks.",
-      "published": "2026-09-15"
+      "title": "New York Mets Injury Watch",
+      "summary": "New York Mets logged a roster-health update involving Daniel Duarte.",
+      "published": "2026-09-16"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-16",
+      "team": "New York Mets",
+      "player": "Daniel Duarte",
+      "update": "New York Mets placed RHP Daniel Duarte on the 15-day injured list. Left hamstring strain. | Status Change"
+    },
+    {
+      "date": "2026-09-16",
+      "team": "New York Mets",
+      "player": "Robert Stock",
+      "update": "New York Mets placed RHP Robert Stock on the 15-day injured list retroactive to September 13, 2026. Finger numbness. | Status Change"
+    },
+    {
+      "date": "2026-09-16",
+      "team": "Minnesota Twins",
+      "player": "Kaelen Culpepper",
+      "update": "Minnesota Twins placed SS Kaelen Culpepper on the 10-day injured list. Left hamstring strain. | Status Change"
+    },
     {
       "date": "2026-09-15",
       "team": "Miami Marlins",
@@ -83,24 +101,6 @@
       "team": "Miami Marlins",
       "player": "Owen Caissie",
       "update": "Miami Marlins placed RF Owen Caissie on the 10-day injured list. Lumbar stress reaction. | Status Change"
-    },
-    {
-      "date": "2026-09-13",
-      "team": "Baltimore Orioles",
-      "player": "Kyle Bradish",
-      "update": "Baltimore Orioles placed RHP Kyle Bradish on the 15-day injured list. Lower abdominal discomfort. | Status Change"
-    },
-    {
-      "date": "2026-09-12",
-      "team": "Washington Nationals",
-      "player": "Matt Waldron",
-      "update": "Washington Nationals transferred RHP Matt Waldron from the 15-day injured list to the 60-day injured list. Chest inflammation. | Status Change"
-    },
-    {
-      "date": "2026-09-12",
-      "team": "Arizona Diamondbacks",
-      "player": "Tyler Locklear",
-      "update": "Arizona Diamondbacks placed 1B Tyler Locklear on the 60-day injured list. Fractured right thumb. | Status Change"
     }
   ],
   "trade_updates": []
