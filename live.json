@@ -1,42 +1,6 @@
 {
-  "updated_at": "2026-09-16T14:43:50.273329-04:00",
-  "games": [
-    {
-      "gamePk": 824382,
-      "game": "Chicago White Sox @ Cleveland Guardians",
-      "score": "3-2",
-      "inning": "6th",
-      "hot_hitters": [
-        "Chase Meidroth",
-        "Randal Grichuk",
-        "Tommy Pham"
-      ],
-      "top_pitchers": [
-        "Parker Messick"
-      ]
-    },
-    {
-      "gamePk": 823004,
-      "game": "San Francisco Giants @ St. Louis Cardinals",
-      "score": "1-0",
-      "inning": "6th",
-      "hot_hitters": [
-        "Andrew Knizner",
-        "Nathan Church"
-      ],
-      "top_pitchers": [
-        "Anthony Molina"
-      ]
-    },
-    {
-      "gamePk": 823655,
-      "game": "New York Yankees @ Minnesota Twins",
-      "score": "0-1",
-      "inning": "4th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-16T17:45:05.585945-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -60,7 +24,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Mets Injury Watch",
+      "title": "Cleveland Guardians Finishes Off Chicago White Sox",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "San Francisco Giants Finishes Off St. Louis Cardinals",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Angels Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
