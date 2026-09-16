@@ -1,6 +1,88 @@
 {
-  "updated_at": "2026-09-16T17:45:05.585945-04:00",
-  "games": [],
+  "updated_at": "2026-09-16T19:54:13.297814-04:00",
+  "games": [
+    {
+      "gamePk": 824467,
+      "game": "Los Angeles Dodgers @ Cincinnati Reds",
+      "score": "1-2",
+      "inning": "4th",
+      "hot_hitters": [
+        "Mookie Betts",
+        "Elly De La Cruz",
+        "Juan Brito"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822926,
+      "game": "Athletics @ Tampa Bay Rays",
+      "score": "2-4",
+      "inning": "5th",
+      "hot_hitters": [
+        "Henry Bolte",
+        "Tommy White",
+        "Jonny DeLuca"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823332,
+      "game": "Milwaukee Brewers @ Pittsburgh Pirates",
+      "score": "2-1",
+      "inning": "4th",
+      "hot_hitters": [
+        "Oneil Cruz"
+      ],
+      "top_pitchers": [
+        "Jared Jones"
+      ]
+    },
+    {
+      "gamePk": 822680,
+      "game": "Philadelphia Phillies @ Washington Nationals",
+      "score": "2-0",
+      "inning": "4th",
+      "hot_hitters": [
+        "Daylen Lile"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823576,
+      "game": "Baltimore Orioles @ New York Mets",
+      "score": "3-0",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Pete Alonso",
+        "Jeremiah Jackson"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824626,
+      "game": "Atlanta Braves @ Chicago Cubs",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822846,
+      "game": "Boston Red Sox @ Texas Rangers",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824140,
+      "game": "Kansas City Royals @ Houston Astros",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -34,7 +116,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Angels Injury Watch",
+      "title": "Baltimore Orioles Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
