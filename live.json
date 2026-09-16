@@ -1,172 +1,30 @@
 {
-  "updated_at": "2026-09-15T20:34:42.431720-04:00",
-  "games": [
-    {
-      "gamePk": 824466,
-      "game": "Los Angeles Dodgers @ Cincinnati Reds",
-      "score": "4-0",
-      "inning": "7th",
-      "hot_hitters": [
-        "Freddie Freeman",
-        "Teoscar Hern\u00e1ndez",
-        "Alex Freeland"
-      ],
-      "top_pitchers": [
-        "Yoshinobu Yamamoto"
-      ]
-    },
-    {
-      "gamePk": 822925,
-      "game": "Athletics @ Tampa Bay Rays",
-      "score": "1-1",
-      "inning": "8th",
-      "hot_hitters": [
-        "Chandler Simpson"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824384,
-      "game": "Chicago White Sox @ Cleveland Guardians",
-      "score": "6-4",
-      "inning": "6th",
-      "hot_hitters": [
-        "Chase Meidroth",
-        "Brenton Doyle",
-        "Sam Antonacci",
-        "Jo Adell",
-        "Travis Bazzana"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823333,
-      "game": "Milwaukee Brewers @ Pittsburgh Pirates",
-      "score": "5-0",
-      "inning": "6th",
-      "hot_hitters": [
-        "Joey Ortiz",
-        "Rafael Flores Jr."
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822683,
-      "game": "Philadelphia Phillies @ Washington Nationals",
-      "score": "3-3",
-      "inning": "7th",
-      "hot_hitters": [
-        "Kyle Schwarber",
-        "Andr\u00e9s Chaparro"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822762,
-      "game": "Detroit Tigers @ Toronto Blue Jays",
-      "score": "5-0",
-      "inning": "5th",
-      "hot_hitters": [
-        "Spencer Torkelson"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823574,
-      "game": "Baltimore Orioles @ New York Mets",
-      "score": "2-3",
-      "inning": "5th",
-      "hot_hitters": [
-        "Christian Encarnacion-Strand",
-        "Jeremiah Jackson",
-        "Juan Soto",
-        "Bo Bichette",
-        "Carson Benge"
-      ],
-      "top_pitchers": [
-        "Sean Manaea"
-      ]
-    },
-    {
-      "gamePk": 824627,
-      "game": "Atlanta Braves @ Chicago Cubs",
-      "score": "0-1",
-      "inning": "4th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823654,
-      "game": "New York Yankees @ Minnesota Twins",
-      "score": "3-1",
-      "inning": "3rd",
-      "hot_hitters": [
-        "Cody Bellinger"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823007,
-      "game": "San Francisco Giants @ St. Louis Cardinals",
-      "score": "4-1",
-      "inning": "3rd",
-      "hot_hitters": [
-        "Bryce Eldridge",
-        "Alec Burleson"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822849,
-      "game": "Boston Red Sox @ Texas Rangers",
-      "score": "0-0",
-      "inning": "2nd",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824143,
-      "game": "Kansas City Royals @ Houston Astros",
-      "score": "0-1",
-      "inning": "2nd",
-      "hot_hitters": [
-        "Jeremy Pe\u00f1a"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824307,
-      "game": "San Diego Padres @ Colorado Rockies",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-16T01:14:49.465786-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Takes 4-1 Win",
+      "title": "Los Angeles Dodgers Takes 4-0 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Chicago White Sox Takes 7-3 Win",
+      "title": "Tampa Bay Rays Takes 1-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Detroit Tigers Takes 6-5 Win",
+      "title": "Cleveland Guardians Takes 6-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 2-1 Win",
+      "title": "Milwaukee Brewers Takes 5-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Injury Watch",
+      "title": "Miami Marlins Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
