@@ -1,6 +1,49 @@
 {
-  "updated_at": "2026-09-17T14:25:40.654642-04:00",
-  "games": [],
+  "updated_at": "2026-09-17T17:38:43.278048-04:00",
+  "games": [
+    {
+      "gamePk": 823334,
+      "game": "Milwaukee Brewers @ Pittsburgh Pirates",
+      "winner": "Pittsburgh Pirates",
+      "loser": "Milwaukee Brewers",
+      "final_score": "4-7",
+      "hitters": [
+        "Sal Frelick",
+        "Bo Naylor",
+        "Henry Davis"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 824464,
+      "game": "Los Angeles Dodgers @ Cincinnati Reds",
+      "winner": "Los Angeles Dodgers",
+      "loser": "Cincinnati Reds",
+      "final_score": "8-2",
+      "hitters": [
+        "Freddie Freeman",
+        "Kyle Tucker",
+        "Max Muncy",
+        "Miguel Rojas",
+        "Sal Stewart",
+        "TJ Friedl"
+      ],
+      "pitchers": []
+    },
+    {
+      "gamePk": 822924,
+      "game": "Athletics @ Tampa Bay Rays",
+      "winner": "Tampa Bay Rays",
+      "loser": "Athletics",
+      "final_score": "1-10",
+      "hitters": [
+        "Lawrence Butler",
+        "Liam Hicks",
+        "Chandler Simpson"
+      ],
+      "pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +67,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Pittsburgh Pirates Finishes Off Milwaukee Brewers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Dodgers Finishes Off Cincinnati Reds",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Philadelphia Phillies Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
