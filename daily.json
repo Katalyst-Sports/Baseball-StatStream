@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T00:02:00.550388-04:00",
+  "updated_at": "2026-09-17T05:23:32.531033-04:00",
   "games": [
     {
       "gamePk": 823334,
@@ -3313,7 +3313,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 641302,
+        "name": "Tyler Alexander",
+        "hand": "L",
+        "era": "3.38",
+        "whip": "1.28",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Philadelphia Phillies",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 9,
+              "strikes": 6
+            },
+            {
+              "date": "2026-03-28",
+              "opponent": "Philadelphia Phillies",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 21,
+              "strikes": 11
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Baltimore Orioles",
+              "ip": "1.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 10,
+              "strikes": 7
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "1.0",
+          "avg_bb": "0.0",
+          "avg_pitches": "13.3",
+          "avg_strikes": "8.0",
+          "era": "0.00",
+          "whip": "0.33",
+          "strike_pct": "60.0",
+          "quality_starts": 0
+        }
+      },
       "away_hitters": [
         {
           "name": "Willson Contreras",
@@ -3972,10 +4021,10 @@
         {
           "name": "Mike Trout",
           "stats": {
-            "avg": ".242",
-            "obp": ".380",
-            "slg": ".425",
-            "ops": ".805",
+            "avg": ".241",
+            "obp": ".379",
+            "slg": ".424",
+            "ops": ".803",
             "homeRuns": 21,
             "rbi": 52
           },
@@ -3992,10 +4041,10 @@
         {
           "name": "Zach Neto",
           "stats": {
-            "avg": ".241",
-            "obp": ".323",
-            "slg": ".442",
-            "ops": ".765",
+            "avg": ".243",
+            "obp": ".324",
+            "slg": ".443",
+            "ops": ".767",
             "homeRuns": 26,
             "rbi": 74
           },
@@ -4012,10 +4061,10 @@
         {
           "name": "Wade Meckler",
           "stats": {
-            "avg": ".293",
-            "obp": ".371",
-            "slg": ".382",
-            "ops": ".753",
+            "avg": ".292",
+            "obp": ".370",
+            "slg": ".381",
+            "ops": ".751",
             "homeRuns": 3,
             "rbi": 26
           },
@@ -4032,10 +4081,10 @@
         {
           "name": "Jose Siri",
           "stats": {
-            "avg": ".232",
-            "obp": ".288",
-            "slg": ".404",
-            "ops": ".692",
+            "avg": ".230",
+            "obp": ".286",
+            "slg": ".400",
+            "ops": ".686",
             "homeRuns": 8,
             "rbi": 28
           },
@@ -4052,10 +4101,10 @@
         {
           "name": "Vaughn Grissom",
           "stats": {
-            "avg": ".240",
-            "obp": ".304",
-            "slg": ".384",
-            "ops": ".688",
+            "avg": ".239",
+            "obp": ".303",
+            "slg": ".382",
+            "ops": ".685",
             "homeRuns": 11,
             "rbi": 65
           },
@@ -4070,32 +4119,12 @@
           }
         },
         {
-          "name": "Adam Frazier",
-          "stats": {
-            "avg": ".236",
-            "obp": ".307",
-            "slg": ".339",
-            "ops": ".646",
-            "homeRuns": 1,
-            "rbi": 11
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
           "name": "Mois\u00e9s Ballesteros",
           "stats": {
-            "avg": ".225",
-            "obp": ".289",
-            "slg": ".356",
-            "ops": ".645",
+            "avg": ".228",
+            "obp": ".293",
+            "slg": ".358",
+            "ops": ".651",
             "homeRuns": 9,
             "rbi": 34
           },
@@ -4130,23 +4159,43 @@
           }
         },
         {
-          "name": "Oswald Peraza",
+          "name": "Adam Frazier",
           "stats": {
-            "avg": ".223",
-            "obp": ".282",
+            "avg": ".234",
+            "obp": ".305",
             "slg": ".336",
-            "ops": ".618",
-            "homeRuns": 7,
-            "rbi": 24
+            "ops": ".641",
+            "homeRuns": 1,
+            "rbi": 11
           },
           "last10ab": {
-            "avg": "0.364",
-            "hits": 4,
-            "atBats": 11,
-            "homeRuns": 1,
-            "rbi": 2,
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
             "walks": 1,
             "games": 3
+          }
+        },
+        {
+          "name": "Denzer Guzman",
+          "stats": {
+            "avg": ".230",
+            "obp": ".271",
+            "slg": ".351",
+            "ops": ".622",
+            "homeRuns": 7,
+            "rbi": 28
+          },
+          "last10ab": {
+            "avg": "0.000",
+            "hits": 0,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 2
           }
         }
       ]
