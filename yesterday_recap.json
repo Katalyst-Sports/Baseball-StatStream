@@ -1,154 +1,138 @@
 {
-  "updated_at": "2026-09-16T19:54:13.297814-04:00",
-  "date": "2026-09-15",
+  "updated_at": "2026-09-17T00:02:00.550388-04:00",
+  "date": "2026-09-16",
   "dashboard_recap": {
-    "headline": "MLB Daily Recap - September 15, 2026",
+    "headline": "MLB Daily Recap - September 16, 2026",
     "article": "Groq error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
     "all_games": [
       {
+        "game": "Chicago White Sox @ Cleveland Guardians",
+        "final_score": "3-6",
+        "top_pitching_line": "Parker Messick: 6.0 IP, 8 K, 3 ER, 0 BB, 7 H",
+        "top_batting_line": "Petey Halpin: 2 H, 1 HR, 3 RBI, 4 AB",
+        "summary": "Cleveland Guardians beat Chicago White Sox 3-6. Petey Halpin: 2 H, 1 HR, 3 RBI, 4 AB Parker Messick: 6.0 IP, 8 K, 3 ER, 0 BB, 7 H Jos\u00e9 Ram\u00edrez doubles (26) on a sharp line drive to left fielder Randal Grichuk. Brayan Rocchio scores. Steven Kwan to 3rd.",
+        "impact_player": "Petey Halpin"
+      },
+      {
+        "game": "San Francisco Giants @ St. Louis Cardinals",
+        "final_score": "6-5",
+        "top_pitching_line": "Anthony Molina: 5.2 IP, 6 K, 0 ER, 1 BB, 2 H",
+        "top_batting_line": "Drew Gilbert: 1 H, 1 HR, 2 RBI, 1 AB",
+        "summary": "San Francisco Giants beat St. Louis Cardinals 6-5. Drew Gilbert: 1 H, 1 HR, 2 RBI, 1 AB Anthony Molina: 5.2 IP, 6 K, 0 ER, 1 BB, 2 H Thomas Saggese out on a sacrifice fly to center fielder Drew Gilbert. Alec Burleson scores. Victor Scott II to 3rd.",
+        "impact_player": "Drew Gilbert"
+      },
+      {
+        "game": "New York Yankees @ Minnesota Twins",
+        "final_score": "4-5",
+        "top_pitching_line": "Zebby Matthews: 6.0 IP, 8 K, 0 ER, 2 BB, 2 H",
+        "top_batting_line": "Ryan Kreidler: 1 H, 1 HR, 1 RBI, 4 AB",
+        "summary": "Minnesota Twins beat New York Yankees 4-5. Ryan Kreidler: 1 H, 1 HR, 1 RBI, 4 AB Zebby Matthews: 6.0 IP, 8 K, 0 ER, 2 BB, 2 H Victor Caratini singles on a ground ball to center fielder Spencer Jones. Luke Keaschall scores.",
+        "impact_player": "Ryan Kreidler"
+      },
+      {
+        "game": "Detroit Tigers @ Toronto Blue Jays",
+        "final_score": "1-5",
+        "top_pitching_line": "Louis Varland: 1.0 IP, 2 K, 0 ER, 0 BB, 0 H",
+        "top_batting_line": "Myles Straw: 2 H, 0 HR, 1 RBI, 4 AB",
+        "summary": "Toronto Blue Jays beat Detroit Tigers 1-5. Myles Straw: 2 H, 0 HR, 1 RBI, 4 AB Louis Varland: 1.0 IP, 2 K, 0 ER, 0 BB, 0 H Nathan Lukes singles on a soft ground ball to pitcher Drew Sommers. Brandon Valenzuela scores. Brett Bateman to 2nd.",
+        "impact_player": "Myles Straw"
+      },
+      {
         "game": "Los Angeles Dodgers @ Cincinnati Reds",
-        "final_score": "4-0",
-        "top_pitching_line": "Yoshinobu Yamamoto: 7.0 IP, 7 K, 0 ER, 2 BB, 1 H",
-        "top_batting_line": "Teoscar Hern\u00e1ndez: 1 H, 1 HR, 2 RBI, 3 AB",
-        "summary": "Los Angeles Dodgers beat Cincinnati Reds 4-0. Teoscar Hern\u00e1ndez: 1 H, 1 HR, 2 RBI, 3 AB Yoshinobu Yamamoto: 7.0 IP, 7 K, 0 ER, 2 BB, 1 H Alex Freeland homers (4) on a fly ball to left field.",
-        "impact_player": "Teoscar Hern\u00e1ndez"
+        "final_score": "2-6",
+        "top_pitching_line": "Andrew Abbott: 4.2 IP, 5 K, 1 ER, 5 BB, 3 H",
+        "top_batting_line": "Elly De La Cruz: 1 H, 1 HR, 2 RBI, 3 AB",
+        "summary": "Cincinnati Reds beat Los Angeles Dodgers 2-6. Elly De La Cruz: 1 H, 1 HR, 2 RBI, 3 AB Andrew Abbott: 4.2 IP, 5 K, 1 ER, 5 BB, 3 H TJ Friedl singles on a line drive to center fielder Tommy Edman. Elly De La Cruz scores. Sal Stewart out at home on the throw, center fielder Tommy Edman to catcher Will Smith. Ke'Bryan Hayes to 2nd.",
+        "impact_player": "Elly De La Cruz"
       },
       {
         "game": "Athletics @ Tampa Bay Rays",
-        "final_score": "1-2",
-        "top_pitching_line": "Jack Perkins: 6.2 IP, 8 K, 0 ER, 1 BB, 4 H",
-        "top_batting_line": "Junior Caminero: 1 H, 1 HR, 1 RBI, 4 AB",
-        "summary": "Tampa Bay Rays beat Athletics 1-2. Junior Caminero: 1 H, 1 HR, 1 RBI, 4 AB Jack Perkins: 6.2 IP, 8 K, 0 ER, 1 BB, 4 H Junior Caminero homers (41) on a fly ball to right field.",
-        "impact_player": "Junior Caminero"
-      },
-      {
-        "game": "Chicago White Sox @ Cleveland Guardians",
-        "final_score": "6-7",
-        "top_pitching_line": "Foster Griffin: 4.0 IP, 5 K, 2 ER, 2 BB, 5 H",
-        "top_batting_line": "Travis Bazzana: 2 H, 2 HR, 2 RBI, 4 AB",
-        "summary": "Cleveland Guardians beat Chicago White Sox 6-7. Travis Bazzana: 2 H, 2 HR, 2 RBI, 4 AB Foster Griffin: 4.0 IP, 5 K, 2 ER, 2 BB, 5 H Brayan Rocchio doubles (22) on a fly ball to left fielder Sam Antonacci. Daniel Schneemann scores. David Fry scores.",
-        "impact_player": "Travis Bazzana"
+        "final_score": "3-4",
+        "top_pitching_line": "Seth Johnson: 2.1 IP, 4 K, 0 ER, 0 BB, 0 H",
+        "top_batting_line": "Tommy White: 3 H, 1 HR, 1 RBI, 4 AB",
+        "summary": "Tampa Bay Rays beat Athletics 3-4. Tommy White: 3 H, 1 HR, 1 RBI, 4 AB Seth Johnson: 2.1 IP, 4 K, 0 ER, 0 BB, 0 H Shea Langeliers singles on a ground ball to center fielder Jonny DeLuca. Jeff McNeil scores.",
+        "impact_player": "Tommy White"
       },
       {
         "game": "Milwaukee Brewers @ Pittsburgh Pirates",
-        "final_score": "5-1",
-        "top_pitching_line": "Jacob Misiorowski: 5.0 IP, 7 K, 0 ER, 1 BB, 5 H",
-        "top_batting_line": "Brandon Lowe: 1 H, 1 HR, 1 RBI, 5 AB",
-        "summary": "Milwaukee Brewers beat Pittsburgh Pirates 5-1. Brandon Lowe: 1 H, 1 HR, 1 RBI, 5 AB Jacob Misiorowski: 5.0 IP, 7 K, 0 ER, 1 BB, 5 H Brandon Lowe homers (30) on a fly ball to right field.",
+        "final_score": "5-4",
+        "top_pitching_line": "Jared Jones: 5.0 IP, 9 K, 3 ER, 1 BB, 7 H",
+        "top_batting_line": "Brandon Lowe: 2 H, 1 HR, 2 RBI, 3 AB",
+        "summary": "Milwaukee Brewers beat Pittsburgh Pirates 5-4. Brandon Lowe: 2 H, 1 HR, 2 RBI, 3 AB Jared Jones: 5.0 IP, 9 K, 3 ER, 1 BB, 7 H Christian Yelich singles on a ground ball to left fielder Jake Mangum. Jackson Chourio scores. Jake Bauers scores. William Contreras to 2nd.",
         "impact_player": "Brandon Lowe"
       },
       {
         "game": "Philadelphia Phillies @ Washington Nationals",
-        "final_score": "3-6",
-        "top_pitching_line": "Chase Shugart: 1.0 IP, 1 K, 0 ER, 0 BB, 0 H",
-        "top_batting_line": "Daylen Lile: 1 H, 1 HR, 3 RBI, 1 AB",
-        "summary": "Washington Nationals beat Philadelphia Phillies 3-6. Daylen Lile: 1 H, 1 HR, 3 RBI, 1 AB Chase Shugart: 1.0 IP, 1 K, 0 ER, 0 BB, 0 H Daylen Lile homers (21) on a fly ball to center field. Harry Ford scores. Andrew Pinckney scores.",
-        "impact_player": "Daylen Lile"
-      },
-      {
-        "game": "Detroit Tigers @ Toronto Blue Jays",
-        "final_score": "10-1",
-        "top_pitching_line": "Drew Anderson: 5.0 IP, 4 K, 0 ER, 3 BB, 2 H",
-        "top_batting_line": "Spencer Torkelson: 2 H, 1 HR, 3 RBI, 4 AB",
-        "summary": "Detroit Tigers beat Toronto Blue Jays 10-1. Spencer Torkelson: 2 H, 1 HR, 3 RBI, 4 AB Drew Anderson: 5.0 IP, 4 K, 0 ER, 3 BB, 2 H Max Clark singles on a ground ball to center fielder Myles Straw. Ben Malgeri scores. Eduardo Valencia to 3rd.",
-        "impact_player": "Spencer Torkelson"
+        "final_score": "3-0",
+        "top_pitching_line": "Zack Wheeler: 7.0 IP, 5 K, 0 ER, 1 BB, 4 H",
+        "top_batting_line": "Alec Bohm: 2 H, 0 HR, 1 RBI, 2 AB",
+        "summary": "Philadelphia Phillies beat Washington Nationals 3-0. Alec Bohm: 2 H, 0 HR, 1 RBI, 2 AB Zack Wheeler: 7.0 IP, 5 K, 0 ER, 1 BB, 4 H Luis Arraez doubles (33) on a line drive to center fielder Dylan Crews. Bryce Harper scores.",
+        "impact_player": "Alec Bohm"
       },
       {
         "game": "Baltimore Orioles @ New York Mets",
-        "final_score": "7-5",
-        "top_pitching_line": "Nate Lavender: 1.2 IP, 4 K, 0 ER, 0 BB, 0 H",
-        "top_batting_line": "Coby Mayo: 2 H, 1 HR, 3 RBI, 5 AB",
-        "summary": "Baltimore Orioles beat New York Mets 7-5. Coby Mayo: 2 H, 1 HR, 3 RBI, 5 AB Nate Lavender: 1.2 IP, 4 K, 0 ER, 0 BB, 0 H Bo Bichette singles on a line drive to center fielder Colton Cowser. Francisco Alvarez scores.",
-        "impact_player": "Coby Mayo"
+        "final_score": "7-1",
+        "top_pitching_line": "Chris Bassitt: 6.2 IP, 6 K, 1 ER, 1 BB, 5 H",
+        "top_batting_line": "Christian Encarnacion-Strand: 3 H, 1 HR, 2 RBI, 4 AB",
+        "summary": "Baltimore Orioles beat New York Mets 7-1. Christian Encarnacion-Strand: 3 H, 1 HR, 2 RBI, 4 AB Chris Bassitt: 6.2 IP, 6 K, 1 ER, 1 BB, 5 H Samuel Basallo singles on a sharp line drive to right fielder Carson Benge. Christian Encarnacion-Strand scores.",
+        "impact_player": "Christian Encarnacion-Strand"
       },
       {
         "game": "Atlanta Braves @ Chicago Cubs",
-        "final_score": "6-3",
-        "top_pitching_line": "Kevin Gausman: 5.2 IP, 6 K, 2 ER, 0 BB, 5 H",
-        "top_batting_line": "Drake Baldwin: 2 H, 1 HR, 2 RBI, 5 AB",
-        "summary": "Atlanta Braves beat Chicago Cubs 6-3. Drake Baldwin: 2 H, 1 HR, 2 RBI, 5 AB Kevin Gausman: 5.2 IP, 6 K, 2 ER, 0 BB, 5 H Drake Baldwin homers (24) on a line drive to right field. Ozzie Albies scores.",
-        "impact_player": "Drake Baldwin"
-      },
-      {
-        "game": "New York Yankees @ Minnesota Twins",
-        "final_score": "8-1",
-        "top_pitching_line": "Max Fried: 7.0 IP, 6 K, 1 ER, 0 BB, 6 H",
-        "top_batting_line": "Cody Bellinger: 3 H, 1 HR, 2 RBI, 4 AB",
-        "summary": "New York Yankees beat Minnesota Twins 8-1. Cody Bellinger: 3 H, 1 HR, 2 RBI, 4 AB Max Fried: 7.0 IP, 6 K, 1 ER, 0 BB, 6 H Jos\u00e9 Caballero singles on a line drive to center fielder Emmanuel Rodriguez. George Lombard Jr. scores.",
-        "impact_player": "Cody Bellinger"
-      },
-      {
-        "game": "San Francisco Giants @ St. Louis Cardinals",
-        "final_score": "10-3",
-        "top_pitching_line": "Cade Winquest: 1.2 IP, 5 K, 1 ER, 1 BB, 2 H",
-        "top_batting_line": "Turner Hill: 2 H, 1 HR, 3 RBI, 4 AB",
-        "summary": "San Francisco Giants beat St. Louis Cardinals 10-3. Turner Hill: 2 H, 1 HR, 3 RBI, 4 AB Cade Winquest: 1.2 IP, 5 K, 1 ER, 1 BB, 2 H Turner Hill homers (1) on a fly ball to right center field.",
-        "impact_player": "Turner Hill"
+        "final_score": "4-8",
+        "top_pitching_line": "Shota Imanaga: 6.0 IP, 8 K, 1 ER, 0 BB, 4 H",
+        "top_batting_line": "Pete Crow-Armstrong: 3 H, 2 HR, 3 RBI, 4 AB",
+        "summary": "Chicago Cubs beat Atlanta Braves 4-8. Pete Crow-Armstrong: 3 H, 2 HR, 3 RBI, 4 AB Shota Imanaga: 6.0 IP, 8 K, 1 ER, 0 BB, 4 H Sean Murphy grounds out, shortstop Nico Hoerner to first baseman Michael Busch. Michael Harris II scores. Mauricio Dub\u00f3n to 3rd.",
+        "impact_player": "Pete Crow-Armstrong"
       },
       {
         "game": "Boston Red Sox @ Texas Rangers",
-        "final_score": "2-4",
-        "top_pitching_line": "Jacob deGrom: 5.0 IP, 8 K, 2 ER, 1 BB, 3 H",
-        "top_batting_line": "Nick Sogard: 1 H, 1 HR, 2 RBI, 3 AB",
-        "summary": "Texas Rangers beat Boston Red Sox 2-4. Nick Sogard: 1 H, 1 HR, 2 RBI, 3 AB Jacob deGrom: 5.0 IP, 8 K, 2 ER, 1 BB, 3 H Nick Sogard homers (5) on a line drive to right field. Caleb Durbin scores.",
-        "impact_player": "Nick Sogard"
+        "final_score": "3-7",
+        "top_pitching_line": "Jake Bennett: 4.2 IP, 7 K, 3 ER, 1 BB, 8 H",
+        "top_batting_line": "Willson Contreras: 1 H, 1 HR, 2 RBI, 3 AB",
+        "summary": "Texas Rangers beat Boston Red Sox 3-7. Willson Contreras: 1 H, 1 HR, 2 RBI, 3 AB Jake Bennett: 4.2 IP, 7 K, 3 ER, 1 BB, 8 H Corey Seager singles on a line drive to right fielder Wilyer Abreu. Alejandro Osuna scores.",
+        "impact_player": "Willson Contreras"
       },
       {
         "game": "Kansas City Royals @ Houston Astros",
-        "final_score": "2-4",
-        "top_pitching_line": "Hunter Brown: 5.0 IP, 10 K, 1 ER, 3 BB, 2 H",
-        "top_batting_line": "Jeremy Pe\u00f1a: 3 H, 2 HR, 2 RBI, 4 AB",
-        "summary": "Houston Astros beat Kansas City Royals 2-4. Jeremy Pe\u00f1a: 3 H, 2 HR, 2 RBI, 4 AB Hunter Brown: 5.0 IP, 10 K, 1 ER, 3 BB, 2 H Vinnie Pasquantino homers (12) on a line drive to right center field.",
-        "impact_player": "Jeremy Pe\u00f1a"
+        "final_score": "5-2",
+        "top_pitching_line": "Daniel Lynch IV: 5.0 IP, 3 K, 0 ER, 1 BB, 2 H",
+        "top_batting_line": "Michael Massey: 3 H, 1 HR, 1 RBI, 5 AB",
+        "summary": "Kansas City Royals beat Houston Astros 5-2. Michael Massey: 3 H, 1 HR, 1 RBI, 5 AB Daniel Lynch IV: 5.0 IP, 3 K, 0 ER, 1 BB, 2 H Yainer Diaz homers (12) on a line drive to left field.",
+        "impact_player": "Michael Massey"
       },
       {
         "game": "San Diego Padres @ Colorado Rockies",
-        "final_score": "3-9",
-        "top_pitching_line": "Ryan Feltner: 5.0 IP, 5 K, 0 ER, 1 BB, 3 H",
-        "top_batting_line": "Cole Carrigg: 4 H, 2 HR, 5 RBI, 5 AB",
-        "summary": "Colorado Rockies beat San Diego Padres 3-9. Cole Carrigg: 4 H, 2 HR, 5 RBI, 5 AB Ryan Feltner: 5.0 IP, 5 K, 0 ER, 1 BB, 3 H Zac Veen singles on a sharp line drive to right fielder Fernando Tatis Jr. Ezequiel Tovar scores.",
-        "impact_player": "Cole Carrigg"
-      },
-      {
-        "game": "Seattle Mariners @ Los Angeles Angels",
-        "final_score": "1-2",
-        "top_pitching_line": "Ryan Johnson: 6.0 IP, 7 K, 1 ER, 0 BB, 6 H",
-        "top_batting_line": "Josh Lowe: 2 H, 1 HR, 1 RBI, 3 AB",
-        "summary": "Los Angeles Angels beat Seattle Mariners 1-2. Josh Lowe: 2 H, 1 HR, 1 RBI, 3 AB Ryan Johnson: 6.0 IP, 7 K, 1 ER, 0 BB, 6 H Josh Lowe homers (12) on a fly ball to center field.",
-        "impact_player": "Josh Lowe"
-      },
-      {
-        "game": "Miami Marlins @ Arizona Diamondbacks",
-        "final_score": "4-2",
-        "top_pitching_line": "Michael Soroka: 5.0 IP, 6 K, 1 ER, 1 BB, 2 H",
-        "top_batting_line": "Gabriel Moreno: 2 H, 1 HR, 1 RBI, 4 AB",
-        "summary": "Miami Marlins beat Arizona Diamondbacks 4-2. Gabriel Moreno: 2 H, 1 HR, 1 RBI, 4 AB Michael Soroka: 5.0 IP, 6 K, 1 ER, 1 BB, 2 H Ketel Marte doubles (29) on a sharp line drive to center fielder Jakob Marsee. Ildemaro Vargas scores.",
-        "impact_player": "Gabriel Moreno"
+        "final_score": "9-3",
+        "top_pitching_line": "Juan Mejia: 1.0 IP, 3 K, 0 ER, 0 BB, 0 H",
+        "top_batting_line": "Ethan Salas: 2 H, 2 HR, 3 RBI, 4 AB",
+        "summary": "San Diego Padres beat Colorado Rockies 9-3. Ethan Salas: 2 H, 2 HR, 3 RBI, 4 AB Juan Mejia: 1.0 IP, 3 K, 0 ER, 0 BB, 0 H Kyle Karros homers (12) on a fly ball to center field. Connor Norby scores.",
+        "impact_player": "Ethan Salas"
       }
     ],
     "season_leaders": {
       "avg_ops": [
-        "Luis Arraez (Philadelphia Phillies) - AVG .315",
+        "Luis Arraez (Philadelphia Phillies) - AVG .316",
         "Yordan Alvarez (Houston Astros) - AVG .310",
-        "Chandler Simpson (Tampa Bay Rays) - AVG .309",
+        "Chandler Simpson (Tampa Bay Rays) - AVG .310",
+        "Gabriel Moreno (Arizona Diamondbacks) - AVG .308",
         "Nick Gonzales (Pittsburgh Pirates) - AVG .307",
-        "Otto Lopez (Miami Marlins) - AVG .305",
-        "Yordan Alvarez (Houston Astros) - OPS 1.023",
-        "Pete Crow-Armstrong (Chicago Cubs) - OPS .938",
-        "James Wood (Washington Nationals) - OPS .913",
-        "Shohei Ohtani (Los Angeles Dodgers) - OPS .902",
-        "Junior Caminero (Tampa Bay Rays) - OPS .900"
+        "Yordan Alvarez (Houston Astros) - OPS 1.022",
+        "Pete Crow-Armstrong (Chicago Cubs) - OPS .956",
+        "James Wood (Washington Nationals) - OPS .909",
+        "Willson Contreras (Boston Red Sox) - OPS .905",
+        "Shohei Ohtani (Los Angeles Dodgers) - OPS .902"
       ],
       "power": [
         "Kyle Schwarber (Philadelphia Phillies) - HR 45",
-        "Pete Crow-Armstrong (Chicago Cubs) - HR 42",
+        "Pete Crow-Armstrong (Chicago Cubs) - HR 44",
         "Junior Caminero (Tampa Bay Rays) - HR 41",
         "Yordan Alvarez (Houston Astros) - HR 39",
         "Matt Olson (Atlanta Braves) - HR 39",
         "Alec Burleson (St. Louis Cardinals) - RBI 111",
-        "Sal Stewart (Cincinnati Reds) - RBI 107",
+        "Sal Stewart (Cincinnati Reds) - RBI 108",
+        "Pete Crow-Armstrong (Chicago Cubs) - RBI 105",
         "Pete Alonso (Baltimore Orioles) - RBI 102",
-        "Pete Crow-Armstrong (Chicago Cubs) - RBI 102",
         "Jordan Walker (St. Louis Cardinals) - RBI 100"
       ],
       "pitching": [
@@ -161,6 +145,7 @@
         "Cristopher S\u00e1nchez (Philadelphia Phillies) - W 17",
         "Chase Burns (Cincinnati Reds) - W 15",
         "Foster Griffin (Cleveland Guardians) - W 15",
+        "Nick Martinez (Tampa Bay Rays) - W 15",
         "Jacob Misiorowski (Milwaukee Brewers) - W 15",
         "Eduardo Rodriguez (Arizona Diamondbacks) - W 15"
       ],
