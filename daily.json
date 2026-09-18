@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T14:37:00.985163-04:00",
+  "updated_at": "2026-09-18T17:15:27.331118-04:00",
   "games": [
     {
       "gamePk": 824463,
@@ -2368,7 +2368,56 @@
       "venue": "Citi Field",
       "start": "2026-09-18T23:15:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 641835,
+        "name": "Tim Mayza",
+        "hand": "L",
+        "era": "3.06",
+        "whip": "1.05",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Texas Rangers",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 1,
+              "pitches": 32,
+              "strikes": 18
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Washington Nationals",
+              "ip": "2.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 23,
+              "strikes": 18
+            },
+            {
+              "date": "2026-04-03",
+              "opponent": "Colorado Rockies",
+              "ip": "1.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 13,
+              "strikes": 8
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "2.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "22.7",
+          "avg_strikes": "14.7",
+          "era": "0.00",
+          "whip": "0.40",
+          "strike_pct": "64.7",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 804267,
         "name": "Zac Thornton",
@@ -2623,26 +2672,6 @@
           }
         },
         {
-          "name": "Jared Young",
-          "stats": {
-            "avg": ".266",
-            "obp": ".330",
-            "slg": ".429",
-            "ops": ".759",
-            "homeRuns": 9,
-            "rbi": 39
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 4
-          }
-        },
-        {
           "name": "Francisco Lindor",
           "stats": {
             "avg": ".228",
@@ -2780,6 +2809,26 @@
             "rbi": 2,
             "walks": 2,
             "games": 5
+          }
+        },
+        {
+          "name": "Brett Baty",
+          "stats": {
+            "avg": ".229",
+            "obp": ".302",
+            "slg": ".362",
+            "ops": ".664",
+            "homeRuns": 10,
+            "rbi": 50
+          },
+          "last10ab": {
+            "avg": "0.308",
+            "hits": 4,
+            "atBats": 13,
+            "homeRuns": 0,
+            "rbi": 3,
+            "walks": 0,
+            "games": 3
           }
         }
       ]
@@ -3785,7 +3834,56 @@
           "quality_starts": 2
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 687312,
+        "name": "Gabriel Hughes",
+        "hand": "R",
+        "era": "6.37",
+        "whip": "1.45",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-07-03",
+              "opponent": "San Francisco Giants",
+              "ip": "3.0",
+              "er": 0,
+              "k": 1,
+              "bb": 1,
+              "pitches": 53,
+              "strikes": 35
+            },
+            {
+              "date": "2026-07-08",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "6.0",
+              "er": 3,
+              "k": 7,
+              "bb": 2,
+              "pitches": 94,
+              "strikes": 68
+            },
+            {
+              "date": "2026-07-17",
+              "opponent": "Cincinnati Reds",
+              "ip": "5.1",
+              "er": 2,
+              "k": 6,
+              "bb": 2,
+              "pitches": 82,
+              "strikes": 52
+            }
+          ],
+          "avg_ip": "4.2",
+          "avg_k": "4.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "76.3",
+          "avg_strikes": "51.7",
+          "era": "3.14",
+          "whip": "1.12",
+          "strike_pct": "67.7",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Michael Arroyo",
@@ -4974,26 +5072,6 @@
           }
         },
         {
-          "name": "Joshua B\u00e1ez",
-          "stats": {
-            "avg": ".230",
-            "obp": ".278",
-            "slg": ".510",
-            "ops": ".788",
-            "homeRuns": 7,
-            "rbi": 18
-          },
-          "last10ab": {
-            "avg": "0.231",
-            "hits": 3,
-            "atBats": 13,
-            "homeRuns": 3,
-            "rbi": 5,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Iv\u00e1n Herrera",
           "stats": {
             "avg": ".242",
@@ -5091,6 +5169,26 @@
             "rbi": 2,
             "walks": 0,
             "games": 3
+          }
+        },
+        {
+          "name": "Jos\u00e9 Ferm\u00edn",
+          "stats": {
+            "avg": ".241",
+            "obp": ".304",
+            "slg": ".352",
+            "ops": ".656",
+            "homeRuns": 6,
+            "rbi": 40
+          },
+          "last10ab": {
+            "avg": "0.250",
+            "hits": 3,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 4
           }
         }
       ]
@@ -5221,26 +5319,6 @@
             "rbi": 0,
             "walks": 1,
             "games": 3
-          }
-        },
-        {
-          "name": "Trevor Larnach",
-          "stats": {
-            "avg": ".269",
-            "obp": ".352",
-            "slg": ".436",
-            "ops": ".788",
-            "homeRuns": 13,
-            "rbi": 48
-          },
-          "last10ab": {
-            "avg": "0.273",
-            "hits": 3,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 2,
-            "walks": 4,
-            "games": 6
           }
         },
         {
@@ -5381,6 +5459,26 @@
             "rbi": 3,
             "walks": 1,
             "games": 4
+          }
+        },
+        {
+          "name": "Austin Martin",
+          "stats": {
+            "avg": ".234",
+            "obp": ".346",
+            "slg": ".322",
+            "ops": ".668",
+            "homeRuns": 3,
+            "rbi": 23
+          },
+          "last10ab": {
+            "avg": "0.273",
+            "hits": 3,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 4,
+            "games": 5
           }
         }
       ],
@@ -7007,7 +7105,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Philadelphia Phillies Injury Watch",
+      "title": "New York Mets Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
