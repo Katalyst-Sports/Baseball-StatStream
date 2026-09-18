@@ -1,97 +1,25 @@
 {
-  "updated_at": "2026-09-17T21:34:49.481814-04:00",
-  "games": [
-    {
-      "gamePk": 823334,
-      "game": "Milwaukee Brewers @ Pittsburgh Pirates",
-      "winner": "Pittsburgh Pirates",
-      "loser": "Milwaukee Brewers",
-      "final_score": "4-7",
-      "hitters": [
-        "Sal Frelick",
-        "Bo Naylor",
-        "Henry Davis"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824464,
-      "game": "Los Angeles Dodgers @ Cincinnati Reds",
-      "winner": "Los Angeles Dodgers",
-      "loser": "Cincinnati Reds",
-      "final_score": "8-2",
-      "hitters": [
-        "Freddie Freeman",
-        "Kyle Tucker",
-        "Max Muncy",
-        "Miguel Rojas",
-        "Sal Stewart",
-        "TJ Friedl"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 822924,
-      "game": "Athletics @ Tampa Bay Rays",
-      "winner": "Tampa Bay Rays",
-      "loser": "Athletics",
-      "final_score": "1-10",
-      "hitters": [
-        "Lawrence Butler",
-        "Liam Hicks",
-        "Chandler Simpson"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824305,
-      "game": "San Diego Padres @ Colorado Rockies",
-      "winner": "San Diego Padres",
-      "loser": "Colorado Rockies",
-      "final_score": "9-2",
-      "hitters": [
-        "Dustin Harris",
-        "Ty France",
-        "Xander Bogaerts",
-        "Jake Cronenworth",
-        "Samad Taylor",
-        "Mickey Moniak",
-        "Brett Sullivan"
-      ],
-      "pitchers": [
-        "Michael King"
-      ]
-    }
-  ],
+  "updated_at": "2026-09-18T02:38:05.384314-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 3-6 Win",
+      "title": "Pittsburgh Pirates Takes 4-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Takes 6-5 Win",
+      "title": "Los Angeles Dodgers Takes 8-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Minnesota Twins Takes 4-5 Win",
+      "title": "Tampa Bay Rays Takes 1-10 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Toronto Blue Jays Takes 1-5 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Finishes Off Milwaukee Brewers",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Finishes Off Cincinnati Reds",
+      "title": "San Diego Padres Takes 9-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
