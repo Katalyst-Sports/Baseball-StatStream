@@ -1,6 +1,69 @@
 {
-  "updated_at": "2026-09-18T17:15:27.331118-04:00",
-  "games": [],
+  "updated_at": "2026-09-18T19:22:33.759113-04:00",
+  "games": [
+    {
+      "gamePk": 824463,
+      "game": "Chicago Cubs @ Cincinnati Reds",
+      "score": "1-2",
+      "inning": "2nd",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823331,
+      "game": "Kansas City Royals @ Pittsburgh Pirates",
+      "score": "1-0",
+      "inning": "3rd",
+      "hot_hitters": [
+        "Vinnie Pasquantino"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824790,
+      "game": "Milwaukee Brewers @ Baltimore Orioles",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824383,
+      "game": "Athletics @ Cleveland Guardians",
+      "score": "3-0",
+      "inning": "1st",
+      "hot_hitters": [
+        "Zack Gelof"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822923,
+      "game": "Boston Red Sox @ Tampa Bay Rays",
+      "score": "1-1",
+      "inning": "1st",
+      "hot_hitters": [
+        "Roman Anthony"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823572,
+      "game": "Philadelphia Phillies @ New York Mets",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824547,
+      "game": "Detroit Tigers @ Chicago White Sox",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +87,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Mets Injury Watch",
+      "title": "Los Angeles Angels Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
