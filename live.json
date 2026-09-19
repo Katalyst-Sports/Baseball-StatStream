@@ -1,36 +1,68 @@
 {
-  "updated_at": "2026-09-19T17:42:32.419691-04:00",
+  "updated_at": "2026-09-19T19:37:00.138478-04:00",
   "games": [
     {
-      "gamePk": 824788,
-      "game": "Milwaukee Brewers @ Baltimore Orioles",
-      "score": "1-0",
-      "inning": "7th",
-      "hot_hitters": [],
-      "top_pitchers": [
-        "Trevor Rogers"
-      ]
-    },
-    {
-      "gamePk": 822921,
-      "game": "Boston Red Sox @ Tampa Bay Rays",
-      "score": "1-1",
-      "inning": "6th",
+      "gamePk": 824380,
+      "game": "Athletics @ Cleveland Guardians",
+      "score": "4-10",
+      "inning": "4th",
       "hot_hitters": [
-        "Jonathan Aranda"
+        "Shea Langeliers",
+        "Donovan Walton",
+        "Alika Williams",
+        "Steven Kwan",
+        "Chase DeLauter",
+        "Angel Mart\u00ednez"
       ],
-      "top_pitchers": [
-        "Brayan Bello"
-      ]
+      "top_pitchers": []
     },
     {
-      "gamePk": 823571,
-      "game": "Philadelphia Phillies @ New York Mets",
-      "score": "2-1",
-      "inning": "5th",
+      "gamePk": 824461,
+      "game": "Chicago Cubs @ Cincinnati Reds",
+      "score": "1-0",
+      "inning": "4th",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823330,
+      "game": "Kansas City Royals @ Pittsburgh Pirates",
+      "score": "1-2",
+      "inning": "4th",
       "hot_hitters": [
-        "Trea Turner",
-        "Carson Benge"
+        "Carter Jensen",
+        "Oneil Cruz",
+        "Ronny Simon"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822843,
+      "game": "Toronto Blue Jays @ Texas Rangers",
+      "score": "0-1",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Josh Jung"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824137,
+      "game": "Atlanta Braves @ Houston Astros",
+      "score": "0-1",
+      "inning": "2nd",
+      "hot_hitters": [
+        "Isaac Paredes"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823003,
+      "game": "Washington Nationals @ St. Louis Cardinals",
+      "score": "2-0",
+      "inning": "1st",
+      "hot_hitters": [
+        "Daylen Lile"
       ],
       "top_pitchers": []
     }
@@ -63,7 +95,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Milwaukee Brewers Finishes Off Baltimore Orioles",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

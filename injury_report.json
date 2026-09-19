@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T17:42:32.419691-04:00",
+  "updated_at": "2026-09-19T19:37:00.138478-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2103,9 +2103,9 @@
           "player_id": 660853,
           "name": "Enyel De Los Santos",
           "il_type": "Injured List",
-          "date": "2026-03-25",
-          "note": "Houston Astros placed RHP Enyel De Los Santos on the 15-day injured list. Right knee strain. | Status Change",
-          "description": "Houston Astros placed RHP Enyel De Los Santos on the 15-day injured list. Right knee strain."
+          "date": "2026-09-19",
+          "note": "Houston Astros placed RHP Enyel De Los Santos on the 15-day injured list. Right knee tendinitis. | Status Change",
+          "description": "Houston Astros placed RHP Enyel De Los Santos on the 15-day injured list. Right knee tendinitis."
         },
         {
           "player_id": 669713,
@@ -4427,9 +4427,9 @@
           "player_id": 665665,
           "name": "Reiver Sanmartin",
           "il_type": "Injured List",
-          "date": "2026-03-25",
-          "note": "San Francisco Giants placed LHP Reiver Sanmartin on the 60-day injured list. Right hip flexor strain. | Status Change",
-          "description": "San Francisco Giants placed LHP Reiver Sanmartin on the 60-day injured list. Right hip flexor strain."
+          "date": "2026-09-19",
+          "note": "San Francisco Giants placed LHP Reiver Sanmartin on the 15-day injured list retroactive to September 17, 2026. Right oblique strain. | Status Change",
+          "description": "San Francisco Giants placed LHP Reiver Sanmartin on the 15-day injured list retroactive to September 17, 2026. Right oblique strain."
         },
         {
           "player_id": 592858,
@@ -4969,7 +4969,7 @@
     {
       "team_id": 140,
       "team_name": "Texas Rangers",
-      "injured_count": 22,
+      "injured_count": 23,
       "players": [
         {
           "player_id": 691945,
@@ -5114,6 +5114,14 @@
           "date": "2026-06-19",
           "note": "Texas Rangers transferred CF Michael Helman from the 10-day injured list to the 60-day injured list. Right finger fracture. | Status Change",
           "description": "Texas Rangers transferred CF Michael Helman from the 10-day injured list to the 60-day injured list. Right finger fracture."
+        },
+        {
+          "player_id": 671305,
+          "name": "Michel Ota\u00f1ez",
+          "il_type": "Injured List",
+          "date": "2026-09-19",
+          "note": "Texas Rangers placed RHP Michel Ota\u00f1ez on the 15-day injured list retroactive to September 18, 2026. Viral illness. | Status Change",
+          "description": "Texas Rangers placed RHP Michel Ota\u00f1ez on the 15-day injured list retroactive to September 18, 2026. Viral illness."
         },
         {
           "player_id": 543135,
@@ -5544,7 +5552,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Milwaukee Brewers Finishes Off Baltimore Orioles",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

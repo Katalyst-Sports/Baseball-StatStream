@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T17:42:32.419691-04:00",
+  "updated_at": "2026-09-19T19:37:00.138478-04:00",
   "games": [
     {
       "gamePk": 824545,
@@ -14,6 +14,54 @@
       ],
       "pitchers": [
         "Jackson Jobe"
+      ]
+    },
+    {
+      "gamePk": 824788,
+      "game": "Milwaukee Brewers @ Baltimore Orioles",
+      "winner": "Milwaukee Brewers",
+      "loser": "Baltimore Orioles",
+      "final_score": "1-0",
+      "hitters": [],
+      "pitchers": [
+        "Trevor Rogers"
+      ]
+    },
+    {
+      "gamePk": 822921,
+      "game": "Boston Red Sox @ Tampa Bay Rays",
+      "winner": "Tampa Bay Rays",
+      "loser": "Boston Red Sox",
+      "final_score": "1-2",
+      "hitters": [
+        "Caleb Durbin",
+        "Jarren Duran",
+        "Jonathan Aranda",
+        "Liam Hicks",
+        "Chandler Simpson"
+      ],
+      "pitchers": [
+        "Brayan Bello",
+        "Freddy Peralta"
+      ]
+    },
+    {
+      "gamePk": 823571,
+      "game": "Philadelphia Phillies @ New York Mets",
+      "winner": "New York Mets",
+      "loser": "Philadelphia Phillies",
+      "final_score": "3-10",
+      "hitters": [
+        "Trea Turner",
+        "Luis Arraez",
+        "Alec Bohm",
+        "Carson Benge",
+        "Brett Baty",
+        "Francisco Alvarez"
+      ],
+      "pitchers": [
+        "Andrew Painter",
+        "Christian Scott"
       ]
     }
   ],
@@ -45,7 +93,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Milwaukee Brewers Finishes Off Baltimore Orioles",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
