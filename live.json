@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-09-19T13:24:42.370605-04:00",
-  "games": [],
+  "updated_at": "2026-09-19T15:30:31.098322-04:00",
+  "games": [
+    {
+      "gamePk": 824545,
+      "game": "Detroit Tigers @ Chicago White Sox",
+      "score": "1-1",
+      "inning": "5th",
+      "hot_hitters": [],
+      "top_pitchers": [
+        "Jackson Jobe"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +35,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Injury Watch",
+      "title": "Baltimore Orioles Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
