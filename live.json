@@ -1,177 +1,25 @@
 {
-  "updated_at": "2026-09-18T21:23:14.670452-04:00",
-  "games": [
-    {
-      "gamePk": 824463,
-      "game": "Chicago Cubs @ Cincinnati Reds",
-      "score": "4-6",
-      "inning": "9th",
-      "hot_hitters": [
-        "Ian Happ",
-        "Michael Conforto",
-        "Carson Kelly",
-        "Elly De La Cruz"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823331,
-      "game": "Kansas City Royals @ Pittsburgh Pirates",
-      "score": "5-8",
-      "inning": "9th",
-      "hot_hitters": [
-        "Vinnie Pasquantino",
-        "Michael Massey",
-        "Konnor Griffin",
-        "Brandon Lowe",
-        "Bryan Reynolds",
-        "Oneil Cruz",
-        "Spencer Horwitz"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824790,
-      "game": "Milwaukee Brewers @ Baltimore Orioles",
-      "score": "3-3",
-      "inning": "7th",
-      "hot_hitters": [
-        "Jackson Chourio",
-        "Pete Alonso",
-        "Coby Mayo",
-        "Colton Cowser"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824383,
-      "game": "Athletics @ Cleveland Guardians",
-      "score": "3-5",
-      "inning": "7th",
-      "hot_hitters": [
-        "Zack Gelof",
-        "Jos\u00e9 Ram\u00edrez",
-        "Travis Bazzana",
-        "Brayan Rocchio"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822923,
-      "game": "Boston Red Sox @ Tampa Bay Rays",
-      "score": "4-1",
-      "inning": "7th",
-      "hot_hitters": [
-        "Roman Anthony",
-        "Jahmai Jones",
-        "Caleb Durbin"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823572,
-      "game": "Philadelphia Phillies @ New York Mets",
-      "score": "3-6",
-      "inning": "7th",
-      "hot_hitters": [
-        "Edmundo Sosa",
-        "Derek Hill",
-        "Juan Soto",
-        "Carson Benge"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824547,
-      "game": "Detroit Tigers @ Chicago White Sox",
-      "score": "5-8",
-      "inning": "5th",
-      "hot_hitters": [
-        "Kevin McGonigle",
-        "Eduardo Valencia",
-        "Miguel Vargas"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822847,
-      "game": "Toronto Blue Jays @ Texas Rangers",
-      "score": "0-4",
-      "inning": "4th",
-      "hot_hitters": [
-        "Nicky Lopez"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824303,
-      "game": "Seattle Mariners @ Colorado Rockies",
-      "score": "3-2",
-      "inning": "4th",
-      "hot_hitters": [
-        "J.P. Crawford",
-        "Connor Norby"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824138,
-      "game": "Atlanta Braves @ Houston Astros",
-      "score": "2-1",
-      "inning": "5th",
-      "hot_hitters": [
-        "Michael Harris II"
-      ],
-      "top_pitchers": [
-        "Peter Lambert"
-      ]
-    },
-    {
-      "gamePk": 823005,
-      "game": "Washington Nationals @ St. Louis Cardinals",
-      "score": "8-0",
-      "inning": "4th",
-      "hot_hitters": [
-        "Dylan Crews"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823977,
-      "game": "Minnesota Twins @ Los Angeles Angels",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 825032,
-      "game": "New York Yankees @ Arizona Diamondbacks",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-19T02:18:50.310989-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Takes 4-7 Win",
+      "title": "Cincinnati Reds Takes 4-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Takes 8-2 Win",
+      "title": "Pittsburgh Pirates Takes 5-8 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 1-10 Win",
+      "title": "Milwaukee Brewers Takes 6-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "San Diego Padres Takes 9-2 Win",
+      "title": "Cleveland Guardians Takes 3-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
