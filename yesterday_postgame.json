@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T14:54:11.116067-04:00",
+  "updated_at": "2026-09-20T17:14:40.821158-04:00",
   "games": [
     {
       "gamePk": 824545,
@@ -367,6 +367,16 @@
     {
       "stage": "generated_news_item",
       "title": "New York Mets Takes 3-10 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Philadelphia Phillies Finishes Off New York Mets",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Pittsburgh Pirates Finishes Off Kansas City Royals",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
