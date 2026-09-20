@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T08:16:36.725467-04:00",
+  "updated_at": "2026-09-20T12:17:02.036990-04:00",
   "games": [
     {
       "gamePk": 823570,
@@ -952,7 +952,56 @@
       "venue": "Great American Ball Park",
       "start": "2026-09-20T17:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 656849,
+        "name": "David Peterson",
+        "hand": "L",
+        "era": "5.11",
+        "whip": "1.55",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-28",
+              "opponent": "Pittsburgh Pirates",
+              "ip": "5.1",
+              "er": 0,
+              "k": 3,
+              "bb": 2,
+              "pitches": 76,
+              "strikes": 51
+            },
+            {
+              "date": "2026-04-02",
+              "opponent": "San Francisco Giants",
+              "ip": "4.1",
+              "er": 5,
+              "k": 5,
+              "bb": 2,
+              "pitches": 68,
+              "strikes": 46
+            },
+            {
+              "date": "2026-04-08",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "5.0",
+              "er": 5,
+              "k": 6,
+              "bb": 2,
+              "pitches": 85,
+              "strikes": 53
+            }
+          ],
+          "avg_ip": "5.0",
+          "avg_k": "4.7",
+          "avg_bb": "2.0",
+          "avg_pitches": "76.3",
+          "avg_strikes": "50.0",
+          "era": "6.14",
+          "whip": "1.84",
+          "strike_pct": "65.5",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 695076,
         "name": "Rhett Lowder",
@@ -6997,7 +7046,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Injury Watch",
+      "title": "Cincinnati Reds Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

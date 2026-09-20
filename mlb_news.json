@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T08:16:36.725467-04:00",
+  "updated_at": "2026-09-20T12:17:02.036990-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,18 @@
       "published": "2026-09-19"
     },
     {
-      "title": "San Francisco Giants Injury Watch",
-      "summary": "San Francisco Giants logged a roster-health update involving Reiver Sanmartin.",
-      "published": "2026-09-19"
+      "title": "Cincinnati Reds Injury Watch",
+      "summary": "Cincinnati Reds logged a roster-health update involving Chase Burns.",
+      "published": "2026-09-20"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-20",
+      "team": "Cincinnati Reds",
+      "player": "Chase Burns",
+      "update": "Cincinnati Reds placed RHP Chase Burns on the 15-day injured list retroactive to September 19, 2026. Right groin strain. | Status Change"
+    },
     {
       "date": "2026-09-19",
       "team": "San Francisco Giants",
@@ -95,12 +101,6 @@
       "team": "Minnesota Twins",
       "player": "Trevor Larnach",
       "update": "Minnesota Twins placed LF Trevor Larnach on the 10-day injured list retroactive to September 15, 2026. Left wrist sprain. | Status Change"
-    },
-    {
-      "date": "2026-09-18",
-      "team": "St. Louis Cardinals",
-      "player": "Joshua B\u00e1ez",
-      "update": "St. Louis Cardinals placed LF Joshua B\u00e1ez on the 10-day injured list. Left oblique strain. | Status Change"
     }
   ],
   "trade_updates": []
