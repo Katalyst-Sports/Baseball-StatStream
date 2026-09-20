@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T12:17:02.036990-04:00",
+  "updated_at": "2026-09-20T14:54:11.116067-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -4977,8 +4977,16 @@
     {
       "team_id": 140,
       "team_name": "Texas Rangers",
-      "injured_count": 23,
+      "injured_count": 24,
       "players": [
+        {
+          "player_id": 615698,
+          "name": "Cal Quantrill",
+          "il_type": "Injured List",
+          "date": "2026-09-20",
+          "note": "Texas Rangers placed RHP Cal Quantrill on the 15-day injured list. Right lat strain. | Status Change",
+          "description": "Texas Rangers placed RHP Cal Quantrill on the 15-day injured list. Right lat strain."
+        },
         {
           "player_id": 691945,
           "name": "Carter Baumler",
@@ -5555,7 +5563,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Cincinnati Reds Injury Watch",
+      "title": "Texas Rangers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
