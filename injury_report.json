@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T14:47:53.863794-04:00",
+  "updated_at": "2026-09-21T18:19:59.353075-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -1834,7 +1834,7 @@
     {
       "team_id": 116,
       "team_name": "Detroit Tigers",
-      "injured_count": 26,
+      "injured_count": 27,
       "players": [
         {
           "player_id": 690544,
@@ -1875,6 +1875,14 @@
           "date": "2026-05-29",
           "note": "Detroit Tigers placed RHP Casey Mize on the 15-day injured list retroactive to May 28, 2026. Right adductor inflammation. | Status Change",
           "description": "Detroit Tigers placed RHP Casey Mize on the 15-day injured list retroactive to May 28, 2026. Right adductor inflammation."
+        },
+        {
+          "player_id": 690993,
+          "name": "Colt Keith",
+          "il_type": "Injured List",
+          "date": "2026-09-21",
+          "note": "Detroit Tigers placed 3B Colt Keith on the 10-day injured list retroactive to September 20, 2026. | Status Change",
+          "description": "Detroit Tigers placed 3B Colt Keith on the 10-day injured list retroactive to September 20, 2026."
         },
         {
           "player_id": 657756,
@@ -2008,9 +2016,9 @@
           "player_id": 675512,
           "name": "Troy Melton",
           "il_type": "Injured List",
-          "date": "2026-03-10",
-          "note": "Detroit Tigers placed RHP Troy Melton on the 60-day injured list. | Status Change",
-          "description": "Detroit Tigers placed RHP Troy Melton on the 60-day injured list."
+          "date": "2026-09-21",
+          "note": "Detroit Tigers placed RHP Troy Melton on the 15-day injured list. | Status Change",
+          "description": "Detroit Tigers placed RHP Troy Melton on the 15-day injured list."
         },
         {
           "player_id": 680744,
@@ -5563,7 +5571,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Texas Rangers Injury Watch",
+      "title": "Detroit Tigers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
