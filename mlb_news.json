@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T18:19:59.353075-04:00",
+  "updated_at": "2026-09-21T20:57:37.342476-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,24 @@
       "published": "2026-09-20"
     },
     {
-      "title": "Detroit Tigers Injury Watch",
-      "summary": "Detroit Tigers logged a roster-health update involving Troy Melton.",
+      "title": "San Francisco Giants Injury Watch",
+      "summary": "San Francisco Giants logged a roster-health update involving Bryce Eldridge.",
       "published": "2026-09-21"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-21",
+      "team": "San Francisco Giants",
+      "player": "Bryce Eldridge",
+      "update": "San Francisco Giants placed DH Bryce Eldridge on the 7-day injured list retroactive to September 18, 2026. Concussion. | Status Change"
+    },
+    {
+      "date": "2026-09-21",
+      "team": "San Francisco Giants",
+      "player": "Jung Hoo Lee",
+      "update": "San Francisco Giants placed RF Jung Hoo Lee on the 10-day injured list. Groin contusion. | Status Change"
+    },
     {
       "date": "2026-09-21",
       "team": "Detroit Tigers",
@@ -89,18 +101,6 @@
       "team": "San Francisco Giants",
       "player": "Nate Furman",
       "update": "San Francisco Giants placed 2B Nate Furman on the 10-day injured list retroactive to September 16, 2026. Right oblique strain. | Status Change"
-    },
-    {
-      "date": "2026-09-18",
-      "team": "San Francisco Giants",
-      "player": "Logan Webb",
-      "update": "San Francisco Giants placed RHP Logan Webb on the 15-day injured list retroactive to September 15, 2026. Right middle finger blister. | Status Change"
-    },
-    {
-      "date": "2026-09-18",
-      "team": "Los Angeles Angels",
-      "player": "Kyren Paris",
-      "update": "Los Angeles Angels placed 2B Kyren Paris on the 10-day injured list retroactive to September 15, 2026. Right index finger fracture. | Status Change"
     }
   ],
   "trade_updates": []

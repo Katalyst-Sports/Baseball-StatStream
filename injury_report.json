@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T18:19:59.353075-04:00",
+  "updated_at": "2026-09-21T20:57:37.342476-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -4261,7 +4261,7 @@
     {
       "team_id": 137,
       "team_name": "San Francisco Giants",
-      "injured_count": 29,
+      "injured_count": 30,
       "players": [
         {
           "player_id": 605288,
@@ -4270,6 +4270,14 @@
           "date": "2026-09-01",
           "note": "San Francisco Giants transferred RHP Adrian Houser from the 15-day injured list to the 60-day injured list. Right forearm strain. | Status Change",
           "description": "San Francisco Giants transferred RHP Adrian Houser from the 15-day injured list to the 60-day injured list. Right forearm strain."
+        },
+        {
+          "player_id": 805811,
+          "name": "Bryce Eldridge",
+          "il_type": "Injured List",
+          "date": "2026-09-21",
+          "note": "San Francisco Giants placed DH Bryce Eldridge on the 7-day injured list retroactive to September 18, 2026. Concussion. | Status Change",
+          "description": "San Francisco Giants placed DH Bryce Eldridge on the 7-day injured list retroactive to September 18, 2026. Concussion."
         },
         {
           "player_id": 687931,
@@ -4387,9 +4395,9 @@
           "player_id": 808982,
           "name": "Jung Hoo Lee",
           "il_type": "Injured List",
-          "date": "2026-05-22",
-          "note": "San Francisco Giants placed RF Jung Hoo Lee on the 10-day injured list retroactive to May 19, 2026. Mid-back strain. | Status Change",
-          "description": "San Francisco Giants placed RF Jung Hoo Lee on the 10-day injured list retroactive to May 19, 2026. Mid-back strain."
+          "date": "2026-09-21",
+          "note": "San Francisco Giants placed RF Jung Hoo Lee on the 10-day injured list. Groin contusion. | Status Change",
+          "description": "San Francisco Giants placed RF Jung Hoo Lee on the 10-day injured list. Groin contusion."
         },
         {
           "player_id": 676775,
@@ -5571,7 +5579,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Detroit Tigers Injury Watch",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
