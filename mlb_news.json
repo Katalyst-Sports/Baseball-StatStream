@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T11:38:35.653032-04:00",
+  "updated_at": "2026-09-22T15:12:10.143125-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -19,12 +19,28 @@
       "published": "2026-09-21"
     },
     {
-      "title": "San Francisco Giants Injury Watch",
-      "summary": "San Francisco Giants logged a roster-health update involving Bryce Eldridge.",
-      "published": "2026-09-21"
+      "title": "New York Yankees Finishes Off Tampa Bay Rays",
+      "summary": "New York Yankees wrapped up a 0-2 result over Tampa Bay Rays.",
+      "published": "2026-09-22"
+    },
+    {
+      "title": "Baltimore Orioles Finishes Off Toronto Blue Jays",
+      "summary": "Baltimore Orioles wrapped up a 0-0 result over Toronto Blue Jays.",
+      "published": "2026-09-22"
+    },
+    {
+      "title": "Cincinnati Reds Injury Watch",
+      "summary": "Cincinnati Reds logged a roster-health update involving Tony Santillan.",
+      "published": "2026-09-22"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-22",
+      "team": "Cincinnati Reds",
+      "player": "Tony Santillan",
+      "update": "Cincinnati Reds placed RHP Tony Santillan on the 15-day injured list retroactive to September 19, 2026. Left hip labral tear. | Status Change"
+    },
     {
       "date": "2026-09-21",
       "team": "San Francisco Giants",
@@ -90,12 +106,6 @@
       "team": "New York Yankees",
       "player": "Aaron Judge",
       "update": "New York Yankees placed RF Aaron Judge on the 10-day injured list retroactive to September 17, 2026. Right calf strain. | Status Change"
-    },
-    {
-      "date": "2026-09-18",
-      "team": "San Francisco Giants",
-      "player": "Nate Furman",
-      "update": "San Francisco Giants placed 2B Nate Furman on the 10-day injured list retroactive to September 16, 2026. Right oblique strain. | Status Change"
     }
   ],
   "trade_updates": []

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T11:38:35.653032-04:00",
+  "updated_at": "2026-09-22T15:12:10.143125-04:00",
   "games": [],
   "errors": [
     {
@@ -19,7 +19,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Injury Watch",
+      "title": "New York Yankees Finishes Off Tampa Bay Rays",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Baltimore Orioles Finishes Off Toronto Blue Jays",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cincinnati Reds Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
