@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-23T14:59:22.006088-04:00",
-  "games": [],
+  "updated_at": "2026-09-23T18:13:08.696386-04:00",
+  "games": [
+    {
+      "gamePk": 824223,
+      "game": "Washington Nationals @ Detroit Tigers",
+      "winner": "Washington Nationals",
+      "loser": "Detroit Tigers",
+      "final_score": "4-2",
+      "hitters": [
+        "Brady House",
+        "Yohandy Morales",
+        "Kevin McGonigle",
+        "Ben Malgeri"
+      ],
+      "pitchers": [
+        "Framber Valdez"
+      ]
+    },
+    {
+      "gamePk": 824785,
+      "game": "Toronto Blue Jays @ Baltimore Orioles",
+      "winner": "Baltimore Orioles",
+      "loser": "Toronto Blue Jays",
+      "final_score": "2-4",
+      "hitters": [
+        "Andr\u00e9s Gim\u00e9nez",
+        "Brandon Valenzuela",
+        "Ernie Clement",
+        "Pete Alonso"
+      ],
+      "pitchers": [
+        "Max Scherzer"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +57,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Washington Nationals Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Baltimore Orioles Finishes Off Toronto Blue Jays",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Houston Astros Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

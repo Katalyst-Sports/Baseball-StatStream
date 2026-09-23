@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T14:59:22.006088-04:00",
+  "updated_at": "2026-09-23T18:13:08.696386-04:00",
   "games": [
     {
       "gamePk": 823543,
@@ -335,18 +335,22 @@
       "game": "Toronto Blue Jays @ Baltimore Orioles",
       "winner": "Baltimore Orioles",
       "loser": "Toronto Blue Jays",
-      "final_score": "0-2",
+      "final_score": "2-4",
       "hitters": [
         "Andr\u00e9s Gim\u00e9nez",
-        "Ernie Clement"
+        "Brandon Valenzuela",
+        "Ernie Clement",
+        "Pete Alonso"
       ],
-      "pitchers": [],
-      "top_batting_line": "Jeremiah Jackson: 1 H, 0 HR, 1 RBI, 2 AB",
-      "top_pitching_line": "Max Scherzer: 4.0 IP, 5 K, 2 ER, 2 BB, 3 H",
-      "winning_pitcher": "",
-      "losing_pitcher": "",
-      "save_pitcher": "",
-      "game_summary": "Jeremiah Jackson caught stealing 2nd base, catcher Brandon Valenzuela to shortstop Andr\u00e9s Gim\u00e9nez to first baseman Vladimir Guerrero Jr. to second baseman Ernie Clement. Colton Cowser scores."
+      "pitchers": [
+        "Max Scherzer"
+      ],
+      "top_batting_line": "Pete Alonso: 1 H, 1 HR, 2 RBI, 3 AB",
+      "top_pitching_line": "Jos\u00e9 Rodr\u00edguez: 1.0 IP, 2 K, 0 ER, 0 BB, 0 H",
+      "winning_pitcher": "Chris Bassitt",
+      "losing_pitcher": "Max Scherzer",
+      "save_pitcher": "Andrew Kittredge",
+      "game_summary": "Brandon Valenzuela singles on a ground ball to second baseman Jeremiah Jackson. Kazuma Okamoto scores. George Springer scores. Throwing error by second baseman Jeremiah Jackson."
     }
   ],
   "errors": [
@@ -372,7 +376,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Washington Nationals Finishes Off Detroit Tigers",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Baltimore Orioles Finishes Off Toronto Blue Jays",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Houston Astros Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

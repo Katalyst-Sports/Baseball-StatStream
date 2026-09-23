@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T14:59:22.006088-04:00",
+  "updated_at": "2026-09-23T18:13:08.696386-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,40 @@
       "published": "2026-09-22"
     },
     {
-      "title": "Baltimore Orioles Injury Watch",
-      "summary": "Baltimore Orioles logged a roster-health update involving Samuel Basallo.",
+      "title": "Washington Nationals Finishes Off Detroit Tigers",
+      "summary": "Washington Nationals wrapped up a 4-2 result over Detroit Tigers.",
+      "published": "2026-09-23"
+    },
+    {
+      "title": "Baltimore Orioles Finishes Off Toronto Blue Jays",
+      "summary": "Baltimore Orioles wrapped up a 2-4 result over Toronto Blue Jays.",
+      "published": "2026-09-23"
+    },
+    {
+      "title": "Houston Astros Injury Watch",
+      "summary": "Houston Astros logged a roster-health update involving Jake Meyers.",
       "published": "2026-09-23"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-23",
+      "team": "Houston Astros",
+      "player": "Jake Meyers",
+      "update": "Houston Astros placed CF Jake Meyers on the 60-day injured list. | Status Change"
+    },
+    {
+      "date": "2026-09-23",
+      "team": "Houston Astros",
+      "player": "Cristian Javier",
+      "update": "Houston Astros placed RHP Cristian Javier on the 15-day injured list. | Status Change"
+    },
+    {
+      "date": "2026-09-23",
+      "team": "Toronto Blue Jays",
+      "player": "Dylan Cease",
+      "update": "Toronto Blue Jays placed RHP Dylan Cease on the 15-day injured list retroactive to September 20, 2026. Right shoulder inflammation. | Status Change"
+    },
     {
       "date": "2026-09-23",
       "team": "Baltimore Orioles",
@@ -83,24 +111,6 @@
       "team": "San Francisco Giants",
       "player": "Bryce Eldridge",
       "update": "San Francisco Giants placed DH Bryce Eldridge on the 7-day injured list retroactive to September 18, 2026. Concussion. | Status Change"
-    },
-    {
-      "date": "2026-09-21",
-      "team": "San Francisco Giants",
-      "player": "Jung Hoo Lee",
-      "update": "San Francisco Giants placed RF Jung Hoo Lee on the 10-day injured list. Groin contusion. | Status Change"
-    },
-    {
-      "date": "2026-09-21",
-      "team": "Detroit Tigers",
-      "player": "Troy Melton",
-      "update": "Detroit Tigers placed RHP Troy Melton on the 15-day injured list. | Status Change"
-    },
-    {
-      "date": "2026-09-21",
-      "team": "Detroit Tigers",
-      "player": "Colt Keith",
-      "update": "Detroit Tigers placed 3B Colt Keith on the 10-day injured list retroactive to September 20, 2026. | Status Change"
     }
   ],
   "trade_updates": []
