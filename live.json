@@ -1,135 +1,25 @@
 {
-  "updated_at": "2026-09-22T20:42:01.095062-04:00",
-  "games": [
-    {
-      "gamePk": 823494,
-      "game": "Tampa Bay Rays @ New York Yankees",
-      "score": "1-0",
-      "inning": "6th",
-      "hot_hitters": [],
-      "top_pitchers": [
-        "Drew Rasmussen"
-      ]
-    },
-    {
-      "gamePk": 824222,
-      "game": "Washington Nationals @ Detroit Tigers",
-      "score": "3-1",
-      "inning": "7th",
-      "hot_hitters": [
-        "CJ Abrams",
-        "Kevin McGonigle",
-        "Max Clark"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823328,
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "score": "0-2",
-      "inning": "8th",
-      "hot_hitters": [
-        "Konnor Griffin"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823412,
-      "game": "Milwaukee Brewers @ Philadelphia Phillies",
-      "score": "3-3",
-      "inning": "7th",
-      "hot_hitters": [
-        "Brandon Marsh"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824709,
-      "game": "Cleveland Guardians @ Boston Red Sox",
-      "score": "2-1",
-      "inning": "7th",
-      "hot_hitters": [
-        "Chase DeLauter",
-        "Angel Mart\u00ednez",
-        "Nick Sogard",
-        "Adley Rutschman"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824867,
-      "game": "Cincinnati Reds @ Atlanta Braves",
-      "score": "1-0",
-      "inning": "6th",
-      "hot_hitters": [
-        "Elly De La Cruz",
-        "JJ Bleday"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824061,
-      "game": "Chicago White Sox @ Kansas City Royals",
-      "score": "9-1",
-      "inning": "4th",
-      "hot_hitters": [
-        "Randal Grichuk",
-        "Chase Meidroth",
-        "Brenton Doyle",
-        "Bobby Witt Jr.",
-        "Nick Loftin"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824624,
-      "game": "Miami Marlins @ Chicago Cubs",
-      "score": "0-0",
-      "inning": "4th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822840,
-      "game": "New York Mets @ Texas Rangers",
-      "score": "0-0",
-      "inning": "3rd",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824302,
-      "game": "Arizona Diamondbacks @ Colorado Rockies",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-23T01:15:01.952517-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 3-4 Win",
+      "title": "New York Yankees Takes 0-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Detroit Tigers Takes 2-9 Win",
+      "title": "Tampa Bay Rays Takes 6-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Takes 2-5 Win",
+      "title": "Washington Nationals Takes 3-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Finishes Off Tampa Bay Rays",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Baltimore Orioles Finishes Off Toronto Blue Jays",
+      "title": "Pittsburgh Pirates Takes 0-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
