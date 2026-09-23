@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T18:15:21.607105-04:00",
+  "updated_at": "2026-09-22T20:42:01.095062-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -29,12 +29,30 @@
       "published": "2026-09-22"
     },
     {
-      "title": "Athletics Injury Watch",
-      "summary": "Athletics logged a roster-health update involving J.T. Ginn.",
+      "title": "Texas Rangers Injury Watch",
+      "summary": "Texas Rangers logged a roster-health update involving Cal Quantrill.",
       "published": "2026-09-22"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-22",
+      "team": "Texas Rangers",
+      "player": "Cal Quantrill",
+      "update": "Texas Rangers transferred RHP Cal Quantrill from the 15-day injured list to the 60-day injured list. Right lat strain. | Status Change"
+    },
+    {
+      "date": "2026-09-22",
+      "team": "Texas Rangers",
+      "player": "Joc Pederson",
+      "update": "Texas Rangers placed DH Joc Pederson on the 10-day injured list retroactive to September 19, 2026. Left wrist fracture. | Status Change"
+    },
+    {
+      "date": "2026-09-22",
+      "team": "San Francisco Giants",
+      "player": "Blade Tidwell",
+      "update": "San Francisco Giants placed RHP Blade Tidwell on the 15-day injured list. | Status Change"
+    },
     {
       "date": "2026-09-22",
       "team": "Athletics",
@@ -88,24 +106,6 @@
       "team": "Texas Rangers",
       "player": "Cal Quantrill",
       "update": "Texas Rangers placed RHP Cal Quantrill on the 15-day injured list. Right lat strain. | Status Change"
-    },
-    {
-      "date": "2026-09-20",
-      "team": "Cincinnati Reds",
-      "player": "Chase Burns",
-      "update": "Cincinnati Reds placed RHP Chase Burns on the 15-day injured list retroactive to September 19, 2026. Right groin strain. | Status Change"
-    },
-    {
-      "date": "2026-09-19",
-      "team": "San Francisco Giants",
-      "player": "Reiver Sanmartin",
-      "update": "San Francisco Giants placed LHP Reiver Sanmartin on the 15-day injured list retroactive to September 17, 2026. Right oblique strain. | Status Change"
-    },
-    {
-      "date": "2026-09-19",
-      "team": "Houston Astros",
-      "player": "Enyel De Los Santos",
-      "update": "Houston Astros placed RHP Enyel De Los Santos on the 15-day injured list. Right knee tendinitis. | Status Change"
     }
   ],
   "trade_updates": []

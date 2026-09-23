@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T18:15:21.607105-04:00",
+  "updated_at": "2026-09-22T20:42:01.095062-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -4261,7 +4261,7 @@
     {
       "team_id": 137,
       "team_name": "San Francisco Giants",
-      "injured_count": 30,
+      "injured_count": 31,
       "players": [
         {
           "player_id": 605288,
@@ -4270,6 +4270,14 @@
           "date": "2026-09-01",
           "note": "San Francisco Giants transferred RHP Adrian Houser from the 15-day injured list to the 60-day injured list. Right forearm strain. | Status Change",
           "description": "San Francisco Giants transferred RHP Adrian Houser from the 15-day injured list to the 60-day injured list. Right forearm strain."
+        },
+        {
+          "player_id": 694918,
+          "name": "Blade Tidwell",
+          "il_type": "Injured List",
+          "date": "2026-09-22",
+          "note": "San Francisco Giants placed RHP Blade Tidwell on the 15-day injured list. | Status Change",
+          "description": "San Francisco Giants placed RHP Blade Tidwell on the 15-day injured list."
         },
         {
           "player_id": 805811,
@@ -4993,15 +5001,15 @@
     {
       "team_id": 140,
       "team_name": "Texas Rangers",
-      "injured_count": 24,
+      "injured_count": 25,
       "players": [
         {
           "player_id": 615698,
           "name": "Cal Quantrill",
           "il_type": "Injured List",
-          "date": "2026-09-20",
-          "note": "Texas Rangers placed RHP Cal Quantrill on the 15-day injured list. Right lat strain. | Status Change",
-          "description": "Texas Rangers placed RHP Cal Quantrill on the 15-day injured list. Right lat strain."
+          "date": "2026-09-22",
+          "note": "Texas Rangers transferred RHP Cal Quantrill from the 15-day injured list to the 60-day injured list. Right lat strain. | Status Change",
+          "description": "Texas Rangers transferred RHP Cal Quantrill from the 15-day injured list to the 60-day injured list. Right lat strain."
         },
         {
           "player_id": 691945,
@@ -5090,6 +5098,14 @@
           "date": "2026-07-10",
           "note": "Texas Rangers transferred LHP Jalen Beeks from the 10-day injured list to the 60-day injured list. | Status Change",
           "description": "Texas Rangers transferred LHP Jalen Beeks from the 10-day injured list to the 60-day injured list."
+        },
+        {
+          "player_id": 592626,
+          "name": "Joc Pederson",
+          "il_type": "Injured List",
+          "date": "2026-09-22",
+          "note": "Texas Rangers placed DH Joc Pederson on the 10-day injured list retroactive to September 19, 2026. Left wrist fracture. | Status Change",
+          "description": "Texas Rangers placed DH Joc Pederson on the 10-day injured list retroactive to September 19, 2026. Left wrist fracture."
         },
         {
           "player_id": 656756,
@@ -5584,7 +5600,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Athletics Injury Watch",
+      "title": "Texas Rangers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
