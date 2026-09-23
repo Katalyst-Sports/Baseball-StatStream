@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T01:15:01.952517-04:00",
+  "updated_at": "2026-09-23T06:05:31.291868-04:00",
   "games": [
     {
       "gamePk": 824223,
@@ -6892,7 +6892,56 @@
       "venue": "T-Mobile Park",
       "start": "2026-09-24T02:10:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 814490,
+        "name": "Ethan Pecko",
+        "hand": "R",
+        "era": "3.77",
+        "whip": "1.12",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-08-19",
+              "opponent": "Los Angeles Angels",
+              "ip": "3.2",
+              "er": 2,
+              "k": 4,
+              "bb": 3,
+              "pitches": 89,
+              "strikes": 49
+            },
+            {
+              "date": "2026-08-25",
+              "opponent": "New York Yankees",
+              "ip": "4.1",
+              "er": 5,
+              "k": 1,
+              "bb": 4,
+              "pitches": 88,
+              "strikes": 48
+            },
+            {
+              "date": "2026-08-30",
+              "opponent": "New York Mets",
+              "ip": "5.0",
+              "er": 2,
+              "k": 4,
+              "bb": 2,
+              "pitches": 83,
+              "strikes": 47
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "3.0",
+          "avg_bb": "3.0",
+          "avg_pitches": "86.7",
+          "avg_strikes": "48.0",
+          "era": "6.23",
+          "whip": "1.54",
+          "strike_pct": "55.4",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 669923,
         "name": "George Kirby",
