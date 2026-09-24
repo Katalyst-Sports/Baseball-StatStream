@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T11:16:46.050844-04:00",
+  "updated_at": "2026-09-24T15:18:29.117786-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -1174,7 +1174,7 @@
     {
       "team_id": 145,
       "team_name": "Chicago White Sox",
-      "injured_count": 20,
+      "injured_count": 21,
       "players": [
         {
           "player_id": 669720,
@@ -1279,6 +1279,14 @@
           "date": "2026-07-21",
           "note": "Chicago White Sox placed C Kyle Teel on the 10-day injured list. Left ankle sprain. | Status Change",
           "description": "Chicago White Sox placed C Kyle Teel on the 10-day injured list. Left ankle sprain."
+        },
+        {
+          "player_id": 622491,
+          "name": "Luis Castillo",
+          "il_type": "Injured List",
+          "date": "2026-09-24",
+          "note": "Chicago White Sox placed RHP Luis Castillo on the 15-day injured list. Right shoulder impingement. | Status Change",
+          "description": "Chicago White Sox placed RHP Luis Castillo on the 15-day injured list. Right shoulder impingement."
         },
         {
           "player_id": 678024,
@@ -4275,9 +4283,9 @@
           "player_id": 694918,
           "name": "Blade Tidwell",
           "il_type": "Injured List",
-          "date": "2026-09-22",
-          "note": "San Francisco Giants placed RHP Blade Tidwell on the 15-day injured list. | Status Change",
-          "description": "San Francisco Giants placed RHP Blade Tidwell on the 15-day injured list."
+          "date": "2026-09-24",
+          "note": "San Francisco Giants transferred RHP Blade Tidwell from the 15-day injured list to the 60-day injured list. Right UCL sprain. | Status Change",
+          "description": "San Francisco Giants transferred RHP Blade Tidwell from the 15-day injured list to the 60-day injured list. Right UCL sprain."
         },
         {
           "player_id": 805811,
@@ -5595,7 +5603,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Houston Astros Injury Watch",
+      "title": "San Francisco Giants Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

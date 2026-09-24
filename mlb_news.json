@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T11:16:46.050844-04:00",
+  "updated_at": "2026-09-24T15:18:29.117786-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,24 @@
       "published": "2026-09-23"
     },
     {
-      "title": "Houston Astros Injury Watch",
-      "summary": "Houston Astros logged a roster-health update involving Brice Matthews.",
-      "published": "2026-09-23"
+      "title": "San Francisco Giants Injury Watch",
+      "summary": "San Francisco Giants logged a roster-health update involving Blade Tidwell.",
+      "published": "2026-09-24"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-24",
+      "team": "San Francisco Giants",
+      "player": "Blade Tidwell",
+      "update": "San Francisco Giants transferred RHP Blade Tidwell from the 15-day injured list to the 60-day injured list. Right UCL sprain. | Status Change"
+    },
+    {
+      "date": "2026-09-24",
+      "team": "Chicago White Sox",
+      "player": "Luis Castillo",
+      "update": "Chicago White Sox placed RHP Luis Castillo on the 15-day injured list. Right shoulder impingement. | Status Change"
+    },
     {
       "date": "2026-09-23",
       "team": "Houston Astros",
@@ -62,6 +74,12 @@
     },
     {
       "date": "2026-09-22",
+      "team": "San Francisco Giants",
+      "player": "Blade Tidwell",
+      "update": "San Francisco Giants placed RHP Blade Tidwell on the 15-day injured list. Right UCL sprain. | Status Change"
+    },
+    {
+      "date": "2026-09-22",
       "team": "Texas Rangers",
       "player": "Cal Quantrill",
       "update": "Texas Rangers transferred RHP Cal Quantrill from the 15-day injured list to the 60-day injured list. Right lat strain. | Status Change"
@@ -74,12 +92,6 @@
     },
     {
       "date": "2026-09-22",
-      "team": "San Francisco Giants",
-      "player": "Blade Tidwell",
-      "update": "San Francisco Giants placed RHP Blade Tidwell on the 15-day injured list. | Status Change"
-    },
-    {
-      "date": "2026-09-22",
       "team": "Athletics",
       "player": "J.T. Ginn",
       "update": "Athletics transferred RHP J.T. Ginn from the 15-day injured list to the 60-day injured list. Right elbow impingement. | Status Change"
@@ -89,18 +101,6 @@
       "team": "Athletics",
       "player": "Max Muncy",
       "update": "Athletics placed 3B Max Muncy on the 10-day injured list. Left knee chondromalacia. | Status Change"
-    },
-    {
-      "date": "2026-09-22",
-      "team": "New York Mets",
-      "player": "Christian Scott",
-      "update": "New York Mets placed RHP Christian Scott on the 15-day injured list. Left knee inflammation. | Status Change"
-    },
-    {
-      "date": "2026-09-22",
-      "team": "Cincinnati Reds",
-      "player": "Tony Santillan",
-      "update": "Cincinnati Reds placed RHP Tony Santillan on the 15-day injured list retroactive to September 19, 2026. Left hip labral tear. | Status Change"
     }
   ],
   "trade_updates": []
