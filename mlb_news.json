@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T18:13:08.696386-04:00",
+  "updated_at": "2026-09-23T20:33:06.375462-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -35,11 +35,17 @@
     },
     {
       "title": "Houston Astros Injury Watch",
-      "summary": "Houston Astros logged a roster-health update involving Jake Meyers.",
+      "summary": "Houston Astros logged a roster-health update involving Brice Matthews.",
       "published": "2026-09-23"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-23",
+      "team": "Houston Astros",
+      "player": "Brice Matthews",
+      "update": "Houston Astros placed CF Brice Matthews on the 10-day injured list. Left knee inflammation. | Status Change"
+    },
     {
       "date": "2026-09-23",
       "team": "Houston Astros",
@@ -105,12 +111,6 @@
       "team": "Cincinnati Reds",
       "player": "Tony Santillan",
       "update": "Cincinnati Reds placed RHP Tony Santillan on the 15-day injured list retroactive to September 19, 2026. Left hip labral tear. | Status Change"
-    },
-    {
-      "date": "2026-09-21",
-      "team": "San Francisco Giants",
-      "player": "Bryce Eldridge",
-      "update": "San Francisco Giants placed DH Bryce Eldridge on the 7-day injured list retroactive to September 18, 2026. Concussion. | Status Change"
     }
   ],
   "trade_updates": []
