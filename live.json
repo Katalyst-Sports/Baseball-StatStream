@@ -1,57 +1,20 @@
 {
-  "updated_at": "2026-09-24T15:18:29.117786-04:00",
+  "updated_at": "2026-09-24T18:33:44.577558-04:00",
   "games": [
     {
-      "gamePk": 823326,
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "score": "1-2",
-      "inning": "9th",
-      "hot_hitters": [
-        "JJ Wetherholt",
-        "Alec Burleson",
-        "Oneil Cruz",
-        "Konnor Griffin"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824059,
-      "game": "Chicago White Sox @ Kansas City Royals",
-      "score": "8-0",
-      "inning": "4th",
-      "hot_hitters": [
-        "Kyle Teel",
-        "Miguel Vargas",
-        "Chase Meidroth"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824623,
-      "game": "Miami Marlins @ Chicago Cubs",
+      "gamePk": 823411,
+      "game": "Milwaukee Brewers @ Philadelphia Phillies",
       "score": "1-0",
-      "inning": "4th",
+      "inning": "2nd",
       "hot_hitters": [],
       "top_pitchers": []
     },
     {
-      "gamePk": 822842,
-      "game": "New York Mets @ Texas Rangers",
-      "score": "1-2",
-      "inning": "3rd",
-      "hot_hitters": [
-        "Josh Jung"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824298,
-      "game": "Arizona Diamondbacks @ Colorado Rockies",
-      "score": "3-0",
+      "gamePk": 824707,
+      "game": "Cleveland Guardians @ Boston Red Sox",
+      "score": "0-0",
       "inning": "1st",
-      "hot_hitters": [
-        "Gabriel Moreno"
-      ],
+      "hot_hitters": [],
       "top_pitchers": []
     }
   ],
@@ -78,7 +41,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Injury Watch",
+      "title": "Pittsburgh Pirates Finishes Off St. Louis Cardinals",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Chicago White Sox Finishes Off Kansas City Royals",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Angels Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

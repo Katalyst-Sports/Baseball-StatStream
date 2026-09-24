@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T15:18:29.117786-04:00",
+  "updated_at": "2026-09-24T18:33:44.577558-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2477,9 +2477,9 @@
           "player_id": 690829,
           "name": "Ben Joyce",
           "il_type": "Injured List",
-          "date": "2026-05-16",
-          "note": "Los Angeles Angels placed RHP Ben Joyce on the 60-day injured list. Right shoulder inflammation. | Status Change",
-          "description": "Los Angeles Angels placed RHP Ben Joyce on the 60-day injured list. Right shoulder inflammation."
+          "date": "2026-09-24",
+          "note": "Los Angeles Angels placed RHP Ben Joyce on the 15-day injured list retroactive to September 21, 2026. Right shoulder impingement. | Status Change",
+          "description": "Los Angeles Angels placed RHP Ben Joyce on the 15-day injured list retroactive to September 21, 2026. Right shoulder impingement."
         },
         {
           "player_id": 519141,
@@ -3679,9 +3679,9 @@
           "player_id": 657376,
           "name": "Clarke Schmidt",
           "il_type": "Injured List",
-          "date": "2026-02-12",
-          "note": "New York Yankees placed RHP Clarke Schmidt on the 60-day injured list. Right forearm tightness. | Status Change",
-          "description": "New York Yankees placed RHP Clarke Schmidt on the 60-day injured list. Right forearm tightness."
+          "date": "2026-09-24",
+          "note": "New York Yankees placed RHP Clarke Schmidt on the 15-day injured list retroactive to September 21, 2026. Right bicep neuritis. | Status Change",
+          "description": "New York Yankees placed RHP Clarke Schmidt on the 15-day injured list retroactive to September 21, 2026. Right bicep neuritis."
         },
         {
           "player_id": 641355,
@@ -4524,7 +4524,7 @@
     {
       "team_id": 136,
       "team_name": "Seattle Mariners",
-      "injured_count": 22,
+      "injured_count": 23,
       "players": [
         {
           "player_id": 680977,
@@ -4541,6 +4541,14 @@
           "date": "2026-09-03",
           "note": "Seattle Mariners placed CF Brennen Davis on the 60-day injured list. Left hamstring strain. | Status Change",
           "description": "Seattle Mariners placed CF Brennen Davis on the 60-day injured list. Left hamstring strain."
+        },
+        {
+          "player_id": 801126,
+          "name": "Brock Rodden",
+          "il_type": "Injured List",
+          "date": "2026-09-24",
+          "note": "Seattle Mariners placed SS Brock Rodden on the 10-day injured list retroactive to September 23, 2026. Left patella tendon inflammation. | Status Change",
+          "description": "Seattle Mariners placed SS Brock Rodden on the 10-day injured list retroactive to September 23, 2026. Left patella tendon inflammation."
         },
         {
           "player_id": 682243,
@@ -5603,7 +5611,17 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "San Francisco Giants Injury Watch",
+      "title": "Pittsburgh Pirates Finishes Off St. Louis Cardinals",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Chicago White Sox Finishes Off Kansas City Royals",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Angels Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
