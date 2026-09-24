@@ -1,140 +1,25 @@
 {
-  "updated_at": "2026-09-23T20:33:06.375462-04:00",
-  "games": [
-    {
-      "gamePk": 824784,
-      "game": "Toronto Blue Jays @ Baltimore Orioles",
-      "score": "0-4",
-      "inning": "8th",
-      "hot_hitters": [
-        "Christian Encarnacion-Strand"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823327,
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "score": "5-1",
-      "inning": "6th",
-      "hot_hitters": [
-        "JJ Wetherholt",
-        "Brandon Lowe",
-        "Ryan O'Hearn"
-      ],
-      "top_pitchers": [
-        "Matthew Liberatore"
-      ]
-    },
-    {
-      "gamePk": 823410,
-      "game": "Milwaukee Brewers @ Philadelphia Phillies",
-      "score": "4-1",
-      "inning": "7th",
-      "hot_hitters": [
-        "Brice Turang",
-        "Christian Yelich",
-        "Bryson Stott"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 823492,
-      "game": "Tampa Bay Rays @ New York Yankees",
-      "score": "1-8",
-      "inning": "4th",
-      "hot_hitters": [
-        "Ben Rice",
-        "George Lombard Jr.",
-        "Ryan McMahon"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824710,
-      "game": "Cleveland Guardians @ Boston Red Sox",
-      "score": "0-0",
-      "inning": "5th",
-      "hot_hitters": [],
-      "top_pitchers": [
-        "Foster Griffin"
-      ]
-    },
-    {
-      "gamePk": 824868,
-      "game": "Cincinnati Reds @ Atlanta Braves",
-      "score": "1-0",
-      "inning": "5th",
-      "hot_hitters": [
-        "Juan Brito"
-      ],
-      "top_pitchers": [
-        "Chris Sale"
-      ]
-    },
-    {
-      "gamePk": 824060,
-      "game": "Chicago White Sox @ Kansas City Royals",
-      "score": "4-4",
-      "inning": "3rd",
-      "hot_hitters": [
-        "Carter Jensen"
-      ],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824625,
-      "game": "Miami Marlins @ Chicago Cubs",
-      "score": "0-0",
-      "inning": "4th",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 822841,
-      "game": "New York Mets @ Texas Rangers",
-      "score": "0-0",
-      "inning": "2nd",
-      "hot_hitters": [],
-      "top_pitchers": []
-    },
-    {
-      "gamePk": 824301,
-      "game": "Arizona Diamondbacks @ Colorado Rockies",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-24T01:20:41.390509-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Takes 0-2 Win",
+      "title": "Washington Nationals Takes 4-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 6-1 Win",
+      "title": "Baltimore Orioles Takes 2-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Washington Nationals Takes 3-1 Win",
+      "title": "Baltimore Orioles Takes 2-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Takes 0-2 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Washington Nationals Finishes Off Detroit Tigers",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Baltimore Orioles Finishes Off Toronto Blue Jays",
+      "title": "Minnesota Twins Takes 4-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
