@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T01:30:41.789861-04:00",
+  "updated_at": "2026-09-25T06:31:01.287344-04:00",
   "games": [
     {
       "gamePk": 824703,
@@ -946,112 +946,63 @@
       ]
     },
     {
-      "gamePk": 823489,
+      "gamePk": 823491,
       "away_team": "Baltimore Orioles",
       "home_team": "New York Yankees",
       "venue": "Yankee Stadium",
       "start": "2026-09-25T20:05:00Z",
       "status": "Preview",
       "away_pitcher": {
-        "id": 669432,
-        "name": "Trevor Rogers",
-        "hand": "L",
-        "era": "4.07",
-        "whip": "1.18",
-        "last3": {
-          "starts": [
-            {
-              "date": "2026-03-26",
-              "opponent": "Minnesota Twins",
-              "ip": "7.0",
-              "er": 0,
-              "k": 5,
-              "bb": 4,
-              "pitches": 88,
-              "strikes": 56
-            },
-            {
-              "date": "2026-04-01",
-              "opponent": "Texas Rangers",
-              "ip": "6.0",
-              "er": 2,
-              "k": 3,
-              "bb": 1,
-              "pitches": 91,
-              "strikes": 58
-            },
-            {
-              "date": "2026-04-07",
-              "opponent": "Chicago White Sox",
-              "ip": "6.0",
-              "er": 2,
-              "k": 6,
-              "bb": 0,
-              "pitches": 101,
-              "strikes": 70
-            }
-          ],
-          "avg_ip": "6.1",
-          "avg_k": "4.7",
-          "avg_bb": "1.7",
-          "avg_pitches": "93.3",
-          "avg_strikes": "61.3",
-          "era": "1.89",
-          "whip": "1.05",
-          "strike_pct": "65.7",
-          "quality_starts": 3
-        }
-      },
-      "home_pitcher": {
-        "id": 694341,
-        "name": "Brendan Beck",
+        "id": 687064,
+        "name": "Brandon Young",
         "hand": "R",
-        "era": "8.22",
-        "whip": "1.57",
+        "era": "3.62",
+        "whip": "1.36",
         "last3": {
           "starts": [
             {
-              "date": "2026-05-07",
-              "opponent": "Texas Rangers",
-              "ip": "3.0",
-              "er": 2,
-              "k": 1,
-              "bb": 3,
-              "pitches": 52,
-              "strikes": 28
-            },
-            {
-              "date": "2026-07-04",
-              "opponent": "Minnesota Twins",
-              "ip": "3.2",
-              "er": 5,
-              "k": 3,
-              "bb": 2,
-              "pitches": 87,
-              "strikes": 51
-            },
-            {
-              "date": "2026-08-29",
-              "opponent": "Boston Red Sox",
-              "ip": "1.0",
+              "date": "2026-04-06",
+              "opponent": "Chicago White Sox",
+              "ip": "5.0",
               "er": 0,
-              "k": 1,
-              "bb": 0,
-              "pitches": 10,
-              "strikes": 6
+              "k": 2,
+              "bb": 2,
+              "pitches": 66,
+              "strikes": 39
+            },
+            {
+              "date": "2026-04-24",
+              "opponent": "Boston Red Sox",
+              "ip": "5.2",
+              "er": 3,
+              "k": 5,
+              "bb": 1,
+              "pitches": 93,
+              "strikes": 65
+            },
+            {
+              "date": "2026-04-30",
+              "opponent": "Houston Astros",
+              "ip": "4.0",
+              "er": 4,
+              "k": 2,
+              "bb": 2,
+              "pitches": 82,
+              "strikes": 51
             }
           ],
-          "avg_ip": "2.2",
-          "avg_k": "1.7",
+          "avg_ip": "5.0",
+          "avg_k": "3.0",
           "avg_bb": "1.7",
-          "avg_pitches": "49.7",
-          "avg_strikes": "28.3",
-          "era": "8.22",
+          "avg_pitches": "80.3",
+          "avg_strikes": "51.7",
+          "era": "4.30",
           "whip": "1.57",
-          "strike_pct": "57.0",
+          "strike_pct": "64.3",
           "quality_starts": 0
         }
       },
+      "home_pitcher": {},
       "away_hitters": [
         {
           "name": "Pete Alonso",
@@ -1418,63 +1369,112 @@
       ]
     },
     {
-      "gamePk": 823491,
+      "gamePk": 823489,
       "away_team": "Baltimore Orioles",
       "home_team": "New York Yankees",
       "venue": "Yankee Stadium",
       "start": "2026-09-25T20:10:00Z",
       "status": "Preview",
       "away_pitcher": {
-        "id": 687064,
-        "name": "Brandon Young",
-        "hand": "R",
-        "era": "3.62",
-        "whip": "1.36",
+        "id": 669432,
+        "name": "Trevor Rogers",
+        "hand": "L",
+        "era": "4.07",
+        "whip": "1.18",
         "last3": {
           "starts": [
             {
-              "date": "2026-04-06",
-              "opponent": "Chicago White Sox",
-              "ip": "5.0",
+              "date": "2026-03-26",
+              "opponent": "Minnesota Twins",
+              "ip": "7.0",
               "er": 0,
-              "k": 2,
-              "bb": 2,
-              "pitches": 66,
-              "strikes": 39
-            },
-            {
-              "date": "2026-04-24",
-              "opponent": "Boston Red Sox",
-              "ip": "5.2",
-              "er": 3,
               "k": 5,
-              "bb": 1,
-              "pitches": 93,
-              "strikes": 65
+              "bb": 4,
+              "pitches": 88,
+              "strikes": 56
             },
             {
-              "date": "2026-04-30",
-              "opponent": "Houston Astros",
-              "ip": "4.0",
-              "er": 4,
-              "k": 2,
-              "bb": 2,
-              "pitches": 82,
-              "strikes": 51
+              "date": "2026-04-01",
+              "opponent": "Texas Rangers",
+              "ip": "6.0",
+              "er": 2,
+              "k": 3,
+              "bb": 1,
+              "pitches": 91,
+              "strikes": 58
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Chicago White Sox",
+              "ip": "6.0",
+              "er": 2,
+              "k": 6,
+              "bb": 0,
+              "pitches": 101,
+              "strikes": 70
             }
           ],
-          "avg_ip": "5.0",
-          "avg_k": "3.0",
+          "avg_ip": "6.1",
+          "avg_k": "4.7",
           "avg_bb": "1.7",
-          "avg_pitches": "80.3",
-          "avg_strikes": "51.7",
-          "era": "4.30",
+          "avg_pitches": "93.3",
+          "avg_strikes": "61.3",
+          "era": "1.89",
+          "whip": "1.05",
+          "strike_pct": "65.7",
+          "quality_starts": 3
+        }
+      },
+      "home_pitcher": {
+        "id": 694341,
+        "name": "Brendan Beck",
+        "hand": "R",
+        "era": "8.22",
+        "whip": "1.57",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-05-07",
+              "opponent": "Texas Rangers",
+              "ip": "3.0",
+              "er": 2,
+              "k": 1,
+              "bb": 3,
+              "pitches": 52,
+              "strikes": 28
+            },
+            {
+              "date": "2026-07-04",
+              "opponent": "Minnesota Twins",
+              "ip": "3.2",
+              "er": 5,
+              "k": 3,
+              "bb": 2,
+              "pitches": 87,
+              "strikes": 51
+            },
+            {
+              "date": "2026-08-29",
+              "opponent": "Boston Red Sox",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 10,
+              "strikes": 6
+            }
+          ],
+          "avg_ip": "2.2",
+          "avg_k": "1.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "49.7",
+          "avg_strikes": "28.3",
+          "era": "8.22",
           "whip": "1.57",
-          "strike_pct": "64.3",
+          "strike_pct": "57.0",
           "quality_starts": 0
         }
       },
-      "home_pitcher": {},
       "away_hitters": [
         {
           "name": "Pete Alonso",
@@ -5948,7 +5948,56 @@
       "venue": "Sutter Health Park",
       "start": "2026-09-26T01:40:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 686613,
+        "name": "Hunter Brown",
+        "hand": "R",
+        "era": "3.26",
+        "whip": "1.27",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Los Angeles Angels",
+              "ip": "4.2",
+              "er": 0,
+              "k": 9,
+              "bb": 4,
+              "pitches": 102,
+              "strikes": 59
+            },
+            {
+              "date": "2026-03-31",
+              "opponent": "Boston Red Sox",
+              "ip": "6.0",
+              "er": 1,
+              "k": 8,
+              "bb": 2,
+              "pitches": 78,
+              "strikes": 51
+            },
+            {
+              "date": "2026-06-16",
+              "opponent": "Detroit Tigers",
+              "ip": "5.2",
+              "er": 1,
+              "k": 7,
+              "bb": 3,
+              "pitches": 92,
+              "strikes": 53
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "8.0",
+          "avg_bb": "3.0",
+          "avg_pitches": "90.7",
+          "avg_strikes": "54.3",
+          "era": "1.10",
+          "whip": "1.04",
+          "strike_pct": "59.9",
+          "quality_starts": 1
+        }
+      },
       "home_pitcher": {
         "id": 682052,
         "name": "Jacob Lopez",
