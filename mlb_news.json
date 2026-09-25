@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T15:30:36.705167-04:00",
+  "updated_at": "2026-09-25T18:45:56.051301-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,29 @@
       "published": "2026-09-24"
     },
     {
-      "title": "Baltimore Orioles Injury Watch",
-      "summary": "Baltimore Orioles logged a roster-health update involving Kyle Bradish.",
-      "published": "2026-09-24"
+      "title": "Boston Red Sox Finishes Off Chicago Cubs",
+      "summary": "Boston Red Sox wrapped up a 3-4 result over Chicago Cubs.",
+      "published": "2026-09-25"
+    },
+    {
+      "title": "Milwaukee Brewers Injury Watch",
+      "summary": "Milwaukee Brewers logged a roster-health update involving Andrew Vaughn.",
+      "published": "2026-09-25"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-25",
+      "team": "Milwaukee Brewers",
+      "player": "Andrew Vaughn",
+      "update": "Milwaukee Brewers placed 1B Andrew Vaughn on the 10-day injured list retroactive to September 22, 2026. Illness. | Status Change"
+    },
+    {
+      "date": "2026-09-25",
+      "team": "Arizona Diamondbacks",
+      "player": "Corbin Burnes",
+      "update": "Arizona Diamondbacks placed RHP Corbin Burnes on the 15-day injured list retroactive to September 22, 2026. Right shoulder inflammation. | Status Change"
+    },
     {
       "date": "2026-09-24",
       "team": "Baltimore Orioles",
@@ -89,18 +106,6 @@
       "team": "Houston Astros",
       "player": "Brice Matthews",
       "update": "Houston Astros placed CF Brice Matthews on the 10-day injured list. Left knee inflammation. | Status Change"
-    },
-    {
-      "date": "2026-09-23",
-      "team": "Houston Astros",
-      "player": "Jake Meyers",
-      "update": "Houston Astros placed CF Jake Meyers on the 60-day injured list. | Status Change"
-    },
-    {
-      "date": "2026-09-23",
-      "team": "Houston Astros",
-      "player": "Cristian Javier",
-      "update": "Houston Astros placed RHP Cristian Javier on the 15-day injured list. | Status Change"
     }
   ],
   "trade_updates": []

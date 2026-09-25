@@ -1,17 +1,65 @@
 {
-  "updated_at": "2026-09-25T15:30:36.705167-04:00",
+  "updated_at": "2026-09-25T18:45:56.051301-04:00",
   "games": [
     {
-      "gamePk": 824703,
+      "gamePk": 824706,
       "game": "Chicago Cubs @ Boston Red Sox",
-      "score": "3-4",
-      "inning": "8th",
+      "score": "0-0",
+      "inning": "5th",
       "hot_hitters": [
-        "Matt Shaw",
-        "Michael Busch",
-        "Roman Anthony",
-        "Adley Rutschman"
+        "Michael Busch"
       ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823491,
+      "game": "Baltimore Orioles @ New York Yankees",
+      "score": "10-1",
+      "inning": "9th",
+      "hot_hitters": [
+        "Dylan Beavers",
+        "Pete Alonso",
+        "Gunnar Henderson",
+        "Christian Encarnacion-Strand",
+        "Colton Cowser",
+        "Jeremiah Jackson",
+        "Christian Franklin",
+        "Heliot Ramos",
+        "Amed Rosario",
+        "Anthony Volpe"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824220,
+      "game": "Pittsburgh Pirates @ Detroit Tigers",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823409,
+      "game": "Tampa Bay Rays @ Philadelphia Phillies",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822681,
+      "game": "New York Mets @ Washington Nationals",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823816,
+      "game": "Atlanta Braves @ Miami Marlins",
+      "score": "0-0",
+      "inning": "1st",
+      "hot_hitters": [],
       "top_pitchers": []
     }
   ],
@@ -38,7 +86,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Boston Red Sox Finishes Off Chicago Cubs",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

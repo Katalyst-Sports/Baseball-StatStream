@@ -1,6 +1,21 @@
 {
-  "updated_at": "2026-09-25T15:30:36.705167-04:00",
-  "games": [],
+  "updated_at": "2026-09-25T18:45:56.051301-04:00",
+  "games": [
+    {
+      "gamePk": 824703,
+      "game": "Chicago Cubs @ Boston Red Sox",
+      "winner": "Boston Red Sox",
+      "loser": "Chicago Cubs",
+      "final_score": "3-4",
+      "hitters": [
+        "Matt Shaw",
+        "Michael Busch",
+        "Roman Anthony",
+        "Adley Rutschman"
+      ],
+      "pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +39,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Injury Watch",
+      "title": "Boston Red Sox Finishes Off Chicago Cubs",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
