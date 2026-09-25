@@ -1,117 +1,25 @@
 {
-  "updated_at": "2026-09-24T20:47:00.512313-04:00",
-  "games": [
-    {
-      "gamePk": 823326,
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "winner": "Pittsburgh Pirates",
-      "loser": "St. Louis Cardinals",
-      "final_score": "1-2",
-      "hitters": [
-        "JJ Wetherholt",
-        "Alec Burleson",
-        "Oneil Cruz",
-        "Konnor Griffin"
-      ],
-      "pitchers": [
-        "Paul Skenes"
-      ]
-    },
-    {
-      "gamePk": 824059,
-      "game": "Chicago White Sox @ Kansas City Royals",
-      "winner": "Chicago White Sox",
-      "loser": "Kansas City Royals",
-      "final_score": "9-1",
-      "hitters": [
-        "Sam Antonacci",
-        "Kyle Teel",
-        "Miguel Vargas",
-        "Chase Meidroth",
-        "Braden Montgomery",
-        "Salvador Perez",
-        "John Rave",
-        "Kyle Isbel"
-      ],
-      "pitchers": [
-        "David Sandlin"
-      ]
-    },
-    {
-      "gamePk": 824623,
-      "game": "Miami Marlins @ Chicago Cubs",
-      "winner": "Chicago Cubs",
-      "loser": "Miami Marlins",
-      "final_score": "1-2",
-      "hitters": [
-        "Seiya Suzuki"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 822842,
-      "game": "New York Mets @ Texas Rangers",
-      "winner": "Texas Rangers",
-      "loser": "New York Mets",
-      "final_score": "1-3",
-      "hitters": [
-        "Corey Seager",
-        "Josh Jung",
-        "Wyatt Langford"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824298,
-      "game": "Arizona Diamondbacks @ Colorado Rockies",
-      "winner": "Arizona Diamondbacks",
-      "loser": "Colorado Rockies",
-      "final_score": "12-8",
-      "hitters": [
-        "Lars Nootbaar",
-        "Gabriel Moreno",
-        "Geraldo Perdomo",
-        "Pavin Smith",
-        "Nolan Arenado",
-        "James McCann",
-        "Zac Veen",
-        "Connor Norby",
-        "TJ Rumfield",
-        "Cole Carrigg",
-        "Kyle Karros"
-      ],
-      "pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-25T01:30:41.789861-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Washington Nationals Takes 4-2 Win",
+      "title": "Pittsburgh Pirates Takes 1-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 2-4 Win",
+      "title": "Chicago White Sox Takes 9-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 2-4 Win",
+      "title": "Chicago Cubs Takes 1-2 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Minnesota Twins Takes 4-2 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Pittsburgh Pirates Finishes Off St. Louis Cardinals",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Chicago White Sox Finishes Off Kansas City Royals",
+      "title": "Texas Rangers Takes 1-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
