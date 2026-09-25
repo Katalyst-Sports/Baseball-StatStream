@@ -1,20 +1,53 @@
 {
-  "updated_at": "2026-09-24T18:33:44.577558-04:00",
+  "updated_at": "2026-09-24T20:47:00.512313-04:00",
   "games": [
     {
       "gamePk": 823411,
       "game": "Milwaukee Brewers @ Philadelphia Phillies",
-      "score": "1-0",
-      "inning": "2nd",
-      "hot_hitters": [],
+      "score": "5-1",
+      "inning": "9th",
+      "hot_hitters": [
+        "Jackson Chourio",
+        "Cooper Pratt",
+        "Kyle Schwarber",
+        "Bryce Harper"
+      ],
       "top_pitchers": []
     },
     {
       "gamePk": 824707,
       "game": "Cleveland Guardians @ Boston Red Sox",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "score": "1-0",
+      "inning": "8th",
+      "hot_hitters": [
+        "Jos\u00e9 Ram\u00edrez",
+        "Angel Mart\u00ednez"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823493,
+      "game": "Tampa Bay Rays @ New York Yankees",
+      "score": "4-0",
+      "inning": "6th",
+      "hot_hitters": [
+        "Yandy D\u00edaz",
+        "Junior Caminero"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824866,
+      "game": "Cincinnati Reds @ Atlanta Braves",
+      "score": "5-6",
+      "inning": "5th",
+      "hot_hitters": [
+        "Carlos Jorge",
+        "Elly De La Cruz",
+        "Michael Harris II",
+        "Mauricio Dub\u00f3n",
+        "Austin Riley"
+      ],
       "top_pitchers": []
     }
   ],
@@ -51,7 +84,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Angels Injury Watch",
+      "title": "Baltimore Orioles Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
