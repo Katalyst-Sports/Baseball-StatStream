@@ -1,6 +1,31 @@
 {
-  "updated_at": "2026-09-26T11:00:53.658452-04:00",
-  "games": [],
+  "updated_at": "2026-09-26T14:31:42.696939-04:00",
+  "games": [
+    {
+      "gamePk": 822678,
+      "game": "New York Mets @ Washington Nationals",
+      "score": "4-1",
+      "inning": "7th",
+      "hot_hitters": [
+        "Juan Soto",
+        "Carson Benge",
+        "A.J. Ewing",
+        "Ronny Mauricio",
+        "James Wood"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824219,
+      "game": "Pittsburgh Pirates @ Detroit Tigers",
+      "score": "1-0",
+      "inning": "4th",
+      "hot_hitters": [
+        "Brandon Lowe"
+      ],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -24,7 +49,7 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Seattle Mariners Injury Watch",
+      "title": "Texas Rangers Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
