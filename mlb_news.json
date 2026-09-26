@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T14:31:42.696939-04:00",
+  "updated_at": "2026-09-26T17:30:44.255159-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
@@ -24,12 +24,28 @@
       "published": "2026-09-25"
     },
     {
-      "title": "Texas Rangers Injury Watch",
-      "summary": "Texas Rangers logged a roster-health update involving Josh Jung.",
+      "title": "New York Mets Finishes Off Washington Nationals",
+      "summary": "New York Mets wrapped up a 7-1 result over Washington Nationals.",
+      "published": "2026-09-26"
+    },
+    {
+      "title": "Detroit Tigers Finishes Off Pittsburgh Pirates",
+      "summary": "Detroit Tigers wrapped up a 3-4 result over Pittsburgh Pirates.",
+      "published": "2026-09-26"
+    },
+    {
+      "title": "San Diego Padres Injury Watch",
+      "summary": "San Diego Padres logged a roster-health update involving Casey Mize.",
       "published": "2026-09-26"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-26",
+      "team": "San Diego Padres",
+      "player": "Casey Mize",
+      "update": "San Diego Padres placed RHP Casey Mize on the 15-day injured list. Right ankle sprain. | Status Change"
+    },
     {
       "date": "2026-09-26",
       "team": "Texas Rangers",
@@ -95,12 +111,6 @@
       "team": "Atlanta Braves",
       "player": "Mart\u00edn P\u00e9rez",
       "update": "Atlanta Braves placed LHP Mart\u00edn P\u00e9rez on the 15-day injured list retroactive to September 21, 2026. Low back inflammation. | Status Change"
-    },
-    {
-      "date": "2026-09-24",
-      "team": "Atlanta Braves",
-      "player": "Hurston Waldrep",
-      "update": "Atlanta Braves placed RHP Hurston Waldrep on the 60-day injured list. Right elbow UCL injury. | Status Change"
     }
   ],
   "trade_updates": []
