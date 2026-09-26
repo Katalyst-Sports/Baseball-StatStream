@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T18:45:56.051301-04:00",
+  "updated_at": "2026-09-25T20:57:28.363510-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -2885,7 +2885,7 @@
     {
       "team_id": 146,
       "team_name": "Miami Marlins",
-      "injured_count": 21,
+      "injured_count": 22,
       "players": [
         {
           "player_id": 800049,
@@ -3038,6 +3038,14 @@
           "date": "2026-02-12",
           "note": "Miami Marlins placed RHP Ronny Henriquez on the 60-day injured list. Right Elbow Surgery. | Status Change",
           "description": "Miami Marlins placed RHP Ronny Henriquez on the 60-day injured list. Right Elbow Surgery."
+        },
+        {
+          "player_id": 676604,
+          "name": "Tyler Zuber",
+          "il_type": "Injured List",
+          "date": "2026-09-25",
+          "note": "Miami Marlins placed RHP Tyler Zuber on the 15-day injured list. Right elbow sprain. | Status Change",
+          "description": "Miami Marlins placed RHP Tyler Zuber on the 15-day injured list. Right elbow sprain."
         },
         {
           "player_id": 687531,
@@ -3703,9 +3711,9 @@
           "player_id": 518585,
           "name": "Fernando Cruz",
           "il_type": "Injured List",
-          "date": "2026-08-26",
-          "note": "New York Yankees placed RHP Fernando Cruz on the 15-day injured list. Right elbow discomfort. | Status Change",
-          "description": "New York Yankees placed RHP Fernando Cruz on the 15-day injured list. Right elbow discomfort."
+          "date": "2026-09-25",
+          "note": "New York Yankees transferred RHP Fernando Cruz from the 15-day injured list to the 60-day injured list. Right elbow discomfort. | Status Change",
+          "description": "New York Yankees transferred RHP Fernando Cruz from the 15-day injured list to the 60-day injured list. Right elbow discomfort."
         },
         {
           "player_id": 543037,
@@ -4532,8 +4540,16 @@
     {
       "team_id": 136,
       "team_name": "Seattle Mariners",
-      "injured_count": 23,
+      "injured_count": 24,
       "players": [
+        {
+          "player_id": 662253,
+          "name": "Andr\u00e9s Mu\u00f1oz",
+          "il_type": "Injured List",
+          "date": "2026-09-25",
+          "note": "Seattle Mariners placed RHP Andr\u00e9s Mu\u00f1oz on the 15-day injured list. Right knee inflammation. | Status Change",
+          "description": "Seattle Mariners placed RHP Andr\u00e9s Mu\u00f1oz on the 15-day injured list. Right knee inflammation."
+        },
         {
           "player_id": 680977,
           "name": "Brendan Donovan",
@@ -5624,7 +5640,12 @@
     },
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Injury Watch",
+      "title": "Boston Red Sox Finishes Off Chicago Cubs",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Seattle Mariners Injury Watch",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
