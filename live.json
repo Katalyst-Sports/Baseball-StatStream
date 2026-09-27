@@ -1,22 +1,135 @@
 {
-  "updated_at": "2026-09-27T14:31:16.393287-04:00",
+  "updated_at": "2026-09-27T17:34:14.527703-04:00",
   "games": [
     {
-      "gamePk": 822679,
-      "game": "New York Mets @ Washington Nationals",
-      "score": "3-1",
-      "inning": "2nd",
+      "gamePk": 824705,
+      "game": "Chicago Cubs @ Boston Red Sox",
+      "score": "5-2",
+      "inning": "9th",
       "hot_hitters": [
-        "Ronny Mauricio"
+        "Tyrone Taylor",
+        "Alex Bregman",
+        "Miguel Amaya",
+        "Adley Rutschman"
       ],
       "top_pitchers": []
     },
     {
-      "gamePk": 823408,
-      "game": "Tampa Bay Rays @ Philadelphia Phillies",
-      "score": "0-0",
-      "inning": "1st",
-      "hot_hitters": [],
+      "gamePk": 824948,
+      "game": "Houston Astros @ Athletics",
+      "score": "8-0",
+      "inning": "7th",
+      "hot_hitters": [
+        "Jeremy Pe\u00f1a",
+        "Yainer Diaz",
+        "Christian Walker",
+        "Cam Smith",
+        "Lawrence Butler"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823164,
+      "game": "Los Angeles Dodgers @ San Francisco Giants",
+      "score": "1-1",
+      "inning": "9th",
+      "hot_hitters": [
+        "Max Muncy",
+        "Tommy Edman"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 822761,
+      "game": "Cincinnati Reds @ Toronto Blue Jays",
+      "score": "1-5",
+      "inning": "9th",
+      "hot_hitters": [
+        "Carlos Jorge",
+        "JJ Bleday",
+        "Oswaldo Cabrera",
+        "Brett Bateman",
+        "Charles McAdoo",
+        "Brandon Valenzuela"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 824217,
+      "game": "Pittsburgh Pirates @ Detroit Tigers",
+      "score": "4-2",
+      "inning": "9th",
+      "hot_hitters": [
+        "Konnor Griffin",
+        "Nick Gonzales",
+        "Jake Mangum",
+        "Kevin McGonigle",
+        "Eduardo Valencia"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823246,
+      "game": "Arizona Diamondbacks @ San Diego Padres",
+      "score": "4-7",
+      "inning": "8th",
+      "hot_hitters": [
+        "Gavin Sheets",
+        "Freddy Fermin"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823084,
+      "game": "Los Angeles Angels @ Seattle Mariners",
+      "score": "1-6",
+      "inning": "7th",
+      "hot_hitters": [
+        "Cal Raleigh",
+        "Jhonny Pereda"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823650,
+      "game": "Texas Rangers @ Minnesota Twins",
+      "score": "4-6",
+      "inning": "9th",
+      "hot_hitters": [
+        "Corey Seager",
+        "Elias D\u00edaz",
+        "Danny Jansen",
+        "Josh Bell",
+        "Ryan Jeffers",
+        "Royce Lewis",
+        "Walker Jenkins"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823814,
+      "game": "Atlanta Braves @ Miami Marlins",
+      "score": "3-5",
+      "inning": "9th",
+      "hot_hitters": [
+        "Mauricio Dub\u00f3n",
+        "Sean Murphy",
+        "Griffin Conine",
+        "Heriberto Hern\u00e1ndez",
+        "Jared Serna"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 823731,
+      "game": "St. Louis Cardinals @ Milwaukee Brewers",
+      "score": "4-6",
+      "inning": "9th",
+      "hot_hitters": [
+        "Leo Bernal",
+        "Jackson Chourio",
+        "Gary S\u00e1nchez"
+      ],
       "top_pitchers": []
     }
   ],
@@ -39,6 +152,16 @@
     {
       "stage": "generated_news_item",
       "title": "Los Angeles Dodgers Takes 4-3 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Washington Nationals Finishes Off New York Mets",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Philadelphia Phillies Finishes Off Tampa Bay Rays",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
