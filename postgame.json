@@ -1,186 +1,25 @@
 {
-  "updated_at": "2026-09-26T22:48:36.019844-04:00",
-  "games": [
-    {
-      "gamePk": 822678,
-      "game": "New York Mets @ Washington Nationals",
-      "winner": "New York Mets",
-      "loser": "Washington Nationals",
-      "final_score": "7-1",
-      "hitters": [
-        "Juan Soto",
-        "Carson Benge",
-        "A.J. Ewing",
-        "Ronny Mauricio",
-        "James Wood"
-      ],
-      "pitchers": [
-        "Jonah Tong"
-      ]
-    },
-    {
-      "gamePk": 824219,
-      "game": "Pittsburgh Pirates @ Detroit Tigers",
-      "winner": "Detroit Tigers",
-      "loser": "Pittsburgh Pirates",
-      "final_score": "3-4",
-      "hitters": [
-        "Brandon Lowe",
-        "Bryan Reynolds",
-        "Konnor Griffin",
-        "Jacob Gonzalez",
-        "Henry Davis",
-        "Hao-Yu Lee",
-        "Eduardo Valencia",
-        "Javier B\u00e1ez"
-      ],
-      "pitchers": [
-        "Justin Verlander"
-      ]
-    },
-    {
-      "gamePk": 822759,
-      "game": "Cincinnati Reds @ Toronto Blue Jays",
-      "winner": "Cincinnati Reds",
-      "loser": "Toronto Blue Jays",
-      "final_score": "5-1",
-      "hitters": [
-        "JJ Bleday",
-        "H\u00e9ctor Rodr\u00edguez",
-        "Brett Bateman"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823165,
-      "game": "Los Angeles Dodgers @ San Francisco Giants",
-      "winner": "Los Angeles Dodgers",
-      "loser": "San Francisco Giants",
-      "final_score": "4-3",
-      "hitters": [
-        "Mookie Betts",
-        "Enrique Hern\u00e1ndez",
-        "Tommy Edman",
-        "Bo Davidson",
-        "Shay Whitcomb",
-        "Drew Cavanaugh"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823653,
-      "game": "Texas Rangers @ Minnesota Twins",
-      "winner": "Texas Rangers",
-      "loser": "Minnesota Twins",
-      "final_score": "6-2",
-      "hitters": [
-        "Jake Burger",
-        "Ezequiel Duran",
-        "Danny Jansen",
-        "Evan Carter",
-        "Alejandro Osuna",
-        "Luke Keaschall"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823813,
-      "game": "Atlanta Braves @ Miami Marlins",
-      "winner": "Atlanta Braves",
-      "loser": "Miami Marlins",
-      "final_score": "8-3",
-      "hitters": [
-        "Michael Harris II",
-        "Drake Baldwin",
-        "Dominic Smith",
-        "Otto Lopez",
-        "Javier Sanoja",
-        "Griffin Conine"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 824057,
-      "game": "Cleveland Guardians @ Kansas City Royals",
-      "winner": "Cleveland Guardians",
-      "loser": "Kansas City Royals",
-      "final_score": "11-5",
-      "hitters": [
-        "Steven Kwan",
-        "Chase DeLauter",
-        "Travis Bazzana",
-        "Patrick Bailey",
-        "Brayan Rocchio",
-        "Carter Jensen",
-        "Bobby Witt Jr.",
-        "Jac Caglianone"
-      ],
-      "pitchers": [
-        "Tanner Bibee"
-      ]
-    },
-    {
-      "gamePk": 824543,
-      "game": "Colorado Rockies @ Chicago White Sox",
-      "winner": "Colorado Rockies",
-      "loser": "Chicago White Sox",
-      "final_score": "9-6",
-      "hitters": [
-        "Cole Carrigg",
-        "Hunter Goodman",
-        "Ezequiel Tovar",
-        "Andrew Benintendi",
-        "Brenton Doyle",
-        "Kyle Teel",
-        "Luisangel Acu\u00f1a"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 823733,
-      "game": "St. Louis Cardinals @ Milwaukee Brewers",
-      "winner": "Milwaukee Brewers",
-      "loser": "St. Louis Cardinals",
-      "final_score": "2-3",
-      "hitters": [
-        "Alec Burleson",
-        "Jackson Chourio",
-        "Brice Turang"
-      ],
-      "pitchers": [
-        "Quinn Mathews"
-      ]
-    }
-  ],
+  "updated_at": "2026-09-27T04:37:53.088028-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Takes 3-4 Win",
+      "title": "New York Mets Takes 7-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Boston Red Sox Takes 0-2 Win",
+      "title": "Detroit Tigers Takes 3-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Baltimore Orioles Takes 10-2 Win",
+      "title": "Cincinnati Reds Takes 5-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "New York Yankees Takes 3-6 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "New York Mets Finishes Off Washington Nationals",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Detroit Tigers Finishes Off Pittsburgh Pirates",
+      "title": "Los Angeles Dodgers Takes 4-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
