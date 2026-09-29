@@ -1,15 +1,21 @@
 {
-  "updated_at": "2026-09-29T05:06:15.742925-04:00",
+  "updated_at": "2026-09-29T11:48:37.324100-04:00",
   "headline": "MLB News Desk",
   "article": "Groq news roundup error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
   "top_news": [
     {
-      "title": "Los Angeles Dodgers Injury Watch",
-      "summary": "Los Angeles Dodgers logged a roster-health update involving Blake Treinen.",
-      "published": "2026-09-27"
+      "title": "Boston Red Sox Injury Watch",
+      "summary": "Boston Red Sox logged a roster-health update involving Justin Slaten.",
+      "published": "2026-09-29"
     }
   ],
   "injury_updates": [
+    {
+      "date": "2026-09-29",
+      "team": "Boston Red Sox",
+      "player": "Justin Slaten",
+      "update": "Boston Red Sox transferred RHP Justin Slaten from the 15-day injured list to the 60-day injured list. | Status Change"
+    },
     {
       "date": "2026-09-27",
       "team": "Los Angeles Dodgers",
@@ -75,12 +81,6 @@
       "team": "Seattle Mariners",
       "player": "Andr\u00e9s Mu\u00f1oz",
       "update": "Seattle Mariners placed RHP Andr\u00e9s Mu\u00f1oz on the 15-day injured list. Right knee inflammation. | Status Change"
-    },
-    {
-      "date": "2026-09-25",
-      "team": "New York Yankees",
-      "player": "Fernando Cruz",
-      "update": "New York Yankees transferred RHP Fernando Cruz from the 15-day injured list to the 60-day injured list. Right elbow discomfort. | Status Change"
     }
   ],
   "trade_updates": []
