@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T19:47:37.829169-04:00",
+  "updated_at": "2026-09-29T22:28:57.969456-04:00",
   "games": [
     {
       "gamePk": 849845,
@@ -471,7 +471,7 @@
       "home_team": "Houston Astros",
       "venue": "Daikin Park",
       "start": "2026-09-29T21:00:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 696146,
         "name": "Hagen Smith",
@@ -1415,7 +1415,7 @@
       "home_team": "San Diego Padres",
       "venue": "Petco Park",
       "start": "2026-09-30T02:00:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 571510,
         "name": "Matthew Boyd",
@@ -1886,6 +1886,11 @@
     {
       "stage": "generated_news_item",
       "title": "Atlanta Braves Finishes Off Philadelphia Phillies",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Chicago White Sox Finishes Off Houston Astros",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
