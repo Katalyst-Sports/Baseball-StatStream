@@ -1,10 +1,43 @@
 {
-  "updated_at": "2026-09-29T22:28:57.969456-04:00",
-  "date": "2026-09-28",
+  "updated_at": "2026-09-30T04:57:35.238170-04:00",
+  "date": "2026-09-29",
   "dashboard_recap": {
-    "headline": "MLB Daily Recap - September 28, 2026",
-    "article": "No final games were available for yesterday.",
-    "all_games": [],
+    "headline": "MLB Daily Recap - September 29, 2026",
+    "article": "Groq error: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+    "all_games": [
+      {
+        "game": "Philadelphia Phillies @ Atlanta Braves",
+        "final_score": "3-5",
+        "top_pitching_line": "Chris Sale: 6.1 IP, 9 K, 3 ER, 1 BB, 4 H",
+        "top_batting_line": "Austin Riley: 1 H, 1 HR, 3 RBI, 3 AB",
+        "summary": "Atlanta Braves beat Philadelphia Phillies 3-5. Austin Riley: 1 H, 1 HR, 3 RBI, 3 AB Chris Sale: 6.1 IP, 9 K, 3 ER, 1 BB, 4 H Austin Riley homers (1) on a fly ball to right center field. Michael Harris II scores. Ozzie Albies scores.",
+        "impact_player": "Austin Riley"
+      },
+      {
+        "game": "Chicago White Sox @ Houston Astros",
+        "final_score": "6-3",
+        "top_pitching_line": "Grant Taylor: 2.1 IP, 5 K, 0 ER, 1 BB, 2 H",
+        "top_batting_line": "Nelson Vel\u00e1zquez: 1 H, 1 HR, 2 RBI, 3 AB",
+        "summary": "Chicago White Sox beat Houston Astros 6-3. Nelson Vel\u00e1zquez: 1 H, 1 HR, 2 RBI, 3 AB Grant Taylor: 2.1 IP, 5 K, 0 ER, 1 BB, 2 H White Sox challenged (play at 1st), call on the field was upheld: Jose Altuve reaches on a throwing error by third baseman Miguel Vargas. Jeremy Pe\u00f1a scores. Yordan Alvarez to 2nd.",
+        "impact_player": "Nelson Vel\u00e1zquez"
+      },
+      {
+        "game": "Boston Red Sox @ New York Yankees",
+        "final_score": "0-9",
+        "top_pitching_line": "Cam Schlittler: 6.1 IP, 10 K, 0 ER, 1 BB, 2 H",
+        "top_batting_line": "Ben Rice: 4 H, 2 HR, 6 RBI, 5 AB",
+        "summary": "New York Yankees beat Boston Red Sox 0-9. Ben Rice: 4 H, 2 HR, 6 RBI, 5 AB Cam Schlittler: 6.1 IP, 10 K, 0 ER, 1 BB, 2 H Ben Rice hits a grand slam (2) to center field. Ryan McMahon scores. Spencer Jones scores. Paul Goldschmidt scores.",
+        "impact_player": "Ben Rice"
+      },
+      {
+        "game": "Chicago Cubs @ San Diego Padres",
+        "final_score": "0-8",
+        "top_pitching_line": "Michael King: 7.0 IP, 8 K, 0 ER, 3 BB, 1 H",
+        "top_batting_line": "Manny Machado: 2 H, 1 HR, 2 RBI, 3 AB",
+        "summary": "San Diego Padres beat Chicago Cubs 0-8. Manny Machado: 2 H, 1 HR, 2 RBI, 3 AB Michael King: 7.0 IP, 8 K, 0 ER, 3 BB, 1 H Jackson Merrill singles on a ground ball to right fielder Seiya Suzuki. Luis Campusano scores. Manny Machado scores. Ty France to 3rd.",
+        "impact_player": "Manny Machado"
+      }
+    ],
     "season_leaders": {
       "avg_ops": [
         "Yordan Alvarez (Houston Astros) - AVG .316",

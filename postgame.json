@@ -1,46 +1,25 @@
 {
-  "updated_at": "2026-09-29T22:28:57.969456-04:00",
-  "games": [
-    {
-      "gamePk": 849845,
-      "game": "Philadelphia Phillies @ Atlanta Braves",
-      "winner": "Atlanta Braves",
-      "loser": "Philadelphia Phillies",
-      "final_score": "3-5",
-      "hitters": [
-        "Michael Harris II",
-        "Austin Riley"
-      ],
-      "pitchers": [
-        "Jes\u00fas Luzardo",
-        "Chris Sale"
-      ]
-    },
-    {
-      "gamePk": 849849,
-      "game": "Chicago White Sox @ Houston Astros",
-      "winner": "Chicago White Sox",
-      "loser": "Houston Astros",
-      "final_score": "6-3",
-      "hitters": [
-        "Randal Grichuk",
-        "Braden Montgomery",
-        "Chase Meidroth",
-        "Colson Montgomery",
-        "Nelson Vel\u00e1zquez"
-      ],
-      "pitchers": []
-    }
-  ],
+  "updated_at": "2026-09-30T04:57:35.238170-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Finishes Off Philadelphia Phillies",
+      "title": "Atlanta Braves Takes 3-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Chicago White Sox Finishes Off Houston Astros",
+      "title": "Chicago White Sox Takes 6-3 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "New York Yankees Takes 0-9 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "San Diego Padres Takes 0-8 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

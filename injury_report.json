@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T22:28:57.969456-04:00",
+  "updated_at": "2026-09-30T04:57:35.238170-04:00",
   "teams": [
     {
       "team_id": 109,
@@ -5663,12 +5663,22 @@
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Finishes Off Philadelphia Phillies",
+      "title": "Atlanta Braves Takes 3-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Chicago White Sox Finishes Off Houston Astros",
+      "title": "Chicago White Sox Takes 6-3 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "New York Yankees Takes 0-9 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "San Diego Padres Takes 0-8 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
