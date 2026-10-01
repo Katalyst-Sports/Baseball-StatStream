@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T16:25:40.364707-04:00",
+  "updated_at": "2026-09-30T20:06:46.059083-04:00",
   "games": [
     {
       "gamePk": 849841,
@@ -7,7 +7,7 @@
       "home_team": "Atlanta Braves",
       "venue": "Truist Park",
       "start": "2026-09-30T18:00:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 650911,
         "name": "Cristopher S\u00e1nchez",
@@ -471,7 +471,7 @@
       "home_team": "Houston Astros",
       "venue": "Daikin Park",
       "start": "2026-09-30T21:00:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 680732,
         "name": "Sean Burke",
@@ -943,7 +943,7 @@
       "home_team": "New York Yankees",
       "venue": "Yankee Stadium",
       "start": "2026-10-01T00:00:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 543243,
         "name": "Sonny Gray",
@@ -1066,6 +1066,26 @@
           }
         },
         {
+          "name": "Curtis Mead",
+          "stats": {
+            "avg": ".253",
+            "obp": ".353",
+            "slg": ".498",
+            "ops": ".851",
+            "homeRuns": 17,
+            "rbi": 48
+          },
+          "last10ab": {
+            "avg": "0.182",
+            "hits": 2,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 2,
+            "games": 5
+          }
+        },
+        {
           "name": "Wilyer Abreu",
           "stats": {
             "avg": ".248",
@@ -1123,26 +1143,6 @@
             "rbi": 1,
             "walks": 2,
             "games": 4
-          }
-        },
-        {
-          "name": "Roman Anthony",
-          "stats": {
-            "avg": ".245",
-            "obp": ".339",
-            "slg": ".396",
-            "ops": ".735",
-            "homeRuns": 5,
-            "rbi": 15
-          },
-          "last10ab": {
-            "avg": "0.308",
-            "hits": 4,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 3,
-            "games": 3
           }
         },
         {
@@ -1901,6 +1901,11 @@
     {
       "stage": "generated_news_item",
       "title": "San Diego Padres Takes 0-8 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Philadelphia Phillies Finishes Off Atlanta Braves",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

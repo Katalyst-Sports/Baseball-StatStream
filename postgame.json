@@ -1,6 +1,25 @@
 {
-  "updated_at": "2026-09-30T16:25:40.364707-04:00",
-  "games": [],
+  "updated_at": "2026-09-30T20:06:46.059083-04:00",
+  "games": [
+    {
+      "gamePk": 849841,
+      "game": "Philadelphia Phillies @ Atlanta Braves",
+      "winner": "Philadelphia Phillies",
+      "loser": "Atlanta Braves",
+      "final_score": "4-3",
+      "hitters": [
+        "Kyle Schwarber",
+        "Bryce Harper",
+        "Alec Bohm",
+        "Drake Baldwin",
+        "Mauricio Dub\u00f3n"
+      ],
+      "pitchers": [
+        "Cristopher S\u00e1nchez",
+        "Tyler Mahle"
+      ]
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -20,6 +39,11 @@
     {
       "stage": "generated_news_item",
       "title": "San Diego Padres Takes 0-8 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Philadelphia Phillies Finishes Off Atlanta Braves",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

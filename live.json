@@ -1,15 +1,27 @@
 {
-  "updated_at": "2026-09-30T16:25:40.364707-04:00",
+  "updated_at": "2026-09-30T20:06:46.059083-04:00",
   "games": [
     {
-      "gamePk": 849841,
-      "game": "Philadelphia Phillies @ Atlanta Braves",
-      "score": "1-3",
-      "inning": "7th",
+      "gamePk": 849846,
+      "game": "Chicago White Sox @ Houston Astros",
+      "score": "7-3",
+      "inning": "9th",
+      "hot_hitters": [
+        "Kyle Teel",
+        "Chase Meidroth",
+        "Jeremy Pe\u00f1a",
+        "Jose Altuve",
+        "Cam Smith"
+      ],
+      "top_pitchers": []
+    },
+    {
+      "gamePk": 849848,
+      "game": "Boston Red Sox @ New York Yankees",
+      "score": "0-0",
+      "inning": "1st",
       "hot_hitters": [],
-      "top_pitchers": [
-        "Tyler Mahle"
-      ]
+      "top_pitchers": []
     }
   ],
   "errors": [
@@ -31,6 +43,11 @@
     {
       "stage": "generated_news_item",
       "title": "San Diego Padres Takes 0-8 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Philadelphia Phillies Finishes Off Atlanta Braves",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
