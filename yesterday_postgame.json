@@ -1,118 +1,32 @@
 {
-  "updated_at": "2026-10-01T21:52:09.521542-04:00",
+  "updated_at": "2026-10-02T03:54:45.526814-04:00",
   "games": [
     {
-      "gamePk": 849841,
+      "gamePk": 849844,
       "game": "Philadelphia Phillies @ Atlanta Braves",
-      "winner": "Philadelphia Phillies",
-      "loser": "Atlanta Braves",
-      "final_score": "4-3",
+      "winner": "Atlanta Braves",
+      "loser": "Philadelphia Phillies",
+      "final_score": "2-6",
       "hitters": [
         "Kyle Schwarber",
-        "Bryce Harper",
-        "Alec Bohm",
-        "Drake Baldwin",
-        "Mauricio Dub\u00f3n"
-      ],
-      "pitchers": [
-        "Cristopher S\u00e1nchez",
-        "Tyler Mahle"
-      ],
-      "top_batting_line": "Bryce Harper: 2 H, 1 HR, 2 RBI, 5 AB",
-      "top_pitching_line": "Tyler Mahle: 7.0 IP, 6 K, 1 ER, 1 BB, 6 H",
-      "winning_pitcher": "Andrew Painter",
-      "losing_pitcher": "Didier Fuentes",
-      "save_pitcher": "",
-      "game_summary": "Alec Bohm homers (1) on a fly ball to right field."
-    },
-    {
-      "gamePk": 849846,
-      "game": "Chicago White Sox @ Houston Astros",
-      "winner": "Chicago White Sox",
-      "loser": "Houston Astros",
-      "final_score": "7-3",
-      "hitters": [
-        "Kyle Teel",
-        "Chase Meidroth",
-        "Jeremy Pe\u00f1a",
-        "Jose Altuve",
-        "Cam Smith"
-      ],
-      "pitchers": [
-        "Sean Burke"
-      ],
-      "top_batting_line": "Chase Meidroth: 2 H, 1 HR, 3 RBI, 3 AB",
-      "top_pitching_line": "Bryan Abreu: 2.2 IP, 6 K, 1 ER, 1 BB, 1 H",
-      "winning_pitcher": "Anthony Kay",
-      "losing_pitcher": "Hunter Brown",
-      "save_pitcher": "",
-      "game_summary": "Chase Meidroth homers (1) on a fly ball to left field. Luisangel Acu\u00f1a scores. Tristan Peters scores."
-    },
-    {
-      "gamePk": 849848,
-      "game": "Boston Red Sox @ New York Yankees",
-      "winner": "New York Yankees",
-      "loser": "Boston Red Sox",
-      "final_score": "2-9",
-      "hitters": [
-        "Willson Contreras",
-        "Nick Sogard",
-        "Cody Bellinger",
-        "Luis Garc\u00eda Jr.",
-        "Jazz Chisholm Jr.",
-        "Trent Grisham"
-      ],
-      "pitchers": [
-        "Max Fried"
-      ],
-      "top_batting_line": "Cody Bellinger: 2 H, 1 HR, 4 RBI, 5 AB",
-      "top_pitching_line": "Max Fried: 6.0 IP, 6 K, 1 ER, 1 BB, 3 H",
-      "winning_pitcher": "Max Fried",
-      "losing_pitcher": "Sonny Gray",
-      "save_pitcher": "",
-      "game_summary": "Austin Wells singles on a ground ball to center fielder Ceddanne Rafaela. Jazz Chisholm Jr. scores. Trent Grisham to 3rd."
-    },
-    {
-      "gamePk": 849842,
-      "game": "Chicago Cubs @ San Diego Padres",
-      "winner": "San Diego Padres",
-      "loser": "Chicago Cubs",
-      "final_score": "1-4",
-      "hitters": [
-        "Nico Hoerner",
-        "Ty France",
-        "Jackson Merrill",
-        "Xander Bogaerts",
-        "Gavin Sheets"
+        "Matt Olson",
+        "Michael Harris II",
+        "Ozzie Albies",
+        "Dominic Smith"
       ],
       "pitchers": [],
-      "top_batting_line": "Gavin Sheets: 1 H, 1 HR, 2 RBI, 1 AB",
-      "top_pitching_line": "Nick Pivetta: 3.1 IP, 4 K, 1 ER, 2 BB, 3 H",
-      "winning_pitcher": "Bradgley Rodriguez",
-      "losing_pitcher": "Kevin Gausman",
-      "save_pitcher": "Mason Miller",
-      "game_summary": "Gavin Sheets homers (1) on a fly ball to right field. Xander Bogaerts scores."
+      "top_batting_line": "Michael Harris II: 1 H, 1 HR, 3 RBI, 3 AB",
+      "top_pitching_line": "Chris Sale: 1.1 IP, 3 K, 0 ER, 0 BB, 1 H",
+      "winning_pitcher": "Grant Holmes",
+      "losing_pitcher": "Aaron Nola",
+      "save_pitcher": "",
+      "game_summary": "Trea Turner out on a sacrifice fly to center fielder Michael Harris II. Derek Hill scores."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Philadelphia Phillies Takes 4-3 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Chicago White Sox Takes 7-3 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "New York Yankees Takes 2-9 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "San Diego Padres Takes 1-4 Win",
+      "title": "Atlanta Braves Takes 2-6 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
