@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T16:08:24.363441-04:00",
+  "updated_at": "2026-10-03T19:04:29.498077-04:00",
   "games": [
     {
       "gamePk": 849829,
@@ -479,7 +479,7 @@
       "home_team": "Los Angeles Dodgers",
       "venue": "UNIQLO Field at Dodger Stadium",
       "start": "2026-10-03T20:00:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 689266,
         "name": "Dylan Dodd",
@@ -951,7 +951,7 @@
       "home_team": "Tampa Bay Rays",
       "venue": "Tropicana Field",
       "start": "2026-10-03T22:30:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 543037,
         "name": "Gerrit Cole",
@@ -1894,6 +1894,11 @@
     {
       "stage": "generated_news_item",
       "title": "Chicago White Sox Finishes Off Cleveland Guardians",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Dodgers Finishes Off Atlanta Braves",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
