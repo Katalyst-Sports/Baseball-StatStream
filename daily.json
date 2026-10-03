@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T09:19:55.811792-04:00",
+  "updated_at": "2026-10-03T13:28:20.385557-04:00",
   "games": [
     {
       "gamePk": 849829,
@@ -7,7 +7,7 @@
       "home_team": "Cleveland Guardians",
       "venue": "Progressive Field",
       "start": "2026-10-03T17:00:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 696146,
         "name": "Hagen Smith",
@@ -480,7 +480,56 @@
       "venue": "UNIQLO Field at Dodger Stadium",
       "start": "2026-10-03T20:00:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 689266,
+        "name": "Dylan Dodd",
+        "hand": "L",
+        "era": "2.54",
+        "whip": "0.91",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-04-12",
+              "opponent": "Cleveland Guardians",
+              "ip": "3.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 33,
+              "strikes": 22
+            },
+            {
+              "date": "2026-04-21",
+              "opponent": "Washington Nationals",
+              "ip": "1.0",
+              "er": 1,
+              "k": 2,
+              "bb": 1,
+              "pitches": 17,
+              "strikes": 12
+            },
+            {
+              "date": "2026-05-21",
+              "opponent": "Miami Marlins",
+              "ip": "1.0",
+              "er": 0,
+              "k": 2,
+              "bb": 0,
+              "pitches": 13,
+              "strikes": 9
+            }
+          ],
+          "avg_ip": "1.2",
+          "avg_k": "2.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "21.0",
+          "avg_strikes": "14.3",
+          "era": "1.80",
+          "whip": "1.00",
+          "strike_pct": "68.3",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 669373,
         "name": "Tarik Skubal",
@@ -532,18 +581,6 @@
         }
       },
       "away_hitters": [
-        {
-          "name": "Luke Williams",
-          "stats": {
-            "avg": ".000",
-            "obp": "1.000",
-            "slg": ".000",
-            "ops": "1.000",
-            "homeRuns": 0,
-            "rbi": 0
-          },
-          "last10ab": {}
-        },
         {
           "name": "Matt Olson",
           "stats": {
@@ -685,23 +722,43 @@
           }
         },
         {
-          "name": "Dominic Smith",
+          "name": "Lane Thomas",
           "stats": {
-            "avg": ".253",
-            "obp": ".311",
+            "avg": ".224",
+            "obp": ".318",
             "slg": ".383",
-            "ops": ".694",
-            "homeRuns": 9,
-            "rbi": 46
+            "ops": ".701",
+            "homeRuns": 11,
+            "rbi": 40
           },
           "last10ab": {
-            "avg": "0.385",
-            "hits": 5,
+            "avg": "0.077",
+            "hits": 1,
             "atBats": 13,
-            "homeRuns": 1,
-            "rbi": 4,
+            "homeRuns": 0,
+            "rbi": 0,
             "walks": 1,
-            "games": 4
+            "games": 5
+          }
+        },
+        {
+          "name": "Mike Yastrzemski",
+          "stats": {
+            "avg": ".224",
+            "obp": ".309",
+            "slg": ".380",
+            "ops": ".689",
+            "homeRuns": 12,
+            "rbi": 41
+          },
+          "last10ab": {
+            "avg": "0.500",
+            "hits": 5,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 3
           }
         }
       ],
@@ -787,26 +844,6 @@
           }
         },
         {
-          "name": "Dalton Rushing",
-          "stats": {
-            "avg": ".246",
-            "obp": ".328",
-            "slg": ".460",
-            "ops": ".788",
-            "homeRuns": 12,
-            "rbi": 36
-          },
-          "last10ab": {
-            "avg": "0.538",
-            "hits": 7,
-            "atBats": 13,
-            "homeRuns": 3,
-            "rbi": 4,
-            "walks": 0,
-            "games": 4
-          }
-        },
-        {
           "name": "Will Smith",
           "stats": {
             "avg": ".260",
@@ -883,6 +920,26 @@
             "homeRuns": 0,
             "rbi": 2,
             "walks": 2,
+            "games": 3
+          }
+        },
+        {
+          "name": "Tommy Edman",
+          "stats": {
+            "avg": ".247",
+            "obp": ".329",
+            "slg": ".385",
+            "ops": ".714",
+            "homeRuns": 8,
+            "rbi": 42
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 1,
             "games": 3
           }
         }
@@ -1179,26 +1236,6 @@
       ],
       "home_hitters": [
         {
-          "name": "Kenny Piper",
-          "stats": {
-            "avg": ".222",
-            "obp": ".364",
-            "slg": ".556",
-            "ops": ".920",
-            "homeRuns": 1,
-            "rbi": 2
-          },
-          "last10ab": {
-            "avg": "0.222",
-            "hits": 2,
-            "atBats": 9,
-            "homeRuns": 1,
-            "rbi": 2,
-            "walks": 1,
-            "games": 4
-          }
-        },
-        {
           "name": "Junior Caminero",
           "stats": {
             "avg": ".276",
@@ -1356,6 +1393,26 @@
             "rbi": 0,
             "walks": 2,
             "games": 6
+          }
+        },
+        {
+          "name": "Chandler Simpson",
+          "stats": {
+            "avg": ".306",
+            "obp": ".333",
+            "slg": ".356",
+            "ops": ".689",
+            "homeRuns": 0,
+            "rbi": 38
+          },
+          "last10ab": {
+            "avg": "0.455",
+            "hits": 5,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
           }
         }
       ]
@@ -1691,26 +1748,6 @@
           }
         },
         {
-          "name": "Tyler Black",
-          "stats": {
-            "avg": ".333",
-            "obp": ".357",
-            "slg": ".481",
-            "ops": ".838",
-            "homeRuns": 0,
-            "rbi": 7
-          },
-          "last10ab": {
-            "avg": "0.385",
-            "hits": 5,
-            "atBats": 13,
-            "homeRuns": 0,
-            "rbi": 3,
-            "walks": 0,
-            "games": 3
-          }
-        },
-        {
           "name": "Andrew Vaughn",
           "stats": {
             "avg": ".306",
@@ -1828,6 +1865,26 @@
             "rbi": 3,
             "walks": 1,
             "games": 3
+          }
+        },
+        {
+          "name": "Cooper Pratt",
+          "stats": {
+            "avg": ".281",
+            "obp": ".350",
+            "slg": ".368",
+            "ops": ".718",
+            "homeRuns": 3,
+            "rbi": 34
+          },
+          "last10ab": {
+            "avg": "0.333",
+            "hits": 4,
+            "atBats": 12,
+            "homeRuns": 0,
+            "rbi": 2,
+            "walks": 1,
+            "games": 4
           }
         }
       ]
