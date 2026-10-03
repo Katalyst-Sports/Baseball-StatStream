@@ -1,7 +1,27 @@
 {
-  "updated_at": "2026-10-03T13:28:20.385557-04:00",
-  "games": [],
+  "updated_at": "2026-10-03T16:08:24.363441-04:00",
+  "games": [
+    {
+      "gamePk": 849829,
+      "game": "Chicago White Sox @ Cleveland Guardians",
+      "winner": "Chicago White Sox",
+      "loser": "Cleveland Guardians",
+      "final_score": "3-0",
+      "hitters": [
+        "Munetaka Murakami",
+        "Colson Montgomery"
+      ],
+      "pitchers": [
+        "Parker Messick"
+      ]
+    }
+  ],
   "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Chicago White Sox Finishes Off Cleveland Guardians",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
     {
       "stage": "generated_news_item",
       "title": "Boston Red Sox Injury Watch",

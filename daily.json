@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T13:28:20.385557-04:00",
+  "updated_at": "2026-10-03T16:08:24.363441-04:00",
   "games": [
     {
       "gamePk": 849829,
@@ -7,7 +7,7 @@
       "home_team": "Cleveland Guardians",
       "venue": "Progressive Field",
       "start": "2026-10-03T17:00:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 696146,
         "name": "Hagen Smith",
@@ -479,7 +479,7 @@
       "home_team": "Los Angeles Dodgers",
       "venue": "UNIQLO Field at Dodger Stadium",
       "start": "2026-10-03T20:00:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 689266,
         "name": "Dylan Dodd",
@@ -764,6 +764,26 @@
       ],
       "home_hitters": [
         {
+          "name": "Josue De Paula",
+          "stats": {
+            "avg": ".323",
+            "obp": ".500",
+            "slg": ".581",
+            "ops": "1.081",
+            "homeRuns": 1,
+            "rbi": 7
+          },
+          "last10ab": {
+            "avg": "0.143",
+            "hits": 2,
+            "atBats": 14,
+            "homeRuns": 1,
+            "rbi": 3,
+            "walks": 5,
+            "games": 5
+          }
+        },
+        {
           "name": "Shohei Ohtani",
           "stats": {
             "avg": ".275",
@@ -920,26 +940,6 @@
             "homeRuns": 0,
             "rbi": 2,
             "walks": 2,
-            "games": 3
-          }
-        },
-        {
-          "name": "Tommy Edman",
-          "stats": {
-            "avg": ".247",
-            "obp": ".329",
-            "slg": ".385",
-            "ops": ".714",
-            "homeRuns": 8,
-            "rbi": 42
-          },
-          "last10ab": {
-            "avg": "0.417",
-            "hits": 5,
-            "atBats": 12,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 1,
             "games": 3
           }
         }
@@ -1891,6 +1891,11 @@
     }
   ],
   "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Chicago White Sox Finishes Off Cleveland Guardians",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
     {
       "stage": "generated_news_item",
       "title": "Boston Red Sox Injury Watch",
