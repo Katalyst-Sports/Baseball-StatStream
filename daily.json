@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T10:26:11.753426-04:00",
+  "updated_at": "2026-10-04T14:18:32.328476-04:00",
   "games": [
     {
       "gamePk": 849825,
@@ -480,7 +480,56 @@
       "venue": "UNIQLO Field at Dodger Stadium",
       "start": "2026-10-05T00:00:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 678061,
+        "name": "Ray Kerr",
+        "hand": "L",
+        "era": "1.47",
+        "whip": "0.60",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-08-17",
+              "opponent": "Minnesota Twins",
+              "ip": "1.1",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 21,
+              "strikes": 13
+            },
+            {
+              "date": "2026-08-19",
+              "opponent": "Minnesota Twins",
+              "ip": "1.0",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 13,
+              "strikes": 9
+            },
+            {
+              "date": "2026-08-28",
+              "opponent": "Colorado Rockies",
+              "ip": "1.0",
+              "er": 1,
+              "k": 1,
+              "bb": 1,
+              "pitches": 17,
+              "strikes": 10
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "0.3",
+          "avg_bb": "0.3",
+          "avg_pitches": "17.0",
+          "avg_strikes": "10.7",
+          "era": "2.70",
+          "whip": "0.90",
+          "strike_pct": "62.7",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 605483,
         "name": "Blake Snell",
