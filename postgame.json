@@ -1,35 +1,15 @@
 {
-  "updated_at": "2026-10-05T21:44:34.725211-04:00",
-  "games": [
-    {
-      "gamePk": 849834,
-      "game": "Chicago White Sox @ Cleveland Guardians",
-      "winner": "Chicago White Sox",
-      "loser": "Cleveland Guardians",
-      "final_score": "4-3",
-      "hitters": [
-        "Chase Meidroth",
-        "Chase DeLauter"
-      ],
-      "pitchers": [
-        "Gavin Williams"
-      ]
-    }
-  ],
+  "updated_at": "2026-10-06T04:10:23.036513-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 3-4 Win",
+      "title": "Chicago White Sox Takes 4-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Takes 3-2 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Chicago White Sox Finishes Off Cleveland Guardians",
+      "title": "Tampa Bay Rays Takes 2-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

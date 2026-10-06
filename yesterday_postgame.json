@@ -1,59 +1,55 @@
 {
-  "updated_at": "2026-10-05T21:44:34.725211-04:00",
+  "updated_at": "2026-10-06T04:10:23.036513-04:00",
   "games": [
     {
-      "gamePk": 849825,
-      "game": "San Diego Padres @ Milwaukee Brewers",
-      "winner": "Milwaukee Brewers",
-      "loser": "San Diego Padres",
-      "final_score": "3-4",
+      "gamePk": 849834,
+      "game": "Chicago White Sox @ Cleveland Guardians",
+      "winner": "Chicago White Sox",
+      "loser": "Cleveland Guardians",
+      "final_score": "4-3",
       "hitters": [
-        "Ty France"
+        "Chase Meidroth",
+        "Chase DeLauter"
       ],
       "pitchers": [
-        "Michael King"
+        "Gavin Williams"
       ],
-      "top_batting_line": "Ty France: 2 H, 0 HR, 2 RBI, 3 AB",
-      "top_pitching_line": "Michael King: 5.0 IP, 6 K, 1 ER, 0 BB, 3 H",
-      "winning_pitcher": "Trevor Megill",
-      "losing_pitcher": "Mason Miller",
-      "save_pitcher": "",
-      "game_summary": "Jackson Chourio singles on a line drive to center fielder Jackson Merrill. Christian Yelich scores. Sal Frelick scores. Joey Ortiz to 2nd."
+      "top_batting_line": "Braden Montgomery: 1 H, 0 HR, 2 RBI, 4 AB",
+      "top_pitching_line": "Gavin Williams: 5.0 IP, 11 K, 2 ER, 3 BB, 4 H",
+      "winning_pitcher": "Sean Burke",
+      "losing_pitcher": "Erik Sabrowski",
+      "save_pitcher": "Grant Taylor",
+      "game_summary": "Jo Adell triples (1) on a sharp fly ball to left fielder Sam Antonacci. Chase DeLauter scores."
     },
     {
-      "gamePk": 849823,
-      "game": "Atlanta Braves @ Los Angeles Dodgers",
-      "winner": "Atlanta Braves",
-      "loser": "Los Angeles Dodgers",
-      "final_score": "3-2",
+      "gamePk": 849839,
+      "game": "New York Yankees @ Tampa Bay Rays",
+      "winner": "Tampa Bay Rays",
+      "loser": "New York Yankees",
+      "final_score": "2-5",
       "hitters": [
-        "Michael Harris II",
-        "Freddie Freeman",
-        "Max Muncy"
+        "Ben Rice",
+        "Jonathan Aranda",
+        "Junior Caminero"
       ],
       "pitchers": [],
-      "top_batting_line": "Freddie Freeman: 2 H, 1 HR, 1 RBI, 4 AB",
-      "top_pitching_line": "Ray Kerr: 2.2 IP, 4 K, 0 ER, 1 BB, 2 H",
-      "winning_pitcher": "Dylan Lee",
-      "losing_pitcher": "Kris Bubic",
-      "save_pitcher": "Raisel Iglesias",
-      "game_summary": "Max Muncy homers (2) on a fly ball to right center field."
+      "top_batting_line": "Ben Rice: 2 H, 2 HR, 2 RBI, 3 AB",
+      "top_pitching_line": "Ian Seymour: 3.0 IP, 4 K, 1 ER, 0 BB, 1 H",
+      "winning_pitcher": "Cam Booser",
+      "losing_pitcher": "Cam Schlittler",
+      "save_pitcher": "Bryan Baker",
+      "game_summary": "Ben Rice homers (4) on a fly ball to right field."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 3-4 Win",
+      "title": "Chicago White Sox Takes 4-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Atlanta Braves Takes 3-2 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Chicago White Sox Finishes Off Cleveland Guardians",
+      "title": "Tampa Bay Rays Takes 2-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
