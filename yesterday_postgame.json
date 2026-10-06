@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T17:05:36.767721-04:00",
+  "updated_at": "2026-10-05T21:44:34.725211-04:00",
   "games": [
     {
       "gamePk": 849825,
@@ -49,6 +49,11 @@
     {
       "stage": "generated_news_item",
       "title": "Atlanta Braves Takes 3-2 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Chicago White Sox Finishes Off Cleveland Guardians",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
