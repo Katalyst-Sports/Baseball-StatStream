@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T01:43:17.120260-04:00",
+  "updated_at": "2026-10-07T08:03:46.229771-04:00",
   "games": [
     {
       "gamePk": 849833,
@@ -1425,7 +1425,56 @@
       "start": "2026-10-08T02:00:00Z",
       "status": "Preview",
       "away_pitcher": {},
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 621111,
+        "name": "Walker Buehler",
+        "hand": "R",
+        "era": "4.63",
+        "whip": "1.35",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-30",
+              "opponent": "San Francisco Giants",
+              "ip": "4.0",
+              "er": 3,
+              "k": 3,
+              "bb": 2,
+              "pitches": 72,
+              "strikes": 43
+            },
+            {
+              "date": "2026-04-05",
+              "opponent": "Boston Red Sox",
+              "ip": "2.2",
+              "er": 4,
+              "k": 4,
+              "bb": 3,
+              "pitches": 61,
+              "strikes": 33
+            },
+            {
+              "date": "2026-04-10",
+              "opponent": "Colorado Rockies",
+              "ip": "6.0",
+              "er": 0,
+              "k": 4,
+              "bb": 0,
+              "pitches": 68,
+              "strikes": 50
+            }
+          ],
+          "avg_ip": "4.1",
+          "avg_k": "3.7",
+          "avg_bb": "1.7",
+          "avg_pitches": "67.0",
+          "avg_strikes": "42.0",
+          "era": "4.97",
+          "whip": "1.26",
+          "strike_pct": "62.7",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Jake Bauers",
