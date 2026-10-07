@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-10-07T14:53:58.365374-04:00",
-  "games": [],
+  "updated_at": "2026-10-07T19:28:57.109858-04:00",
+  "games": [
+    {
+      "gamePk": 849822,
+      "game": "Los Angeles Dodgers @ Atlanta Braves",
+      "score": "1-1",
+      "inning": "5th",
+      "hot_hitters": [],
+      "top_pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -10,6 +19,11 @@
     {
       "stage": "generated_news_item",
       "title": "San Diego Padres Takes 3-4 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cleveland Guardians Finishes Off Chicago White Sox",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
