@@ -1,31 +1,15 @@
 {
-  "updated_at": "2026-10-06T19:58:29.833198-04:00",
-  "games": [
-    {
-      "gamePk": 849819,
-      "game": "Los Angeles Dodgers @ Atlanta Braves",
-      "score": "3-1",
-      "inning": "6th",
-      "hot_hitters": [
-        "Mookie Betts",
-        "Freddie Freeman",
-        "Andy Pages",
-        "Enrique Hern\u00e1ndez"
-      ],
-      "top_pitchers": [
-        "Yoshinobu Yamamoto"
-      ]
-    }
-  ],
+  "updated_at": "2026-10-07T01:43:17.120260-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Chicago White Sox Takes 4-3 Win",
+      "title": "Los Angeles Dodgers Takes 3-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 2-5 Win",
+      "title": "San Diego Padres Takes 3-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
