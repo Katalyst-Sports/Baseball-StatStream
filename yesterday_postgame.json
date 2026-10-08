@@ -1,69 +1,106 @@
 {
-  "updated_at": "2026-10-07T22:51:56.076786-04:00",
+  "updated_at": "2026-10-08T05:55:08.792930-04:00",
   "games": [
     {
-      "gamePk": 849819,
+      "gamePk": 849833,
+      "game": "Cleveland Guardians @ Chicago White Sox",
+      "winner": "Cleveland Guardians",
+      "loser": "Chicago White Sox",
+      "final_score": "9-3",
+      "hitters": [
+        "Jos\u00e9 Ram\u00edrez",
+        "Jo Adell",
+        "Patrick Bailey",
+        "Brayan Rocchio"
+      ],
+      "pitchers": [],
+      "top_batting_line": "Jo Adell: 2 H, 0 HR, 3 RBI, 4 AB",
+      "top_pitching_line": "Foster Griffin: 2.2 IP, 7 K, 1 ER, 0 BB, 2 H",
+      "winning_pitcher": "Foster Griffin",
+      "losing_pitcher": "Bryan Hudson",
+      "save_pitcher": "",
+      "game_summary": "Brayan Rocchio singles on a pop up to left fielder Randal Grichuk. Petey Halpin scores. Angel Genao to 3rd."
+    },
+    {
+      "gamePk": 849822,
       "game": "Los Angeles Dodgers @ Atlanta Braves",
       "winner": "Los Angeles Dodgers",
       "loser": "Atlanta Braves",
-      "final_score": "3-1",
+      "final_score": "4-1",
       "hitters": [
-        "Mookie Betts",
-        "Freddie Freeman",
+        "Max Muncy",
         "Andy Pages",
-        "Enrique Hern\u00e1ndez"
-      ],
-      "pitchers": [
-        "Yoshinobu Yamamoto",
-        "Chris Sale"
-      ],
-      "top_batting_line": "Enrique Hern\u00e1ndez: 1 H, 1 HR, 2 RBI, 4 AB",
-      "top_pitching_line": "Yoshinobu Yamamoto: 7.0 IP, 10 K, 1 ER, 1 BB, 4 H",
-      "winning_pitcher": "Yoshinobu Yamamoto",
-      "losing_pitcher": "Chris Sale",
-      "save_pitcher": "Edwin D\u00edaz",
-      "game_summary": "Drake Baldwin grounds out to first baseman Freddie Freeman. Mauricio Dub\u00f3n scores. Lane Thomas to 3rd. Brewer Hicklen to 2nd."
-    },
-    {
-      "gamePk": 849826,
-      "game": "Milwaukee Brewers @ San Diego Padres",
-      "winner": "San Diego Padres",
-      "loser": "Milwaukee Brewers",
-      "final_score": "3-4",
-      "hitters": [
-        "William Contreras",
-        "Christian Yelich",
-        "Cooper Pratt",
-        "Jake Cronenworth"
+        "Michael Harris II"
       ],
       "pitchers": [],
-      "top_batting_line": "William Contreras: 3 H, 1 HR, 1 RBI, 4 AB",
-      "top_pitching_line": "Bradgley Rodriguez: 1.1 IP, 3 K, 1 ER, 0 BB, 3 H",
-      "winning_pitcher": "Yuki Matsui",
-      "losing_pitcher": "JoJo Romero",
-      "save_pitcher": "Michael King",
-      "game_summary": "Christian Yelich singles on a sharp line drive to center fielder Jackson Merrill. William Contreras scores. Brice Turang to 2nd."
+      "top_batting_line": "Max Muncy: 1 H, 1 HR, 1 RBI, 4 AB",
+      "top_pitching_line": "Tyler Glasnow: 4.2 IP, 5 K, 1 ER, 5 BB, 1 H",
+      "winning_pitcher": "Edgardo Henriquez",
+      "losing_pitcher": "Tyler Mahle",
+      "save_pitcher": "Edwin D\u00edaz",
+      "game_summary": "Max Muncy homers (3) on a fly ball to right field."
+    },
+    {
+      "gamePk": 849838,
+      "game": "Tampa Bay Rays @ New York Yankees",
+      "winner": "Tampa Bay Rays",
+      "loser": "New York Yankees",
+      "final_score": "4-3",
+      "hitters": [
+        "Victor Mesa Jr.",
+        "Ryan Vilade",
+        "George Lombard Jr.",
+        "Anthony Volpe"
+      ],
+      "pitchers": [
+        "Max Fried"
+      ],
+      "top_batting_line": "Victor Mesa Jr.: 1 H, 1 HR, 2 RBI, 4 AB",
+      "top_pitching_line": "Griffin Jax: 2.0 IP, 4 K, 1 ER, 1 BB, 1 H",
+      "winning_pitcher": "Ian Seymour",
+      "losing_pitcher": "Max Fried",
+      "save_pitcher": "Bryan Baker",
+      "game_summary": "Umpire reviewed (home run), call on the field was overturned: Anthony Volpe doubles (1) to left center field, on fan interference. George Lombard Jr. scores."
+    },
+    {
+      "gamePk": 849827,
+      "game": "Milwaukee Brewers @ San Diego Padres",
+      "winner": "Milwaukee Brewers",
+      "loser": "San Diego Padres",
+      "final_score": "3-1",
+      "hitters": [
+        "William Contreras",
+        "Garrett Mitchell",
+        "Fernando Tatis Jr."
+      ],
+      "pitchers": [],
+      "top_batting_line": "Fernando Tatis Jr.: 1 H, 1 HR, 1 RBI, 3 AB",
+      "top_pitching_line": "Aaron Ashby: 3.0 IP, 3 K, 0 ER, 2 BB, 0 H",
+      "winning_pitcher": "Aaron Ashby",
+      "losing_pitcher": "Robbie Ray",
+      "save_pitcher": "Trevor Megill",
+      "game_summary": "Sal Frelick out on a sacrifice fly to left fielder Samad Taylor. Jake Bauers scores."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Takes 3-1 Win",
+      "title": "Cleveland Guardians Takes 9-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "San Diego Padres Takes 3-4 Win",
+      "title": "Los Angeles Dodgers Takes 4-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Finishes Off Chicago White Sox",
+      "title": "Tampa Bay Rays Takes 4-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Finishes Off Atlanta Braves",
+      "title": "Milwaukee Brewers Takes 3-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {

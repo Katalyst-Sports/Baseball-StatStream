@@ -1,53 +1,25 @@
 {
-  "updated_at": "2026-10-07T22:51:56.076786-04:00",
-  "games": [
-    {
-      "gamePk": 849833,
-      "game": "Cleveland Guardians @ Chicago White Sox",
-      "winner": "Cleveland Guardians",
-      "loser": "Chicago White Sox",
-      "final_score": "9-3",
-      "hitters": [
-        "Jos\u00e9 Ram\u00edrez",
-        "Jo Adell",
-        "Patrick Bailey",
-        "Brayan Rocchio"
-      ],
-      "pitchers": []
-    },
-    {
-      "gamePk": 849822,
-      "game": "Los Angeles Dodgers @ Atlanta Braves",
-      "winner": "Los Angeles Dodgers",
-      "loser": "Atlanta Braves",
-      "final_score": "4-1",
-      "hitters": [
-        "Max Muncy",
-        "Andy Pages",
-        "Michael Harris II"
-      ],
-      "pitchers": []
-    }
-  ],
+  "updated_at": "2026-10-08T05:55:08.792930-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Takes 3-1 Win",
+      "title": "Cleveland Guardians Takes 9-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "San Diego Padres Takes 3-4 Win",
+      "title": "Los Angeles Dodgers Takes 4-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Finishes Off Chicago White Sox",
+      "title": "Tampa Bay Rays Takes 4-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Finishes Off Atlanta Braves",
+      "title": "Milwaukee Brewers Takes 3-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
