@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T19:28:57.109858-04:00",
+  "updated_at": "2026-10-07T22:51:56.076786-04:00",
   "games": [
     {
       "gamePk": 849833,
@@ -479,7 +479,7 @@
       "home_team": "Atlanta Braves",
       "venue": "Truist Park",
       "start": "2026-10-07T22:00:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 607192,
         "name": "Tyler Glasnow",
@@ -951,7 +951,7 @@
       "home_team": "New York Yankees",
       "venue": "Yankee Stadium",
       "start": "2026-10-08T00:00:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 607259,
         "name": "Nick Martinez",
@@ -1423,7 +1423,7 @@
       "home_team": "San Diego Padres",
       "venue": "Petco Park",
       "start": "2026-10-08T02:00:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 688107,
         "name": "Robert Gasser",
@@ -1904,6 +1904,11 @@
     {
       "stage": "generated_news_item",
       "title": "Cleveland Guardians Finishes Off Chicago White Sox",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Los Angeles Dodgers Finishes Off Atlanta Braves",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
