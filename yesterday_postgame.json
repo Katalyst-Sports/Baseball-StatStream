@@ -1,106 +1,32 @@
 {
-  "updated_at": "2026-10-08T22:15:37.449062-04:00",
+  "updated_at": "2026-10-09T05:16:21.616270-04:00",
   "games": [
     {
-      "gamePk": 849833,
+      "gamePk": 849832,
       "game": "Cleveland Guardians @ Chicago White Sox",
       "winner": "Cleveland Guardians",
       "loser": "Chicago White Sox",
-      "final_score": "9-3",
+      "final_score": "9-5",
       "hitters": [
         "Jos\u00e9 Ram\u00edrez",
-        "Jo Adell",
+        "Nathaniel Lowe",
         "Patrick Bailey",
-        "Brayan Rocchio"
+        "Miguel Vargas",
+        "Colson Montgomery"
       ],
       "pitchers": [],
-      "top_batting_line": "Jo Adell: 2 H, 0 HR, 3 RBI, 4 AB",
-      "top_pitching_line": "Foster Griffin: 2.2 IP, 7 K, 1 ER, 0 BB, 2 H",
-      "winning_pitcher": "Foster Griffin",
-      "losing_pitcher": "Bryan Hudson",
+      "top_batting_line": "Jos\u00e9 Ram\u00edrez: 2 H, 1 HR, 3 RBI, 5 AB",
+      "top_pitching_line": "Parker Messick: 2.1 IP, 5 K, 2 ER, 4 BB, 2 H",
+      "winning_pitcher": "Erik Sabrowski",
+      "losing_pitcher": "Anthony Kay",
       "save_pitcher": "",
-      "game_summary": "Brayan Rocchio singles on a pop up to left fielder Randal Grichuk. Petey Halpin scores. Angel Genao to 3rd."
-    },
-    {
-      "gamePk": 849822,
-      "game": "Los Angeles Dodgers @ Atlanta Braves",
-      "winner": "Los Angeles Dodgers",
-      "loser": "Atlanta Braves",
-      "final_score": "4-1",
-      "hitters": [
-        "Max Muncy",
-        "Andy Pages",
-        "Michael Harris II"
-      ],
-      "pitchers": [],
-      "top_batting_line": "Max Muncy: 1 H, 1 HR, 1 RBI, 4 AB",
-      "top_pitching_line": "Tyler Glasnow: 4.2 IP, 5 K, 1 ER, 5 BB, 1 H",
-      "winning_pitcher": "Edgardo Henriquez",
-      "losing_pitcher": "Tyler Mahle",
-      "save_pitcher": "Edwin D\u00edaz",
-      "game_summary": "Max Muncy homers (3) on a fly ball to right field."
-    },
-    {
-      "gamePk": 849838,
-      "game": "Tampa Bay Rays @ New York Yankees",
-      "winner": "Tampa Bay Rays",
-      "loser": "New York Yankees",
-      "final_score": "4-3",
-      "hitters": [
-        "Victor Mesa Jr.",
-        "Ryan Vilade",
-        "George Lombard Jr.",
-        "Anthony Volpe"
-      ],
-      "pitchers": [
-        "Max Fried"
-      ],
-      "top_batting_line": "Victor Mesa Jr.: 1 H, 1 HR, 2 RBI, 4 AB",
-      "top_pitching_line": "Griffin Jax: 2.0 IP, 4 K, 1 ER, 1 BB, 1 H",
-      "winning_pitcher": "Ian Seymour",
-      "losing_pitcher": "Max Fried",
-      "save_pitcher": "Bryan Baker",
-      "game_summary": "Umpire reviewed (home run), call on the field was overturned: Anthony Volpe doubles (1) to left center field, on fan interference. George Lombard Jr. scores."
-    },
-    {
-      "gamePk": 849827,
-      "game": "Milwaukee Brewers @ San Diego Padres",
-      "winner": "Milwaukee Brewers",
-      "loser": "San Diego Padres",
-      "final_score": "3-1",
-      "hitters": [
-        "William Contreras",
-        "Garrett Mitchell",
-        "Fernando Tatis Jr."
-      ],
-      "pitchers": [],
-      "top_batting_line": "Fernando Tatis Jr.: 1 H, 1 HR, 1 RBI, 3 AB",
-      "top_pitching_line": "Aaron Ashby: 3.0 IP, 3 K, 0 ER, 2 BB, 0 H",
-      "winning_pitcher": "Aaron Ashby",
-      "losing_pitcher": "Robbie Ray",
-      "save_pitcher": "Trevor Megill",
-      "game_summary": "Sal Frelick out on a sacrifice fly to left fielder Samad Taylor. Jake Bauers scores."
+      "game_summary": "Miguel Vargas homers (1) on a fly ball to left field."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 9-3 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Los Angeles Dodgers Takes 4-1 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 4-3 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 3-1 Win",
+      "title": "Cleveland Guardians Takes 9-5 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
