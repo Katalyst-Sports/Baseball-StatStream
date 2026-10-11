@@ -1,5 +1,32 @@
 {
-  "updated_at": "2026-10-10T19:54:23.586549-04:00",
-  "games": [],
-  "errors": []
+  "updated_at": "2026-10-11T00:49:21.146890-04:00",
+  "games": [
+    {
+      "gamePk": 849831,
+      "game": "Chicago White Sox @ Cleveland Guardians",
+      "winner": "Cleveland Guardians",
+      "loser": "Chicago White Sox",
+      "final_score": "0-2",
+      "hitters": [
+        "Jos\u00e9 Ram\u00edrez",
+        "Petey Halpin"
+      ],
+      "pitchers": [
+        "Gavin Williams"
+      ],
+      "top_batting_line": "Jos\u00e9 Ram\u00edrez: 1 H, 1 HR, 2 RBI, 3 AB",
+      "top_pitching_line": "Gavin Williams: 5.2 IP, 12 K, 0 ER, 2 BB, 1 H",
+      "winning_pitcher": "Gavin Williams",
+      "losing_pitcher": "Sean Burke",
+      "save_pitcher": "Cade Smith",
+      "game_summary": "Jos\u00e9 Ram\u00edrez homers (2) on a line drive to right field. Steven Kwan scores."
+    }
+  ],
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Cleveland Guardians Takes 0-2 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    }
+  ]
 }
