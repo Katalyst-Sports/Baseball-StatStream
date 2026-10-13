@@ -1,12 +1,20 @@
 {
-  "updated_at": "2026-10-12T17:51:23.409909-04:00",
+  "updated_at": "2026-10-12T22:48:18.060542-04:00",
   "games": [
     {
-      "gamePk": 849812,
-      "game": "Los Angeles Dodgers @ Milwaukee Brewers",
-      "score": "1-1",
-      "inning": "3rd",
-      "hot_hitters": [],
+      "gamePk": 849820,
+      "game": "Cleveland Guardians @ Tampa Bay Rays",
+      "score": "4-3",
+      "inning": "9th",
+      "hot_hitters": [
+        "Jos\u00e9 Ram\u00edrez",
+        "Chase DeLauter",
+        "Nathaniel Lowe",
+        "Patrick Bailey",
+        "Yandy D\u00edaz",
+        "Cedric Mullins",
+        "Jonny DeLuca"
+      ],
       "top_pitchers": []
     }
   ],
@@ -14,6 +22,11 @@
     {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Takes 1-2 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Finishes Off Los Angeles Dodgers",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

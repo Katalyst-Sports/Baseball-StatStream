@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T17:51:23.409909-04:00",
+  "updated_at": "2026-10-12T22:48:18.060542-04:00",
   "games": [
     {
       "gamePk": 849812,
@@ -7,7 +7,7 @@
       "home_team": "Milwaukee Brewers",
       "venue": "American Family Field",
       "start": "2026-10-12T21:00:00Z",
-      "status": "Live",
+      "status": "Final",
       "away_pitcher": {
         "id": 808967,
         "name": "Yoshinobu Yamamoto",
@@ -479,7 +479,7 @@
       "home_team": "Tampa Bay Rays",
       "venue": "Tropicana Field",
       "start": "2026-10-13T00:00:00Z",
-      "status": "Preview",
+      "status": "Live",
       "away_pitcher": {
         "id": 656492,
         "name": "Foster Griffin",
@@ -950,6 +950,11 @@
     {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Takes 1-2 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Finishes Off Los Angeles Dodgers",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
