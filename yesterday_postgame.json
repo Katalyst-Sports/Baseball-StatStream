@@ -1,37 +1,62 @@
 {
-  "updated_at": "2026-10-12T22:48:18.060542-04:00",
+  "updated_at": "2026-10-13T05:46:31.876278-04:00",
   "games": [
     {
-      "gamePk": 849809,
+      "gamePk": 849812,
       "game": "Los Angeles Dodgers @ Milwaukee Brewers",
       "winner": "Milwaukee Brewers",
       "loser": "Los Angeles Dodgers",
-      "final_score": "1-2",
+      "final_score": "4-7",
       "hitters": [
-        "Teoscar Hern\u00e1ndez",
-        "Jackson Chourio",
-        "Brice Turang"
+        "Brice Turang",
+        "William Contreras",
+        "Christian Yelich",
+        "Cooper Pratt",
+        "David Hamilton"
+      ],
+      "pitchers": [],
+      "top_batting_line": "William Contreras: 3 H, 1 HR, 3 RBI, 4 AB",
+      "top_pitching_line": "Tanner Scott: 1.0 IP, 3 K, 0 ER, 0 BB, 0 H",
+      "winning_pitcher": "JoJo Romero",
+      "losing_pitcher": "Brock Stewart",
+      "save_pitcher": "Aaron Ashby",
+      "game_summary": "Jake Bauers singles on a line drive to center fielder Andy Pages. Brice Turang scores. William Contreras to 3rd. Fielding error by center fielder Andy Pages."
+    },
+    {
+      "gamePk": 849820,
+      "game": "Cleveland Guardians @ Tampa Bay Rays",
+      "winner": "Cleveland Guardians",
+      "loser": "Tampa Bay Rays",
+      "final_score": "7-3",
+      "hitters": [
+        "Jos\u00e9 Ram\u00edrez",
+        "Chase DeLauter",
+        "Nathaniel Lowe",
+        "Patrick Bailey",
+        "Yandy D\u00edaz",
+        "Cedric Mullins",
+        "Jonny DeLuca"
       ],
       "pitchers": [
-        "Tarik Skubal"
+        "Drew Rasmussen"
       ],
-      "top_batting_line": "Brice Turang: 1 H, 1 HR, 1 RBI, 2 AB",
-      "top_pitching_line": "Tarik Skubal: 5.0 IP, 7 K, 2 ER, 2 BB, 5 H",
-      "winning_pitcher": "DL Hall",
-      "losing_pitcher": "Tarik Skubal",
-      "save_pitcher": "Trevor Megill",
-      "game_summary": "Luis Lara singles on a sharp ground ball to center fielder Andy Pages. Garrett Mitchell scores."
+      "top_batting_line": "Chase DeLauter: 3 H, 1 HR, 1 RBI, 4 AB",
+      "top_pitching_line": "Drew Rasmussen: 6.0 IP, 7 K, 2 ER, 0 BB, 8 H",
+      "winning_pitcher": "Hunter Gaddis",
+      "losing_pitcher": "Tyler Wells",
+      "save_pitcher": "",
+      "game_summary": "Jo Adell doubles (1) on a sharp ground ball to left fielder Jonny DeLuca. Jos\u00e9 Ram\u00edrez scores. Chase DeLauter scores."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 1-2 Win",
+      "title": "Milwaukee Brewers Takes 4-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     },
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Finishes Off Los Angeles Dodgers",
+      "title": "Cleveland Guardians Takes 7-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
