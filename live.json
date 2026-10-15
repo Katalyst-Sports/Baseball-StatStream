@@ -1,22 +1,15 @@
 {
-  "updated_at": "2026-10-15T15:09:35.711046-04:00",
-  "games": [
-    {
-      "gamePk": 849818,
-      "game": "Tampa Bay Rays @ Cleveland Guardians",
-      "score": "2-3",
-      "inning": "7th",
-      "hot_hitters": [
-        "Jos\u00e9 Ram\u00edrez",
-        "Petey Halpin"
-      ],
-      "top_pitchers": []
-    }
-  ],
+  "updated_at": "2026-10-15T18:20:46.023108-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Takes 6-2 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cleveland Guardians Finishes Off Tampa Bay Rays",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
