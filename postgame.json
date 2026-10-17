@@ -1,6 +1,16 @@
 {
-  "updated_at": "2026-10-16T19:39:15.306050-04:00",
-  "games": [],
+  "updated_at": "2026-10-16T21:33:58.477718-04:00",
+  "games": [
+    {
+      "gamePk": 849817,
+      "game": "Tampa Bay Rays @ Cleveland Guardians",
+      "winner": "Cleveland Guardians",
+      "loser": "Tampa Bay Rays",
+      "final_score": "0-0",
+      "hitters": [],
+      "pitchers": []
+    }
+  ],
   "errors": [
     {
       "stage": "generated_news_item",
@@ -10,6 +20,11 @@
     {
       "stage": "generated_news_item",
       "title": "Milwaukee Brewers Takes 6-4 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    },
+    {
+      "stage": "generated_news_item",
+      "title": "Cleveland Guardians Finishes Off Tampa Bay Rays",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
