@@ -1,64 +1,26 @@
 {
-  "updated_at": "2026-10-16T21:33:58.477718-04:00",
+  "updated_at": "2026-10-17T02:09:17.022696-04:00",
   "games": [
     {
-      "gamePk": 849818,
+      "gamePk": 849817,
       "game": "Tampa Bay Rays @ Cleveland Guardians",
       "winner": "Cleveland Guardians",
       "loser": "Tampa Bay Rays",
-      "final_score": "2-3",
-      "hitters": [
-        "Jos\u00e9 Ram\u00edrez",
-        "Petey Halpin"
-      ],
-      "pitchers": [
-        "Gavin Williams"
-      ],
-      "top_batting_line": "Petey Halpin: 1 H, 1 HR, 2 RBI, 3 AB",
-      "top_pitching_line": "Gavin Williams: 5.0 IP, 9 K, 2 ER, 1 BB, 2 H",
-      "winning_pitcher": "Gavin Williams",
-      "losing_pitcher": "Griffin Jax",
-      "save_pitcher": "Cade Smith",
-      "game_summary": "Petey Halpin homers (1) on a fly ball to right center field. Patrick Bailey scores."
-    },
-    {
-      "gamePk": 849810,
-      "game": "Milwaukee Brewers @ Los Angeles Dodgers",
-      "winner": "Milwaukee Brewers",
-      "loser": "Los Angeles Dodgers",
-      "final_score": "6-4",
-      "hitters": [
-        "Garrett Mitchell",
-        "David Hamilton",
-        "Shohei Ohtani",
-        "Kyle Tucker",
-        "Andy Pages"
-      ],
-      "pitchers": [
-        "Tyler Glasnow"
-      ],
-      "top_batting_line": "Shohei Ohtani: 1 H, 1 HR, 3 RBI, 4 AB",
-      "top_pitching_line": "JoJo Romero: 2.0 IP, 3 K, 0 ER, 0 BB, 1 H",
-      "winning_pitcher": "JoJo Romero",
-      "losing_pitcher": "Tanner Scott",
-      "save_pitcher": "Aaron Ashby",
-      "game_summary": "David Hamilton homers (1) on a fly ball to right center field."
+      "final_score": "0-0",
+      "hitters": [],
+      "pitchers": [],
+      "top_batting_line": "No standout batting line available.",
+      "top_pitching_line": "No standout pitching line available.",
+      "winning_pitcher": "",
+      "losing_pitcher": "",
+      "save_pitcher": "",
+      "game_summary": ""
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 2-3 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 6-4 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Cleveland Guardians Finishes Off Tampa Bay Rays",
+      "title": "Cleveland Guardians Takes 0-0 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
