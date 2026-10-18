@@ -1,26 +1,31 @@
 {
-  "updated_at": "2026-10-17T21:20:51.189482-04:00",
+  "updated_at": "2026-10-18T02:14:19.166064-04:00",
   "games": [
     {
-      "gamePk": 849817,
+      "gamePk": 849816,
       "game": "Tampa Bay Rays @ Cleveland Guardians",
-      "winner": "Cleveland Guardians",
-      "loser": "Tampa Bay Rays",
-      "final_score": "0-0",
-      "hitters": [],
+      "winner": "Tampa Bay Rays",
+      "loser": "Cleveland Guardians",
+      "final_score": "7-3",
+      "hitters": [
+        "Yandy D\u00edaz",
+        "Jonathan Aranda",
+        "Richie Palacios",
+        "Travis Bazzana"
+      ],
       "pitchers": [],
-      "top_batting_line": "No standout batting line available.",
-      "top_pitching_line": "No standout pitching line available.",
-      "winning_pitcher": "",
-      "losing_pitcher": "",
+      "top_batting_line": "Yandy D\u00edaz: 2 H, 1 HR, 2 RBI, 5 AB",
+      "top_pitching_line": "Foster Griffin: 3.2 IP, 5 K, 1 ER, 0 BB, 4 H",
+      "winning_pitcher": "Nick Martinez",
+      "losing_pitcher": "Daniel Espino",
       "save_pitcher": "",
-      "game_summary": ""
+      "game_summary": "Yandy D\u00edaz homers (1) on a fly ball to right field. Richie Palacios scores."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Cleveland Guardians Takes 0-0 Win",
+      "title": "Tampa Bay Rays Takes 7-3 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
