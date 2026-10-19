@@ -1,296 +1,65 @@
 {
-  "updated_at": "2026-10-18T19:58:09.354103-04:00",
+  "updated_at": "2026-10-19T00:27:01.922014-04:00",
   "games": [
     {
-      "gamePk": 849817,
-      "away_team": "Tampa Bay Rays",
-      "home_team": "Cleveland Guardians",
-      "venue": "Progressive Field",
-      "start": "2026-10-18T21:08:00Z",
-      "status": "Live",
-      "away_pitcher": {
-        "id": 656876,
-        "name": "Drew Rasmussen",
+      "gamePk": 849815,
+      "away_team": "Cleveland Guardians",
+      "home_team": "Tampa Bay Rays",
+      "venue": "Tropicana Field",
+      "start": "2026-10-20T00:08:00Z",
+      "status": "Preview",
+      "away_pitcher": {},
+      "home_pitcher": {
+        "id": 642547,
+        "name": "Freddy Peralta",
         "hand": "R",
-        "era": "2.67",
-        "whip": "0.91",
+        "era": "4.42",
+        "whip": "1.33",
         "last3": {
           "starts": [
             {
               "date": "2026-03-26",
-              "opponent": "St. Louis Cardinals",
+              "opponent": "Pittsburgh Pirates",
               "ip": "5.0",
-              "er": 1,
-              "k": 2,
+              "er": 4,
+              "k": 7,
               "bb": 0,
-              "pitches": 73,
-              "strikes": 49
+              "pitches": 80,
+              "strikes": 53
             },
             {
               "date": "2026-04-01",
-              "opponent": "Milwaukee Brewers",
-              "ip": "5.0",
+              "opponent": "St. Louis Cardinals",
+              "ip": "5.1",
               "er": 1,
-              "k": 8,
-              "bb": 1,
-              "pitches": 89,
-              "strikes": 60
-            },
-            {
-              "date": "2026-04-12",
-              "opponent": "New York Yankees",
-              "ip": "6.0",
-              "er": 0,
               "k": 7,
-              "bb": 0,
-              "pitches": 76,
-              "strikes": 51
-            }
-          ],
-          "avg_ip": "5.1",
-          "avg_k": "5.7",
-          "avg_bb": "0.3",
-          "avg_pitches": "79.3",
-          "avg_strikes": "53.3",
-          "era": "1.12",
-          "whip": "0.56",
-          "strike_pct": "67.2",
-          "quality_starts": 1
-        }
-      },
-      "home_pitcher": {
-        "id": 800048,
-        "name": "Parker Messick",
-        "hand": "L",
-        "era": "2.56",
-        "whip": "1.06",
-        "last3": {
-          "starts": [
-            {
-              "date": "2026-03-30",
-              "opponent": "Los Angeles Dodgers",
-              "ip": "6.0",
-              "er": 0,
-              "k": 5,
-              "bb": 0,
-              "pitches": 76,
-              "strikes": 51
-            },
-            {
-              "date": "2026-04-05",
-              "opponent": "Chicago Cubs",
-              "ip": "5.0",
-              "er": 1,
-              "k": 6,
-              "bb": 3,
-              "pitches": 91,
-              "strikes": 51
-            },
-            {
-              "date": "2026-04-11",
-              "opponent": "Atlanta Braves",
-              "ip": "6.2",
-              "er": 0,
-              "k": 5,
               "bb": 2,
-              "pitches": 84,
-              "strikes": 61
+              "pitches": 92,
+              "strikes": 54
+            },
+            {
+              "date": "2026-04-07",
+              "opponent": "Arizona Diamondbacks",
+              "ip": "4.2",
+              "er": 3,
+              "k": 5,
+              "bb": 3,
+              "pitches": 101,
+              "strikes": 62
             }
           ],
-          "avg_ip": "6.0",
-          "avg_k": "5.3",
+          "avg_ip": "5.0",
+          "avg_k": "6.3",
           "avg_bb": "1.7",
-          "avg_pitches": "83.7",
-          "avg_strikes": "54.3",
-          "era": "0.51",
-          "whip": "0.91",
-          "strike_pct": "64.9",
-          "quality_starts": 2
+          "avg_pitches": "91.0",
+          "avg_strikes": "56.3",
+          "era": "4.80",
+          "whip": "1.13",
+          "strike_pct": "61.9",
+          "quality_starts": 0
         }
       },
       "away_hitters": [
-        {
-          "name": "Junior Caminero",
-          "stats": {
-            "avg": ".276",
-            "obp": ".360",
-            "slg": ".524",
-            "ops": ".884",
-            "homeRuns": 42,
-            "rbi": 101
-          },
-          "last10ab": {
-            "avg": "0.200",
-            "hits": 2,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 5,
-            "games": 3
-          }
-        },
-        {
-          "name": "Victor Mesa Jr.",
-          "stats": {
-            "avg": ".260",
-            "obp": ".327",
-            "slg": ".498",
-            "ops": ".825",
-            "homeRuns": 14,
-            "rbi": 34
-          },
-          "last10ab": {
-            "avg": "0.300",
-            "hits": 3,
-            "atBats": 10,
-            "homeRuns": 1,
-            "rbi": 2,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
-          "name": "Yandy D\u00edaz",
-          "stats": {
-            "avg": ".293",
-            "obp": ".359",
-            "slg": ".446",
-            "ops": ".805",
-            "homeRuns": 22,
-            "rbi": 85
-          },
-          "last10ab": {
-            "avg": "0.400",
-            "hits": 4,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 2
-          }
-        },
-        {
-          "name": "Liam Hicks",
-          "stats": {
-            "avg": ".284",
-            "obp": ".367",
-            "slg": ".434",
-            "ops": ".801",
-            "homeRuns": 18,
-            "rbi": 82
-          },
-          "last10ab": {
-            "avg": "0.364",
-            "hits": 4,
-            "atBats": 11,
-            "homeRuns": 2,
-            "rbi": 8,
-            "walks": 1,
-            "games": 4
-          }
-        },
-        {
-          "name": "Jonathan Aranda",
-          "stats": {
-            "avg": ".274",
-            "obp": ".358",
-            "slg": ".434",
-            "ops": ".792",
-            "homeRuns": 22,
-            "rbi": 92
-          },
-          "last10ab": {
-            "avg": "0.462",
-            "hits": 6,
-            "atBats": 13,
-            "homeRuns": 1,
-            "rbi": 4,
-            "walks": 3,
-            "games": 3
-          }
-        },
-        {
-          "name": "Ryan Vilade",
-          "stats": {
-            "avg": ".245",
-            "obp": ".321",
-            "slg": ".429",
-            "ops": ".750",
-            "homeRuns": 11,
-            "rbi": 43
-          },
-          "last10ab": {
-            "avg": "0.100",
-            "hits": 1,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 0,
-            "games": 5
-          }
-        },
-        {
-          "name": "Jonny DeLuca",
-          "stats": {
-            "avg": ".266",
-            "obp": ".300",
-            "slg": ".429",
-            "ops": ".729",
-            "homeRuns": 11,
-            "rbi": 50
-          },
-          "last10ab": {
-            "avg": "0.417",
-            "hits": 5,
-            "atBats": 12,
-            "homeRuns": 1,
-            "rbi": 4,
-            "walks": 1,
-            "games": 3
-          }
-        },
-        {
-          "name": "Richie Palacios",
-          "stats": {
-            "avg": ".235",
-            "obp": ".330",
-            "slg": ".374",
-            "ops": ".704",
-            "homeRuns": 10,
-            "rbi": 57
-          },
-          "last10ab": {
-            "avg": "0.100",
-            "hits": 1,
-            "atBats": 10,
-            "homeRuns": 0,
-            "rbi": 0,
-            "walks": 2,
-            "games": 6
-          }
-        },
-        {
-          "name": "Chandler Simpson",
-          "stats": {
-            "avg": ".306",
-            "obp": ".333",
-            "slg": ".356",
-            "ops": ".689",
-            "homeRuns": 0,
-            "rbi": 38
-          },
-          "last10ab": {
-            "avg": "0.455",
-            "hits": 5,
-            "atBats": 11,
-            "homeRuns": 0,
-            "rbi": 1,
-            "walks": 1,
-            "games": 3
-          }
-        }
-      ],
-      "home_hitters": [
         {
           "name": "Chase DeLauter",
           "stats": {
@@ -471,13 +240,195 @@
             "games": 3
           }
         }
+      ],
+      "home_hitters": [
+        {
+          "name": "Junior Caminero",
+          "stats": {
+            "avg": ".276",
+            "obp": ".360",
+            "slg": ".524",
+            "ops": ".884",
+            "homeRuns": 42,
+            "rbi": 101
+          },
+          "last10ab": {
+            "avg": "0.200",
+            "hits": 2,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 5,
+            "games": 3
+          }
+        },
+        {
+          "name": "Victor Mesa Jr.",
+          "stats": {
+            "avg": ".260",
+            "obp": ".327",
+            "slg": ".498",
+            "ops": ".825",
+            "homeRuns": 14,
+            "rbi": 34
+          },
+          "last10ab": {
+            "avg": "0.300",
+            "hits": 3,
+            "atBats": 10,
+            "homeRuns": 1,
+            "rbi": 2,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
+          "name": "Yandy D\u00edaz",
+          "stats": {
+            "avg": ".293",
+            "obp": ".359",
+            "slg": ".446",
+            "ops": ".805",
+            "homeRuns": 22,
+            "rbi": 85
+          },
+          "last10ab": {
+            "avg": "0.400",
+            "hits": 4,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 2
+          }
+        },
+        {
+          "name": "Liam Hicks",
+          "stats": {
+            "avg": ".284",
+            "obp": ".367",
+            "slg": ".434",
+            "ops": ".801",
+            "homeRuns": 18,
+            "rbi": 82
+          },
+          "last10ab": {
+            "avg": "0.364",
+            "hits": 4,
+            "atBats": 11,
+            "homeRuns": 2,
+            "rbi": 8,
+            "walks": 1,
+            "games": 4
+          }
+        },
+        {
+          "name": "Jonathan Aranda",
+          "stats": {
+            "avg": ".274",
+            "obp": ".358",
+            "slg": ".434",
+            "ops": ".792",
+            "homeRuns": 22,
+            "rbi": 92
+          },
+          "last10ab": {
+            "avg": "0.462",
+            "hits": 6,
+            "atBats": 13,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 3,
+            "games": 3
+          }
+        },
+        {
+          "name": "Ryan Vilade",
+          "stats": {
+            "avg": ".245",
+            "obp": ".321",
+            "slg": ".429",
+            "ops": ".750",
+            "homeRuns": 11,
+            "rbi": 43
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 0,
+            "games": 5
+          }
+        },
+        {
+          "name": "Jonny DeLuca",
+          "stats": {
+            "avg": ".266",
+            "obp": ".300",
+            "slg": ".429",
+            "ops": ".729",
+            "homeRuns": 11,
+            "rbi": 50
+          },
+          "last10ab": {
+            "avg": "0.417",
+            "hits": 5,
+            "atBats": 12,
+            "homeRuns": 1,
+            "rbi": 4,
+            "walks": 1,
+            "games": 3
+          }
+        },
+        {
+          "name": "Richie Palacios",
+          "stats": {
+            "avg": ".235",
+            "obp": ".330",
+            "slg": ".374",
+            "ops": ".704",
+            "homeRuns": 10,
+            "rbi": 57
+          },
+          "last10ab": {
+            "avg": "0.100",
+            "hits": 1,
+            "atBats": 10,
+            "homeRuns": 0,
+            "rbi": 0,
+            "walks": 2,
+            "games": 6
+          }
+        },
+        {
+          "name": "Chandler Simpson",
+          "stats": {
+            "avg": ".306",
+            "obp": ".333",
+            "slg": ".356",
+            "ops": ".689",
+            "homeRuns": 0,
+            "rbi": 38
+          },
+          "last10ab": {
+            "avg": "0.455",
+            "hits": 5,
+            "atBats": 11,
+            "homeRuns": 0,
+            "rbi": 1,
+            "walks": 1,
+            "games": 3
+          }
+        }
       ]
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 7-3 Win",
+      "title": "Tampa Bay Rays Takes 3-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

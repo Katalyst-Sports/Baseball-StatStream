@@ -1,31 +1,34 @@
 {
-  "updated_at": "2026-10-18T19:58:09.354103-04:00",
+  "updated_at": "2026-10-19T00:27:01.922014-04:00",
   "games": [
     {
-      "gamePk": 849816,
+      "gamePk": 849817,
       "game": "Tampa Bay Rays @ Cleveland Guardians",
       "winner": "Tampa Bay Rays",
       "loser": "Cleveland Guardians",
-      "final_score": "7-3",
+      "final_score": "3-1",
       "hitters": [
         "Yandy D\u00edaz",
         "Jonathan Aranda",
-        "Richie Palacios",
-        "Travis Bazzana"
+        "Chandler Simpson",
+        "Liam Hicks",
+        "Steven Kwan"
       ],
-      "pitchers": [],
-      "top_batting_line": "Yandy D\u00edaz: 2 H, 1 HR, 2 RBI, 5 AB",
-      "top_pitching_line": "Foster Griffin: 3.2 IP, 5 K, 1 ER, 0 BB, 4 H",
-      "winning_pitcher": "Nick Martinez",
-      "losing_pitcher": "Daniel Espino",
-      "save_pitcher": "",
-      "game_summary": "Yandy D\u00edaz homers (1) on a fly ball to right field. Richie Palacios scores."
+      "pitchers": [
+        "Drew Rasmussen"
+      ],
+      "top_batting_line": "Liam Hicks: 2 H, 0 HR, 1 RBI, 3 AB",
+      "top_pitching_line": "Drew Rasmussen: 7.0 IP, 6 K, 1 ER, 1 BB, 4 H",
+      "winning_pitcher": "Drew Rasmussen",
+      "losing_pitcher": "Parker Messick",
+      "save_pitcher": "Bryan Baker",
+      "game_summary": "Chase DeLauter grounds out to first baseman Jonathan Aranda. Steven Kwan scores. Jos\u00e9 Ram\u00edrez to 2nd."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 7-3 Win",
+      "title": "Tampa Bay Rays Takes 3-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
