@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T06:11:52.805719-04:00",
+  "updated_at": "2026-10-19T12:59:42.807107-04:00",
   "games": [
     {
       "gamePk": 849815,
@@ -8,7 +8,56 @@
       "venue": "Tropicana Field",
       "start": "2026-10-20T00:08:00Z",
       "status": "Preview",
-      "away_pitcher": {},
+      "away_pitcher": {
+        "id": 542888,
+        "name": "Shawn Armstrong",
+        "hand": "R",
+        "era": "4.58",
+        "whip": "1.39",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "Seattle Mariners",
+              "ip": "0.2",
+              "er": 1,
+              "k": 2,
+              "bb": 0,
+              "pitches": 10,
+              "strikes": 7
+            },
+            {
+              "date": "2026-03-28",
+              "opponent": "Seattle Mariners",
+              "ip": "1.1",
+              "er": 0,
+              "k": 1,
+              "bb": 1,
+              "pitches": 19,
+              "strikes": 10
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Los Angeles Dodgers",
+              "ip": "0.2",
+              "er": 0,
+              "k": 0,
+              "bb": 0,
+              "pitches": 12,
+              "strikes": 8
+            }
+          ],
+          "avg_ip": "1.0",
+          "avg_k": "1.0",
+          "avg_bb": "0.3",
+          "avg_pitches": "13.7",
+          "avg_strikes": "8.3",
+          "era": "3.38",
+          "whip": "1.50",
+          "strike_pct": "61.0",
+          "quality_starts": 0
+        }
+      },
       "home_pitcher": {
         "id": 642547,
         "name": "Freddy Peralta",
