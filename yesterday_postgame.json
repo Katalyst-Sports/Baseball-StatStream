@@ -1,34 +1,32 @@
 {
-  "updated_at": "2026-10-19T20:33:35.937375-04:00",
+  "updated_at": "2026-10-20T01:14:10.261506-04:00",
   "games": [
     {
-      "gamePk": 849817,
-      "game": "Tampa Bay Rays @ Cleveland Guardians",
+      "gamePk": 849815,
+      "game": "Cleveland Guardians @ Tampa Bay Rays",
       "winner": "Tampa Bay Rays",
       "loser": "Cleveland Guardians",
-      "final_score": "3-1",
+      "final_score": "3-7",
       "hitters": [
+        "Chase DeLauter",
+        "Nathaniel Lowe",
         "Yandy D\u00edaz",
-        "Jonathan Aranda",
-        "Chandler Simpson",
-        "Liam Hicks",
-        "Steven Kwan"
+        "Junior Caminero",
+        "Richie Palacios"
       ],
-      "pitchers": [
-        "Drew Rasmussen"
-      ],
-      "top_batting_line": "Liam Hicks: 2 H, 0 HR, 1 RBI, 3 AB",
-      "top_pitching_line": "Drew Rasmussen: 7.0 IP, 6 K, 1 ER, 1 BB, 4 H",
-      "winning_pitcher": "Drew Rasmussen",
-      "losing_pitcher": "Parker Messick",
-      "save_pitcher": "Bryan Baker",
-      "game_summary": "Chase DeLauter grounds out to first baseman Jonathan Aranda. Steven Kwan scores. Jos\u00e9 Ram\u00edrez to 2nd."
+      "pitchers": [],
+      "top_batting_line": "Junior Caminero: 2 H, 1 HR, 2 RBI, 3 AB",
+      "top_pitching_line": "Freddy Peralta: 5.1 IP, 3 K, 1 ER, 3 BB, 5 H",
+      "winning_pitcher": "Freddy Peralta",
+      "losing_pitcher": "Shawn Armstrong",
+      "save_pitcher": "",
+      "game_summary": "Yandy D\u00edaz homers (2) on a fly ball to left field. Taylor Walls scores."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 3-1 Win",
+      "title": "Tampa Bay Rays Takes 3-7 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
