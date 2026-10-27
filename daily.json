@@ -1,110 +1,61 @@
 {
-  "updated_at": "2026-10-26T20:56:20.023588-04:00",
+  "updated_at": "2026-10-27T02:08:57.308347-04:00",
   "games": [
     {
-      "gamePk": 849804,
+      "gamePk": 849803,
       "away_team": "Milwaukee Brewers",
       "home_team": "Tampa Bay Rays",
       "venue": "Tropicana Field",
-      "start": "2026-10-27T00:00:00Z",
-      "status": "Live",
-      "away_pitcher": {
-        "id": 688107,
-        "name": "Robert Gasser",
-        "hand": "L",
-        "era": "3.87",
-        "whip": "1.19",
-        "last3": {
-          "starts": [
-            {
-              "date": "2026-05-17",
-              "opponent": "Minnesota Twins",
-              "ip": "4.0",
-              "er": 2,
-              "k": 3,
-              "bb": 2,
-              "pitches": 79,
-              "strikes": 48
-            },
-            {
-              "date": "2026-05-23",
-              "opponent": "Los Angeles Dodgers",
-              "ip": "4.1",
-              "er": 4,
-              "k": 4,
-              "bb": 4,
-              "pitches": 89,
-              "strikes": 53
-            },
-            {
-              "date": "2026-06-03",
-              "opponent": "San Francisco Giants",
-              "ip": "5.0",
-              "er": 1,
-              "k": 5,
-              "bb": 1,
-              "pitches": 83,
-              "strikes": 56
-            }
-          ],
-          "avg_ip": "4.1",
-          "avg_k": "4.0",
-          "avg_bb": "2.3",
-          "avg_pitches": "83.7",
-          "avg_strikes": "52.3",
-          "era": "4.72",
-          "whip": "1.43",
-          "strike_pct": "62.5",
-          "quality_starts": 0
-        }
-      },
+      "start": "2026-10-28T00:00:00Z",
+      "status": "Preview",
+      "away_pitcher": {},
       "home_pitcher": {
-        "id": 642547,
-        "name": "Freddy Peralta",
+        "id": 643377,
+        "name": "Griffin Jax",
         "hand": "R",
-        "era": "4.42",
-        "whip": "1.33",
+        "era": "3.53",
+        "whip": "1.18",
         "last3": {
           "starts": [
             {
               "date": "2026-03-26",
-              "opponent": "Pittsburgh Pirates",
-              "ip": "5.0",
-              "er": 4,
-              "k": 7,
-              "bb": 0,
-              "pitches": 80,
-              "strikes": 53
-            },
-            {
-              "date": "2026-04-01",
               "opponent": "St. Louis Cardinals",
-              "ip": "5.1",
+              "ip": "0.2",
               "er": 1,
-              "k": 7,
-              "bb": 2,
-              "pitches": 92,
-              "strikes": 54
+              "k": 0,
+              "bb": 0,
+              "pitches": 14,
+              "strikes": 11
             },
             {
-              "date": "2026-04-07",
-              "opponent": "Arizona Diamondbacks",
-              "ip": "4.2",
-              "er": 3,
-              "k": 5,
-              "bb": 3,
-              "pitches": 101,
-              "strikes": 62
+              "date": "2026-03-28",
+              "opponent": "St. Louis Cardinals",
+              "ip": "0.1",
+              "er": 1,
+              "k": 0,
+              "bb": 1,
+              "pitches": 9,
+              "strikes": 3
+            },
+            {
+              "date": "2026-03-30",
+              "opponent": "Milwaukee Brewers",
+              "ip": "1.0",
+              "er": 0,
+              "k": 1,
+              "bb": 0,
+              "pitches": 15,
+              "strikes": 9
             }
           ],
-          "avg_ip": "5.0",
-          "avg_k": "6.3",
-          "avg_bb": "1.7",
-          "avg_pitches": "91.0",
-          "avg_strikes": "56.3",
-          "era": "4.80",
-          "whip": "1.13",
-          "strike_pct": "61.9",
+          "avg_ip": "0.2",
+          "avg_k": "0.3",
+          "avg_bb": "0.3",
+          "avg_pitches": "12.7",
+          "avg_strikes": "7.7",
+          "era": "9.00",
+          "whip": "1.50",
+          "strike_pct": "60.5",
           "quality_starts": 0
         }
       },
@@ -474,5 +425,11 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Takes 10-1 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    }
+  ]
 }

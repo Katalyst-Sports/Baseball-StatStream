@@ -1,5 +1,33 @@
 {
-  "updated_at": "2026-10-26T20:56:20.023588-04:00",
-  "games": [],
-  "errors": []
+  "updated_at": "2026-10-27T02:08:57.308347-04:00",
+  "games": [
+    {
+      "gamePk": 849804,
+      "game": "Milwaukee Brewers @ Tampa Bay Rays",
+      "winner": "Milwaukee Brewers",
+      "loser": "Tampa Bay Rays",
+      "final_score": "10-1",
+      "hitters": [
+        "Jackson Chourio",
+        "Christian Yelich",
+        "William Contreras",
+        "Brice Turang",
+        "Yandy D\u00edaz"
+      ],
+      "pitchers": [],
+      "top_batting_line": "Brice Turang: 3 H, 0 HR, 2 RBI, 5 AB",
+      "top_pitching_line": "Robert Gasser: 6.0 IP, 3 K, 0 ER, 1 BB, 1 H",
+      "winning_pitcher": "Robert Gasser",
+      "losing_pitcher": "Freddy Peralta",
+      "save_pitcher": "",
+      "game_summary": "Yandy D\u00edaz doubles (5) on a fly ball to center fielder Luis Lara. Cedric Mullins scores."
+    }
+  ],
+  "errors": [
+    {
+      "stage": "generated_news_item",
+      "title": "Milwaukee Brewers Takes 10-1 Win",
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+    }
+  ]
 }
