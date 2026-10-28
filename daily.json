@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T09:57:35.242289-04:00",
+  "updated_at": "2026-10-28T15:27:06.086586-04:00",
   "games": [
     {
       "gamePk": 849799,
@@ -58,7 +58,56 @@
           "quality_starts": 1
         }
       },
-      "home_pitcher": {},
+      "home_pitcher": {
+        "id": 656876,
+        "name": "Drew Rasmussen",
+        "hand": "R",
+        "era": "2.67",
+        "whip": "0.91",
+        "last3": {
+          "starts": [
+            {
+              "date": "2026-03-26",
+              "opponent": "St. Louis Cardinals",
+              "ip": "5.0",
+              "er": 1,
+              "k": 2,
+              "bb": 0,
+              "pitches": 73,
+              "strikes": 49
+            },
+            {
+              "date": "2026-04-01",
+              "opponent": "Milwaukee Brewers",
+              "ip": "5.0",
+              "er": 1,
+              "k": 8,
+              "bb": 1,
+              "pitches": 89,
+              "strikes": 60
+            },
+            {
+              "date": "2026-04-12",
+              "opponent": "New York Yankees",
+              "ip": "6.0",
+              "er": 0,
+              "k": 7,
+              "bb": 0,
+              "pitches": 76,
+              "strikes": 51
+            }
+          ],
+          "avg_ip": "5.1",
+          "avg_k": "5.7",
+          "avg_bb": "0.3",
+          "avg_pitches": "79.3",
+          "avg_strikes": "53.3",
+          "era": "1.12",
+          "whip": "0.56",
+          "strike_pct": "67.2",
+          "quality_starts": 1
+        }
+      },
       "away_hitters": [
         {
           "name": "Jake Bauers",
