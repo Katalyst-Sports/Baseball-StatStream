@@ -1,113 +1,64 @@
 {
-  "updated_at": "2026-10-27T21:21:07.102792-04:00",
+  "updated_at": "2026-10-28T03:01:39.178004-04:00",
   "games": [
     {
-      "gamePk": 849803,
+      "gamePk": 849799,
       "away_team": "Milwaukee Brewers",
       "home_team": "Tampa Bay Rays",
       "venue": "Tropicana Field",
-      "start": "2026-10-28T00:00:00Z",
-      "status": "Live",
+      "start": "2026-10-29T00:00:00Z",
+      "status": "Preview",
       "away_pitcher": {
-        "id": 669160,
-        "name": "Dustin May",
+        "id": 694819,
+        "name": "Jacob Misiorowski",
         "hand": "R",
-        "era": "4.70",
-        "whip": "1.32",
-        "last3": {
-          "starts": [
-            {
-              "date": "2026-03-29",
-              "opponent": "Tampa Bay Rays",
-              "ip": "4.0",
-              "er": 6,
-              "k": 3,
-              "bb": 1,
-              "pitches": 61,
-              "strikes": 40
-            },
-            {
-              "date": "2026-04-04",
-              "opponent": "Detroit Tigers",
-              "ip": "3.1",
-              "er": 7,
-              "k": 4,
-              "bb": 2,
-              "pitches": 79,
-              "strikes": 48
-            },
-            {
-              "date": "2026-04-10",
-              "opponent": "Boston Red Sox",
-              "ip": "6.0",
-              "er": 1,
-              "k": 4,
-              "bb": 0,
-              "pitches": 75,
-              "strikes": 54
-            }
-          ],
-          "avg_ip": "4.1",
-          "avg_k": "3.7",
-          "avg_bb": "1.0",
-          "avg_pitches": "71.7",
-          "avg_strikes": "47.3",
-          "era": "9.45",
-          "whip": "1.80",
-          "strike_pct": "66.0",
-          "quality_starts": 1
-        }
-      },
-      "home_pitcher": {
-        "id": 643377,
-        "name": "Griffin Jax",
-        "hand": "R",
-        "era": "3.53",
-        "whip": "1.18",
+        "era": "1.80",
+        "whip": "0.80",
         "last3": {
           "starts": [
             {
               "date": "2026-03-26",
-              "opponent": "St. Louis Cardinals",
-              "ip": "0.2",
+              "opponent": "Chicago White Sox",
+              "ip": "5.0",
               "er": 1,
-              "k": 0,
-              "bb": 0,
-              "pitches": 14,
-              "strikes": 11
+              "k": 11,
+              "bb": 3,
+              "pitches": 94,
+              "strikes": 57
             },
             {
-              "date": "2026-03-28",
-              "opponent": "St. Louis Cardinals",
-              "ip": "0.1",
-              "er": 1,
-              "k": 0,
-              "bb": 1,
-              "pitches": 9,
-              "strikes": 3
+              "date": "2026-04-01",
+              "opponent": "Tampa Bay Rays",
+              "ip": "6.0",
+              "er": 2,
+              "k": 7,
+              "bb": 2,
+              "pitches": 94,
+              "strikes": 62
             },
             {
-              "date": "2026-03-30",
-              "opponent": "Milwaukee Brewers",
-              "ip": "1.0",
-              "er": 0,
-              "k": 1,
-              "bb": 0,
-              "pitches": 15,
-              "strikes": 9
+              "date": "2026-04-07",
+              "opponent": "Boston Red Sox",
+              "ip": "5.1",
+              "er": 3,
+              "k": 10,
+              "bb": 4,
+              "pitches": 101,
+              "strikes": 56
             }
           ],
-          "avg_ip": "0.2",
-          "avg_k": "0.3",
-          "avg_bb": "0.3",
-          "avg_pitches": "12.7",
-          "avg_strikes": "7.7",
-          "era": "9.00",
-          "whip": "1.50",
-          "strike_pct": "60.5",
-          "quality_starts": 0
+          "avg_ip": "5.1",
+          "avg_k": "9.3",
+          "avg_bb": "3.0",
+          "avg_pitches": "96.3",
+          "avg_strikes": "58.3",
+          "era": "3.31",
+          "whip": "1.04",
+          "strike_pct": "60.6",
+          "quality_starts": 1
         }
       },
+      "home_pitcher": {},
       "away_hitters": [
         {
           "name": "Jake Bauers",
@@ -477,7 +428,7 @@
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 10-1 Win",
+      "title": "Tampa Bay Rays Takes 3-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]

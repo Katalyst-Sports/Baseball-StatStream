@@ -1,32 +1,34 @@
 {
-  "updated_at": "2026-10-27T21:21:07.102792-04:00",
+  "updated_at": "2026-10-28T03:01:39.178004-04:00",
   "games": [
     {
-      "gamePk": 849804,
+      "gamePk": 849803,
       "game": "Milwaukee Brewers @ Tampa Bay Rays",
-      "winner": "Milwaukee Brewers",
-      "loser": "Tampa Bay Rays",
-      "final_score": "10-1",
+      "winner": "Tampa Bay Rays",
+      "loser": "Milwaukee Brewers",
+      "final_score": "3-4",
       "hitters": [
         "Jackson Chourio",
-        "Christian Yelich",
-        "William Contreras",
-        "Brice Turang",
-        "Yandy D\u00edaz"
+        "Cooper Pratt",
+        "David Hamilton",
+        "Liam Hicks",
+        "Chandler Simpson"
       ],
-      "pitchers": [],
-      "top_batting_line": "Brice Turang: 3 H, 0 HR, 2 RBI, 5 AB",
-      "top_pitching_line": "Robert Gasser: 6.0 IP, 3 K, 0 ER, 1 BB, 1 H",
-      "winning_pitcher": "Robert Gasser",
-      "losing_pitcher": "Freddy Peralta",
+      "pitchers": [
+        "Griffin Jax"
+      ],
+      "top_batting_line": "Cooper Pratt: 4 H, 1 HR, 2 RBI, 5 AB",
+      "top_pitching_line": "Griffin Jax: 4.0 IP, 6 K, 2 ER, 2 BB, 4 H",
+      "winning_pitcher": "Ian Seymour",
+      "losing_pitcher": "Shane Drohan",
       "save_pitcher": "",
-      "game_summary": "Yandy D\u00edaz doubles (5) on a fly ball to center fielder Luis Lara. Cedric Mullins scores."
+      "game_summary": "Ben Williamson singles on a ground ball to right fielder Sal Frelick. Nick Fortes scores. Jonny DeLuca to 3rd. Chandler Simpson to 2nd."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 10-1 Win",
+      "title": "Tampa Bay Rays Takes 3-4 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
