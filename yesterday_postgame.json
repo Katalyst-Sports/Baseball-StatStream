@@ -1,34 +1,30 @@
 {
-  "updated_at": "2026-10-28T22:44:51.397714-04:00",
+  "updated_at": "2026-10-29T04:58:36.642250-04:00",
   "games": [
     {
-      "gamePk": 849803,
+      "gamePk": 849799,
       "game": "Milwaukee Brewers @ Tampa Bay Rays",
-      "winner": "Tampa Bay Rays",
-      "loser": "Milwaukee Brewers",
-      "final_score": "3-4",
+      "winner": "Milwaukee Brewers",
+      "loser": "Tampa Bay Rays",
+      "final_score": "4-1",
       "hitters": [
-        "Jackson Chourio",
+        "Brice Turang",
         "Cooper Pratt",
-        "David Hamilton",
-        "Liam Hicks",
         "Chandler Simpson"
       ],
-      "pitchers": [
-        "Griffin Jax"
-      ],
-      "top_batting_line": "Cooper Pratt: 4 H, 1 HR, 2 RBI, 5 AB",
-      "top_pitching_line": "Griffin Jax: 4.0 IP, 6 K, 2 ER, 2 BB, 4 H",
-      "winning_pitcher": "Ian Seymour",
-      "losing_pitcher": "Shane Drohan",
+      "pitchers": [],
+      "top_batting_line": "Cooper Pratt: 2 H, 0 HR, 2 RBI, 3 AB",
+      "top_pitching_line": "Drew Rasmussen: 4.0 IP, 4 K, 1 ER, 0 BB, 2 H",
+      "winning_pitcher": "Jacob Misiorowski",
+      "losing_pitcher": "Drew Rasmussen",
       "save_pitcher": "",
-      "game_summary": "Ben Williamson singles on a ground ball to right fielder Sal Frelick. Nick Fortes scores. Jonny DeLuca to 3rd. Chandler Simpson to 2nd."
+      "game_summary": "Chandler Simpson doubles (3) on a line drive to right fielder Sal Frelick. Liam Hicks scores."
     }
   ],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Tampa Bay Rays Takes 3-4 Win",
+      "title": "Milwaukee Brewers Takes 4-1 Win",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
