@@ -1,35 +1,10 @@
 {
-  "updated_at": "2026-10-29T20:51:32.061201-04:00",
-  "games": [
-    {
-      "gamePk": 849799,
-      "game": "Milwaukee Brewers @ Tampa Bay Rays",
-      "winner": "Milwaukee Brewers",
-      "loser": "Tampa Bay Rays",
-      "final_score": "4-1",
-      "hitters": [
-        "Brice Turang",
-        "Cooper Pratt",
-        "Chandler Simpson"
-      ],
-      "pitchers": [],
-      "top_batting_line": "Cooper Pratt: 2 H, 0 HR, 2 RBI, 3 AB",
-      "top_pitching_line": "Drew Rasmussen: 4.0 IP, 4 K, 1 ER, 0 BB, 2 H",
-      "winning_pitcher": "Jacob Misiorowski",
-      "losing_pitcher": "Drew Rasmussen",
-      "save_pitcher": "",
-      "game_summary": "Chandler Simpson doubles (3) on a line drive to right fielder Sal Frelick. Liam Hicks scores."
-    }
-  ],
+  "updated_at": "2026-10-30T02:43:05.724627-04:00",
+  "games": [],
   "errors": [
     {
       "stage": "generated_news_item",
-      "title": "Milwaukee Brewers Takes 4-1 Win",
-      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
-    },
-    {
-      "stage": "generated_news_item",
-      "title": "Boston Red Sox Makes Roster Move",
+      "title": "Detroit Tigers Makes Roster Move",
       "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
     }
   ]
